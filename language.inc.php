@@ -18,7 +18,7 @@ function language_list ($inc_dir)
 		}
 	}while($file);
 		
-	//Sortieren der Verzeichnisse
+	//sort the directories
 	sort($list);
 	closedir($dir_ref);
 	
