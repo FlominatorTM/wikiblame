@@ -2,7 +2,7 @@
 
 $text_dir = 'rtl';
 
-$messages['translator']='Yoni'; //<yonidebest@gmail.com>
+$messages['translator']='Yoni'; //<yonidebest AT  gmail.com>
 $messages['translator_link']='http://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%AA%D7%9E%D7%A9:Yonidebest'; 
 
 //Form elements

@@ -4,7 +4,7 @@ $text_dir = 'ltr';
 //DD-MM-YYYY ? DD-MM-AAAA
 //translation ? traducción 
 
-$messages['translator']='XalD'; //<hiperion93@gmail.com>
+$messages['translator']='XalD'; //<hiperion93 AT gmail.com>
 $messages['translator_link']='http://es.wikipedia.org/wiki/Usuario:XalD'; 
 
 //Form elements

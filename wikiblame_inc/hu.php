@@ -1,7 +1,7 @@
 <?php
 $text_dir = 'ltr';
 
-$messages['translator']='Tgr'; //<gtisza@gmail.com>
+$messages['translator']='Tgr'; //<gtisza AT gmail.com>
 $messages['translator_link']='http://hu.wikipedia.org/wiki/Szerkeszt%C5%91:Tgr'; 
 
 //Form elements

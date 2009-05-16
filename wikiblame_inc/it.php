@@ -1,7 +1,7 @@
 ﻿<?php
 $text_dir = 'ltr';
 
-$messages['translator']='Melos'; //<nnico@jumpy.it>
+$messages['translator']='Melos'; //<nnico AT jumpy.it>
 $messages['translator_link']='http://it.wikipedia.org/wiki/Utente:Melos'; //<nnico@jumpy.it>
 //Form elements
 $messages['lang']='Lingua';
