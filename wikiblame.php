@@ -295,22 +295,52 @@ if($needle!="")
 	
 }
 
+//takes the requested history page and puts the link to the revisions into an array
+
 function listversions ($history)
 {
 	global $articleenc, $asc, $messages, $ignore_minors;
-	$searchterm = "name=\"diff\" /> "; //name="diff" /> 
-	$versionen=array();
+	$searchterm = "name=\"diff\" /> "; //assumes that the history begins at the first occurrence of name="diff" />
+	$versionen=array(); //array to store the links in
 	
-	while($pos=strpos($history, $searchterm))
+	while($pos=strpos($history, $searchterm)) //find the beginning of a link as long as there are some left
 	{
-		$apos = strpos($history, "</a>", $pos);
-		$one_version_link = substr($history, 0, $apos);
-		//echo "current version: $one_version_link;
+		$apos = strpos($history, "</a>", $pos); //find the end of the link
+		$one_version_link = substr($history, 0, $apos); //extract the link (including radio buttons and all)
 		
+		/*	NOTE: $one_version_link now contains the html structure of a history line like this (see below):
+			
+			# KapHorn (talk | contribs) (4,556 bytes) (Changed link "Höllental") (undo)
+			# (cur) (prev) 16:33, 30 December 2008
+			
+			<span class="history-user">
+				<a href="/wiki/User:KapHorn" title="User:KapHorn" class="mw-userlink">KapHorn</a> 
+				<span class="mw-usertoollinks">(
+					<a href="/wiki/User_talk:KapHorn" title="User talk:KapHorn">talk</a> 
+					| 
+					<a href="/wiki/Special:Contributions/KapHorn" title="Special:Contributions/KapHorn">contribs</a>
+					)<
+				/span>
+			</span> 
+			<span class="history-size">(4,556 bytes)</span> 
+			<span class="comment">(Changed link "Höllental")</span> (
+			<span class="mw-history-undo"><a href="/w/index.php?title=Hinterzarten&amp;action=edit&amp;undoafter=260903093&amp;undo=282077848" title="Hinterzarten">undo</a></span>) <
+		</li>
+		<li class="">(
+			<a href="/w/index.php?title=Hinterzarten&amp;diff=282077848&amp;oldid=260903093" title="Hinterzarten">cur</a>) (
+			<a href="/w/index.php?title=Hinterzarten&amp;diff=260903093&amp;oldid=258345857" title="Hinterzarten">prev</a>) 
+			<input value="260903093" checked="checked" name="oldid" type="radio">
+			<input value="260903093" name="diff" type="radio"> 
+			<a href="/w/index.php?title=Hinterzarten&amp;oldid=260903093" title="Hinterzarten">16:33, 30 December 2008
+		*/
+		
+		//strips the end of the above html code in order to retrieve to revision link
 		$one_version = substr($history, $pos+strlen($searchterm), $apos-$pos-strlen($searchterm));
+		
 		if($ignore_minors)
 		{
-			if(!stristr($one_version_link, "<span class=\"minor\">"))
+			//checks if the revision was marked as minor edit
+			if(!stristr($one_version_link, "<span class=\"minor\">")) 
 			{
 				$versions[]= $one_version;
 			}
@@ -318,18 +348,19 @@ function listversions ($history)
 			{
 				//echo "ignored a minor change";
 			}
-		
 		}
 		else
 		{
 			$versions[]= $one_version;
 		}
-		$history = substr($history, $apos);
+		echo strlen($history)."<br>";
+		$history = substr($history, $apos); //gets the next part of the history to process
+		
 	}
 
 	if($asc==true)
 	{
-		echo "umkehrt";
+		echo "reversing the list";
 		$versions = array_reverse($versions);
 	}
 
