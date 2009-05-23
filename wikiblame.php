@@ -295,47 +295,37 @@ if($needle!="")
 	
 }
 
-//takes the requested history page and puts the link to the revisions into an array
-
+//takes the requested history page, extracts links to the revisions and puts them into an array that is returned
 function listversions ($history)
 {
 	global $articleenc, $asc, $messages, $ignore_minors;
 	$searchterm = "name=\"diff\" /> "; //assumes that the history begins at the first occurrence of name="diff" />
 	$versionen=array(); //array to store the links in
 	
-	while($pos=strpos($history, $searchterm)) //find the beginning of a link as long as there are some left
+	$revision_html_blocks = explode($searchterm, $history); 
+	
+	/*
+	result in $revision_html_blocks are parts of the revision history that look like this (without line wraps) 
+	
+	<a href="/w/index.php?title=Hinterzarten&amp;oldid=282077848" title="Hinterzarten">09:56, 6 April 2009</a> 
+	<span class='history-user'><a href="/wiki/User:KapHorn" title="User:KapHorn" class="mw-userlink">KapHorn</a>  
+		<span class="mw-usertoollinks">(<a href="/wiki/User_talk:KapHorn" title="User talk:KapHorn">talk</a>&#32;|&#32;
+			<a href="/wiki/Special:Contributions/KapHorn" title="Special:Contributions/KapHorn">contribs</a>)
+		</span>
+	/span> 
+	<span class="history-size">(4,556 bytes)</span> 
+	<span class="comment">(Changed link &quot;Höllental&quot;)</span> 
+	(<span class="mw-history-undo"><a href="/w/index.php?title=Hinterzarten&amp;action=edit&amp;undoafter=260903093&amp;undo=282077848" title="Hinterzarten">undo</a></span>) 
+	</li>	*/
+	
+	//iterate over the parts 
+	for($block_i = 1;$block_i<count($revision_html_blocks);$block_i++)
 	{
-		$apos = strpos($history, "</a>", $pos); //find the end of the link
-		$one_version_link = substr($history, 0, $apos); //extract the link (including radio buttons and all)
+		//find the closing sequence of the a tag
+		$pos_of_closed_a = strpos($revision_html_blocks[$block_i], "</a>"); 
 		
-		/*	NOTE: $one_version_link now contains the html structure of a history line like this (see below):
-			
-			# KapHorn (talk | contribs) (4,556 bytes) (Changed link "Höllental") (undo)
-			# (cur) (prev) 16:33, 30 December 2008
-			
-			<span class="history-user">
-				<a href="/wiki/User:KapHorn" title="User:KapHorn" class="mw-userlink">KapHorn</a> 
-				<span class="mw-usertoollinks">(
-					<a href="/wiki/User_talk:KapHorn" title="User talk:KapHorn">talk</a> 
-					| 
-					<a href="/wiki/Special:Contributions/KapHorn" title="Special:Contributions/KapHorn">contribs</a>
-					)<
-				/span>
-			</span> 
-			<span class="history-size">(4,556 bytes)</span> 
-			<span class="comment">(Changed link "Höllental")</span> (
-			<span class="mw-history-undo"><a href="/w/index.php?title=Hinterzarten&amp;action=edit&amp;undoafter=260903093&amp;undo=282077848" title="Hinterzarten">undo</a></span>) <
-		</li>
-		<li class="">(
-			<a href="/w/index.php?title=Hinterzarten&amp;diff=282077848&amp;oldid=260903093" title="Hinterzarten">cur</a>) (
-			<a href="/w/index.php?title=Hinterzarten&amp;diff=260903093&amp;oldid=258345857" title="Hinterzarten">prev</a>) 
-			<input value="260903093" checked="checked" name="oldid" type="radio">
-			<input value="260903093" name="diff" type="radio"> 
-			<a href="/w/index.php?title=Hinterzarten&amp;oldid=260903093" title="Hinterzarten">16:33, 30 December 2008
-		*/
-		
-		//strips the end of the above html code in order to retrieve to revision link
-		$one_version = substr($history, $pos+strlen($searchterm), $apos-$pos-strlen($searchterm));
+		//extract the link from the current part (e.g. <a href="/w/index.php?title=Hinterzarten&amp;oldid=282077848" title="Hinterzarten">09:56, 6 April 2009)
+		$one_version = substr($revision_html_blocks[$block_i], 0, $pos_of_closed_a);
 		
 		if($ignore_minors)
 		{
@@ -353,9 +343,6 @@ function listversions ($history)
 		{
 			$versions[]= $one_version;
 		}
-		echo strlen($history)."<br>";
-		$history = substr($history, $apos); //gets the next part of the history to process
-		
 	}
 
 	if($asc==true)
@@ -366,6 +353,8 @@ function listversions ($history)
 
 	echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
 	return $versions;
+	
+	//regular expression that could be used to extract data from the revision links somewhen
 	//!oldid=(\d+)".*>([^<]+)</a>.*>([^<]+)</a>! 1=date, 2=revid 3=user
 }
 
