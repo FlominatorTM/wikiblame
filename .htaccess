@@ -1,3 +1,0 @@
-# required to prevent automatic escaping of input strings
-# thanks to http://www.php.net/manual/de/security.magicquotes.disabling.php
-php_value magic_quotes_gpc off
