@@ -1,8 +1,5 @@
 ﻿<?php
-$text_dir = 'ltr';
-
 //Translated by WarX 
-//Form elements
 $messages['lang']='język';		
 $messages['project']='projekt';		
 $messages['article']='artykuł';		
@@ -21,15 +18,10 @@ $messages['ignore_minors']='ignore minor changes (experimental)';
 $messages['start'] ='start';		
 $messages['reset'] ='Reset';
 $messages['manual'] ='pomoc';	
-$messages['manual_link'] ='http://de.wikipedia.org/wiki/Benutzer:Flominator/WikiBlame/en';		
 $messages['contact']='kontakt';		
-$messages['contact_link']='http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';	
-
-//Output elements
 $messages['search_in_progress'] = '/historia wersji _ARTICLELINK_ jest przeszukiwana w poszukiwaniu <b>_NEEDLE_</b>';		
 $messages['execution_time'] = 'czas wykonania: _EXECUTIONTIME_ sekund';	//
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ wersji znaleziono';		//
 $messages['binary_test'] = 'Comparing differences in _FIRSTDATEVERSION_ between _FIRSTNUMBER_ and _SECONDNUMBER_ while coming from _SOURCENUMBER_: '; 
 $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
-?>
