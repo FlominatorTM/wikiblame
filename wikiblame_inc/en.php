@@ -1,28 +1,42 @@
-﻿<?php
+<?php
+/** Wikiblame
+ *
+ */
+
+/** English
+ *
+ * See the qqq 'language' for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
+ * @ingroup Language
+ * @file
+ *
+ */
+
 $text_dir = 'ltr';
 
 //Form elements
-$messages['lang']='Language';
-$messages['project']='Project';
-$messages['article']='Page';
-$messages['needle']='Search for';
-$messages['skipversions']='Always skip x versions';
-$messages['ignorefirst']='Ignore first x versions';
-$messages['limit']='Versions to check';
+$messages['lang'] = 'Language';
+$messages['project'] = 'Project';
+$messages['article'] = 'Page';
+$messages['needle'] = 'Search for';
+$messages['skipversions'] = 'Always skip x versions';
+$messages['ignorefirst'] = 'Ignore first x versions';
+$messages['limit'] = 'Versions to check';
 $messages['start_date'] = 'Start date';
 $messages['order'] = 'Order';
 $messages['newest_first'] = 'latest first';
 $messages['oldest_first'] = 'oldest first';
 $messages['search_method'] = 'Search method';
 $messages['linear'] = 'linear';
-$messages['interpolated']='interpolated (faster with more versions)';
-$messages['ignore_minors']='ignore minor changes (experimental)';
-$messages['start'] ='Start';
-$messages['reset'] ='Reset';
-$messages['manual'] ='Manual';
-$messages['manual_link'] ='http://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
-$messages['contact']='Contact';
-$messages['contact_link']='http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['interpolated'] = 'interpolated (faster with more versions)';
+$messages['ignore_minors'] = 'ignore minor changes (experimental)';
+$messages['start'] = 'Start';
+$messages['reset'] = 'Reset';
+$messages['manual'] = 'Manual';
+$messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
+$messages['contact'] = 'Contact';
+$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 
 //Output elements
 $messages['wrong_skips'] = 'Wrong settings: If the first __VERSIONSTOSKIP__ versions are skipped, then none of the __VERSIONSTOSEARCH__ versions to be searched will be processed.';

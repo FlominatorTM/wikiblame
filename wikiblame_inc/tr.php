@@ -1,23 +1,37 @@
-﻿<?
-$messages['lang']='Dil';  // Language
-$messages['project']='Proje';  // Project
-$messages['article']='Madde';  // Article
-$messages['needle']='Arama';  // Search
-$messages['skipversions']='Her zaman x sürümünü atla';  // Always skip x versions
-$messages['ignorefirst']='Her zaman ilk x sürümü atla';  // Ignore first x versions
-$messages['limit']='İncelenecek sürümler'; // Versions to check
-$messages['start_date'] = 'Başlangıç tarihi'; // Start date
-$messages['order'] = 'Sıra'; // Order
-$messages['newest_first'] = "Sondan birinci";  // Latest first
-$messages['oldest_first'] = "Baştan birinci"; // Oldest first
-$messages['search_method'] = 'Arama tipi'; // Search method
-$messages['linear'] = 'lineer'; // Linear
-$messages['interpolated']='interpol (fazla sürüm sayısı varsa daha hızı arar)'; // interpolated (faster with more versions)
-$messages['ignore_minors']='ignore minor changes (experimental)';
-$messages['start'] ='Başla';  // Start
-$messages['reset'] ='Reset';
-$messages['manual'] ='Manuel'; // Manual
-$messages['contact']='Bağlantı'; // Contact
-$messages['search_in_progress'] = "_ARTICLELINK_ maddesinin sürüm geçmişinde <b>_NEEDLE_</b> aranıyor..."; // The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> ...
-$messages['execution_time'] = "Çalıştoğı süre: _EXECUTIONTIME_ saniye";  // Exectution Time: _EXECUTIONTIME_ seconds
-$messages['versions_found'] = '_NUMBEROFVERSIONS_ sürüm bulundu';  // _NUMBEROFVERSIONS_ versions found
+<?php
+/** Wikiblame
+ *
+ */
+
+/** Turkish (Türkçe)
+ *
+ * See the qqq 'language' for message documentation incl. usage of parameters
+ * To improve a translation please visit http://translatewiki.net
+ *
+ * @ingroup Language
+ * @file
+ *
+ */
+
+$messages['lang'] = 'Dil';
+$messages['project'] = 'Proje';
+$messages['article'] = 'Madde';
+$messages['needle'] = 'Arama';
+$messages['skipversions'] = 'Her zaman x sürümünü atla';
+$messages['ignorefirst'] = 'Her zaman ilk x sürümü atla';
+$messages['limit'] = 'İncelenecek sürümler';
+$messages['start_date'] = 'Başlangıç tarihi';
+$messages['order'] = 'Sıra';
+$messages['newest_first'] = 'Sondan birinci';
+$messages['oldest_first'] = 'Baştan birinci';
+$messages['search_method'] = 'Arama tipi';
+$messages['linear'] = 'lineer';
+$messages['interpolated'] = 'interpol (fazla sürüm sayısı varsa daha hızı arar)';
+$messages['ignore_minors'] = 'ignore minor changes (experimental)';
+$messages['start'] = 'Başla';
+$messages['reset'] = 'Reset';
+$messages['manual'] = 'Manuel';
+$messages['contact'] = 'Bağlantı';
+$messages['search_in_progress'] = '_ARTICLELINK_ maddesinin sürüm geçmişinde <b>_NEEDLE_</b> aranıyor...';
+$messages['execution_time'] = 'Çalıştoğı süre: _EXECUTIONTIME_ saniye';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ sürüm bulundu';
