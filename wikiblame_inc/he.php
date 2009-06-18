@@ -25,5 +25,5 @@ $messages['wrong_skips'] = ' שגיאה: אם נדלג על __VERSIONSTOSKIP__ �
 $messages['search_in_progress'] = 'מתבצע כרגע חיפוש של הטקסט <b>_NEEDLE_</b> בגרסאות הקודמות של הערך _ARTICLELINK_...';
 $messages['execution_time'] = 'זמן חיפוש: _EXECUTIONTIME_ שניות';
 $messages['versions_found'] = 'נמצאו _NUMBEROFVERSIONS_ גרסאות';
-$messages['binary_test'] = 'משווה הבדלים ב-_FIRSTDATEVERSION_ בין _FIRSTNUMBER_ לבין _SECONDNUMBER_ כשהמקור הוא _SOURCENUMBER_: ';
+$messages['binary_test'] = 'משווה הבדלים ב-_FIRSTDATEVERSION_ בין _FIRSTNUMBER_ לבין _SECONDNUMBER_ כשהמקור הוא _SOURCENUMBER_:';
 $messages['insertion_found'] = 'נמצא שיבוץ בין LEFT_VERSION לבין RIGHT_VERSION';
