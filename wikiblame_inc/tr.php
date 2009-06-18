@@ -1,7 +1,4 @@
 ﻿<?
-$text_dir = 'ltr';
-
-//Form elements
 $messages['lang']='Dil';  // Language
 $messages['project']='Proje';  // Project
 $messages['article']='Madde';  // Article
@@ -20,16 +17,7 @@ $messages['ignore_minors']='ignore minor changes (experimental)';
 $messages['start'] ='Başla';  // Start
 $messages['reset'] ='Reset';
 $messages['manual'] ='Manuel'; // Manual
-//$messages['manual_link'] ='http://de.wikipedia.org/wiki/Benutzer:Flominator/WikiBlame';
 $messages['contact']='Bağlantı'; // Contact
-//$messages['contact_link']='httpde.wikipedia.org/wiki/Kullanıcı mesaj:Flominator/WikiBlame';
-
-//Output elements
 $messages['search_in_progress'] = "_ARTICLELINK_ maddesinin sürüm geçmişinde <b>_NEEDLE_</b> aranıyor..."; // The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> ...
 $messages['execution_time'] = "Çalıştoğı süre: _EXECUTIONTIME_ saniye";  // Exectution Time: _EXECUTIONTIME_ seconds
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ sürüm bulundu';  // _NUMBEROFVERSIONS_ versions found
-$messages['binary_test'] = 'Comparing differences in _FIRSTDATEVERSION_ between _FIRSTNUMBER_ and _SECONDNUMBER_ while coming from _SOURCENUMBER_: '; 
-								
-$messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
-$messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
-?>

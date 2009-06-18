@@ -1,13 +1,6 @@
 ﻿<?php
-$text_dir = 'ltr';
-
-//DD-MM-YYYY ? DD-MM-AAAA
-//translation ? traducción 
-
 $messages['translator']='XalD'; //<hiperion93 AT gmail.com>
 $messages['translator_link']='http://es.wikipedia.org/wiki/Usuario:XalD'; 
-
-//Form elements
 $messages['lang']='Idioma';
 $messages['project']='Proyecto';
 $messages['article']='Artículo';
@@ -28,13 +21,6 @@ $messages['reset'] ='Reset';
 $messages['manual'] ='Manual';
 $messages['manual_link'] ='http://es.wikipedia.org/wiki/Usuario:XalD/WikiBlame';
 $messages['contact']='Contacto';
-$messages['contact_link']='http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
-
-//Output elements 
 $messages['search_in_progress'] = 'La versión del historial de _ARTICLELINK_ está siendo buscada por <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
-$messages['binary_test'] = 'Comparing differences in _FIRSTDATEVERSION_ between _FIRSTNUMBER_ and _SECONDNUMBER_ while coming from _SOURCENUMBER_: '; 
-$messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
-$messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
-?>
