@@ -1,4 +1,6 @@
 <?php
+
+// list all languages available in inc directory
 function language_list ($inc_dir)
 {
     global $user_lang;
@@ -7,21 +9,22 @@ function language_list ($inc_dir)
 	$list = array();
 	do
 	{
-		$file = readdir($dir_ref);
+		$file = readdir($dir_ref); //get next file of inc directory
 		clearstatcache();
-		if((substr($file,0,1)!=".")&&(!is_dir($inc_dir."/".$file))&&($file!=""))
+		
+		if((substr($file,0,1)!=".")&&(!is_dir($inc_dir."/".$file))&&($file!="")) //current file is really a file and no directory
 		{
-			if(stristr($file, '.php'))
+			if((stristr($file, '.php')) && (!stristr($file, 'qqq')))  //file is really a language file (qqq comes from translatewiki)
 			{
-				$list[] = str_replace('.php', '', $file);
+				$list[] = str_replace('.php', '', $file); //add language of file to the list
 			}
 		}
 	}while($file);
 		
-	//sort the directories
 	sort($list);
 	closedir($dir_ref);
-	
+
+	//create links to all languages
 	foreach($list AS $language)
 	{
 		if($language!=$user_lang)
@@ -39,7 +42,6 @@ function get_language($lang, $inc_dir)
 {
 	global $messages, $inc_dir, $text_dir;
 	$langfile = "$inc_dir/$lang.php";
-	
 
 	if(!@include ($langfile))
 	{
@@ -48,6 +50,7 @@ function get_language($lang, $inc_dir)
 	}
 }
 
+//tries to retrieve the language of the browser
 function read_language()
 {
 	$user_lang=$_REQUEST['user_lang'];
