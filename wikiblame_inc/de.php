@@ -40,3 +40,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versionen gefunden';
 $messages['binary_test'] = 'Prüfe Übergang vom _FIRSTDATEVERSION_ zwischen _FIRSTNUMBER_ und _SECONDNUMBER_ von _SOURCENUMBER_ aus:';
 $messages['insertion_found'] = 'Einfügung gefunden zwischen LEFT_VERSION und RIGHT_VERSION';
 $messages['deletion_found'] = 'Löschung gefunden zwischen LEFT_VERSION und RIGHT_VERSION';
+$messages['help_translating'] = 'Übersetzen helfen';
