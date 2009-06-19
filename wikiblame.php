@@ -252,8 +252,9 @@ $user=$_REQUEST['user'];
 		</form>
 <hr>
 <a href='<? echo $messages['manual_link'] ?>'><? echo $messages['manual'] ?></a> - 
-<a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a> <? print_translator($user_lang)?>
 <a href='<? echo $messages['contact_link'] ?>'><? echo $messages['contact'] ?></a> - 
+<!-- <a href='http://translatewiki.net/w/i.php?title=Special:Translate&group=out-wikiblame'><? echo $messages['help_translating'] ?></a> - -->
+<a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
 </div>
 <?php
 
