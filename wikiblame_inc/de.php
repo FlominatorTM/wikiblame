@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Umherirrender
  */
 
 $messages['lang'] = 'Sprache';
@@ -34,10 +35,10 @@ $messages['manual'] = 'Handbuch';
 $messages['manual_link'] = 'http://de.wikipedia.org/wiki/Benutzer:Flominator/WikiBlame';
 $messages['contact'] = 'Kontakt';
 $messages['wrong_skips'] = 'Falsche Einstellung: Wenn die ersten __VERSIONSTOSKIP__ Versionen übersprungen werden sollen, wird keine der gewählten __VERSIONSTOSEARCH__ Versionen durchsucht.';
-$messages['search_in_progress'] = 'Die Versionen von _ARTICLELINK_ werden nach der Zeichenkette <b>_NEEDLE_</b> durchsucht ...';
+$messages['search_in_progress'] = 'Die Versionen von _ARTICLELINK_ werden nach der Zeichenkette <b>_NEEDLE_</b> durchsucht …';
 $messages['execution_time'] = 'Ausführungszeit: _EXECUTIONTIME_ Sekunden';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versionen gefunden';
 $messages['binary_test'] = 'Prüfe Übergang vom _FIRSTDATEVERSION_ zwischen _FIRSTNUMBER_ und _SECONDNUMBER_ von _SOURCENUMBER_ aus:';
 $messages['insertion_found'] = 'Einfügung gefunden zwischen LEFT_VERSION und RIGHT_VERSION';
 $messages['deletion_found'] = 'Löschung gefunden zwischen LEFT_VERSION und RIGHT_VERSION';
-$messages['help_translating'] = 'Hilf beim Übersetzen auf Translatewiki.net';
+$messages['help_translating'] = 'Hilf beim Übersetzen auf translatewiki.net';

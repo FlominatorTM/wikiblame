@@ -40,3 +40,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versione jefonge';
 $messages['binary_test'] = 'Ben vun _SOURCENUMBER_ aam kumm un en _FIRSTDATEVERSION_ de Ongerscheide am verjiische zwesche _FIRSTNUMBER_ un _SECONDNUMBER_:';
 $messages['insertion_found'] = 'Zwesche LEFT_VERSION un RIGHT_VERSION wood jet dobei jedonn';
 $messages['deletion_found'] = 'Zwesche LEFT_VERSION un RIGHT_VERSION wood jet fott jenumme';
+$messages['help_translating'] = 'Kanns beim Övversäze helfe!';

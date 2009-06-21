@@ -40,3 +40,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ versies gevonden';
 $messages['binary_test'] = 'Bezig met het vergelijken van de verschillen in _FIRSTDATEVERSION_ tussen _FIRSTNUMBER_ en _SECONDNUMBER_ met als uitgangspunt _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Invoeging gevonden tussen LEFT_VERSION en RIGHT_VERSION';
 $messages['deletion_found'] = 'Verwijdering gevonden tussen LEFT_VERSION en RIGHT_VERSION';
+$messages['help_translating'] = 'Helpen met vertalen in translatewiki.net';
