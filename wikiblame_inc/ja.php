@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Aotake
  * @author Fryed-peach
  */
 
@@ -40,4 +41,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_版が見つかりました';
 $messages['binary_test'] = '_SOURCENUMBER_番の次に、_FIRSTDATEVERSION_における_FIRSTNUMBER_番と_SECONDNUMBER_番の違いを比較しています:';
 $messages['insertion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で挿入されました';
 $messages['deletion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で削除されました';
-$messages['help_translating'] = '翻訳を手伝う';
+$messages['help_translating'] = 'translatewiki.net での翻訳作業を手伝う';

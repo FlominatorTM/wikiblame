@@ -40,3 +40,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ {{PLURAL:_NUMBEROFVERSIONS_|we
 $messages['binary_test'] = 'Rozdźěle w _FIRSTDATEVERSION_ mjazy _FIRSTNUMBER_ a _SECONDNUMBER_ se z _SOURCENUMBER_ pśirownuju:';
 $messages['insertion_found'] = 'Něco jo se mjazy LEFT_VERSION a RIGHT_VERSION zasajźiło';
 $messages['deletion_found'] = 'Něco jo se mjazy LEFT_VERSION a RIGHT_VERSION wulašowało';
+$messages['help_translating'] = 'Pśi pśełožowanju na translatewiki.net pomagaś';

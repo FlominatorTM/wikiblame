@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Malafaya
  * @author Mosca
  */
 
@@ -41,3 +42,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ edições encontradas';
 $messages['binary_test'] = 'A comparar diferenças em _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ e _SECONDNUMBER_ a partir da _SOURCENUMBER_:';
 $messages['insertion_found'] = 'O texto foi adicionado entre a edição LEFT_VERSION e a edição RIGHT_VERSION';
 $messages['deletion_found'] = 'O texto foi retirado entre a edição LEFT_VERSION e a edição RIGHT_VERSION';
+$messages['help_translating'] = 'Ajude a traduzir no translatewiki.net';

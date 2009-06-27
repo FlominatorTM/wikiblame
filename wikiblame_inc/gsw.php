@@ -40,3 +40,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versione gfunde';
 $messages['binary_test'] = 'Prieft dr Ibergang vum _FIRSTDATEVERSION_ zwische _FIRSTNUMBER_ un _SECONDNUMBER_ vu _SOURCENUMBER_ us:';
 $messages['insertion_found'] = 'Yyfiegig gfunde zwische LEFT_VERSION un RIGHT_VERSION';
 $messages['deletion_found'] = 'Leschig gfunde zwische LEFT_VERSION un RIGHT_VERSION';
+$messages['help_translating'] = 'Bim Ibersetze hälfe uf translatewiki.net';

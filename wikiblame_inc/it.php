@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Darth Kule
  * @author Melos <nnico AT jumpy.it>
  */
 
@@ -43,3 +44,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ revisioni trovate';
 $messages['binary_test'] = 'Confronto delle differenze in _FIRSTDATEVERSION_ fra _FIRSTNUMBER_ e _SECONDNUMBER_ mentre proviene da _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Inserzione trovata fra LEFT_VERSION e RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancellazione trovata fra LEFT_VERSION e RIGHT_VERSION';
+$messages['help_translating'] = 'Aiuta a tradurre su translatewiki.net';
