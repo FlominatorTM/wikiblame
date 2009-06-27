@@ -40,3 +40,4 @@ $messages['versions_found'] = 'Atopáronse _NUMBEROFVERSIONS_ versións';
 $messages['binary_test'] = 'Comparando as diferenzas de _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ e _SECONDNUMBER_ a partir de _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Atopouse unha inserción entre LEFT_VERSION e RIGHT_VERSION';
 $messages['deletion_found'] = 'Atopouse un borrado entre LEFT_VERSION e RIGHT_VERSION';
+$messages['help_translating'] = 'Axúdanos coas traducións en translatewiki.net';

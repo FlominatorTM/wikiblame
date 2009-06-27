@@ -12,6 +12,7 @@
  * @file
  *
  * @author Ferrer
+ * @author Lockal
  * @author Александр Сигачёв
  */
 
@@ -41,4 +42,4 @@ $messages['versions_found'] = 'Найдено _NUMBEROFVERSIONS_ версий с
 $messages['binary_test'] = 'Сравнение различий _FIRSTDATEVERSION_ между _FIRSTNUMBER_ и _SECONDNUMBER_ при переходе с _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Добавление обнаружено между LEFT_VERSION и RIGHT_VERSION';
 $messages['deletion_found'] = 'Исключение обнаружено между LEFT_VERSION и RIGHT_VERSION';
-$messages['help_translating'] = 'Справка перевода на translatewiki.net';
+$messages['help_translating'] = 'Помочь в переводе на translatewiki.net';

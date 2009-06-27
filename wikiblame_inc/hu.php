@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Tgr
  * @author Tgr <gtisza AT gmail.com>
  */
 
@@ -41,3 +42,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ változatot találtam';
 $messages['binary_test'] = 'A _FIRSTDATEVERSION_-i szerkesztés (_FIRSTNUMBER_. és _SECONDNUMBER_. változat között)  vizsgálata';
 $messages['insertion_found'] = 'Beillesztést találtam LEFT_VERSION és RIGHT_VERSION között';
 $messages['deletion_found'] = 'Törlést találtam LEFT_VERSION és RIGHT_VERSION között';
+$messages['help_translating'] = 'Segíts a fordításban a translatewiki.net oldalon';
