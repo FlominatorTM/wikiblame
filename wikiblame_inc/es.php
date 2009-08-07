@@ -37,3 +37,4 @@ $messages['contact'] = 'Contacto';
 $messages['search_in_progress'] = 'La versión del historial de _ARTICLELINK_ está siendo buscada por <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
+$messages['help_translating'] = 'Ayude traduciendo en translatewiki.net';
