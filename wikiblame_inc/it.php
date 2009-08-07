@@ -12,13 +12,14 @@
  * @file
  *
  * @author Darth Kule
+ * @author Lou Crazy
  * @author Melos <nnico AT jumpy.it>
  */
 
 $messages['lang'] = 'Lingua';
 $messages['project'] = 'Progetto';
 $messages['article'] = 'Pagina';
-$messages['needle'] = 'Cerca per';
+$messages['needle'] = 'Cerca la stringa';
 $messages['skipversions'] = 'Escludi sempre x versioni';
 $messages['ignorefirst'] = 'Ignora le prime x versioni';
 $messages['limit'] = 'Versioni da controllare';

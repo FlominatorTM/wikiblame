@@ -12,6 +12,7 @@
  * @file
  *
  * @author Fryed-peach
+ * @author Lou Crazy
  * @author Purodha
  * @author Siebrand
  */
@@ -21,6 +22,9 @@ $text_dir = '{{optional}}Directionality of the language. Should only be changed 
 * rtl for right to left';
 $messages['lang'] = '{{Identical|Language}}';
 $messages['article'] = '{{Identical|Page}}';
+$messages['needle'] = 'This message is used by wikiblame (http://wikipedia.ramselehof.de/wikiblame.php) 
+
+It is the caption for the text to be searched for.';
 $messages['skipversions'] = 'Label for a field in which the number of versions to skip while blaming can be entered.';
 $messages['ignorefirst'] = 'Label for a field in which the number of early versions to skip while blaming can be entered.';
 $messages['interpolated'] = 'Interpolated is a binary search. It is faster than linear search when a lot of versions have to be checked.';

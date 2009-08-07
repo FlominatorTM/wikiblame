@@ -11,6 +11,8 @@
  * @ingroup Language
  * @file
  *
+ * @author Rotemliss
+ * @author YaronSh
  * @author Yoni <yonidebest AT  gmail.com>
  */
 
@@ -40,3 +42,5 @@ $messages['execution_time'] = 'זמן חיפוש: _EXECUTIONTIME_ שניות';
 $messages['versions_found'] = 'נמצאו _NUMBEROFVERSIONS_ גרסאות';
 $messages['binary_test'] = 'משווה הבדלים ב-_FIRSTDATEVERSION_ בין _FIRSTNUMBER_ לבין _SECONDNUMBER_ כשהמקור הוא _SOURCENUMBER_:';
 $messages['insertion_found'] = 'נמצא שיבוץ בין LEFT_VERSION לבין RIGHT_VERSION';
+$messages['deletion_found'] = 'נמצאה מחיקה בין LEFT_VERSION ל־RIGHT_VERSION';
+$messages['help_translating'] = 'ניתן לעזור בתרגום באתר translatewiki.net';
