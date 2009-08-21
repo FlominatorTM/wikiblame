@@ -41,6 +41,10 @@ function language_list ($inc_dir)
 function get_language($lang, $inc_dir)
 {
 	global $messages, $inc_dir, $text_dir;
+	if(strlen($lang)>3)
+	{
+		$lang='en';
+	}
 	$langfile = "$inc_dir/$lang.php";
 
 	if(!@include ($langfile))
