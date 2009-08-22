@@ -17,6 +17,21 @@
 
 $text_dir = 'ltr';
 
+//Month names
+$messages['January'] = 'January';
+$messages['February'] = 'February';
+$messages['March'] = 'March';
+$messages['April'] = 'April';
+$messages['May'] = 'May';
+$messages['June'] = 'June';
+$messages['July'] = 'July';
+$messages['August'] = 'August';
+$messages['September'] = 'September';
+$messages['October'] = 'October';
+$messages['November'] = 'November';
+$messages['December'] = 'December';
+ 
+ 
 //Form elements
 $messages['lang'] = 'Language';
 $messages['project'] = 'Project';
