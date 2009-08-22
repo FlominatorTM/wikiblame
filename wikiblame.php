@@ -268,6 +268,8 @@ $the_months[] =  $messages['December'];
 <a href='<? echo $messages['contact_link'] ?>'><? echo $messages['contact'] ?></a> - 
 <a href='http://translatewiki.net/wiki/Translating:Wikiblame'><? echo $messages['help_translating'] ?></a> -
 <a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
+<br/> <br/>
+Do you think WikiBlame's user interface needs improvement? Please post your opinon <a target="_blank" href="https://sourceforge.net/tracker/index.php?func=detail&aid=2811478&group_id=261179&atid=1127548"> at SourceForge</a>.<br/> <br/>
 </div>
 <?php
 
@@ -505,7 +507,7 @@ function log_search ($time="started")
 		fputs($file, $header);
 		fputs($file, strftime("%Y-%m-%d").";");
 		fputs($file, strftime("%H:%M").";");
-		fputs($file, $_SERVER['REMOTE_ADDR'].";");
+		fputs($file, "\"".$_SERVER['REMOTE_ADDR']."\";");
 		fputs($file, $user_lang.";");
 		fputs($file, "\"".$needle."\";");
 		fputs($file, "\"".$article."\";");

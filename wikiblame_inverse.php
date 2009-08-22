@@ -509,7 +509,7 @@ function log_search ($time="started")
 		fputs($file, $header);
 		fputs($file, strftime("%Y-%m-%d").";");
 		fputs($file, strftime("%H:%M").";");
-		fputs($file, $_SERVER['REMOTE_ADDR'].";");
+		fputs($file, "\"".$_SERVER['REMOTE_ADDR']."\";");
 		fputs($file, $user_lang.";");
 		fputs($file, "\"".$needle."\";");
 		fputs($file, "\"".$article."\";");
