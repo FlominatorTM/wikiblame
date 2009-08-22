@@ -121,6 +121,19 @@ if($_REQUEST['order']=="asc")
 
 $user=$_REQUEST['user'];
 
+$the_months[] =  $messages['January'];
+$the_months[] =  $messages['February'];
+$the_months[] =  $messages['March'];
+$the_months[] =  $messages['April'];
+$the_months[] =  $messages['May'];
+$the_months[] =  $messages['June'];
+$the_months[] =  $messages['July'];
+$the_months[] =  $messages['August'];
+$the_months[] =  $messages['September'];
+$the_months[] =  $messages['October'];
+$the_months[] =  $messages['November'];
+$the_months[] =  $messages['December'];
+
 ?>		<div align="center">
 		<? language_list($inc_dir); ?>
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
@@ -202,7 +215,7 @@ $user=$_REQUEST['user'];
 						<? echo $messages['start_date'].' (DD-MM-YYYY)' ?>
 					</td>
 					<td>
-						<?php datedrop($messages['start_date'].' (DD-MM-YYYY)', "off", false, 2003, '', $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']); ?>
+						<?php datedrop_with_months($messages['start_date'].' (DD-MM-YYYY)', "off", false, 2003, '', $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months); ?>
 						
 						<input type="button" value="<? echo $messages['reset'] ?>" onclick="javascript:var now=new Date();document.forms['mainform'].elements['offtag'].value=now.getDate();document.forms['mainform'].elements['offmon'].value=now.getMonth()+1;document.forms['mainform'].elements['offjahr'].value=now.getFullYear();">
 					</td>
