@@ -462,7 +462,7 @@ function needleinversion ($id)
 
 function log_search ($time="started")
 {
-	global $article, $needle, $lang, $project, $asc, $use_binary_search, $server, $limit, $skipversions, $get_version_time, $versions, $offset, $user;
+	global $article, $needle, $lang, $project, $asc, $use_binary_search, $server, $limit, $skipversions, $get_version_time, $versions, $offset, $user, $user_lang;
 	$logfile = "wikiblame.csv";
 	
 	if(!file_exists($logfile))
@@ -470,6 +470,7 @@ function log_search ($time="started")
 		$header="Day;";
 		$header.="Time;";
 		$header.="IP (Client);";
+		$header.="UI Language;";
 		$header.="Needle;";
 		$header.="Article;";
 		$header.="Language;";
@@ -480,7 +481,7 @@ function log_search ($time="started")
 		$header.="Skipped Versions;";
 		$header.="Linear/Interpolated;";
 		$header.="Execution-Time;";
-		$header.="Get-Version-Time";
+		$header.="Get-Version-Time;";
 		$header.="Referer\n";
 		
 	}
@@ -492,8 +493,9 @@ function log_search ($time="started")
 		fputs($file, strftime("%Y-%m-%d").";");
 		fputs($file, strftime("%H:%M").";");
 		fputs($file, $_SERVER['REMOTE_ADDR'].";");
-		fputs($file, $needle.";");
-		fputs($file, $article.";");
+		fputs($file, $user_lang.";");
+		fputs($file, "\"".$needle."\";");
+		fputs($file, "\"".$article."\";");
 		fputs($file, $lang.";");
 		fputs($file, $project.";");
 		fputs($file, "'$offset;");
@@ -513,7 +515,7 @@ function log_search ($time="started")
 		
 		fputs($file, $time.";");
 		fputs($file, $get_version_time.";");
-		fputs($file, $HTTP_REFERER.";\n");
+		fputs($file, $_SERVER['HTTP_REFERER'].";\n");
 		fclose($file);
 	}
 	
