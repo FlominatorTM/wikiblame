@@ -3,7 +3,7 @@
  *
  */
 
-/** Pashto (پښتو)
+/** Simplified Chinese (‪中文(简体)‬)
  *
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -11,10 +11,7 @@
  * @ingroup Language
  * @file
  *
- * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ * @author PhiLiP
  */
 
-$messages['lang'] = 'ژبه';
-$messages['project'] = 'پروژه';
-$messages['article'] = 'مخ';
-$messages['start'] = 'پيلول';
+$messages['reset'] = '重置';
