@@ -12,6 +12,7 @@
  * @file
  *
  * @author Leinad
+ * @author Sp5uhe
  * @author WarX
  */
 
@@ -34,9 +35,11 @@ $messages['start'] = 'Start';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Instrukcja';
 $messages['contact'] = 'Kontakt';
+$messages['wrong_skips'] = 'Niewłaściwe ustawienia – jeśli pierwsze wersje __VERSIONSTOSKIP__ są pomijane, to żadne z wersji __VERSIONSTOSEARCH__, które mają zostać przeszukane nie będą przetworzone.';
 $messages['search_in_progress'] = 'Historia wersji _ARTICLELINK_ jest przeszukiwana w poszukiwaniu <b>_NEEDLE_</b>';
 $messages['execution_time'] = 'Czas wykonania: _EXECUTIONTIME_ sekund';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ wersji znaleziono';
 $messages['binary_test'] = 'Comparing differences in _FIRSTDATEVERSION_ between _FIRSTNUMBER_ and _SECONDNUMBER_ while coming from _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
+$messages['help_translating'] = 'Pomóż w tłumaczeniu na translatewiki.net';
