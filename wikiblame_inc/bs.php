@@ -14,6 +14,18 @@
  * @author CERminator
  */
 
+$messages['January'] = 'januar';
+$messages['February'] = 'februar';
+$messages['March'] = 'mart';
+$messages['April'] = 'april';
+$messages['May'] = 'maj';
+$messages['June'] = 'juni';
+$messages['July'] = 'juli';
+$messages['August'] = 'august';
+$messages['September'] = 'septembar';
+$messages['October'] = 'oktobar';
+$messages['November'] = 'novembar';
+$messages['December'] = 'decembar';
 $messages['lang'] = 'Jezik';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Stranica';

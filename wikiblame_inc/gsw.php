@@ -14,6 +14,18 @@
  * @author Als-Holder
  */
 
+$messages['January'] = 'Jänner';
+$messages['February'] = 'Februar';
+$messages['March'] = 'März';
+$messages['April'] = 'April';
+$messages['May'] = 'Mai';
+$messages['June'] = 'Juni';
+$messages['July'] = 'Juli';
+$messages['August'] = 'Augschte';
+$messages['September'] = 'Septämber';
+$messages['October'] = 'Oktober';
+$messages['November'] = 'Novämber';
+$messages['December'] = 'Dezämber';
 $messages['lang'] = 'Sproch';
 $messages['project'] = 'Projäkt';
 $messages['article'] = 'Artikel';

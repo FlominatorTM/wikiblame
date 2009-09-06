@@ -15,6 +15,18 @@
  * @author Fryed-peach
  */
 
+$messages['January'] = '1月';
+$messages['February'] = '2月';
+$messages['March'] = '3月';
+$messages['April'] = '4月';
+$messages['May'] = '5月';
+$messages['June'] = '6月';
+$messages['July'] = '7月';
+$messages['August'] = '8月';
+$messages['September'] = '9月';
+$messages['October'] = '10月';
+$messages['November'] = '11月';
+$messages['December'] = '12月';
 $messages['lang'] = '言語';
 $messages['project'] = 'プロジェクト';
 $messages['article'] = 'ページ';

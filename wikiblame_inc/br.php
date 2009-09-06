@@ -14,6 +14,18 @@
  * @author Fulup
  */
 
+$messages['January'] = 'Genver';
+$messages['February'] = 'C\'hwevrer';
+$messages['March'] = 'Meurzh';
+$messages['April'] = 'Ebrel';
+$messages['May'] = 'Mae';
+$messages['June'] = 'Mezheven';
+$messages['July'] = 'Gouere';
+$messages['August'] = 'Eost';
+$messages['September'] = 'Gwengolo';
+$messages['October'] = 'Here';
+$messages['November'] = 'Du';
+$messages['December'] = 'Kerzu';
 $messages['lang'] = 'Yezh';
 $messages['project'] = 'Raktres';
 $messages['article'] = 'Pajenn';

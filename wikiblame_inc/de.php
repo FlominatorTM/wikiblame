@@ -14,6 +14,18 @@
  * @author Umherirrender
  */
 
+$messages['January'] = 'Januar';
+$messages['February'] = 'Februar';
+$messages['March'] = 'März';
+$messages['April'] = 'April';
+$messages['May'] = 'Mai';
+$messages['June'] = 'Juni';
+$messages['July'] = 'Juli';
+$messages['August'] = 'August';
+$messages['September'] = 'September';
+$messages['October'] = 'Oktober';
+$messages['November'] = 'November';
+$messages['December'] = 'Dezember';
 $messages['lang'] = 'Sprache';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Artikel';

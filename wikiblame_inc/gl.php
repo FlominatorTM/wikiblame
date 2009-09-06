@@ -14,6 +14,18 @@
  * @author Toliño
  */
 
+$messages['January'] = 'xaneiro';
+$messages['February'] = 'febreiro';
+$messages['March'] = 'marzo';
+$messages['April'] = 'abril';
+$messages['May'] = 'maio';
+$messages['June'] = 'xuño';
+$messages['July'] = 'xullo';
+$messages['August'] = 'agosto';
+$messages['September'] = 'setembro';
+$messages['October'] = 'outubro';
+$messages['November'] = 'novembro';
+$messages['December'] = 'decembro';
 $messages['lang'] = 'Lingua';
 $messages['project'] = 'Proxecto';
 $messages['article'] = 'Páxina';

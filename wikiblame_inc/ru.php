@@ -16,6 +16,18 @@
  * @author Александр Сигачёв
  */
 
+$messages['January'] = 'января';
+$messages['February'] = 'февраля';
+$messages['March'] = 'марта';
+$messages['April'] = 'апреля';
+$messages['May'] = 'мая';
+$messages['June'] = 'июня';
+$messages['July'] = 'июля';
+$messages['August'] = 'августа';
+$messages['September'] = 'сентября';
+$messages['October'] = 'октября';
+$messages['November'] = 'ноября';
+$messages['December'] = 'декабря';
 $messages['lang'] = 'Язык';
 $messages['project'] = 'Проект';
 $messages['article'] = 'Страница';

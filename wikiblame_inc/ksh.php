@@ -14,6 +14,18 @@
  * @author Purodha
  */
 
+$messages['January'] = 'Jannowaa';
+$messages['February'] = 'Fäbrowaa';
+$messages['March'] = 'Määz';
+$messages['April'] = 'Apprell';
+$messages['May'] = 'Mäj';
+$messages['June'] = 'Juuni';
+$messages['July'] = 'Juuli';
+$messages['August'] = 'Oujoß';
+$messages['September'] = 'Säptämber';
+$messages['October'] = 'Oktoober';
+$messages['November'] = 'Novämber';
+$messages['December'] = 'Dezämber';
 $messages['lang'] = 'Schprooch';
 $messages['project'] = 'Projäk';
 $messages['article'] = 'Atikel';
