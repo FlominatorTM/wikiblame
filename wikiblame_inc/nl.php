@@ -14,6 +14,18 @@
  * @author Siebrand
  */
 
+$messages['January'] = 'januari';
+$messages['February'] = 'februari';
+$messages['March'] = 'maart';
+$messages['April'] = 'april';
+$messages['May'] = 'mei';
+$messages['June'] = 'juni';
+$messages['July'] = 'juli';
+$messages['August'] = 'augustus';
+$messages['September'] = 'september';
+$messages['October'] = 'oktober';
+$messages['November'] = 'november';
+$messages['December'] = 'december';
 $messages['lang'] = 'Taal';
 $messages['project'] = 'Project';
 $messages['article'] = 'Pagina';

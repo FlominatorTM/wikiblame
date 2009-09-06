@@ -14,6 +14,18 @@
  * @author Michawiki
  */
 
+$messages['January'] = 'Januar';
+$messages['February'] = 'Februar';
+$messages['March'] = 'Měrc';
+$messages['April'] = 'Apryl';
+$messages['May'] = 'Maj';
+$messages['June'] = 'Junij';
+$messages['July'] = 'Julij';
+$messages['August'] = 'Awgust';
+$messages['September'] = 'September';
+$messages['October'] = 'Oktober';
+$messages['November'] = 'Nowember';
+$messages['December'] = 'December';
 $messages['lang'] = 'Rěc';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Bok';

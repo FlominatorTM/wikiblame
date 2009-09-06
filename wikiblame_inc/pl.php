@@ -16,6 +16,18 @@
  * @author WarX
  */
 
+$messages['January'] = 'Styczeń';
+$messages['February'] = 'Luty';
+$messages['March'] = 'Marzec';
+$messages['April'] = 'Kwiecień';
+$messages['May'] = 'Maj';
+$messages['June'] = 'Czerwiec';
+$messages['July'] = 'Lipiec';
+$messages['August'] = 'Sierpień';
+$messages['September'] = 'Wrzesień';
+$messages['October'] = 'Październik';
+$messages['November'] = 'Listopad';
+$messages['December'] = 'Grudzień';
 $messages['lang'] = 'Język';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Strona';

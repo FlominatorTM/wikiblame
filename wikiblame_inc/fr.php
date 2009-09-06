@@ -11,9 +11,22 @@
  * @ingroup Language
  * @file
  *
+ * @author Crochet.david
  * @author IAlex
  */
 
+$messages['January'] = 'janvier';
+$messages['February'] = 'février';
+$messages['March'] = 'mars';
+$messages['April'] = 'avril';
+$messages['May'] = 'mai';
+$messages['June'] = 'juin';
+$messages['July'] = 'juillet';
+$messages['August'] = 'août';
+$messages['September'] = 'septembre';
+$messages['October'] = 'octobre';
+$messages['November'] = 'novembre';
+$messages['December'] = 'décembre';
 $messages['lang'] = 'Langue';
 $messages['project'] = 'Projet';
 $messages['article'] = 'Article';

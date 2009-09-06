@@ -14,6 +14,18 @@
  * @author Robby
  */
 
+$messages['January'] = 'Januar';
+$messages['February'] = 'Februar';
+$messages['March'] = 'Mäerz';
+$messages['April'] = 'Abrëll';
+$messages['May'] = 'Mee';
+$messages['June'] = 'Juni';
+$messages['July'] = 'Juli';
+$messages['August'] = 'August';
+$messages['September'] = 'September';
+$messages['October'] = 'Oktober';
+$messages['November'] = 'November';
+$messages['December'] = 'Dezember';
 $messages['lang'] = 'Sprooch';
 $messages['project'] = 'Projet';
 $messages['article'] = 'Säit';

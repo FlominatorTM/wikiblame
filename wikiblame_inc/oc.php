@@ -14,6 +14,18 @@
  * @author Cedric31
  */
 
+$messages['January'] = 'Genièr';
+$messages['February'] = 'Febrièr';
+$messages['March'] = 'Març';
+$messages['April'] = 'Abril';
+$messages['May'] = 'Mai';
+$messages['June'] = 'Junh';
+$messages['July'] = 'Julhet';
+$messages['August'] = 'Agost';
+$messages['September'] = 'Setembre';
+$messages['October'] = 'Octobre';
+$messages['November'] = 'Novembre';
+$messages['December'] = 'Decembre';
 $messages['lang'] = 'Lenga';
 $messages['project'] = 'Projècte';
 $messages['article'] = 'Pagina';

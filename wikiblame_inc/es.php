@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author XalD
  * @author XalD <hiperion93 AT gmail.com>
  */
 
