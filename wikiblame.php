@@ -334,7 +334,8 @@ if($needle!="")
 function listversions ($history)
 {
 	global $articleenc, $asc, $messages, $ignore_minors;
-	$searchterm = "name=\"diff\" /> "; //assumes that the history begins at the first occurrence of name="diff" />
+	$searchterm = "name=\"diff\" "; //assumes that the history begins at the first occurrence of name="diff" />  <!--removed />-->
+
 	$versionen=array(); //array to store the links in
 	
 	$revision_html_blocks = explode($searchterm, $history); 
