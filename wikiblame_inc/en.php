@@ -34,7 +34,9 @@ $messages['December'] = 'December';
  
 //Form elements
 $messages['lang'] = 'Language';
+$messages['lang_example'] = 'en, commons, …';
 $messages['project'] = 'Project';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, …';
 $messages['article'] = 'Page';
 $messages['needle'] = 'Search for';
 $messages['skipversions'] = 'Always skip x versions';

@@ -147,7 +147,7 @@ $the_months[] =  $messages['December'];
 						</label>
 					</td>
 					<td>
-						<input type="text" name="lang" id="lang" value="<?php echo $lang; ?>">
+						<input type="text" name="lang" id="lang" value="<?php echo $lang; ?>"> (<?php echo $messages['lang_example']; ?>)
 					</td>
 				</tr>
 				<tr>
@@ -157,7 +157,7 @@ $the_months[] =  $messages['December'];
 						</label>
 					</td>
 					<td>
-						<input type="text" name="project" id="project" value="<?php echo $project; ?>">
+						<input type="text" name="project" id="project" value="<?php echo $project; ?>">  (<?php echo $messages['project_example']; ?>)
 					</td>
 				</tr>				
 				<tr>
