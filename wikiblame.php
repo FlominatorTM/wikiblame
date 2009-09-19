@@ -41,9 +41,7 @@ if($text_dir=='rtl')
 	$alignment = 'left';
 }
 
-?>
-<body style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
-<?
+
 //for benchmarking reasons
 $beginning = time();
 
@@ -134,7 +132,22 @@ $the_months[] =  $messages['October'];
 $the_months[] =  $messages['November'];
 $the_months[] =  $messages['December'];
 
-?>		<div align="center">
+?>
+<body onload="document.mainform.<?
+//set cursor into needle or article field
+if($article!="")
+{
+	echo "needle";
+}
+else //no article selected
+{
+	echo "article";
+}
+
+?>.focus();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
+
+
+<div align="center">
 		<? language_list($inc_dir); ?>
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
 		<form method="post" name="mainform" action="<? echo $datei ?>">
