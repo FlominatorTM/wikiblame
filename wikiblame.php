@@ -306,7 +306,7 @@ if($needle!="")
 		$server= $lang.".".$project.".org";
 	}
 	
-	$historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset";
+	$historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=$user_lang";
 	
 	//@TODO: create a method from this
 	$msg = str_replace('_ARTICLELINK_', "<a href=\"http://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress']);
