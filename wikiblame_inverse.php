@@ -40,9 +40,6 @@ if($text_dir=='rtl')
 	$alignment = 'left';
 }
 
-?>
-<body style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
-<?
 //for benchmarking reasons
 $beginning = time();
 
@@ -130,7 +127,34 @@ if($_REQUEST['order']=="asc")
 
 $user=$_REQUEST['user'];
 
-?>		<div align="center">
+$the_months[] =  $messages['January'];
+$the_months[] =  $messages['February'];
+$the_months[] =  $messages['March'];
+$the_months[] =  $messages['April'];
+$the_months[] =  $messages['May'];
+$the_months[] =  $messages['June'];
+$the_months[] =  $messages['July'];
+$the_months[] =  $messages['August'];
+$the_months[] =  $messages['September'];
+$the_months[] =  $messages['October'];
+$the_months[] =  $messages['November'];
+$the_months[] =  $messages['December'];
+?>
+<body onload="document.mainform.<?
+//set cursor into needle or article field
+if($article!="")
+{
+	echo "needle";
+}
+else //no article selected
+{
+	echo "article";
+}
+
+?>.focus();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
+
+
+<div align="center">
 		<? language_list($inc_dir); ?>
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
 		<form method="post" name="mainform" action="<? echo $datei ?>">
@@ -143,7 +167,7 @@ $user=$_REQUEST['user'];
 						</label>
 					</td>
 					<td>
-						<input type="text" name="lang" id="lang" value="<?php echo $lang; ?>">
+						<input type="text" name="lang" id="lang" value="<?php echo $lang; ?>"> (<?php echo $messages['lang_example']; ?>)
 					</td>
 				</tr>
 				<tr>
@@ -153,8 +177,7 @@ $user=$_REQUEST['user'];
 						</label>
 					</td>
 					<td>
-						<input type="text" name="project" id="project" value="<?php echo $project; ?>">
-					</td>
+						<input type="text" name="project" id="project" value="<?php echo $project; ?>">  (<?php echo $messages['project_example']; ?>)					</td>
 				</tr>				
 				<tr>
 					<td align="<? echo $alignment ?>">
@@ -211,7 +234,7 @@ $user=$_REQUEST['user'];
 						<? echo $messages['start_date'].' (DD-MM-YYYY)' ?>
 					</td>
 					<td>
-						<?php datedrop($messages['start_date'].' (DD-MM-YYYY)', "off", false, 2003, '', $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']); ?>
+						<?php datedrop_with_months($messages['start_date'].' (DD-MM-YYYY)', "off", false, 2003, '', $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months); ?>
 						
 						<input type="button" value="<? echo $messages['reset'] ?>" onclick="javascript:var now=new Date();document.forms['mainform'].elements['offtag'].value=now.getDate();document.forms['mainform'].elements['offmon'].value=now.getMonth()+1;document.forms['mainform'].elements['offjahr'].value=now.getFullYear();">
 					</td>
@@ -272,6 +295,9 @@ $user=$_REQUEST['user'];
 <a href='<? echo $messages['manual_link'] ?>'><? echo $messages['manual'] ?></a> - 
 <a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a> <? print_translator($user_lang)?>
 <a href='<? echo $messages['contact_link'] ?>'><? echo $messages['contact'] ?></a> - 
+<br/> <br/>
+Do you think WikiBlame's user interface needs improvement? Please post your opinon <a target="_blank" href="https://sourceforge.net/tracker/index.php?func=detail&aid=2811478&group_id=261179&atid=1127548"> at SourceForge</a>.<br/> <br/>
+
 </div>
 <?php
 
@@ -336,7 +362,8 @@ if($needle!="")
 function listversions ($history)
 {
 	global $articleenc, $asc, $messages, $ignore_minors;
-	$searchterm = "name=\"diff\" /> "; //assumes that the history begins at the first occurrence of name="diff" />
+	$searchterm = "name=\"diff\" "; //assumes that the history begins at the first occurrence of name="diff" />  <!--removed />-->
+
 	$versionen=array(); //array to store the links in
 	
 	$revision_html_blocks = explode($searchterm, $history); 
@@ -344,26 +371,35 @@ function listversions ($history)
 	/*
 	result in $revision_html_blocks are parts of the revision history that look like this (without line wraps) 
 	
-	<a href="/w/index.php?title=Hinterzarten&amp;oldid=282077848" title="Hinterzarten">09:56, 6 April 2009</a> 
-	<span class='history-user'><a href="/wiki/User:KapHorn" title="User:KapHorn" class="mw-userlink">KapHorn</a>  
-		<span class="mw-usertoollinks">(<a href="/wiki/User_talk:KapHorn" title="User talk:KapHorn">talk</a>&#32;|&#32;
-			<a href="/wiki/Special:Contributions/KapHorn" title="Special:Contributions/KapHorn">contribs</a>)
+	id="mw-diff-64569839" /> 
+	<a href="/w/index.php?title=Hinterzarten&amp;oldid=64569839" title="Hinterzarten">11:27, 16. Sep. 2009</a> 
+	<span class='history-user'>
+		<a href="/wiki/Benutzer:TXiKiBoT" title="Benutzer:TXiKiBoT" class="mw-userlink">TXiKiBoT</a> 
+		<span class="mw-usertoollinks">(<a href="/wiki/Benutzer_Diskussion:TXiKiBoT" title="Benutzer Diskussion:TXiKiBoT">Diskussion</a> | 
+			<a href="/wiki/Spezial:Beitr%C3%A4ge/TXiKiBoT" title="Spezial:BeitrÃ¤ge/TXiKiBoT">BeitrÃ¤ge</a>)
 		</span>
-	/span> 
-	<span class="history-size">(4,556 bytes)</span> 
-	<span class="comment">(Changed link &quot;Höllental&quot;)</span> 
-	(<span class="mw-history-undo"><a href="/w/index.php?title=Hinterzarten&amp;action=edit&amp;undoafter=260903093&amp;undo=282077848" title="Hinterzarten">undo</a></span>) 
+	</span> 
+	<abbr class="minor" title="Kleine Ã?nderung">K</abbr> 
+	<span class="history-size">(10.740 Bytes)</span> 
+	<span class="comment">(Bot: ErgÃ¤nze: <a href="http://vi.wikipedia.org/wiki/Hinterzarten" class="extiw" title="vi:Hinterzarten">vi:Hinterzarten</a>)</span> (<span class="mw-history-undo"><a href="/w/index.php?title=Hinterzarten&amp;action=edit&amp;undoafter=64556690&amp;undo=64569839" title="Hinterzarten">entfernen</a></span>) </span> <small><span class='fr-hist-autoreviewed plainlinks'>[<a href="http://de.wikipedia.org/w/index.php?title=Hinterzarten&amp;stableid=64569839" class="external text" rel="nofollow">automatisch gesichtet</a>]</span></small></li> <li><span class='flaggedrevs-color-1'>(<a href="/w/index.php?title=Hinterzarten&amp;diff=64569839&amp;oldid=64556690" title="Hinterzarten">Aktuell</a>) (<a href="/w/index.php?title=Hinterzarten&amp;diff=64556690&amp;oldid=63484457" title="Hinterzarten">Vorherige</a>) <input type="radio" value="64556690" checked="checked" name="oldid" id="mw-oldid-64556690" /><input type="radio" value="64556690" 
 	</li>	*/
 	
 	//iterate over the parts 
 	for($block_i = 1;$block_i<count($revision_html_blocks);$block_i++)
 	{
+		//find the beginning of the a tag
+		$start_pos_of_a = strpos($revision_html_blocks[$block_i], "<a"); 
+		
 		//find the closing sequence of the a tag
 		$pos_of_closed_a = strpos($revision_html_blocks[$block_i], "</a>"); 
 		
-		//extract the link from the current part (e.g. <a href="/w/index.php?title=Hinterzarten&amp;oldid=282077848" title="Hinterzarten">09:56, 6 April 2009)
-		$one_version = substr($revision_html_blocks[$block_i], 0, $pos_of_closed_a);
+		$length_between_both = $pos_of_closed_a - $start_pos_of_a;
 		
+		//extract the link from the current part like this one:
+		$one_version = substr($revision_html_blocks[$block_i], $start_pos_of_a , $length_between_both);
+		
+		//result: <a href="/w/index.php?title=Hinterzarten&amp;oldid=64569839" title="Hinterzarten">11:27, 16. Sep. 2009
+
 		if($ignore_minors)
 		{
 			//checks if the revision was marked as minor edit
