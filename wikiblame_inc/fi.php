@@ -11,10 +11,23 @@
  * @ingroup Language
  * @file
  *
+ * @author Crt
  * @author Nike
  * @author Silvonen
  */
 
+$messages['January'] = 'tammikuu';
+$messages['February'] = 'helmikuu';
+$messages['March'] = 'maaliskuu';
+$messages['April'] = 'huhtikuu';
+$messages['May'] = 'toukokuu';
+$messages['June'] = 'kesäkuu';
+$messages['July'] = 'heinäkuu';
+$messages['August'] = 'elokuu';
+$messages['September'] = 'syyskuu';
+$messages['October'] = 'lokakuu';
+$messages['November'] = 'marraskuu';
+$messages['December'] = 'joulukuu';
 $messages['lang'] = 'Kieli';
 $messages['project'] = 'Projekti';
 $messages['article'] = 'Sivu';
@@ -29,3 +42,4 @@ $messages['interpolated'] = 'interpoloitu (nopeampi, jos versioita on paljon)';
 $messages['manual'] = 'Ohje';
 $messages['contact'] = 'Ota yhteyttä';
 $messages['execution_time'] = 'Suoritusaika: _EXECUTIONTIME_ sekuntia';
+$messages['help_translating'] = 'Auta kääntämisessä – translatewiki.net';

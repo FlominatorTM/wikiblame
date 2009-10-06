@@ -11,10 +11,23 @@
  * @ingroup Language
  * @file
  *
+ * @author Glanthor Reviol
  * @author Tgr
  * @author Tgr <gtisza AT gmail.com>
  */
 
+$messages['January'] = 'Január';
+$messages['February'] = 'Február';
+$messages['March'] = 'Március';
+$messages['April'] = 'Április';
+$messages['May'] = 'Május';
+$messages['June'] = 'Június';
+$messages['July'] = 'Július';
+$messages['August'] = 'Augusztus';
+$messages['September'] = 'Szeptember';
+$messages['October'] = 'Október';
+$messages['November'] = 'November';
+$messages['December'] = 'December';
 $messages['lang'] = 'Nyelv';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Szócikk';

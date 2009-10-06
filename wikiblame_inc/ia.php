@@ -14,6 +14,18 @@
  * @author McDutchie
  */
 
+$messages['January'] = 'januario';
+$messages['February'] = 'februario';
+$messages['March'] = 'martio';
+$messages['April'] = 'april';
+$messages['May'] = 'maio';
+$messages['June'] = 'junio';
+$messages['July'] = 'julio';
+$messages['August'] = 'augusto';
+$messages['September'] = 'septembre';
+$messages['October'] = 'octobre';
+$messages['November'] = 'novembre';
+$messages['December'] = 'decembre';
 $messages['lang'] = 'Lingua';
 $messages['project'] = 'Projecto';
 $messages['article'] = 'Pagina';

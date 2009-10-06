@@ -11,9 +11,22 @@
  * @ingroup Language
  * @file
  *
+ * @author An13sa
  * @author Kobazulo
  */
 
+$messages['January'] = 'Urtarrila';
+$messages['February'] = 'Otsaila';
+$messages['March'] = 'Martxoa';
+$messages['April'] = 'Apirila';
+$messages['May'] = 'Maiatza';
+$messages['June'] = 'Ekaina';
+$messages['July'] = 'Uztaila';
+$messages['August'] = 'Abuztua';
+$messages['September'] = 'Iraila';
+$messages['October'] = 'Urria';
+$messages['November'] = 'Azaroa';
+$messages['December'] = 'Abendua';
 $messages['lang'] = 'Hizkuntza';
 $messages['project'] = 'Proiektua';
 $messages['article'] = 'Orrialdea';

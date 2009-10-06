@@ -11,10 +11,23 @@
  * @ingroup Language
  * @file
  *
+ * @author Crazymadlover
  * @author XalD
  * @author XalD <hiperion93 AT gmail.com>
  */
 
+$messages['January'] = 'Enero';
+$messages['February'] = 'Febrero';
+$messages['March'] = 'Marzo';
+$messages['April'] = 'Abril';
+$messages['May'] = 'Mayo';
+$messages['June'] = 'Junio';
+$messages['July'] = 'Julio';
+$messages['August'] = 'Agosto';
+$messages['September'] = 'Setiembre';
+$messages['October'] = 'Octubre';
+$messages['November'] = 'Noviembre';
+$messages['December'] = 'Diciembre';
 $messages['lang'] = 'Idioma';
 $messages['project'] = 'Proyecto';
 $messages['article'] = 'Artículo';
@@ -35,7 +48,11 @@ $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';
 $messages['manual_link'] = 'http://es.wikipedia.org/wiki/Usuario:XalD/WikiBlame';
 $messages['contact'] = 'Contacto';
+$messages['wrong_skips'] = 'Configuraciones erróneas: Si las primeras versiones __VERSIONSTOSKIP__ son saltadas, entonces ninguna de las versiones __VERSIONSTOSEARCH__ a ser buscadas serán procesadas.';
 $messages['search_in_progress'] = 'La versión del historial de _ARTICLELINK_ está siendo buscada por <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
+$messages['binary_test'] = 'Comparando diferencias en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ y _SECONDNUMBER_ cuando vengan de _SOURCENUMBER_:';
+$messages['insertion_found'] = 'Inserción encontrada entre LEFT_VERSION y RIGHT_VERSION';
+$messages['deletion_found'] = 'Borrado encontrado entre LEFT_VERSION y RIGHT_VERSION';
 $messages['help_translating'] = 'Ayude traduciendo en translatewiki.net';

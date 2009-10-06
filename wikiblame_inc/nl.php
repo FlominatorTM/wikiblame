@@ -27,6 +27,7 @@ $messages['October'] = 'oktober';
 $messages['November'] = 'november';
 $messages['December'] = 'december';
 $messages['lang'] = 'Taal';
+$messages['lang_example'] = 'nl, commons, ...';
 $messages['project'] = 'Project';
 $messages['article'] = 'Pagina';
 $messages['needle'] = 'Zoeken naar';
