@@ -12,8 +12,21 @@
  * @file
  *
  * @author Helix84
+ * @author Rudko
  */
 
+$messages['January'] = 'Január';
+$messages['February'] = 'Február';
+$messages['March'] = 'Marec';
+$messages['April'] = 'Apríl';
+$messages['May'] = 'Máj';
+$messages['June'] = 'Jún';
+$messages['July'] = 'Júl';
+$messages['August'] = 'August';
+$messages['September'] = 'September';
+$messages['October'] = 'Október';
+$messages['November'] = 'November';
+$messages['December'] = 'December';
 $messages['lang'] = 'Jazyk';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Stránka';

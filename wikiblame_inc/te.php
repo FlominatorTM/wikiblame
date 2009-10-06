@@ -14,5 +14,24 @@
  * @author Kiranmayee
  */
 
+$messages['January'] = 'జానుఅరీ';
+$messages['February'] = 'ఫిబ్రవరి';
+$messages['March'] = 'మార్చి';
+$messages['April'] = 'ఏప్రిల్';
+$messages['May'] = 'మే';
+$messages['June'] = 'జూన్';
+$messages['July'] = 'జూలై';
+$messages['August'] = 'ఆగష్టు';
+$messages['September'] = 'సెప్టెంబరు';
+$messages['October'] = 'అక్టోబరు';
+$messages['November'] = 'నవంబరు';
+$messages['December'] = 'డిసెంబరు';
 $messages['lang'] = 'భాష';
 $messages['project'] = 'ప్రాజెక్టు';
+$messages['article'] = 'పేజి';
+$messages['needle'] = 'అన్వేషణ';
+$messages['start_date'] = 'ఆరంభ తేదీ';
+$messages['newest_first'] = 'కొత్తవి ముందర';
+$messages['oldest_first'] = 'పాతవి ముందర';
+$messages['search_method'] = 'అన్వేషణా విదానము';
+$messages['start'] = 'ఆరంభము';

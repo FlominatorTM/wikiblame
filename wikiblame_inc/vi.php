@@ -14,6 +14,18 @@
  * @author Vinhtantran
  */
 
+$messages['January'] = 'Tháng 1';
+$messages['February'] = 'Tháng 2';
+$messages['March'] = 'Tháng 3';
+$messages['April'] = 'Tháng 4';
+$messages['May'] = 'Tháng 5';
+$messages['June'] = 'Tháng 6';
+$messages['July'] = 'Tháng 7';
+$messages['August'] = 'Tháng 8';
+$messages['September'] = 'Tháng 9';
+$messages['October'] = 'Tháng 10';
+$messages['November'] = 'Tháng 11';
+$messages['December'] = 'Tháng 12';
 $messages['lang'] = 'Ngôn ngữ';
 $messages['project'] = 'Dự án';
 $messages['article'] = 'Trang';

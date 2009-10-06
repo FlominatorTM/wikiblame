@@ -25,6 +25,7 @@ $messages['article'] = '{{Identical|Page}}';
 $messages['needle'] = 'This message is used by wikiblame (http://wikipedia.ramselehof.de/wikiblame.php). It is the caption for the text to be searched for.';
 $messages['skipversions'] = 'Label for a field in which the number of versions to skip while blaming can be entered.';
 $messages['ignorefirst'] = 'Label for a field in which the number of early versions to skip while blaming can be entered.';
+$messages['start_date'] = '{{Identical|Start date}}';
 $messages['interpolated'] = 'Interpolated is a binary search. It is faster than linear search when a lot of versions have to be checked.';
 $messages['reset'] = '{{Identical|Reset}}';
 $messages['manual'] = 'Label for link to a user manual.';

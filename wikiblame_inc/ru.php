@@ -30,6 +30,7 @@ $messages['November'] = 'ноября';
 $messages['December'] = 'декабря';
 $messages['lang'] = 'Язык';
 $messages['project'] = 'Проект';
+$messages['project_example'] = 'Википедия, Викитека, Викимедиа…';
 $messages['article'] = 'Страница';
 $messages['needle'] = 'Строка для поиска';
 $messages['skipversions'] = 'Всегда пропускать X версий';

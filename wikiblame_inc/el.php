@@ -12,8 +12,21 @@
  * @file
  *
  * @author Consta
+ * @author Crazymadlover
  */
 
+$messages['January'] = 'Ιανουάριος';
+$messages['February'] = 'Φεβρουάριος';
+$messages['March'] = 'Μάρτιος';
+$messages['April'] = 'Απρίλιος';
+$messages['May'] = 'Μάιος';
+$messages['June'] = 'Ιούνιος';
+$messages['July'] = 'Ιούλιος';
+$messages['August'] = 'Αύγουστος';
+$messages['September'] = 'Σεπτέμβριος';
+$messages['October'] = 'Οκτώβριος';
+$messages['November'] = 'Νοέμβριος';
+$messages['December'] = 'Δεκέμβριος';
 $messages['lang'] = 'Γλώσσα';
 $messages['project'] = 'Εγχείρημα';
 $messages['article'] = 'Σελίδα';
@@ -23,6 +36,7 @@ $messages['order'] = 'Σειρά';
 $messages['newest_first'] = 'πρώτα τα νεώτερα';
 $messages['oldest_first'] = 'πρώτα τα παλαιότερα';
 $messages['search_method'] = 'Μέθοδος αναζήτησης';
+$messages['linear'] = 'γραμμική';
 $messages['start'] = 'Έναρξη';
 $messages['reset'] = 'Επαναφορά';
 $messages['manual'] = 'Εγχειρίδιο';

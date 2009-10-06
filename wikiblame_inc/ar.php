@@ -11,9 +11,22 @@
  * @ingroup Language
  * @file
  *
+ * @author Meno25
  * @author ترجمان05
  */
 
+$messages['January'] = 'يناير';
+$messages['February'] = 'فبراير';
+$messages['March'] = 'مارس';
+$messages['April'] = 'أبريل';
+$messages['May'] = 'مايو';
+$messages['June'] = 'يونيو';
+$messages['July'] = 'يوليو';
+$messages['August'] = 'أغسطس';
+$messages['September'] = 'سبتمبر';
+$messages['October'] = 'أكتوبر';
+$messages['November'] = 'نوفمبر';
+$messages['December'] = 'ديسمبر';
 $messages['lang'] = 'لغة';
 $messages['project'] = 'مشروع';
 $messages['article'] = 'صفحة';
