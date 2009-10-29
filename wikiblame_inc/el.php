@@ -13,6 +13,7 @@
  *
  * @author Consta
  * @author Crazymadlover
+ * @author Omnipaedista
  */
 
 $messages['January'] = 'Ιανουάριος';
@@ -31,6 +32,7 @@ $messages['lang'] = 'Γλώσσα';
 $messages['project'] = 'Εγχείρημα';
 $messages['article'] = 'Σελίδα';
 $messages['needle'] = 'Αναζήτηση για';
+$messages['limit'] = 'Εκδοχές προς έλεγχο';
 $messages['start_date'] = 'Ημερομηνία έναρξης';
 $messages['order'] = 'Σειρά';
 $messages['newest_first'] = 'πρώτα τα νεώτερα';
