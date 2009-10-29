@@ -12,6 +12,7 @@
  * @file
  *
  * @author Meno25
+ * @author OsamaK
  * @author ترجمان05
  */
 
@@ -27,11 +28,11 @@ $messages['September'] = 'سبتمبر';
 $messages['October'] = 'أكتوبر';
 $messages['November'] = 'نوفمبر';
 $messages['December'] = 'ديسمبر';
-$messages['lang'] = 'لغة';
-$messages['project'] = 'مشروع';
-$messages['article'] = 'صفحة';
-$messages['needle'] = 'بحث عن';
-$messages['skipversions'] = 'دائما إقفز الى النسخة س';
+$messages['lang'] = 'اللغة';
+$messages['project'] = 'المشروع';
+$messages['article'] = 'الصفحة';
+$messages['needle'] = 'ابحث عن';
+$messages['skipversions'] = 'تخطَّ دائما النسخ س';
 $messages['ignorefirst'] = 'أهمل النسخة س الأولى';
 $messages['limit'] = 'نسخ للمراجعة';
 $messages['start_date'] = 'تاريخ البداية';
@@ -52,4 +53,4 @@ $messages['versions_found'] = '_NUMBEROFVERSIONS_ نسخ موجودة';
 $messages['binary_test'] = 'مقارنة الإختلافات في _FIRSTDATEVERSION_ بين _FIRSTNUMBER_ و _SECONDNUMBER_ حتى يحصل عليه من _SOURCENUMBER_:';
 $messages['insertion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION';
 $messages['deletion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION';
-$messages['help_translating'] = 'ساعد على الترجمة في ترانسليت ويكي.نات';
+$messages['help_translating'] = 'ساعد في الترجمة عبر translatewiki.net';
