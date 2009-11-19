@@ -1,76 +1,57 @@
 <?php
 
-// list all languages available in inc directory
-function language_list ($inc_dir)
-{
-    global $user_lang;
-    $dir_ref = opendir($inc_dir);
-    rewinddir($dir_ref);
-	$list = array();
-	do
-	{
-		$file = readdir($dir_ref); //get next file of inc directory
-		clearstatcache();
-		
-		if((substr($file,0,1)!=".")&&(!is_dir($inc_dir."/".$file))&&($file!="")) //current file is really a file and no directory
-		{
-			if((stristr($file, '.php')) && (!stristr($file, 'qqq')))  //file is really a language file (qqq comes from translatewiki)
-			{
-				$list[] = str_replace('.php', '', $file); //add language of file to the list
-			}
-		}
-	}while($file);
-		
-	sort($list);
-	closedir($dir_ref);
+/**
+ * List all languages available in inc directory
+ */
+function ui_language_list() {
+    
+    $ui_language_list = glob(TRANSLATION_DIR.'*.php');
+    
+    foreach ($ui_language_list AS $l) {
+        $ui_lang                = str_replace('.php', '', basename($l));
+        $ui_languages[$ui_lang] = $ui_lang;
+    }
+	asort($ui_languages);
 
-	//create links to all languages
-	foreach($list AS $language)
-	{
-		if($language!=$user_lang)
-		{
-			echo "[<a href=\"?user_lang=$language\">$language</a>]&nbsp;";
-		}
-		else
-		{
-			echo "[$language]&nbsp;";
-		}
+    $form = new HTML_QuickForm('ui_language');
+    $form->setDefaults(array('user_lang' => read_ui_lang()));
+    $form->addElement('select', 'user_lang', NULL, $ui_languages);
+    $form->addElement('submit', 'change', 'change');
+
+    return $form->toHtml();
+}
+
+function include_language_file($ui_lang = NULL) {
+    global $messages, $text_dir;
+    
+	if (strlen($ui_lang) > 7) {
+		$ui_lang = DEFAULT_UI_LANGUAGE;
+	}
+    
+    // security
+    $ui_lang = str_replace(array('.', '/', '\\', ' '), '', $ui_lang);
+    
+    $langfile           = TRANSLATION_DIR.$ui_lang.'.php';
+    $langfile_fallback  = TRANSLATION_DIR.DEFAULT_UI_LANGUAGE.'.php';
+
+	if (!@include $langfile) {
+		include $langfile_fallback;
 	}
 }
 
-function get_language($lang, $inc_dir)
-{
-	global $messages, $inc_dir, $text_dir;
-	if(strlen($lang)>7) //3 was too small because of zh-hans
-	{
-		$lang='en';
-	}
-	$langfile = "$inc_dir/$lang.php";
+/**
+ * Handles the client language
+ */
+function read_ui_lang() {
+	$ui_lang = param('user_lang');
 
-	if(!@include ($langfile))
-	{
-		//echo "Using default language: english";
-		include("$inc_dir/en.php");
+	if (empty($ui_lang)) {
+		$ui_lang = get_client_language();
 	}
+	
+    if (empty($ui_lang)) {
+		$ui_lang = DEFAULT_UI_LANGUAGE;
+	}
+
+	return $ui_lang;
 }
-
-//tries to retrieve the language of the browser
-function read_language()
-{
-	$user_lang=$_REQUEST['user_lang'];
-
-	if($user_lang=="")
-	{
-		//http://www.php-resource.de/forum/showthread.php?threadid=22545
-		preg_match("/^([a-z]+)-?([^,;]*)/i", $_SERVER["HTTP_ACCEPT_LANGUAGE"], $matches);
-		
-		$user_lang = $matches[1];
-		//echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];
-		if($user_lang=="")
-		{
-			$user_lang='en';
-		}
-	}
-	return $user_lang;
-}
-?>
