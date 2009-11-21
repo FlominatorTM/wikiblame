@@ -48,7 +48,7 @@ $beginning = time();
 $article = $_REQUEST['article']; 
 $articleenc = name_in_url($article);
 
-$needle = $_REQUEST['needle']; 
+$needle = trim($_REQUEST['needle']); 
 
 $lang = $_REQUEST['lang'];
 if($lang=="")
