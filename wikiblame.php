@@ -50,7 +50,7 @@ $articleenc = name_in_url($article);
 
 $needle = trim($_REQUEST['needle']); 
 
-$lang = $_REQUEST['lang'];
+$lang = correct_language_mistakes($_REQUEST['lang']);
 if($lang=="")
 {
 	$lang=$user_lang; 
@@ -340,6 +340,73 @@ if($needle!="")
 	echo str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
 	
 		echo '<br /><br /><small>http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."l<!----->ang=$lang&limit=$limit&ignorefirst=$ignorefirst&offjahr=$offjahr&offmon=$offmon&offtag=$offtag&searchmethod=$searchmethod&order=$order</small>";
+	
+}
+
+//tries to avoid most of the incorrect entered languages
+function correct_language_mistakes($lang)
+{
+	$lang = strtolower(trim($lang));
+	
+	//first: parts of strings that occour in a lot of translations of a language
+	if(stristr($lang, 'esp'))
+	{
+		return 'es';
+	}
+	
+	if(stristr($lang, 'eng'))
+	{
+		return 'en';
+	}
+	
+	if(stristr($lang, 'catal'))
+	{
+		return 'ca';
+	}
+	
+	if(stristr($lang, 'ita'))
+	{
+		return 'it';
+	}
+	
+	if(stristr($lang, 'pol'))
+	{
+		return 'pl';
+	}
+	
+	if(stristr($lang, 'viet'))
+	{
+		return 'vi';
+	}
+
+	//second: some known words
+	switch($lang)
+	{
+		case 'afrikaans':	return 'af';
+		case 'aleman':		return 'de';
+		case 'anglais':		return 'en';
+		case 'arabic':		return 'ar';
+		case 'castellano':	return 'es';
+		case 'deutsch':		return 'de';
+		case 'enlish': 		return 'en';
+		case 'elinika':		return 'el';
+		case 'ellinika':	return 'el';
+		case 'elινικα':		return 'el';
+		case 'françai';		return 'fr';
+		case 'francais';	return 'fr';
+		case 'français';	return 'fr';
+		case 'française';	return 'fr';
+		case 'french';		return 'fr';
+		case 'german': 		return 'de';
+		case 'hindi': 		return 'hi';
+		case 'inggris': 	return 'id';
+		case 'khmer':		return 'km';
+		case 'portugues': 	return 'pt';
+		case 'spanish':		return 'es';
+		case '中文':			return 'zh';
+		default: return $lang;
+	}
+	
 	
 }
 
