@@ -12,6 +12,7 @@
  * @file
  *
  * @author Joseph
+ * @author Vito Genovese
  */
 
 $messages['January'] = 'Ocak';
@@ -49,6 +50,7 @@ $messages['wrong_skips'] = 'Yanlış ayar: Eğer ilk __VERSIONSTOSKIP__ sürüm 
 $messages['search_in_progress'] = '_ARTICLELINK_ maddesinin sürüm geçmişinde <b>_NEEDLE_</b> aranıyor...';
 $messages['execution_time'] = 'Çalıştoğı süre: _EXECUTIONTIME_ saniye';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ sürüm bulundu';
+$messages['binary_test'] = '_SOURCENUMBER_ kaynağından gelirken _FIRSTDATEVERSION_ dahilinde _FIRSTNUMBER_ ve _SECONDNUMBER_ arasındaki farklar karşılaştırılıyor:';
 $messages['insertion_found'] = 'LEFT_VERSION ve RIGHT_VERSION arasında ekleme bulundu';
 $messages['deletion_found'] = 'LEFT_VERSION ve RIGHT_VERSION arasında silme bulundu';
 $messages['help_translating'] = 'translatewiki.net\'de çevirmeye yardımcı olun';

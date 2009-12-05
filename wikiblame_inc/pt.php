@@ -11,10 +11,23 @@
  * @ingroup Language
  * @file
  *
+ * @author Hamilton Abreu
  * @author Malafaya
  * @author Mosca
  */
 
+$messages['January'] = 'Janeiro';
+$messages['February'] = 'Fevereiro';
+$messages['March'] = 'Março';
+$messages['April'] = 'Abril';
+$messages['May'] = 'Maio';
+$messages['June'] = 'Junho';
+$messages['July'] = 'Julho';
+$messages['August'] = 'Agosto';
+$messages['September'] = 'Setembro';
+$messages['October'] = 'Outubro';
+$messages['November'] = 'Novembro';
+$messages['December'] = 'Dezembro';
 $messages['lang'] = 'Língua do projeto';
 $messages['project'] = 'Projeto';
 $messages['article'] = 'Página';
