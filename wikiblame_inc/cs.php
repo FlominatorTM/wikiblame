@@ -11,9 +11,22 @@
  * @ingroup Language
  * @file
  *
+ * @author Kuvaly
  * @author Mormegil
  */
 
+$messages['January'] = 'Leden';
+$messages['February'] = 'Únor';
+$messages['March'] = 'Březen';
+$messages['April'] = 'Duben';
+$messages['May'] = 'Květen';
+$messages['June'] = 'Červen';
+$messages['July'] = 'Červenec';
+$messages['August'] = 'Srpen';
+$messages['September'] = 'Září';
+$messages['October'] = 'Říjen';
+$messages['November'] = 'Listopad';
+$messages['December'] = 'Prosinec';
 $messages['lang'] = 'Jazyk';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Stránka';
