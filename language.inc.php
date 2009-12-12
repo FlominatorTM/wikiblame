@@ -41,7 +41,7 @@ function language_list ($inc_dir)
 function get_language($lang, $inc_dir)
 {
 	global $messages, $inc_dir, $text_dir;
-	if(strlen($lang)>7) //3 was too small because of zh-hans
+	if(strlen($lang)>9) //3 was too small because of be-tarask
 	{
 		$lang='en';
 	}
