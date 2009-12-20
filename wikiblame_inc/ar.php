@@ -16,6 +16,7 @@
  * @author ترجمان05
  */
 
+$text_dir = 'rtl';
 $messages['January'] = 'يناير';
 $messages['February'] = 'فبراير';
 $messages['March'] = 'مارس';

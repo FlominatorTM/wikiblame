@@ -14,6 +14,18 @@
  * @author Nghtwlkr
  */
 
+$messages['January'] = 'Januar';
+$messages['February'] = 'Februar';
+$messages['March'] = 'Mars';
+$messages['April'] = 'April';
+$messages['May'] = 'Mai';
+$messages['June'] = 'Juni';
+$messages['July'] = 'Juli';
+$messages['August'] = 'August';
+$messages['September'] = 'September';
+$messages['October'] = 'Oktober';
+$messages['November'] = 'November';
+$messages['December'] = 'Desember';
 $messages['lang'] = 'Språk';
 $messages['project'] = 'Prosjekt';
 $messages['article'] = 'Side';
