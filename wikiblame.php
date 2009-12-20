@@ -711,7 +711,7 @@ function get_diff_link($index, $order="prev")
 function wikitags_present()
 {
 	global $needle;
-	$tag_elements=array('[', ']', '{', '}', '*', '#', '==', "''", '<', '>', '|', '__');
+	$tag_elements=array('[', ']', '{', '}', '*', '#', '==', "''", '<', '>', '|', '__', '---');
 	
 	foreach ($tag_elements as $tag_element)
 	{
