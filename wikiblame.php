@@ -1,4 +1,4 @@
-<?header('Content-Type: text/html; charset=utf-8'); ?>
+﻿<?header('Content-Type: text/html; charset=utf-8'); ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -378,7 +378,12 @@ function correct_language_mistakes($lang)
 	{
 		return 'vi';
 	}
-
+	
+	if(stristr($lang, 'α'))
+	{
+		return 'el';
+	}
+	
 	//second: some known words
 	switch($lang)
 	{
@@ -386,12 +391,16 @@ function correct_language_mistakes($lang)
 		case 'aleman':		return 'de';
 		case 'anglais':		return 'en';
 		case 'arabic':		return 'ar';
+		case 'عربي':		return 'ar';
+		case 'العربية':		return 'ar';
 		case 'castellano':	return 'es';
 		case 'deutsch':		return 'de';
 		case 'enlish': 		return 'en';
 		case 'elinika':		return 'el';
 		case 'ellinika':	return 'el';
-		case 'elινικα':		return 'el';
+		case 'ΕΛΛΗΝΙΚΑ':	return 'el';
+		case 'ελληνικη':	return 'el';
+		case 'ΕΛΛΗΝΙΚΗ':	return 'el';
 		case 'françai';		return 'fr';
 		case 'francais';	return 'fr';
 		case 'français';	return 'fr';
