@@ -393,6 +393,7 @@ function correct_language_mistakes($lang)
 		case 'arabic':		return 'ar';
 		case 'عربي':		return 'ar';
 		case 'العربية':		return 'ar';
+		case 'bosanski':	return 'bs';
 		case 'castellano':	return 'es';
 		case 'deutsch':		return 'de';
 		case 'enlish': 		return 'en';
@@ -410,6 +411,8 @@ function correct_language_mistakes($lang)
 		case 'hindi': 		return 'hi';
 		case 'inggris': 	return 'id';
 		case 'khmer':		return 'km';
+		case 'malay':		return 'ms';
+		case 'nepali':		return 'ne';
 		case 'portugues': 	return 'pt';
 		case 'spanish':		return 'es';
 		case '中文':			return 'zh';
