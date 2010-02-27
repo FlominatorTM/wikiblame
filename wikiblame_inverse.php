@@ -296,7 +296,7 @@ else //no article selected
 <a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a> <? print_translator($user_lang)?>
 <a href='<? echo $messages['contact_link'] ?>'><? echo $messages['contact'] ?></a> - 
 <br/> <br/>
-Do you think WikiBlame's user interface needs improvement? Please post your opinon <a target="_blank" href="https://sourceforge.net/tracker/index.php?func=detail&aid=2811478&group_id=261179&atid=1127548"> at SourceForge</a>.<br/> <br/>
+Do you think WikiBlame's user interface needs improvement? Please post your opinion <a target="_blank" href="https://sourceforge.net/tracker/index.php?func=detail&aid=2811478&group_id=261179&atid=1127548"> at SourceForge</a>.<br/> <br/>
 
 </div>
 <?php
