@@ -132,6 +132,17 @@ $the_months[] =  $messages['October'];
 $the_months[] =  $messages['November'];
 $the_months[] =  $messages['December'];
 
+$force_wikitags = $_REQUEST['force_wikitags'];
+if($force_wikitags=="on")
+{
+	$tags_present = true;
+}
+else
+{
+	$force_wikitags = "off";
+	$tags_present=wikitags_present();
+}
+
 ?>
 <body onload="document.mainform.<?
 //set cursor into needle or article field
@@ -254,7 +265,7 @@ else //no article selected
 						</label>
 						<input type="radio" name="searchmethod" id="int" value="int" <? if ($use_binary_search==true) echo checked; ?> >
 						<label for="int">
-						<? echo $messages['interpolated'] ?>
+						<a href="<? echo $messages['binary_in_wp']?>"><? echo $messages['binary'] ?></a>
 						</label>
 					</td>
 				</tr>		
@@ -266,6 +277,17 @@ else //no article selected
 					<td>
 						<label for="ignore_minors">
 							<? echo $messages['ignore_minors'] ?>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td align="<? echo $alignment ?>">
+						
+						<input type="checkbox" name="force_wikitags" id="force_wikitags" <? if ($force_wikitags=="on") echo checked; ?> >
+					</td>
+					<td>
+						<label for="force_wikitags">
+							<? echo $messages['force_wikitags'] ?>
 						</label>
 					</td>
 				</tr>
@@ -291,11 +313,7 @@ if($needle!="")
 	//$needle = needle_regex($needle); necessary if you work with html, which is currently not the case
 	check_options(); // stops script, when wrong options are used
 	
-	$tags_present = $_REQUEST['tags_present'];
-	if($tags_present=="")
-	{
-		$tags_present=wikitags_present();
-	}
+
 	
 	if($lang=="blank")
 	{
@@ -309,7 +327,15 @@ if($needle!="")
 	$historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=$user_lang";
 	
 	//@TODO: create a method from this
-	$msg = str_replace('_ARTICLELINK_', "<a href=\"http://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress']);
+	if($tags_present==true)
+	{
+		$msg = str_replace('_ARTICLELINK_', "<a href=\"http://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress_wikitags']);	
+	}
+	else
+	{
+		$msg = str_replace('_ARTICLELINK_', "<a href=\"http://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress_text']);	
+	}
+
 	$msg = str_replace('_NEEDLE_', $needle,$msg);
 	echo "$msg<br>\n";
 	
@@ -339,7 +365,7 @@ if($needle!="")
 	echo "<br>";
 	echo str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
 	
-		echo '<br /><br /><small>http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."l<!----->ang=$lang&limit=$limit&ignorefirst=$ignorefirst&offjahr=$offjahr&offmon=$offmon&offtag=$offtag&searchmethod=$searchmethod&order=$order</small>";
+		echo '<br /><br /><small>http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."l<!----->ang=$lang&limit=$limit&ignorefirst=$ignorefirst&offjahr=$offjahr&offmon=$offmon&offtag=$offtag&searchmethod=$searchmethod&order=$order&force_wikitags=$force_wikitags</small>";
 	
 }
 

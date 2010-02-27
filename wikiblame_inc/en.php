@@ -47,9 +47,13 @@ $messages['order'] = 'Order';
 $messages['newest_first'] = 'latest first';
 $messages['oldest_first'] = 'oldest first';
 $messages['search_method'] = 'Search method';
+$messages['binary'] = 'binary';
+$messages['binary_in_wp'] = 'http://en.wikipedia.org/wiki/Binary_search_algorithm';
 $messages['linear'] = 'linear';
+
 $messages['interpolated'] = 'interpolated (faster with more versions)';
 $messages['ignore_minors'] = 'ignore minor changes (experimental)';
+$messages['force_wikitags'] = 'force searching for wikitext';
 $messages['start'] = 'Start';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';
@@ -57,10 +61,15 @@ $messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBla
 $messages['contact'] = 'Contact';
 $messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 
+
 //Output elements
 $messages['wrong_skips'] = 'Wrong settings: If the first __VERSIONSTOSKIP__ versions are skipped, then none of the __VERSIONSTOSEARCH__ versions to be searched will be processed.';
 
-$messages['search_in_progress'] = 'The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> ...';
+$messages['search_in_progress_text'] = 'The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> as plain text';
+
+$messages['search_in_progress_wikitags'] = 'The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> as wiki text';
+
+
 $messages['execution_time'] = 'Execution time: _EXECUTIONTIME_ seconds';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions found';
 
