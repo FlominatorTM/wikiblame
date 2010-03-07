@@ -102,10 +102,10 @@ if(strlen($offset)<12)
 	$offset=strftime("%Y%m%d%H%M%S");
 }
 
-$use_binary_search = false;
-if($_REQUEST['searchmethod']=="int")
+$use_binary_search = true;
+if($_REQUEST['searchmethod']=="lin")
 {
-	$use_binary_search = true;
+	$use_binary_search = false;
 }
 
 $asc = false;
