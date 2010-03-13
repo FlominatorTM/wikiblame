@@ -47,7 +47,6 @@ $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manuel';
 $messages['contact'] = 'Bağlantı';
 $messages['wrong_skips'] = 'Yanlış ayar: Eğer ilk __VERSIONSTOSKIP__ sürüm atlanırsa, hiçbir __VERSIONSTOSEARCH__ aranacak sürüm işlenmeyecektir.';
-$messages['search_in_progress'] = '_ARTICLELINK_ maddesinin sürüm geçmişinde <b>_NEEDLE_</b> aranıyor...';
 $messages['execution_time'] = 'Çalıştoğı süre: _EXECUTIONTIME_ saniye';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ sürüm bulundu';
 $messages['binary_test'] = '_SOURCENUMBER_ kaynağından gelirken _FIRSTDATEVERSION_ dahilinde _FIRSTNUMBER_ ve _SECONDNUMBER_ arasındaki farklar karşılaştırılıyor:';

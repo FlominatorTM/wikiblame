@@ -47,7 +47,6 @@ $messages['reset'] = 'リセット';
 $messages['manual'] = '使用説明';
 $messages['contact'] = '連絡先';
 $messages['wrong_skips'] = '設定の不備: 初めの__VERSIONSTOSKIP__版をとばしてしまうと、検査すべき__VERSIONSTOSEARCH__版のどれも処理されないことになります。';
-$messages['search_in_progress'] = '_ARTICLELINK_の履歴中で<b>_NEEDLE_</b>を検索しています…';
 $messages['execution_time'] = '実行時間: _EXECUTIONTIME_秒';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_版が見つかりました';
 $messages['binary_test'] = '_SOURCENUMBER_番の次に、_FIRSTDATEVERSION_における_FIRSTNUMBER_番と_SECONDNUMBER_番の違いを比較しています:';

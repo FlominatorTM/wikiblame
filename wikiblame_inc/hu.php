@@ -49,7 +49,6 @@ $messages['manual'] = 'Használati útmutató';
 $messages['manual_link'] = 'http://hu.wikipedia.org/wiki/Szerkeszt%C5%91:Tgr/WikiBlame';
 $messages['contact'] = 'Kapcsolat';
 $messages['wrong_skips'] = 'Hibás beállítás: ha az első __VERSIONSTOSKIP__ változatot kell átugornom, akkor a vizsgálandó __VERSIONSTOSEARCH__ változat egyikét sem tudom feldolgozni.';
-$messages['search_in_progress'] = 'Keresem a(z) <b>_NEEDLE_</b> szöveget a(z) _ARTICLELINK_ szócikk laptörténetében, kis türelmet...';
 $messages['execution_time'] = 'A keresés _EXECUTIONTIME_ másodpercet vett igénybe.';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ változatot találtam';
 $messages['binary_test'] = 'A _FIRSTDATEVERSION_-i szerkesztés (_FIRSTNUMBER_. és _SECONDNUMBER_. változat között)  vizsgálata';

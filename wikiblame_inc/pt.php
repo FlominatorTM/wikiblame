@@ -49,7 +49,6 @@ $messages['manual'] = 'Instruções';
 $messages['contact'] = 'Contacto';
 $messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 $messages['wrong_skips'] = 'Configurações erradas: se as primeiras __VERSIONSTOSKIP__ edições são ignoradas, então nenhuma das __VERSIONSTOSEARCH__ edições a verificar serão processadas.';
-$messages['search_in_progress'] = 'A pesquisar no histórico de edições do artigo _ARTICLELINK_ por <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Tempo de execução: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ edições encontradas';
 $messages['binary_test'] = 'A comparar diferenças em _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ e _SECONDNUMBER_ a partir da _SOURCENUMBER_:';

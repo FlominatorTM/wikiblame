@@ -12,6 +12,7 @@
  * @file
  *
  * @author Crazymadlover
+ * @author McDutchie
  * @author XalD
  * @author XalD <hiperion93 AT gmail.com>
  */
@@ -43,13 +44,12 @@ $messages['search_method'] = 'Método de búsqueda';
 $messages['linear'] = 'lineal';
 $messages['interpolated'] = 'interpolado (más rápido con más versiones)';
 $messages['ignore_minors'] = 'ignorar ediciones menores (experimental)';
-$messages['start'] = 'Inicio';
+$messages['start'] = 'Iniciar';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';
 $messages['manual_link'] = 'http://es.wikipedia.org/wiki/Usuario:XalD/WikiBlame';
 $messages['contact'] = 'Contacto';
 $messages['wrong_skips'] = 'Configuraciones erróneas: Si las primeras versiones __VERSIONSTOSKIP__ son saltadas, entonces ninguna de las versiones __VERSIONSTOSEARCH__ a ser buscadas serán procesadas.';
-$messages['search_in_progress'] = 'La versión del historial de _ARTICLELINK_ está siendo buscada por <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
 $messages['binary_test'] = 'Comparando diferencias en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ y _SECONDNUMBER_ cuando vengan de _SOURCENUMBER_:';

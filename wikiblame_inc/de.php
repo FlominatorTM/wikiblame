@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Flominator
  * @author Umherirrender
  */
 
@@ -40,16 +41,19 @@ $messages['order'] = 'Reihenfolge';
 $messages['newest_first'] = 'neuere zuerst';
 $messages['oldest_first'] = 'ältere zuerst (nur bei linearer Suche)';
 $messages['search_method'] = 'Suchmethode';
+$messages['binary'] = 'binär';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'interpoliert (bei vielen Versionen schneller)';
 $messages['ignore_minors'] = 'Kleine Änderungen ignorieren (experimentell)';
+$messages['force_wikitags'] = 'Suche nach Wiki-Text erzwingen';
 $messages['start'] = 'Start';
 $messages['reset'] = 'zurücksetzen';
 $messages['manual'] = 'Handbuch';
 $messages['manual_link'] = 'http://de.wikipedia.org/wiki/Benutzer:Flominator/WikiBlame';
 $messages['contact'] = 'Kontakt';
 $messages['wrong_skips'] = 'Falsche Einstellung: Wenn die ersten __VERSIONSTOSKIP__ Versionen übersprungen werden sollen, wird keine der gewählten __VERSIONSTOSEARCH__ Versionen durchsucht.';
-$messages['search_in_progress'] = 'Die Versionen von _ARTICLELINK_ werden nach der Zeichenkette <b>_NEEDLE_</b> durchsucht …';
+$messages['search_in_progress_text'] = 'Die Versionsgeschichte des Artikels _ARTICLELINK_ wird nach <b>_NEEDLE_</b> als einfachem Text gesucht';
+$messages['search_in_progress_wikitags'] = 'Die Versionsgeschichte von _ARTICLELINK_ wird nach <b>_NEEDLE_</b> als Wiki-Text durchsucht';
 $messages['execution_time'] = 'Ausführungszeit: _EXECUTIONTIME_ Sekunden';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versionen gefunden';
 $messages['binary_test'] = 'Prüfe Übergang vom _FIRSTDATEVERSION_ zwischen _FIRSTNUMBER_ und _SECONDNUMBER_ von _SOURCENUMBER_ aus:';

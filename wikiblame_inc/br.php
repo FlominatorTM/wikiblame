@@ -46,7 +46,6 @@ $messages['reset'] = 'Adderaouekaat';
 $messages['manual'] = 'Dornlevr';
 $messages['contact'] = 'Darempred';
 $messages['wrong_skips'] = 'Arventennoù fall : ma vez lamet ar stummoù kentañ da vezañ lamet __VERSIONSTOSKIP__, neuze ne vo ket pledet gant stumm ebet eus ar stummmoù __VERSIONSTOSEARCH__ da glask.';
-$messages['search_in_progress'] = 'Emeur o furchal istor _ARTICLELINK_ evit kavout <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Amzer seveniñ : _EXECUTIONTIME_ eilenn';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ stumm kavet';
 $messages['binary_test'] = 'Keñveriadenn an diforc\'hioù e _FIRSTDATEVERSION_ etre _FIRSTNUMBER_ ha _SECONDNUMBER_ o tont eus _SOURCENUMBER_:';

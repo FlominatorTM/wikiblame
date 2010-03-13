@@ -3,7 +3,7 @@
  *
  */
 
-/** Cornish (Kernowek)
+/** Cornish (Kernewek)
  *
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -12,10 +12,11 @@
  * @file
  *
  * @author Kernoweger
+ * @author Kw-Moon
  */
 
 $messages['January'] = 'Genver';
-$messages['February'] = 'Hwevrel';
+$messages['February'] = 'Hwevrer';
 $messages['March'] = 'Meurth';
 $messages['April'] = 'Ebrel';
 $messages['May'] = 'Me';

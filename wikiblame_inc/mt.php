@@ -34,7 +34,6 @@ $messages['reset'] = 'Bħall-bidu';
 $messages['manual'] = 'Gwida';
 $messages['contact'] = 'Kuntatt';
 $messages['wrong_skips'] = 'Impostazzjonijiet żbaljati: Jekk l-ewwel __VERSIONSTOSKIP__ verżjonijiet jiġu maqbuża, l-ebda verżjoni mill-__VERSIONSTOSEARCH__ li trid tfittex ma tiġi proċessata.';
-$messages['search_in_progress'] = 'Qed infittex <b>_NEEDLE_</b> fil-konroloġija ta\' _ARTICLELINK_ ...';
 $messages['execution_time'] = 'Ħin ta\' eżekuzzjoni: _EXECUTIONTIME_ sekonda';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ verżjoni misjuba';
 $messages['binary_test'] = 'Paragun tad-differenzi f\'_FIRSTDATEVERSION_ bejn _FIRSTNUMBER_ u _SECONDNUMBER_ waqt li ġejja minn _SOURCENUMBER_:';

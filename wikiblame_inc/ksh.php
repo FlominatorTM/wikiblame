@@ -46,7 +46,6 @@ $messages['reset'] = 'Zeröckstäze';
 $messages['manual'] = 'Handbooch';
 $messages['contact'] = 'Kumtak';
 $messages['wrong_skips'] = 'Esu jeiht dat ävver nit: wann de eezte __VERSIONSTOSKIP__ Versione eets ens övverjange sin, da kütt me niih miih op di Versione __VERSIONSTOSEARCH__, woh ävver jät met jedonn wääde sull.';
-$messages['search_in_progress'] = 'Mer söhke en dä verjange Versione vun _ARTICLELINK_ noh <b>_NEEDLE_</b>&nbsp;…';
 $messages['execution_time'] = 'För dat ze maache, ham_mer _EXECUTIONTIME_ Sekunde jebruch';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versione jefonge';
 $messages['binary_test'] = 'Ben vun _SOURCENUMBER_ aam kumm un en _FIRSTDATEVERSION_ de Ongerscheide am verjiische zwesche _FIRSTNUMBER_ un _SECONDNUMBER_:';
