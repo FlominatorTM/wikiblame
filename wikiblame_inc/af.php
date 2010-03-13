@@ -46,7 +46,6 @@ $messages['reset'] = 'Herstel';
 $messages['manual'] = 'Handleiding';
 $messages['contact'] = 'Kontak';
 $messages['wrong_skips'] = 'Verkeerde instellings: As die eerste __VERSIONSTOSKIP__ weergawes oorgeslaan is, dan word geen van die __VERSIONSTOSEARCH__ weergawes wat deursoek moet word verwerk nie.';
-$messages['search_in_progress'] = 'Die weergawegeskiedenis van _ARTICLELINK_ word deursoek vir <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Uitvoertyd: _EXECUTIONTIME_ sekondes';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ weergawes gevind';
 $messages['binary_test'] = 'Vergelyk die verskille in _FIRSTDATEVERSION_ tussen _FIRSTNUMBER_ en _SECONDNUMBER_ terwyl afkomstig van _SOURCENUMBER_:';

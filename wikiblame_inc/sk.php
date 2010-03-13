@@ -47,7 +47,6 @@ $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manuálne';
 $messages['contact'] = 'Kontakt';
 $messages['wrong_skips'] = 'Chybné nastavenia: Ak bude prvých __VERSIONSTOSKIP__ preskočených, žiadne z verzií __VERSIONSTOSEARCH__ nebudú spracované.';
-$messages['search_in_progress'] = 'Hľadá sa <b>_NEEDLE_</b> v histórii verzií _ARTICLELINK_ ...';
 $messages['execution_time'] = 'Čas behu: _EXECUTIONTIME_ sekúnd';
 $messages['versions_found'] = 'Nájdených _NUMBEROFVERSIONS_ verzií';
 $messages['binary_test'] = 'Porovnávajú sa rozdiely v _FIRSTDATEVERSION_ medzi _FIRSTNUMBER_ a _SECONDNUMBER_ prichádzajúc z _SOURCENUMBER_:';

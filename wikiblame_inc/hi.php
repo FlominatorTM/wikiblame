@@ -31,6 +31,5 @@ $messages['start'] = 'आरम्भ';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'मदद';
 $messages['contact'] = 'संपर्क करें';
-$messages['search_in_progress'] = '_ARTICLELINK_ का विवरण इतिहास खोजा जा रहा है <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'खोजने में लगा समय: _EXECUTIONTIME_ सेकंङ';
 $messages['versions_found'] = 'कुल _NUMBEROFVERSIONS_ विवरण मिले';

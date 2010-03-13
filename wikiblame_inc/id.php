@@ -47,7 +47,6 @@ $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Kontak';
 $messages['wrong_skips'] = 'Kesalahan setelan: Jika __VERSIONSTOSKIP__ versi diloncati, maka tidak ada dari __VERSIONSTOSEARCH__ versi yang dicari yang akan diproses.';
-$messages['search_in_progress'] = 'Sejarah versi _ARTICLELINK_ sedang dicari untuk <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Waktu eksekusi: _EXECUTIONTIME_ detik';
 $messages['versions_found'] = 'Ditemukan _NUMBEROFVERSIONS_ versi';
 $messages['binary_test'] = 'Membandingkan perbedaan pada _FIRSTDATEVERSION_ antara _FIRSTNUMBER_ dan _SECONDNUMBER_ sewaktu berasal dari _SOURCENUMBER_:';

@@ -47,7 +47,6 @@ $messages['reset'] = 'Nullstill';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Kontakt';
 $messages['wrong_skips'] = 'Gale innstillingar: Om dei __VERSIONSTOSKIP__ fyrste versjonane vert hoppa over, so vil ingen av dei __VERSIONSTOSEARCH__ versjonane som skulle verta gjennomsøkte verta handsama.';
-$messages['search_in_progress'] = 'Det vert søkt etter <b>_NEEDLE_</b> i versjonshistorikken åt _ARTICLELINK_...';
 $messages['execution_time'] = 'Køyretid: _EXECUTIONTIME_ sekund';
 $messages['versions_found'] = 'Fann _NUMBEROFVERSIONS_ versjonar';
 $messages['binary_test'] = 'Samanliknar skilnader i _FIRSTDATEVERSION_ mellom _FIRSTNUMBER_ og _SECONDNUMBER_ som kjem frå _SOURCENUMBER_:';

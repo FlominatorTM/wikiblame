@@ -46,7 +46,6 @@ $messages['reset'] = 'أعد';
 $messages['manual'] = 'دليل';
 $messages['contact'] = 'اتصال';
 $messages['wrong_skips'] = 'إعدادات غير صحيحة: لو أن أول نسخ __VERSIONSTOSKIP__ تم تجاوزها, إذا فلا شيء من نسخ __VERSIONSTOSEARCH__ للبحث ستتم معالجتها.';
-$messages['search_in_progress'] = 'تاريخ النسخه لـ _ARTICLELINK_ قيد البحث لـ <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'وقت التنفيذ: _EXECUTIONTIME_ ثانية';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ نسخ موجودة';
 $messages['binary_test'] = 'مقارنه الإختلافات فى _FIRSTDATEVERSION_ بين _FIRSTNUMBER_ و _SECONDNUMBER_ حتى يحصل عليه من _SOURCENUMBER_:';

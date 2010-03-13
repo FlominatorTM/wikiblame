@@ -46,7 +46,6 @@ $messages['reset'] = 'Tái tạo';
 $messages['manual'] = 'Hướng dẫn';
 $messages['contact'] = 'Liên hệ';
 $messages['wrong_skips'] = 'Thiết lập sai: Nếu __VERSIONSTOSKIP__ phiên bản đầu được bỏ qua, thì không có phiên bản nào trong __VERSIONSTOSEARCH__ phiên bản yêu cầu tìm kiếm được xử lý.';
-$messages['search_in_progress'] = 'Đang tìm <b>_NEEDLE_</b> trong lịch sử phiên bản của _ARTICLELINK_ ...';
 $messages['execution_time'] = 'Thời gian thực thi: _EXECUTIONTIME_ giây';
 $messages['versions_found'] = 'Tìm thấy _NUMBEROFVERSIONS_ phiên bản';
 $messages['binary_test'] = 'So sánh khác biệt trong _FIRSTDATEVERSION_ giữa _FIRSTNUMBER_ và _SECONDNUMBER_ trong khi đến từ _SOURCENUMBER_:';

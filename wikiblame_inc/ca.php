@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author McDutchie
  * @author Paucabot
  */
 
@@ -18,5 +19,5 @@ $messages['lang'] = 'Llengua';
 $messages['project'] = 'Projecte';
 $messages['article'] = 'Pàgina';
 $messages['start_date'] = 'Data d\'inici';
-$messages['start'] = 'Inici';
+$messages['start'] = 'Iniciar';
 $messages['manual'] = 'Manual';

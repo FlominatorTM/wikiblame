@@ -32,6 +32,7 @@ $messages['project'] = 'ప్రాజెక్టు';
 $messages['article'] = 'పేజి';
 $messages['needle'] = 'అన్వేషణ';
 $messages['start_date'] = 'ఆరంభ తేదీ';
+$messages['order'] = 'క్రమం';
 $messages['newest_first'] = 'కొత్తవి ముందర';
 $messages['oldest_first'] = 'పాతవి ముందర';
 $messages['search_method'] = 'అన్వేషణా విదానము';

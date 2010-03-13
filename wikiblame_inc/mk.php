@@ -46,7 +46,6 @@ $messages['reset'] = 'Одново';
 $messages['manual'] = 'Прирачник';
 $messages['contact'] = 'Контакт';
 $messages['wrong_skips'] = 'Погрешни прилагодувања: Ако првите __VERSIONSTOSKIP__ верзии се прескокнат, тогаш ниту една од __VERSIONSTOSEARCH__ верзии за пребарување нема да биде обработена.';
-$messages['search_in_progress'] = 'Пребарувам во историјата на ревизиите на _ARTICLELINK_ за <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Време за извршување: _EXECUTIONTIME_ секунди';
 $messages['versions_found'] = 'Пронајдени се _NUMBEROFVERSIONS_  верзии';
 $messages['binary_test'] = 'Споредбана разликите во _FIRSTDATEVERSION_ помеѓу _FIRSTNUMBER_ и _SECONDNUMBER_ при преодот од _SOURCENUMBER_:';

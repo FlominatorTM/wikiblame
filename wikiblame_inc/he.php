@@ -37,7 +37,6 @@ $messages['reset'] = 'איפוס';
 $messages['manual'] = 'הסברים';
 $messages['contact'] = 'יצירת קשר';
 $messages['wrong_skips'] = ' שגיאה: אם נדלג על __VERSIONSTOSKIP__ הגרסאות הראשונות, אף אחד מ-__VERSIONSTOSEARCH__ הגרסאות שיש לבצע בהן את החיפוש ייבדק.';
-$messages['search_in_progress'] = 'מתבצע כרגע חיפוש של הטקסט <b>_NEEDLE_</b> בגרסאות הקודמות של הערך _ARTICLELINK_...';
 $messages['execution_time'] = 'זמן חיפוש: _EXECUTIONTIME_ שניות';
 $messages['versions_found'] = 'נמצאו _NUMBEROFVERSIONS_ גרסאות';
 $messages['binary_test'] = 'משווה הבדלים ב-_FIRSTDATEVERSION_ בין _FIRSTNUMBER_ לבין _SECONDNUMBER_ כשהמקור הוא _SOURCENUMBER_:';

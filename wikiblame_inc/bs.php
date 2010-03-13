@@ -46,7 +46,6 @@ $messages['reset'] = 'Poništi';
 $messages['manual'] = 'Uputstvo';
 $messages['contact'] = 'Kontakt';
 $messages['wrong_skips'] = 'Pogrešne postavke: ako je prvih __VERSIONSTOSKIP__ verzija preskočeno, onda nijedna od __VERSIONSTOSEARCH__ verzija koje se traže neće biti obrađena.';
-$messages['search_in_progress'] = 'Historija vezija od _ARTICLELINK_ je pretražena za <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Vrijeme izvršavanja: _EXECUTIONTIME_ sekundi';
 $messages['versions_found'] = 'Pronađeno _NUMBEROFVERSIONS_ verzija';
 $messages['binary_test'] = 'Poređenje razlika u _FIRSTDATEVERSION_ između _FIRSTNUMBER_ i _SECONDNUMBER_ što dolazi iz _SOURCENUMBER_:';

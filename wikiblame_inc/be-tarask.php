@@ -47,7 +47,6 @@ $messages['reset'] = 'Скінуць';
 $messages['manual'] = 'Інструкцыя';
 $messages['contact'] = 'Кантактная інфармацыя';
 $messages['wrong_skips'] = 'Няслушныя ўстаноўкі: Калі першыя __VERSIONSTOSKIP__ вэрсіі будуць прапушчаны, то ніякая з __VERSIONSTOSEARCH__ вэрсіяў для пошуку ня будзе апрацавана.';
-$messages['search_in_progress'] = 'Адбываецца пошук <b>_NEEDLE_</b> у гісторыі старонкі _ARTICLELINK_ …';
 $messages['execution_time'] = 'Час выкананьня: _EXECUTIONTIME_ сэкунд';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ вэрсій знойдзена';
 $messages['binary_test'] = 'Параўнаньне адрозьненьняў у _FIRSTDATEVERSION_ паміж _FIRSTNUMBER_ і _SECONDNUMBER_ пад час пераходу з _SOURCENUMBER_:';

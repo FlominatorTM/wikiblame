@@ -12,6 +12,7 @@
  * @file
  *
  * @author Cedric31
+ * @author McDutchie
  */
 
 $messages['January'] = 'Genièr';
@@ -41,12 +42,11 @@ $messages['search_method'] = 'metòde de recèrca';
 $messages['linear'] = 'lineara';
 $messages['interpolated'] = 'interpolat (mai rapid amb mai de versions)';
 $messages['ignore_minors'] = 'ignorar los cambiaments menors (experimental)';
-$messages['start'] = 'Començament';
+$messages['start'] = 'Començar';
 $messages['reset'] = 'Reïnicializar';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Contacte';
 $messages['wrong_skips'] = 'Paramètres incorrèctes : Se las primièras version de sautar __VERSIONSTOSKIP__ son sautadas, alara cap de las versions de cercar __VERSIONSTOSEARCH__ seràn pas tractadas.';
-$messages['search_in_progress'] = 'l\'istoric de _ARTICLELINK_ es percorrut a la recèrca de  <b>_NEEDLE_</b> ...';
 $messages['execution_time'] = 'Temps d\'execucion: _EXECUTIONTIME_ segondas';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions trobadas';
 $messages['binary_test'] = 'Comparason de las diferéncias en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ e _SECONDNUMBER_ en venent de _SOURCENUMBER_ :';

@@ -46,7 +46,6 @@ $messages['reset'] = 'Slědk stajiś';
 $messages['manual'] = 'Pśirucka';
 $messages['contact'] = 'Kontakt';
 $messages['wrong_skips'] = 'Wopacne nastajenja: Jolic prědne wersije __VERSIONSTOSKIP__ se pśeskakaju, žedna z wersijow __VERSIONSTOSEARCH__, kótarež maju se pytaś, se pśeźěłujo.';
-$messages['search_in_progress'] = 'Wersijowe stawizny _ARTICLELINK_ se za <b>_NEEDLE_</b> pśepytuju ...';
 $messages['execution_time'] = 'Cas wuwjeźenja: _EXECUTIONTIME_ {{PLURAL:_EXECUTIONTIME_|sekunda|sekunźe|sekundy|sekundow}}';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ {{PLURAL:_NUMBEROFVERSIONS_|wersija namakana|wersiji namakanej|wersije namakane|wersijow namakane}}';
 $messages['binary_test'] = 'Rozdźěle w _FIRSTDATEVERSION_ mjazy _FIRSTNUMBER_ a _SECONDNUMBER_ se z _SOURCENUMBER_ pśirownuju:';

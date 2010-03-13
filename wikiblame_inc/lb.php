@@ -46,7 +46,6 @@ $messages['reset'] = 'Zrécksetzen';
 $messages['manual'] = 'Handbuch';
 $messages['contact'] = 'Kontakt';
 $messages['wrong_skips'] = 'Falsch Astellung: Wann déi éischt __VERSIONSTOSKIP__ Versiounen iwwersprong ginn, da gëtt keng vun de(n) __VERSIONSTOSEARCH__ Versiounen, déi sollen duersicht ginn, behandelt.';
-$messages['search_in_progress'] = 'D\'Versioune vu(n) _ARTICLELINK_ ginn no <b>_NEEDLE_</b> duerchsicht ...';
 $messages['execution_time'] = 'Ausféierungszäit: _EXECUTIONTIME_ Sekonnen';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versioune fonnt';
 $messages['binary_test'] = 'D\'Ënnerscheeder vu(n) _FIRSTDATEVERSION_ tësche(n)_FIRSTNUMBER_ a(n)_SECONDNUMBER_ weisen, vu(n) _SOURCENUMBER_ aus:';
