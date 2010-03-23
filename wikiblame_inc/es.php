@@ -13,6 +13,7 @@
  *
  * @author Crazymadlover
  * @author McDutchie
+ * @author Peter17
  * @author XalD
  * @author XalD <hiperion93 AT gmail.com>
  */
@@ -41,6 +42,7 @@ $messages['order'] = 'Orden';
 $messages['newest_first'] = 'la última primero';
 $messages['oldest_first'] = 'la más antigua primero';
 $messages['search_method'] = 'Método de búsqueda';
+$messages['binary'] = 'binario';
 $messages['linear'] = 'lineal';
 $messages['interpolated'] = 'interpolado (más rápido con más versiones)';
 $messages['ignore_minors'] = 'ignorar ediciones menores (experimental)';
