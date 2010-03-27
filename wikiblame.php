@@ -187,11 +187,11 @@ else //no article selected
 				<tr>
 					<td align="<? echo $alignment ?>">
 						<label for="article">
-							<? echo $messages['article'] ?>
+							<? echo $messages['article']; ?>
 						</label>
 					</td>
 					<td>
-						<input type="text" name="article" id="article" value="<?php echo $article; ?>">
+						<input type="text" name="article" id="article" value="<?php echo htmlspecialchars($article); ?>">
 					</td>
 				</tr>
 				<tr>
