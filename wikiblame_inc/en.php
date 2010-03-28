@@ -33,6 +33,7 @@ $messages['December'] = 'December';
  
  
 //Form elements
+$messages['ui_lang'] = 'Display language';
 $messages['lang'] = 'Language';
 $messages['lang_example'] = 'en, commons, …';
 $messages['project'] = 'Project';
@@ -77,3 +78,4 @@ $messages['binary_test'] = 'Comparing differences in _FIRSTDATEVERSION_ between 
 $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['help_translating'] = 'Help translating at translatewiki.net';
+$messages['start_here'] = 'Search from here';

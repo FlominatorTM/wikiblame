@@ -1,12 +1,13 @@
 <?php
 
 // list all languages available in inc directory
-function language_list ($inc_dir)
+function get_language_list ($inc_dir)
 {
     global $user_lang;
     $dir_ref = opendir($inc_dir);
     rewinddir($dir_ref);
 	$list = array();
+
 	do
 	{
 		$file = readdir($dir_ref); //get next file of inc directory
@@ -23,19 +24,7 @@ function language_list ($inc_dir)
 		
 	sort($list);
 	closedir($dir_ref);
-
-	//create links to all languages
-	foreach($list AS $language)
-	{
-		if($language!=$user_lang)
-		{
-			echo "[<a href=\"?user_lang=$language\">$language</a>]&nbsp;";
-		}
-		else
-		{
-			echo "[$language]&nbsp;";
-		}
-	}
+	return $list;
 }
 
 function get_language($lang, $inc_dir)

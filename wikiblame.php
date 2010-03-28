@@ -5,6 +5,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>WikiBlame</title>
+		<!-- <? strtotime("7 November 2006"); ?>-->
 	</head><?
 
 // required to prevent automatic escaping of input strings
@@ -157,12 +158,23 @@ else //no article selected
 
 ?>.focus();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
 
+<script>
+function setFormDate(year, mon, day)
+{
+	document.forms['mainform'].elements['offjahr'].value = year;
+	document.forms['mainform'].elements['offmon'].value = mon;
+	document.forms['mainform'].elements['offtag'].value = day;
+}
+</script>
 
+		<form method="get" name="mainform" action="<? echo $datei ?>">
+		<div align="<? echo $alignment ?>">
+		<?
+			echo $messages['ui_lang'].'<br />';
+			language_selection($user_lang);?>
+		</div>
 <div align="center">
-		<? language_list($inc_dir); ?>
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
-		<form method="post" name="mainform" action="<? echo $datei ?>">
-		<input type="hidden" name="user_lang" value="<?php echo $user_lang?>">
 			<table style="font-family: arial; font-size: 84%;" cellspacing="5">
 				<tr>
 					<td align="<? echo $alignment ?>">
@@ -241,7 +253,7 @@ else //no article selected
 					<td>
 						<?php datedrop_with_months($messages['start_date'].' (DD-MM-YYYY)', "off", false, 2003, '', $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months); ?>
 						
-						<input type="button" value="<? echo $messages['reset'] ?>" onclick="javascript:var now=new Date();document.forms['mainform'].elements['offtag'].value=now.getDate();document.forms['mainform'].elements['offmon'].value=now.getMonth()+1;document.forms['mainform'].elements['offjahr'].value=now.getFullYear();">
+						<input type="button" value="<? echo $messages['reset'] ?>" onclick="javascript:var now=new Date();setFormDate(now.getFullYear(),now.getMonth()+1, now.getDate());">
 					</td>
 				<tr>
 					<td align="<? echo $alignment ?>"><? echo $messages['order'] ?></td>
@@ -365,10 +377,31 @@ if($needle!="")
 	echo "<br>";
 	echo str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
 	
-		echo '<br /><br /><small>http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."l<!----->ang=$lang&limit=$limit&ignorefirst=$ignorefirst&offjahr=$offjahr&offmon=$offmon&offtag=$offtag&searchmethod=$searchmethod&order=$order&force_wikitags=$force_wikitags</small>";
-	
+		echo '<br /><br /><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
+		
 }
 
+
+function language_selection($user_lang)
+{
+	global $inc_dir;
+	echo "<select name=\"user_lang\" onchange=\"javascript:forms['mainform'].submit()\">\n";
+	//create links to all languages
+	foreach(get_language_list($inc_dir) AS $language)
+	{
+		if($language!=$user_lang)
+		{
+			echo "<option>$language</option>\n";
+			//echo "[<a href=\"?user_lang=$language\">$language</a>]&nbsp;";
+		}
+		else
+		{
+			echo "<option selected>$language</option>\n";
+			//echo "[$language]&nbsp;";
+		}
+	}
+	echo "</select>\n";
+}
 //tries to avoid most of the incorrect entered languages
 function correct_language_mistakes($lang)
 {
@@ -523,7 +556,7 @@ function listversions ($history)
 
 function checkversions ($versions)
 {
-	global $server, $skipversions, $ignorefirst;
+	global $server, $skipversions, $ignorefirst, $needle;
 
 	$version_counter = 0;
 	echo "<ul>";
@@ -535,7 +568,8 @@ function checkversions ($versions)
 		{
 			if($version_counter==0)
 			{
-				if(needleinversion(idfromurl($version)))
+				$rev_text = get_revision(idfromurl($version));
+				if(stristr($rev_text, $needle))
 				{
 					echo " <font color=\"green\">OOO</font>\n";
 				}
@@ -543,6 +577,7 @@ function checkversions ($versions)
 				{
 					echo " <font color=\"red\">XXX</font>\n";
 				}
+				start_over_here($rev_text);
 				$version_counter=$skipversions;
 			}
 			else
@@ -556,6 +591,7 @@ function checkversions ($versions)
 			echo " <font color=\"blue\">???</font>\n";
 			$ignorefirst--;
 		}
+		
 		echo "</li>\n";
 	}
 	echo "</ul>";
@@ -569,11 +605,11 @@ function idfromurl ($url)
 	return $id;
 }
 
-function needleinversion ($id)
+function get_revision($id)
 {
 	set_time_limit(60);
 	global $needle, $server, $articleenc, $tags_present;
-	$url = "http://".$server."/w/index.php?title=".$articleenc."&oldid=".$id;
+	$url = "http://".$server."/w/index.php?uselang=en&title=".$articleenc."&oldid=".$id;
 	
 	if($tags_present)
 	{
@@ -591,14 +627,46 @@ function needleinversion ($id)
 		$url = str_replace("&", "\&", $url); 
 		if(shell_exec("/usr/bin/wget --quiet -O - $url| /bin/grep \"$needle\"")!="")
 	*/
-	
-	if(stristr($versionpage, $needle))
+	removeheaders(&$versionpage);
+	return $versionpage;
+}
+
+//generate link to start a new search with the date of this revision
+//currently only works when not searching for wiki text
+function start_over_here($versionpage)
+{
+	global $messages;
+	// every revision (except the current on contains a text like this:
+	//as of 10:01, 7 November 2006 by username
+
+	$strBegin = "Revision as of ";
+	$beginning = strpos($versionpage, $strBegin);
+
+	if($beginning>0) //this is not the current revision (which looks different)
 	{
-		return(true);
-	}
-	else
-	{
-		return(false);
+		$ending = strpos($versionpage, " by ", $beginning);
+		//extract date from revision text
+		$strDate = substr($versionpage, $beginning+strlen($strBegin)+6, $ending-$beginning-strlen($strBegin));
+
+		$dateParts = explode(' ', trim($strDate));
+		$day = $dateParts[0];
+		
+		$months['January'] = 1;
+		$months['February'] = 2;
+		$months['March'] = 3;
+		$months['April'] = 4;
+		$months['May'] = 5;
+		$months['June'] = 6;
+		$months['July'] = 7;
+		$months['August'] = 8;
+		$months['September'] = 9;
+		$months['October'] = 10;
+		$months['November'] = 11;
+		$months['December'] = 12;
+		$month = $months[$dateParts[1]] ;
+		$year = $dateParts[2];
+		$theUrl = get_url($year,$month , $day);
+		echo "<a href=\"".$theUrl."\">[".$messages['start_here']."]</a>";
 	}
 
 }
@@ -697,24 +765,30 @@ function binary_search($middle, $from)
 	$test_msg = str_replace('_SECONDNUMBER_', $middle+1, $test_msg);
 	$test_msg = str_replace('_SOURCENUMBER_', $from, $test_msg);
 	echo $test_msg;
-	
-	$in_this = needleinversion(idfromurl($versions[$middle]));
-	$in_next = needleinversion(idfromurl($versions[$middle+1]));
+
+	$rev_text = get_revision(idfromurl($versions[$middle]));
+	$in_this = stristr($rev_text, $needle);
+	$in_next = stristr(get_revision(idfromurl($versions[$middle+1])), $needle);
 	if($in_this AND $in_next)
 	{
-		echo "<font color=\"green\">OO</font><br>\n";
+		echo "<font color=\"green\">OO</font>\n";
+		start_over_here($rev_text);
+		echo "<br />";
 		binary_search(floor($middle+abs(($from-$middle)/2)), $middle);
 	}
 	else
 	{
 		if(!$in_this AND !$in_next)
 		{
-			echo "<font color=\"red\">XX</font><br>\n";
+			echo "<font color=\"red\">XX</font>\n";
+			start_over_here($rev_text);
+			echo "<br />";
 			binary_search(floor($middle-abs(($from-$middle)/2)), $middle);
 		}
 		else
 		{
-			$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+1])."</a> ";
+		//$right_version was 1
+			$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+$right_version])."</a> ";
 			$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle])."</a>";
 			if($in_this AND !$in_next)
 			{
@@ -726,12 +800,12 @@ function binary_search($middle, $from)
 			else
 			{
 				echo "<font color=\"green\">O</font>\n";
-				echo "<font color=\"red\">X</font><br>\n";
+				echo "<font color=\"red\">X</font>\n";
+				//start_over_here($rev_text);
 				$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 				echo str_replace('RIGHT_VERSION', $right_version, $deletion_found);
-			}
-			echo "<br>";
-			
+			}			
+			echo "<br />";
 		}
 	}
 
@@ -801,6 +875,14 @@ function print_translator($lang)
 	{
 		echo "& <a href=\"".$messages['translator_link']."\">$messages[translator]</a> (translation)";
 	}
+}
+
+function get_url($year, $month, $day)
+{
+	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags;
+	
+	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."l<!----->ang=$lang&limit=$limit&ignorefirst=".$_REQUEST['ignorefirst']."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags";
+	return $url;
 }
 
 ?>
