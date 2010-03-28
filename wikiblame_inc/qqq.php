@@ -40,3 +40,4 @@ $messages['versions_found'] = 'Do not translate <code>_NUMBEROFVERSIONS_</code>'
 $messages['binary_test'] = 'Do not translate <code>_FIRSTDATEVERSION_</code>, <code>_FIRSTNUMBER_</code>, <code>_SECONDNUMBER_</code>, and <code>_SOURCENUMBER_</code>';
 $messages['insertion_found'] = 'Do not translate <code>LEFT_VERSION</code>, and <code>RIGHT_VERSION</code>.';
 $messages['deletion_found'] = 'Do not translate <code>LEFT_VERSION</code>, and <code>RIGHT_VERSION</code>.';
+$messages['start_here'] = 'Text on link to a new search starting with the date of the revision next to the link';
