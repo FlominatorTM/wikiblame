@@ -14,24 +14,25 @@
  * @author Michawiki
  */
 
-$messages['January'] = 'Januar';
-$messages['February'] = 'Februar';
-$messages['March'] = 'Měrc';
-$messages['April'] = 'Apryl';
-$messages['May'] = 'Meja';
-$messages['June'] = 'Junij';
-$messages['July'] = 'Julij';
-$messages['August'] = 'Awgust';
-$messages['September'] = 'September';
-$messages['October'] = 'Oktober';
-$messages['November'] = 'Nowember';
-$messages['December'] = 'December';
+$messages['January'] = 'januara';
+$messages['February'] = 'februara';
+$messages['March'] = 'měrca';
+$messages['April'] = 'apryla';
+$messages['May'] = 'meje';
+$messages['June'] = 'junija';
+$messages['July'] = 'julija';
+$messages['August'] = 'awgusta';
+$messages['September'] = 'septembr';
+$messages['October'] = 'oktobra';
+$messages['November'] = 'nowembra';
+$messages['December'] = 'decembra';
+$messages['ui_lang'] = 'Zwobraznjowanska rěč';
 $messages['lang'] = 'Rěč';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Strona';
 $messages['needle'] = 'Pytać za';
 $messages['skipversions'] = 'Přeco x wersijow přeskočić';
-$messages['ignorefirst'] = 'Prěnje x wersije ignorować';
+$messages['ignorefirst'] = 'Prěnich x wersijow ignorować';
 $messages['limit'] = 'Wersije, kotrež dyrbja so přepytać';
 $messages['start_date'] = 'Spočatny datum';
 $messages['order'] = 'Porjad';
@@ -56,3 +57,4 @@ $messages['binary_test'] = 'Rozdźěle w _FIRSTDATEVERSION_ mjez _FIRSTNUMBER_ a
 $messages['insertion_found'] = 'Něšto je so mjez LEFT_VERSION a RIGHT_VERSION zasunyło';
 $messages['deletion_found'] = 'Něšto je so mjez LEFT_VERSION a RIGHT_VERSION wušmórnyło';
 $messages['help_translating'] = 'Při přełožowanju na translatewiki.net pomhać';
+$messages['start_here'] = 'Wottud pytać';
