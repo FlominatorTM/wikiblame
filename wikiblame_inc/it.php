@@ -11,11 +11,25 @@
  * @ingroup Language
  * @file
  *
+ * @author Civvì
  * @author Darth Kule
  * @author Lou Crazy
  * @author Melos <nnico AT jumpy.it>
  */
 
+$messages['January'] = 'Gennaio';
+$messages['February'] = 'Febbraio';
+$messages['March'] = 'Marzo';
+$messages['April'] = 'Aprile';
+$messages['May'] = 'Maggio';
+$messages['June'] = 'Giugno';
+$messages['July'] = 'Luglio';
+$messages['August'] = 'Agosto';
+$messages['September'] = 'Settembre';
+$messages['October'] = 'Ottobre';
+$messages['November'] = 'Novembre';
+$messages['December'] = 'Dicembre';
+$messages['ui_lang'] = 'Lingua di visualizzazione';
 $messages['lang'] = 'Lingua';
 $messages['project'] = 'Progetto';
 $messages['article'] = 'Pagina';
@@ -28,9 +42,11 @@ $messages['order'] = 'Ordinamento';
 $messages['newest_first'] = 'prima le più recenti';
 $messages['oldest_first'] = 'prima le meno recenti';
 $messages['search_method'] = 'Metodo di ricerca';
+$messages['binary'] = 'binario';
 $messages['linear'] = 'lineare';
 $messages['interpolated'] = 'interpolato (più veloce con molte versioni da controllare)';
 $messages['ignore_minors'] = 'ignora le modifiche minori (sperimentale)';
+$messages['force_wikitags'] = 'forza la ricerca di wikitext';
 $messages['start'] = 'Inizia';
 $messages['reset'] = 'Reimposta';
 $messages['manual'] = 'Guida';
@@ -45,3 +61,4 @@ $messages['binary_test'] = 'Confronto delle differenze in _FIRSTDATEVERSION_ fra
 $messages['insertion_found'] = 'Inserzione trovata fra LEFT_VERSION e RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancellazione trovata fra LEFT_VERSION e RIGHT_VERSION';
 $messages['help_translating'] = 'Aiuta a tradurre su translatewiki.net';
+$messages['start_here'] = 'Cerca da qui';
