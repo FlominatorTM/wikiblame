@@ -13,6 +13,7 @@
  *
  * @author Crazymadlover
  * @author McDutchie
+ * @author Pertile
  * @author Peter17
  * @author XalD
  * @author XalD <hiperion93 AT gmail.com>
@@ -30,6 +31,7 @@ $messages['September'] = 'Setiembre';
 $messages['October'] = 'Octubre';
 $messages['November'] = 'Noviembre';
 $messages['December'] = 'Diciembre';
+$messages['ui_lang'] = 'Idioma de visualización';
 $messages['lang'] = 'Idioma';
 $messages['project'] = 'Proyecto';
 $messages['article'] = 'Artículo';
@@ -46,15 +48,19 @@ $messages['binary'] = 'binario';
 $messages['linear'] = 'lineal';
 $messages['interpolated'] = 'interpolado (más rápido con más versiones)';
 $messages['ignore_minors'] = 'ignorar ediciones menores (experimental)';
+$messages['force_wikitags'] = 'forzar la búsqueda de wikitexto';
 $messages['start'] = 'Iniciar';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';
 $messages['manual_link'] = 'http://es.wikipedia.org/wiki/Usuario:XalD/WikiBlame';
 $messages['contact'] = 'Contacto';
 $messages['wrong_skips'] = 'Configuraciones erróneas: Si las primeras versiones __VERSIONSTOSKIP__ son saltadas, entonces ninguna de las versiones __VERSIONSTOSEARCH__ a ser buscadas serán procesadas.';
+$messages['search_in_progress_text'] = 'Se está buscando <b>_NEEDLE_</b> como texto sencillo en el historial de versiones de _ARTICLELINK_';
+$messages['search_in_progress_wikitags'] = 'Se está buscando <b>_NEEDLE_</b> como texto wiki en el historial de versiones de _ARTICLELINK_';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
 $messages['binary_test'] = 'Comparando diferencias en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ y _SECONDNUMBER_ cuando vengan de _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Inserción encontrada entre LEFT_VERSION y RIGHT_VERSION';
 $messages['deletion_found'] = 'Borrado encontrado entre LEFT_VERSION y RIGHT_VERSION';
 $messages['help_translating'] = 'Ayude traduciendo en translatewiki.net';
+$messages['start_here'] = 'Búsqueda desde aquí';

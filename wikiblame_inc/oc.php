@@ -27,6 +27,7 @@ $messages['September'] = 'Setembre';
 $messages['October'] = 'Octobre';
 $messages['November'] = 'Novembre';
 $messages['December'] = 'Decembre';
+$messages['ui_lang'] = 'Lenga d\'afichatge';
 $messages['lang'] = 'Lenga';
 $messages['project'] = 'Projècte';
 $messages['article'] = 'Pagina';

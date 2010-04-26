@@ -34,7 +34,7 @@ $messages['September'] = 'In dropdown list of months. See [http://wikipedia.rams
 $messages['October'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['November'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['December'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['ui_lang'] = 'Appears above dropdown list of languages. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
+$messages['ui_lang'] = 'Appears above dropdown list of languages. See [http://wikipedia.ramselehof.de/wikiblame.php here]. \'Display\' is a noun.';
 $messages['lang'] = 'Text before input box. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Language}}';
