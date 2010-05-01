@@ -155,9 +155,14 @@ else //no article selected
 
 
 <div align="center">
-		<? language_list($inc_dir); ?>
+		<? get_language_list($inc_dir); ?>
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
 		<form method="post" name="mainform" action="<? echo $datei ?>">
+		<div align="<? echo $alignment ?>">
+		<?
+			echo $messages['ui_lang'].'<br />';
+			language_selection($user_lang);?>
+		</div>
 		<input type="hidden" name="user_lang" value="<?php echo $user_lang?>">
 			<table style="font-family: arial; font-size: 84%;" cellspacing="5">
 				<tr>
@@ -712,6 +717,27 @@ function print_translator($lang)
 	{
 		echo "& <a href=\"".$messages['translator_link']."\">$messages[translator]</a> (translation)";
 	}
+}
+
+function language_selection($user_lang)
+{
+	global $inc_dir;
+	echo "<select name=\"user_lang\" onchange=\"javascript:forms['mainform'].submit()\">\n";
+	//create links to all languages
+	foreach(get_language_list($inc_dir) AS $language)
+	{
+		if($language!=$user_lang)
+		{
+			echo "<option>$language</option>\n";
+			//echo "[<a href=\"?user_lang=$language\">$language</a>]&nbsp;";
+		}
+		else
+		{
+			echo "<option selected>$language</option>\n";
+			//echo "[$language]&nbsp;";
+		}
+	}
+	echo "</select>\n";
 }
 
 ?>
