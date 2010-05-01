@@ -377,7 +377,7 @@ if($needle!="")
 	echo "<br>";
 	echo str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
 	
-		echo '<br /><br /><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
+		echo '<br /><br /><small>'. htmlspecialchars(get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'])) .'</small>';
 		
 }
 
@@ -762,7 +762,7 @@ function binary_search($middle, $from)
 	
 	$test_msg = str_replace('_FIRSTDATEVERSION_', get_diff_link($middle), $messages['binary_test']);
 	$test_msg = str_replace('_FIRSTNUMBER_', $middle, $test_msg);
-	$test_msg = str_replace('_SECONDNUMBER_', $middle+1, $test_msg);
+	$test_msg = str_replace('_SECONDNUMBER_', $middle+1, $test_msg); 
 	$test_msg = str_replace('_SOURCENUMBER_', $from, $test_msg);
 	echo $test_msg;
 
@@ -788,7 +788,7 @@ function binary_search($middle, $from)
 		else
 		{
 		//$right_version was 1
-			$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+$right_version])."</a> ";
+			$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+1])."</a> ";
 			$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle])."</a>";
 			if($in_this AND !$in_next)
 			{
@@ -881,7 +881,7 @@ function get_url($year, $month, $day)
 {
 	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags;
 	
-	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."l<!----->ang=$lang&limit=$limit&ignorefirst=".$_REQUEST['ignorefirst']."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags";
+	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."lang=$lang&limit=$limit&ignorefirst=".$_REQUEST['ignorefirst']."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags";
 	return $url;
 }
 
