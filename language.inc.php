@@ -46,10 +46,11 @@ function get_language($lang, $inc_dir)
 //tries to retrieve the language of the browser
 function read_language()
 {
-	$user_lang=$_REQUEST['user_lang'];
+	$user_lang=isset ($_REQUEST['user_lang']) ? $_REQUEST['user_lang'] : "";
 
 	if($user_lang=="")
 	{
+		$acceptLang = isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]) ? $_SERVER["HTTP_ACCEPT_LANGUAGE"] : "";
 		//http://www.php-resource.de/forum/showthread.php?threadid=22545
 		preg_match("/^([a-z]+)-?([^,;]*)/i", $_SERVER["HTTP_ACCEPT_LANGUAGE"], $matches);
 		
