@@ -3,7 +3,7 @@
  *
  */
 
-/** Azerbaijani (Azərbaycanca)
+/** German (formal address) (Deutsch (Sie-Form))
  *
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -11,10 +11,9 @@
  * @ingroup Language
  * @file
  *
- * @author Sortilegus
+ * @author WiseWoman
  */
 
-$messages['lang'] = 'Dil';
-$messages['project'] = 'Layihə';
-$messages['article'] = 'Səhifə';
-$messages['order'] = 'Ardıcıllıq';
+$messages['January'] = 'Januar';
+$messages['February'] = 'Februar';
+$messages['March'] = 'März';
