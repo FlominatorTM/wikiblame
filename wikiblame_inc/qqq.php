@@ -73,6 +73,7 @@ $messages['wrong_skips'] = 'Do not translate <code>__VERSIONSTOSKIP__</code>, an
 
 Hint: you could quote the text of the labels for the fields <code>__VERSIONSTOSKIP__</code> ({{msg-wikiblame|Messages\x5b\'ignorefirst\'\x5d}}) and <code>__VERSIONSTOSEARCH__</code> ({{msg-wikiblame|Messages\x5b\'limit\'\x5d}}). See [http://wikipedia.ramselehof.de/wikiblame.php here]';
 $messages['search_in_progress_text'] = 'Do not translate <code>_ARTICLELINK_</code> nor <code><b>_NEEDLE_</b></code>';
+$messages['search_in_progress_wikitags'] = 'Do not translate <code>_ARTICLELINK_</code> nor <code><b>_NEEDLE_</b></code>';
 $messages['execution_time'] = 'Do not translate <code>_EXECUTIONTIME_</code>.';
 $messages['versions_found'] = 'Do not translate <code>_NUMBEROFVERSIONS_</code>';
 $messages['binary_test'] = 'Do not translate <code>_FIRSTDATEVERSION_</code>, <code>_FIRSTNUMBER_</code>, <code>_SECONDNUMBER_</code>, and <code>_SOURCENUMBER_</code>';
