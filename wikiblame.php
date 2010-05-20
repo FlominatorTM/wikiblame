@@ -665,7 +665,7 @@ function start_over_here($versionpage)
 		$months['December'] = 12;
 		$month = $months[$dateParts[1]] ;
 		$year = $dateParts[2];
-		$theUrl = get_url($year,$month , $day);
+		$theUrl = get_url($year,$month , $day, false);
 		echo "<a href=\"".$theUrl."\">[".$messages['start_here']."]</a>";
 	}
 
@@ -877,11 +877,15 @@ function print_translator($lang)
 	}
 }
 
-function get_url($year, $month, $day)
+function get_url($year, $month, $day, $include_ignorefirst=true)
 {
 	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags;
+	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."lang=$lang&limit=$limit"."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags";
 	
-	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."lang=$lang&limit=$limit&ignorefirst=".$_REQUEST['ignorefirst']."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags";
+	if($include_ignorefirst)
+	{
+		$url.="&ignorefirst=".$_REQUEST['ignorefirst'];
+	}
 	return $url;
 }
 
