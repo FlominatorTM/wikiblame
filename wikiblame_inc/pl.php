@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Flominator
  * @author Leinad
  * @author Sp5uhe
  * @author WarX
@@ -40,6 +41,7 @@ $messages['order'] = 'Kolejność';
 $messages['newest_first'] = 'najnowsze na początku';
 $messages['oldest_first'] = 'najstarsze na początku';
 $messages['search_method'] = 'Metoda wyszukiwania';
+$messages['binary_in_wp'] = 'http://pl.wikipedia.org/wiki/Wyszukiwanie_binarne';
 $messages['linear'] = 'liniowa';
 $messages['interpolated'] = 'interpolacyjna (szybsza z większą ilością wersji)';
 $messages['ignore_minors'] = 'ignoruj drobne zmiany (eksperymentalne)';

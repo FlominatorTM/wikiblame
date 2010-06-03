@@ -13,6 +13,7 @@
  *
  * @author Civvì
  * @author Darth Kule
+ * @author Flominator
  * @author Lou Crazy
  * @author Melos <nnico AT jumpy.it>
  */
@@ -43,6 +44,7 @@ $messages['newest_first'] = 'prima le più recenti';
 $messages['oldest_first'] = 'prima le meno recenti';
 $messages['search_method'] = 'Metodo di ricerca';
 $messages['binary'] = 'binario';
+$messages['binary_in_wp'] = 'http://it.wikipedia.org/wiki/Ricerca_dicotomica';
 $messages['linear'] = 'lineare';
 $messages['interpolated'] = 'interpolato (più veloce con molte versioni da controllare)';
 $messages['ignore_minors'] = 'ignora le modifiche minori (sperimentale)';

@@ -12,6 +12,7 @@
  * @file
  *
  * @author Ferrer
+ * @author Flominator
  * @author Lockal
  * @author Александр Сигачёв
  */
@@ -43,6 +44,7 @@ $messages['newest_first'] = 'вначале новейшие';
 $messages['oldest_first'] = 'вначале старейшие';
 $messages['search_method'] = 'Способ поиска';
 $messages['binary'] = 'двоичный';
+$messages['binary_in_wp'] = 'http://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA';
 $messages['linear'] = 'линейный';
 $messages['interpolated'] = 'интерполированный (быстрее, если много версий)';
 $messages['ignore_minors'] = 'не учитывать малые изменения (экспериментально)';

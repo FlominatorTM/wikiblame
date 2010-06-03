@@ -12,6 +12,7 @@
  * @file
  *
  * @author Bennylin
+ * @author Flominator
  * @author IvanLanin
  */
 
@@ -39,6 +40,7 @@ $messages['order'] = 'Urutan';
 $messages['newest_first'] = 'mulai dengan terbaru';
 $messages['oldest_first'] = 'mulai dengan terlama';
 $messages['search_method'] = 'Metode pencarian';
+$messages['binary_in_wp'] = 'http://id.wikipedia.org/wiki/Pencarian_biner';
 $messages['linear'] = 'linier';
 $messages['interpolated'] = 'terinterpolasi (lebih cepat jika versi lebih banyak)';
 $messages['ignore_minors'] = 'abaikan perubahan minor (eksperimental)';

@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Flominator
  * @author Hamilton Abreu
  * @author Malafaya
  * @author Mosca
@@ -42,6 +43,7 @@ $messages['newest_first'] = 'recentes primeiro';
 $messages['oldest_first'] = 'antigas primeiro';
 $messages['search_method'] = 'Método de procura';
 $messages['binary'] = 'binária';
+$messages['binary_in_wp'] = 'http://pt.wikipedia.org/wiki/Pesquisa_bin%C3%A1ria';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'interpolada (mais rápido para verificar muitas edições)';
 $messages['ignore_minors'] = 'ignorar edições menores (experimental)';

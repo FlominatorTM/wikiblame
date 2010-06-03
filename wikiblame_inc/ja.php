@@ -12,6 +12,7 @@
  * @file
  *
  * @author Aotake
+ * @author Flominator
  * @author Fryed-peach
  */
 
@@ -41,6 +42,7 @@ $messages['newest_first'] = '新しいものを初めに';
 $messages['oldest_first'] = '古いものを初めに';
 $messages['search_method'] = '探索方法';
 $messages['binary'] = '二分探索';
+$messages['binary_in_wp'] = 'http://ja.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%8E%A2%E7%B4%A2';
 $messages['linear'] = '線型';
 $messages['interpolated'] = '補間 (版が多い場合に速い)';
 $messages['ignore_minors'] = '細部の編集は無視する (実験的)';

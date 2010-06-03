@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Flominator
  * @author Nghtwlkr
  */
 
@@ -40,6 +41,7 @@ $messages['newest_first'] = 'siste først';
 $messages['oldest_first'] = 'eldste først';
 $messages['search_method'] = 'Søkemetode';
 $messages['binary'] = 'binært';
+$messages['binary_in_wp'] = 'http://no.wikipedia.org/wiki/Bin%C3%A6rs%C3%B8k';
 $messages['linear'] = 'lineær';
 $messages['interpolated'] = 'interpolert (raskere med flere versjoner)';
 $messages['ignore_minors'] = 'ignorer mindre endringer (eksperimentell)';
