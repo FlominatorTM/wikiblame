@@ -12,6 +12,7 @@
  * @file
  *
  * @author Crt
+ * @author Flominator
  * @author Nike
  * @author Silvonen
  */
@@ -37,6 +38,7 @@ $messages['order'] = 'Lajittele';
 $messages['newest_first'] = 'uusimmat ensin';
 $messages['oldest_first'] = 'vanhimmat ensin';
 $messages['search_method'] = 'Hakualgoritmi';
+$messages['binary_in_wp'] = 'http://fi.wikipedia.org/wiki/Puolitushaku';
 $messages['linear'] = 'lineraarinen';
 $messages['interpolated'] = 'interpoloitu (nopeampi, jos versioita on paljon)';
 $messages['manual'] = 'Ohje';

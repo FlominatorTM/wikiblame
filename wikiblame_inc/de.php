@@ -43,6 +43,7 @@ $messages['newest_first'] = 'neuere zuerst';
 $messages['oldest_first'] = 'ältere zuerst (nur bei linearer Suche)';
 $messages['search_method'] = 'Suchmethode';
 $messages['binary'] = 'binär';
+$messages['binary_in_wp'] = 'http://de.wikipedia.org/wiki/Binäre_Suche';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'interpoliert (bei vielen Versionen schneller)';
 $messages['ignore_minors'] = 'Kleine Änderungen ignorieren (experimentell)';

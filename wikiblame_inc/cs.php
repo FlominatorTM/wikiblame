@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Flominator
  * @author Kuvaly
  * @author Mormegil
  */
@@ -36,5 +37,6 @@ $messages['start_date'] = 'Počáteční datum';
 $messages['order'] = 'Řazení';
 $messages['newest_first'] = 'od nejnovějších';
 $messages['oldest_first'] = 'od nejstarších';
+$messages['binary_in_wp'] = 'http://cs.wikipedia.org/wiki/Bin%C3%A1rn%C3%AD_vyhled%C3%A1v%C3%A1n%C3%AD';
 $messages['ignore_minors'] = 'ignorovat malé editace (experimentální)';
 $messages['contact'] = 'Kontakt';

@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Flominator
  * @author Joseph
  * @author Vito Genovese
  */
@@ -39,6 +40,7 @@ $messages['order'] = 'Sıra';
 $messages['newest_first'] = 'Sondan birinci';
 $messages['oldest_first'] = 'Baştan birinci';
 $messages['search_method'] = 'Arama tipi';
+$messages['binary_in_wp'] = 'http://tr.wikipedia.org/wiki/%C4%B0kili_arama_algoritmas%C4%B1';
 $messages['linear'] = 'lineer';
 $messages['interpolated'] = 'interpol (fazla sürüm sayısı varsa daha hızı arar)';
 $messages['ignore_minors'] = 'ignore minor changes (experimental)';

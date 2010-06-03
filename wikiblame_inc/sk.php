@@ -11,6 +11,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Flominator
  * @author Helix84
  * @author Rudko
  */
@@ -39,6 +40,7 @@ $messages['order'] = 'Poradie';
 $messages['newest_first'] = 'najprv najnovšie';
 $messages['oldest_first'] = 'najprv najstaršie';
 $messages['search_method'] = 'Metóda hľadania';
+$messages['binary_in_wp'] = 'http://sk.wikipedia.org/wiki/Bin%C3%A1rne_vyh%C4%BEad%C3%A1vanie';
 $messages['linear'] = 'lineárne';
 $messages['interpolated'] = 'interpolované (rýchlejšie pri väčšom počte verzií)';
 $messages['ignore_minors'] = 'ignorovať drobné zmeny (experimentálne)';
