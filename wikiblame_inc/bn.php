@@ -32,4 +32,6 @@ $messages['article'] = 'পাতা';
 $messages['needle'] = 'যা অনুসন্ধান করা হয়েছে';
 $messages['start_date'] = 'শুরুর তারিখ';
 $messages['start'] = 'শুরু';
+$messages['reset'] = 'আদি অবস্থায় ফেরত';
+$messages['manual'] = 'হস্তচালিত';
 $messages['contact'] = 'যোগাযোগের ঠিকানা';
