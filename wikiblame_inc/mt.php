@@ -14,6 +14,19 @@
  * @author Chrisportelli
  */
 
+$messages['January'] = 'Jannar';
+$messages['February'] = 'Frar';
+$messages['March'] = 'Marzu';
+$messages['April'] = 'April';
+$messages['May'] = 'Mejju';
+$messages['June'] = 'Ġunju';
+$messages['July'] = 'Lulju';
+$messages['August'] = 'Awwissu';
+$messages['September'] = 'Settembru';
+$messages['October'] = 'Ottubru';
+$messages['November'] = 'Novembru';
+$messages['December'] = 'Diċembru';
+$messages['ui_lang'] = 'Lingwa';
 $messages['lang'] = 'Lingwa';
 $messages['project'] = 'Proġett';
 $messages['article'] = 'Paġna';
@@ -26,9 +39,11 @@ $messages['order'] = 'Ordni';
 $messages['newest_first'] = 'l-iġded l-ewwel';
 $messages['oldest_first'] = 'l-eqdem l-ewwel';
 $messages['search_method'] = 'Metodu ta\' tfittxija';
+$messages['binary'] = 'binarju';
 $messages['linear'] = 'lineari';
 $messages['interpolated'] = 'interpolati (aktar veloċi b\'aktar verżjonijiet)';
-$messages['ignore_minors'] = 'injora l-modifiki minuri (esperimentali)';
+$messages['ignore_minors'] = 'injora l-modifiki minuri (sperimentali)';
+$messages['force_wikitags'] = 'inforza t-tfittxija għat-test wiki';
 $messages['start'] = 'Ibda';
 $messages['reset'] = 'Bħall-bidu';
 $messages['manual'] = 'Gwida';
@@ -40,3 +55,4 @@ $messages['binary_test'] = 'Paragun tad-differenzi f\'_FIRSTDATEVERSION_ bejn _F
 $messages['insertion_found'] = 'Inserzjoni misjuba bejn LEFT_VERSION u RIGHT_VERSION';
 $messages['deletion_found'] = 'Tħassir instab bejn LEFT_VERSION u RIGHT_VERSION';
 $messages['help_translating'] = 'Għin biex tittraduċi fuq translatewiki.net';
+$messages['start_here'] = 'Fittex minn hawnhekk';
