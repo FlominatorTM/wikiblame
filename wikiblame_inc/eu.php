@@ -27,6 +27,7 @@ $messages['September'] = 'Iraila';
 $messages['October'] = 'Urria';
 $messages['November'] = 'Azaroa';
 $messages['December'] = 'Abendua';
+$messages['ui_lang'] = 'Hizkuntza erakutsi';
 $messages['lang'] = 'Hizkuntza';
 $messages['project'] = 'Proiektua';
 $messages['article'] = 'Orrialdea';

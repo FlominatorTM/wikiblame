@@ -12,6 +12,7 @@
  * @file
  *
  * @author Charmed94
+ * @author Rancher
  */
 
 $messages['January'] = 'Јануар';
@@ -42,7 +43,7 @@ $messages['search_method'] = 'Начин претраге';
 $messages['binary'] = 'бинарно';
 $messages['linear'] = 'линеарно';
 $messages['interpolated'] = 'уметнуто (брже с више издања)';
-$messages['ignore_minors'] = 'занемари мале измене (експериментално)';
+$messages['ignore_minors'] = 'занемари мање измене (експериментално)';
 $messages['force_wikitags'] = 'приморај претраживање за викитекст';
 $messages['start'] = 'Започни';
 $messages['reset'] = 'Поништи';
