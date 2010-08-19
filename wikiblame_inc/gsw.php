@@ -1,10 +1,9 @@
 <?php
-/** Wikiblame
+/** WikiBlame
  *
  */
-
 /** Swiss German (Alemannisch)
- *
+ * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
  *
