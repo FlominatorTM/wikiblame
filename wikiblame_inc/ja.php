@@ -49,6 +49,7 @@ $messages['force_wikitags'] = 'ウィキテキストとして検索する';
 $messages['start'] = '開始';
 $messages['reset'] = 'リセット';
 $messages['manual'] = '使用説明';
+$messages['manual_link'] = 'http://ja.wikipedia.org/wiki/Wikipedia:%E3%83%84%E3%83%BC%E3%83%AB/WikiBlame';
 $messages['contact'] = '連絡先';
 $messages['wrong_skips'] = '設定の不備: 初めの__VERSIONSTOSKIP__版をとばしてしまうと、検査すべき__VERSIONSTOSEARCH__版のどれも処理されないことになります。';
 $messages['search_in_progress_text'] = '「_ARTICLELINK_」の版履歴を、「<b>_NEEDLE_</b>」をプレインテキストとして検索しています';

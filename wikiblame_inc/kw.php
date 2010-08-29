@@ -15,7 +15,7 @@
  */
 
 $messages['January'] = 'Genver';
-$messages['February'] = 'Hwevrer';
+$messages['February'] = 'Whevrel';
 $messages['March'] = 'Meurth';
 $messages['April'] = 'Ebrel';
 $messages['May'] = 'Me';
@@ -28,6 +28,6 @@ $messages['November'] = 'Du';
 $messages['December'] = 'Kevardhu';
 $messages['lang'] = 'Yeth';
 $messages['article'] = 'Folen';
-$messages['needle'] = 'Hwila';
+$messages['needle'] = 'Whila';
 $messages['start'] = 'Dalleth';
 $messages['reset'] = 'Dasset';
