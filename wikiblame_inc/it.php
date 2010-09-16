@@ -13,6 +13,7 @@
  * @author Civvì
  * @author Darth Kule
  * @author Flominator
+ * @author Gianfranco
  * @author Lou Crazy
  * @author Melos <nnico AT jumpy.it>
  */
@@ -56,6 +57,8 @@ $messages['contact'] = 'Contatto';
 $messages['wrong_skips'] = 'Impostazioni sbagliate: se le prime __VERSIONSTOSKIP__
 versioni vengono saltate, allora nessuna delle __VERSIONSTOSEARCH__ versioni
 da ricercare sarà processata.';
+$messages['search_in_progress_text'] = 'La cronologia di _ARTICLELINK_ viene ora analizzata alla ricerca di <b>_NEEDLE_</b> come testo semplice';
+$messages['search_in_progress_wikitags'] = 'La cronologia di _ARTICLELINK_ viene ora analizzata alla ricerca di <b>_NEEDLE_</b> come testo wiki';
 $messages['execution_time'] = 'Tempo di esecuzione: _EXECUTIONTIME_ secondi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ revisioni trovate';
 $messages['binary_test'] = 'Confronto delle differenze in _FIRSTDATEVERSION_ fra _FIRSTNUMBER_ e _SECONDNUMBER_ mentre proviene da _SOURCENUMBER_:';
