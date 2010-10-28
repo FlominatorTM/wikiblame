@@ -11,6 +11,7 @@
  * @file
  *
  * @author Flominator
+ * @author Jkjk
  * @author Kuvaly
  * @author Mormegil
  */
@@ -27,6 +28,7 @@ $messages['September'] = 'Září';
 $messages['October'] = 'Říjen';
 $messages['November'] = 'Listopad';
 $messages['December'] = 'Prosinec';
+$messages['ui_lang'] = 'Jazyk rozhraní';
 $messages['lang'] = 'Jazyk';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Stránka';
