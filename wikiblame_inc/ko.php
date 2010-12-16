@@ -11,6 +11,7 @@
  * @file
  *
  * @author Flominator
+ * @author Klutzy
  * @author Kwj2772
  */
 
@@ -36,6 +37,8 @@ $messages['ignorefirst'] = '처음 판 n개를 무시';
 $messages['limit'] = '확인할 판의 개수';
 $messages['start_date'] = '시작할 날짜';
 $messages['order'] = '순서';
+$messages['newest_first'] = '최근 항목 먼저';
+$messages['oldest_first'] = '과거 항목 먼저';
 $messages['search_method'] = '검색 방법';
 $messages['binary'] = '이진 검색';
 $messages['binary_in_wp'] = 'http://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%EA%B2%80%EC%83%89_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98';
