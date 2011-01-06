@@ -877,10 +877,11 @@ function print_translator($lang)
 	}
 }
 
+
 function get_url($year, $month, $day, $include_ignorefirst=true)
 {
-	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags;
-	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."lang=$lang&limit=$limit"."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags";
+	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang;
+	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."lang=$lang&limit=$limit"."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags&user_lang=$user_lang";
 	
 	if($include_ignorefirst)
 	{
@@ -891,6 +892,10 @@ function get_url($year, $month, $day, $include_ignorefirst=true)
 
 ?>
  <p align="<? echo $alignment ?>"> 
+    
+	<a href="http://www.ramselehof.de"><img border="0"
+        src="ramselehof_powered_feddich.jpg"
+        alt="Ramselehof.de"></a>
     <a href="http://validator.w3.org/check?uri=referer"><img border="0"
         src="http://www.w3.org/Icons/valid-html401-blue"
         alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
