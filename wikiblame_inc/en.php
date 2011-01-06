@@ -77,3 +77,4 @@ $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_V
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['help_translating'] = 'Help translating at translatewiki.net';
 $messages['start_here'] = 'Search from here';
+$messages['too_much_versions'] = 'You have reached your query limit of __VERSIONLIMIT__ versions. Please try again in __WAITMINUTES__ minutes. Sorry for the inconvenience.';

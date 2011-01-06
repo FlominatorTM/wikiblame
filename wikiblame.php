@@ -5,7 +5,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>WikiBlame</title>
-		<!-- <? strtotime("7 November 2006"); ?>-->
 	</head><?
 
 // required to prevent automatic escaping of input strings
@@ -157,6 +156,7 @@ else //no article selected
 }
 
 $allowedRevisionsPerCall = 50;
+
 $jsTextLessVersions = str_replace( "__ALLOWEDREVISIONS__", $allowedRevisionsPerCall, $messages['get_less_versions']);
 
 ?>.focus();checkScanAmount();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
@@ -356,8 +356,11 @@ if($needle!="")
 {
 	//$needle = needle_regex($needle); necessary if you work with html, which is currently not the case
 	check_options(); // stops script, when wrong options are used
+	if(!$use_binary_search)
+	{
+		check_calls_from_this_ip($limit, $ignorefirst, $skipversions);
+	}
 	
-
 	
 	if($lang=="blank")
 	{
@@ -920,6 +923,72 @@ function get_url($year, $month, $day, $include_ignorefirst=true)
 		$url.="&ignorefirst=".$_REQUEST['ignorefirst'];
 	}
 	return $url;
+}
+
+function check_calls_from_this_ip($limit, $ignorefirst, $skipversions)
+{
+	
+	global $messages;
+	$allowedRevisionsPerPeriod = 5;
+	$periodInMinutes =0;
+	$expectedVersions = $limit - $ignorefirst;
+	$totalVersions = $expectedVersions;
+	if($skipversions > 0)
+	{
+		$expectedVersions = $expectedVersions / $skipversions;
+	}
+	
+	$ip = $_SERVER['REMOTE_ADDR'];
+	$filename = "quota/". md5($ip);
+	
+	if(file_exists($filename))
+	{
+		//echo "File $filename exists";
+		//echo "File is younger than $periodInMinutes minutes";
+		$file = fopen($filename, "r");
+		
+		if($file)
+		{
+			$alreadyQueried = fgets($file, 8);
+			fclose($file);
+			//echo "IP has already queried $alreadyQueried versions ";
+			$totalVersions = $alreadyQueried + $expectedVersions;
+			
+			if($totalVersions > $allowedRevisionsPerPeriod)
+			{
+				$timeForReset = filectime($filename) + ($periodInMinutes *60);
+				if(time()>$timeForReset)
+				{
+					write_simple_file($filename, $expectedVersions);
+				}
+				else
+				{
+					$dieMessage = str_replace("__VERSIONLIMIT__", $allowedRevisionsPerPeriod, $messages['too_much_versions']);
+					$dieMessage = str_replace("__WAITMINUTES__", $periodInMinutes, $dieMessage);
+					log_search("blocked");
+					die($dieMessage);
+				}
+			}
+			else
+			{
+				write_simple_file($filename, $totalVersions);
+			}
+		}
+	}
+	else
+	{
+		write_simple_file($filename, $expectedVersions);
+	}
+}
+
+function write_simple_file($filename, $content)
+{
+	$file = fopen($filename, "w");
+	if($file)
+	{
+		fputs($file, $content);
+		fclose($file);
+	}
 }
 
 ?>
