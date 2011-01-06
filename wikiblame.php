@@ -929,7 +929,7 @@ function check_calls_from_this_ip($limit, $ignorefirst, $skipversions)
 {
 	
 	global $messages;
-	$allowedRevisionsPerPeriod = 100;
+	$allowedRevisionsPerPeriod = 175;
 	$periodInMinutes =30;
 	$expectedVersions = $limit - $ignorefirst;
 	$totalVersions = $expectedVersions;
@@ -993,7 +993,7 @@ function write_simple_file($filename, $content)
 
 ?>
  <p align="<? echo $alignment ?>"> 
-    <!-- <a href="http://www.ps-webhosting.de/?ref=k3591" target="_blank"><img height="31" width="88" alt="Webhosting von ps-webhosting.de" border="0" src="http://www.ps-webhosting.de/banner/ps_button3.gif"></a>-->
+    <!--<a href="http://www.ps-webhosting.de/?ref=k3591" target="_blank"><img alt="Webhosting von ps-webhosting.de" border="0" src="http://www.ps-webhosting.de/banner/ps_button2.gif"></a>-->
 	<a href="http://www.ramselehof.de"><img border="0"
         src="ramselehof_powered_feddich.jpg"
         alt="Ramselehof.de"></a>
