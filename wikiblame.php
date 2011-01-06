@@ -709,7 +709,7 @@ function start_over_here($versionpage)
 function log_search ($time="started")
 {
 	global $article, $needle, $lang, $project, $asc, $use_binary_search, $server, $limit, $skipversions, $get_version_time, $versions, $offset, $user, $user_lang;
-	$logfile = "wikiblame.csv";
+	$logfile = "wikiblame_".strftime("%Y-%m-%d").".csv";
 	
 	if(!file_exists($logfile))
 	{
@@ -929,8 +929,8 @@ function check_calls_from_this_ip($limit, $ignorefirst, $skipversions)
 {
 	
 	global $messages;
-	$allowedRevisionsPerPeriod = 5;
-	$periodInMinutes =0;
+	$allowedRevisionsPerPeriod = 100;
+	$periodInMinutes =30;
 	$expectedVersions = $limit - $ignorefirst;
 	$totalVersions = $expectedVersions;
 	if($skipversions > 0)
@@ -993,7 +993,7 @@ function write_simple_file($filename, $content)
 
 ?>
  <p align="<? echo $alignment ?>"> 
-    
+    <!-- <a href="http://www.ps-webhosting.de/?ref=k3591" target="_blank"><img height="31" width="88" alt="Webhosting von ps-webhosting.de" border="0" src="http://www.ps-webhosting.de/banner/ps_button3.gif"></a>-->
 	<a href="http://www.ramselehof.de"><img border="0"
         src="ramselehof_powered_feddich.jpg"
         alt="Ramselehof.de"></a>
