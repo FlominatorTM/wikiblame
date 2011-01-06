@@ -156,7 +156,10 @@ else //no article selected
 	echo "article";
 }
 
-?>.focus();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
+$allowedRevisionsPerCall = 50;
+$jsTextLessVersions = str_replace( "__ALLOWEDREVISIONS__", $allowedRevisionsPerCall, $messages['get_less_versions']);
+
+?>.focus();checkScanAmount();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
 
 <script>
 function setFormDate(year, mon, day)
@@ -164,6 +167,35 @@ function setFormDate(year, mon, day)
 	document.forms['mainform'].elements['offjahr'].value = year;
 	document.forms['mainform'].elements['offmon'].value = mon;
 	document.forms['mainform'].elements['offtag'].value = day;
+}
+
+//disable submit button when user wants to query too much revisions by linear search
+function checkScanAmount()
+{
+	var allowedVersionsPerCall = <? echo $allowedRevisionsPerCall ?>;
+	var expectedVersionsToQuery = 0;
+	var versionsToQuery = document.forms['mainform'].elements['limit'].value;
+	var versionsToSkipDuring = document.forms['mainform'].elements['skipversions'].value;
+	var versionsToSkipBeginning = document.forms['mainform'].elements['ignorefirst'].value;
+	
+	expectedVersionsToQuery = versionsToQuery - versionsToSkipBeginning;
+	if(versionsToSkipDuring>0)
+	{
+		expectedVersionsToQuery = expectedVersionsToQuery / versionsToSkipDuring;
+	}
+	
+	if(expectedVersionsToQuery > allowedVersionsPerCall &&
+  	   document.forms['mainform'].elements['linear'].checked)
+	{
+		var alertText = "<? echo $jsTextLessVersions ?>";
+
+		alert(alertText.replace(/__NUMREVISIONS__/g, ""+expectedVersionsToQuery));
+		document.forms['mainform'].elements['start'].disabled=true;
+	}
+	else
+	{
+		document.forms['mainform'].elements['start'].disabled=false;
+	}
 }
 </script>
 
@@ -223,7 +255,7 @@ function setFormDate(year, mon, day)
 						</label>
 					</td>
 					<td>
-						<input type="text" name="skipversions" id="skipversions" value="<?php echo  $skipversions; ?>">
+						<input type="text" name="skipversions" id="skipversions" onchange="javascript:checkScanAmount()" value="<?php echo  $skipversions; ?>">
 					</td>
 				</tr>				
 				<tr>
@@ -233,7 +265,7 @@ function setFormDate(year, mon, day)
 						</label>
 					</td>
 					<td>
-						<input type="text" name="ignorefirst" id="ignorefirst" value="<?php echo $ignorefirst; ?>">
+						<input type="text" name="ignorefirst" id="ignorefirst" onchange="javascript:checkScanAmount()" value="<?php echo $ignorefirst; ?>">
 					</td>
 				</tr>	
 				<tr>
@@ -243,7 +275,7 @@ function setFormDate(year, mon, day)
 						</label>
 					</td>
 					<td>
-						<input type="text" name="limit" id="limit" value="<?php echo $limit; ?>">
+						<input type="text" name="limit" id="limit" onchange="javascript:checkScanAmount()" value="<?php echo $limit; ?>">
 					</td>
 				</tr>	
 				<tr>
@@ -271,11 +303,11 @@ function setFormDate(year, mon, day)
 				<tr>
 					<td align="<? echo $alignment ?>"><? echo $messages['search_method'] ?></td>
 					<td>
-						<input type="radio" name="searchmethod" id="linear" value="lin" <? if ($use_binary_search!=true) echo checked; ?> >
+						<input type="radio" name="searchmethod" id="linear" value="lin"  onchange="javascript:checkScanAmount()"  <? if ($use_binary_search!=true) echo checked; ?> >
 						<label for="linear">
 							<? echo $messages['linear'] ?>
 						</label>
-						<input type="radio" name="searchmethod" id="int" value="int" <? if ($use_binary_search==true) echo checked; ?> >
+						<input type="radio" name="searchmethod" id="int" value="int" onchange="javascript:checkScanAmount()"   <? if ($use_binary_search==true) echo checked; ?> >
 						<label for="int">
 						<a href="<? echo $messages['binary_in_wp']?>"><? echo $messages['binary'] ?></a>
 						</label>
@@ -305,7 +337,7 @@ function setFormDate(year, mon, day)
 				</tr>
 				<tr>
 					<td colspan="2" align="center"><br><br>
-						<input type="submit" value="<? echo $messages['start'] ?>" >
+						<input name="start" id="start" type="submit" value="<? echo $messages['start'] ?>" >
 					</td>
 				</tr>
 			</table>

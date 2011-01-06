@@ -60,6 +60,7 @@ $messages['manual'] = 'Manual';
 $messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
 $messages['contact'] = 'Contact';
 $messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['get_less_versions'] = "Your search might query __NUMREVISIONS__ revisions at one time. In order to protect the server, you are only allowed to query for __ALLOWEDREVISIONS__ per call. Please change the settings or switch the search method to binary!";
 
 //Output elements
 $messages['wrong_skips'] = 'Wrong settings: If the first __VERSIONSTOSKIP__ versions are skipped, then none of the __VERSIONSTOSEARCH__ versions to be searched will be processed.';
