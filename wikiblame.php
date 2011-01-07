@@ -341,6 +341,7 @@ function checkScanAmount()
 					</td>
 				</tr>
 			</table>
+			<input type="hidden" name="ref" value="<? $_SERVER['HTTP_REFERER'] ?>">
 		</form>
 <hr>
 <a href='<? echo $messages['manual_link'] ?>'><? echo $messages['manual'] ?></a> - 
@@ -709,7 +710,7 @@ function start_over_here($versionpage)
 function log_search ($time="started")
 {
 	global $article, $needle, $lang, $project, $asc, $use_binary_search, $server, $limit, $skipversions, $get_version_time, $versions, $offset, $user, $user_lang;
-	$logfile = "wikiblame_".strftime("%Y-%m-%d").".csv";
+	$logfile = "log/wikiblame_".strftime("%Y-%m-%d").".csv";
 	
 	if(!file_exists($logfile))
 	{
@@ -928,8 +929,8 @@ function get_url($year, $month, $day, $include_ignorefirst=true)
 function check_calls_from_this_ip($limit, $ignorefirst, $skipversions)
 {
 	
-	global $messages;
-	$allowedRevisionsPerPeriod = 175;
+	global $messages, $allowedRevisionsPerPeriod;
+	
 	$periodInMinutes =30;
 	$expectedVersions = $limit - $ignorefirst;
 	$totalVersions = $expectedVersions;
