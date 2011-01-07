@@ -728,8 +728,7 @@ function log_search ($time="started")
 		$header.="Linear/Interpolated;";
 		$header.="Execution-Time;";
 		$header.="Get-Version-Time;";
-		$header.="Referer\n";
-		
+		$header.="Scriptname\n";
 	}
 	
 	
@@ -761,7 +760,7 @@ function log_search ($time="started")
 		
 		fputs($file, $time.";");
 		fputs($file, $get_version_time.";");
-		fputs($file, $_SERVER['HTTP_REFERER'].";\n");
+		fputs($file, $_SERVER['SCRIPT_NAME'].";\n");
 		fclose($file);
 	}
 	
