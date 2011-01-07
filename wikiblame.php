@@ -341,7 +341,6 @@ function checkScanAmount()
 					</td>
 				</tr>
 			</table>
-			<input type="hidden" name="ref" value="<? $_SERVER['HTTP_REFERER'] ?>">
 		</form>
 <hr>
 <a href='<? echo $messages['manual_link'] ?>'><? echo $messages['manual'] ?></a> - 
