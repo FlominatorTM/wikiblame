@@ -71,7 +71,7 @@ $messages['search_in_progress_wikitags'] = 'The version history of _ARTICLELINK_
 
 $messages['execution_time'] = 'Execution time: _EXECUTIONTIME_ seconds';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions found';
-
+$messages['please_wait'] = 'Please wait …';
 $messages['binary_test'] = 'Comparing differences in _FIRSTDATEVERSION_ between _FIRSTNUMBER_ and _SECONDNUMBER_ while coming from _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';

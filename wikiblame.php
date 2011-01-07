@@ -337,7 +337,7 @@ function checkScanAmount()
 				</tr>
 				<tr>
 					<td colspan="2" align="center"><br><br>
-						<input name="start" id="start" type="submit" value="<? echo $messages['start'] ?>" >
+						<input name="start" id="start" type="submit" onclick="javascript:this.disabled=true;this.value='<? echo $messages['please_wait'] ?>'" value="<? echo $messages['start'] ?>" >
 					</td>
 				</tr>
 			</table>
