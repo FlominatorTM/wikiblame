@@ -51,7 +51,7 @@ $messages['binary'] = 'binary';
 $messages['binary_in_wp'] = 'http://en.wikipedia.org/wiki/Binary_search_algorithm';
 $messages['linear'] = 'linear';
 
-$messages['interpolated'] = 'interpolated (faster with more versions)';
+$messages['interpolated'] = 'binary (faster with more versions)';
 $messages['ignore_minors'] = 'ignore minor changes (experimental)';
 $messages['force_wikitags'] = 'force searching for wikitext';
 $messages['start'] = 'Start';
@@ -77,4 +77,4 @@ $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_V
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['help_translating'] = 'Help translating at translatewiki.net';
 $messages['start_here'] = 'Search from here';
-$messages['too_much_versions'] = 'You have reached your query limit of __VERSIONLIMIT__ versions. Please try again in __WAITMINUTES__ minutes. Sorry for the inconvenience.';
+$messages['too_much_versions'] = 'You have reached your query limit of __VERSIONLIMIT__ versions. Please try again in __WAITMINUTES__ minutes or switch to binary search. Sorry for the inconvenience.';
