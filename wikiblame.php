@@ -927,8 +927,9 @@ function get_url($year, $month, $day, $include_ignorefirst=true)
 function check_calls_from_this_ip($limit, $ignorefirst, $skipversions)
 {
 	
-	global $messages, $allowedRevisionsPerPeriod;
+	global $messages;
 	
+	$allowedRevisionsPerPeriod = 300;
 	$periodInMinutes =30;
 	$expectedVersions = $limit - $ignorefirst;
 	$totalVersions = $expectedVersions;
