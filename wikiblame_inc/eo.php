@@ -11,6 +11,7 @@
  * @file
  *
  * @author Lucas
+ * @author Mihxil
  */
 
 $messages['January'] = 'januaro';
@@ -25,7 +26,38 @@ $messages['September'] = 'septembro';
 $messages['October'] = 'oktobro';
 $messages['November'] = 'novembro';
 $messages['December'] = 'decembro';
+$messages['ui_lang'] = 'Montrolingvo';
 $messages['lang'] = 'Lingvo';
 $messages['project'] = 'Projekto';
 $messages['article'] = 'Paĝo';
+$messages['needle'] = 'Serĉi pri';
+$messages['skipversions'] = 'Ĉiam transsalti x versiojn';
+$messages['ignorefirst'] = 'Ignori unuajn x versiojn';
+$messages['limit'] = 'Versioj kontrolotaj';
+$messages['start_date'] = 'Komenca dato';
+$messages['order'] = 'Mendi';
+$messages['newest_first'] = 'Plej novaj unue';
+$messages['oldest_first'] = 'Plej malnovaj unue';
+$messages['search_method'] = 'Serĉmetodo';
+$messages['binary'] = 'duuma';
+$messages['linear'] = 'lineara';
+$messages['interpolated'] = 'Binara interpolado (pli rapidas kun multaj versioj)';
+$messages['ignore_minors'] = 'Ignori ŝanĝetojn (eksperimente)';
+$messages['force_wikitags'] = 'Devige serĉi viki-tekston';
+$messages['start'] = 'Komenci';
+$messages['reset'] = 'Hodiaŭ';
+$messages['manual'] = 'Permane';
+$messages['contact'] = 'Kontakti';
+$messages['get_less_versions'] = 'Via serĉpeto povus enhavi maksimume __NUMREVISIONS__  da revizioj. Cele al protekto de la servilo, vi rajtas nur peti po __ALLOWEDREVISIONS__  da revizioj. Bonvolu reagordi, aŭ ŝanĝi la serĉmetodon al binara interpolado.';
+$messages['wrong_skips'] = 'Malĝustaj agordoj: Se la unuaj __VERSIONSTOSKIP__ versioj transsaltatas, tiam neniuj el la __VERSIONSTOSEARCH__  versioj serĉotaj estos traktataj.';
+$messages['search_in_progress_text'] = 'La versihistorio de _ARTICLELINK_  estas serĉata pri <b>_NEEDLE_</b> kiel plata teksto';
+$messages['search_in_progress_wikitags'] = 'La versihistorio de _ARTICLELINK_ estas serĉata pri <b>_NEEDLE_</b> kiel vikia teksto';
+$messages['execution_time'] = 'Bezonata  tempo: _EXECUTIONTIME_ sekundoj';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ da versioj estas trovitaj';
+$messages['please_wait'] = 'Bonvolu atendi...';
+$messages['binary_test'] = 'Komparante diferencojn en  _FIRSTDATEVERSION_ inter _FIRSTNUMBER_ kaj _SECONDNUMBER_ veninte de _SOURCENUMBER_:';
+$messages['insertion_found'] = 'Enmeto troviĝis inter LEFT_VERSION kaj RIGHT_VERSION';
+$messages['deletion_found'] = 'Forigo troviĝis inter LEFT_VERSION kaj RIGHT_VERSION';
 $messages['help_translating'] = 'Helpi tradukadon ĉe translatewiki.net';
+$messages['start_here'] = 'Ekserĉi ĉi tie';
+$messages['too_much_versions'] = 'Vi atingis petolimon de __VERSIONLIMIT__ da versioj. Bonvolu reprovi post __WAITMINUTES__ da minutoj aŭ ŝanĝu al binara interpolado. Pardonu pro tio.';
