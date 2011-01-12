@@ -13,6 +13,7 @@
  * @author Flominator
  * @author KEL
  * @author Prima klasy4na
+ * @author Тест
  */
 
 $messages['January'] = 'січня';
@@ -44,7 +45,7 @@ $messages['search_method'] = 'Метод пошуку';
 $messages['binary'] = 'двійковий';
 $messages['binary_in_wp'] = 'http://uk.wikipedia.org/wiki/%D0%94%D0%B2%D1%96%D0%B9%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%BF%D0%BE%D1%88%D1%83%D0%BA';
 $messages['linear'] = 'лінійний';
-$messages['interpolated'] = 'інтерпольований (швидше, якщо багато версій)';
+$messages['interpolated'] = 'двійковий (швидше, якщо багато версій)';
 $messages['ignore_minors'] = 'не враховувати незначні зміни (у розробці)';
 $messages['force_wikitags'] = 'провести пошук вікітексту';
 $messages['start'] = 'Почати';
@@ -56,6 +57,7 @@ $messages['search_in_progress_text'] = 'Ведеться пошук <b>_NEEDLE_<
 $messages['search_in_progress_wikitags'] = 'Ведеться пошук <b>_NEEDLE_</b> в історії версій _ARTICLELINK_ як вікітексту';
 $messages['execution_time'] = 'Час виконання: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Знайдено _NUMBEROFVERSIONS_ версії';
+$messages['please_wait'] = 'Будь ласка, зачекайте …';
 $messages['binary_test'] = 'Порівняння відмінностей _FIRSTDATEVERSION_ між _FIRSTNUMBER_ і _SECONDNUMBER_ при переході з _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Вставку знайдено між LEFT_VERSION і RIGHT_VERSION';
 $messages['deletion_found'] = 'Видалення знайдено між LEFT_VERSION і RIGHT_VERSION';
