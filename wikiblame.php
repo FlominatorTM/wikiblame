@@ -280,11 +280,10 @@ function checkScanAmount()
 				</tr>	
 				<tr>
 					<td align="<? echo $alignment ?>">
-						<? echo $messages['start_date'].' (DD-MM-YYYY)' ?>
+						<? echo $messages['start_date'] .' (' . $messages['date_format'] . ')' ?>
 					</td>
 					<td>
-						<?php datedrop_with_months($messages['start_date'].' (DD-MM-YYYY)', "off", false, 2001, '', $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months); ?>
-						
+						<?php datedrop_with_months( "", "off", false, 2001, date("Y"), $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months, $messages['date_format']); ?>
 						<input type="button" value="<? echo $messages['reset'] ?>" onclick="javascript:var now=new Date();setFormDate(now.getFullYear(),now.getMonth()+1, now.getDate());">
 					</td>
 				<tr>
