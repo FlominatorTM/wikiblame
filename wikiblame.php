@@ -171,7 +171,7 @@ $jsTextLessVersions = str_replace( "__ALLOWEDREVISIONS__", $allowedRevisionsPerC
 
 ?>.focus();checkScanAmount();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
 
-<script>
+<script type="text/javascript">
 function setFormDate(year, mon, day)
 {
 	document.forms['mainform'].elements['offjahr'].value = year;
@@ -216,14 +216,14 @@ function submitAndWait()
 	return true;
 }
 </script>
-
+<div align="center">
 		<form method="get" name="mainform" onsubmit="submitAndWait();" action="<? echo $datei ?>">
 		<div align="<? echo $alignment ?>">
 		<?
-			echo $messages['ui_lang'].'<br />';
+			echo $messages['ui_lang'].'<br>';
 			language_selection($user_lang);?>
 		</div>
-<div align="center">
+
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
 			<table style="font-family: arial; font-size: 84%;" cellspacing="5">
 				<tr>
@@ -365,8 +365,6 @@ function submitAndWait()
 <a href='<? echo $messages['contact_link'] ?>'><? echo $messages['contact'] ?></a> - 
 <a href='http://translatewiki.net/wiki/Translating:Wikiblame'><? echo $messages['help_translating'] ?></a> -
 <a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
-<br/> <br/>
-Do you think WikiBlame's user interface needs improvement? Please post your opinion <a target="_blank" href="https://sourceforge.net/tracker/index.php?func=detail&aid=2811478&group_id=261179&atid=1127548"> at SourceForge</a>.<br/> <br/>
 </div>
 <?php
 
@@ -430,7 +428,7 @@ if($needle!="")
 	echo "<br>";
 	echo str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
 	
-		echo '<br /><br /><small>'. htmlspecialchars(get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'])) .'</small>';
+		echo '<br><br><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
 		
 }
 
@@ -831,7 +829,7 @@ function binary_search($middle, $from)
 	{
 		echo "<font color=\"green\">OO</font>\n";
 		start_over_here($rev_text);
-		echo "<br />";
+		echo "<br>";
 		if($binary_search_inverse == "true")
 		{
 			//looking for removal => found in both => must have been removed later => check later versions => lower index in history array
@@ -849,7 +847,7 @@ function binary_search($middle, $from)
 		{
 			echo "<font color=\"red\">XX</font>\n";
 			start_over_here($rev_text);
-			echo "<br />";
+			echo "<br>";
 			if($binary_search_inverse == "true")
 			{
 				//looking for removal => not found in any of both => must have been removed earlier => higher index in history array
@@ -881,7 +879,7 @@ function binary_search($middle, $from)
 				$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 				echo str_replace('RIGHT_VERSION', $right_version, $deletion_found);
 			}			
-			echo "<br />";
+			echo "<br>";
 		}
 	}
 
@@ -922,7 +920,7 @@ function check_options()
 	if($skipversions>=$limit)
 	{
 		$msg = str_replace('__VERSIONSTOSKIP__', $skipversions, $msg);
-		echo "<br />";
+		echo "<br>";
 		echo "<script>\n";
 		echo "document.getElementById('skipversions').focus();\n";
 		echo "document.getElementById('skipversions').select();\n";
@@ -934,7 +932,7 @@ function check_options()
 	if($ignorefirst>=$limit)
 	{
 		$msg = str_replace('__VERSIONSTOSKIP__', $ignorefirst, $msg);
-		echo "<br />";
+		echo "<br>";
 		echo "<script>\n";
 		echo "document.getElementById('ignorefirst').focus();\n";
 		echo "document.getElementById('ignorefirst').select();\n";
@@ -957,13 +955,13 @@ function print_translator($lang)
 function get_url($year, $month, $day, $include_ignorefirst=true)
 {
 	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse;
-	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."lang=$lang&limit=$limit"."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags&user_lang=$user_lang";
+	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".urlencode($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
 	
 	if($include_ignorefirst)
 	{
-		$url.="&ignorefirst=".$_REQUEST['ignorefirst'];
+		$url.="&amp;ignorefirst=".$_REQUEST['ignorefirst'];
 	}
-	$url.="&binary_search_inverse=".$binary_search_inverse;
+	$url.="&amp;binary_search_inverse=".$binary_search_inverse;
 	return $url;
 }
 
