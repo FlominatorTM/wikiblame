@@ -110,12 +110,12 @@ if($_REQUEST['searchmethod']=="lin")
 
 if($_REQUEST['binary_search_inverse'] == "true")
 {
-	$binary_search_inverse = true;
+	$binary_search_inverse = "true";
 	echo "using ultra beta binary search inverse feature<br>";
 }
 else
 {
-	$binary_search_inverse = false;
+	$binary_search_inverse = "false";
 }
 
 $asc = false;
@@ -355,11 +355,7 @@ function submitAndWait()
 				<tr>
 					<td colspan="2" align="center"><br><br>
 						<input name="start" id="start" type="submit" value="<? echo $messages['start'] ?>" >
-						<input name="binary_search_inverse" id="binary_search_inverse" type="hidden" value="<? 
-						if($binary_search_inverse==true) 
-						{ echo "true";} 
-						else 
-						{echo "false";}?>" >
+						<input name="binary_search_inverse" id="binary_search_inverse" type="hidden" value="<? echo $binary_search_inverse ?>" >
 					</td>
 				</tr>
 			</table>
@@ -833,7 +829,7 @@ function binary_search($middle, $from)
 		echo "<font color=\"green\">OO</font>\n";
 		start_over_here($rev_text);
 		echo "<br />";
-		if($binary_search_inverse)
+		if($binary_search_inverse == "true")
 		{
 			if($middle)
 			binary_search(floor($middle-abs(($from-$middle)/2)), $middle);
@@ -851,7 +847,7 @@ function binary_search($middle, $from)
 			echo "<font color=\"red\">XX</font>\n";
 			start_over_here($rev_text);
 			echo "<br />";
-			if($binary_search_inverse)
+			if($binary_search_inverse == "true")
 			{
 				binary_search(floor($middle+abs(($from-$middle)/2)), $middle);
 			}
@@ -955,13 +951,14 @@ function print_translator($lang)
 
 function get_url($year, $month, $day, $include_ignorefirst=true)
 {
-	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang;
+	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse;
 	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&article=".urlencode($article)."&needle=".urlencode($needle)."&"."lang=$lang&limit=$limit"."&offjahr=$year&offmon=$month&offtag=$day&searchmethod=".$_REQUEST['searchmethod']."&order=".$_REQUEST['order']."&force_wikitags=$force_wikitags&user_lang=$user_lang";
 	
 	if($include_ignorefirst)
 	{
 		$url.="&ignorefirst=".$_REQUEST['ignorefirst'];
 	}
+	$url.="&binary_search_inverse=".$binary_search_inverse;
 	return $url;
 }
 
