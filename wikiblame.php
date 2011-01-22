@@ -108,10 +108,14 @@ if($_REQUEST['searchmethod']=="lin")
 	$use_binary_search = false;
 }
 
-$binary_search_inverse != ($_REQUEST['binary_search_inverse'] == true);
-if($binary_search_inverse)
+if($_REQUEST['binary_search_inverse'] == "true")
 {
+	$binary_search_inverse = true;
 	echo "using ultra beta binary search inverse feature<br>";
+}
+else
+{
+	$binary_search_inverse = false;
 }
 
 $asc = false;
@@ -343,7 +347,11 @@ function checkScanAmount()
 				<tr>
 					<td colspan="2" align="center"><br><br>
 						<input name="start" id="start" type="submit" onclick="javascript:this.disabled=true;this.value='<? echo $messages['please_wait'] ?>'" value="<? echo $messages['start'] ?>" >
-						<input name="binary_search_inverse" id="binary_search_inverse" type="hidden" value="<? if($binary_search_inverse==true) { echo "true";} else {echo "false";}?>" >
+						<input name="binary_search_inverse" id="binary_search_inverse" type="hidden" value="<? 
+						if($binary_search_inverse==true) 
+						{ echo "true";} 
+						else 
+						{echo "false";}?>" >
 					</td>
 				</tr>
 			</table>
