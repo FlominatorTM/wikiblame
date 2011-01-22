@@ -832,11 +832,12 @@ function binary_search($middle, $from)
 		echo "<br />";
 		if($binary_search_inverse == "true")
 		{
+			//looking for removal => found in both => must have been removed later => check later versions => lower index in history array
 			binary_search(floor($middle-$step_length), $middle);
-			
 		}
 		else
 		{
+			//looking for insertion => found in both => must have been added earlier => check earlier versions => higher index in history array
 			binary_search(floor($middle+$step_length), $middle);
 		}
 	}
@@ -849,11 +850,13 @@ function binary_search($middle, $from)
 			echo "<br />";
 			if($binary_search_inverse == "true")
 			{
+				//looking for removal => not found in any of both => must have been removed earlier => higher index in history array
 				binary_search(floor($middle+$step_length), $middle);
 			}
 			else
 			{
-				binary_search(floor($middle-$step_length), $middle);
+				//looking for insertion => not found in any of both => look later => lower index in history array
+				binary_search(floor($middle-$step_length), $middle);						
 			}
 		}
 		else
