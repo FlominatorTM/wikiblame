@@ -70,6 +70,8 @@ $messages['search_in_progress_text'] = 'The version history of _ARTICLELINK_ is 
 
 $messages['search_in_progress_wikitags'] = 'The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> as wiki text';
 
+$messages['no_differences'] = 'No differences found in searched revisions.';
+$messages['first_version'] = 'Change must have happened in first or latest revision?';
 $messages['execution_time'] = 'Execution time: _EXECUTIONTIME_ seconds';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions found';
 $messages['please_wait'] = 'Please wait …';
