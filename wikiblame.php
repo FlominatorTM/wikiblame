@@ -659,7 +659,10 @@ function get_revision($id)
 	else
 	{
 		//remove the html tags (not included above because of <ref> and others)
-		$versionpage = strip_tags(get_request($server, $url));
+		$versionpage = get_request($server, $url);
+		$indexOfContent = strpos($versionpage, "-- content --");
+		//remove head 
+		$versionpage = strip_tags(substr($versionpage, $indexOfContent));
 	}
 
 	
