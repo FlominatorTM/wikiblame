@@ -207,9 +207,17 @@ function checkScanAmount()
 		document.forms['mainform'].elements['start'].disabled=false;
 	}
 }
+
+function submitAndWait()
+{
+	var startButton = document.getElementById("start");
+	startButton.disabled=true;
+	startButton.value='<? echo $messages['please_wait'] ?>';
+	return true;
+}
 </script>
 
-		<form method="get" name="mainform" action="<? echo $datei ?>">
+		<form method="get" name="mainform" onsubmit="submitAndWait();" action="<? echo $datei ?>">
 		<div align="<? echo $alignment ?>">
 		<?
 			echo $messages['ui_lang'].'<br />';
@@ -346,7 +354,7 @@ function checkScanAmount()
 				</tr>
 				<tr>
 					<td colspan="2" align="center"><br><br>
-						<input name="start" id="start" type="submit" onclick="javascript:this.disabled=true;this.value='<? echo $messages['please_wait'] ?>'" value="<? echo $messages['start'] ?>" >
+						<input name="start" id="start" type="submit" value="<? echo $messages['start'] ?>" >
 						<input name="binary_search_inverse" id="binary_search_inverse" type="hidden" value="<? 
 						if($binary_search_inverse==true) 
 						{ echo "true";} 
