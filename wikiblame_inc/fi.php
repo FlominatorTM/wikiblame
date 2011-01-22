@@ -28,6 +28,7 @@ $messages['September'] = 'syyskuu';
 $messages['October'] = 'lokakuu';
 $messages['November'] = 'marraskuu';
 $messages['December'] = 'joulukuu';
+$messages['ui_lang'] = 'Näyttökieli';
 $messages['lang'] = 'Kieli';
 $messages['project'] = 'Projekti';
 $messages['article'] = 'Sivu';
