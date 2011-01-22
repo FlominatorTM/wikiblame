@@ -108,6 +108,12 @@ if($_REQUEST['searchmethod']=="lin")
 	$use_binary_search = false;
 }
 
+$binary_search_inverse != ($_REQUEST['binary_search_inverse'] == true);
+if($binary_search_inverse)
+{
+	echo "using ultra beta binary search inverse feature<br>";
+}
+
 $asc = false;
 if($_REQUEST['order']=="asc")
 {
@@ -337,6 +343,7 @@ function checkScanAmount()
 				<tr>
 					<td colspan="2" align="center"><br><br>
 						<input name="start" id="start" type="submit" onclick="javascript:this.disabled=true;this.value='<? echo $messages['please_wait'] ?>'" value="<? echo $messages['start'] ?>" >
+						<input name="binary_search_inverse" id="binary_search_inverse" type="hidden" value="<? if($binary_search_inverse==true) { echo "true";} else {echo "false";}?>" >
 					</td>
 				</tr>
 			</table>
@@ -778,8 +785,8 @@ function needle_regex($needle)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages;
-	
+	global $needle, $versions, $server, $messages, $binary_search_inverse;
+	//echo "binary_search(".$middle.",".$from.")";
 	if($middle<1)
 	{
 		die($messages['first_version']);
@@ -789,7 +796,7 @@ function binary_search($middle, $from)
 	{
 		die($messages['no_differences']);
 	}
-
+	
 	//echo "Checking differences between ".get_diff_link($middle)." between $middle and ". ($middle+1)." starting from $from : ";
 	//echo $messages['search_in_progress'];
 	
@@ -807,7 +814,16 @@ function binary_search($middle, $from)
 		echo "<font color=\"green\">OO</font>\n";
 		start_over_here($rev_text);
 		echo "<br />";
-		binary_search(floor($middle+abs(($from-$middle)/2)), $middle);
+		if($binary_search_inverse)
+		{
+			if($middle)
+			binary_search(floor($middle-abs(($from-$middle)/2)), $middle);
+			
+		}
+		else
+		{
+			binary_search(floor($middle+abs(($from-$middle)/2)), $middle);
+		}
 	}
 	else
 	{
@@ -816,7 +832,14 @@ function binary_search($middle, $from)
 			echo "<font color=\"red\">XX</font>\n";
 			start_over_here($rev_text);
 			echo "<br />";
-			binary_search(floor($middle-abs(($from-$middle)/2)), $middle);
+			if($binary_search_inverse)
+			{
+				binary_search(floor($middle+abs(($from-$middle)/2)), $middle);
+			}
+			else
+			{
+				binary_search(floor($middle-abs(($from-$middle)/2)), $middle);
+			}
 		}
 		else
 		{
@@ -833,7 +856,7 @@ function binary_search($middle, $from)
 			else
 			{
 				echo "<font color=\"green\">O</font>\n";
-				echo "<font color=\"red\">X</font>\n";
+				echo "<font color=\"red\">X</font><br>\n";
 				//start_over_here($rev_text);
 				$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 				echo str_replace('RIGHT_VERSION', $right_version, $deletion_found);
