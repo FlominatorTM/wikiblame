@@ -38,6 +38,7 @@ $messages['skipversions'] = 'stets x Versionen überspringen';
 $messages['ignorefirst'] = 'Versionen am Anfang überspringen';
 $messages['limit'] = 'Versionen durchsuchen';
 $messages['start_date'] = 'Startdatum';
+$messages['date_format'] = 'DD.MM YYYY';
 $messages['order'] = 'Reihenfolge';
 $messages['newest_first'] = 'neuere zuerst';
 $messages['oldest_first'] = 'ältere zuerst (nur bei linearer Suche)';
