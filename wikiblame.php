@@ -749,7 +749,8 @@ function log_search ($time="started")
 		$header.="Linear/Interpolated;";
 		$header.="Execution-Time;";
 		$header.="Get-Version-Time;";
-		$header.="Scriptname\n";
+		$header.="User-Agent;";
+		$header.="URL;";
 	}
 	
 	
@@ -781,7 +782,8 @@ function log_search ($time="started")
 		
 		fputs($file, $time.";");
 		fputs($file, $get_version_time.";");
-		fputs($file, $_SERVER['SCRIPT_NAME'].";\n");
+		fputs($file, '"'.$_SERVER['HTTP_USER_AGENT'].'"'.";");
+		fputs($file, '"'.get_url($year,$month , $day, true).'"'.";\n");
 		fclose($file);
 	}
 	
