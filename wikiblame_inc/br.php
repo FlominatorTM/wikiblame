@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Fohanno
  * @author Fulup
  * @author Y-M D
  */
@@ -41,20 +42,23 @@ $messages['oldest_first'] = 'an hini koshañ da gentañ';
 $messages['search_method'] = 'Hentenn klask';
 $messages['binary'] = 'binarel';
 $messages['linear'] = 'linennek';
-$messages['interpolated'] = 'etrepolet (fonnusoc\'h gant muioc\'h a stummoù)';
+$messages['interpolated'] = 'binarel (fonnusoc\'h gant muioc\'h a stummoù)';
 $messages['ignore_minors'] = 'Na ober van ouzh ar c\'hemmoù dister (arnodel)';
 $messages['force_wikitags'] = 'rediañ a ra ar c\'hlask kod wiki';
 $messages['start'] = 'Deroù';
 $messages['reset'] = 'Adderaouekaat';
 $messages['manual'] = 'Dornlevr';
 $messages['contact'] = 'Darempred';
+$messages['get_less_versions'] = 'Gallout a rafe hoc\'h enklask mont da gerc\'hat __NUMREVISIONS__ adweladenn en ur wech. Evit gwareziñ ar servijer ne vezit lezet da gerc\'hat nemet __ALLOWEDREVISIONS__ adweladenn dre c\'halv. Cheñchit an arventennoù, mar plij, pe dibabit an doare klask binarel !';
 $messages['wrong_skips'] = 'Arventennoù fall : ma vez lamet ar stummoù kentañ da vezañ lamet __VERSIONSTOSKIP__, neuze ne vo ket pledet gant stumm ebet eus ar stummmoù __VERSIONSTOSEARCH__ da glask.';
 $messages['search_in_progress_text'] = 'Stumm istor  _ARTICLELINK_ a zo klasket evit <b>_NEEDLE_</b> evel testenn leun';
 $messages['search_in_progress_wikitags'] = 'Stumm istor  _ARTICLELINK_ a zo klasket evit <b>_NEEDLE_</b> evel testenn wiki';
 $messages['execution_time'] = 'Amzer seveniñ : _EXECUTIONTIME_ eilenn';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ stumm kavet';
+$messages['please_wait'] = 'Gortozit mar plij...';
 $messages['binary_test'] = 'Keñveriadenn an diforc\'hioù e _FIRSTDATEVERSION_ etre _FIRSTNUMBER_ ha _SECONDNUMBER_ o tont eus _SOURCENUMBER_:';
 $messages['insertion_found'] = 'Ensoc\'hadenn detektet etre LEFT_VERSION ha RIGHT_VERSION';
 $messages['deletion_found'] = 'Diverkadenn kavet etre LEFT_VERSION ha RIGHT_VERSION';
 $messages['help_translating'] = 'Sikourit da dreiñ war translatewiki.net';
 $messages['start_here'] = 'Klask adalek amañ';
+$messages['too_much_versions'] = 'Tizhet hoc\'h eus ho pevenn kerc\'hat eus __VERSIONLIMIT__ stumm. Esaeit en-dro a-benn __WAITMINUTES__ munutenn, mar plij, pe dibanit an enklask binarel. Ho tigarez evit an direnkamant.';
