@@ -824,6 +824,7 @@ function binary_search($middle, $from)
 	$rev_text = get_revision(idfromurl($versions[$middle]));
 	$in_this = stristr($rev_text, $needle);
 	$in_next = stristr(get_revision(idfromurl($versions[$middle+1])), $needle);
+	$step_length = abs(($from-$middle)/2);
 	if($in_this AND $in_next)
 	{
 		echo "<font color=\"green\">OO</font>\n";
@@ -831,13 +832,12 @@ function binary_search($middle, $from)
 		echo "<br />";
 		if($binary_search_inverse == "true")
 		{
-			if($middle)
-			binary_search(floor($middle-abs(($from-$middle)/2)), $middle);
+			binary_search(floor($middle-$step_length), $middle);
 			
 		}
 		else
 		{
-			binary_search(floor($middle+abs(($from-$middle)/2)), $middle);
+			binary_search(floor($middle+$step_length), $middle);
 		}
 	}
 	else
@@ -849,11 +849,11 @@ function binary_search($middle, $from)
 			echo "<br />";
 			if($binary_search_inverse == "true")
 			{
-				binary_search(floor($middle+abs(($from-$middle)/2)), $middle);
+				binary_search(floor($middle+$step_length), $middle);
 			}
 			else
 			{
-				binary_search(floor($middle-abs(($from-$middle)/2)), $middle);
+				binary_search(floor($middle-$step_length), $middle);
 			}
 		}
 		else
