@@ -821,6 +821,12 @@ function binary_search($middle, $from)
 	$test_msg = str_replace('_SOURCENUMBER_', $from, $test_msg);
 	echo $test_msg;
 
+	/* Revision list looks like this:
+	  [0]: 18. Jan. 2011 21:00 (current revision)
+	  [1]: 18. Jan. 2011 19:00
+	  [2]: 18. Jan. 2011 17:00
+	  [3]: 15. Jan. 2011 15:00 */
+	
 	$rev_text = get_revision(idfromurl($versions[$middle]));
 	$in_this = stristr($rev_text, $needle);
 	$in_next = stristr(get_revision(idfromurl($versions[$middle+1])), $needle);
