@@ -50,6 +50,7 @@ $messages['limit'] = 'Label before field (field is a number). See [http://wikipe
 $messages['start_date'] = 'Label of date input boxes. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Start date}}';
+$messages['date_format'] = 'Format string to describe how dates have to be displayed. Must contain these symbols: "MM" (month) "DD" (day) and "YYYY" (year). Example in en would be MM DD, YYYY';
 $messages['order'] = 'Label for search option radio buttons, \'latest first\' and \'oldest first\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['newest_first'] = 'Radio button option for search \'order\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['oldest_first'] = 'Radio button option for search \'order\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
