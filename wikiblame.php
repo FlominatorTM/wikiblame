@@ -419,7 +419,7 @@ if($needle!="")
 		}
 		else
 		{
-			checkversions($versions);
+			checkversions($versions, $skipversions, $ignorefirst);
 		}
 	}
 		
@@ -605,9 +605,9 @@ function listversions ($history)
 	//!oldid=(\d+)".*>([^<]+)</a>.*>([^<]+)</a>! 1=date, 2=revid 3=user
 }
 
-function checkversions ($versions)
+function checkversions ($versions, $skipversions, $ignorefirst)
 {
-	global $server, $skipversions, $ignorefirst, $needle;
+	global $server, $needle;
 
 	$version_counter = 0;
 	echo "<ul>";
@@ -809,7 +809,19 @@ function binary_search($middle, $from)
 	
 	if($middle==$from)
 	{
-		die($messages['no_differences']);
+		if($binary_search_inverse == "true")
+		{
+			die($messages['no_differences']);
+		}
+		else
+		{
+			//looking for insertion => maybe it was always there => checking first revision => highest array index
+			echo $messages['no_differences_insertion'];
+			$lastVersion = array($versions[count($versions)-1]);
+			checkversions($lastVersion, 0, 0);
+			die();
+		}
+		
 	}
 	
 	//echo "Checking differences between ".get_diff_link($middle)." between $middle and ". ($middle+1)." starting from $from : ";
@@ -822,11 +834,11 @@ function binary_search($middle, $from)
 	echo $test_msg;
 
 	/* Revision list looks like this:
-	  [0]: 18. Jan. 2011 21:00 (current revision)
-	  [1]: 18. Jan. 2011 19:00
-	  [2]: 18. Jan. 2011 17:00
-	  [3]: 15. Jan. 2011 15:00 */
-	
+	 [0]: 18. Jan. 2011 21:00 (current revision)
+	 [1]: 18. Jan. 2011 19:00
+	 [2]: 18. Jan. 2011 17:00
+	 [3]: 15. Jan. 2011 15:00 */
+	  
 	$rev_text = get_revision(idfromurl($versions[$middle]));
 	$in_this = stristr($rev_text, $needle);
 	$in_next = stristr(get_revision(idfromurl($versions[$middle+1])), $needle);
