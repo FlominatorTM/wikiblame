@@ -804,19 +804,21 @@ function binary_search($middle, $from)
 	//echo "binary_search(".$middle.",".$from.")";
 	if($middle<1)
 	{
-		die($messages['first_version']);
+		die('<br>'.$messages['first_version']);
 	}
 	
 	if($middle==$from)
 	{
 		if($binary_search_inverse == "true")
 		{
-			die($messages['no_differences']);
+		
+			die('<br>'.$messages['no_differences']);
 		}
 		else
 		{
 			//looking for insertion => maybe it was always there => checking first revision => highest array index
-			echo $messages['no_differences_insertion'];
+			
+			echo '<br>'.$messages['no_differences_insertion'];
 			$lastVersion = array($versions[count($versions)-1]);
 			checkversions($lastVersion, 0, 0);
 			die();
