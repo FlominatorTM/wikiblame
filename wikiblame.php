@@ -41,6 +41,7 @@ if($text_dir=='rtl')
 	$alignment = 'left';
 }
 
+$binary_search_retries = 3;
 
 //for benchmarking reasons
 $beginning = time();
@@ -800,7 +801,7 @@ function needle_regex($needle)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages, $binary_search_inverse;
+	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries;
 	//echo "binary_search(".$middle.",".$from.")";
 	if($middle<1)
 	{
@@ -813,95 +814,109 @@ function binary_search($middle, $from)
 		log_search("no_differences");
 		if($binary_search_inverse == "true")
 		{
-		
-			die('<br>'.$messages['no_differences']);
+			echo ('<br>'.$messages['no_differences']);
 		}
 		else
 		{
 			//looking for insertion => maybe it was always there => checking first revision => highest array index
-			
-			echo '<br>'.$messages['no_differences_insertion'];
-			$lastVersion = array($versions[count($versions)-1]);
-			checkversions($lastVersion, 0, 0);
-			die();
-		}
-		
-	}
-	
-	//echo "Checking differences between ".get_diff_link($middle)." between $middle and ". ($middle+1)." starting from $from : ";
-	//echo $messages['search_in_progress'];
-	
-	$test_msg = str_replace('_FIRSTDATEVERSION_', get_diff_link($middle), $messages['binary_test']);
-	$test_msg = str_replace('_FIRSTNUMBER_', $middle, $test_msg);
-	$test_msg = str_replace('_SECONDNUMBER_', $middle+1, $test_msg); 
-	$test_msg = str_replace('_SOURCENUMBER_', $from, $test_msg);
-	echo $test_msg;
-
-	/* Revision list looks like this:
-	 [0]: 18. Jan. 2011 21:00 (current revision)
-	 [1]: 18. Jan. 2011 19:00
-	 [2]: 18. Jan. 2011 17:00
-	 [3]: 15. Jan. 2011 15:00 */
-	  
-	$rev_text = get_revision(idfromurl($versions[$middle]));
-	$in_this = stristr($rev_text, $needle);
-	$in_next = stristr(get_revision(idfromurl($versions[$middle+1])), $needle);
-	$step_length = abs(($from-$middle)/2);
-	if($in_this AND $in_next)
-	{
-		echo "<font color=\"green\">OO</font>\n";
-		start_over_here($rev_text);
-		echo "<br>";
-		if($binary_search_inverse == "true")
-		{
-			//looking for removal => found in both => must have been removed later => check later versions => lower index in history array
-			binary_search(floor($middle-$step_length), $middle);
-		}
-		else
-		{
-			//looking for insertion => found in both => must have been added earlier => check earlier versions => higher index in history array
-			binary_search(floor($middle+$step_length), $middle);
+			$rev_text = get_revision(idfromurl($versions[count($versions)-1]));
+			if(stristr($rev_text, $needle))
+			{
+				echo (str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']));
+			}
+			else
+			{
+				if($binary_search_retries>0)
+				{
+					echo $messages['dead_end'].'<br><br>';
+					echo $messages['once_more'].'<br>';
+					binary_search(floor(count($versions)/2)-$binary_search_retries, count($versions)-1);
+					$binary_search_retries--;
+				}
+				else
+				{
+					echo  ($messages['binary_enough']);
+				}
+			}
 		}
 	}
 	else
 	{
-		if(!$in_this AND !$in_next)
+		//echo "Checking differences between ".get_diff_link($middle)." between $middle and ". ($middle+1)." starting from $from : ";
+		//echo $messages['search_in_progress'];
+		
+		$test_msg = str_replace('_FIRSTDATEVERSION_', get_diff_link($middle), $messages['binary_test']);
+		$test_msg = str_replace('_FIRSTNUMBER_', $middle, $test_msg);
+		$test_msg = str_replace('_SECONDNUMBER_', $middle+1, $test_msg); 
+		$test_msg = str_replace('_SOURCENUMBER_', $from, $test_msg);
+		echo $test_msg;
+
+		/* Revision list looks like this:
+		 [0]: 18. Jan. 2011 21:00 (current revision)
+		 [1]: 18. Jan. 2011 19:00
+		 [2]: 18. Jan. 2011 17:00
+		 [3]: 15. Jan. 2011 15:00 */
+		  
+		$rev_text = get_revision(idfromurl($versions[$middle]));
+		$in_this = stristr($rev_text, $needle);
+		$in_next = stristr(get_revision(idfromurl($versions[$middle+1])), $needle);
+		$step_length = abs(($from-$middle)/2);
+		if($in_this AND $in_next)
 		{
-			echo "<font color=\"red\">XX</font>\n";
+			echo "<font color=\"green\">OO</font>\n";
 			start_over_here($rev_text);
 			echo "<br>";
 			if($binary_search_inverse == "true")
 			{
-				//looking for removal => not found in any of both => must have been removed earlier => higher index in history array
-				binary_search(floor($middle+$step_length), $middle);
+				//looking for removal => found in both => must have been removed later => check later versions => lower index in history array
+				binary_search(floor($middle-$step_length), $middle);
 			}
 			else
 			{
-				//looking for insertion => not found in any of both => look later => lower index in history array
-				binary_search(floor($middle-$step_length), $middle);						
+				//looking for insertion => found in both => must have been added earlier => check earlier versions => higher index in history array
+				binary_search(floor($middle+$step_length), $middle);
 			}
 		}
 		else
 		{
-		//$right_version was 1
-			$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+1])."</a> ";
-			$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle])."</a>";
-			if($in_this AND !$in_next)
+			if(!$in_this AND !$in_next)
 			{
-				echo "<font color=\"red\">X</font>\n";
-				echo "<font color=\"green\">0</font><br>\n";
-				$insertion_found = str_replace('LEFT_VERSION', $left_version, $messages['insertion_found']);
-				echo str_replace('RIGHT_VERSION', $right_version, $insertion_found);
+				echo "<font color=\"red\">XX</font>\n";
+				start_over_here($rev_text);
+				echo "<br>";
+				if($binary_search_inverse == "true")
+				{
+					//looking for removal => not found in any of both => must have been removed earlier => higher index in history array
+					binary_search(floor($middle+$step_length), $middle);
+				}
+				else
+				{
+					//looking for insertion => not found in any of both => look later => lower index in history array
+					binary_search(floor($middle-$step_length), $middle);						
+				}
 			}
 			else
 			{
-				echo "<font color=\"green\">O</font>\n";
-				echo "<font color=\"red\">X</font><br>\n";
-				//start_over_here($rev_text);
-				$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
-				echo str_replace('RIGHT_VERSION', $right_version, $deletion_found);
-			}			
-			echo "<br>";
+			//$right_version was 1
+				$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+1])."</a> ";
+				$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle])."</a>";
+				if($in_this AND !$in_next)
+				{
+					echo "<font color=\"red\">X</font>\n";
+					echo "<font color=\"green\">0</font><br>\n";
+					$insertion_found = str_replace('LEFT_VERSION', $left_version, $messages['insertion_found']);
+					echo str_replace('RIGHT_VERSION', $right_version, $insertion_found);
+				}
+				else
+				{
+					echo "<font color=\"green\">O</font>\n";
+					echo "<font color=\"red\">X</font><br>\n";
+					//start_over_here($rev_text);
+					$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
+					echo str_replace('RIGHT_VERSION', $right_version, $deletion_found);
+				}			
+				echo "<br>";
+			}
 		}
 	}
 
