@@ -65,18 +65,20 @@ $messages['get_less_versions'] = "Your search might query __NUMREVISIONS__ revis
 
 //Output elements
 $messages['wrong_skips'] = 'Wrong settings: If the first __VERSIONSTOSKIP__ versions are skipped, then none of the __VERSIONSTOSEARCH__ versions to be searched will be processed.';
-
 $messages['search_in_progress_text'] = 'The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> as plain text';
 
 $messages['search_in_progress_wikitags'] = 'The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> as wiki text';
 
 $messages['no_differences'] = 'No differences found in searched revisions.';
-$messages['no_differences_insertion'] = 'No differences found, checking earliest revision found:';
 $messages['first_version'] = 'Change must have happened in first or latest revision?';
+$messages['first_version_present'] = '__NEEDLE__ was already present in the first revision found';
 $messages['execution_time'] = 'Execution time: _EXECUTIONTIME_ seconds';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions found';
 $messages['please_wait'] = 'Please wait …';
 $messages['binary_test'] = 'Comparing differences in _FIRSTDATEVERSION_ between _FIRSTNUMBER_ and _SECONDNUMBER_ while coming from _SOURCENUMBER_:';
+$messages['dead_end'] = 'Caught some dead end (probably caused by reverts or edit wars)';
+$messages['once_more'] = 'Once more, with feeling:';
+$messages['binary_enough'] = 'Performed enough retries, article history is quite messed up, please try changing some settings.';
 $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['help_translating'] = 'Help translating at translatewiki.net';
