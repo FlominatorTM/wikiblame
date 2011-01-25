@@ -819,10 +819,13 @@ function binary_search($middle, $from)
 		else
 		{
 			//looking for insertion => maybe it was always there => checking first revision => highest array index
-			$rev_text = get_revision(idfromurl($versions[count($versions)-1]));
+			$first_index = count($versions)-1;
+			$rev_text = get_revision(idfromurl($versions[$first_index]));
 			if(stristr($rev_text, $needle))
 			{
-				echo (str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']));
+				$revLink = str_replace("/w/", "http://".$server."/w/", $versions[$first_index])."</a>";
+				$msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
+				echo (str_replace('__REVISIONLINK__', $revLink, $msg));
 			}
 			else
 			{
