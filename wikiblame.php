@@ -804,11 +804,13 @@ function binary_search($middle, $from)
 	//echo "binary_search(".$middle.",".$from.")";
 	if($middle<1)
 	{
+		log_search("first_version");
 		die('<br>'.$messages['first_version']);
 	}
 	
 	if($middle==$from)
 	{
+		log_search("no_differences");
 		if($binary_search_inverse == "true")
 		{
 		
