@@ -411,7 +411,7 @@ if($needle!="")
 	$get_version_time = time()-$beginning;
 	$versions = listversions($history);
 	log_search();
-	
+	$needle_ever_found = false;
 	if(count($versions)>0)
 	{
 		if($use_binary_search)
@@ -423,14 +423,21 @@ if($needle!="")
 			checkversions($versions, $skipversions, $ignorefirst);
 		}
 	}
-		
-	$finished = time()-$beginning;
-	log_search($finished);
-	echo "<br>";
-	echo str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
 	
-		echo '<br><br><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
-		
+	$finished = time()-$beginning;
+	
+	$exec_time =  str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
+	
+	if(!$needle_ever_found)
+	{	
+		echo "<br>";
+		echo $messages['not_found_at_all']."\n";
+		$finished.="_nf";
+	}	
+
+	log_search($finished);
+	echo '<br>'.$exec_time;
+	echo '<br><br><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
 }
 
 
@@ -608,7 +615,7 @@ function listversions ($history)
 
 function checkversions ($versions, $skipversions, $ignorefirst)
 {
-	global $server, $needle;
+	global $server, $needle, $needle_ever_found;
 
 	$version_counter = 0;
 	echo "<ul>";
@@ -624,6 +631,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 				if(stristr($rev_text, $needle))
 				{
 					echo " <font color=\"green\">OOO</font>\n";
+					$needle_ever_found = true;
 				}
 				else
 				{
@@ -801,12 +809,13 @@ function needle_regex($needle)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries;
+	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found;
 	//echo "binary_search(".$middle.",".$from.")";
 	if($middle<1)
 	{
 		log_search("first_version");
-		die('<br>'.$messages['first_version']);
+		//echo ('<br>'.$messages['first_version']);
+		return;
 	}
 	
 	if($middle==$from)
@@ -826,6 +835,7 @@ function binary_search($middle, $from)
 				$revLink = str_replace("/w/", "http://".$server."/w/", $versions[$first_index])."</a>";
 				$msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
 				echo (str_replace('__REVISIONLINK__', $revLink, $msg));
+				$needle_ever_found = true;
 			}
 			else
 			{
@@ -866,6 +876,7 @@ function binary_search($middle, $from)
 		$step_length = abs(($from-$middle)/2);
 		if($in_this AND $in_next)
 		{
+			$needle_ever_found = true;
 			echo "<font color=\"green\">OO</font>\n";
 			start_over_here($rev_text);
 			echo "<br>";
@@ -905,6 +916,7 @@ function binary_search($middle, $from)
 				$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle])."</a>";
 				if($in_this AND !$in_next)
 				{
+					$needle_ever_found = true;
 					echo "<font color=\"red\">X</font>\n";
 					echo "<font color=\"green\">0</font><br>\n";
 					$insertion_found = str_replace('LEFT_VERSION', $left_version, $messages['insertion_found']);
@@ -912,6 +924,7 @@ function binary_search($middle, $from)
 				}
 				else
 				{
+					$needle_ever_found = true;
 					echo "<font color=\"green\">O</font>\n";
 					echo "<font color=\"red\">X</font><br>\n";
 					//start_over_here($rev_text);
