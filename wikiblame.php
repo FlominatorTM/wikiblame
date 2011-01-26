@@ -782,7 +782,7 @@ function log_search ($time="started")
 		fputs($file, $time.";");
 		fputs($file, $get_version_time.";");
 		fputs($file, '"'.$_SERVER['HTTP_USER_AGENT'].'"'.";");
-		fputs($file, '"'.get_url($year,$month , $day, true).'"'.";\n");
+		fputs($file, str_replace('&amp;', '&', get_url($year,$month , $day, true)).";\n");
 		fclose($file);
 	}
 	
@@ -995,7 +995,7 @@ function print_translator($lang)
 function get_url($year, $month, $day, $include_ignorefirst=true)
 {
 	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse;
-	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".urlencode($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
+	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".name_in_url($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
 	
 	if($include_ignorefirst)
 	{
