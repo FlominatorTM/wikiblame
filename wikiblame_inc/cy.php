@@ -34,6 +34,7 @@ $messages['skipversions'] = 'Neidio dros bob yn x diwygiad wrth chwilio';
 $messages['ignorefirst'] = 'Anwybyddu\'r x diwygiad cyntaf';
 $messages['limit'] = 'Nifer y diwygiadau i\'w gwirio';
 $messages['start_date'] = 'Dyddiad cychwyn';
+$messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Trefn';
 $messages['newest_first'] = 'y diweddaraf yn gyntaf';
 $messages['oldest_first'] = 'yr hynaf yn gyntaf';

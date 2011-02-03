@@ -26,4 +26,6 @@ $messages['October'] = 'Kewçêr';
 $messages['November'] = 'Sermawez';
 $messages['December'] = 'Berfanbar';
 $messages['lang'] = 'Ziman';
+$messages['project'] = 'Proje';
 $messages['article'] = 'Rûpel';
+$messages['please_wait'] = 'Ji kerema xwere bisekine ...';
