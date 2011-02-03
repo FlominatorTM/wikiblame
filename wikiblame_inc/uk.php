@@ -38,6 +38,7 @@ $messages['skipversions'] = 'Завжди пропускати X версій';
 $messages['ignorefirst'] = 'Не враховувати перших X версій';
 $messages['limit'] = 'Версії для перевірки';
 $messages['start_date'] = 'Дата початку';
+$messages['date_format'] = 'ММ ДД, РРРР';
 $messages['order'] = 'Порядок';
 $messages['newest_first'] = 'спочатку новіші';
 $messages['oldest_first'] = 'Спочатку старіші';

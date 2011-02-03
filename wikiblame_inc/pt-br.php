@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Capmo
  * @author Giro720
  * @author Luckas Blade
  */
@@ -35,6 +36,7 @@ $messages['skipversions'] = 'Ignorar intervalos de x edições';
 $messages['ignorefirst'] = 'Ignorar as primeiras x edições';
 $messages['limit'] = 'Número de edições a verificar';
 $messages['start_date'] = 'Data de início';
+$messages['date_format'] = 'DD/MM/YYYY';
 $messages['order'] = 'Ordem';
 $messages['newest_first'] = 'mais recentes primeiro';
 $messages['oldest_first'] = 'mais antigos primeiro';

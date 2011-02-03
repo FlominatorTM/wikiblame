@@ -13,6 +13,7 @@
  * @author Aotake
  * @author Flominator
  * @author Fryed-peach
+ * @author Whym
  */
 
 $messages['January'] = '1月';
@@ -36,6 +37,7 @@ $messages['skipversions'] = '間の何版かの検査をとばす';
 $messages['ignorefirst'] = '初めの何版かの検査をとばす';
 $messages['limit'] = '検査する版数';
 $messages['start_date'] = '開始日';
+$messages['date_format'] = 'YYYY年MM月DD日';
 $messages['order'] = '順序';
 $messages['newest_first'] = '新しいものを初めに';
 $messages['oldest_first'] = '古いものを初めに';
@@ -43,7 +45,7 @@ $messages['search_method'] = '探索方法';
 $messages['binary'] = '二分探索';
 $messages['binary_in_wp'] = 'http://ja.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%8E%A2%E7%B4%A2';
 $messages['linear'] = '線型';
-$messages['interpolated'] = '補間 (版が多い場合に速い)';
+$messages['interpolated'] = 'バイナリ (版が多い場合に速い)';
 $messages['ignore_minors'] = '細部の編集は無視する (実験的)';
 $messages['force_wikitags'] = 'ウィキテキストとして検索する';
 $messages['start'] = '開始';
@@ -51,6 +53,7 @@ $messages['reset'] = 'リセット';
 $messages['manual'] = '使用説明';
 $messages['manual_link'] = 'http://ja.wikipedia.org/wiki/Wikipedia:%E3%83%84%E3%83%BC%E3%83%AB/WikiBlame';
 $messages['contact'] = '連絡先';
+$messages['get_less_versions'] = 'あなたの検索クエリは__NUMREVISIONS__件の版を一度に検査する可能性があります。サーバーを保護するため、一度の呼び出しでは__ALLOWEDREVISIONS__件までしか許可されていません。設定を変更するか、検索方法をバイナリにしてください！';
 $messages['wrong_skips'] = '設定の不備: 初めの__VERSIONSTOSKIP__版をとばしてしまうと、検査すべき__VERSIONSTOSEARCH__版のどれも処理されないことになります。';
 $messages['search_in_progress_text'] = '「_ARTICLELINK_」の版履歴を、「<b>_NEEDLE_</b>」をプレインテキストとして検索しています';
 $messages['search_in_progress_wikitags'] = '「_ARTICLELINK_」の版履歴を、「<b>_NEEDLE_</b>」をウィキテキストして検索しています';

@@ -35,6 +35,7 @@ $messages['skipversions'] = 'Întotdeauna se omit x versiuni';
 $messages['ignorefirst'] = 'Se ignoră primele x versiuni';
 $messages['limit'] = 'Versiuni pentru verificare';
 $messages['start_date'] = 'Începând cu';
+$messages['date_format'] = 'LL ZZ AAAA';
 $messages['order'] = 'Sortare';
 $messages['newest_first'] = 'întâi cele mai recente';
 $messages['oldest_first'] = 'întâi cele mai vechi';
