@@ -63,11 +63,24 @@ if($project=="")
 	$project="wikipedia";
 }
 
+$use_binary_search = true;
+if($_REQUEST['searchmethod']=="lin")
+{
+	$use_binary_search = false;
+}
+
 $limit = $_REQUEST['limit'];
 
 if($limit=="")
 {
-	$limit = 50;
+	if($use_binary_search)
+	{
+		$limit = 500;
+	}
+	else
+	{
+		$limit = 50;
+	}
 }
 
 $ignorefirst = $_REQUEST['ignorefirst'];
@@ -101,12 +114,6 @@ $offset.= '235500';
 if(strlen($offset)<12)
 {	
 	$offset=strftime("%Y%m%d%H%M%S");
-}
-
-$use_binary_search = true;
-if($_REQUEST['searchmethod']=="lin")
-{
-	$use_binary_search = false;
 }
 
 if($_REQUEST['binary_search_inverse'] == "true")
