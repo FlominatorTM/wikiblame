@@ -14,6 +14,7 @@
  * @author IAlex
  * @author Jean-Frédéric
  * @author McDutchie
+ * @author Peter17
  */
 
 $messages['January'] = 'janvier';
@@ -58,12 +59,17 @@ $messages['search_in_progress_text'] = '<b>_NEEDLE_</b>, comme texte plein, est 
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b>, comme wikitexte, est recherché dans l’historique des versions de _ARTICLELINK_';
 $messages['no_differences'] = 'Aucune différence dans les révisions recherchées.';
 $messages['first_version'] = 'Les changements doivent s\'être produits dans la première ou dernière révision ?';
+$messages['first_version_present'] = '__NEEDLE__ était déjà présent dans la première version trouvée datant du __REVISIONLINK__.';
 $messages['execution_time'] = 'Temps d\'exécution: _EXECUTIONTIME_ secondes';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions trouvées';
 $messages['please_wait'] = 'Veuillez patienter…';
 $messages['binary_test'] = 'Comparaison des différences en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ et _SECONDNUMBER_ en venant de _SOURCENUMBER_ :';
+$messages['dead_end'] = 'Tombé dans une impasse (probablement causée par des révocations ou des guerres d’éditions)';
+$messages['once_more'] = 'Une fois de plus, avec le pressentiment :';
+$messages['binary_enough'] = 'Vous avez assez réessayé. L’historique de l’article est mal en point. Veuillez essayer de changer certains paramètres.';
 $messages['insertion_found'] = 'Insertion détectée entre LEFT_VERSION et RIGHT_VERSION';
 $messages['deletion_found'] = 'Suppression détectée entre LEFT_VERSION et RIGHT_VERSION';
 $messages['help_translating'] = 'Aidez à traduire sur translatewiki.net';
 $messages['start_here'] = 'Rechercher à partir d\'ici';
 $messages['too_much_versions'] = 'Vous avez atteint votre limite de requête de __VERSIONLIMIT__ versions. Essayez de nouveau dans __WAITMINUTES__ minutes ou basculez vers la recherche binaire. Désolé pour les inconvénients.';
+$messages['not_found_at_all'] = 'Le contenu recherché n’a pas été trouvé. Avez-vous vraiment les bons paramètres ?';

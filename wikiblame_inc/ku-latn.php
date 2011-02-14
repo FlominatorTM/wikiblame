@@ -28,4 +28,5 @@ $messages['December'] = 'Berfanbar';
 $messages['lang'] = 'Ziman';
 $messages['project'] = 'Proje';
 $messages['article'] = 'Rûpel';
+$messages['needle'] = 'Bigere li';
 $messages['please_wait'] = 'Ji kerema xwere bisekine ...';
