@@ -12,6 +12,7 @@
  *
  * @author Fohanno
  * @author Fulup
+ * @author Gwenn-Ael
  * @author Y-M D
  */
 
@@ -56,12 +57,17 @@ $messages['search_in_progress_text'] = 'Stumm istor  _ARTICLELINK_ a zo klasket 
 $messages['search_in_progress_wikitags'] = 'Stumm istor  _ARTICLELINK_ a zo klasket evit <b>_NEEDLE_</b> evel testenn wiki';
 $messages['no_differences'] = 'N\'eus bet kavet diforc\'h ebet en adweladennoù bet klasket enno';
 $messages['first_version'] = 'Rankout a ra ar c\'hemmoù bezañ c\'hoarvezet en adweladenn gentañ pe diwezhatoc\'h ?';
+$messages['first_version_present'] = '__NEEDLE__ a oa dija en doare kentañ eus __REVISIONLINK__.';
 $messages['execution_time'] = 'Amzer seveniñ : _EXECUTIONTIME_ eilenn';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ stumm kavet';
 $messages['please_wait'] = 'Gortozit mar plij...';
 $messages['binary_test'] = 'Keñveriadenn an diforc\'hioù e _FIRSTDATEVERSION_ etre _FIRSTNUMBER_ ha _SECONDNUMBER_ o tont eus _SOURCENUMBER_:';
+$messages['dead_end'] = 'En un hent-dall emaoc\'h marteze (abalamour d\'an torridigezhioù ha d\'ar brezelioù embann).';
+$messages['once_more'] = 'Ur wech ouzhpenn, gant ar raksant :';
+$messages['binary_enough'] = 'Klasket ho peus en-dro. E ratre fall emañ istor ar pennad. Klaskit cheñch arventennoù zo, mar plij.';
 $messages['insertion_found'] = 'Ensoc\'hadenn detektet etre LEFT_VERSION ha RIGHT_VERSION';
 $messages['deletion_found'] = 'Diverkadenn kavet etre LEFT_VERSION ha RIGHT_VERSION';
 $messages['help_translating'] = 'Sikourit da dreiñ war translatewiki.net';
 $messages['start_here'] = 'Klask adalek amañ';
 $messages['too_much_versions'] = 'Tizhet hoc\'h eus ho pevenn kerc\'hat eus __VERSIONLIMIT__ stumm. Esaeit en-dro a-benn __WAITMINUTES__ munutenn, mar plij, pe dibanit an enklask binarel. Ho tigarez evit an direnkamant.';
+$messages['not_found_at_all'] = 'N\'eo ket bet kavet an endalc\'h emaoc\'h o klask. Hag an arvetennoù mat ho peus ?';
