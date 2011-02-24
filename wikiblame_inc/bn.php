@@ -11,6 +11,7 @@
  * @file
  *
  * @author Bellayet
+ * @author RIPENDIL
  */
 
 $messages['January'] = 'জানুয়ারি';
@@ -25,12 +26,15 @@ $messages['September'] = 'সেপ্টেম্বর';
 $messages['October'] = 'অক্টোবর';
 $messages['November'] = 'নভেম্বর';
 $messages['December'] = 'ডিসেম্বর';
+$messages['ui_lang'] = 'ভাষা প্রদর্শন';
 $messages['lang'] = 'ভাষা';
 $messages['project'] = 'প্রকল্প';
 $messages['article'] = 'পাতা';
 $messages['needle'] = 'যা অনুসন্ধান করা হয়েছে';
 $messages['start_date'] = 'শুরুর তারিখ';
+$messages['search_method'] = 'খোজ প্রক্রিয়া';
 $messages['start'] = 'শুরু';
 $messages['reset'] = 'আদি অবস্থায় ফেরত';
 $messages['manual'] = 'হস্তচালিত';
 $messages['contact'] = 'যোগাযোগের ঠিকানা';
+$messages['start_here'] = 'এখানে অনুসন্ধান করুন';

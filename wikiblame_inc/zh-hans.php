@@ -13,6 +13,7 @@
  * @author Hydra
  * @author PhiLiP
  * @author Shizhao
+ * @author 阿pp
  */
 
 $messages['January'] = '1月';
@@ -45,7 +46,14 @@ $messages['binary'] = '二进制文件';
 $messages['linear'] = '线性';
 $messages['interpolated'] = '二进制文件 （与更多的版本更快）';
 $messages['ignore_minors'] = '忽略小修该（测试）';
+$messages['force_wikitags'] = '强制搜索 wikitext';
 $messages['start'] = '开始';
 $messages['reset'] = '重置';
 $messages['manual'] = '指南';
 $messages['contact'] = '联系';
+$messages['please_wait'] = '请稍等 …';
+$messages['dead_end'] = '抓住了一些死胡同（可能造成的归还或编辑大战）';
+$messages['once_more'] = '再一次，有感而发：';
+$messages['help_translating'] = '在Translatewiki.net帮助翻译';
+$messages['start_here'] = '从这里开始搜索';
+$messages['not_found_at_all'] = '在所有未找到你的搜索词。是否确定你正确设置吗？';
