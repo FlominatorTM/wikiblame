@@ -852,10 +852,12 @@ function binary_search($middle, $from)
 					echo $messages['once_more'].'<br>';
 					binary_search(floor(count($versions)/2)-$binary_search_retries, count($versions)-1);
 					$binary_search_retries--;
+					log_search("retry");
 				}
 				else
 				{
 					echo  ($messages['binary_enough']);
+					log_search("enough, done");
 				}
 			}
 		}
