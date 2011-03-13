@@ -306,7 +306,7 @@ function submitAndWait()
 				</tr>	
 				<tr>
 					<td align="<? echo $alignment ?>">
-						<? echo $messages['start_date'] .' (' . $messages['date_format'] . ')' ?>
+						<? echo $messages['start_date'] ?>
 					</td>
 					<td>
 						<?php datedrop_with_months( "", "off", false, 2001, date("Y"), $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months, $messages['date_format']); ?>
