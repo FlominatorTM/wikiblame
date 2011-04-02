@@ -41,8 +41,6 @@ if($text_dir=='rtl')
 	$alignment = 'left';
 }
 
-$binary_search_retries = 3;
-
 //for benchmarking reasons
 $beginning = time();
 
@@ -413,12 +411,12 @@ if($needle!="")
 	//echo $historyurl;
 	$history = get_request($server, $historyurl);
 	
-	
 	//echo "<hr><pre>$history</pre><hr>";
 	$get_version_time = time()-$beginning;
 	$versions = listversions($history);
 	log_search();
 	$needle_ever_found = false;
+	$binary_search_retries = 3;
 	if(count($versions)>0)
 	{
 		if($use_binary_search)
@@ -818,6 +816,7 @@ function binary_search($middle, $from)
 {
 	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found;
 	//echo "binary_search(".$middle.",".$from.")";
+	
 	if($middle<1)
 	{
 		log_search("first_version");
@@ -850,8 +849,8 @@ function binary_search($middle, $from)
 				{
 					echo $messages['dead_end'].'<br><br>';
 					echo $messages['once_more'].'<br>';
-					binary_search(floor(count($versions)/2)-$binary_search_retries, count($versions)-1);
-					$binary_search_retries--;
+					binary_search($middle, $from-$binary_search_retries);
+					$binary_search_retries = $binary_search_retries -1;
 					log_search("retry");
 				}
 				else
