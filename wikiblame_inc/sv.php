@@ -12,6 +12,7 @@
  *
  * @author Ainali
  * @author Flominator
+ * @author Per
  * @author Tobulos1
  */
 
@@ -52,3 +53,4 @@ $messages['reset'] = 'Återställ';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Kontakt';
 $messages['please_wait'] = 'Var god vänta …';
+$messages['help_translating'] = 'Hjälp till med översättning på translatewiki.net';
