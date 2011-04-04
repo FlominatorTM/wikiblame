@@ -13,6 +13,18 @@
  * @author DCLXVI
  */
 
+$messages['January'] = 'януари';
+$messages['February'] = 'февруари';
+$messages['March'] = 'март';
+$messages['April'] = 'април';
+$messages['May'] = 'май';
+$messages['June'] = 'юни';
+$messages['July'] = 'юли';
+$messages['August'] = 'август';
+$messages['September'] = 'септември';
+$messages['October'] = 'октомври';
+$messages['November'] = 'ноември';
+$messages['December'] = 'декември';
 $messages['lang'] = 'Език';
 $messages['project'] = 'Проект';
 $messages['article'] = 'Страница';
@@ -23,3 +35,4 @@ $messages['order'] = 'Подредба';
 $messages['newest_first'] = 'първо най-новите';
 $messages['oldest_first'] = 'първо най-старите';
 $messages['search_method'] = 'Метод на търсене';
+$messages['help_translating'] = 'Помогнете с превода на translatewiki.net';
