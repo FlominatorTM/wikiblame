@@ -60,6 +60,15 @@ if($project=="")
 {
 	$project="wikipedia";
 }
+if($lang=="blank")
+{
+	$server= $project.".org";
+}
+else
+{
+	$server= $lang.".".$project.".org";
+}
+
 
 $use_binary_search = true;
 if($_REQUEST['searchmethod']=="lin")
@@ -103,11 +112,30 @@ else
 	$ignore_minors = false;
 }
 
+	
+
 //Offset = YYYYMMDDmmhhss
 $offset = $_REQUEST['offjahr'];
 $offset.= str_pad ($_REQUEST['offmon'], 2, '0', STR_PAD_LEFT);
 $offset.= str_pad ($_REQUEST['offtag'], 2, '0', STR_PAD_LEFT);
-$offset.= '235500';
+
+$offhour = str_pad ($_REQUEST['offhour'], 2, '0', STR_PAD_LEFT);;
+if($offhour == "00")
+{
+	$offhour = 23;
+}
+else
+{
+	$offhour = str_pad (Get_UTC_Hours($offhour, $server), 2, '0', STR_PAD_LEFT);
+}
+
+$offmin = str_pad ($_REQUEST['offmin'], 2, '0', STR_PAD_LEFT);;
+
+if($offmin == "00")
+{
+	$offmin = 55;
+}
+$offset.= $offhour.$offmin.'00';
 
 if(strlen($offset)<12)
 {	
@@ -188,7 +216,7 @@ function setFormDate(year, mon, day)
 //disable submit button when user wants to query too much revisions by linear search
 function checkScanAmount()
 {
-	var allowedVersionsPerCall = <? echo $allowedRevisionsPerCall ?>;
+ 	var allowedVersionsPerCall = <? echo $allowedRevisionsPerCall ?>;
 	var expectedVersionsToQuery = 0;
 	var versionsToQuery = document.forms['mainform'].elements['limit'].value;
 	var versionsToSkipDuring = document.forms['mainform'].elements['skipversions'].value;
@@ -200,8 +228,9 @@ function checkScanAmount()
 		expectedVersionsToQuery = expectedVersionsToQuery / versionsToSkipDuring;
 	}
 	
-	if(expectedVersionsToQuery > allowedVersionsPerCall &&
-  	   document.forms['mainform'].elements['linear'].checked)
+	if((expectedVersionsToQuery > allowedVersionsPerCall &&
+  	   document.forms['mainform'].elements['linear'].checked
+	   )  <? if ($user!="") echo "&& false" ?>)
 	{
 		var alertText = "<? echo $jsTextLessVersions ?>";
 
@@ -362,6 +391,7 @@ function submitAndWait()
 					<td colspan="2" align="center"><br><br>
 						<input name="start" id="start" type="submit" value="<? echo $messages['start'] ?>" >
 						<input name="binary_search_inverse" id="binary_search_inverse" type="hidden" value="<? echo $binary_search_inverse ?>" >
+						<input name="user" id="user" type="hidden" value="<? echo $user ?>" >
 					</td>
 				</tr>
 			</table>
@@ -378,19 +408,9 @@ if($needle!="")
 {
 	//$needle = needle_regex($needle); necessary if you work with html, which is currently not the case
 	check_options(); // stops script, when wrong options are used
-	if(!$use_binary_search)
+	if(!$use_binary_search && $_REQUEST['user']=="")
 	{
 		check_calls_from_this_ip($limit, $ignorefirst, $skipversions);
-	}
-	
-	
-	if($lang=="blank")
-	{
-		$server= $project.".org";
-	}
-	else
-	{
-		$server= $lang.".".$project.".org";
 	}
 	
 	$historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=$user_lang";
@@ -408,9 +428,8 @@ if($needle!="")
 	$msg = str_replace('_NEEDLE_', htmlentities($needle),$msg);
 	echo "$msg<br>\n";
 	
-	//echo $historyurl;
 	$history = get_request($server, $historyurl);
-	
+
 	//echo "<hr><pre>$history</pre><hr>";
 	$get_version_time = time()-$beginning;
 	$versions = listversions($history);
@@ -620,7 +639,7 @@ function listversions ($history)
 
 function checkversions ($versions, $skipversions, $ignorefirst)
 {
-	global $server, $needle, $needle_ever_found;
+	global $server, $needle, $needle_ever_found, $limit;
 
 	$version_counter = 0;
 	echo "<ul>";
@@ -642,7 +661,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 				{
 					echo " <font color=\"red\">XXX</font>\n";
 				}
-				start_over_here($rev_text);
+				start_over_here($rev_text, $skipversions);
 				$version_counter=$skipversions;
 			}
 			else
@@ -701,9 +720,9 @@ function get_revision($id)
 
 //generate link to start a new search with the date of this revision
 //currently only works when not searching for wiki text
-function start_over_here($versionpage)
+function start_over_here($versionpage, $skip=0)
 {
-	global $messages;
+	global $messages, $limit;
 	// every revision (except the current on contains a text like this:
 	//as of 10:01, 7 November 2006 by username
 
@@ -714,11 +733,14 @@ function start_over_here($versionpage)
 	{
 		$ending = strpos($versionpage, " by ", $beginning);
 		//extract date from revision text
-		$strDate = substr($versionpage, $beginning+strlen($strBegin)+6, $ending-$beginning-strlen($strBegin));
+		$strDate = substr($versionpage, $beginning+strlen($strBegin), $ending-$beginning-strlen($strBegin));
 
 		$dateParts = explode(' ', trim($strDate));
-		$day = $dateParts[0];
 		
+		$hour = substr($dateParts[0], 0, 2);
+		$minute = substr($dateParts[0], 3, 2);
+		
+		$day = $dateParts[1];
 		$months['January'] = 1;
 		$months['February'] = 2;
 		$months['March'] = 3;
@@ -731,9 +753,14 @@ function start_over_here($versionpage)
 		$months['October'] = 10;
 		$months['November'] = 11;
 		$months['December'] = 12;
-		$month = $months[$dateParts[1]] ;
-		$year = $dateParts[2];
-		$theUrl = get_url($year,$month , $day, false);
+		$month = $months[$dateParts[2]] ;
+		$year = $dateParts[3];
+		$theUrl = get_url($year,$month , $day, $hour, $minute, false);
+		
+		if($skip != 0)
+		{
+			$theUrl = str_replace("limit=$limit", "limit=$skip", $theUrl);
+		}
 		echo "<a href=\"".$theUrl."\">[".$messages['start_here']."]</a>";
 	}
 
@@ -759,6 +786,7 @@ function log_search ($time="started")
 		$header.="Found Versions;";
 		$header.="Skipped Versions;";
 		$header.="Linear/Interpolated;";
+		$header.="User;";
 		$header.="Execution-Time;";
 		$header.="Get-Version-Time;";
 		$header.="User-Agent;";
@@ -795,7 +823,7 @@ function log_search ($time="started")
 		fputs($file, $time.";");
 		fputs($file, $get_version_time.";");
 		fputs($file, '"'.$_SERVER['HTTP_USER_AGENT'].'"'.";");
-		fputs($file, str_replace('&amp;', '&', get_url($year,$month , $day, true)).";\n");
+		fputs($file, str_replace('&amp;', '&', get_url($year,$month, $day, $hour, $min, true)).";\n");
 		fclose($file);
 	}
 	
@@ -850,7 +878,7 @@ function binary_search($middle, $from)
 					echo $messages['dead_end'].'<br><br>';
 					echo $messages['once_more'].'<br>';
 					binary_search($middle, $from-$binary_search_retries);
-					$binary_search_retries = $binary_search_retries -1;
+					$binary_search_retries--;
 					log_search("retry");
 				}
 				else
@@ -886,7 +914,7 @@ function binary_search($middle, $from)
 		{
 			$needle_ever_found = true;
 			echo "<font color=\"green\">OO</font>\n";
-			start_over_here($rev_text);
+			start_over_here($rev_text, 0, 0);
 			echo "<br>";
 			if($binary_search_inverse == "true")
 			{
@@ -1013,16 +1041,20 @@ function print_translator($lang)
 }
 
 
-function get_url($year, $month, $day, $include_ignorefirst=true)
+function get_url($year, $month, $day, $hours=23, $minutes=55, $include_ignorefirst=true)
 {
-	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse;
-	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".name_in_url($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
+	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse, $user;
+	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".name_in_url($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;offhour=$hours&amp;offmin=$minutes&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
 	
 	if($include_ignorefirst)
 	{
 		$url.="&amp;ignorefirst=".$_REQUEST['ignorefirst'];
 	}
 	$url.="&amp;binary_search_inverse=".$binary_search_inverse;
+	if($user != "")
+	{
+		$url.="&amp;user=".$user;
+	}
 	return $url;
 }
 
@@ -1091,6 +1123,32 @@ function write_simple_file($filename, $content)
 		fputs($file, $content);
 		fclose($file);
 	}
+}
+
+function Get_UTC_Hours($localHours, $server)
+{
+	$url = "http://" . $server . "/w/api.php?action=query&meta=siteinfo&format=php";
+	ini_set( 'user_agent', 'WikiBlame_by_Flominator' );
+	$SiteInfo = unserialize ( file_get_contents ( $url) ) ;
+	$offsetToUtc = $SiteInfo['query']['general']['timeoffset'];
+	$UtcHours = $localHours -($offsetToUtc / 60);
+	return $UtcHours;
+}
+function analyse_array($arr)
+{
+	echo "<dir>";
+	echo count($arr)." Element(e)<br>";
+	$keys = array_keys($arr);
+	
+	foreach($keys as $key)
+	{
+		echo "Array[".$key."]=".$arr[$key]."<br>";
+		if(is_array($arr[$key]))
+		{
+			analyse_array($arr[$key]);
+		}
+	}
+	echo "</dir>";
 }
 
 ?>
