@@ -12,6 +12,7 @@
  *
  * @author Consta
  * @author Crazymadlover
+ * @author Evropi
  * @author Omnipaedista
  */
 
@@ -44,3 +45,4 @@ $messages['manual'] = 'Εγχειρίδιο';
 $messages['contact'] = 'Επικοινωνία';
 $messages['execution_time'] = 'Χρόνος Εκτέλεσης: _EXECUTIONTIME_ δευτερόλεπτα';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ εκδόσεις βρέθηκαν';
+$messages['please_wait'] = 'Παρακαλούμε περιμένετε...';
