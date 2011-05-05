@@ -13,6 +13,7 @@
  * @author Consta
  * @author Crazymadlover
  * @author Evropi
+ * @author Glavkos
  * @author Omnipaedista
  */
 
@@ -28,10 +29,12 @@ $messages['September'] = 'Σεπτέμβριος';
 $messages['October'] = 'Οκτώβριος';
 $messages['November'] = 'Νοέμβριος';
 $messages['December'] = 'Δεκέμβριος';
+$messages['ui_lang'] = 'Εμφάνιση γλώσσας';
 $messages['lang'] = 'Γλώσσα';
 $messages['project'] = 'Εγχείρημα';
 $messages['article'] = 'Σελίδα';
 $messages['needle'] = 'Αναζήτηση για';
+$messages['ignorefirst'] = 'Αγνοήστε πρώτες x εκδόσεις';
 $messages['limit'] = 'Εκδοχές προς έλεγχο';
 $messages['start_date'] = 'Ημερομηνία έναρξης';
 $messages['order'] = 'Σειρά';
@@ -46,3 +49,4 @@ $messages['contact'] = 'Επικοινωνία';
 $messages['execution_time'] = 'Χρόνος Εκτέλεσης: _EXECUTIONTIME_ δευτερόλεπτα';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ εκδόσεις βρέθηκαν';
 $messages['please_wait'] = 'Παρακαλούμε περιμένετε...';
+$messages['start_here'] = 'Αναζήτηση από εδώ';

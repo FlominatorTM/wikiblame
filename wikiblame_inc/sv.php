@@ -12,6 +12,8 @@
  *
  * @author Ainali
  * @author Flominator
+ * @author Liftarn
+ * @author Lokal Profil
  * @author Per
  * @author Tobulos1
  */
@@ -52,5 +54,15 @@ $messages['start'] = 'Starta';
 $messages['reset'] = 'Återställ';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Kontakt';
+$messages['wrong_skips'] = 'Felaktiga inställningar: Om de första __VERSIONSTOSKIP__ versionerna hoppas över,  så kommer inga av de __VERSIONSTOSEARCH__ versionerna som ska genomsökas att behandlas.';
+$messages['search_in_progress_text'] = 'Versionshistoriken för _ARTICLELINK_ blir genomsökt efter <b>_NEEDLE_</b> som oformaterad text';
+$messages['search_in_progress_wikitags'] = 'Versionshistoriken för _ARTICLELINK_ blir genomsökt efter <b>_NEEDLE_</b> som wikitext';
+$messages['execution_time'] = 'Körtid: _EXECUTIONTIME_ sekunder';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ versioner funna';
 $messages['please_wait'] = 'Var god vänta …';
+$messages['binary_test'] = 'Jämför skillnader i _FIRSTDATEVERSION_ mellan _FIRSTNUMBER_ och _SECONDNUMBER_ som kommer från _SOURCENUMBER_:';
+$messages['once_more'] = 'En gång till, med känsla:';
+$messages['deletion_found'] = 'Radering funnen mellan LEFT_VERSION och RIGHT_VERSION';
 $messages['help_translating'] = 'Hjälp till med översättning på translatewiki.net';
+$messages['start_here'] = 'Sök härifrån';
+$messages['not_found_at_all'] = 'Din sökterm hittades inte alls. Är du säker på att du har rätt inställningar?';

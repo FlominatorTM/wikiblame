@@ -38,4 +38,5 @@ $messages['newest_first'] = 'కొత్తవి ముందర';
 $messages['oldest_first'] = 'పాతవి ముందర';
 $messages['search_method'] = 'అన్వేషణా విదానము';
 $messages['start'] = 'ఆరంభము';
+$messages['please_wait'] = 'దయచేసి వేచివుండండి …';
 $messages['help_translating'] = 'translatewiki.net యందు అనువదించడానికి సహాయం చెయ్యండి';
