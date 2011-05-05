@@ -11,6 +11,7 @@
  * @file
  *
  * @author គីមស៊្រុន
+ * @author វ័ណថារិទ្ធ
  */
 
 $messages['January'] = 'មករា';
@@ -34,6 +35,7 @@ $messages['skipversions'] = 'ផ្លោះរាល់កំណែចំនួ
 $messages['ignorefirst'] = 'រំលងកំណែដំបូងៗចំនួន';
 $messages['limit'] = 'ចំនួនកំណែត្រូវរក';
 $messages['start_date'] = 'កាលបរិច្ឆេទចាប់ផ្ដើម';
+$messages['date_format'] = 'MM DD, YYYY';
 $messages['order'] = 'លំដាប់';
 $messages['newest_first'] = 'ថ្មីមុន';
 $messages['oldest_first'] = 'ចាស់មុន​';

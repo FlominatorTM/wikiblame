@@ -12,6 +12,7 @@
  *
  * @author Flominator
  * @author KEL
+ * @author Microcell
  * @author Prima klasy4na
  * @author Тест
  */
@@ -56,6 +57,8 @@ $messages['contact'] = 'Зв\'язок';
 $messages['wrong_skips'] = 'Неправельні налаштування: якщо перші __VERSIONSTOSKIP__ версії будуть пропускаються, тоді жодна з __VERSIONSTOSEARCH__ версій для пошуку не буде оброблена.';
 $messages['search_in_progress_text'] = 'Ведеться пошук <b>_NEEDLE_</b> в історії версій _ARTICLELINK_ як звичайного тексту';
 $messages['search_in_progress_wikitags'] = 'Ведеться пошук <b>_NEEDLE_</b> в історії версій _ARTICLELINK_ як вікітексту';
+$messages['no_differences'] = 'Не знайдено відмінностей між обраними версіями.';
+$messages['first_version'] = 'Зміна мала відбутися в першій чи останній версії?';
 $messages['execution_time'] = 'Час виконання: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Знайдено _NUMBEROFVERSIONS_ версії';
 $messages['please_wait'] = 'Будь ласка, зачекайте …';

@@ -52,6 +52,7 @@ $messages['wrong_skips'] = 'Gosodiadau gwallus: Os ydych yn \'anwybyddu\'r __VER
 $messages['search_in_progress_text'] = 'Fel testun plaen y chwilir am <b>_NEEDLE_</b> yn hanes diwygio\'r dudalen _ARTICLELINK_';
 $messages['search_in_progress_wikitags'] = 'Fel testun wici y chwilir am <b>_NEEDLE_</b> yn hanes diwygio\'r dudalen _ARTICLELINK_';
 $messages['no_differences'] = 'Ni chafwyd hyd i unrhyw wahaniathau yn y diwygiadau y chwiliwyd drwyddynt.';
+$messages['first_version'] = 'Rhaid bod y newid wedi digwydd yn y diwygiad cyntaf neu\'r olaf?';
 $messages['first_version_present'] = 'Roedd __NEEDLE__ eisoes yn bresennol yn y diwygiad cyntaf y daethpwyd o hyd iddo yn dyddio o __REVISIONLINK__.';
 $messages['execution_time'] = 'Hyd y chwilio: _EXECUTIONTIME_ eiliad';
 $messages['versions_found'] = 'Cafwyd hyd i _NUMBEROFVERSIONS_ o ddiwygiadau';

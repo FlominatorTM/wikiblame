@@ -13,6 +13,7 @@
  * @author McDutchie
  * @author Paucabot
  * @author SMP
+ * @author Solde
  */
 
 $messages['January'] = 'gener';
@@ -50,3 +51,5 @@ $messages['start'] = 'Iniciar';
 $messages['reset'] = 'Reestableix';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Contacte';
+$messages['please_wait'] = 'Si us plau esperi ...';
+$messages['start_here'] = 'Cerca des d\'aquí';
