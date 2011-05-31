@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author EugeneZelenko
  * @author Fryed-peach
  * @author Lloffiwr
  * @author Lou Crazy
@@ -21,18 +22,30 @@
 $text_dir = '{{optional}}Directionality of the language. Should only be changed if the language translated is written right to left. Possible values:
 * \'ltr\' for left to right (default)
 * rtl for right to left';
-$messages['January'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['February'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['March'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['April'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['May'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['June'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['July'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['August'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['September'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['October'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['November'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['December'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
+$messages['January'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|January}}';
+$messages['February'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|February}}';
+$messages['March'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|March}}';
+$messages['April'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|April}}';
+$messages['May'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|May}}';
+$messages['June'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|June}}';
+$messages['July'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|July}}';
+$messages['August'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|August}}';
+$messages['September'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|September}}';
+$messages['October'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|October}}';
+$messages['November'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|November}}';
+$messages['December'] = 'In dropdown list of months. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|December}}';
 $messages['ui_lang'] = 'Appears above dropdown list of languages. See [http://wikipedia.ramselehof.de/wikiblame.php here]. \'Display\' is a noun.';
 $messages['lang'] = 'Text before input box. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 

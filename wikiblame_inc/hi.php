@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Htt
  */
 
 $messages['lang'] = 'भाषा';
@@ -25,7 +26,7 @@ $messages['newest_first'] = 'नया पहले';
 $messages['oldest_first'] = 'पुराना पहले';
 $messages['search_method'] = 'ढूढ़ने का तरीका';
 $messages['linear'] = 'रेखामय';
-$messages['interpolated'] = 'तीव्रतर परिणाम';
+$messages['interpolated'] = 'बाइनरी (अधिक संस्करणों के साथ तेजी से)';
 $messages['start'] = 'आरम्भ';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'मदद';

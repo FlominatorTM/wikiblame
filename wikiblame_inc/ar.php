@@ -10,6 +10,8 @@
  * @ingroup Language
  * @file
  *
+ * @author Ciphers
+ * @author Houcinee1
  * @author Meno25
  * @author OsamaK
  * @author ترجمان05
@@ -43,8 +45,9 @@ $messages['newest_first'] = 'الآخر أولا';
 $messages['oldest_first'] = 'الأقدم أولا';
 $messages['search_method'] = 'طريقة لبحث';
 $messages['binary'] = 'ثنائي';
+$messages['binary_in_wp'] = 'http://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D8%AD%D8%AB_%D8%A7%D9%84%D8%AB%D9%86%D8%A7%D8%A6%D9%8A';
 $messages['linear'] = 'خطيّة';
-$messages['interpolated'] = 'محرّف (أسرع بنسخ أكثر)';
+$messages['interpolated'] = 'ثنائي (أسرع بنسخ أكثر)';
 $messages['ignore_minors'] = 'تجاهل التغييرات الثانوية (تجريبية)';
 $messages['force_wikitags'] = 'إجبار البحث على نص ويكي';
 $messages['start'] = 'ابدأ';
@@ -54,11 +57,18 @@ $messages['contact'] = 'اتصال';
 $messages['wrong_skips'] = 'إعدادات غير صحيحة: لو أن أول نسخ __VERSIONSTOSKIP__ تم تجاوزها, إذا فلا شيء من نسخ __VERSIONSTOSEARCH__ للبحث ستتم معالجتها.';
 $messages['search_in_progress_text'] = 'تاريخ النسخةهذه  _ARTICLELINK_ يجري البحث عنها <b>_NEEDLE_</b> كنص عادي';
 $messages['search_in_progress_wikitags'] = 'تاريخ النسخة هذه  _ARTICLELINK_ يجري البحث عنها <b>_NEEDLE_</b> كنص ويكي';
+$messages['no_differences'] = 'لا توجد اختلافات في البحث في التنقيحات.';
+$messages['first_version'] = 'يجب أن يكون قد حدث تغيير في التنقيح الأول أو الأخير؟';
+$messages['first_version_present'] = '__NEEDLE__ موجود بالفعل في المراجعة الأولى و  يرجع تاريخها إلى __REVISIONLINK__ .';
 $messages['execution_time'] = 'وقت التنفيذ: _EXECUTIONTIME_ ثانية';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ نسخ موجودة';
 $messages['please_wait'] = 'الرجاء الانتظار...';
 $messages['binary_test'] = 'مقارنة الإختلافات في _FIRSTDATEVERSION_ بين _FIRSTNUMBER_ و _SECONDNUMBER_ حتى يحصل عليه من _SOURCENUMBER_:';
+$messages['once_more'] = 'مرة أخرى، مع الشعور :';
+$messages['binary_enough'] = 'تنفيذ المحاولة بما فيه الكفاية، إن التاريخ المادة قد أفسد تماما، رجاء حاول تغيير بعض الإعدادات.';
 $messages['insertion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION';
 $messages['deletion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION';
 $messages['help_translating'] = 'ساعد في الترجمة عبر translatewiki.net';
 $messages['start_here'] = 'ابحث من هنا';
+$messages['too_much_versions'] = 'لقد وصلت إلى حد الاستعلام المخصص بعدد __VERSIONLIMIT__ إصدار. يرجى المحاولة مرة أخرى في غضون __WAITMINUTES__دقائق أو التبديل للبحث الثنائي. نأسف للإزعاج.';
+$messages['not_found_at_all'] = 'لم يتم العثور على كلمة البحث على الإطلاق. هل أنت متأكد، من أنك قمت بالإعدادات الصحيحة؟';
