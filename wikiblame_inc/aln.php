@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Marinari
  */
 
 $messages['January'] = 'kallnor';
@@ -27,5 +28,6 @@ $messages['December'] = 'dhetor';
 $messages['lang'] = 'Gjuhë';
 $messages['article'] = 'Faqja';
 $messages['needle'] = 'Kërko';
+$messages['skipversions'] = 'Gjithmonë kapërce yrrnekun x';
 $messages['start_date'] = 'Data Fillim';
 $messages['contact'] = 'Kontakt';
