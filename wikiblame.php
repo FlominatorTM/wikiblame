@@ -842,7 +842,7 @@ function needle_regex($needle)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found;
+	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit;
 	//echo "binary_search(".$middle.",".$from.")";
 	
 	if($middle<1)
@@ -869,6 +869,14 @@ function binary_search($middle, $from)
 				$revLink = str_replace("/w/", "http://".$server."/w/", $versions[$first_index])."</a>";
 				$msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
 				echo (str_replace('__REVISIONLINK__', $revLink, $msg));
+				if(count($versions)==$limit)
+				{
+					//there might be revisions before 
+					echo '<br>'.$messages['earlier_versions_available'].' ';
+					$rev_text = get_revision(idfromurl($versions[$first_index]));
+					start_over_here($rev_text);
+				}
+				
 				$needle_ever_found = true;
 			}
 			else
