@@ -16,12 +16,15 @@
 
 $messages['January'] = 'ଜାନୁଆରି';
 $messages['February'] = 'ଫେବ୍ରୁଆରି';
+$messages['March'] = 'March';
 $messages['April'] = 'ଏପ୍ରିଲ';
 $messages['May'] = 'ମେ';
 $messages['June'] = 'ଜୁନ';
 $messages['July'] = 'ଜୁଲାଇ';
 $messages['August'] = 'ଅଗଷ୍ଟ';
+$messages['September'] = 'ସେପଟେମ୍ବର';
 $messages['October'] = 'ଅକଟୋବର';
+$messages['December'] = 'ଡିସେଁବର';
 $messages['lang'] = 'ଭାଷା';
 $messages['project'] = 'କିଳିବେ';
 $messages['article'] = 'ପୃଷ୍ଠା';

@@ -57,6 +57,7 @@ $messages['contact'] = 'Kontakt';
 $messages['wrong_skips'] = 'Felaktiga inställningar: Om de första __VERSIONSTOSKIP__ versionerna hoppas över,  så kommer inga av de __VERSIONSTOSEARCH__ versionerna som ska genomsökas att behandlas.';
 $messages['search_in_progress_text'] = 'Versionshistoriken för _ARTICLELINK_ blir genomsökt efter <b>_NEEDLE_</b> som oformaterad text';
 $messages['search_in_progress_wikitags'] = 'Versionshistoriken för _ARTICLELINK_ blir genomsökt efter <b>_NEEDLE_</b> som wikitext';
+$messages['no_differences'] = 'Inga skillnader hittades i de jämförda versionerna.';
 $messages['first_version'] = 'Ändringen måste ha inträffat i första eller senaste versionen?';
 $messages['execution_time'] = 'Körtid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versioner funna';
