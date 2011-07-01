@@ -30,6 +30,7 @@ $messages['ui_lang'] = 'Јазик за приказ';
 $messages['lang'] = 'Јазик';
 $messages['lang_example'] = 'mk, en, commons, …';
 $messages['project'] = 'Проект';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, …';
 $messages['article'] = 'Страница';
 $messages['needle'] = 'Барај:';
 $messages['skipversions'] = 'Секогаш прескокнувај x верзии';
@@ -50,7 +51,9 @@ $messages['force_wikitags'] = 'принуди пребарување по вик
 $messages['start'] = 'Почни';
 $messages['reset'] = 'Одново';
 $messages['manual'] = 'Прирачник';
+$messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=mk';
 $messages['contact'] = 'Контакт';
+$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=mk';
 $messages['get_less_versions'] = 'Вашето пребарување може да пројде __NUMREVISIONS__ ревизии наеднаш. За да се заштити опслужувачот, дозволени се само __ALLOWEDREVISIONS__ барања по повик. Сменете ги нагодувањата или префрлете се на бинарен метод на пребарување!';
 $messages['wrong_skips'] = 'Погрешни прилагодувања: Ако првите __VERSIONSTOSKIP__ верзии се прескокнат, тогаш ниту една од __VERSIONSTOSEARCH__ верзии за пребарување нема да биде обработена.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> се пребарува по историјата на верзиите на _ARTICLELINK_ како прост текст';

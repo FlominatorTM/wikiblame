@@ -14,6 +14,7 @@
  * @author Farras
  * @author Flominator
  * @author IvanLanin
+ * @author Iwan Novirion
  */
 
 $messages['January'] = 'Januari';
@@ -37,6 +38,7 @@ $messages['skipversions'] = 'Selalu loncati x versi';
 $messages['ignorefirst'] = 'Abaikan x versi pertama';
 $messages['limit'] = 'Versi yang dicek';
 $messages['start_date'] = 'Tanggal mulai';
+$messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Urutan';
 $messages['newest_first'] = 'mulai dengan terbaru';
 $messages['oldest_first'] = 'mulai dengan terlama';
@@ -55,10 +57,14 @@ $messages['get_less_versions'] = 'Pencarian Anda dapat meminta __NUMREVISIONS__ 
 $messages['wrong_skips'] = 'Kesalahan setelan: Jika __VERSIONSTOSKIP__ versi diloncati, maka tidak ada dari __VERSIONSTOSEARCH__ versi yang dicari yang akan diproses.';
 $messages['search_in_progress_text'] = 'Versi terdahulu _ARTICLELINK_ sedang dicari untuk <b>_NEEDLE_</b> sebagai teks biasa';
 $messages['search_in_progress_wikitags'] = 'Versi terdahulu _ARTICLELINK_ sedang dicari untuk <b>_NEEDLE_</b> sebagai teks wiki';
+$messages['no_differences'] = 'Tidak ada perbedaan yang ditemukan dalam pencarian revisi.';
+$messages['first_version'] = 'Perubahan harus terjadi dalam revisi pertama atau terbaru?';
+$messages['first_version_present'] = '__NEEDLE__ sudah hadir di revisi pertama ditemukan berasal dari __REVISIONLINK__.';
 $messages['execution_time'] = 'Waktu eksekusi: _EXECUTIONTIME_ detik';
 $messages['versions_found'] = 'Ditemukan _NUMBEROFVERSIONS_ versi';
 $messages['please_wait'] = 'Silakan tunggu ...';
 $messages['binary_test'] = 'Membandingkan perbedaan pada _FIRSTDATEVERSION_ antara _FIRSTNUMBER_ dan _SECONDNUMBER_ sewaktu berasal dari _SOURCENUMBER_:';
+$messages['once_more'] = 'Sekali lagi, dengan perasaan:';
 $messages['insertion_found'] = 'Penyisipan ditemukan antara LEFT_VERSION dan RIGHT_VERSION';
 $messages['deletion_found'] = 'Penghapusan ditemukan antara LEFT_VERSION dan RIGHT_VERSION';
 $messages['help_translating'] = 'Bantu penerjemahan di translatewiki.net';
