@@ -47,6 +47,7 @@ $messages['date_format'] = 'MM DD, YYYY';
 $messages['order'] = 'Order';
 $messages['newest_first'] = 'latest first';
 $messages['oldest_first'] = 'oldest first';
+$messages['binary_search_inverse'] = 'Look for removal of text (binary only)';
 $messages['search_method'] = 'Search method';
 $messages['binary'] = 'binary';
 $messages['binary_in_wp'] = 'http://en.wikipedia.org/wiki/Binary_search_algorithm';
