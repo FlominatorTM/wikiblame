@@ -142,10 +142,9 @@ if(strlen($offset)<12)
 	$offset=strftime("%Y%m%d%H%M%S");
 }
 
-if($_REQUEST['binary_search_inverse'] == "true")
+if($_REQUEST['binary_search_inverse'] == "on")
 {
 	$binary_search_inverse = "true";
-	echo "using ultra beta binary search inverse feature<br>";
 }
 else
 {
@@ -340,6 +339,19 @@ function submitAndWait()
 						<input type="button" value="<? echo $messages['reset'] ?>" onclick="javascript:var now=new Date();setFormDate(now.getFullYear(),now.getMonth()+1, now.getDate());">
 					</td>
 				<tr>
+					<td align="<? echo $alignment ?>"><? echo $messages['search_method'] ?></td>
+					<td>
+						<input type="radio" name="searchmethod" id="linear" value="lin"  onchange="javascript:checkScanAmount()"  <? if ($use_binary_search!=true) echo checked; ?> >
+						<label for="linear">
+							<? echo $messages['linear'] ?>
+						</label>
+						<input type="radio" name="searchmethod" id="int" value="int" onchange="javascript:checkScanAmount()"   <? if ($use_binary_search==true) echo checked; ?> >
+						<label for="int">
+						<a href="<? echo $messages['binary_in_wp']?>"><? echo $messages['binary'] ?></a>
+						</label>
+					</td>
+				</tr>	
+				<tr>
 					<td align="<? echo $alignment ?>"><? echo $messages['order'] ?></td>
 					<td>
 						<input type="radio" name="order" id="desc" value="desc" <? if ($asc!=true) echo checked; ?> >
@@ -351,17 +363,14 @@ function submitAndWait()
 							<? echo $messages['oldest_first'] ?>
 						</label>
 					</td>
-				</tr>
+				</tr>				
 				<tr>
-					<td align="<? echo $alignment ?>"><? echo $messages['search_method'] ?></td>
+					<td align="<? echo $alignment ?>">
+					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <? if ($binary_search_inverse=="true") echo checked; ?> >
+					</td>
 					<td>
-						<input type="radio" name="searchmethod" id="linear" value="lin"  onchange="javascript:checkScanAmount()"  <? if ($use_binary_search!=true) echo checked; ?> >
-						<label for="linear">
-							<? echo $messages['linear'] ?>
-						</label>
-						<input type="radio" name="searchmethod" id="int" value="int" onchange="javascript:checkScanAmount()"   <? if ($use_binary_search==true) echo checked; ?> >
-						<label for="int">
-						<a href="<? echo $messages['binary_in_wp']?>"><? echo $messages['binary'] ?></a>
+						<label for="binary_search_inverse">
+							<? echo $messages['binary_search_inverse'] ?>
 						</label>
 					</td>
 				</tr>		
@@ -390,7 +399,6 @@ function submitAndWait()
 				<tr>
 					<td colspan="2" align="center"><br><br>
 						<input name="start" id="start" type="submit" value="<? echo $messages['start'] ?>" >
-						<input name="binary_search_inverse" id="binary_search_inverse" type="hidden" value="<? echo $binary_search_inverse ?>" >
 						<input name="user" id="user" type="hidden" value="<? echo $user ?>" >
 					</td>
 				</tr>
