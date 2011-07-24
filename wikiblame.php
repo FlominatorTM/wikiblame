@@ -4,6 +4,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="icon" href="WikiBlame.png" type="image/png" />
+		<link rel="shortcut icon" href="WikiBlame.png" type="image/png" />
 		<title>WikiBlame</title>
 	</head><?
 
