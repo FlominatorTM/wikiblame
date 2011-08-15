@@ -56,6 +56,7 @@ $messages['reset'] = 'Reimposta';
 $messages['manual'] = 'Guida';
 $messages['manual_link'] = 'http://it.wikipedia.org/wiki/Utente:Darth_Kule/WikiBlame';
 $messages['contact'] = 'Contatto';
+$messages['get_less_versions'] = 'La ricerca potrebbe controllare __NUMREVISIONS__ revisioni alla volta. Al fine di proteggere il server, però, si possono controllare soltanto __ALLOWEDREVISIONS__ revisioni per volta. Per favore modifica le impostazioni, oppure passa al metodo di ricerca binario!';
 $messages['wrong_skips'] = 'Impostazioni sbagliate: se le prime __VERSIONSTOSKIP__
 versioni vengono saltate, allora nessuna delle __VERSIONSTOSEARCH__ versioni
 da ricercare sarà processata.';
@@ -64,12 +65,17 @@ $messages['search_in_progress_wikitags'] = 'La cronologia di _ARTICLELINK_ viene
 $messages['no_differences'] = 'Nessuna differenza nelle revisioni trovate.';
 $messages['first_version'] = 'La modifica è avvenuta nella prima o nell\'ultima revisione?';
 $messages['first_version_present'] = '__NEEDLE__ era già presente nella prima revisione del __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Ci sono probabilmente revisioni precedenti.';
 $messages['execution_time'] = 'Tempo di esecuzione: _EXECUTIONTIME_ secondi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ revisioni trovate';
 $messages['please_wait'] = 'Attendere prego …';
 $messages['binary_test'] = 'Confronto delle differenze nella revisione del _FIRSTDATEVERSION_ fra la revisione _FIRSTNUMBER_ e la _SECONDNUMBER_ mentre proviene dalla revisione _SOURCENUMBER_:';
+$messages['dead_end'] = 'Trovato un punto morto (probabilmente causato da rollback o edit war)';
+$messages['once_more'] = 'Ancora una volta, con sentimento:';
+$messages['binary_enough'] = 'Eseguiti sufficienti tentativi, la cronologia della voce è purtroppo abbastanza in disordine, prova a cambiare qualche impostazione.';
 $messages['insertion_found'] = 'Inserimento della parola trovato fra la revisione del LEFT_VERSION e quella del RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancellazione trovata fra LEFT_VERSION e RIGHT_VERSION';
 $messages['help_translating'] = 'Aiuta a tradurre su translatewiki.net';
 $messages['start_here'] = 'Cerca da qui';
 $messages['too_much_versions'] = 'Hai raggiunto il limite massimo  di __VERSIONLIMIT__ richieste. Si prega di riprovare passati __WAITMINUTES__ o passare alla ricerca binaria. Ci scusiamo per l\'inconveniente.';
+$messages['not_found_at_all'] = 'Il termine di ricerca non è stato proprio trovato. Sei sicuro di avere scelto impostazioni corrette?';

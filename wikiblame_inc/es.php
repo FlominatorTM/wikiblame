@@ -11,6 +11,7 @@
  * @file
  *
  * @author Crazymadlover
+ * @author DJ Nietzsche
  * @author McDutchie
  * @author Pertile
  * @author Peter17
@@ -62,6 +63,7 @@ $messages['search_in_progress_wikitags'] = 'Se está buscando <b>_NEEDLE_</b> co
 $messages['no_differences'] = 'No se encontraron diferencias en las revisiones buscadas.';
 $messages['first_version'] = '¿El cambio debió haber ocurrido en la primera o en la última revisión?';
 $messages['first_version_present'] = '__NEEDLE__ ya estaba presente en la primera revisión encontrada de __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Probablemente existan revisiones anteriores.';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
 $messages['please_wait'] = 'Por favor espera...';

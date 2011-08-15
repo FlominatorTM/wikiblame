@@ -56,6 +56,7 @@ $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b>, como wikitexto, es 
 $messages['no_differences'] = 'Nulle differentias trovate in le versiones cercate.';
 $messages['first_version'] = 'Le modification debe haber essite effectuate in le prime o ultime revision?';
 $messages['first_version_present'] = '__NEEDLE__ esseva ja presente in le prime version trovate del data de __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Existe probabilemente anterior versiones.';
 $messages['execution_time'] = 'Tempore de execution: _EXECUTIONTIME_ secundas';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones trovate';
 $messages['please_wait'] = 'Un momento …';

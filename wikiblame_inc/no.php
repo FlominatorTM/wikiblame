@@ -57,6 +57,7 @@ $messages['search_in_progress_wikitags'] = 'Versjonshistorikken til _ARTICLELINK
 $messages['no_differences'] = 'Ingen forskjell funnet i søkte revisjoner.';
 $messages['first_version'] = 'Endring må ha skjedd i første eller siste revisjon?';
 $messages['first_version_present'] = '__NEEDLE__ var allerede til stede i den første revisjonen funnet fra __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Det finnes sannsynligvis tidligere revisjoner.';
 $messages['execution_time'] = 'Kjøretid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versjoner funnet';
 $messages['please_wait'] = 'Vennligst vent …';

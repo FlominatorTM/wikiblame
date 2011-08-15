@@ -58,6 +58,7 @@ $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> está sendo procurad
 $messages['no_differences'] = 'Não foram encontradas diferenças nas versões pesquisadas.';
 $messages['first_version'] = 'A mudança deve ter acontecido na primeira ou última versão?';
 $messages['first_version_present'] = '__NEEDLE__ já estava presente na primeira versão encontrada, datada de __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Provavelmente existem revisões anteriores.';
 $messages['execution_time'] = 'Tempo de execução: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ edições encontradas';
 $messages['please_wait'] = 'Aguarde, por favor …';

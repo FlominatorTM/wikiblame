@@ -56,6 +56,7 @@ $messages['search_in_progress_wikitags'] = 'Istorijat izdanja članka _ARTICLELI
 $messages['no_differences'] = 'Nisu nađene razlike u pregledanim revizijama.';
 $messages['first_version'] = 'Mora da je do izmene došlo u prvoj ili poslednjoj reviziji?';
 $messages['first_version_present'] = '__NEEDLE__ već postoji u prvoj reviziji iz __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Verovatno postoje i ranija izdanja.';
 $messages['execution_time'] = 'Vreme izvršenja: _EXECUTIONTIME_ sek.';
 $messages['versions_found'] = 'Pronađeno izdanja: _NUMBEROFVERSIONS_.';
 $messages['please_wait'] = 'Sačekajte…';

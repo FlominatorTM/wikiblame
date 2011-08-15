@@ -55,6 +55,7 @@ $messages['search_in_progress_wikitags'] = 'Sejarah versi _ARTICLELINK_ sedang d
 $messages['no_differences'] = 'Tiada perbezaan yang dicari dalam semakan yang dicari.';
 $messages['first_version'] = 'Mungkin perubahan itu telah berlaku pada semakan pertama atau terkini?';
 $messages['first_version_present'] = '__NEEDLE__ sedia ada dalam semakan pertama yang ditemui dari tarikh __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Mungkin ada semakan yang lebih awal.';
 $messages['execution_time'] = 'Masa pelaksanaan: _EXECUTIONTIME_ saat';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versi ditemui';
 $messages['please_wait'] = 'Sila tunggu …';

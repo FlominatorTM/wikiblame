@@ -16,6 +16,7 @@
  * @author Lokal Profil
  * @author Per
  * @author Tobulos1
+ * @author WikiPhoenix
  */
 
 $messages['January'] = 'Januari';
@@ -59,6 +60,7 @@ $messages['search_in_progress_text'] = 'Versionshistoriken för _ARTICLELINK_ bl
 $messages['search_in_progress_wikitags'] = 'Versionshistoriken för _ARTICLELINK_ blir genomsökt efter <b>_NEEDLE_</b> som wikitext';
 $messages['no_differences'] = 'Inga skillnader hittades i de jämförda versionerna.';
 $messages['first_version'] = 'Ändringen måste ha inträffat i första eller senaste versionen?';
+$messages['earlier_versions_available'] = 'Det finns förmodligen tidigare versioner.';
 $messages['execution_time'] = 'Körtid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versioner funna';
 $messages['please_wait'] = 'Var god vänta …';
