@@ -14,6 +14,7 @@
  * @author IAlex
  * @author Jean-Frédéric
  * @author McDutchie
+ * @author Od1n
  * @author Peter17
  */
 
@@ -50,7 +51,7 @@ $messages['interpolated'] = 'binaire (plus rapide avec plus de versions)';
 $messages['ignore_minors'] = 'ignorer les modifications mineures (expérimental)';
 $messages['force_wikitags'] = 'force la recherche de code wiki';
 $messages['start'] = 'Démarrer';
-$messages['reset'] = 'Reset';
+$messages['reset'] = 'Réinitialiser';
 $messages['manual'] = 'Manuel';
 $messages['contact'] = 'Contact';
 $messages['get_less_versions'] = 'Votre recherche peut requérir __NUMREVISIONS__ révisions à la fois. Afin de protéger le serveur, vous n\'êtes autorisé à requérir que __ALLOWEDREVISIONS__ par appel. Veuillez modifier les paramètres, ou changer la méthode de recherche vers binaire !';
@@ -60,7 +61,8 @@ $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b>, comme wikitexte, es
 $messages['no_differences'] = 'Aucune différence dans les révisions recherchées.';
 $messages['first_version'] = 'Les changements doivent s\'être produits dans la première ou dernière révision ?';
 $messages['first_version_present'] = '__NEEDLE__ était déjà présent dans la première version trouvée datant du __REVISIONLINK__.';
-$messages['execution_time'] = 'Temps d\'exécution: _EXECUTIONTIME_ secondes';
+$messages['earlier_versions_available'] = 'Il y a probablement des révisions antérieures.';
+$messages['execution_time'] = 'Temps d’exécution : _EXECUTIONTIME_ secondes';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions trouvées';
 $messages['please_wait'] = 'Veuillez patienter…';
 $messages['binary_test'] = 'Comparaison des différences en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ et _SECONDNUMBER_ en venant de _SOURCENUMBER_ :';

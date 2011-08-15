@@ -55,6 +55,7 @@ $messages['search_in_progress_wikitags'] = 'Wersijowa historija _ARTICLELINK_ p�
 $messages['no_differences'] = 'W přepytanych wersijach žane rozdźěle njebuchu namakane.';
 $messages['first_version'] = 'Dyrbi změna w prěnjej abo najnowšej wersiji přewjedźena być?';
 $messages['first_version_present'] = '__NEEDLE__ bě hižo w prěnjej wersiji wot __REVISIONLINK__ wobsahowany.';
+$messages['earlier_versions_available'] = 'Su najskerje starše wersije.';
 $messages['execution_time'] = 'Čas wuwjedźenja: _EXECUTIONTIME_ {{PLURAL:_EXECUTIONTIME_|sekunda|sekundźe|sekundy|sekundow}}';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ {{PLURAL:_NUMBEROFVERSIONS_|wersija namakana|wersiji namakanej|wersije namakane|wersijow namakane}}';
 $messages['please_wait'] = 'Prošu čakaj...';

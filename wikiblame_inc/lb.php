@@ -55,6 +55,7 @@ $messages['search_in_progress_wikitags'] = 'An alle Versioune vun _ARTICLELINK_ 
 $messages['no_differences'] = 'Keen Ënnerscheed an den duerchsichte Versioune fonnt.';
 $messages['first_version'] = 'D\'Ännerung muss an der éischter oder leschter Versioun geschitt sinn?';
 $messages['first_version_present'] = '__NEEDLE__ war schonn an der éischter Versioun vum __REVISIONLINK__ dran.';
+$messages['earlier_versions_available'] = 'Et wahrscheinlech méi al Versiounen.';
 $messages['execution_time'] = 'Ausféierungszäit: _EXECUTIONTIME_ Sekonnen';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versioune fonnt';
 $messages['please_wait'] = 'Waart w.e.g. ...';

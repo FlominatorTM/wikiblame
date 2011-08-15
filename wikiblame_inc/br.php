@@ -58,6 +58,7 @@ $messages['search_in_progress_wikitags'] = 'Stumm istor  _ARTICLELINK_ a zo klas
 $messages['no_differences'] = 'N\'eus bet kavet diforc\'h ebet en adweladennoù bet klasket enno';
 $messages['first_version'] = 'Rankout a ra ar c\'hemmoù bezañ c\'hoarvezet en adweladenn gentañ pe diwezhatoc\'h ?';
 $messages['first_version_present'] = '__NEEDLE__ a oa dija en doare kentañ eus __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Stummoù koshoc\'h zo sur a-walc\'h.';
 $messages['execution_time'] = 'Amzer seveniñ : _EXECUTIONTIME_ eilenn';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ stumm kavet';
 $messages['please_wait'] = 'Gortozit mar plij...';

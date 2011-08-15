@@ -56,6 +56,7 @@ $messages['search_in_progress_wikitags'] = 'La stòria dle version ëd _ARTICLEL
 $messages['no_differences'] = 'Pa gnun-e diferense trovà ant le revision sërcà.';
 $messages['first_version'] = 'Le modìfiche a devo esse avnùite ant la prima o ant l\'ùltima revision?';
 $messages['first_version_present'] = '__NEEDLE__ a l\'era già present ant la prima revision trovà an partend da __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'A-i é miraco dle revision pi neuve.';
 $messages['execution_time'] = 'Temp d\'esecussion: _EXECUTIONTIME_ second';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ version trovà';
 $messages['please_wait'] = 'Për piasì speta...';

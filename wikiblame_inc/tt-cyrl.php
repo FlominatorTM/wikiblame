@@ -55,6 +55,7 @@ $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> - _ARTICLELINK_  ю�
 $messages['no_differences'] = 'Табылган юрамалар арасында аермалар юк.';
 $messages['first_version'] = 'Аермалар беренче яисә соңгы юрамаларда булырга тиеш идеме?';
 $messages['first_version_present'] = '__NEEDLE__ was already present in the first revision found dating from __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Бәлки ул искерәк юрамаларда бардыр.';
 $messages['execution_time'] = 'Башкару вакыты: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Битнең  _NUMBEROFVERSIONS_ юрамасы табылды';
 $messages['please_wait'] = 'Зинһар, көтегез...';

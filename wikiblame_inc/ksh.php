@@ -55,6 +55,7 @@ $messages['search_in_progress_wikitags'] = 'Mer söke en dä Versione vun dämm 
 $messages['no_differences'] = 'Mer han kein Ongerscheide jefonge en dä dorchjeloorte Versione';
 $messages['first_version'] = 'De Änderong mööt en de eezte udder letzte Version passeert sin?';
 $messages['first_version_present'] = '__NEEDLE__ schtundt ald en de eetste Version vum __REVISIONLINK__ dren.';
+$messages['earlier_versions_available'] = 'Et künnt fröjere Versione jävve.';
 $messages['execution_time'] = 'För dat ze maache, ham_mer _EXECUTIONTIME_ Sekunde jebruch';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versione jefonge';
 $messages['please_wait'] = 'Ene Momang&nbsp;…';
