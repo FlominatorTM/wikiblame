@@ -54,8 +54,8 @@ $messages['binary_in_wp'] = 'http://en.wikipedia.org/wiki/Binary_search_algorith
 $messages['linear'] = 'linear';
 
 $messages['interpolated'] = 'binary (faster with more versions)';
-$messages['ignore_minors'] = 'ignore minor changes (experimental)';
-$messages['force_wikitags'] = 'force searching for wikitext';
+$messages['ignore_minors'] = 'Ignore minor changes (experimental)';
+$messages['force_wikitags'] = 'Force searching for wikitext';
 $messages['start'] = 'Start';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';
