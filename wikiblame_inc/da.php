@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Erisos
  * @author Peter Alberti
  */
 
@@ -38,6 +39,7 @@ $messages['date_format'] = 'DD/MM YYYY';
 $messages['order'] = 'Rækkefølge';
 $messages['newest_first'] = 'nyeste først';
 $messages['oldest_first'] = 'ældste først';
+$messages['binary_search_inverse'] = 'Se efter fjernelse af tekst (kun binær)';
 $messages['search_method'] = 'Søgemetode';
 $messages['binary'] = 'binær';
 $messages['linear'] = 'lineær';

@@ -11,8 +11,21 @@
  * @file
  *
  * @author Htt
+ * @author Siddhartha Ghai
  */
 
+$messages['January'] = 'जनवरी';
+$messages['February'] = 'फरवरी';
+$messages['March'] = 'मार्च';
+$messages['April'] = 'अप्रैल';
+$messages['May'] = 'मई';
+$messages['June'] = 'जून';
+$messages['July'] = 'जुलाई';
+$messages['August'] = 'अगस्त';
+$messages['September'] = 'सितम्बर';
+$messages['October'] = 'अक्टूबर';
+$messages['November'] = 'नवम्बर';
+$messages['December'] = 'दिसम्बर';
 $messages['lang'] = 'भाषा';
 $messages['project'] = 'परियोजना';
 $messages['article'] = 'लेख';

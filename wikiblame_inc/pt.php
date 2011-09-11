@@ -42,6 +42,7 @@ $messages['date_format'] = 'DD de MM de YYYY';
 $messages['order'] = 'Ordem';
 $messages['newest_first'] = 'recentes primeiro';
 $messages['oldest_first'] = 'antigas primeiro';
+$messages['binary_search_inverse'] = 'Procurar remoção de texto (somente binário)';
 $messages['search_method'] = 'Método de procura';
 $messages['binary'] = 'binária';
 $messages['binary_in_wp'] = 'http://pt.wikipedia.org/wiki/Pesquisa_bin%C3%A1ria';

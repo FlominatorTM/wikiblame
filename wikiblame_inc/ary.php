@@ -11,6 +11,7 @@
  * @file
  *
  * @author Enzoreg
+ * @author زكريا
  */
 
 $messages['January'] = 'Yanayer';
@@ -25,5 +26,5 @@ $messages['September'] = 'Ċoṫanbir';
 $messages['October'] = 'Okṫober';
 $messages['November'] = 'Nowanbir';
 $messages['December'] = 'Dojanbir';
-$messages['article'] = 'Ṣefḫa';
+$messages['article'] = 'ṣfḫa';
 $messages['needle'] = 'Qelleb ĝla';

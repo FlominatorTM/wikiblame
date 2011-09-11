@@ -39,6 +39,7 @@ $messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Órdin';
 $messages['newest_first'] = 'ij pi neuv prima';
 $messages['oldest_first'] = 'ij pi vej prima';
+$messages['binary_search_inverse'] = 'Sërché dj\'eliminassion ëd test (mach binari)';
 $messages['search_method'] = 'Métod d\'arserca';
 $messages['binary'] = 'binari';
 $messages['linear'] = 'linear';

@@ -39,6 +39,7 @@ $messages['date_format'] = 'MM DD, ÅÅÅÅ';
 $messages['order'] = 'Sorter';
 $messages['newest_first'] = 'siste først';
 $messages['oldest_first'] = 'eldste først';
+$messages['binary_search_inverse'] = 'Se etter fjerning av tekst (kun binært)';
 $messages['search_method'] = 'Søkemetode';
 $messages['binary'] = 'binært';
 $messages['binary_in_wp'] = 'http://no.wikipedia.org/wiki/Bin%C3%A6rs%C3%B8k';

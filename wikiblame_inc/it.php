@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Beta16
  * @author Civvì
  * @author Darth Kule
  * @author Flominator
@@ -44,6 +45,7 @@ $messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Ordinamento';
 $messages['newest_first'] = 'prima le più recenti';
 $messages['oldest_first'] = 'prima le meno recenti';
+$messages['binary_search_inverse'] = 'Certa la rimozione del testo (solo binario)';
 $messages['search_method'] = 'Metodo di ricerca';
 $messages['binary'] = 'binario';
 $messages['binary_in_wp'] = 'http://it.wikipedia.org/wiki/Ricerca_dicotomica';

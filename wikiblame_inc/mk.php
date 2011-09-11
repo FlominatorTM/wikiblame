@@ -41,6 +41,7 @@ $messages['date_format'] = 'ДД, ММ, ГГГГ';
 $messages['order'] = 'Редослед';
 $messages['newest_first'] = 'прво најнови';
 $messages['oldest_first'] = 'прво најстари';
+$messages['binary_search_inverse'] = 'Барај избришан текст (само бинарен)';
 $messages['search_method'] = 'Метод на пребарување';
 $messages['binary'] = 'бинарен';
 $messages['binary_in_wp'] = 'http://mk.wikipedia.org/wiki/%D0%91%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D0%BE_%D0%BF%D1%80%D0%B5%D0%B1%D0%B0%D1%80%D1%83%D0%B2%D0%B0%D1%9A%D0%B5';

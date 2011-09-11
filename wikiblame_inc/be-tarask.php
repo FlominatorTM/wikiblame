@@ -40,6 +40,7 @@ $messages['date_format'] = 'DD.MM.YYYY';
 $messages['order'] = 'Парадак';
 $messages['newest_first'] = 'спачатку найноўшыя';
 $messages['oldest_first'] = 'спачатку найстарэйшыя';
+$messages['binary_search_inverse'] = 'Шукаць выдаленьні тэксту (толькі бінарна)';
 $messages['search_method'] = 'Мэтад пошуку';
 $messages['binary'] = 'двайковы';
 $messages['linear'] = 'лінейны';

@@ -16,6 +16,7 @@
  * @author McDutchie
  * @author Od1n
  * @author Peter17
+ * @author Wyz
  */
 
 $messages['January'] = 'janvier';
@@ -43,6 +44,7 @@ $messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Ordre';
 $messages['newest_first'] = 'plus récent d\'abord';
 $messages['oldest_first'] = 'plus ancien d\'abord';
+$messages['binary_search_inverse'] = 'Rechercher du retrait de texte (binaire uniquement)';
 $messages['search_method'] = 'méthode de recherche';
 $messages['binary'] = 'dichotomie';
 $messages['binary_in_wp'] = 'http://fr.wikipedia.org/wiki/Dichotomie';

@@ -39,6 +39,7 @@ $messages['date_format'] = 'DD. MM. YYYY';
 $messages['order'] = 'Vrstni red';
 $messages['newest_first'] = 'novejši najprej';
 $messages['oldest_first'] = 'starejši najprej';
+$messages['binary_search_inverse'] = 'Poglej za odstranitev besedila (samo dvojiško)';
 $messages['search_method'] = 'Način iskanja';
 $messages['binary'] = 'binarno';
 $messages['binary_in_wp'] = 'http://sl.wikipedia.org/wiki/Binarno_iskanje';

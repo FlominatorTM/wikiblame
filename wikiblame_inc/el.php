@@ -37,6 +37,7 @@ $messages['needle'] = 'Αναζήτηση για';
 $messages['ignorefirst'] = 'Αγνοήστε πρώτες x εκδόσεις';
 $messages['limit'] = 'Εκδοχές προς έλεγχο';
 $messages['start_date'] = 'Ημερομηνία έναρξης';
+$messages['date_format'] = 'ΜΜ ΗΗ, ΕΕΕΕ';
 $messages['order'] = 'Σειρά';
 $messages['newest_first'] = 'πρώτα τα νεώτερα';
 $messages['oldest_first'] = 'πρώτα τα παλαιότερα';
