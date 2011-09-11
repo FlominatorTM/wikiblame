@@ -38,6 +38,7 @@ $messages['date_format'] = 'DD.MM.YYYY';
 $messages['order'] = 'Reiefolleg';
 $messages['newest_first'] = 'déi Neist fir d\'éischt';
 $messages['oldest_first'] = 'déi Eelst fir d\'éischt';
+$messages['binary_search_inverse'] = 'Nom Läsche vum Text sichen (nëmmen am binaire Modus)';
 $messages['search_method'] = 'Sichmethod';
 $messages['binary'] = 'binaire';
 $messages['linear'] = 'linear';

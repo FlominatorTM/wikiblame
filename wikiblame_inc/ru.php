@@ -42,6 +42,7 @@ $messages['date_format'] = 'DD.MM.YYYY';
 $messages['order'] = 'Порядок';
 $messages['newest_first'] = 'вначале новейшие';
 $messages['oldest_first'] = 'вначале старейшие';
+$messages['binary_search_inverse'] = 'Поиск удалённого текста (только двоичный)';
 $messages['search_method'] = 'Способ поиска';
 $messages['binary'] = 'двоичный';
 $messages['binary_in_wp'] = 'http://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA';

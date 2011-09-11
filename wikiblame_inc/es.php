@@ -45,6 +45,7 @@ $messages['date_format'] = 'MM DD, AAAA';
 $messages['order'] = 'Orden';
 $messages['newest_first'] = 'la última primero';
 $messages['oldest_first'] = 'la más antigua primero';
+$messages['binary_search_inverse'] = 'Buscar la eliminación de texto (sólo binario)';
 $messages['search_method'] = 'Método de búsqueda';
 $messages['binary'] = 'binario';
 $messages['linear'] = 'lineal';

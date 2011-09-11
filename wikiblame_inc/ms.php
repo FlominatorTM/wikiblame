@@ -38,6 +38,7 @@ $messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Turutan';
 $messages['newest_first'] = 'terbaru dahulu';
 $messages['oldest_first'] = 'terlama dahulu';
+$messages['binary_search_inverse'] = 'Cari pembuangan teks (perduaan sahaja)';
 $messages['search_method'] = 'Kaedah pencarian';
 $messages['binary'] = 'binari';
 $messages['linear'] = 'linear';

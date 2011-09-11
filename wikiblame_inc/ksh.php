@@ -38,6 +38,7 @@ $messages['date_format'] = 'DD. MM. YYYY';
 $messages['order'] = 'Wih Zotteeere?';
 $messages['newest_first'] = 'de neuere et eets';
 $messages['oldest_first'] = 'de ählste et eets';
+$messages['binary_search_inverse'] = 'Söhk noh em Verschwende vun däm Täx (jeiht bloß beim binäre Söhke)';
 $messages['search_method'] = 'Wih Söhke?';
 $messages['binary'] = 'emmer en de Medde pecke';
 $messages['linear'] = 'noh der Reih';

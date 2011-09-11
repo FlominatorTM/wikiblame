@@ -41,6 +41,7 @@ $messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Urzh';
 $messages['newest_first'] = 'an hini diwezhañ da gentañ';
 $messages['oldest_first'] = 'an hini koshañ da gentañ';
+$messages['binary_search_inverse'] = 'Klask endantoù testenn (binarel hepken)';
 $messages['search_method'] = 'Hentenn klask';
 $messages['binary'] = 'binarel';
 $messages['linear'] = 'linennek';

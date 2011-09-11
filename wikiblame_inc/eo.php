@@ -12,6 +12,7 @@
  *
  * @author Lucas
  * @author Mihxil
+ * @author Yekrats
  */
 
 $messages['January'] = 'januaro';
@@ -47,7 +48,7 @@ $messages['ignore_minors'] = 'Ignori ŝanĝetojn (eksperimente)';
 $messages['force_wikitags'] = 'Devige serĉi viki-tekston';
 $messages['start'] = 'Komenci';
 $messages['reset'] = 'Hodiaŭ';
-$messages['manual'] = 'Permane';
+$messages['manual'] = 'Manlibro';
 $messages['contact'] = 'Kontakti';
 $messages['get_less_versions'] = 'Via serĉpeto povus enhavi maksimume __NUMREVISIONS__  da revizioj. Cele al protekto de la servilo, vi rajtas nur peti po __ALLOWEDREVISIONS__  da revizioj. Bonvolu reagordi, aŭ ŝanĝi la serĉmetodon al binara interpolado.';
 $messages['wrong_skips'] = 'Malĝustaj agordoj: Se la unuaj __VERSIONSTOSKIP__ versioj transsaltatas, tiam neniuj el la __VERSIONSTOSEARCH__  versioj serĉotaj estos traktataj.';
