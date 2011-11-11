@@ -12,20 +12,21 @@
  *
  * @author An13sa
  * @author Kobazulo
+ * @author Xabier Armendaritz
  */
 
-$messages['January'] = 'Urtarrila';
-$messages['February'] = 'Otsaila';
-$messages['March'] = 'Martxoa';
-$messages['April'] = 'Apirila';
-$messages['May'] = 'Maiatza';
-$messages['June'] = 'Ekaina';
-$messages['July'] = 'Uztaila';
-$messages['August'] = 'Abuztua';
-$messages['September'] = 'Iraila';
-$messages['October'] = 'Urria';
-$messages['November'] = 'Azaroa';
-$messages['December'] = 'Abendua';
+$messages['January'] = 'urtarrila';
+$messages['February'] = 'otsaila';
+$messages['March'] = 'martxoa';
+$messages['April'] = 'apirila';
+$messages['May'] = 'maiatza';
+$messages['June'] = 'ekaina';
+$messages['July'] = 'uztaila';
+$messages['August'] = 'abuztua';
+$messages['September'] = 'iraila';
+$messages['October'] = 'urria';
+$messages['November'] = 'azaroa';
+$messages['December'] = 'abendua';
 $messages['ui_lang'] = 'Hizkuntza erakutsi';
 $messages['lang'] = 'Hizkuntza';
 $messages['project'] = 'Proiektua';
@@ -35,7 +36,7 @@ $messages['skipversions'] = 'Beti x bertsio saltatu';
 $messages['ignorefirst'] = 'Lehendabiziko x bertsioak baztertu';
 $messages['limit'] = 'Egiaztatu beharreko bertsioak';
 $messages['start_date'] = 'Hasiera data';
-$messages['date_format'] = 'YYYY-(e)ko MM-(a)ren DD-a';
+$messages['date_format'] = 'YYYY-(e)ko MM-ren DD-a';
 $messages['order'] = 'Ordena';
 $messages['newest_first'] = 'azkenak lehenik';
 $messages['oldest_first'] = 'zaharrenak lehenik';
@@ -48,7 +49,7 @@ $messages['start'] = 'Hasiera';
 $messages['reset'] = 'Hasieratu';
 $messages['manual'] = 'Gidaliburua';
 $messages['contact'] = 'Kontaktatu';
-$messages['execution_time'] = 'Exekuzio-denbora: _EXECUTIONTIME_ segundu';
+$messages['execution_time'] = 'Exekuzio-denbora: _EXECUTIONTIME_ segundo';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ bertsio aurkitu dira';
 $messages['please_wait'] = 'Mesedez itxaron ...';
 $messages['help_translating'] = 'translatewiki.net-en itzultzen lagundu';

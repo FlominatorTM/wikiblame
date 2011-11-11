@@ -12,6 +12,7 @@
  *
  * @author දසනැබළයෝ
  * @author පසිඳු කාවින්ද
+ * @author බිඟුවා
  */
 
 $messages['January'] = 'ජනවාරි';
@@ -46,3 +47,5 @@ $messages['start'] = 'අරඹන්න';
 $messages['reset'] = 'ප්‍රත්‍යාරම්භ කරන්න';
 $messages['manual'] = 'හස්තීය';
 $messages['contact'] = 'සම්බන්ධතාවන්';
+$messages['please_wait'] = 'මදක් රැදීසිටින්න';
+$messages['start_here'] = 'මෙතැන් සිට සොයන්න';
