@@ -38,6 +38,7 @@ $messages['date_format'] = 'DD.MM.YYYY';
 $messages['order'] = 'Тәртип';
 $messages['newest_first'] = 'башта яңалары';
 $messages['oldest_first'] = 'башта искеләре';
+$messages['binary_search_inverse'] = 'Текс эзләү (бары тик икеле)';
 $messages['search_method'] = 'Эзләү ысулы';
 $messages['binary'] = 'икеле';
 $messages['linear'] = 'сызыкча';

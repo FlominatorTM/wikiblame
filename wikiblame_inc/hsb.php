@@ -38,6 +38,7 @@ $messages['date_format'] = 'DD.MM YYYY';
 $messages['order'] = 'Porjad';
 $messages['newest_first'] = 'najnowše jako prěnje';
 $messages['oldest_first'] = 'najstarše jako prěnje';
+$messages['binary_search_inverse'] = 'Za wotstronjenjom teksta pytać (jenož při binarnym pytanju)';
 $messages['search_method'] = 'Pytanska metoda';
 $messages['binary'] = 'binarny';
 $messages['linear'] = 'linearna';

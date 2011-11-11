@@ -15,6 +15,7 @@
  * @author Михајло Анђелковић
  */
 
+$text_dir = 'ltr';
 $messages['January'] = 'јануар';
 $messages['February'] = 'фебруар';
 $messages['March'] = 'март';
@@ -29,7 +30,9 @@ $messages['November'] = 'новембар';
 $messages['December'] = 'децембар';
 $messages['ui_lang'] = 'Језик приказа:';
 $messages['lang'] = 'Језик:';
+$messages['lang_example'] = 'sr, en, commons…';
 $messages['project'] = 'Пројекат:';
+$messages['project_example'] = 'Википедија, Викиизвор, Викимедија…';
 $messages['article'] = 'Страница:';
 $messages['needle'] = 'Тражи:';
 $messages['skipversions'] = 'Прескачи икс издања:';
@@ -43,6 +46,7 @@ $messages['oldest_first'] = 'прво старије';
 $messages['binary_search_inverse'] = 'тражи уклањање текста (бинарно)';
 $messages['search_method'] = 'Начин претраге:';
 $messages['binary'] = 'бинаран';
+$messages['binary_in_wp'] = 'http://sr.wikipedia.org/wiki/Бинарна_претрага';
 $messages['linear'] = 'линеаран';
 $messages['interpolated'] = 'бинаран (брже с више издања)';
 $messages['ignore_minors'] = 'занемари мање измене (пробно)';
@@ -50,7 +54,9 @@ $messages['force_wikitags'] = 'приморај тражење викитекс�
 $messages['start'] = 'Започни';
 $messages['reset'] = 'Поништи';
 $messages['manual'] = 'Приручник';
+$messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=sr';
 $messages['contact'] = 'Контакт';
+$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=sr';
 $messages['get_less_versions'] = 'Претрага може исписати __NUMREVISIONS__ измена одједном. Ради безбедности сервера, дозвољено вам је да тражите __ALLOWEDREVISIONS__ по позиву. Промените поставке или начин претраге на бинарни.';
 $messages['wrong_skips'] = 'Погрешне поставке: ако је првих __VERSIONSTOSKIP__ издања прескочено, онда ниједна од __VERSIONSTOSEARCH__ издања које се траже неће бити обрађена.';
 $messages['search_in_progress_text'] = 'Историја издања чланка _ARTICLELINK_ се тражи за <b>_NEEDLE_</b> као обичан текст';

@@ -11,6 +11,7 @@
  * @file
  *
  * @author Ainali
+ * @author Cybjit
  * @author Flominator
  * @author Liftarn
  * @author Lokal Profil
@@ -44,30 +45,36 @@ $messages['date_format'] = 'MM DD, ÅÅÅÅ';
 $messages['order'] = 'Sortera';
 $messages['newest_first'] = 'Senaste först';
 $messages['oldest_first'] = 'Äldsta först';
+$messages['binary_search_inverse'] = 'Leta efter borttagning av text (endast binär)';
 $messages['search_method'] = 'Sökmetod';
-$messages['binary'] = 'binärt';
+$messages['binary'] = 'binär';
 $messages['binary_in_wp'] = 'http://sv.wikipedia.org/wiki/Bin%C3%A4rs%C3%B6kning';
-$messages['linear'] = 'linjärt';
-$messages['interpolated'] = 'binärt (snabbare med fler versioner)';
-$messages['ignore_minors'] = 'ignorera mindre ändringar (experimentell)';
-$messages['force_wikitags'] = 'tvinga sökning i wikitext';
+$messages['linear'] = 'linjär';
+$messages['interpolated'] = 'binär (snabbare med fler versioner)';
+$messages['ignore_minors'] = 'Ignorera mindre ändringar (experimentell)';
+$messages['force_wikitags'] = 'Tvinga sökning i wikitext';
 $messages['start'] = 'Starta';
 $messages['reset'] = 'Återställ';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Kontakt';
+$messages['get_less_versions'] = 'Din sökning kommer eventuellt fråga efter __NUMREVISIONS_ revisioner på en gång. För att skydda servern tillåts du bara fråga efter __ALLOWEDREVISIONS__ per anrop. Var vänlig ändra inställningarna eller byt sökmetod till binär.';
 $messages['wrong_skips'] = 'Felaktiga inställningar: Om de första __VERSIONSTOSKIP__ versionerna hoppas över,  så kommer inga av de __VERSIONSTOSEARCH__ versionerna som ska genomsökas att behandlas.';
 $messages['search_in_progress_text'] = 'Versionshistoriken för _ARTICLELINK_ blir genomsökt efter <b>_NEEDLE_</b> som oformaterad text';
 $messages['search_in_progress_wikitags'] = 'Versionshistoriken för _ARTICLELINK_ blir genomsökt efter <b>_NEEDLE_</b> som wikitext';
 $messages['no_differences'] = 'Inga skillnader hittades i de jämförda versionerna.';
 $messages['first_version'] = 'Ändringen måste ha inträffat i första eller senaste versionen?';
+$messages['first_version_present'] = '__NEEDLE__ fanns redan i den första revisionen daterad __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Det finns förmodligen tidigare versioner.';
 $messages['execution_time'] = 'Körtid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versioner funna';
 $messages['please_wait'] = 'Var god vänta …';
 $messages['binary_test'] = 'Jämför skillnader i _FIRSTDATEVERSION_ mellan _FIRSTNUMBER_ och _SECONDNUMBER_ som kommer från _SOURCENUMBER_:';
+$messages['dead_end'] = 'Hamnade i en återvändsgränd (antagligen orsakat av återställningar eller editeringskrig)';
 $messages['once_more'] = 'En gång till, med känsla:';
+$messages['binary_enough'] = 'Försökt tillräckligt många gånger, artikelhistoriken är ganska rörig, försök med andra inställningar.';
 $messages['insertion_found'] = 'Inläggning hittades mellan LEFT_VERSION och RIGHT_VERSION';
 $messages['deletion_found'] = 'Radering funnen mellan LEFT_VERSION och RIGHT_VERSION';
 $messages['help_translating'] = 'Hjälp till med översättning på translatewiki.net';
 $messages['start_here'] = 'Sök härifrån';
+$messages['too_much_versions'] = 'Du har nått begränsningen för antalet frågor på __VERSIONLIMIT_ versioner. Försök igen om __WAITMINUTES__ minuter eller byt till binär sökning. Beklagar olägenheten.';
 $messages['not_found_at_all'] = 'Din sökterm hittades inte alls. Är du säker på att du har rätt inställningar?';

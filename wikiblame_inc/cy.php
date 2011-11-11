@@ -11,6 +11,7 @@
  * @file
  *
  * @author Lloffiwr
+ * @author Pwyll
  */
 
 $messages['January'] = 'Ionawr';
@@ -58,6 +59,7 @@ $messages['execution_time'] = 'Hyd y chwilio: _EXECUTIONTIME_ eiliad';
 $messages['versions_found'] = 'Cafwyd hyd i _NUMBEROFVERSIONS_ o ddiwygiadau';
 $messages['please_wait'] = 'Arhoswch ...';
 $messages['binary_test'] = 'Yn cymharu gwahaniaethau rhwng _FIRSTNUMBER_ a _SECONDNUMBER_ yn _FIRSTDATEVERSION_, tra\'n dechrau chwilio o _SOURCENUMBER_:';
+$messages['once_more'] = 'Unwaith eto, gyda theimlad:';
 $messages['insertion_found'] = 'Cafodd y testun ei fewnosod rhwng LEFT_VERSION a RIGHT_VERSION';
 $messages['deletion_found'] = 'Cafodd y testun ei ddileu rhwng LEFT_VERSION a RIGHT_VERSION';
 $messages['help_translating'] = 'Dewch draw i translatewiki.net i gyfieithu';
