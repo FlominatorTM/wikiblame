@@ -13,6 +13,7 @@
  * @author Capmo
  * @author Giro720
  * @author Luckas Blade
+ * @author Pedroca cerebral
  * @author Raylton P. Sousa
  */
 
@@ -41,6 +42,7 @@ $messages['date_format'] = 'DD/MM/YYYY';
 $messages['order'] = 'Ordem';
 $messages['newest_first'] = 'mais recentes primeiro';
 $messages['oldest_first'] = 'mais antigos primeiro';
+$messages['binary_search_inverse'] = 'Procurar remoção de texto (somente binário)';
 $messages['search_method'] = 'Método de pesquisa';
 $messages['binary'] = 'binária';
 $messages['linear'] = 'linear';
