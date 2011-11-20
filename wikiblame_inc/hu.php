@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Dj
  * @author Glanthor Reviol
  * @author Tgr
  * @author Tgr <gtisza AT gmail.com>
@@ -36,13 +37,14 @@ $messages['skipversions'] = 'Csak minden x. változatot vizsgálja';
 $messages['ignorefirst'] = 'Első x változat átugrása';
 $messages['limit'] = 'Legfeljebb ennyi változatot';
 $messages['start_date'] = 'Kezdődátum';
+$messages['date_format'] = 'YYYY. MM. DD.';
 $messages['order'] = 'Rendezés';
 $messages['newest_first'] = 'legújabb először';
 $messages['oldest_first'] = 'legrégebbi először';
 $messages['search_method'] = 'Keresési mód';
 $messages['binary'] = 'bináris';
 $messages['linear'] = 'lineáris';
-$messages['interpolated'] = 'interpolált (sok változat esetén gyorsabb)';
+$messages['interpolated'] = 'bináris (sok változat esetén gyorsabb)';
 $messages['ignore_minors'] = 'apró változtatások figyelmen kívül hagyása (kísérleti)';
 $messages['force_wikitags'] = 'keresés mint wikiszöveg';
 $messages['start'] = 'Mehet';
@@ -55,8 +57,10 @@ $messages['search_in_progress_text'] = 'Keresés a(z) _ARTICLELINK_ laptörténe
 $messages['search_in_progress_wikitags'] = 'Keresés a(z) _ARTICLELINK_ laptörténetében a(z) <b>_NEEDLE_</b> keresőkifejezésre (mint wikiszöveg)';
 $messages['execution_time'] = 'A keresés _EXECUTIONTIME_ másodpercet vett igénybe.';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ változatot találtam';
+$messages['please_wait'] = 'Kérlek várj…';
 $messages['binary_test'] = 'A _FIRSTDATEVERSION_-i szerkesztés (_FIRSTNUMBER_. és _SECONDNUMBER_. változat között)  vizsgálata';
 $messages['insertion_found'] = 'Beillesztést találtam LEFT_VERSION és RIGHT_VERSION között';
 $messages['deletion_found'] = 'Törlést találtam LEFT_VERSION és RIGHT_VERSION között';
 $messages['help_translating'] = 'Segíts a fordításban a translatewiki.net oldalon';
 $messages['start_here'] = 'Keresés innen';
+$messages['not_found_at_all'] = 'A kereső kifejezést egyáltalán nem található. Biztos vagy benne, hogy jók a beállítások?';
