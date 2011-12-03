@@ -13,6 +13,7 @@
  * @author Hydra
  * @author PhiLiP
  * @author Shizhao
+ * @author Yfdyh000
  * @author 阿pp
  */
 
@@ -45,7 +46,7 @@ $messages['search_method'] = '搜索方式';
 $messages['binary'] = '二进制文件';
 $messages['linear'] = '线性';
 $messages['interpolated'] = '二进制文件 （与更多的版本更快）';
-$messages['ignore_minors'] = '忽略小修该（测试）';
+$messages['ignore_minors'] = '忽略小修改（试验性）';
 $messages['force_wikitags'] = '强制搜索 wikitext';
 $messages['start'] = '开始';
 $messages['reset'] = '重置';
