@@ -15,6 +15,7 @@
  * @author Jkjk
  * @author Kuvaly
  * @author Mormegil
+ * @author Utar
  */
 
 $messages['January'] = 'Leden';
@@ -42,6 +43,7 @@ $messages['date_format'] = 'DD MM RRRR';
 $messages['order'] = 'Řazení';
 $messages['newest_first'] = 'od nejnovějších';
 $messages['oldest_first'] = 'od nejstarších';
+$messages['binary_search_inverse'] = 'Vyhledej smazaný text (pouze binární)';
 $messages['search_method'] = 'Metoda vyhledávání';
 $messages['binary'] = 'binární';
 $messages['binary_in_wp'] = 'http://cs.wikipedia.org/wiki/Bin%C3%A1rn%C3%AD_vyhled%C3%A1v%C3%A1n%C3%AD';
