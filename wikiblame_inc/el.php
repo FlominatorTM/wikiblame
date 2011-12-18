@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author AK
  * @author Consta
  * @author Crazymadlover
  * @author Evropi
@@ -50,4 +51,5 @@ $messages['contact'] = 'Επικοινωνία';
 $messages['execution_time'] = 'Χρόνος Εκτέλεσης: _EXECUTIONTIME_ δευτερόλεπτα';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ εκδόσεις βρέθηκαν';
 $messages['please_wait'] = 'Παρακαλούμε περιμένετε...';
+$messages['help_translating'] = 'Βοηθήστε στη μετάφραση στο translatewiki.net';
 $messages['start_here'] = 'Αναζήτηση από εδώ';
