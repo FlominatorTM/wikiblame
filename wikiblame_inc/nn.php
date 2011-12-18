@@ -12,6 +12,7 @@
  *
  * @author Gunnernett
  * @author Harald Khan
+ * @author Njardarlogar
  */
 
 $messages['January'] = 'Januar';

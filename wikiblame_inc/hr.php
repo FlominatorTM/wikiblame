@@ -11,6 +11,7 @@
  * @file
  *
  * @author Ex13
+ * @author SpeedyGonsales
  */
 
 $messages['January'] = 'siječnja';
@@ -38,6 +39,7 @@ $messages['date_format'] = 'DD. MM. YYYY.';
 $messages['order'] = 'Poredak';
 $messages['newest_first'] = 'prvo najnovije';
 $messages['oldest_first'] = 'prvo najstarije';
+$messages['binary_search_inverse'] = 'traži uklanjanje teksta (samo binarno)';
 $messages['search_method'] = 'Način pretrage';
 $messages['binary'] = 'binarno';
 $messages['linear'] = 'linearno';
@@ -55,6 +57,7 @@ $messages['search_in_progress_wikitags'] = 'Povijest inačica _ARTICLELINK_ se t
 $messages['no_differences'] = 'Nisu nađene razlike u traženim revizijama.';
 $messages['first_version'] = 'Promjena se morala dogoditi u prvoj ili zadnjoj reviziji?';
 $messages['first_version_present'] = '__NEEDLE__ već postoji u prvoj reviziji iz __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Možda postoje i ranija uređivanja.';
 $messages['execution_time'] = 'Vrijeme izvršavanja: _EXECUTIONTIME_ sekundi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ inačica pronađeno';
 $messages['please_wait'] = 'Molimo pričekajte ...';

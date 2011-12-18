@@ -11,6 +11,7 @@
  * @file
  *
  * @author Htt
+ * @author Kaajawa
  * @author Mahitgar
  */
 
@@ -53,3 +54,4 @@ $messages['contact'] = 'संपर्क';
 $messages['no_differences'] = 'शोधलेल्या आवृत्त्यात फरक आढळले नाहीत';
 $messages['execution_time'] = 'शोध वेळ: _EXECUTIONTIME_ सेकंद';
 $messages['please_wait'] = 'कृपया थांबा...';
+$messages['start_here'] = 'येथून पुढे शोधा';

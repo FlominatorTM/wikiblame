@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Shanmugamp7
  * @author Surya Prakash.S.A.
  */
 
@@ -50,4 +51,6 @@ $messages['reset'] = 'மீட்டமை';
 $messages['manual'] = 'கையேடு';
 $messages['contact'] = 'தொடர்புகொள்க';
 $messages['please_wait'] = 'தயவுசெய்து காத்திருங்கள்...';
+$messages['once_more'] = 'ஒருமுறை மேலும், உணர்வுடன்:';
+$messages['help_translating'] = 'translatewiki.net இல் மொழிபெயர்க்க உதவவும்.';
 $messages['start_here'] = 'இங்கிருந்து தேடுக';
