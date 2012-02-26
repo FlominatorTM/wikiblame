@@ -53,6 +53,7 @@ $messages['contact'] = 'Contact';
 $messages['wrong_skips'] = 'Setări invalide: dacă primele __VERSIONSTOSKIP__ (de) versiuni se omit, atunci niciuna din cele __VERSIONSTOSEARCH__ (de) versiuni căutate nu va fi luată în considerare.';
 $messages['search_in_progress_text'] = 'Se caută după <b>_NEEDLE_</b> (ca text plan) în istoricul articolului _ARTICLELINK_';
 $messages['search_in_progress_wikitags'] = 'Se caută după <b>_NEEDLE_</b> (ca text wiki) în istoricul articolului _ARTICLELINK_';
+$messages['no_differences'] = 'Nicio diferență găsită între versiunile analizate.';
 $messages['first_version_present'] = 'Textul __NEEDLE__ era deja prezent în prima versiune găsită care datează din __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Există, probabil, versiuni anterioare.';
 $messages['execution_time'] = 'Durata execuției: _EXECUTIONTIME_ secunde';

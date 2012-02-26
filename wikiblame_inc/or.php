@@ -14,8 +14,8 @@
  * @author Psubhashish
  */
 
-$messages['January'] = 'ଜାନୁଆରି';
-$messages['February'] = 'ଫେବ୍ରୁଆରି';
+$messages['January'] = 'ଜାନୁଆରୀ';
+$messages['February'] = 'ଫେବୁଆରି';
 $messages['March'] = 'March';
 $messages['April'] = 'ଏପ୍ରିଲ';
 $messages['May'] = 'ମେ';

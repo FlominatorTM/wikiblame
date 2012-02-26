@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Bugoslav
  * @author Ex13
  * @author SpeedyGonsales
  */
@@ -24,7 +25,7 @@ $messages['July'] = 'srpnja';
 $messages['August'] = 'kolovoza';
 $messages['September'] = 'rujna';
 $messages['October'] = 'listopada';
-$messages['November'] = 'studenog';
+$messages['November'] = 'studenoga';
 $messages['December'] = 'prosinca';
 $messages['ui_lang'] = 'Prikaži jezik';
 $messages['lang'] = 'Jezik';
