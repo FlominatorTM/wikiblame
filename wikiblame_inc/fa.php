@@ -11,6 +11,7 @@
  * @file
  *
  * @author Ebraminio
+ * @author Huji
  * @author Reza1615
  * @author Wayiran
  */
@@ -40,6 +41,7 @@ $messages['date_format'] = 'م‌م رر، س‌س‌س‌س';
 $messages['order'] = 'سفارش';
 $messages['newest_first'] = 'نخست آخرین';
 $messages['oldest_first'] = 'نخست قدیمی‌ترین';
+$messages['binary_search_inverse'] = 'به دنبال متن حذف شده باش (فقط دودویی)';
 $messages['search_method'] = 'روش جستجو';
 $messages['binary'] = 'دودویی';
 $messages['linear'] = 'خطی';
@@ -57,6 +59,7 @@ $messages['search_in_progress_wikitags'] = 'تاریخچهٔ نسخهٔ _ARTICLE
 $messages['no_differences'] = 'هیچ تفاوتی در نسخه‌های جستجوشده یافت نشد.';
 $messages['first_version'] = 'باید تغییراتی در نسخهٔ اول یا آخر رخ داده باشد؟';
 $messages['first_version_present'] = '__NEEDLE__ همچنان در نسخهٔ اول یافت‌شده از تاریخ __REVISIONLINK__ موجود بود.';
+$messages['earlier_versions_available'] = 'احتمالا نسخه‌های قدیمی‌تری وجود دارند.';
 $messages['execution_time'] = 'زمان اجرا: _EXECUTIONTIME_ ثانیه';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ نسخه یافت شد';
 $messages['please_wait'] = 'لطفاً صبر کنید…';

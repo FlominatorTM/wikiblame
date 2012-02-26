@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Comp1089
  */
 
 $messages['January'] = 'Ғинуар (Һыуығай)';
@@ -24,3 +25,14 @@ $messages['September'] = 'Сентябрь (Һарысай)';
 $messages['October'] = 'Октябрь (Ҡарасай)';
 $messages['November'] = 'Ноябрь (Ҡырпағай)';
 $messages['December'] = 'Декабрь (Аҡъюлай)';
+$messages['ui_lang'] = 'Телде күрһәтеү';
+$messages['lang'] = 'Тел:';
+$messages['project'] = 'Проект:';
+$messages['article'] = 'Бит';
+$messages['needle'] = 'Табырға:';
+$messages['skipversions'] = 'Һәр ваҡыт x өлгөн иҫәпләнмә';
+$messages['ignorefirst'] = 'Тәүге x өлгөн иҫәпләнмә';
+$messages['limit'] = 'Тикшереү өсөн өлгө һаны';
+$messages['start_date'] = 'Башланыу ваҡыты';
+$messages['date_format'] = 'DD.MM.YYYY';
+$messages['start'] = 'Башлау';

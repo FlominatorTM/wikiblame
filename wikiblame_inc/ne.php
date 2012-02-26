@@ -11,6 +11,7 @@
  * @file
  *
  * @author Bhawani Gautam
+ * @author RajeshPandey
  */
 
 $messages['January'] = 'जनवरी';
@@ -29,15 +30,22 @@ $messages['ui_lang'] = 'भाशा प्रदर्शन गर्नुह
 $messages['lang'] = 'भाषा';
 $messages['project'] = 'परियोजना';
 $messages['article'] = 'पृष्ठ';
-$messages['skipversions'] = 'सधैं x संस्करण नाघेर जानेर';
-$messages['start_date'] = 'सुरुको तिथि';
+$messages['needle'] = 'खोज्नुहोस';
+$messages['skipversions'] = 'सधैं x संस्करणलाइ छोड्ने';
+$messages['ignorefirst'] = 'पहिलो x संस्करणलाइ बेवास्ता गर्ने';
+$messages['limit'] = 'जाँच्नुपर्ने भर्जनहरू';
+$messages['start_date'] = 'सुरु मिति';
 $messages['date_format'] = 'मम दिदि, वववव';
 $messages['order'] = 'क्रम';
-$messages['oldest_first'] = 'पुरातन पहिलो';
+$messages['newest_first'] = 'नयाँहरू पहिले';
+$messages['oldest_first'] = 'पुराना पहिला';
 $messages['binary'] = 'द्विआधारी';
 $messages['linear'] = 'रैखिक';
 $messages['ignore_minors'] = 'साना परिवर्तनहरु अनदेखा गर्ने (प्रायोगिक)';
 $messages['start'] = 'सुरु गर्ने';
-$messages['reset'] = 'रीसेट गर्ने';
-$messages['manual'] = 'हातले गर्ने';
-$messages['contact'] = 'संपर्क गर्नुहोस्';
+$messages['reset'] = 'रिसेट गर्नुहोस्';
+$messages['manual'] = 'मद्दत';
+$messages['contact'] = 'सम्पर्क गर्नुहोस';
+$messages['once_more'] = 'भावनाहरू सहित एकपल्ट पुनः';
+$messages['help_translating'] = 'ट्रानस्लेटविकि.नेट मा अनुवाद गर्न भद्दत गर्नुहोस';
+$messages['start_here'] = 'यहाँ बाट खोज्नुहोस';

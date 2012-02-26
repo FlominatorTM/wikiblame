@@ -11,6 +11,7 @@
  * @file
  *
  * @author Charmed94
+ * @author FriedrickMILBarbarossa
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -32,7 +33,7 @@ $messages['ui_lang'] = 'Језик приказа:';
 $messages['lang'] = 'Језик:';
 $messages['lang_example'] = 'sr, en, commons…';
 $messages['project'] = 'Пројекат:';
-$messages['project_example'] = 'Википедија, Викиизвор, Викимедија…';
+$messages['project_example'] = 'Википедија, Викизворник, Викимедија…';
 $messages['article'] = 'Страница:';
 $messages['needle'] = 'Тражи:';
 $messages['skipversions'] = 'Прескачи икс издања:';
