@@ -11,6 +11,7 @@
  * @file
  *
  * @author CERminator
+ * @author Edinwiki
  */
 
 $messages['January'] = 'januar';
@@ -38,6 +39,7 @@ $messages['date_format'] = 'DD. MM. YYYY';
 $messages['order'] = 'Poredak';
 $messages['newest_first'] = 'najsvježije naprijed';
 $messages['oldest_first'] = 'najstarije naprijed';
+$messages['binary_search_inverse'] = 'Traži uklonjen tekst (samo binarno)';
 $messages['search_method'] = 'Način pretrage';
 $messages['binary'] = 'binarno';
 $messages['linear'] = 'linearno';
