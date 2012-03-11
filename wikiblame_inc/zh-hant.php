@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Lauhenry
  * @author Wrightbus
  */
 
@@ -55,6 +56,7 @@ $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ 的版本記錄正在�
 $messages['no_differences'] = '在尋找到的版本中並未發現任何差異。';
 $messages['first_version'] = '必須在第一個或最新修訂版本中出現更改嗎？';
 $messages['first_version_present'] = '__NEEDLE__ 己被被發現可以追溯到自 __REVISIONLINK__ 的首個版本中存在。';
+$messages['earlier_versions_available'] = '可能有舊版。';
 $messages['execution_time'] = '執行時間：_EXECUTIONTIME_ 秒';
 $messages['versions_found'] = '找到 _NUMBEROFVERSIONS_ 個版本';
 $messages['please_wait'] = '請稍候...';
