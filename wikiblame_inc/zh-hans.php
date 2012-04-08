@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Dimension
  * @author Hydra
  * @author PhiLiP
  * @author Shizhao
@@ -55,6 +56,7 @@ $messages['manual'] = '手册';
 $messages['contact'] = '联系';
 $messages['no_differences'] = '搜索修订中发现的没有差异。';
 $messages['first_version'] = '必须在第一个或最新的版本中发生了更改吗？';
+$messages['earlier_versions_available'] = '可能存在更早的修订版本。';
 $messages['execution_time'] = '执行时间： _EXECUTIONTIME_ 秒';
 $messages['versions_found'] = '发现的 _NUMBEROFVERSIONS_ 版本';
 $messages['please_wait'] = '请稍等 …';
