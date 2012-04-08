@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** толышә зывон (толышә зывон)
+/** Толышә зывон (Толышә зывон)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -25,9 +25,11 @@ $messages['September'] = 'Сентјабр';
 $messages['October'] = 'Октјабр';
 $messages['November'] = 'Нојабр';
 $messages['December'] = 'Декабр';
+$messages['ui_lang'] = 'Нишо доје зывон';
 $messages['lang'] = 'Зывон';
 $messages['project'] = 'Нәхшә';
 $messages['article'] = 'Сәһифә';
+$messages['needle'] = 'Сәтыр бо отырније';
 $messages['date_format'] = 'DD.MM.YYYY';
 $messages['order'] = 'Сифориш';
 $messages['versions_found'] = 'Пәјдо кардә быә _NUMBEROFVERSIONS_ сәһифә рәвојәтон';
