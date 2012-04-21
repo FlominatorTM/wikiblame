@@ -13,6 +13,7 @@
  * @author Aotake
  * @author Flominator
  * @author Fryed-peach
+ * @author Shirayuki
  * @author Whym
  */
 
@@ -33,8 +34,8 @@ $messages['lang'] = '言語';
 $messages['project'] = 'プロジェクト';
 $messages['article'] = 'ページ';
 $messages['needle'] = '検索語';
-$messages['skipversions'] = '間隔の何版かの検査をとばす';
-$messages['ignorefirst'] = '初めの何版かの検査をとばす';
+$messages['skipversions'] = '常にいくつかの版をスキップ';
+$messages['ignorefirst'] = '先頭のいくつかの版を無視';
 $messages['limit'] = '検査する版数';
 $messages['start_date'] = '開始日';
 $messages['date_format'] = 'YYYY年MM月DD日';
