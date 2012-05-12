@@ -11,6 +11,7 @@
  * @file
  *
  * @author Ankit
+ * @author Ashok modhvadia
  */
 
 $messages['January'] = 'જાન્યુઆરી';
@@ -27,7 +28,7 @@ $messages['November'] = 'નવેમ્બર';
 $messages['December'] = 'ડિસેમ્બર';
 $messages['ui_lang'] = 'ભાષા દર્શાવો';
 $messages['lang'] = 'ભાષા';
-$messages['project'] = 'પ્રોજેક્ટ';
+$messages['project'] = 'પરિયોજના';
 $messages['article'] = 'પાનું';
 $messages['needle'] = 'ના માટે શોધો';
 $messages['skipversions'] = 'હંમેશા x આવૃત્તિઓ અવગણો';
