@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -67,7 +67,7 @@ $messages['execution_time'] = 'Време за извршување: _EXECUTIONT
 $messages['versions_found'] = 'Пронајдени се _NUMBEROFVERSIONS_  верзии';
 $messages['please_wait'] = 'Почекајте …';
 $messages['binary_test'] = 'Споредба на разликите во _FIRSTDATEVERSION_ помеѓу _FIRSTNUMBER_ и _SECONDNUMBER_ при преодот од _SOURCENUMBER_:';
-$messages['dead_end'] = 'Отидовте во некој ќорсокак (веројатно предизвикан од враќања или уредувачки војни)';
+$messages['dead_end'] = 'Западнавте во некој ќорсокак (веројатно предизвикан од враќања или уредувачки војни)';
 $messages['once_more'] = 'Уште еднаш, со чувство:';
 $messages['binary_enough'] = 'Извршивте доволно обиди. Историјата на статијата е многу побркана. Изменете некои нагодувања.';
 $messages['insertion_found'] = 'Пронајдено е вметнување помеѓу LEFT_VERSION и RIGHT_VERSION';

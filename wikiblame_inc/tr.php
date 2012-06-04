@@ -11,11 +11,13 @@
  * @file
  *
  * @author Emperyan
+ * @author Erdemaslancan
  * @author Flominator
  * @author Joseph
  * @author Vito Genovese
  */
 
+$text_dir = 'ltr';
 $messages['January'] = 'Ocak';
 $messages['February'] = 'Şubat';
 $messages['March'] = 'Mart';

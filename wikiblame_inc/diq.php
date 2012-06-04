@@ -14,6 +14,7 @@
  * @author Mirzali
  */
 
+$text_dir = 'ltr';
 $messages['January'] = 'Çele';
 $messages['February'] = 'Şıbate';
 $messages['March'] = 'Mert';
