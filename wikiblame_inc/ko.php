@@ -13,6 +13,7 @@
  * @author Flominator
  * @author Klutzy
  * @author Kwj2772
+ * @author 아라
  */
 
 $messages['January'] = '1월';
@@ -47,7 +48,7 @@ $messages['interpolated'] = '보간법 (많은 버전에 대해 빠름)';
 $messages['ignore_minors'] = '사소한 편집을 무시 (실험중)';
 $messages['force_wikitags'] = '위키텍스트에서 찾도록 강제';
 $messages['start'] = '시작';
-$messages['reset'] = '리셋';
+$messages['reset'] = '초기화';
 $messages['manual'] = '사용법';
 $messages['contact'] = '문의하기';
 $messages['wrong_skips'] = '설정이 잘못됨: 처음 __VERSIONTOSKIP__개 판을 넘어가도록 하면 __VERSIONTOSEARCH__개의 판 중 검색될 판이 없습니다.';

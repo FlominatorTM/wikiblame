@@ -12,6 +12,7 @@
  *
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Red Winged Duck
  * @author Wizardist
  */
 
@@ -60,7 +61,7 @@ $messages['first_version'] = 'Зьмена павінна адбыцца ў пе
 $messages['first_version_present'] = '__NEEDLE__ ужо прысутнічаў у першай вэрсіі, створанай __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Верагодна ёсьць у ранейшых вэрсіях.';
 $messages['execution_time'] = 'Час выкананьня: _EXECUTIONTIME_ сэкунд';
-$messages['versions_found'] = '_NUMBEROFVERSIONS_ вэрсій знойдзена';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ вэрсіяў знойдзена';
 $messages['please_wait'] = 'Калі ласка, пачакайце…';
 $messages['binary_test'] = 'Параўнаньне адрозьненьняў у _FIRSTDATEVERSION_ паміж _FIRSTNUMBER_ і _SECONDNUMBER_ пад час пераходу з _SOURCENUMBER_:';
 $messages['dead_end'] = 'Перашкаджае тупік (верагодна выкліканы адкатам ці вайной рэдагаваньняў)';
