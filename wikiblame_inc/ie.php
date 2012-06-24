@@ -38,6 +38,7 @@ $messages['date_format'] = 'MM DD, AAAA';
 $messages['order'] = 'Órdine';
 $messages['newest_first'] = 'max ultim prim';
 $messages['oldest_first'] = 'max antiqui prim';
+$messages['binary_search_inverse'] = 'Vider li translocation del textu (binarie solmen)';
 $messages['search_method'] = 'Serchar metode';
 $messages['binary'] = 'binarie';
 $messages['linear'] = 'linear';
