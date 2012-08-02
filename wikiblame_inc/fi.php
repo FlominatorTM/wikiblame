@@ -12,6 +12,7 @@
  *
  * @author Crt
  * @author Flominator
+ * @author Nedergard
  * @author Nike
  * @author Silvonen
  */
@@ -44,4 +45,5 @@ $messages['interpolated'] = 'interpoloitu (nopeampi, jos versioita on paljon)';
 $messages['manual'] = 'Ohje';
 $messages['contact'] = 'Ota yhteyttä';
 $messages['execution_time'] = 'Suoritusaika: _EXECUTIONTIME_ sekuntia';
+$messages['once_more'] = 'Uusi yritys:';
 $messages['help_translating'] = 'Auta kääntämisessä – translatewiki.net';

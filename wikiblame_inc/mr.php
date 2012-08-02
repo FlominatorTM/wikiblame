@@ -13,6 +13,7 @@
  * @author Htt
  * @author Kaajawa
  * @author Mahitgar
+ * @author Shantanoo
  */
 
 $messages['January'] = 'जानेवारी';
@@ -49,7 +50,7 @@ $messages['ignore_minors'] = 'छोटे बदल दुर्लक्षी
 $messages['force_wikitags'] = 'विकिमजकुरा करता  सर्चिंग फोर्स करा';
 $messages['start'] = 'सुरू';
 $messages['reset'] = 'पूर्ववत करा';
-$messages['manual'] = 'सहाय्य पुस्तीका';
+$messages['manual'] = 'निदेशपुस्तक';
 $messages['contact'] = 'संपर्क';
 $messages['no_differences'] = 'शोधलेल्या आवृत्त्यात फरक आढळले नाहीत';
 $messages['execution_time'] = 'शोध वेळ: _EXECUTIONTIME_ सेकंद';
