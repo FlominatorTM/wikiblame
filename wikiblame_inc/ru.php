@@ -12,6 +12,7 @@
  *
  * @author Ferrer
  * @author Flominator
+ * @author Ignatus
  * @author Lockal
  * @author Александр Сигачёв
  */
@@ -42,7 +43,7 @@ $messages['date_format'] = 'DD.MM.YYYY';
 $messages['order'] = 'Порядок';
 $messages['newest_first'] = 'вначале новейшие';
 $messages['oldest_first'] = 'вначале старейшие';
-$messages['binary_search_inverse'] = 'Поиск удалённого текста (только двоичный)';
+$messages['binary_search_inverse'] = 'Поиск удаления текста (только двоичный)';
 $messages['search_method'] = 'Способ поиска';
 $messages['binary'] = 'двоичный';
 $messages['binary_in_wp'] = 'http://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA';
@@ -57,7 +58,7 @@ $messages['contact'] = 'Контактная информация';
 $messages['get_less_versions'] = 'Ваш запрос может выдать __NUMREVISIONS__ версий за раз. В целях защиты сервера, за один вызов допускается запрашивать не более __ALLOWEDREVISIONS__ версий. Пожалуйста, измените настройки или переключитесь в двоичный режим поиска!';
 $messages['wrong_skips'] = 'Ошибочные настройки. Если первые __VERSIONSTOSKIP__ версий будут пропущены, то ни одна из __VERSIONSTOSEARCH__ версий для поиска не будет обработана.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> ищется в истории версий _ARTICLELINK_ как обычный текст';
-$messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> ищется в истории версий _ARTICLELINK_ как вики текста';
+$messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> ищется в истории версий _ARTICLELINK_ как викитекст';
 $messages['no_differences'] = 'В найденных версиях нет различий.';
 $messages['first_version'] = 'Изменение должно было произойти в первой или последней версии?';
 $messages['first_version_present'] = '__NEEDLE__ уже присутствовала в первой ревизии, найденной начиная с __REVISIONLINK__.';

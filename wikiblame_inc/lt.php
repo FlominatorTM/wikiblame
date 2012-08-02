@@ -46,6 +46,7 @@ $messages['ignore_minors'] = 'ignoruoti nedidelius pakeitimus (eksperimentiniai)
 $messages['force_wikitags'] = 'ieškoti wikitext';
 $messages['start'] = 'Pradėti';
 $messages['reset'] = 'Atnaujinti';
+$messages['manual'] = 'Instrukcija';
 $messages['contact'] = 'Susisiekti';
 $messages['please_wait'] = 'Prašome palaukti ...';
 $messages['help_translating'] = 'Padėkite versti translatewiki.net';
