@@ -11,6 +11,7 @@
  * @file
  *
  * @author Ansumang
+ * @author Jnanaranjan Sahu
  * @author Odisha1
  * @author Psubhashish
  */
@@ -25,9 +26,11 @@ $messages['July'] = 'ଜୁଲାଇ';
 $messages['August'] = 'ଅଗଷ୍ଟ';
 $messages['September'] = 'ସେପ୍ଟେଟେମ୍ବର';
 $messages['October'] = 'ଅକ୍ଟୋବର';
+$messages['November'] = 'ନଭେମ୍ବର';
 $messages['December'] = 'ଡିସେମ୍ବର';
 $messages['lang'] = 'ଭାଷା';
 $messages['project'] = 'କିଳିବେ';
 $messages['article'] = 'ପୃଷ୍ଠା';
+$messages['needle'] = 'ପାଇଁ ଖୋଜିବେ';
 $messages['start_date'] = 'ଆରମ୍ଭ ତାରିଖ';
 $messages['start'] = 'ଆରମ୍ଭ';
