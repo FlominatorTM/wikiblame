@@ -12,6 +12,7 @@
  *
  * @author Lucas
  * @author Mihxil
+ * @author Objectivesea
  * @author Yekrats
  */
 
@@ -40,6 +41,7 @@ $messages['date_format'] = 'YYYY-MM-DD';
 $messages['order'] = 'Mendi';
 $messages['newest_first'] = 'Plej novaj unue';
 $messages['oldest_first'] = 'Plej malnovaj unue';
+$messages['binary_search_inverse'] = 'Serĉi forigon de teksto (nur binara)';
 $messages['search_method'] = 'Serĉmetodo';
 $messages['binary'] = 'duuma';
 $messages['linear'] = 'lineara';
@@ -57,6 +59,7 @@ $messages['search_in_progress_wikitags'] = 'La versihistorio de _ARTICLELINK_ es
 $messages['no_differences'] = 'Neniu diferenco trovitas en la serĉitaj revizoj.';
 $messages['first_version'] = 'Ĉu la ŝanĝo okazu en la unua aŭ lasta revizioj?';
 $messages['first_version_present'] = '__NEEDLE__ jam ĉeestis en la unua versio de __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Kredeble, estas pli malfruaj revizioj.';
 $messages['execution_time'] = 'Bezonata  tempo: _EXECUTIONTIME_ sekundoj';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ da versioj estas trovitaj';
 $messages['please_wait'] = 'Bonvolu atendi...';
