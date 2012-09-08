@@ -17,7 +17,7 @@
  */
 
 $messages['January'] = 'ଜାନୁଆରୀ';
-$messages['February'] = 'ଫେବୁଆରି';
+$messages['February'] = 'ଫେବ୍ରୁଆରୀ';
 $messages['March'] = 'March';
 $messages['April'] = 'ଅପ୍ରେଲ';
 $messages['May'] = 'ମେ';
