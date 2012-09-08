@@ -14,48 +14,49 @@
  * @author DRIHEM
  * @author Houcinee1
  * @author Meno25
+ * @author Mutarjem horr
  * @author OsamaK
  * @author ترجمان05
  */
 
 $text_dir = 'rtl';
-$messages['January'] = 'يناير';
-$messages['February'] = 'فبراير';
-$messages['March'] = 'مارس';
-$messages['April'] = 'أبريل';
-$messages['May'] = 'مايو';
-$messages['June'] = 'يونيو';
-$messages['July'] = 'يوليو';
-$messages['August'] = 'أغسطس';
-$messages['September'] = 'سبتمبر';
-$messages['October'] = 'أكتوبر';
-$messages['November'] = 'نوفمبر';
-$messages['December'] = 'ديسمبر';
+$messages['January'] = 'كانون الثاني/يناير';
+$messages['February'] = 'شباط/فبراير';
+$messages['March'] = 'آذار/مارس';
+$messages['April'] = 'نيسان/أبريل';
+$messages['May'] = 'أيار/مايو';
+$messages['June'] = 'حزيران/يونيه';
+$messages['July'] = 'تموز/يوليه';
+$messages['August'] = 'آب/أغسطس';
+$messages['September'] = 'أيلول/سبتمبر';
+$messages['October'] = 'تشرين الأول/أكتوبر';
+$messages['November'] = 'تشرين الثاني/نوفمبر';
+$messages['December'] = 'كانون الأول/ديسمبر';
 $messages['ui_lang'] = 'لغة العرض';
 $messages['lang'] = 'اللغة';
 $messages['project'] = 'المشروع';
 $messages['article'] = 'الصفحة';
-$messages['needle'] = 'ابحث عن';
+$messages['needle'] = 'إبحث عن';
 $messages['skipversions'] = 'تخطَّ دائما النسخ س';
 $messages['ignorefirst'] = 'أهمل النسخة س الأولى';
 $messages['limit'] = 'نسخ للمراجعة';
 $messages['start_date'] = 'تاريخ البداية';
 $messages['date_format'] = 'ش ش ي ي، س س س س';
-$messages['order'] = 'ترتيب';
+$messages['order'] = 'الترتيب';
 $messages['newest_first'] = 'الآخر أولا';
 $messages['oldest_first'] = 'الأقدم أولا';
 $messages['binary_search_inverse'] = 'ابحث عن حذف النص (ثنائي فقط)';
-$messages['search_method'] = 'طريقة لبحث';
+$messages['search_method'] = 'طريقة البحث';
 $messages['binary'] = 'ثنائي';
 $messages['binary_in_wp'] = 'http://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D8%AD%D8%AB_%D8%A7%D9%84%D8%AB%D9%86%D8%A7%D8%A6%D9%8A';
 $messages['linear'] = 'خطيّة';
 $messages['interpolated'] = 'ثنائي (أسرع بنسخ أكثر)';
 $messages['ignore_minors'] = 'تجاهل التغييرات الثانوية (تجريبية)';
 $messages['force_wikitags'] = 'إجبار البحث على نص ويكي';
-$messages['start'] = 'البداية';
-$messages['reset'] = 'أعد';
-$messages['manual'] = 'دليل';
-$messages['contact'] = 'اتصال';
+$messages['start'] = 'إبدأ';
+$messages['reset'] = 'إسترجع';
+$messages['manual'] = 'دليل الإستعمال';
+$messages['contact'] = 'للإتصال';
 $messages['get_less_versions'] = 'يمكن لبحثك أن يظم __NUMREVISIONS__ تعديلات في وقت واحد. يسمح لك بالبحث عن __ALLOWEDREVISIONS__ لكل مكالمة، وذلك لحماية الخادم. رجاءً قم بتعديل الإعدادات أو حول طريقة البحث إلى ثنائي!';
 $messages['wrong_skips'] = 'إعدادات غير صحيحة: لو أن أول نسخ __VERSIONSTOSKIP__ تم تجاوزها, إذا فلا شيء من نسخ __VERSIONSTOSEARCH__ للبحث ستتم معالجتها.';
 $messages['search_in_progress_text'] = 'تاريخ النسخةهذه  _ARTICLELINK_ يجري البحث عنها <b>_NEEDLE_</b> كنص عادي';
