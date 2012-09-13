@@ -526,6 +526,11 @@ function correct_language_mistakes($lang)
 		return 'pl';
 	}
 	
+	if(stristr($lang, 'portu'))
+	{
+		return 'pt';
+	}
+	
 	if(stristr($lang, 'viet'))
 	{
 		return 'vi';
@@ -565,8 +570,8 @@ function correct_language_mistakes($lang)
 		case 'khmer':		return 'km';
 		case 'malay':		return 'ms';
 		case 'nepali':		return 'ne';
-		case 'portugues': 	return 'pt';
 		case 'spanish':		return 'es';
+		case 'tamil':		return 'ta';
 		case '中文':			return 'zh';
 		default: return $lang;
 	}
