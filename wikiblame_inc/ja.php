@@ -75,4 +75,4 @@ $messages['deletion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で削除さ
 $messages['help_translating'] = 'translatewiki.net での翻訳作業を手伝う';
 $messages['start_here'] = 'ここから検索';
 $messages['too_much_versions'] = '検索の上限である__VERSIONLIMIT__版に達しました。__WAITMINUTES__分待ってから再試行するか、二分探索に切り替えてください。ご迷惑をおかけしてしまい申し訳ありません。';
-$messages['not_found_at_all'] = '検索語がまったく見つかりませんでした。設定を間違ってはいませんか？';
+$messages['not_found_at_all'] = '検索語はまったく見つかりませんでした。設定を確認してから、もう一度試してください。';
