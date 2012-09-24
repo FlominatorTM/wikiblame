@@ -72,4 +72,4 @@ $messages['deletion_found'] = 'Tìm thấy có tác vụ xóa giữa LEFT_VERSIO
 $messages['help_translating'] = 'Giúp dịch tại translatewiki.net';
 $messages['start_here'] = 'Tìm kiếm từ đây';
 $messages['too_much_versions'] = 'Bạn đã tìm kiếm quá __VERSIONLIMIT__ phiên bản. Hãy thử lại trong __WAITMINUTES__ phút hoặc đổi qua chế độ tìm kiếm nhị phân. Xin lỗi vì sự bất tiện.';
-$messages['not_found_at_all'] = 'Không tìm thấy truy vấn của bạn. Hãy chắc chắn thiết lập công cụ đúng kiểu.';
+$messages['not_found_at_all'] = 'Không tìm thấy truy vấn của bạn. Hãy kiểm tra cấp hình của công cụ và thử lại.';

@@ -69,4 +69,4 @@ $messages['deletion_found'] = 'Něco jo se mjazy LEFT_VERSION a RIGHT_VERSION wu
 $messages['help_translating'] = 'Pśi pśełožowanju na translatewiki.net pomagaś';
 $messages['start_here'] = 'Wót how pytaś';
 $messages['too_much_versions'] = 'Sy napšašowański limit limit of __VERSIONLIMIT__ wersijow dojśpěł. Pšosym wopytaj za __WAITMINUTES__  minutow abo wužyj binarne pytanje. Wódaj wobuze.';
-$messages['not_found_at_all'] = 'Wašo pytańske zapśimjeśe njejo se namakało. Sćo wěsty, až maśo pšawe nastajenja?';
+$messages['not_found_at_all'] = 'Twójo pytańske zapśimjeśe njejo se namakało. Pśeglědaj nastajenja a wopytaj hyšći raz.';

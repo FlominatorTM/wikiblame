@@ -80,4 +80,4 @@ $messages['deletion_found'] = 'Cancellazione trovata fra LEFT_VERSION e RIGHT_VE
 $messages['help_translating'] = 'Aiuta a tradurre su translatewiki.net';
 $messages['start_here'] = 'Cerca da qui';
 $messages['too_much_versions'] = 'Hai raggiunto il limite massimo  di __VERSIONLIMIT__ richieste. Si prega di riprovare passati __WAITMINUTES__ o passare alla ricerca binaria. Ci scusiamo per l\'inconveniente.';
-$messages['not_found_at_all'] = 'Il termine di ricerca non è stato proprio trovato. Sei sicuro di avere scelto impostazioni corrette?';
+$messages['not_found_at_all'] = 'Il termine di ricerca non è stato proprio trovato. Controllare le impostazioni e riprovare.';

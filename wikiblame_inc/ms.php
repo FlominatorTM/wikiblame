@@ -69,4 +69,4 @@ $messages['deletion_found'] = 'Penghapusan ditemui di antara LEFT_VERSION dan RI
 $messages['help_translating'] = 'Bantulah kami menterjemah di translatewiki.net';
 $messages['start_here'] = 'Cari dari sini';
 $messages['too_much_versions'] = 'Anda telah mencapai had pertanyaan __VERSIONLIMIT__ versi. Sila cuba lagi dalam __WAITMINUTES__ atau beralih ke carian binari. Maafkan kami atas kesusahan ini.';
-$messages['not_found_at_all'] = 'Kata carian anda langsung tak jumpa. Adakah anda pasti tetapan anda betul?';
+$messages['not_found_at_all'] = 'Kata carian anda langsung tak jumpa. Sila semak tetapan dan cuba lagi.';

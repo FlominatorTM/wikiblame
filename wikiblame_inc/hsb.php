@@ -69,4 +69,4 @@ $messages['deletion_found'] = 'Něšto je so mjez LEFT_VERSION a RIGHT_VERSION w
 $messages['help_translating'] = 'Při přełožowanju na translatewiki.net pomhać';
 $messages['start_here'] = 'Wottud pytać';
 $messages['too_much_versions'] = 'Sy naprašowanski limit __VERSIONLIMIT__ wersijow docpěł. Prošu spytaj za _WAITMINUTES__ mjeńšin hišće raz abo wužij binarne pytane. Prošu wodaj njepřijomnosće.';
-$messages['not_found_at_all'] = 'Twoje pytanske zapřijeće njeje so namakało. Sy sej wěsty, zo maš prawe nastajenja?';
+$messages['not_found_at_all'] = 'Twoje pytanske zapřijeće njeje so namakało. Přepruwuj nastajenja a spytaj hišće raz.';
