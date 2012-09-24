@@ -75,4 +75,4 @@ $messages['deletion_found'] = 'Odstranění nalezeno mezi LEFT_VERSION a RIGHT_V
 $messages['help_translating'] = 'Pomožte překládat na translatewiki.net';
 $messages['start_here'] = 'Hledat odsud';
 $messages['too_much_versions'] = 'Dosáhli jste svůj limit dotazu __VERSIONLIMIT__ verzí. Zkuste to prosím znovu za __WAITMINUTES__ minut nebo přepněte na binární vyhledávání. Omlouváme se za vzniklé potíže.';
-$messages['not_found_at_all'] = 'Hledaný výraz nebyl nalezen. Jste si jisti, že máte správné nastavení?';
+$messages['not_found_at_all'] = 'Hledaný výraz nebyl nalezen. Zkontrolujte nastavení a zkuste to znovu.';

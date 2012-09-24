@@ -71,4 +71,4 @@ $messages['deletion_found'] = 'Verwijdering gevonden tussen LEFT_VERSION en RIGH
 $messages['help_translating'] = 'Helpen met vertalen in translatewiki.net';
 $messages['start_here'] = 'Vanaf hier zoeken';
 $messages['too_much_versions'] = 'U hebt de zoeklimiet van __VERSIONLIMIT__ versies bereikt. Probeer het opnieuw over __WAITMINUTES__ minuten of gebruik de binaire zoekmethode. Excuses voor het ongemak.';
-$messages['not_found_at_all'] = 'Uw trefwoord is niet aangetroffen. Weet u zeker dat u de juiste instellingen hebt gemaakt?';
+$messages['not_found_at_all'] = 'Uw trefwoord is niet aangetroffen. Controleer de instellingen en probeer het opnieuw.';

@@ -12,6 +12,7 @@
  *
  * @author Flominator
  * @author Kghbln
+ * @author Metalhead64
  * @author Umherirrender
  */
 
@@ -75,4 +76,4 @@ $messages['deletion_found'] = 'Löschung gefunden zwischen LEFT_VERSION und RIGH
 $messages['help_translating'] = 'Beim Übersetzen zu helfen, ist auf translatewiki.net möglich.';
 $messages['start_here'] = 'Ab hier suchen';
 $messages['too_much_versions'] = 'Die Abfragebegrenzung von __VERSIONLIMIT__ Versionen wurde erreicht. Eine erneute Suche ist in __WAITMINUTES__ Minuten möglich. Alternativ ist die Suchmethode „binär“ möglich. Entschuldigung für mögliche Unannehmlichkeiten.';
-$messages['not_found_at_all'] = 'Der Suchbegriff wurde nicht gefunden. Sind die Sucheinstellungen tatsächlich richtig?';
+$messages['not_found_at_all'] = 'Der Suchbegriff wurde nicht gefunden. Überprüfe die Einstellungen und versuche es erneut.';

@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author BeginaFelicysym
  * @author Flominator
  * @author Leinad
  * @author Matma Rex
@@ -75,4 +76,4 @@ $messages['deletion_found'] = 'Usunięcia odnalezione pomiędzy LEFT_VERSION i R
 $messages['help_translating'] = 'Pomóż w tłumaczeniu na translatewiki.net';
 $messages['start_here'] = 'Szukaj od tego miejsca';
 $messages['too_much_versions'] = 'Osiągnąłeś limit zapytań, który wynosi __VERSIONLIMIT__ wersji. Spróbuj ponownie za __WAITMINUTES__ minut lub przełącz na wyszukiwanie binarne. Przepraszamy za utrudnienia.';
-$messages['not_found_at_all'] = 'Wyszukiwanego warunku nie odnaleziono wcale. Czy jesteś pewien ustawionych parametrów?';
+$messages['not_found_at_all'] = 'Nie odnaleziono zupełnie wyszukiwanego wyrażenia. Sprawdź ustawienia i spróbuj ponownie.';

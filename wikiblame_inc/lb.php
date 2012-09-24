@@ -69,4 +69,4 @@ $messages['deletion_found'] = 'Läschung fonnt tëschent LEFT_VERSION a(n) RIGHT
 $messages['help_translating'] = 'Hëlleft iwwersetzen op translatewiki.net';
 $messages['start_here'] = 'Vun hei aus sichen';
 $messages['too_much_versions'] = 'Dir hutt d\'Limit vu(n) __VERSIONLIMIT__ Versiounen vun der Zuel vun Ären Ufroen erreecht. Waart w.e.g. __WAITMINUTES__ Minutten oder wiessel op d\'binair Sich. Pardon fir dës Limitatioun.';
-$messages['not_found_at_all'] = 'Äre Sichbegrëff gouf guer net fonnt. Sidd Dir sécher datt Dir déi richteg Astellungen hutt?';
+$messages['not_found_at_all'] = 'Äre Sichbegrëff gouf guer net fonnt. Kuckt Är Astellungen no a probéiert et nach eng Kéier?';
