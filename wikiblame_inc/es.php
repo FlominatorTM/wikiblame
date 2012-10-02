@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Armando-Martin
  * @author Crazymadlover
  * @author DJ Nietzsche
  * @author McDutchie
@@ -78,4 +79,4 @@ $messages['help_translating'] = 'Ayude traduciendo en translatewiki.net';
 $messages['start_here'] = 'Búsqueda desde aquí';
 $messages['too_much_versions'] = 'Has llegado a tu límite de consultas de __VERSIONLIMIT__ versiones. Por favor intenta nuevamente en __WAITMINUTES__ minutos o cambia a la búsqueda binaria.
 Disculpa el inconveniente.';
-$messages['not_found_at_all'] = 'El término de búsqueda no fue encontrado del todo. ¿Estás seguro que tienes la configuración correcta?';
+$messages['not_found_at_all'] = 'No se ha encontrado tu término de búsqueda.  Comprueba la configuración y vuelve a intentarlo.';

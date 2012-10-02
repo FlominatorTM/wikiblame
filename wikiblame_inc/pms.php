@@ -70,4 +70,4 @@ $messages['deletion_found'] = 'Scancelassion trovà tra LEFT_VERSION e RIGHT_VER
 $messages['help_translating'] = 'Giuta a traduve ansima a translatewiki.net';
 $messages['start_here'] = 'Sërché a parte da sì';
 $messages['too_much_versions'] = 'A l\'é rivà a sò lìmit d\'arserche dla version __VERSIONLIMIT__. Për piasì, ch\'a preuva torna tra __WAITMINUTES__ minute o ch\'a cangia ël métod d\'arserca. An dëspias për l\'inconvenient.';
-$messages['not_found_at_all'] = 'Ël contnù arsercà a l\'é pa stàit trovà. É-lo sigur, d\'avèj j\'ampostassion giuste?';
+$messages['not_found_at_all'] = 'Ël contnù arsercà a l\'é pa stàit trovà. Contròla j\'ampostassion e preuva torna.';

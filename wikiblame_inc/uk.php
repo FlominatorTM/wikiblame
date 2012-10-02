@@ -14,6 +14,7 @@
  * @author Gucci Mane Burrr
  * @author KEL
  * @author Microcell
+ * @author Olvin
  * @author Prima klasy4na
  * @author Тест
  */
@@ -76,4 +77,4 @@ $messages['deletion_found'] = 'Видалення знайдено між LEFT_V
 $messages['help_translating'] = 'Допоможіть перекласти на translatewiki.net';
 $messages['start_here'] = 'Початик пошук звідси';
 $messages['too_much_versions'] = 'Ви досягнули ліміту запитів по кількості версій: __VERSIONLIMIT__. Будь ласка, спробуйте ще раз за __WAITMINUTES__ хвилин або використовуйте двійковий режим. Перепрошуємо за незручності.';
-$messages['not_found_at_all'] = 'За вашим запитом нічого не знайдено. Ви впевнені у правильності налаштувань?';
+$messages['not_found_at_all'] = 'За вашим запитом нічого не знайдено. Перевірте правильність налаштувань і спробуйте знову.';

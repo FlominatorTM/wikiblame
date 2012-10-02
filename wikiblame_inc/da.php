@@ -70,4 +70,4 @@ $messages['deletion_found'] = 'Sletning fundet mellem LEFT_VERSION og RIGHT_VERS
 $messages['help_translating'] = 'Hjælp til med at oversætte på translatewiki.net';
 $messages['start_here'] = 'Søg herfra';
 $messages['too_much_versions'] = 'Du har nået din forespørgselsbegrænsning på __VERSIONLIMIT__ versioner. Prøv venligst igen om __WAITMINUTES__ minutter eller skift til binær søgning. Beklager ulejligheden.';
-$messages['not_found_at_all'] = 'Dine søgeord blev slet ikke fundet. Er du sikker på, at du har angivet de rigtige indstillinger?';
+$messages['not_found_at_all'] = 'Dine søgeord blev slet ikke fundet. Kontroller indstillingerne og prøv igen.';
