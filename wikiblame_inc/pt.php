@@ -75,4 +75,4 @@ $messages['deletion_found'] = 'O texto foi retirado entre a edição LEFT_VERSIO
 $messages['help_translating'] = 'Ajude a traduzir no translatewiki.net';
 $messages['start_here'] = 'Procurar a partir daqui';
 $messages['too_much_versions'] = 'Atingiu o seu limite de consultas, de __VERSIONLIMIT__ versões. Tente novamente dentro de __WAITMINUTES__ minutos ou mude para pesquisa binária. Desculpe este transtorno.';
-$messages['not_found_at_all'] = 'O termo de pesquisa não foi encontrado de todo. Tem a certeza de que tem as configurações correctas?';
+$messages['not_found_at_all'] = 'O termo de pesquisa não foi encontrado de todo. Verifique as configurações e tente novamente.';

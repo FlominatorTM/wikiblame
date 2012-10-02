@@ -75,4 +75,4 @@ $messages['deletion_found'] = 'נמצאה מחיקה בין LEFT_VERSION ל־RIG
 $messages['help_translating'] = 'ניתן לעזור בתרגום באתר translatewiki.net';
 $messages['start_here'] = 'חיפוש מכאן';
 $messages['too_much_versions'] = 'הגעתם למגבלת השאילתות של __VERSIONLIMIT__ גרסאות. נא לנסות שוב בעוד __WAITMINUTES__ דקות או לעבור לחיפוש בינארי. אנו מצטערים על חוסר הנוחות.';
-$messages['not_found_at_all'] = 'מילת החיפוש לא נמצאה בכלל. האם ההגדרות באמת נכונות?';
+$messages['not_found_at_all'] = 'מילת החיפוש לא נמצאה בכלל.  נא לבדוק את ההגדרות ולנסות שוב.';

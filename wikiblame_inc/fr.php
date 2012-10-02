@@ -17,6 +17,7 @@
  * @author McDutchie
  * @author Od1n
  * @author Peter17
+ * @author Tititou36
  * @author Wyz
  */
 
@@ -77,4 +78,4 @@ $messages['deletion_found'] = 'Suppression détectée entre LEFT_VERSION et RIGH
 $messages['help_translating'] = 'Aidez à traduire sur translatewiki.net';
 $messages['start_here'] = 'Rechercher à partir d\'ici';
 $messages['too_much_versions'] = 'Vous avez atteint votre limite de requête de __VERSIONLIMIT__ versions. Essayez de nouveau dans __WAITMINUTES__ minutes ou basculez vers la recherche binaire. Désolé pour les inconvénients.';
-$messages['not_found_at_all'] = 'Le contenu recherché n’a pas été trouvé. Avez-vous vraiment les bons paramètres ?';
+$messages['not_found_at_all'] = 'Le contenu recherché n’a pas été trouvé. Vérifiez les paramètres et ré-essayez.';

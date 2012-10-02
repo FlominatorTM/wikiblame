@@ -77,4 +77,4 @@ $messages['deletion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VE
 $messages['help_translating'] = 'ساعد في الترجمة عبر translatewiki.net';
 $messages['start_here'] = 'ابحث من هنا';
 $messages['too_much_versions'] = 'لقد وصلت إلى حد الاستعلام المخصص بعدد __VERSIONLIMIT__ إصدار. يرجى المحاولة مرة أخرى في غضون __WAITMINUTES__دقائق أو التبديل للبحث الثنائي. نأسف للإزعاج.';
-$messages['not_found_at_all'] = 'لم يتم العثور على كلمة البحث على الإطلاق. هل أنت متأكد، من أن الإعدادات مضبوطة بشكل صحيح؟';
+$messages['not_found_at_all'] = 'لم نتمكن من العثور على المصطلح الذي تبحث عنه على الإطلاق. تفقد الإعدادات وأعد المحاولة من جديد.';

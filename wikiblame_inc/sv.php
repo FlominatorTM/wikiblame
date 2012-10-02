@@ -77,4 +77,4 @@ $messages['deletion_found'] = 'Radering funnen mellan LEFT_VERSION och RIGHT_VER
 $messages['help_translating'] = 'Hjälp till med översättning på translatewiki.net';
 $messages['start_here'] = 'Sök härifrån';
 $messages['too_much_versions'] = 'Du har nått begränsningen för antalet frågor på __VERSIONLIMIT_ versioner. Försök igen om __WAITMINUTES__ minuter eller byt till binär sökning. Beklagar olägenheten.';
-$messages['not_found_at_all'] = 'Din sökterm hittades inte alls. Är du säker på att du har rätt inställningar?';
+$messages['not_found_at_all'] = 'Din sökterm hittades inte alls. Kontrollera inställningarna och försök igen.';
