@@ -69,4 +69,4 @@ $messages['deletion_found'] = 'Zwesche LEFT_VERSION un RIGHT_VERSION wood jet fo
 $messages['help_translating'] = 'Kanns beim Övversäze op translatewiki.net helfe!';
 $messages['start_here'] = 'Söhk vun heh aan';
 $messages['too_much_versions'] = 'Do bes aan de de Jrenz vun __VERSIONLIMIT__ Versione-Affroofe jekumme. Versöhk et en  __WAITMINUTES__ Menutte widder, udder don op „emmer en de Medde pecke“ ömsteije. Deiht mer leid för der Ömschtand.';
-$messages['not_found_at_all'] = 'Wat De söhke lohße wullts, woh övverhoup nit ze fenge. Häs De Desch velleish met de Enstellunge verdonn?';
+$messages['not_found_at_all'] = 'Wat De söhke lohße wullts, woh övverhoup nit ze fenge. Prööf de Enschtällonge un versöhg_et norr_ens.';
