@@ -12,6 +12,7 @@
  *
  * @author Ankit
  * @author Ashok modhvadia
+ * @author Dsvyas
  */
 
 $messages['January'] = 'જાન્યુઆરી';
@@ -23,7 +24,7 @@ $messages['June'] = 'જૂન';
 $messages['July'] = 'જુલાઇ';
 $messages['August'] = 'ઑગસ્ટ';
 $messages['September'] = 'સપ્ટેમ્બર';
-$messages['October'] = 'ઑકટોબર';
+$messages['October'] = 'ઓક્ટોબર';
 $messages['November'] = 'નવેમ્બર';
 $messages['December'] = 'ડિસેમ્બર';
 $messages['ui_lang'] = 'ભાષા દર્શાવો';
