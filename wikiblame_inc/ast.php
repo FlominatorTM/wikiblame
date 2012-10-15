@@ -69,4 +69,4 @@ $messages['deletion_found'] = 'S\'alcontró un desaniciu ente LEFT_VERSION y RIG
 $messages['help_translating'] = 'Ayuda coles traducciones en translatewiki.net';
 $messages['start_here'] = 'Guetar dende equí';
 $messages['too_much_versions'] = 'Llegasti al to llímite de consultes de __VERSIONLIMIT__ versiones. Por favor intenta otra vuelta en __WAITMINUTES__ minutos o cambia a la gueta binaria. Perdona les molesties.';
-$messages['not_found_at_all'] = 'Nun s\'alcontró el términu que buscabes. ¿Tas seguru de que tienes les opciones afayadices?';
+$messages['not_found_at_all'] = 'El términu que buscabes nun s\'alcontró. Comprueba la configuración y tentalo otra vuelta.';
