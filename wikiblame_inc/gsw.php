@@ -70,4 +70,4 @@ $messages['deletion_found'] = 'Leschig gfunde zwische LEFT_VERSION un RIGHT_VERS
 $messages['help_translating'] = 'Bim Ibersetze hälfe uf translatewiki.net';
 $messages['start_here'] = 'Vu do ab sueche';
 $messages['too_much_versions'] = 'Du bisch bi de Abfroogebegränzig vo __VERSIONLIMIT__ Versione aacho. E nöii Suech isch in __WAITMINUTES__ Minute mögli. Alternativ isch d Suechmethod „binär“ mögli. Exgüsi für d Unannehmlichkeite.';
-$messages['not_found_at_all'] = 'De Suechbegriff isch überhaupt nit gfunde worde. Bisch sicher dass d Suechyystellige stimme?';
+$messages['not_found_at_all'] = 'Dr Suechbegriff isch nit gfunde wore. Iberprief d Yystellige un versuech s nomol.';
