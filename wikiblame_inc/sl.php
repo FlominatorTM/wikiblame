@@ -12,6 +12,7 @@
  *
  * @author Dbc334
  * @author Flominator
+ * @author Irena Plahuta
  */
 
 $messages['January'] = 'januar';
@@ -71,4 +72,4 @@ $messages['deletion_found'] = 'Odkril sem izbris med LEFT_VERSION in RIGHT_VERSI
 $messages['help_translating'] = 'Pomagajte prevajati na translatewiki.net';
 $messages['start_here'] = 'Išči od tukaj';
 $messages['too_much_versions'] = 'Dosegli ste omejitev poizvedb na __VERSIONLIMIT__ različic. Poskusite znova čez __WAITMINUTES__ minut ali preklopite na dvojiško iskanje. Opravičujemo se za nevšečnosti.';
-$messages['not_found_at_all'] = 'Vašega iskalnega niza ni bilo mogoče najti nikjer. Ste prepričani, da imate prave nastavitve?';
+$messages['not_found_at_all'] = 'Vašega iskalnega niza ni bilo mogoče najti nikjer. Prosimo, preverite nastavitve in poskusite znova.';
