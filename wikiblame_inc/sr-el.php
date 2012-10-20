@@ -77,4 +77,4 @@ $messages['deletion_found'] = 'Brisanje je pronađeno između LEFT_VERSION i RIG
 $messages['help_translating'] = 'Pomozite nam s prevođenjem';
 $messages['start_here'] = 'Traži odavde';
 $messages['too_much_versions'] = 'Dostigli ste ograničenje od __VERSIONLIMIT__ izdanja. Pokušajte ponovo za __WAITMINUTES__ min. ili promenite na binarnu pretragu. Izvinjavamo se na neprilici.';
-$messages['not_found_at_all'] = 'Traženi pojam nije pronađen. Jeste li sigurni da ste namestili prave postavke?';
+$messages['not_found_at_all'] = 'Traženi pojam nije pronađen. Proverite podešavanja i pokušajte ponovo.';
