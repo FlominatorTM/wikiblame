@@ -12,6 +12,7 @@
  *
  * @author Flominator
  * @author Nghtwlkr
+ * @author Wouterkoch
  */
 
 $messages['January'] = 'Januar';
@@ -71,4 +72,4 @@ $messages['deletion_found'] = 'Sletting funnet mellom LEFT_VERSION og RIGHT_VERS
 $messages['help_translating'] = 'Hjelp til med å oversette på translatewiki.net';
 $messages['start_here'] = 'Søk herfra';
 $messages['too_much_versions'] = 'Du har nådd spørregrensen din på __VERSIONLIMIT__ versjoner. Prøv igjen om __WAITMINUTES__ minutter eller bytt til binært søk. Beklager bryderiet.';
-$messages['not_found_at_all'] = 'Søkestrengen ble ikke funnet i det hele tatt. Er du sikker på at du har de riktige innstillingene?';
+$messages['not_found_at_all'] = 'Søkestrengen ble ikke funnet i det hele tatt. Kontroller innstillingene og prøv på nytt.';
