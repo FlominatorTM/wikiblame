@@ -14,20 +14,20 @@
  * @author Kw-Moon
  */
 
-$messages['January'] = 'Genver';
-$messages['February'] = 'Whevrel';
-$messages['March'] = 'Meurth';
-$messages['April'] = 'Ebrel';
-$messages['May'] = 'Me';
-$messages['June'] = 'Metheven';
-$messages['July'] = 'Gortheren';
-$messages['August'] = 'Est';
-$messages['September'] = 'Gwenngala';
-$messages['October'] = 'Hedra';
-$messages['November'] = 'Du';
-$messages['December'] = 'Kevardhu';
+$messages['January'] = 'mis Genver';
+$messages['February'] = 'mis Whevrel';
+$messages['March'] = 'mis Meurth';
+$messages['April'] = 'mis Ebrel';
+$messages['May'] = 'mis Me';
+$messages['June'] = 'mis Metheven';
+$messages['July'] = 'mis Gortheren';
+$messages['August'] = 'mis Est';
+$messages['September'] = 'mis Gwynngala';
+$messages['October'] = 'mis Hedra';
+$messages['November'] = 'mis Du';
+$messages['December'] = 'mis Kevardhu';
 $messages['lang'] = 'Yeth';
 $messages['article'] = 'Folen';
-$messages['needle'] = 'Whila';
+$messages['needle'] = 'Whilas';
 $messages['start'] = 'Dalleth';
-$messages['reset'] = 'Dasset';
+$messages['reset'] = 'Dassetya';

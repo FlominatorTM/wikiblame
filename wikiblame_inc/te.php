@@ -14,7 +14,7 @@
  * @author Veeven
  */
 
-$messages['January'] = 'జానుఅరీ';
+$messages['January'] = 'జనవరి';
 $messages['February'] = 'ఫిబ్రవరి';
 $messages['March'] = 'మార్చి';
 $messages['April'] = 'ఏప్రిల్';

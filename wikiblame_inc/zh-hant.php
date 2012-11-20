@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Frankou
  * @author Lauhenry
  * @author Wrightbus
  */
@@ -39,6 +40,7 @@ $messages['date_format'] = 'YYYY MM DD';
 $messages['order'] = '排列次序';
 $messages['newest_first'] = '從最近開始';
 $messages['oldest_first'] = '從最早開始';
+$messages['binary_search_inverse'] = '尋找去除文本 （僅適用於二進位）';
 $messages['search_method'] = '搜尋方式';
 $messages['binary'] = '折半';
 $messages['linear'] = '線性';
