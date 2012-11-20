@@ -13,6 +13,7 @@
  * @author Flominator
  * @author Helix84
  * @author Rudko
+ * @author Teslaton
  * @author Wizzard
  */
 
@@ -73,4 +74,4 @@ $messages['deletion_found'] = 'Medzi LEFT_VERSION a RIGHT_VERSION bolo zistené 
 $messages['help_translating'] = 'Pomôžte s prekladom na translatewiki.net';
 $messages['start_here'] = 'Hľadať odtiaľto';
 $messages['too_much_versions'] = 'Dosiahli ste svoj limit dopytu __VERSIONLIMIT__ verzií. Skúste to prosím znova o __WAITMINUTES__ minút alebo prepnite na binárne vyhľadávanie. Ospravedlňujeme sa za nepríjemnosti.';
-$messages['not_found_at_all'] = 'Hľadaný výraz sa nenašiel. Ste si istý, že máte správne nastavenie?';
+$messages['not_found_at_all'] = 'Hľadaný výraz sa nenašiel. Skontrolujte nastavenie a skúste hľadať znova.';

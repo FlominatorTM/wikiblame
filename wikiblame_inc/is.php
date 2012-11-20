@@ -69,4 +69,4 @@ $messages['deletion_found'] = 'Fjarlæging fannst á milli LEFT_VERSION og RIGHT
 $messages['help_translating'] = 'Hjálpa við þýðingu á translatewiki.net';
 $messages['start_here'] = 'Leita héðan';
 $messages['too_much_versions'] = 'Þú hefur náð hámarksfjölda __VERSIONLIMIT__ útgáfna. Vinsamlegast reyndu aftur eftir __WAITMINUTES__ mínútur eða breyttu yfir í tvíundarleit. Afsakaðu ónæðið.';
-$messages['not_found_at_all'] = 'Engar niðurstöður fundust. Ertu viss um að þú hafir notað rétt leitarskilyrði ?';
+$messages['not_found_at_all'] = 'Engar niðurstöður fundust. Athugaðu leitarskilyrðin og reyndu aftur.';
