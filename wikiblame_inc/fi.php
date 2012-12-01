@@ -64,4 +64,4 @@ $messages['please_wait'] = 'Odota ...';
 $messages['once_more'] = 'Uusi yritys:';
 $messages['help_translating'] = 'Auta kääntämisessä – translatewiki.net';
 $messages['start_here'] = 'Etsi täältä';
-$messages['not_found_at_all'] = 'Hakuehtoa ei löydy lainkaan. Oletko varma, että sait on oikeat asetukset?';
+$messages['not_found_at_all'] = 'Hakuehtoa ei löytynyt lainkaan. Tarkista asetukset ja yritä uudelleen.';
