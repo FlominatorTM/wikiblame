@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Euriditi
  * @author Marinari
  */
 
@@ -69,4 +70,4 @@ $messages['deletion_found'] = 'Janë gjetur fshirje në mes LEFT_VERSION dhe RIG
 $messages['help_translating'] = 'Ndihmo përkthimin tek translatewiki.net';
 $messages['start_here'] = 'Kërko nga këtu';
 $messages['too_much_versions'] = 'Ju keni arritur kufirin e pyetjeve tuaj të __VERSIONLIMIT__  versioneve. Ju lutemi provoni përsëri pas __WAITMINUTES__ minutave ose kaloni në kërkimin binar. Na vjen keq për bezdisjen.';
-$messages['not_found_at_all'] = 'Kërkimi juaj nuk u gjet fare. A jeni i sigurt, se keni parametrat e duhur ?';
+$messages['not_found_at_all'] = 'Nuk u gjet asnjë rezultat nga kërkimi tuaj. Kontrolloni parametrat dhe provoni përsëri.';

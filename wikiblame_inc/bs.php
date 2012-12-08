@@ -70,4 +70,4 @@ $messages['deletion_found'] = 'Pronađeno brisanje između LEFT_VERSION i RIGHT_
 $messages['help_translating'] = 'Pomognite prevođenje na translatewiki.net';
 $messages['start_here'] = 'Traži odavde';
 $messages['too_much_versions'] = 'Dostigli ste vaše ograničenje upita od __VERSIONLIMIT__ verzija. Molimo pokušajte ponovo za __WAITMINUTES__ minuta ili pređite na binarnu pretragu. Žao nam je zbog ove neprijatnosti.';
-$messages['not_found_at_all'] = 'Vaš traženi pojam nije uopće pronađen, Da li ste sigurni da ste postavili pravilne postavke?';
+$messages['not_found_at_all'] = 'Vaš traženi pojam nije uopće pronađen. Provjerite postavke i pokušajte ponovo.';
