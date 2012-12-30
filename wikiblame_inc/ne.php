@@ -11,6 +11,7 @@
  * @file
  *
  * @author Bhawani Gautam
+ * @author Krish Dulal
  * @author RajeshPandey
  */
 
@@ -39,6 +40,7 @@ $messages['date_format'] = 'मम दिदि, वववव';
 $messages['order'] = 'क्रम';
 $messages['newest_first'] = 'नयाँहरू पहिले';
 $messages['oldest_first'] = 'पुराना पहिला';
+$messages['search_method'] = 'खोज्ने तरिका';
 $messages['binary'] = 'द्विआधारी';
 $messages['linear'] = 'रैखिक';
 $messages['ignore_minors'] = 'साना परिवर्तनहरु अनदेखा गर्ने (प्रायोगिक)';

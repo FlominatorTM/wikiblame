@@ -16,6 +16,7 @@
  * @author Nedergard
  * @author Nike
  * @author Silvonen
+ * @author VezonThunder
  */
 
 $messages['January'] = 'tammikuu';
@@ -62,6 +63,7 @@ $messages['execution_time'] = 'Suoritusaika: _EXECUTIONTIME_ sekuntia';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiota löytynyt';
 $messages['please_wait'] = 'Odota ...';
 $messages['once_more'] = 'Uusi yritys:';
+$messages['binary_enough'] = 'Yritettiin uudelleen tarpeeksi monta kertaa. Artikkelin historia on melko sekaisin, kokeile muuttaa joitakin asetuksia.';
 $messages['help_translating'] = 'Auta kääntämisessä – translatewiki.net';
 $messages['start_here'] = 'Etsi täältä';
 $messages['not_found_at_all'] = 'Hakuehtoa ei löytynyt lainkaan. Tarkista asetukset ja yritä uudelleen.';

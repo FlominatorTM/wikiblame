@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Blahma
  * @author Lucas
  * @author Mihxil
  * @author Objectivesea
@@ -72,4 +73,4 @@ $messages['deletion_found'] = 'Forigo troviĝis inter LEFT_VERSION kaj RIGHT_VER
 $messages['help_translating'] = 'Helpi tradukadon ĉe translatewiki.net';
 $messages['start_here'] = 'Ekserĉi ĉi tie';
 $messages['too_much_versions'] = 'Vi atingis petolimon de __VERSIONLIMIT__ da versioj. Bonvolu reprovi post __WAITMINUTES__ da minutoj aŭ ŝanĝu al binara interpolado. Pardonu pro tio.';
-$messages['not_found_at_all'] = 'Via serĉtermino entute ne troveblis. Ĉu vi certas, ke vi uzis la ĝustajn agordojn?';
+$messages['not_found_at_all'] = 'Via serĉtermino entute ne troveblis. Kontrolu la agordojn kaj reprovu.';

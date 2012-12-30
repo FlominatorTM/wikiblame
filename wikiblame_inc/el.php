@@ -14,6 +14,7 @@
  * @author Consta
  * @author Crazymadlover
  * @author Evropi
+ * @author Geraki
  * @author Glavkos
  * @author Omnipaedista
  */
@@ -67,4 +68,4 @@ $messages['deletion_found'] = 'Διαγραφή διαπιστώθηκε μετ�
 $messages['help_translating'] = 'Βοηθήστε στη μετάφραση στο translatewiki.net';
 $messages['start_here'] = 'Αναζήτηση από εδώ';
 $messages['too_much_versions'] = 'Έχετε φτάσει το όριο ερωτήματος των __VERSIONLIMIT__ εκδόσεων. Δοκιμάστε ξανά σε __WAITMINUTES__ λεπτά ή μεταβείτε σε δυαδικό αναζήτησης. Συγγνώμη για την ταλαιπωρία.';
-$messages['not_found_at_all'] = 'Δεν βρέθηκε καθόλου ο όρος αναζήτησής σας. Είστε βέβαιοι ότι έχετε τις σωστές ρυθμίσεις;';
+$messages['not_found_at_all'] = 'Δεν βρέθηκε καθόλου ο όρος αναζήτησής σας. Ελέγξτε τις ρυθμίσεις και δοκιμάστε ξανά.';
