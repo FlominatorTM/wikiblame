@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Papuass
  * @author Xil
  */
 
@@ -45,3 +46,6 @@ $messages['start'] = 'Meklēt';
 $messages['reset'] = 'Notīrīt';
 $messages['manual'] = 'Rokasgrāmata';
 $messages['contact'] = 'Kontakti';
+$messages['execution_time'] = 'Izpildes laiks: _EXECUTIONTIME_ sekundes';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ versijas atrastas';
+$messages['please_wait'] = 'Lūdzu, uzgaidiet...';

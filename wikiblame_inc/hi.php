@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ansumang
  * @author Htt
  * @author Siddhartha Ghai
  */
@@ -26,6 +27,7 @@ $messages['September'] = 'सितम्बर';
 $messages['October'] = 'अक्टूबर';
 $messages['November'] = 'नवम्बर';
 $messages['December'] = 'दिसम्बर';
+$messages['ui_lang'] = 'प्रदर्शन भाषा';
 $messages['lang'] = 'भाषा';
 $messages['project'] = 'परियोजना';
 $messages['article'] = 'लेख';
