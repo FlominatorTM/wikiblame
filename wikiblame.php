@@ -718,12 +718,10 @@ function get_revision($id)
 	{
 		//remove the html tags (not included above because of <ref> and others)
 		$versionpage = get_request($server, $url);
-		$indexOfContent = strpos($versionpage, "-- content --");
-		//remove head 
-		$versionpage = strip_tags(substr($versionpage, $indexOfContent));
+		//remove header and footer
+		$versionpage = strip_tags(chop_content($versionpage));
 	}
 
-	
 	/*
 		//php replacement for command line
 		$url = str_replace("&", "\&", $url); 
@@ -1156,22 +1154,6 @@ function Get_UTC_Hours($localHours, $server)
 	$offsetToUtc = $SiteInfo['query']['general']['timeoffset'];
 	$UtcHours = $localHours -($offsetToUtc / 60);
 	return $UtcHours;
-}
-function analyse_array($arr)
-{
-	echo "<dir>";
-	echo count($arr)." Element(e)<br>";
-	$keys = array_keys($arr);
-	
-	foreach($keys as $key)
-	{
-		echo "Array[".$key."]=".$arr[$key]."<br>";
-		if(is_array($arr[$key]))
-		{
-			analyse_array($arr[$key]);
-		}
-	}
-	echo "</dir>";
 }
 
 ?>
