@@ -68,4 +68,4 @@ $messages['insertion_found'] = 'LEFT_VERSION 和 RIGHT_VERSION 之间发现了�
 $messages['deletion_found'] = 'LEFT_VERSION 和 RIGHT_VERSION 之间发现了删除';
 $messages['help_translating'] = '在Translatewiki.net帮助翻译';
 $messages['start_here'] = '从这里开始搜索';
-$messages['not_found_at_all'] = '在所有未找到你的搜索词。是否确定你正确设置吗？';
+$messages['not_found_at_all'] = '完全找不到您的搜寻词。请检查设置后重试。';
