@@ -15,6 +15,7 @@
  * @author Luckas Blade
  * @author Pedroca cerebral
  * @author Raylton P. Sousa
+ * @author Tuliouel
  */
 
 $messages['January'] = 'Janeiro';
@@ -73,4 +74,4 @@ $messages['deletion_found'] = 'O texto foi retirado entre a edição LEFT_VERSIO
 $messages['help_translating'] = 'Ajude a traduzir no translatewiki.net';
 $messages['start_here'] = 'Procurar a partir daqui';
 $messages['too_much_versions'] = 'Você atingiu o seu limite de consultas, de __VERSIONLIMIT__ versões. Tente novamente dentro de __WAITMINUTES__ minutos ou mude para pesquisa binária. Desculpe pelo transtorno.';
-$messages['not_found_at_all'] = 'O termo de pesquisa não foi encontrado de todo. Tem a certeza que tem as configurações corretas?';
+$messages['not_found_at_all'] = 'Seu termo não foi encontrado. Verifique as configurações e tente outra vez.';
