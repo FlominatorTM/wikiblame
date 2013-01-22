@@ -16,6 +16,7 @@
  * @author Lou Crazy
  * @author McDutchie
  * @author Purodha
+ * @author Shirayuki
  * @author Siebrand
  */
 
@@ -50,9 +51,11 @@ $messages['ui_lang'] = 'Appears above dropdown list of languages. See [http://wi
 $messages['lang'] = 'Text before input box. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Language}}';
+$messages['lang_example'] = '{{Optional}}';
 $messages['project'] = 'Text before input box. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Project}}';
+$messages['project_example'] = '{{Optional}}';
 $messages['article'] = 'Text before input box. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Page}}';
@@ -64,14 +67,16 @@ $messages['start_date'] = 'Label of date input boxes. See [http://wikipedia.rams
 
 {{Identical|Start date}}';
 $messages['date_format'] = 'Format string to describe how dates have to be displayed. Must contain these symbols: "MM" (month) "DD" (day) and "YYYY" (year). Example in en would be MM DD, YYYY. Do not localise the symbols as this message will not appear in the interface (although as of 25.1.11 it does appear, during the implementation of the formats and localisation for major languages - see [http://sourceforge.net/tracker/?func=detail&aid=3164948&group_id=261179&atid=1127548 sourceforge]. Please note that the input box for the month shows the month names, which are translated in other Wikiblame messages in this group. See [http://wikipedia.ramselehof.de/wikiblame.php Wikiblame interface].';
-$messages['order'] = 'Label for search option radio buttons, \'latest first\' and \'oldest first\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
+$messages['order'] = 'Label for search option radio buttons, \'latest first\' and \'oldest first\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|Order}}';
 $messages['newest_first'] = 'Radio button option for search \'order\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['oldest_first'] = 'Radio button option for search \'order\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['search_method'] = 'Label for search options \'linear\' and \'binary\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['binary'] = 'Radio button option for \'search method\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 <br />
 There is a [[w:en:Binary_search_algorithm|Wikipedia article explaining how it works]].';
-$messages['binary_in_wp'] = 'Link to your local wikipedia article about Binary_search_algorithm';
+$messages['binary_in_wp'] = '{{Optional}}
+Link to your local wikipedia article about Binary_search_algorithm';
 $messages['linear'] = 'Radio button option for \'search method\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['interpolated'] = 'Interpolated is a binary search. It is faster than linear search when a lot of versions have to be checked. Radio button option for search \'order\' (not yet used?). See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['ignore_minors'] = 'Checkbox option. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
