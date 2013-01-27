@@ -46,8 +46,8 @@ $src_old_cut = $_REQUEST['old_cut'];
 $src_new_cut = $_REQUEST['new_cut'];
 echo "<!--". strlen($src_old_cut )." -->";;
 
-$template_names = array("Überarbeiten", "Belege fehlen", "Lückenhaft", "Neutralität","NurListe", "Unverständlich", "Defekte Weblinks", "Geographische Lage gewünscht", "Veraltet", "Widerspruch", "Internationalisierung (Deutschlandlastig, Österreichlastig, Schweizlastig)", "(Portal-)Qualitätssicherung", "Redundanz", "Gemeinfreie Quellen (Meyers, Pierer-1857, Brockhaus, ...)", "Bilderwunsch", "virtueller Wartungsbaustein", "Fachbereichs-Wartungsliste");
-$template_shortcuts = array("ü", "q", "lü", "pov", "nl", "uv", "dw", "geo", "alt", "ws", "inter", "qs", "red", "gq", "bw", "virt", "fwl");
+$template_names = array("Überarbeiten", "Belege fehlen", "Lückenhaft", "Neutralität","NurListe", "Unverständlich", "Defekte Weblinks", "Geographische Lage gewünscht", "Veraltet", "Widerspruch", "Internationalisierung (Deutschlandlastig, Österreichlastig, Schweizlastig)", "(Portal-)Qualitätssicherung", "Redundanz", "Gemeinfreie Quellen (Meyers, Pierer-1857, Brockhaus, ...)", "Bilderwunsch", "Überbildert", "Fachbereichs-Wartungsliste");
+$template_shortcuts = array("ü", "q", "lü", "pov", "nl", "uv", "dw", "geo", "alt", "ws", "inter", "qs", "red", "gq", "bw", "übb", "fwl");
 $rater = $_REQUEST['rater'];
 $server= $lang.".".$project.".org";
 
