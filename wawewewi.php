@@ -145,7 +145,7 @@ function get_additional_points()
 	$add = 0;
 	$add+= getint('num_sources') * 0.5;
 	$add+=degressive_rating(getint('num_coord'));
-	$add+=degressive_rating(getint('num_redir'));
+	$add+=degressive_rating(getint('num_dw'));
 	$add+=image_rating(getint('num_upload'));
 	return $add;
 }
@@ -188,6 +188,8 @@ function image_rating($num_cases)
 
 function degressive_rating($num_cases)
 {
+	$first_improvement = 0.4;
+	$every_other_improvement = 0.15;
 	$points_return = 0.0;
 	switch($num_cases)
 	{
@@ -198,13 +200,13 @@ function degressive_rating($num_cases)
 		}
 		case "1":
 		{
-			$points_return+=  0.5;
+			$points_return+=  $first_improvement;
 			break;
 		}
 		default:
 		{
-			$points_return+= 0.5;
-			$points_return+= (0.25) * ($num_cases-1); 
+			$points_return+= $first_improvement;
+			$points_return+= ($every_other_improvement) * ($num_cases-1); 
 			break;
 		}
 	}
@@ -286,8 +288,8 @@ function ask_to_cut_org($oldid, $diff)
 	. "<label for=\"template\">Wartungsbaustein&nbsp;</label>" .	 array_drop ("template",  $template_names) ."<br>"
 	. "<label for=\"num_sources\">Anzahl verschiedene Belege&nbsp;</label>" 
 	. "<input name=\"num_sources\" id=\"num_sources\"><br>" 
-	. "<label for=\"num_redir\">Anzahl erstellter Weiterleitungen&nbsp;</label>" 
-	. "<input name=\"num_redir\" id=\"num_redir\"><br>" 
+	. "<label for=\"num_dw\">Anzahl reparierter Weblinks&nbsp;</label>" 
+	. "<input name=\"num_dw\" id=\"num_dw\"><br>" 
 	. "<label for=\"num_upload\">Anzahl neu hochgeladener Bilder&nbsp;</label>" 
 	. "<input name=\"num_upload\" id=\"num_upload\"><br>" 
 	. "<label for=\"num_coord\">Anzahl hinzugefügter Koordinaten&nbsp;</label>" 
