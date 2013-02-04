@@ -1,7 +1,7 @@
 <?header('Content-Type: text/html; charset=utf-8'); 
   
 require_once("shared_inc/wiki_functions.inc.php");
-$comment_choices = array("keine", "Text eingeben", "Diskussionsseite", "Doppelbewertung wünschen");
+$comment_choices = array("keine", "Text eingeben", "Diskussionsseite", "Doppelbewertung wünschen", "an A-Schiri weitergeben");
 ?><!-- checks the similarity of two revisions and helps to rate articles and maintenance template contest, called by http://de.wikipedia.org/wiki/Benutzer:Flominator/WaWeWeWi.js -->
 <html>
  <head>
@@ -30,6 +30,12 @@ function SetComment(selectedComment)
 	  { 
 		commentBox.readOnly = true;
 		commentBox.value = "Doppelbewertung erwünscht";
+		break;
+	  }
+	  case "<?echo $comment_choices[4]?>":
+	  { 
+		commentBox.readOnly = false;
+		commentBox.value = "Weitergabe an A-Schiri";
 		break;
 	  }
 	  default: //"keine"
