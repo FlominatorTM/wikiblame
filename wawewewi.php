@@ -57,7 +57,12 @@ $diff = getint('diff');
 order_old_and_diff(&$oldid, &$diff);
 
 $difflink = "http://$lang.$project.org/w/index.php?title=$articleenc&diff=$diff&oldid=$oldid";
-echo "[<a href=\"$difflink\">Diff-Link</a>]<br>";
+$afterlink = "http://$lang.$project.org/w/index.php?title=$articleenc&oldid=$oldid";
+$beforelink= "http://$lang.$project.org/w/index.php?title=$articleenc&oldid=$diff";
+echo "[<a href=\"$beforelink\">vorher</a>]&nbsp;";
+echo "[<a href=\"$difflink\">Diff-Link</a>]&nbsp;";
+echo "[<a href=\"$afterlink\">nachher</a>]&nbsp;";
+echo "<br>";
 
 if($src_old_cut=="")
 {
