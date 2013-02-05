@@ -391,7 +391,7 @@ function get_source_code($article, $rev)
 function remove_table_attributes($src_text)
 {
 	$table_parts = explode("|", $src_text);
-	$table_syntax = array("style=", "class=", "width=", "height=", "align=", "bgcolor=", "rowspan=", "colspan=");
+	$table_syntax = array("style=", "class=", "width=", "height=", "align=", "bgcolor=", "rowspan=", "colspan=", "valign=");
 	
 	for($i=0;$i<count($table_parts);$i++)
 	{
