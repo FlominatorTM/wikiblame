@@ -2,6 +2,8 @@
   
 require_once("shared_inc/wiki_functions.inc.php");
 $comment_choices = array("keine", "Text eingeben", "Diskussionsseite", "Doppelbewertung wünschen", "an A-Schiri weitergeben");
+
+$forwardText = "Weitergabe an A-Schiri";
 ?><!-- checks the similarity of two revisions and helps to rate articles and maintenance template contest, called by http://de.wikipedia.org/wiki/Benutzer:Flominator/WaWeWeWi.js -->
 <html>
  <head>
@@ -35,7 +37,7 @@ function SetComment(selectedComment)
 	  case "<?echo $comment_choices[4]?>":
 	  { 
 		commentBox.readOnly = false;
-		commentBox.value = "Weitergabe an A-Schiri";
+		commentBox.value = "<?echo $forwardText ?>";
 		break;
 	  }
 	  default: //"keine"
@@ -128,11 +130,8 @@ else
 	
 	$comments = $_REQUEST['commentText'];
 	$anm = "";
-	if($comments !="")
-	{
-		$anm = "|anm=" . $comments;
-	}
-	
+	$wasForwarded = stristr($comments, $forwardText);
+
 	$freeSummand = get_additional_points();
 	
 	$expectedPointResult = (($changeSummand + $additionSummand + $removalSummand + $freeSummand) / $virtualFactor) * $qualityFactor;
@@ -140,6 +139,23 @@ else
 	echo "Ähnlichkeit ohne Groß- und Kleinschreibung: " . $similarity  ."&nbsp;%\n<br>";
 	echo "Differenz: " . $len_diff . " Bytes<br>";
 	echo "zu erwartende Punktzahl: ". round($expectedPointResult,1 ); 
+	
+	if($comments !="")
+	{
+		if($wasForwarded) //stristr($comments, $comment_choices[4]
+		{
+			unset($v);
+			unset($len_new);
+			unset($similarity);
+			unset($freeSummand);
+			unset($nodiff);
+			unset($virt);
+			unset($ql);
+		}
+		$anm = "|anm=" . $comments;
+		
+	}
+	
 	
 	echo "<textarea cols=\"150\">{{WBWB|wb=".$template_shortcuts[$template]."|v=$v|n=$len_new|ä=".$similarity."|frei=".$freeSummand."|sr=$rater". $nodiff.$virt.$ql.$anm."}}</textarea>";
 	
@@ -290,6 +306,7 @@ function ask_to_cut_org($oldid, $diff)
 	<textarea id=\"old_cut\" name=\"old_cut\" cols=\"80\" rows=\"25\">".($src_old)."</textarea><br/>"
 	. "<a href='#' onclick=\"javascript:document.getElementById('new_cut').style['display']='block'\">Hier klicken, um die verbesserte Version zu bearbeiten, um z.B. Nichtteilnehmer-Beiträge zu entfernen&nbsp;</a><br><br>" 
 	."<textarea style=\"display: none;\" id=\"new_cut\" name=\"new_cut\" cols=\"80\" rows=\"25\">".($src_new)."</textarea><br/>
+	
 	<!-- <input name=\"old_cut\" value=\"".htmlentities($src_old)."\">-->
 	<input type=\"hidden\" name=\"diff\" value=\"$diff\">
 	<input type=\"hidden\" name=\"article\" value=\"$article\">
@@ -363,6 +380,23 @@ function get_source_code($article, $rev)
 	return $article_text;
 }
 
+function remove_table_attributes($src_text)
+{
+	$table_parts = explode("|", $src_text);
+	$table_syntax = array("style", "class", "width", "height", "align", "bgcolor", "rowspan", "colspan");
+	
+	for($i=0;$i<count($table_parts);$i++)
+	{
+		foreach($table_syntax as $one_syntax_word)
+		{
+			if(stristr(strtolower($table_parts[$i]), $one_syntax_word))
+			{
+				$table_parts[$i] = "";
+			}
+		}
+	}
+	return join("|",$table_parts); 
+}
 
 ?>
 </body>
