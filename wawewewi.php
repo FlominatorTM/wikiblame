@@ -65,8 +65,8 @@ $diff = getint('diff');
 order_old_and_diff(&$oldid, &$diff);
 
 $difflink = "http://$lang.$project.org/w/index.php?title=$articleenc&diff=$diff&oldid=$oldid";
-$afterlink = "http://$lang.$project.org/w/index.php?title=$articleenc&oldid=$oldid";
-$beforelink= "http://$lang.$project.org/w/index.php?title=$articleenc&oldid=$diff";
+$afterlink = "http://$lang.$project.org/w/index.php?title=$articleenc&oldid=$diff";
+$beforelink= "http://$lang.$project.org/w/index.php?title=$articleenc&oldid=$oldid";
 echo "[<a href=\"$beforelink\">vorher</a>]&nbsp;";
 echo "[<a href=\"$difflink\">Diff-Link</a>]&nbsp;";
 echo "[<a href=\"$afterlink\">nachher</a>]&nbsp;";
@@ -300,9 +300,17 @@ function ask_to_cut_org($oldid, $diff)
 		
 	$src_old = removeheaders(get_source_code($article, $oldid));
 	$src_new = removeheaders(get_source_code($article, $diff));
+	$other_remove_link = "Falls viel an Tabellen geändert wurde, willst du vielleicht <a href=\"?article=$article&oldid=$oldid&diff=$diff&rater=$rater&project=$project&lang=$lang&remove_table=true\">kosmetische Tabellensyntax entfernen</a>";
+	if($_REQUEST['remove_table']=="true")
+	{
+		$src_old = remove_table_attributes($src_old);
+		$src_new = remove_table_attributes($src_new);
+		$other_remove_link = "Tabellensyntax wurde entfernt. Willst du sie vielleicht doch <a href=\"?article=$article&oldid=$oldid&diff=$diff&rater=$rater&project=$project&lang=$lang&remove_table=false\">wieder einfügen</a>?";
+	}
 	echo "<form method=\"post\"   enctype=\"multipart/form-data\">
-
+	$other_remove_link <br />
 	Entferne zunächst eventuelle Wartungsbausteine aus dieser mangelhaften Version:<br />
+	
 	<textarea id=\"old_cut\" name=\"old_cut\" cols=\"80\" rows=\"25\">".($src_old)."</textarea><br/>"
 	. "<a href='#' onclick=\"javascript:document.getElementById('new_cut').style['display']='block'\">Hier klicken, um die verbesserte Version zu bearbeiten, um z.B. Nichtteilnehmer-Beiträge zu entfernen&nbsp;</a><br><br>" 
 	."<textarea style=\"display: none;\" id=\"new_cut\" name=\"new_cut\" cols=\"80\" rows=\"25\">".($src_new)."</textarea><br/>
@@ -383,7 +391,7 @@ function get_source_code($article, $rev)
 function remove_table_attributes($src_text)
 {
 	$table_parts = explode("|", $src_text);
-	$table_syntax = array("style", "class", "width", "height", "align", "bgcolor", "rowspan", "colspan");
+	$table_syntax = array("style=", "class=", "width=", "height=", "align=", "bgcolor=", "rowspan=", "colspan=");
 	
 	for($i=0;$i<count($table_parts);$i++)
 	{
