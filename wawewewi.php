@@ -85,6 +85,7 @@ else
 	
 	$len_old = strlen($src_old);
 	$len_new = strlen($src_new);
+
 	$len_diff = $len_new - $len_old;
 	$virtualFactor = 1;
 
@@ -144,13 +145,13 @@ else
 	{
 		if($wasForwarded) //stristr($comments, $comment_choices[4]
 		{
-			unset($v);
-			unset($len_new);
-			unset($similarity);
-			unset($freeSummand);
-			unset($nodiff);
-			unset($virt);
-			unset($ql);
+			$v="";
+			$len_new="";
+			$similarity="";
+			$freeSummand="";
+			$nodiff="";
+			$virt="";
+			$ql="";
 		}
 		$anm = "|anm=" . $comments;
 		
@@ -296,8 +297,8 @@ function remove_textarea_overhead($text)
 }
 function ask_to_cut_org($oldid, $diff)
 {
-	global $src_old, $article, $diff, $lang, $project, $template_names, $rater, $comment_choices, $server;
-		
+	global $src_old, $article, $diff, $lang, $project, $template_names, $rater, $comment_choices, $server, $forwardText;
+	$this_url = "article=$article&oldid=$oldid&diff=$diff&rater=$rater&project=$project&lang=$lang";
 	$src_old = removeheaders(get_source_code($article, $oldid));
 	$src_new = removeheaders(get_source_code($article, $diff));
 	$other_remove_link = "Falls viel an Tabellen geändert wurde, willst du vielleicht <a href=\"?article=$article&oldid=$oldid&diff=$diff&rater=$rater&project=$project&lang=$lang&remove_table=true\">kosmetische Tabellensyntax entfernen</a>";
@@ -305,39 +306,47 @@ function ask_to_cut_org($oldid, $diff)
 	{
 		$src_old = remove_table_attributes($src_old);
 		$src_new = remove_table_attributes($src_new);
-		$other_remove_link = "Tabellensyntax wurde entfernt. Willst du sie vielleicht doch <a href=\"?article=$article&oldid=$oldid&diff=$diff&rater=$rater&project=$project&lang=$lang&remove_table=false\">wieder einfügen</a>?";
+		$other_remove_link = "Tabellensyntax wurde entfernt. Willst du sie vielleicht doch <a href=\"?$this_url&remove_table=false\">wieder einfügen</a>?";
 	}
-	echo "<form method=\"post\"   enctype=\"multipart/form-data\">
-	$other_remove_link <br />
-	Entferne zunächst eventuelle Wartungsbausteine aus dieser mangelhaften Version:<br />
-	
-	<textarea id=\"old_cut\" name=\"old_cut\" cols=\"80\" rows=\"25\">".($src_old)."</textarea><br/>"
-	. "<a href='#' onclick=\"javascript:document.getElementById('new_cut').style['display']='block'\">Hier klicken, um die verbesserte Version zu bearbeiten, um z.B. Nichtteilnehmer-Beiträge zu entfernen&nbsp;</a><br><br>" 
-	."<textarea style=\"display: none;\" id=\"new_cut\" name=\"new_cut\" cols=\"80\" rows=\"25\">".($src_new)."</textarea><br/>
-	
-	<!-- <input name=\"old_cut\" value=\"".htmlentities($src_old)."\">-->
-	<input type=\"hidden\" name=\"diff\" value=\"$diff\">
-	<input type=\"hidden\" name=\"article\" value=\"$article\">
-	<input type=\"hidden\" name=\"lang\" value=\"$lang\">
-	<input type=\"hidden\" name=\"project\" value=\"$project\">
-	<input type=\"hidden\" name=\"oldid\" value=\"$oldid\">"
-	. "<label for=\"template\">Wartungsbaustein&nbsp;</label>" .	 array_drop ("template",  $template_names) ."<br>"
-	. "<label for=\"num_sources\">Anzahl verschiedene Belege&nbsp;</label>" 
-	. "<input name=\"num_sources\" id=\"num_sources\"><br>" 
-	. "<label for=\"num_dw\">Anzahl reparierter Weblinks&nbsp;</label>" 
-	. "<input name=\"num_dw\" id=\"num_dw\"><br>" 
-	. "<label for=\"num_upload\">Anzahl neu hochgeladener Bilder&nbsp;</label>" 
-	. "<input name=\"num_upload\" id=\"num_upload\"><br>" 
-	. "<label for=\"num_coord\">Anzahl hinzugefügter Koordinaten&nbsp;</label>" 
-	. "<input name=\"num_coord\" id=\"num_coord\"><br>" 
-	. "<label for=\"percent_quality\">Korrekturfaktor (in Prozent)&nbsp;</label>" 
-	. "<input name=\"percent_quality\" id=\"percent_quality\" value=\"100\"><br>" 
-	. "<label for=\"comment\">Anmerkung&nbsp;</label>" .	 array_drop ("comment", $comment_choices, "", "", "SetComment(this.options[this.selectedIndex].text)", $comment_choices[0]) ."<br>"
-	
-	. "<input name=\"commentText\"  id=\"commentText\" readonly size=\"100\"><br>" 
-	. "<label for=\"rater\">Schiedsrichter&nbsp;</label><br>"	
-	. "<input name=\"rater\"  id=\"rater\" value=\"$rater\"><br>"
-	."<input type=\"submit\" value=\"Auswerten\"></form>";
+	if(max(strlen($src_old), strlen($src_new))>110000 )
+	{
+		echo "<br><br>Mindestens eine der beiden Versionen ist zu lang, um sie per WaWeWeWi auswerten zu lassen. 
+		Bitte <a href=\"?$this_url&old_cut=empty&commentText=$forwardText".urlencode(" - zu lang")."\">gib sie an den A-Schiri weiter</a>.";
+	}
+	else
+	{
+		echo "<form method=\"post\"   enctype=\"multipart/form-data\">
+		$other_remove_link <br />
+		Entferne zunächst eventuelle Wartungsbausteine aus dieser mangelhaften Version:<br />
+		
+		<textarea id=\"old_cut\" name=\"old_cut\" cols=\"80\" rows=\"25\">".($src_old)."</textarea><br/>"
+		. "<a href='#' onclick=\"javascript:document.getElementById('new_cut').style['display']='block'\">Hier klicken, um die verbesserte Version zu bearbeiten, um z.B. Nichtteilnehmer-Beiträge zu entfernen&nbsp;</a><br><br>" 
+		."<textarea style=\"display: none;\" id=\"new_cut\" name=\"new_cut\" cols=\"80\" rows=\"25\">".($src_new)."</textarea><br/>
+		
+		<!-- <input name=\"old_cut\" value=\"".htmlentities($src_old)."\">-->
+		<input type=\"hidden\" name=\"diff\" value=\"$diff\">
+		<input type=\"hidden\" name=\"article\" value=\"$article\">
+		<input type=\"hidden\" name=\"lang\" value=\"$lang\">
+		<input type=\"hidden\" name=\"project\" value=\"$project\">
+		<input type=\"hidden\" name=\"oldid\" value=\"$oldid\">"
+		. "<label for=\"template\">Wartungsbaustein&nbsp;</label>" .	 array_drop ("template",  $template_names) ."<br>"
+		. "<label for=\"num_sources\">Anzahl verschiedene Belege&nbsp;</label>" 
+		. "<input name=\"num_sources\" id=\"num_sources\"><br>" 
+		. "<label for=\"num_dw\">Anzahl reparierter Weblinks&nbsp;</label>" 
+		. "<input name=\"num_dw\" id=\"num_dw\"><br>" 
+		. "<label for=\"num_upload\">Anzahl neu hochgeladener Bilder&nbsp;</label>" 
+		. "<input name=\"num_upload\" id=\"num_upload\"><br>" 
+		. "<label for=\"num_coord\">Anzahl hinzugefügter Koordinaten&nbsp;</label>" 
+		. "<input name=\"num_coord\" id=\"num_coord\"><br>" 
+		. "<label for=\"percent_quality\">Korrekturfaktor (in Prozent)&nbsp;</label>" 
+		. "<input name=\"percent_quality\" id=\"percent_quality\" value=\"100\"><br>" 
+		. "<label for=\"comment\">Anmerkung&nbsp;</label>" .	 array_drop ("comment", $comment_choices, "", "", "SetComment(this.options[this.selectedIndex].text)", $comment_choices[0]) ."<br>"
+		
+		. "<input name=\"commentText\"  id=\"commentText\" readonly size=\"100\"><br>" 
+		. "<label for=\"rater\">Schiedsrichter&nbsp;</label><br>"	
+		. "<input name=\"rater\"  id=\"rater\" value=\"$rater\"><br>"
+		."<input type=\"submit\" value=\"Auswerten\"></form>";
+	}
 }
 
 function hex_chars($data) {
