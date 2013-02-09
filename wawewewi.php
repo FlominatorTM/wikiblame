@@ -143,10 +143,10 @@ else
 	
 	if($comments !="")
 	{
-		if($wasForwarded) //stristr($comments, $comment_choices[4]
+		if($wasForwarded) //a referee should rate this one
 		{
-			$v="";
-			$len_new="";
+			$v="0";
+			$len_new="0";
 			$similarity="";
 			$freeSummand="";
 			$nodiff="";
