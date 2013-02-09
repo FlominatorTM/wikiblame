@@ -316,7 +316,6 @@ function ask_to_cut_org($oldid, $diff)
 	else
 	{
 		echo "<form method=\"post\"   enctype=\"multipart/form-data\">
-		$other_remove_link <br />
 		Entferne zunächst eventuelle Wartungsbausteine aus dieser mangelhaften Version:<br />
 		
 		<textarea id=\"old_cut\" name=\"old_cut\" cols=\"80\" rows=\"25\">".($src_old)."</textarea><br/>"
@@ -340,8 +339,8 @@ function ask_to_cut_org($oldid, $diff)
 		. "<input name=\"num_coord\" id=\"num_coord\"><br>" 
 		. "<label for=\"percent_quality\">Korrekturfaktor (in Prozent)&nbsp;</label>" 
 		. "<input name=\"percent_quality\" id=\"percent_quality\" value=\"100\"><br>" 
+		. "$other_remove_link <br />"
 		. "<label for=\"comment\">Anmerkung&nbsp;</label>" .	 array_drop ("comment", $comment_choices, "", "", "SetComment(this.options[this.selectedIndex].text)", $comment_choices[0]) ."<br>"
-		
 		. "<input name=\"commentText\"  id=\"commentText\" readonly size=\"100\"><br>" 
 		. "<label for=\"rater\">Schiedsrichter&nbsp;</label><br>"	
 		. "<input name=\"rater\"  id=\"rater\" value=\"$rater\"><br>"
