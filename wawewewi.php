@@ -158,10 +158,11 @@ else
 	}
 	
 	
-	echo "<textarea cols=\"150\">{{WBWB|wb=".$template_shortcuts[$template]."|v=$v|n=$len_new|ä=".$similarity."|frei=".$freeSummand."|sr=$rater". $nodiff.$virt.$ql.$anm."}}</textarea>";
-	
-
+	echo "<textarea cols=\"150\">{{WBWB|wb=".$template_shortcuts[$template]."|v=$v|n=$len_new|ä=".$similarity."|frei=".$freeSummand."|sr=$rater". $nodiff.$virt.$ql.$anm."}}</textarea><br>";
 }
+echo '[<a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>]&nbsp;';
+echo '[<a href="http://de.wikipedia.org/wiki/Benutzer_Diskussion:Flominator/WaWeWeWi.js">Feedback zu WaWeWeWi</a>]&nbsp;';
+echo '[<a href="http://de.wikipedia.org/wiki/Wikipedia_Diskussion:Wartungsbausteinwettbewerb">Feedback zum WBW</a>]';
 
 function getint($field)
 {
