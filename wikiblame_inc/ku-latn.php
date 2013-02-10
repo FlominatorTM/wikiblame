@@ -31,5 +31,6 @@ $messages['article'] = 'Rûpel';
 $messages['needle'] = 'Bigere li';
 $messages['start_date'] = 'Dema destpêkê';
 $messages['start'] = 'Destpêk';
+$messages['contact'] = 'Têkilî';
 $messages['please_wait'] = 'Ji kerema xwere bisekine ...';
 $messages['start_here'] = 'Ji vir lêbigere';

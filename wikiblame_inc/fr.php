@@ -11,6 +11,7 @@
  * @file
  *
  * @author Coyau
+ * @author Cquoi
  * @author Crochet.david
  * @author IAlex
  * @author Jean-Frédéric
@@ -42,14 +43,14 @@ $messages['skipversions'] = 'Toujours sauter x versions';
 $messages['ignorefirst'] = 'Ignorer les x premières versions';
 $messages['limit'] = 'Versions à vérifier';
 $messages['start_date'] = 'Date de début';
-$messages['date_format'] = 'DD MM YYYY';
+$messages['date_format'] = 'JJ MM AAAA';
 $messages['order'] = 'Ordre';
 $messages['newest_first'] = 'plus récent d\'abord';
 $messages['oldest_first'] = 'plus ancien d\'abord';
-$messages['binary_search_inverse'] = 'Rechercher du retrait de texte (binaire uniquement)';
+$messages['binary_search_inverse'] = 'Rechercher la suppression de texte (binaire uniquement)';
 $messages['search_method'] = 'méthode de recherche';
 $messages['binary'] = 'dichotomie';
-$messages['binary_in_wp'] = 'http://fr.wikipedia.org/wiki/Dichotomie';
+$messages['binary_in_wp'] = 'http://fr.wikipedia.org/wiki/Binary_search_algorithm|Algorithme de recherche binaire';
 $messages['linear'] = 'linéaire';
 $messages['interpolated'] = 'binaire (plus rapide avec plus de versions)';
 $messages['ignore_minors'] = 'ignorer les modifications mineures (expérimental)';

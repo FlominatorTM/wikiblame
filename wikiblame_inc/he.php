@@ -12,6 +12,7 @@
  *
  * @author Amire80
  * @author Flominator
+ * @author Neukoln
  * @author Rotemliss
  * @author YaronSh
  * @author Yoni <yonidebest AT  gmail.com>
@@ -38,19 +39,19 @@ $messages['needle'] = 'תוכן לחיפוש';
 $messages['skipversions'] = 'דלג תמיד על x גרסאות';
 $messages['ignorefirst'] = 'דלג על x הגרסאות הראשונות';
 $messages['limit'] = 'מספר גרסאות לבדיקה';
-$messages['start_date'] = 'תאריך התחלה';
+$messages['start_date'] = 'חיפוש אחורנית מתאריך';
 $messages['date_format'] = 'YYYY-MM-DD';
-$messages['order'] = 'סדר הבדיקה';
-$messages['newest_first'] = 'החדש ראשון';
-$messages['oldest_first'] = 'הישן ראשון';
-$messages['binary_search_inverse'] = 'לחפש מחיקת טקסט (בינארי בלבד)';
+$messages['order'] = 'סדר הבדיקה (בלינארי)';
+$messages['newest_first'] = 'מהעדכנית יותר לישנה';
+$messages['oldest_first'] = 'מהישנה יותר לעדכנית';
+$messages['binary_search_inverse'] = 'חיפוש מחיקת טקסט (בינארי בלבד)';
 $messages['search_method'] = 'שיטת חיפוש';
 $messages['binary'] = 'בינארי';
 $messages['binary_in_wp'] = 'http://he.wikipedia.org/wiki/%D7%97%D7%99%D7%A4%D7%95%D7%A9_%D7%91%D7%99%D7%A0%D7%90%D7%A8%D7%99';
 $messages['linear'] = 'לינארי';
-$messages['interpolated'] = 'בינארי (מהיר יותר עם יותר גרסאות)';
-$messages['ignore_minors'] = 'להתעלם מעריכות משניות (ניסיוני)';
-$messages['force_wikitags'] = 'לחייב לחפש טקסט ויקי';
+$messages['interpolated'] = 'בינארי (מהיר יותר כשיש מספר רב של גרסאות)';
+$messages['ignore_minors'] = 'התעלמות מעריכות משניות (ניסיוני)';
+$messages['force_wikitags'] = 'חיפוש כתחביר ויקי (מצב עריכה)';
 $messages['start'] = 'התחלה';
 $messages['reset'] = 'איפוס';
 $messages['manual'] = 'הסברים';
