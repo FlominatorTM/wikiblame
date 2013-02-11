@@ -47,6 +47,33 @@ function SetComment(selectedComment)
 	  }
     }
 }
+
+function RemoveTableAttributesBoth()
+{
+	var oldTextArea = document.getElementById('old_cut');
+	var newextArea = document.getElementById('new_cut');
+	oldTextArea.value = RemoveTableAttributesOne(oldTextArea.value);
+	newextArea.value = RemoveTableAttributesOne(newextArea.value);
+}
+
+function RemoveTableAttributesOne(SrcText)
+{
+	var TableParts =  SrcText.replace(/\n!/g, "\n|").split("|");
+	var TableSyntaxElements = new Array("style=", "class=", "width=", "height=", "align=", "bgcolor=", "rowspan=", "colspan=", "valign=");
+	var SyntaxTerminators = new Array("\n");
+	
+	for(var i=0;i<TableParts.length;i++)
+	{
+		for(var j=0;j<TableSyntaxElements.length;j++)
+		{
+			if(TableParts[i].toLowerCase().search(new RegExp(TableSyntaxElements[j]))!=-1)
+			{
+				TableParts[i] = "";
+			}
+		}
+	}
+	return TableParts.join("|"); 
+}
 </script>
 <?
 
@@ -302,13 +329,7 @@ function ask_to_cut_org($oldid, $diff)
 	$this_url = "article=$article&oldid=$oldid&diff=$diff&rater=$rater&project=$project&lang=$lang";
 	$src_old = removeheaders(get_source_code($article, $oldid));
 	$src_new = removeheaders(get_source_code($article, $diff));
-	$other_remove_link = "Falls viel an Tabellen geändert wurde, willst du vielleicht <a href=\"?article=$article&oldid=$oldid&diff=$diff&rater=$rater&project=$project&lang=$lang&remove_table=true\">kosmetische Tabellensyntax entfernen</a>";
-	if($_REQUEST['remove_table']=="true")
-	{
-		$src_old = remove_table_attributes($src_old);
-		$src_new = remove_table_attributes($src_new);
-		$other_remove_link = "Tabellensyntax wurde entfernt. Willst du sie vielleicht doch <a href=\"?$this_url&remove_table=false\">wieder einfügen</a>?";
-	}
+
 	if(max(strlen($src_old), strlen($src_new))>110000 )
 	{
 		echo "<br><br>Mindestens eine der beiden Versionen ist zu lang, um sie per WaWeWeWi auswerten zu lassen. 
@@ -340,7 +361,7 @@ function ask_to_cut_org($oldid, $diff)
 		. "<input name=\"num_coord\" id=\"num_coord\"><br>" 
 		. "<label for=\"percent_quality\">Korrekturfaktor (in Prozent)&nbsp;</label>" 
 		. "<input name=\"percent_quality\" id=\"percent_quality\" value=\"100\"><br>" 
-		. "$other_remove_link <br />"
+		. 'Tabellensyntax in obigen Textfeldern <a href="#" onclick="javascript:RemoveTableAttributesBoth();"> entfernen</a><br />'  
 		. "<label for=\"comment\">Anmerkung&nbsp;</label>" .	 array_drop ("comment", $comment_choices, "", "", "SetComment(this.options[this.selectedIndex].text)", $comment_choices[0]) ."<br>"
 		. "<input name=\"commentText\"  id=\"commentText\" readonly size=\"100\"><br>" 
 		. "<label for=\"rater\">Schiedsrichter&nbsp;</label><br>"	
@@ -396,26 +417,6 @@ function get_source_code($article, $rev)
 	}
 	return $article_text;
 }
-
-function remove_table_attributes($src_text)
-{
-	$table_parts = explode("|", str_replace("\n!", "\n|", $src_text));
-	$table_syntax = array("style=", "class=", "width=", "height=", "align=", "bgcolor=", "rowspan=", "colspan=", "valign=");
-	$syntax_terminators = array("\n");
-	
-	for($i=0;$i<count($table_parts);$i++)
-	{
-		foreach($table_syntax as $one_syntax_word)
-		{
-			if(stristr(strtolower($table_parts[$i]), $one_syntax_word))
-			{
-				$table_parts[$i] = "";
-			}
-		}
-	}
-	return join("|",$table_parts); 
-}
-
 ?>
 </body>
 </html>
