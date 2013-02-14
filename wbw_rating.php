@@ -107,73 +107,61 @@ $paragraphs = explode("\n======", $source_code_page);
 
 for($iParagraph=0;$iParagraph<count($paragraphs );$iParagraph++)
 {
-	//echo "<h1>Para $iParagraph before</h1>$paragraphs[$iParagraph] <hr>";
-	
-	$one_paragraph = $paragraphs[$iParagraph];
-	
-	for($i=1;$i<count($points_per_team);$i++)
+	echo "<h1>Para $iParagraph before</h1>".htmlspecialchars($paragraphs[$iParagraph])."<hr>";
+
+	for($i=0;$i<count($points_per_team);$i++)
 	{
 		$i_team_length = strlen($points_per_team[$i]["Team"]);
-		if(substr($one_paragraph, 0, $i_team_length)==$points_per_team[$i]["Team"])
+		if(substr($paragraphs[$iParagraph], 0, $i_team_length)==$points_per_team[$i]["Team"])
 		{
-			$points_of_this_team =  $points_per_team[$i]["Points"];
-			$result_template_name = "Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis";
-			$end_of_last_row = strrpos($one_paragraph, "-");
-
-			$end_of_wbw_table = "{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage|Ende der Wettbewerbstabelle=x}}" ;
-			$offset = 0;
-			if(stristr($one_paragraph, $end_of_wbw_table))
-			{
-				//echo "ende gefunden";
-				$end_of_last_row =  strpos($one_paragraph, $end_of_wbw_table);
-				//echo "end_of_last_row=$end_of_last_row";
-				//echo "len of end:". strlen($end_of_wbw_table);
-			}
-			
-			$beginning_of_template = $end_of_last_row;
-			
-			if(stristr($one_paragraph, $result_template_name))
-			{
-				$template_until_end = substr($one_paragraph, 0, $end_of_last_row);
-				$beginning_of_template = strrpos($template_until_end, "{");
-			}
-			
-			$points_of_this_team =  $points_per_team[$i]["Points"];
-			$result_param = "Ergebnis=$points_of_this_team";
-			
-			if($points_per_team[$i]["NumberMembers"] >= 4)
-			{
-				$result_param = "Rechnung+Ergebnis=<math>3\cdot \frac{". $points_per_team[$i]["TotalPoints"] ."}{". $points_per_team[$i]["NumberMembers"]."}=".$points_of_this_team."</math>";
-			}
-			
-			$text_to_insert = "{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis\n|Anker=".sprintf("%04d",$points_of_this_team)."|Zwischenergebnis=[http://de.wikipedia.org/w/index.php?title=".str_replace(" ", "_", $article)."&oldid=$oldid  ". strftime("%d.%m.")."]|$result_param}}\n";
-			
-			$paragraphs[$iParagraph] = substr($one_paragraph, 0, $beginning_of_template-1) . $text_to_insert. substr($one_paragraph, $end_of_last_row-1);
+			$paragraphs[$iParagraph] = update_one_team_paragraph($paragraphs[$iParagraph], $points_per_team[$i]);
 			$i = count($points_per_team);
 		}
 	}
-	//echo "<h1>Para $iParagraph after</h1>$paragraphs[$iParagraph] <hr>";
+	echo "<h1>Para $iParagraph after</h1>".htmlspecialchars($paragraphs[$iParagraph])." <hr>";
 }
 
 echo "<h1>Zwischenstände</h1>";
 echo "<textarea cols=\"80\" rows=\"25\">" . implode($paragraphs, "\n======"). "</textarea>";
 
-function strrpos_offset($haystack, $needle, $offset)
+function update_one_team_paragraph($one_paragraph, $point_set_this_team)
 {
-	$haystack_till_offset = $haystack;
-	
-	if($offset > 0)
+	global $article, $oldid;
+	echo "count ".count($point_set_this_team);
+
+	$result_template_name = "Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis";
+	$end_of_last_row = strrpos($one_paragraph, "-");
+
+	$end_of_wbw_table = "{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage|Ende der Wettbewerbstabelle=x}}" ;
+	$offset = 0;
+	if(stristr($one_paragraph, $end_of_wbw_table))
 	{
-		//from beginning
-		die("not implemented");
+		echo "ende gefunden";
+		$end_of_last_row =  strpos($one_paragraph, $end_of_wbw_table);
+		echo "end_of_last_row=$end_of_last_row";
+		//echo "len of end:". strlen($end_of_wbw_table);
 	}
-	else
-	{
-		//from end
-		$haystack_till_offset = substr($haystack, 0, strlen($haystack)+$offset);
-		echo $haystack_till_offset;
-	}
-	return strpos($haystack_till_offset, $needle);
 	
+	$beginning_of_template = $end_of_last_row;
+	
+	if(stristr($one_paragraph, $result_template_name))
+	{
+		echo "vorlage gefunden";
+		$template_until_end = substr($one_paragraph, 0, $end_of_last_row);
+		$beginning_of_template = strrpos($template_until_end, "{");
+		echo "beginning_of_template=$beginning_of_template";
+	}
+	echo "count points:". count($point_set_this_team);
+	$points_of_this_team =  $point_set_this_team["Points"];
+	$result_param = "Ergebnis=$points_of_this_team";
+	
+	if($point_set_this_team["NumberMembers"] >= 4)
+	{
+		$result_param = "Rechnung+Ergebnis=<math>3\cdot \frac{". $point_set_this_team["TotalPoints"] ."}{". $point_set_this_team["NumberMembers"]."}=".$points_of_this_team."</math>";
+	}
+	
+	$text_to_insert = "{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis\n|Anker=".sprintf("%04d",$points_of_this_team)."|Zwischenergebnis=[http://de.wikipedia.org/w/index.php?title=".str_replace(" ", "_", $article)."&oldid=$oldid  ". strftime("%d.%m.")."]|$result_param}}\n";
+	
+	return substr($one_paragraph, 0, $beginning_of_template-1) . $text_to_insert. substr($one_paragraph, $end_of_last_row-1);
 }
 ?>
