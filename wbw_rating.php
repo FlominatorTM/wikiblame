@@ -136,57 +136,89 @@ function print_form($wbw_page, $paragraphs)
 	echo '</form>';
 }
 
-function update_one_team_paragraph($one_paragraph, $point_set_this_team)
+function remove_existing_result_template($one_paragraph)
 {
-	global $article, $oldid, $is_debug;
-
-	$result_template_name = "Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis";
-	$end_of_template = strrpos($one_paragraph, "-"); //= end of the table rw
-
-	$is_last_row = false;
-	$end_of_wbw_table = "{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage|Ende der Wettbewerbstabelle=x}}" ;
-	$offset = 0;
-	if(stristr($one_paragraph, $end_of_wbw_table))
-	{
-		if($is_debug) echo "ende gefunden";
-		$end_of_template =  strpos($one_paragraph, $end_of_wbw_table);
-		if($is_debug) echo "end_of_template=$end_of_template";
-		$is_last_row = true;
-		//echo "len of end:". strlen($end_of_wbw_table);
-	}
-	
-	$beginning_of_template = $end_of_template;
-	
+	global $is_debug;
+	$result_template_name = "{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis";
+	$clean_paragraph = $one_paragraph;
 	if(stristr($one_paragraph, $result_template_name))
 	{
 		if($is_debug) echo "vorlage gefunden";
-		$template_until_end = substr($one_paragraph, 0, $end_of_template);
-		$beginning_of_template = strrpos($template_until_end, "{");
-		if($is_last_row )
+		$beginning_of_template = strpos($one_paragraph, $result_template_name);
+		if(substr($one_paragraph,$beginning_of_template-1, 1)=="\n")
 		{
-			//stuff between end of template and end of table
-			$end_of_template = strpos($one_paragraph, "}", $beginning_of_template)+3;
+			if($is_debug) echo "newline found and removed";
+			$beginning_of_template--;
 		}
-		//echo "beginning_of_template=$beginning_of_template";
-	}
+		$end_template_marker = "}}";
+		$end_of_template = strpos($one_paragraph, $end_template_marker, $beginning_of_template)+ strlen($end_template_marker);
+		$clean_paragraph = substr($one_paragraph, 0, $beginning_of_template) .  substr($one_paragraph, $end_of_template);
 		
-	$text_before = substr($one_paragraph, 0, $beginning_of_template-1);
-	$text_after = substr($one_paragraph, $end_of_template-1);
-	
-	$text_to_insert = "{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis\n|Anker=".sprintf("%04d",ceil($point_set_this_team["Points"]))."|Zwischenergebnis=[http://de.wikipedia.org/w/index.php?title=".str_replace(" ", "_", $article)."&oldid=$oldid ". strftime("%d.%m.")."]|" . GetResultParameter($point_set_this_team) ."}}\n";
-	
-	return  $text_before .   $text_to_insert .  $text_after;
+		if($is_debug)
+		{
+			echo "before removing: II" . $one_paragraph . "II<br>";
+			echo "after removing: II".  $clean_paragraph  . "II<br>";
+		}
+	}
+	return $clean_paragraph;
 }
 
-function GetResultParameter($point_set_this_team)
+function get_place_for_template_insertion($one_paragraph)
 {
+	global $is_debug;
+	$end_of_wbw_table = "\n<!-- ############" ;
+	$index_to_insert_result_template = strrpos($one_paragraph, "-")-2; //= end of the table row is \n|-
+	
+	if(stristr($one_paragraph, $end_of_wbw_table))
+	{
+		$index_to_insert_result_template =  strpos($one_paragraph, $end_of_wbw_table);
+	}
+	if ($is_debug) echo "insertion at  $index_to_insert_result_template";
+	return $index_to_insert_result_template;
+}
+
+function get_result_template($point_set_this_team)
+{
+	global $article, $oldid;
+	$anchor = sprintf("%04d",ceil($point_set_this_team["Points"]));
+	$permalink = "[http://de.wikipedia.org/w/index.php?title=".str_replace(" ", "_", $article)."&oldid=$oldid ". strftime("%d.%m.")."]";
+
 	$points_of_this_team =  $point_set_this_team["Points"];
 	$result_param = "Ergebnis=$points_of_this_team";
-	
 	if($point_set_this_team["NumberMembers"] >= 4)
 	{
 		$result_param = "Rechnung+Ergebnis=<math>3\cdot \frac{". $point_set_this_team["TotalPoints"] ."}{". $point_set_this_team["NumberMembers"]."}=".sprintf("%0.1f", $points_of_this_team)."</math>";
 	}
-	return $result_param;
+	
+	$text_to_insert = "\n{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis\n|Anker=$anchor|Zwischenergebnis=$permalink|".$result_param."}}";
+	return $text_to_insert;
 }
+
+function update_one_team_paragraph($one_paragraph, $point_set_this_team)
+{
+	global $article, $oldid, $is_debug;
+	$one_paragraph = remove_existing_result_template($one_paragraph);
+	$index_for_insertion = get_place_for_template_insertion($one_paragraph);
+	$result_template = get_result_template($point_set_this_team);
+		
+	//$text_before = substr($one_paragraph, 0, $index_for_insertion);
+	//$text_after = substr($one_paragraph, $index_for_insertion);
+	return str_insert($result_template, $one_paragraph, $index_for_insertion);
+	if($is_debug) 
+	{
+		$separator = "II";
+	}
+	return  $text_before .  $separator . $result_template .  $separator  .$text_after;
+}
+
+function str_insert($insertstring, $intostring, $offset) 
+{
+   $part1 = substr($intostring, 0, $offset);
+   $part2 = substr($intostring, $offset);
+ 
+   $part1 = $part1 . $insertstring;
+   $whole = $part1 . $part2;
+   return $whole;
+}
+ 
 ?>
