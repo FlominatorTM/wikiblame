@@ -153,7 +153,8 @@ function update_paragraphs($paragraphs, $points_per_team)
 			$i_team_length = strlen($points_per_team[$i]["Team"]);
 			if($is_debug) echo "i_team_length=$i_team_length";
 			if($is_debug) echo "comparing \"" . htmlspecialchars(substr($paragraphs[$iParagraph], 0, $i_team_length)) . "\" to  \"<b>" . $points_per_team[$i]["Team"]."\"</b><br>";
-			if(substr(htmlspecialchars($paragraphs[$iParagraph]), 0, $i_team_length)==$points_per_team[$i]["Team"])
+			$clean_team_name_from_source_code = substr(htmlspecialchars(strip_tags($paragraphs[$iParagraph])), 0, $i_team_length);
+			if($clean_team_name_from_source_code==$points_per_team[$i]["Team"])
 			{
 				if($is_debug) echo "found team " . $points_per_team[$i]["Team"];
 				$paragraphs[$iParagraph] = update_one_team_paragraph($paragraphs[$iParagraph], $points_per_team[$i]);
