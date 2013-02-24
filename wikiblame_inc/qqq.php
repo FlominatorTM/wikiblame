@@ -81,7 +81,8 @@ $messages['linear'] = 'Radio button option for \'search method\'. See [http://wi
 $messages['interpolated'] = 'Interpolated is a binary search. It is faster than linear search when a lot of versions have to be checked. Radio button option for search \'order\' (not yet used?). See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['ignore_minors'] = 'Checkbox option. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['force_wikitags'] = 'Checkbox option. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
-$messages['start'] = 'Text of the button to start the search. Translate as a verb. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
+$messages['start'] = 'Text of the button to start the search. Translate as a verb. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|Start}}';
 $messages['reset'] = 'Button text next to date input boxes. Resets to today\'s date. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Reset}}';
