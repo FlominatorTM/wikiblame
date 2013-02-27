@@ -172,6 +172,8 @@ function print_form($wbw_page, $paragraphs)
 	echo '<form method="post" action="'.$wbw_page.'&action=submit">';
 	echo '<input type="submit" value="Update"/><br>';
 	echo '<input type="hidden" name="wpSummary" value="Zwischenstände aktualisiert"/>';
+	echo '<input type="hidden" name="wpWatchthis" value="1"/>';
+	echo '<input type="hidden" name="wpDiff" value="Zwischenstände aktualisiert"/>';
 	echo '<input type="hidden" name="wpDiff" value="Zwischenstände aktualisiert"/>';
 	echo '<input type="hidden" name="wpStarttime" value="'. strftime("%Y%m%d%H%M%S", $time_on_wm_server). '" />';
 	echo '<input type="hidden" name="wpEdittime" value="" />';
