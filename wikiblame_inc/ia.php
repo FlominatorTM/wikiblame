@@ -70,4 +70,4 @@ $messages['deletion_found'] = 'Deletion trovate inter LEFT_VERSION e RIGHT_VERSI
 $messages['help_translating'] = 'Adjuta a traducer in translatewiki.net';
 $messages['start_here'] = 'Cercar ab hic';
 $messages['too_much_versions'] = 'Tu ha attingite le limite de consultas a __VERSIONLIMIT__ versiones. Per favor reproba post __WAITMINUTES__ minutas o cambia al recerca binari. Pardona le incommoditate.';
-$messages['not_found_at_all'] = 'Le parola a cercar non esseva trovate del toto. Es tu secur que le configuration es correcte?';
+$messages['not_found_at_all'] = 'Le termino de recerca non ha essite trovate. Verifica le configuration e reproba.';
