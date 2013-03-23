@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author ElangoRamanujam
  * @author Shanmugamp7
  * @author Surya Prakash.S.A.
  */
@@ -62,4 +63,4 @@ $messages['binary_test'] = 'வேறுபாடுகளை ஒப்பிட
 $messages['once_more'] = 'ஒருமுறை மேலும், உணர்வுடன்:';
 $messages['help_translating'] = 'translatewiki.net இல் மொழிபெயர்க்க உதவவும்.';
 $messages['start_here'] = 'இங்கிருந்து தேடுக';
-$messages['not_found_at_all'] = 'உங்கள் தேடல் சொல்லை  கண்டறிய முடியவில்லை.  நீங்கள் சரியான  அமைப்புகளை பெற்றுள்ளீர்கள் என்பதில் உறுதியாக உள்ளீர்களா?';
+$messages['not_found_at_all'] = 'உங்கள் தேடல் சொல்லை  கண்டறிய முடியவில்லை.  அமைப்புகளை சரி பார்த்துவிட்டு மறுபடியும் முயற்சிக்கவும்.';
