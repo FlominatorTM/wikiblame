@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Lezgia
  * @author Namik
  */
 
@@ -27,3 +28,7 @@ $messages['November'] = 'Цlехуьл';
 $messages['December'] = 'Фандукl';
 $messages['ui_lang'] = 'Дисплейдин чlал';
 $messages['lang'] = 'Чlал';
+$messages['project'] = 'Проekт';
+$messages['article'] = 'Чъин';
+$messages['needle'] = 'Жагъурунин цlар';
+$messages['skipversions'] = 'Вирибереда X журе ахъаюн';
