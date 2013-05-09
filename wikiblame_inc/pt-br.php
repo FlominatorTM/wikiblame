@@ -12,6 +12,7 @@
  *
  * @author Capmo
  * @author Giro720
+ * @author Luckas
  * @author Luckas Blade
  * @author Pedroca cerebral
  * @author Raylton P. Sousa

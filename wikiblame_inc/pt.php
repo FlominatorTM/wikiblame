@@ -12,6 +12,7 @@
  *
  * @author Flominator
  * @author Hamilton Abreu
+ * @author Luckas
  * @author Malafaya
  * @author Mosca
  * @author Waldir
@@ -30,8 +31,8 @@ $messages['October'] = 'Outubro';
 $messages['November'] = 'Novembro';
 $messages['December'] = 'Dezembro';
 $messages['ui_lang'] = 'Língua';
-$messages['lang'] = 'Língua do projecto';
-$messages['project'] = 'Projecto';
+$messages['lang'] = 'Língua';
+$messages['project'] = 'Projeto';
 $messages['article'] = 'Página';
 $messages['needle'] = 'Procurar';
 $messages['skipversions'] = 'Ignorar intervalos de x edições';

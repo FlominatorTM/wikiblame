@@ -11,6 +11,7 @@
  * @file
  *
  * @author Minh Nguyen
+ * @author Tuankiet65
  * @author Vinhtantran
  */
 
@@ -32,9 +33,9 @@ $messages['lang_example'] = 'vi, commons, …';
 $messages['project'] = 'Dự án';
 $messages['article'] = 'Trang';
 $messages['needle'] = 'Tìm';
-$messages['skipversions'] = 'Số phiên bản để luôn bỏ qua';
+$messages['skipversions'] = 'Luôn luôn bỏ qua x phiên bản';
 $messages['ignorefirst'] = 'Số phiên bản đầu tiên để bỏ qua';
-$messages['limit'] = 'Số phiên bản kiểm tra';
+$messages['limit'] = 'Số phiên bản để kiểm tra';
 $messages['start_date'] = 'Ngày bắt đầu';
 $messages['date_format'] = 'DD MM, YYYY';
 $messages['order'] = 'Thứ tự';
