@@ -7,6 +7,15 @@ include("shared_inc/wiki_functions.inc.php");
 $server = "$lang.$project.org";
 
 $wbw_page = "http://".$server."/w/index.php?title="."Wikipedia:Wartungsbausteinwettbewerb/".name_in_url($_REQUEST['edition']);
+$purge_page = "http://".$server."/w/api.php?action=purge&titles=Wikipedia:Wartungsbausteinwettbewerb/".name_in_url($_REQUEST['edition']);
+
+$purge = post_request($server, $purge_page, "", "");
+
+if($is_debug)
+{
+	echo "Purging returned $purge";
+}
+
 
 $points_per_team = rate_teams($server, $wbw_page);
 
