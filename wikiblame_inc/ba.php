@@ -13,6 +13,7 @@
  * @author Comp1089
  * @author Haqmar
  * @author Sagan
+ * @author Рустам Нурыев
  */
 
 $messages['January'] = 'Ғинуар (Һыуығай)';
@@ -55,7 +56,7 @@ $messages['get_less_versions'] = 'Һеҙ талап иткән һорауға б
 $messages['wrong_skips'] = 'Көйләүҙә хаталар. Әгәр беренсе __VERSIONSTOSKIP__ версиялар үткәрелһә, __VERSIONSTOSEARCH__ версияларының береһелә эҙләүҙә ҡатнашмаясаҡ.';
 $messages['search_in_progress_text'] = '_ARTICLELINK_ бите тарихында <b>_NEEDLE_</b> ғәҙәти текс кеүек эҙләнә.';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ бите тарихында _ARTICLELINK_ вики текс кеүек эҙләнә.';
-$messages['no_differences'] = 'Табылған версия араһында айырма юк.';
+$messages['no_differences'] = 'Табылған версия араһында айырма юҡ.';
 $messages['first_version'] = 'Үҙгәреүҙәр беренсе версияламы, һуңғы версияламы булырға тейеш?';
 $messages['first_version_present'] = '__NEEDLE__ беренсе тикшереүҙә уҡ бар ине, башланған урыны: __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Бәлки, иҫкерәк версияларҙа барҙыр.';
