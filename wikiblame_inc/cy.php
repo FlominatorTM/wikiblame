@@ -65,4 +65,4 @@ $messages['deletion_found'] = 'Cafodd y testun ei ddileu rhwng LEFT_VERSION a RI
 $messages['help_translating'] = 'Dewch draw i translatewiki.net i gyfieithu';
 $messages['start_here'] = 'Chwilier eto gan ddechrau yma';
 $messages['too_much_versions'] = 'Rydych wedi cyrraedd pen y nifer o fersiynau cewch eu holi ar unwaith, sef __VERSIONLIMIT__ fersiwn. Ceisiwch eto ymhen __WAITMINUTES__ munud neu newidiwch i chwilio\'n ddeuol. Mae\'n ddrwg gennym am yr anghyfleustra.';
-$messages['not_found_at_all'] = 'Ni chafwyd hyd i\'ch term chwilio o gwbl. Ydych chi\'n sicr bod y gosodiadau cywir gennych?';
+$messages['not_found_at_all'] = 'Ni chafwyd hyd i\'ch term chwilio o gwbl. Gwiriwch y gosodiadau, yna rhowch gynnig arall arni.';
