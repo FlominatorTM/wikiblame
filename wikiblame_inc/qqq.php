@@ -75,7 +75,8 @@ $messages['oldest_first'] = 'Radio button option for search \'order\'. See [http
 $messages['search_method'] = 'Label for search options \'linear\' and \'binary\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['binary'] = 'Radio button option for \'search method\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 <br />
-There is a [[w:en:Binary_search_algorithm|Wikipedia article explaining how it works]].';
+There is a [[w:en:Binary_search_algorithm|Wikipedia article explaining how it works]].
+{{Identical|Binary}}';
 $messages['binary_in_wp'] = '{{Optional}}
 Link to your local wikipedia article about Binary_search_algorithm';
 $messages['linear'] = 'Radio button option for \'search method\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
