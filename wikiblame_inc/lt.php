@@ -11,6 +11,7 @@
  * @file
  *
  * @author Eitvys200
+ * @author Mantak111
  */
 
 $messages['January'] = 'Sausis';
@@ -48,6 +49,11 @@ $messages['start'] = 'Pradėti';
 $messages['reset'] = 'Atnaujinti';
 $messages['manual'] = 'Instrukcija';
 $messages['contact'] = 'Susisiekti';
+$messages['no_differences'] = 'Jokių rastų skirtumų pataisymuose';
+$messages['first_version'] = 'Kaita turi būti įvykusios pirmosios arba paskutinės peržiūros?';
+$messages['earlier_versions_available'] = 'Yra tikriausiai ankstesnių versijų.';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ versijos rastos';
 $messages['please_wait'] = 'Prašome palaukti ...';
+$messages['once_more'] = 'Dar kartą, su jausmu:';
 $messages['help_translating'] = 'Padėkite versti translatewiki.net';
 $messages['start_here'] = 'Ieškoti iš čia';
