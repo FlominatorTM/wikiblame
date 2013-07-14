@@ -11,6 +11,8 @@
  * @file
  *
  * @author Sasan700
+ * @author Умар
  */
 
+$messages['lang'] = 'Мотт';
 $messages['project'] = 'Кхоллам';
