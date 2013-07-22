@@ -16,3 +16,4 @@
 
 $messages['lang'] = 'Мотт';
 $messages['project'] = 'Кхоллам';
+$messages['not_found_at_all'] = 'ХӀокху жоп дехарца хӀума ца карийна. ГӀирсе хьаже юху лаха.';
