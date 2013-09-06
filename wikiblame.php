@@ -435,7 +435,7 @@ if($needle!="")
 		$msg = str_replace('_ARTICLELINK_', "<a href=\"http://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress_text']);	
 	}
 
-	$msg = str_replace('_NEEDLE_', htmlentities($needle),$msg);
+	$msg = str_replace('_NEEDLE_', $needle,$msg);
 	echo "$msg<br>\n";
 	
 	$history = get_request($server, $historyurl);
