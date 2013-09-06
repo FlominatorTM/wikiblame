@@ -4,8 +4,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link rel="icon" href="WikiBlame.png" type="image/png" />
-		<link rel="shortcut icon" href="WikiBlame.png" type="image/png" />
+		<link rel="icon" href="WikiBlame.png" type="image/png">
+		<link rel="shortcut icon" href="WikiBlame.png" type="image/png">
 		<title>WikiBlame</title>
 	</head><?
 
@@ -1000,7 +1000,7 @@ function get_diff_link($index, $order="prev")
 	global $versions, $server;
 	
 	$versionslink = str_replace("/w/", "http://".$server."/w/", $versions[$index])."</a>";
-	$versionslink = str_replace("oldid", "diff=".$order."&oldid", $versionslink);
+	$versionslink = str_replace("oldid", "diff=".$order."&amp;oldid", $versionslink);
 	return($versionslink);
 }
 
