@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author HanV
  * @author SPQRobin
  * @author Siebrand
  */
@@ -48,7 +49,7 @@ $messages['interpolated'] = 'binair (sneller bij meer versies)';
 $messages['ignore_minors'] = 'Kleine wijzigingen negeren (experimenteel)';
 $messages['force_wikitags'] = 'Zoeken naar wikitekst forceren';
 $messages['start'] = 'Uitvoeren';
-$messages['reset'] = 'Fomulier wissen';
+$messages['reset'] = 'Formulier wissen';
 $messages['manual'] = 'Handleiding';
 $messages['contact'] = 'Contact';
 $messages['get_less_versions'] = 'U kunt __NUMREVISIONS__ versies per keer doorzoeken. Om de server te beschermen kunt u __ALLOWEDREVISIONS__ per verzoek doorzoeken. Wijzig de instellingen of zoek binair.';
