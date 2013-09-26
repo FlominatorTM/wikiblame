@@ -14,6 +14,7 @@
  * @author Giro720
  * @author Luckas
  * @author Luckas Blade
+ * @author MisterSanderson
  * @author Pedroca cerebral
  * @author Raylton P. Sousa
  * @author Tuliouel
@@ -31,14 +32,14 @@ $messages['September'] = 'Setembro';
 $messages['October'] = 'Outubro';
 $messages['November'] = 'Novembro';
 $messages['December'] = 'Dezembro';
-$messages['ui_lang'] = 'Língua';
+$messages['ui_lang'] = 'Língua de exibição';
 $messages['lang'] = 'Língua';
 $messages['project'] = 'Projeto';
 $messages['article'] = 'Página';
-$messages['needle'] = 'Procurar';
+$messages['needle'] = 'Procurar por';
 $messages['skipversions'] = 'Ignorar intervalos de x edições';
 $messages['ignorefirst'] = 'Ignorar as primeiras x edições';
-$messages['limit'] = 'Número de edições a verificar';
+$messages['limit'] = 'Versões a checar';
 $messages['start_date'] = 'Data de início';
 $messages['date_format'] = 'DD/MM/YYYY';
 $messages['order'] = 'Ordem';
