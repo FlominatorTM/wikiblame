@@ -11,6 +11,7 @@
  * @file
  *
  * @author Dbc334
+ * @author Eleassar
  * @author Flominator
  * @author Irena Plahuta
  */
@@ -27,7 +28,7 @@ $messages['September'] = 'september';
 $messages['October'] = 'oktober';
 $messages['November'] = 'november';
 $messages['December'] = 'december';
-$messages['ui_lang'] = 'Prikazni jezik';
+$messages['ui_lang'] = 'Jezik prikaza';
 $messages['lang'] = 'Jezik';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Stran';
