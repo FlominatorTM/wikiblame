@@ -11,6 +11,7 @@
  * @file
  *
  * @author Flominator
+ * @author Hym411
  * @author Klutzy
  * @author Kwj2772
  * @author 아라
@@ -33,7 +34,7 @@ $messages['lang'] = '언어';
 $messages['project'] = '프로젝트';
 $messages['article'] = '문서';
 $messages['needle'] = '검색어';
-$messages['skipversions'] = '항상 몇 판는 건너뛰기';
+$messages['skipversions'] = '항상 몇 판은(는) 건너뛰기';
 $messages['ignorefirst'] = '처음 몇 판을 무시';
 $messages['limit'] = '확인할 판의 개수';
 $messages['start_date'] = '시작할 날짜';
