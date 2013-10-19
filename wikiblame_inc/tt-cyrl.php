@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ilnur efende
  * @author Ильнар
  */
 
@@ -69,4 +70,4 @@ $messages['deletion_found'] = 'Бетерүләр LEFT_VERSION һәм RIGHT_VERS
 $messages['help_translating'] = 'translatewiki.net сәхифәсендә тәрҗемә итергә ярдәм итү';
 $messages['start_here'] = 'Эзләүне моннан башларга';
 $messages['too_much_versions'] = 'Юарамал саны буенча сораулар чиккә җитте: __VERSIONLIMIT__. Зинһар, бу эшне __WAITMINUTES__ минуттан соң яңадан башкарып карагыз яисә икеле режимга күчегез. Китерелгән уңайсызлыклар өчен гафу итегез.';
-$messages['not_found_at_all'] = 'Сезнең соравгыз буенча бернидә табылмады. Сез дөрестәндә дөрес көйләнмәләр ясадыгызмы?';
+$messages['not_found_at_all'] = 'Сезнең соравыгыз буенча берни дә табылмады. Көйләнмәләрегезне тикшереп яңадан сорап карагыз.';
