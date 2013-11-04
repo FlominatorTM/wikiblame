@@ -11,6 +11,7 @@
  * @file
  *
  * @author Robby
+ * @author Soued031
  */
 
 $messages['January'] = 'Januar';
@@ -42,7 +43,7 @@ $messages['binary_search_inverse'] = 'Nom Läsche vum Text sichen (nëmmen am bi
 $messages['search_method'] = 'Sichmethod';
 $messages['binary'] = 'binaire';
 $messages['linear'] = 'linear';
-$messages['interpolated'] = 'binaire (bäi méi Versioune méi séier)';
+$messages['interpolated'] = 'binär (bei méi Versioune méi séier)';
 $messages['ignore_minors'] = 'Kleng ännerungen ignoréieren (experimentel)';
 $messages['force_wikitags'] = 'd\'Sichen op Wikitext limitéieren';
 $messages['start'] = 'Ufank';
@@ -64,8 +65,8 @@ $messages['binary_test'] = 'D\'Ënnerscheeder vu(n) _FIRSTDATEVERSION_ tësche(n
 $messages['dead_end'] = 'An enger Sakgaass hänkebliwwen (wahrscheinlech wéint Zerécksetze vun Artikelen oder Ännerungskonflikten)';
 $messages['once_more'] = 'Nach emol, mat Gefill:';
 $messages['binary_enough'] = 'D\'Sich gouf en etlech mol widderholl, den Historique vum Artikel ass net iwwersiichtlech, probéiert w.e.g. fir e puer Astellungen z\'änneren.';
-$messages['insertion_found'] = 'Insertioun tëschent LEFT_VERSION a(n) RIGHT_VERSION fonnt';
-$messages['deletion_found'] = 'Läschung fonnt tëschent LEFT_VERSION a(n) RIGHT_VERSION';
+$messages['insertion_found'] = 'Insertioun tëscht LEFT_VERSION a(n) RIGHT_VERSION fonnt';
+$messages['deletion_found'] = 'Läschung fonnt tëscht LEFT_VERSION a(n) RIGHT_VERSION';
 $messages['help_translating'] = 'Hëlleft iwwersetzen op translatewiki.net';
 $messages['start_here'] = 'Vun hei aus sichen';
 $messages['too_much_versions'] = 'Dir hutt d\'Limit vu(n) __VERSIONLIMIT__ Versiounen vun der Zuel vun Ären Ufroen erreecht. Waart w.e.g. __WAITMINUTES__ Minutten oder wiessel op d\'binair Sich. Pardon fir dës Limitatioun.';
