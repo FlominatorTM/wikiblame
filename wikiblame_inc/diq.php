@@ -11,22 +11,23 @@
  * @file
  *
  * @author Erdemaslancan
+ * @author Gorizon
  * @author Mirzali
  */
 
 $text_dir = 'ltr';
 $messages['January'] = 'Çele';
-$messages['February'] = 'Şıbate';
-$messages['March'] = 'Adar';
-$messages['April'] = 'Nisane';
-$messages['May'] = 'Gulane';
+$messages['February'] = 'Zemherı';
+$messages['March'] = 'Mert';
+$messages['April'] = 'Lisan';
+$messages['May'] = 'Gúlan';
 $messages['June'] = 'Heziran';
-$messages['July'] = 'Temuze';
-$messages['August'] = 'Tebaxe';
+$messages['July'] = 'Temuz';
+$messages['August'] = 'Ağustos';
 $messages['September'] = 'Keşkelun';
-$messages['October'] = 'Tışrino Verên';
-$messages['November'] = 'Tışrino Peyên';
-$messages['December'] = 'Kanun';
+$messages['October'] = 'Cetan';
+$messages['November'] = 'Kelverdan';
+$messages['December'] = 'Gağand';
 $messages['ui_lang'] = 'Zıwani bımocne';
 $messages['lang'] = 'Zıwan';
 $messages['project'] = 'Proce';
