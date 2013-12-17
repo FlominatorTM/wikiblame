@@ -13,6 +13,7 @@
  * @author Armando-Martin
  * @author Crazymadlover
  * @author DJ Nietzsche
+ * @author Fitoschido
  * @author McDutchie
  * @author Pertile
  * @author Peter17
@@ -68,7 +69,7 @@ $messages['first_version_present'] = '__NEEDLE__ ya estaba presente en la primer
 $messages['earlier_versions_available'] = 'Probablemente existan revisiones anteriores.';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
-$messages['please_wait'] = 'Por favor espera...';
+$messages['please_wait'] = 'Espera un momento…';
 $messages['binary_test'] = 'Comparando diferencias en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ y _SECONDNUMBER_ cuando vengan de _SOURCENUMBER_:';
 $messages['dead_end'] = 'Atrapados algunos sin salida (probablemente causados por reversiones o guerras de edición)';
 $messages['once_more'] = 'Una vez más, con sentimiento:';
