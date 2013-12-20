@@ -17,6 +17,7 @@
  * @author Mutarjem horr
  * @author OsamaK
  * @author ترجمان05
+ * @author محمد أحمد عبد الفتاح
  */
 
 $text_dir = 'rtl';
@@ -54,7 +55,7 @@ $messages['interpolated'] = 'ثنائي (أسرع بنسخ أكثر)';
 $messages['ignore_minors'] = 'تجاهل التغييرات الثانوية (تجريبية)';
 $messages['force_wikitags'] = 'إجبار البحث على نص ويكي';
 $messages['start'] = 'إبدأ';
-$messages['reset'] = 'إسترجع';
+$messages['reset'] = 'أعد الضبط';
 $messages['manual'] = 'دليل الإستعمال';
 $messages['contact'] = 'للإتصال';
 $messages['get_less_versions'] = 'يمكن لبحثك أن يظم __NUMREVISIONS__ تعديلات في وقت واحد. يسمح لك بالبحث عن __ALLOWEDREVISIONS__ لكل مكالمة، وذلك لحماية الخادم. رجاءً قم بتعديل الإعدادات أو حول طريقة البحث إلى ثنائي!';
