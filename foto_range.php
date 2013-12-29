@@ -28,7 +28,7 @@ if($article_to != "")
 		
 		foreach(OfferPage::GetAvailableServers() as $oneServer)
 		{
-			echo $oneServer.'<br>';
+			echo "<h2>$oneServer</h2>";
 			$offerpage = new OfferPage($oneServer);
 			$offerpage->ListUsersToRequest($locTo);
 		}
