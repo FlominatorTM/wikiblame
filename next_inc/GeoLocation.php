@@ -6,8 +6,10 @@ class GeoLocation
 	public $lat = -1;
 	public $iso = "";
 	public $name = "";
-	function __construct($article)
+	public $server;
+	function __construct($article, $server_in)
 	{
+		$this->server = $server_in;
 		$this->name = $article;
 		$this->getCoordinates();
 	}
@@ -16,8 +18,7 @@ class GeoLocation
 	{
 		if($this->name != "")
 		{
-			global $server;
-			$page="http://".$server."/w/api.php?action=query&prop=coordinates&titles=".name_in_url($this->name)."&format=xml";
+			$page="http://".$this->server."/w/api.php?action=query&prop=coordinates&titles=".name_in_url($this->name)."&format=xml";
 			print_debug($page);
 			$request_url = $page; 
 			$xml = simplexml_load_file($request_url);
