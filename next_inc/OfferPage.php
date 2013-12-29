@@ -2,18 +2,18 @@
 
 class OfferPage
 {
-	public $userOffers;
-	
-	function __construct($server) 
+	private $userOffers;
+	public $server;
+	function __construct($server_in) 
 	{
 		global $messages;
 		//echo "page=".$page;
-		
+		$this->server = $server_in;
 		$ConfigDir = 'next_inc/proj';
-		$ConfigFile = $ConfigDir . '/' . $server . '.php';
+		$ConfigFile = $ConfigDir . '/' . $this->server . '.php';
 		if(!file_exists($ConfigFile))
 		{
-			die(str_replace('_PROJECT_', $server, $messages['proj_not_supported']));
+			die(str_replace('_PROJECT_', $this->server, $messages['proj_not_supported']));
 		}
 		else
 		{
@@ -21,9 +21,9 @@ class OfferPage
 		}
 		
 		$offer_page_enc = name_in_url($OfferPageName);
-		$page = "http://".$server."/w/index.php?action=raw&title=".$offer_page_enc;
+		$page = "http://".$this->server."/w/index.php?action=raw&title=".$offer_page_enc;
 
-		$page_src = removeheaders(get_request($server, $page, true ));
+		$page_src = removeheaders(get_request($this->server, $page, true ));
 
 		//print_debug("page_src=".$page_src);
 		//print_debug("<hr><hr>");
@@ -36,7 +36,7 @@ class OfferPage
 
 			$usr = new OfferingUser($this->extractTemplateParameter($template, $TemplateUser));
 			
-			$location = new GeoLocation($this->extractTemplateParameter($template, $TemplateLocation));
+			$location = new GeoLocation($this->extractTemplateParameter($template, $TemplateLocation), $this->server);
 			$usr->SetLocation($location);
 			print_debug("<b>".$location->name."</b>");
 			$range = $this->extractTemplateParameter($template, $TemplateRange);
@@ -66,7 +66,7 @@ class OfferPage
 		
 		foreach($this->userOffers as $usr)
 		{
-			$resLine = $usr->LinkToUser() . "  (" . sprintf("%01.1f",$usr->distance)  . " km)";
+			$resLine = $usr->LinkToUser($this->server) . "  (" . sprintf("%01.1f",$usr->distance)  . " km)";
 			if($usr->IsInRange())
 			{
 				echo "<b>$resLine</b>";

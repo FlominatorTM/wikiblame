@@ -53,9 +53,8 @@ class OfferingUser
         return ($a->distance > $b->distance) ? +1 : -1;
     }
 	
-	public function LinkToUser()
+	public function LinkToUser($server)
 	{
-		global $server;
 		return "<a href=\"http://$server/wiki/User:" . $this->name . "\">" . $this->name . "</a>";
 	}
 }

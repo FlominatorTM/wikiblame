@@ -1,8 +1,6 @@
 <?header('Content-Type: text/html; charset=utf-8'); 
 //shows the context articles linked to one given article mention it by printing one sentence where it is used
 
-global $server;
-
 include("shared_inc/language.inc.php");
 include("shared_inc/wiki_functions.inc.php");
 include('next_inc/OfferingUser.php');	
@@ -24,7 +22,7 @@ $article_to = $_REQUEST['article_to'];
 if($article_to != "")
 {
 	echo '<h1>' . str_replace('_ARTICLE_TO_', $article_to, $messages['distance_to']) .'</h1>';
-	$locTo = new GeoLocation($article_to);
+	$locTo = new GeoLocation($article_to, $server);
 	if($locTo->IsValid())
 	{
 		$offerpage = new OfferPage($server);
