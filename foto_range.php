@@ -51,6 +51,8 @@ else
 	{
 		echo str_replace('_LOCATION_', $requested, $messages['no_coordinates']);
 	}
+	
+	echo "<br><br><a href=\"?lang=$lang&project=$project\">".$messages['new_request']."</a>";
 }
 
 function print_debug($str)
