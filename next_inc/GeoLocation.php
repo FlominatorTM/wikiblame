@@ -21,7 +21,7 @@ class GeoLocation
 			$page="http://".$this->server."/w/api.php?action=query&prop=coordinates&titles=".name_in_url($this->name)."&format=xml";
 			print_debug($page);
 			$request_url = $page; 
-			$xml = simplexml_load_file($request_url);
+			@$xml = simplexml_load_file($request_url);
 			
 			if($xml)
 			{
