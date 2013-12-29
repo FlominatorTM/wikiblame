@@ -28,8 +28,8 @@ if($article_to != "")
 		
 		foreach(OfferPage::GetAvailableServers() as $oneServer)
 		{
-			echo "<h2>$oneServer</h2>";
 			$offerpage = new OfferPage($oneServer);
+			echo "<h2><a href=\"https://$oneServer/wiki/$offerpage->pageEncoded\">$oneServer</a></h2>";
 			$offerpage->ListUsersToRequest($locTo);
 		}
 	}

@@ -4,6 +4,7 @@ class OfferPage
 {
 	private $userOffers;
 	public $server;
+	public $pageEncoded;
 	public static $CONFIG_DIR = 'next_inc/proj';
 	function __construct($server_in) 
 	{
@@ -21,8 +22,8 @@ class OfferPage
 			include($ConfigFile);
 		}
 		
-		$offer_page_enc = name_in_url($OfferPageName);
-		$page = "http://".$this->server."/w/index.php?action=raw&title=".$offer_page_enc;
+		$this->pageEncoded = name_in_url($OfferPageName);
+		$page = "http://".$this->server."/w/index.php?action=raw&title=".$this->pageEncoded;
 
 		$page_src = removeheaders(get_request($this->server, $page, true ));
 
