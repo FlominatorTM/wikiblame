@@ -9,7 +9,7 @@ include('next_inc/GeoLocation.php');
 
 
 $inc_dir = "next_inc/lang";
-//get the language file and decide whether rtl oder ltr is used
+//get the language file 
 $user_lang = read_language();
 get_language('en', $inc_dir); //not translated messages will be printed in English
 get_language($user_lang, $inc_dir);
@@ -25,8 +25,13 @@ if($article_to != "")
 	$locTo = new GeoLocation($article_to, $server);
 	if($locTo->IsValid())
 	{
-		$offerpage = new OfferPage($server);
-		$offerpage->ListUsersToRequest($locTo);
+		
+		foreach(OfferPage::GetAvailableServers() as $oneServer)
+		{
+			echo $oneServer.'<br>';
+			$offerpage = new OfferPage($oneServer);
+			$offerpage->ListUsersToRequest($locTo);
+		}
 	}
 	else
 	{

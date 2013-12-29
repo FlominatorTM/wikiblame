@@ -4,13 +4,14 @@ class OfferPage
 {
 	private $userOffers;
 	public $server;
+	public static $CONFIG_DIR = 'next_inc/proj';
 	function __construct($server_in) 
 	{
 		global $messages;
 		//echo "page=".$page;
 		$this->server = $server_in;
-		$ConfigDir = 'next_inc/proj';
-		$ConfigFile = $ConfigDir . '/' . $this->server . '.php';
+
+		$ConfigFile = self::$CONFIG_DIR . '/' . $this->server . '.php';
 		if(!file_exists($ConfigFile))
 		{
 			die(str_replace('_PROJECT_', $this->server, $messages['proj_not_supported']));
@@ -79,6 +80,11 @@ class OfferPage
 			
 			echo "<br>";
 		}
+	}
+	
+	static function GetAvailableServers()
+	{
+		return get_language_list(self::$CONFIG_DIR);
 	}
 	
 	private function extractTemplateParameter($template_text, $parameter)
