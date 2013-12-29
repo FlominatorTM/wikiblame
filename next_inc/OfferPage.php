@@ -54,39 +54,30 @@ class OfferPage
 		}
 	}
 	
-	function ListUsersToRequest($requested)
+	function ListUsersToRequest($locTo)
 	{
-		global $messages;
-		$locTo = new GeoLocation($requested);
-		if($locTo->IsValid())
+		print_debug("$locTo->ToString()=>" . $locTo->ToString());
+		foreach($this->userOffers as $usr)
 		{
-			print_debug("$locTo->ToString()=>" . $locTo->ToString());
-			foreach($this->userOffers as $usr)
-			{
-				$usr->SetDistance($locTo);
-			}
-			
-			usort($this->userOffers , array("OfferingUser", "CompareDistance"));
-			
-			foreach($this->userOffers as $usr)
-			{
-				$resLine = $usr->LinkToUser() . "  (" . sprintf("%01.1f",$usr->distance)  . " km)";
-				if($usr->IsInRange())
-				{
-					echo "<b>$resLine</b>";
-				}
-				else
-				{
-					echo "$resLine";
-				}
-				
-				
-				echo "<br>";
-			}
+			$usr->SetDistance($locTo);
 		}
-		else
+		
+		usort($this->userOffers , array("OfferingUser", "CompareDistance"));
+		
+		foreach($this->userOffers as $usr)
 		{
-			echo str_replace('_LOCATION_', $requested, $messages['no_coordinates']);
+			$resLine = $usr->LinkToUser() . "  (" . sprintf("%01.1f",$usr->distance)  . " km)";
+			if($usr->IsInRange())
+			{
+				echo "<b>$resLine</b>";
+			}
+			else
+			{
+				echo "$resLine";
+			}
+			
+			
+			echo "<br>";
 		}
 	}
 	
