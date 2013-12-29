@@ -13,18 +13,11 @@ $user_lang = read_language();
 get_language('en', $inc_dir); //not translated messages will be printed in English
 get_language($user_lang, $inc_dir);
 
-
-
 $is_debug = ($_REQUEST['debug']=="on" || $_REQUEST['debug']=="true" );
-$offer_page = name_in_url("Wikipedia:Bilderangebote");
-//$offer_page = name_in_url("Benutzer:Flominator/Fototest");
 
-//$lang = "de";
-//$project = "wikipedia";
 global $server;
 $server = "$lang.$project.org";
-$page = "http://".$server."/w/index.php?action=raw&title=".$offer_page;
-$offerpage = new OfferPage($page);
+$offerpage = new OfferPage($server);
 
 $article_to = $_REQUEST['article_to'];
 if($article_to != "")

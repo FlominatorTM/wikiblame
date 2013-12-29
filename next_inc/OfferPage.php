@@ -4,9 +4,9 @@ class OfferPage
 {
 	public $userOffers;
 	
-	function __construct($page) 
+	function __construct($server) 
 	{
-		global $server, $messages;
+		global $messages;
 		//echo "page=".$page;
 		
 		$ConfigDir = 'next_inc/proj';
@@ -19,6 +19,9 @@ class OfferPage
 		{
 			include($ConfigFile);
 		}
+		
+		$offer_page_enc = name_in_url($OfferPageName);
+		$page = "http://".$server."/w/index.php?action=raw&title=".$offer_page_enc;
 
 		$page_src = removeheaders(get_request($server, $page, true ));
 
