@@ -1,5 +1,15 @@
 <?php
 
+//form
+$messages['ui_lang'] = 'Display language';
+$messages['lang'] = 'Language';
+$messages['lang_example'] = 'en, commons, …';
+$messages['project'] = 'Project';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, …';
+$messages['article_to'] = 'Article';
+$messages['article_to_descr'] = 'Wikipedia article with coordinates where picture should be taken at (e.g. some city, sight, place etc.)';
+$messages['find_next'] = 'Find next photographers';
+
 //template
 $messages['template_offer'] = 'Bilderangebot';
 $messages['template_user'] = 'Benutzer';
