@@ -42,6 +42,12 @@ class OfferPage
 			$usr->SetLocation($location);
 			print_debug("<b>".$location->name."</b>");
 			$range = $this->extractTemplateParameter($template, $TemplateRange);
+			$dateFrom = trim($this->extractTemplateParameter($template, $TemplateDateFrom));
+			$dateUntil = trim($this->extractTemplateParameter($template, $TemplateDateUntil));
+			
+			//echo "Ö $dateFrom Ö ! Ö $dateUntil Ö";
+			$usr->SetDateRangeISO($dateFrom, $dateUntil);
+			
 			// print_debug("<b>".$range."</b><br />");
 			$usr->SetRange($range);
 			
@@ -58,6 +64,7 @@ class OfferPage
 	
 	function ListUsersToRequest($locTo)
 	{
+		global $messages;
 		print_debug("$locTo->ToString()=>" . $locTo->ToString());
 		foreach($this->userOffers as $usr)
 		{
@@ -78,7 +85,28 @@ class OfferPage
 				echo "$resLine";
 			}
 			
-			
+			if($usr->HasDuration())
+			{
+				echo " ";
+				$now = time();
+
+				if($usr->dateFrom < $now)
+				{
+					if($usr->dateTo < $now)
+					{
+						echo str_replace('_DATE_', strftime("%x", $usr->dateTo), $messages['until_date_over']);
+					}
+					else
+					{
+						echo str_replace('_DATE_', strftime("%x", $usr->dateTo), $messages['until_date']);
+					}
+				}
+				else
+				{
+					$out = str_replace('_FIRST_DATE_', strftime("%x", $usr->dateFrom), $messages['between_dates']);
+					echo str_replace('_SECOND_DATE_', strftime("%x", $usr->dateTo), $out);
+				}
+			}
 			echo "<br>";
 		}
 	}

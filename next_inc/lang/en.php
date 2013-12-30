@@ -1,5 +1,7 @@
 <?php
 
+setlocale(LC_TIME, 'en_US');
+
 //form
 $messages['ui_lang'] = 'Display language';
 $messages['lang'] = 'Language';
@@ -22,3 +24,6 @@ $messages['distance_to'] = 'Distance to coordinates from [[_ARTICLE_TO_]] ';
 $messages['no_coordinates'] = 'location _LOCATION_ is invalid/does not have coordinates';
 $messages['proj_not_supported'] = 'project _PROJECT_ is currently not supported, please contact :de:user:Flominator for details';
 $messages['new_request'] = 'Perform new search';
+$messages['between_dates'] = 'only between _FIRST_DATE_ and _SECOND_DATE_';
+$messages['until_date']= 'only until _DATE_';
+$messages['until_date_over']= 'was there until _DATE_ :(';
