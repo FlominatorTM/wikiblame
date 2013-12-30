@@ -16,6 +16,10 @@ $user_lang = read_language();
 get_language('en', $inc_dir); //not translated messages will be printed in English
 get_language($user_lang, $inc_dir);
 
+// $usr = new OfferingUser("Flominator");
+// $usr->SetDateRangeISO("2013-12-20", "2014-04-01");
+
+// die("done");
 $is_debug = ($_REQUEST['debug']=="on" || $_REQUEST['debug']=="true" );
 
 $server = "$lang.$project.org";

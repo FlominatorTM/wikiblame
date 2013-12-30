@@ -6,8 +6,9 @@ class OfferingUser
 	public $range =-1;
 	public $name ="";
 	public $distance =-1; 
+	public $dateFrom;
+	public $dateTo;
 
-    // Deklaration einer Methode
     public function ToString() {
 		$loc = $this->location;
         return "<b>User $this->name at ". $loc->name  ." has range of $this->range <br>" .$loc->ToString() . "</b>";
@@ -57,4 +58,29 @@ class OfferingUser
 	{
 		return "<a href=\"http://$server/wiki/User:" . $this->name . "\">" . $this->name . "</a>";
 	}
+	
+	public function SetDateRangeISO($from, $to)
+	{
+		$fromParts = explode('-', $from);
+		$toParts =  explode('-', $to);
+		
+		if(count($fromParts) == 3 && count($toParts)==3)
+		{
+			$fromDate = $this->generateDateFromISO($fromParts);
+			$toDate = $this->generateDateFromISO($toParts);
+			$this->dateFrom = $fromDate;
+			$this->dateTo = $toDate;
+		}
+	}
+	
+	public function HasDuration()
+	{
+		return ($this->dateFrom + $this->dateTo > 0);
+	}
+	
+	private function generateDateFromISO($dateParts)
+	{
+		return mktime(12, 0, 0, $dateParts[1], $dateParts[2], $dateParts[0]);
+	}
+	
 }
