@@ -25,3 +25,4 @@ $messages['new_request'] = 'Neue Suche durchführen';
 $messages['between_dates'] = 'nur zwischen _FIRST_DATE_ und _SECOND_DATE_';
 $messages['until_date']= 'nur noch bis _DATE_';
 $messages['until_date_over']= 'war bis _DATE_ dort :(';
+$messages['you_on_list']= 'Du willst auch auf dieser Liste zu finden sein? Füge deinen Eintrag mit {{_TEMPLATE_NAME_}} auf der Seite _OFFER_PAGE_ ein.';

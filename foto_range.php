@@ -38,18 +38,30 @@ if($article_to == "")
 else
 {
 	
+	$footNote = "";
 	$linkToArticleTo = "<a href=\"https://$server/wiki/".name_in_url($article_to)."\">$article_to</a>";
 	echo '<h1>' . str_replace('_ARTICLE_TO_', $linkToArticleTo, $messages['distance_to']) .'</h1>';
 	$locTo = new GeoLocation($article_to, $server);
 	if($locTo->IsValid())
 	{
-		
+		$linkTemplate = "";
+		$linkOfferpage = "";
 		foreach(OfferPage::GetAvailableServers() as $oneServer)
 		{
+
 			$offerpage = new OfferPage($oneServer);
-			echo "<h2><a href=\"https://$oneServer/wiki/$offerpage->pageEncoded\">$oneServer</a></h2>";
+			$urlOfferPage = "https://$oneServer/wiki/".$offerpage->pageEncoded;
+			echo "<h2><a href=\"$urlOfferPage\">$oneServer</a></h2>";
 			$offerpage->ListUsersToRequest($locTo);
+			if($oneServer == $server)
+			{
+				$linkTemplate = "<a href=\"https://$oneServer/wiki/".name_in_url($offerpage->templateName)."\">$offerpage->templateName</a>";
+				$linkOfferpage = "<a href=\"$urlOfferPage\">".urldecode($offerpage->pageEncoded)."</a>"; 
+			}
 		}
+		
+		$footNote = str_replace('_OFFER_PAGE_', $linkOfferpage, str_replace('_TEMPLATE_NAME_', $linkTemplate, $messages['you_on_list']));
+		
 	}
 	else
 	{
@@ -57,6 +69,7 @@ else
 	}
 	
 	echo "<br><br><a href=\"?lang=$lang&project=$project\">".$messages['new_request']."</a>";
+	echo "<br><hr>$footNote";
 }
 
 function print_debug($str)

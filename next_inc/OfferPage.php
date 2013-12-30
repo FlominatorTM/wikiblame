@@ -5,6 +5,7 @@ class OfferPage
 	private $userOffers;
 	public $server;
 	public $pageEncoded;
+	public $templateName;
 	public static $CONFIG_DIR = 'next_inc/proj';
 	function __construct($server_in) 
 	{
@@ -29,7 +30,8 @@ class OfferPage
 
 		//print_debug("page_src=".$page_src);
 		//print_debug("<hr><hr>");
-		$page_parts = explode('{{'.$TemplateName, $page_src);
+		$this->templateName = $TemplateName;
+		$page_parts = explode('{{'.$this->templateName, $page_src);
 
 		foreach($page_parts as $template)
 		{
