@@ -1,5 +1,5 @@
-<?header('Content-Type: text/html; charset=utf-8');  ?><h1>Zwischenstände</h1>
-<?
+<?php header('Content-Type: text/html; charset=utf-8');  ?><h1>Zwischenstände</h1>
+<?php 
 
 $is_debug = ($_REQUEST['debug']=="on" || $_REQUEST['debug']=="true" );
 

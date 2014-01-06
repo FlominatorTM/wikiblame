@@ -1,4 +1,4 @@
-<?header('Content-Type: text/html; charset=utf-8'); ?>
+<?php header('Content-Type: text/html; charset=utf-8'); ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -7,7 +7,7 @@
 		<link rel="icon" href="WikiBlame.png" type="image/png">
 		<link rel="shortcut icon" href="WikiBlame.png" type="image/png">
 		<title>WikiBlame</title>
-	</head><?
+	</head><?php 
 
 // required to prevent automatic escaping of input strings
 // thanks to http://www.php.net/manual/de/security.magicquotes.disabling.php	
@@ -189,7 +189,7 @@ else
 }
 
 ?>
-<body onload="document.mainform.<?
+<body onload="document.mainform.<?php 
 //set cursor into needle or article field
 if($article!="")
 {
@@ -204,7 +204,7 @@ $allowedRevisionsPerCall = 50;
 
 $jsTextLessVersions = str_replace( "__ALLOWEDREVISIONS__", $allowedRevisionsPerCall, $messages['get_less_versions']);
 
-?>.focus();checkScanAmount();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <? echo $text_dir ?>; unicode-bidi: embed">
+?>.focus();checkScanAmount();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <?php  echo $text_dir ?>; unicode-bidi: embed">
 
 <script type="text/javascript">
 function setFormDate(year, mon, day)
@@ -217,7 +217,7 @@ function setFormDate(year, mon, day)
 //disable submit button when user wants to query too much revisions by linear search
 function checkScanAmount()
 {
- 	var allowedVersionsPerCall = <? echo $allowedRevisionsPerCall ?>;
+ 	var allowedVersionsPerCall = <?php  echo $allowedRevisionsPerCall ?>;
 	var expectedVersionsToQuery = 0;
 	var versionsToQuery = document.forms['mainform'].elements['limit'].value;
 	var versionsToSkipDuring = document.forms['mainform'].elements['skipversions'].value;
@@ -231,9 +231,9 @@ function checkScanAmount()
 	
 	if((expectedVersionsToQuery > allowedVersionsPerCall &&
   	   document.forms['mainform'].elements['linear'].checked
-	   )  <? if ($user!="") echo "&& false" ?>)
+	   )  <?php  if ($user!="") echo "&& false" ?>)
 	{
-		var alertText = "<? echo $jsTextLessVersions ?>";
+		var alertText = "<?php  echo $jsTextLessVersions ?>";
 
 		alert(alertText.replace(/__NUMREVISIONS__/g, ""+expectedVersionsToQuery));
 		document.forms['mainform'].elements['start'].disabled=true;
@@ -248,14 +248,14 @@ function submitAndWait()
 {
 	var startButton = document.getElementById("start");
 	startButton.disabled=true;
-	startButton.value='<? echo $messages['please_wait'] ?>';
+	startButton.value='<?php  echo $messages['please_wait'] ?>';
 	return true;
 }
 </script>
 <div align="center">
-		<form method="get" name="mainform" onsubmit="submitAndWait();" action="<? echo $datei ?>">
-		<div align="<? echo $alignment ?>">
-		<?
+		<form method="get" name="mainform" onsubmit="submitAndWait();" action="<?php  echo $datei ?>">
+		<div align="<?php  echo $alignment ?>">
+		<?php 
 			echo $messages['ui_lang'].'<br>';
 			language_selection($user_lang);?>
 		</div>
@@ -263,9 +263,9 @@ function submitAndWait()
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
 			<table style="font-family: arial; font-size: 84%;" cellspacing="5">
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						<label for="lang">
-							<? echo $messages['lang']?>
+							<?php  echo $messages['lang']?>
 						</label>
 					</td>
 					<td>
@@ -273,9 +273,9 @@ function submitAndWait()
 					</td>
 				</tr>
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						<label for="project">
-							<? echo $messages['project']?>
+							<?php  echo $messages['project']?>
 						</label>
 					</td>
 					<td>
@@ -283,9 +283,9 @@ function submitAndWait()
 					</td>
 				</tr>				
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						<label for="article">
-							<? echo $messages['article']; ?>
+							<?php  echo $messages['article']; ?>
 						</label>
 					</td>
 					<td>
@@ -293,9 +293,9 @@ function submitAndWait()
 					</td>
 				</tr>
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						<label for="needle">
-							<? echo $messages['needle'] ?>
+							<?php  echo $messages['needle'] ?>
 						</label>
 					</td>						
 					<td>
@@ -303,9 +303,9 @@ function submitAndWait()
 					</td>
 				</tr>
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						<label for="skipversions"> 
-							<? echo $messages['skipversions'] ?>
+							<?php  echo $messages['skipversions'] ?>
 						</label>
 					</td>
 					<td>
@@ -313,9 +313,9 @@ function submitAndWait()
 					</td>
 				</tr>				
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						<label for="ignorefirst">
-							<? echo $messages['ignorefirst'] ?>
+							<?php  echo $messages['ignorefirst'] ?>
 						</label>
 					</td>
 					<td>
@@ -323,9 +323,9 @@ function submitAndWait()
 					</td>
 				</tr>	
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						<label for="limit">
-							<? echo $messages['limit'] ?>
+							<?php  echo $messages['limit'] ?>
 						</label>
 					</td>
 					<td>
@@ -333,83 +333,83 @@ function submitAndWait()
 					</td>
 				</tr>	
 				<tr>
-					<td align="<? echo $alignment ?>">
-						<? echo $messages['start_date'] ?>
+					<td align="<?php  echo $alignment ?>">
+						<?php  echo $messages['start_date'] ?>
 					</td>
 					<td>
 						<?php datedrop_with_months( "", "off", false, 2001, date("Y"), $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months, $messages['date_format']); ?>
-						<input type="button" value="<? echo $messages['reset'] ?>" onclick="javascript:var now=new Date();setFormDate(now.getFullYear(),now.getMonth()+1, now.getDate());">
+						<input type="button" value="<?php  echo $messages['reset'] ?>" onclick="javascript:var now=new Date();setFormDate(now.getFullYear(),now.getMonth()+1, now.getDate());">
 					</td>
 				<tr>
-					<td align="<? echo $alignment ?>"><? echo $messages['search_method'] ?></td>
+					<td align="<?php  echo $alignment ?>"><?php  echo $messages['search_method'] ?></td>
 					<td>
-						<input type="radio" name="searchmethod" id="linear" value="lin"  onchange="javascript:checkScanAmount()"  <? if ($use_binary_search!=true) echo checked; ?> >
+						<input type="radio" name="searchmethod" id="linear" value="lin"  onchange="javascript:checkScanAmount()"  <?php  if ($use_binary_search!=true) echo checked; ?> >
 						<label for="linear">
-							<? echo $messages['linear'] ?>
+							<?php  echo $messages['linear'] ?>
 						</label>
-						<input type="radio" name="searchmethod" id="int" value="int" onchange="javascript:checkScanAmount()"   <? if ($use_binary_search==true) echo checked; ?> >
+						<input type="radio" name="searchmethod" id="int" value="int" onchange="javascript:checkScanAmount()"   <?php  if ($use_binary_search==true) echo checked; ?> >
 						<label for="int">
-						<a href="<? echo $messages['binary_in_wp']?>"><? echo $messages['binary'] ?></a>
+						<a href="<?php  echo $messages['binary_in_wp']?>"><?php  echo $messages['binary'] ?></a>
 						</label>
 					</td>
 				</tr>	
 				<tr>
-					<td align="<? echo $alignment ?>"><? echo $messages['order'] ?></td>
+					<td align="<?php  echo $alignment ?>"><?php  echo $messages['order'] ?></td>
 					<td>
-						<input type="radio" name="order" id="desc" value="desc" <? if ($asc!=true) echo checked; ?> >
+						<input type="radio" name="order" id="desc" value="desc" <?php  if ($asc!=true) echo checked; ?> >
 						<label for="desc">
-							<? echo $messages['newest_first'] ?>
+							<?php  echo $messages['newest_first'] ?>
 						</label>
-						<input type="radio" name="order" id="asc" value="asc" <? if ($asc==true) echo checked; ?> >
+						<input type="radio" name="order" id="asc" value="asc" <?php  if ($asc==true) echo checked; ?> >
 						<label for="asc">
-							<? echo $messages['oldest_first'] ?>
+							<?php  echo $messages['oldest_first'] ?>
 						</label>
 					</td>
 				</tr>				
 				<tr>
-					<td align="<? echo $alignment ?>">
-					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <? if ($binary_search_inverse=="true") echo checked; ?> >
+					<td align="<?php  echo $alignment ?>">
+					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <?php  if ($binary_search_inverse=="true") echo checked; ?> >
 					</td>
 					<td>
 						<label for="binary_search_inverse">
-							<? echo $messages['binary_search_inverse'] ?>
+							<?php  echo $messages['binary_search_inverse'] ?>
 						</label>
 					</td>
 				</tr>		
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						
-						<input type="checkbox" name="ignore_minors" id="ignore_minors" <? if ($ignore_minors==true) echo checked; ?> >
+						<input type="checkbox" name="ignore_minors" id="ignore_minors" <?php  if ($ignore_minors==true) echo checked; ?> >
 					</td>
 					<td>
 						<label for="ignore_minors">
-							<? echo $messages['ignore_minors'] ?>
+							<?php  echo $messages['ignore_minors'] ?>
 						</label>
 					</td>
 				</tr>
 				<tr>
-					<td align="<? echo $alignment ?>">
+					<td align="<?php  echo $alignment ?>">
 						
-						<input type="checkbox" name="force_wikitags" id="force_wikitags" <? if ($force_wikitags=="on") echo checked; ?> >
+						<input type="checkbox" name="force_wikitags" id="force_wikitags" <?php  if ($force_wikitags=="on") echo checked; ?> >
 					</td>
 					<td>
 						<label for="force_wikitags">
-							<? echo $messages['force_wikitags'] ?>
+							<?php  echo $messages['force_wikitags'] ?>
 						</label>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center"><br><br>
-						<input name="start" id="start" type="submit" value="<? echo $messages['start'] ?>" >
-						<input name="user" id="user" type="hidden" value="<? echo $user ?>" >
+						<input name="start" id="start" type="submit" value="<?php  echo $messages['start'] ?>" >
+						<input name="user" id="user" type="hidden" value="<?php  echo $user ?>" >
 					</td>
 				</tr>
 			</table>
 		</form>
 <hr>
-<a href='<? echo $messages['manual_link'] ?>'><? echo $messages['manual'] ?></a> - 
-<a href='<? echo $messages['contact_link'] ?>'><? echo $messages['contact'] ?></a> - 
-<a href='http://translatewiki.net/wiki/Translating:Wikiblame'><? echo $messages['help_translating'] ?></a> -
+<a href='<?php  echo $messages['manual_link'] ?>'><?php  echo $messages['manual'] ?></a> - 
+<a href='<?php  echo $messages['contact_link'] ?>'><?php  echo $messages['contact'] ?></a> - 
+<a href='http://translatewiki.net/wiki/Translating:Wikiblame'><?php  echo $messages['help_translating'] ?></a> -
 <a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
 </div>
 <?php
@@ -1157,7 +1157,7 @@ function Get_UTC_Hours($localHours, $server)
 }
 
 ?>
- <p align="<? echo $alignment ?>"> 
+ <p align="<?php  echo $alignment ?>"> 
     <!--<a href="http://www.ps-webhosting.de/?ref=k3591" target="_blank"><img alt="Webhosting von ps-webhosting.de" border="0" src="http://www.ps-webhosting.de/banner/ps_button2.gif"></a>-->
 	<a href="http://www.ramselehof.de"><img border="0"
         src="ramselehof_powered_feddich.jpg"
