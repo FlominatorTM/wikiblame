@@ -1,4 +1,6 @@
-<?header('Content-Type: text/html; charset=utf-8'); 
+<?php
+
+header('Content-Type: text/html; charset=utf-8'); 
 //finds next photographer in range
 
 //underscore stuff is legacy, camel-cased is php 5
@@ -23,7 +25,6 @@ get_language($user_lang, $inc_dir);
 $is_debug = ($_REQUEST['debug']=="on" || $_REQUEST['debug']=="true" );
 
 $server = "$lang.$project.org";
-
 $article_to = $_REQUEST['article_to'];
 if($article_to == "")
 {
@@ -55,7 +56,7 @@ else
 			$offerpage->ListUsersToRequest($locTo);
 			if($oneServer == $server)
 			{
-				$linkTemplate = "<a href=\"https://$oneServer/wiki/".name_in_url($offerpage->templateName)."\">$offerpage->templateName</a>";
+				$linkTemplate = "<a href=\"https://$oneServer/wiki/Template:".name_in_url($offerpage->templateName)."\">$offerpage->templateName</a>";
 				$linkOfferpage = "<a href=\"$urlOfferPage\">".urldecode($offerpage->pageEncoded)."</a>"; 
 			}
 		}
@@ -77,7 +78,7 @@ function print_debug($str)
 	global $is_debug;
 	if($is_debug)
 	{
-		echo $str;
+		echo $str."\n";
 	}
 }
 
