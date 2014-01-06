@@ -100,10 +100,10 @@ class GeoLocation
 		//http://www.kurztutorial.info/php5/spezial/geokoordinaten/geokoordinaten.php
 		print_debug("calculateDistance($startLat, $startLon, $endLat, $endLon)");
 		$dist = 0.0;
-		$x1 = $startLon;
-		$x2 = $endLon ;
-		$y1 = $startLat;
-		$y2 = $endLat;
+		$x1 =  doubleval($startLon);
+		$x2 = doubleval($endLon);
+		$y1 = doubleval($startLat);
+		$y2 = doubleval($endLat);
 		// e = ARCCOS[ SIN(Breite1)*SIN(Breite2) + COS(Breite1)*COS(Breite2)*COS(Länge2-Länge1) ]
 		
 		print_debug("dist = acos(sin($x1=deg2rad($x1))*sin($x2=deg2rad($x2))+cos($x1)*cos($x2)*cos(deg2rad($y2) - deg2rad($y1)))*(6378.137);  ");
