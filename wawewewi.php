@@ -1,4 +1,4 @@
-<?header('Content-Type: text/html; charset=utf-8'); 
+<?php header('Content-Type: text/html; charset=utf-8'); 
   
 require_once("shared_inc/wiki_functions.inc.php");
 $comment_choices = array("keine", "Text eingeben", "Diskussionsseite", "Doppelbewertung wünschen", "an A-Schiri weitergeben");
@@ -7,7 +7,7 @@ $forwardText = "Weitergabe an A-Schiri";
 ?><!-- checks the similarity of two revisions and helps to rate articles and maintenance template contest, called by http://de.wikipedia.org/wiki/Benutzer:Flominator/WaWeWeWi.js -->
 <html>
  <head>
- <title><? echo $article?></title>
+ <title><?php  echo $article?></title>
  </head>
  <body><h2>Willkommen beim wirklich wundervollen webbasierten Wartungsbaustein-Wegmach-Wertungs-Wizzard</h2>
 <script>
@@ -17,27 +17,27 @@ function SetComment(selectedComment)
 	commentBox.value = "";
 	switch (selectedComment)
 	{
-	  case "<?echo $comment_choices[1]?>": //enter text
+	  case "<?php echo $comment_choices[1]?>": //enter text
 	  { 
 		commentBox.readOnly = false;
 		break;
 	  }
-	  case "<?echo $comment_choices[2]?>": //talk page
+	  case "<?php echo $comment_choices[2]?>": //talk page
 	  { 
 		commentBox.readOnly = true;
-		commentBox.value = "[[Wikipedia Diskussion:WBWA#<? echo $articleenc; ?>]]";
+		commentBox.value = "[[Wikipedia Diskussion:WBWA#<?php  echo $articleenc; ?>]]";
 		break;
 	  }
-	  case "<?echo $comment_choices[3]?>":
+	  case "<?php echo $comment_choices[3]?>":
 	  { 
 		commentBox.readOnly = true;
 		commentBox.value = "Doppelbewertung erwünscht";
 		break;
 	  }
-	  case "<?echo $comment_choices[4]?>":
+	  case "<?php echo $comment_choices[4]?>":
 	  { 
 		commentBox.readOnly = false;
-		commentBox.value = "<?echo $forwardText ?>";
+		commentBox.value = "<?php echo $forwardText ?>";
 		break;
 	  }
 	  default: //"keine"
@@ -75,7 +75,7 @@ function RemoveTableAttributesOne(SrcText)
 	return TableParts.join("|"); 
 }
 </script>
-<?
+<?php 
 
 $src_old_cut = $_REQUEST['old_cut'];
 $src_new_cut = $_REQUEST['new_cut'];
