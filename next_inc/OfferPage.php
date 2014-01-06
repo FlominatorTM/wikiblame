@@ -60,14 +60,13 @@ class OfferPage
 				print_debug("user $usr->name is valid: ".$usr->ToString());
 				$this->userOffers[] = $usr;
 			}
-			echo $coordinates_xml;
 		}
 	}
 	
 	function ListUsersToRequest($locTo)
 	{
 		global $messages;
-		print_debug("$locTo->ToString()=>" . $locTo->ToString());
+		print_debug("locTo->ToString()=>" . $locTo->ToString());
 		foreach($this->userOffers as $usr)
 		{
 			$usr->SetDistance($locTo);
