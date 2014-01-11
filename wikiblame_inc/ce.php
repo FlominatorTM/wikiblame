@@ -14,6 +14,7 @@
  * @author Умар
  */
 
+$messages['December'] = 'декабрехь';
 $messages['lang'] = 'Мотт';
 $messages['project'] = 'Проект';
 $messages['reset'] = 'Кхоссар';
