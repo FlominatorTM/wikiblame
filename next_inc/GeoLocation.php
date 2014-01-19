@@ -29,8 +29,8 @@ class GeoLocation
 				print_debug($xml->query->pages->page->coordinates->co['lon']."");
 				if($xml->query->pages->page->coordinates->co['lon']!="")
 				{
-					$this->lon = $xml->query->pages->page->coordinates->co['lon'];
-					$this->lat = $xml->query->pages->page->coordinates->co['lat'];
+					$this->lon = "".$xml->query->pages->page->coordinates->co['lon']; //without "" some XML object would be linked
+					$this->lat = "".$xml->query->pages->page->coordinates->co['lat'];
 				}
 			}
 		}
