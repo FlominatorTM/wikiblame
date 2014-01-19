@@ -61,7 +61,10 @@ else
 			}
 		}
 		
-		$footNote = str_replace('_OFFER_PAGE_', $linkOfferpage, str_replace('_TEMPLATE_NAME_', $linkTemplate, $messages['you_on_list']));
+		if($linkTemplate!="")
+		{
+			$footNote = str_replace('_OFFER_PAGE_', $linkOfferpage, str_replace('_TEMPLATE_NAME_', $linkTemplate, $messages['you_on_list']));
+		}
 		
 	}
 	else
