@@ -18,7 +18,7 @@ $messages['template_location'] = 'Standort';
 $messages['template_range'] = 'Aktionsradius';
 
 //result
-$messages['distance_to'] = 'Entfernung zu Koordinaten aus [[_ARTICLE_TO_]] ';
+$messages['distance_to'] = 'Fotografen nach Entfernung zu Koordinaten aus [[_ARTICLE_TO_]] ';
 $messages['no_coordinates'] = 'Der Artikel _LOCATION_ ist ungültig oder hat keine Koordinaten';
 $messages['proj_not_supported'] = 'Das Projekt _PROJECT_ wird derzeit nicht unterstützt. Bitte nehme Kontakt mit :de:user:Flominator auf.';
 $messages['new_request'] = 'Neue Suche durchführen';
