@@ -47,7 +47,19 @@ else
 	{
 		$linkTemplate = "";
 		$linkOfferpage = "";
-		foreach(OfferPage::GetAvailableServers() as $oneServer)
+		
+		$allServers = OfferPage::GetAvailableServers();
+		
+		//put 
+		$indexOfMyServer = array_search($server, $allServers);
+		if($indexOfMyServer!=false)
+		{
+			$firstServer = $allServers[0];
+			$allServers[0] = $allServers[$indexOfMyServer];
+			$allServers[$indexOfMyServer] = $firstServer;
+		}
+		
+		foreach($allServers as $oneServer)
 		{
 
 			$offerpage = new OfferPage($oneServer);
@@ -56,6 +68,7 @@ else
 			$offerpage->ListUsersToRequest($locTo);
 			if($oneServer == $server)
 			{
+				//todo: handle in if-statement above
 				$linkTemplate = "<a href=\"https://$oneServer/wiki/Template:".name_in_url($offerpage->templateName)."\">$offerpage->templateName</a>";
 				$linkOfferpage = "<a href=\"$urlOfferPage\">".urldecode($offerpage->pageEncoded)."</a>"; 
 			}
@@ -75,6 +88,7 @@ else
 	echo "<br><br><a href=\"?lang=$lang&project=$project\">".$messages['new_request']."</a>";
 	echo "<br><hr>$footNote";
 }
+
 
 function print_debug($str)
 {
