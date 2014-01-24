@@ -11,6 +11,7 @@
  * @file
  *
  * @author Anson2812
+ * @author EagerLin
  * @author Jetlag
  */
 
@@ -33,10 +34,10 @@ $messages['article'] = '頁面';
 $messages['needle'] = '尋找';
 $messages['skipversions'] = '總係跳過x版';
 $messages['ignorefirst'] = '略過開始嘅x隻版本';
-$messages['limit'] = '愛檢查嘅版本數量';
+$messages['limit'] = '愛檢查个版本數量';
 $messages['start_date'] = '開始日期';
 $messages['date_format'] = 'MM DD, YYYY';
-$messages['order'] = '排列次序';
+$messages['order'] = '排列順序';
 $messages['newest_first'] = '從最近開始';
 $messages['oldest_first'] = '從最早開始';
 $messages['binary_search_inverse'] = '尋找已經去除个文本（僅限折半搜索）';
