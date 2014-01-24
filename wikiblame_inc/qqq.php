@@ -90,7 +90,8 @@ $messages['reset'] = 'Button text next to date input boxes. Resets to today\'s d
 {{Identical|Reset}}';
 $messages['manual'] = 'Label for link to a user manual. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['manual_link'] = '{{optional}} Contains the link to the Wikiblame manual. Should only contain a link if the manual has been localised.';
-$messages['contact'] = 'Link label to contact pages for Wikiblame. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
+$messages['contact'] = 'Link label to contact pages for Wikiblame. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|Contact}}';
 $messages['contact_link'] = '{{optional}}Contains the link to a location for local language support. Should only contain a link if local language support for the tool is available.';
 $messages['wrong_skips'] = 'Do not translate <code>__VERSIONSTOSKIP__</code>, and <code>__VERSIONSTOSEARCH__</code>
 
