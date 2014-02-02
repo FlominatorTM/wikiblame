@@ -12,6 +12,7 @@
  *
  * @author Akoppad
  * @author M G Harish
+ * @author Nayan
  * @author Nayvik
  */
 
@@ -54,11 +55,14 @@ $messages['contact'] = 'ಸಂಪರ್ಕ';
 $messages['get_less_versions'] = 'ನಿಮ್ಮ ಹುಡುಕಾಟ __NUMREVISIONS__ ಆವೃತ್ತಿಗಳನ್ನು ವಿಚಾರಿಸಬಹುದು. ಸೇವಕವನ್ನು ರಕ್ಷಿಸುವ ಸಲುವಾಗಿ, ನೀವು ಒಂದು ಕರೆಯಲ್ಲಿ __ALLOWEDREVISIONS__ ಆವೃತ್ತಿಗಳನ್ನು ಮಾತ್ರ ವಿಚಾರಿಸಬಹುದು. ದಯವಿಟ್ಟು ಹುಡುಕಾಟ ವಿಧಾನವನ್ನು ದ್ವಿಮಾನಕ್ಕೆ ಬದಲಾಯಿಸಿ!';
 $messages['wrong_skips'] = 'ತಪ್ಪು ಸಂಯೋಜನೆ: ಮೊದಲ __VERSIONSTOSKIP__ ಆವೃತ್ತಿಗಳನ್ನು ಬಿಡುವುದಾದರೆ, ಹುಡುಕಬೇಕಾಗಿರುವ __VERSIONSTOSEARCH__ ಆವೃತ್ತಿಗಳು ಹುಡುಕಲ್ಪಡುವುದಿಲ್ಲ.';
 $messages['search_in_progress_text'] = '_ARTICLELINK_ ಆವೃತ್ತಿ ಇತಿಹಾಸದಲ್ಲಿ <b>_NEEDLE_</b> ಎಂಬ ಸರಳ ಪಠ್ಯವು ಹುಡುಕಲ್ಪಡುತ್ತಿದೆ.';
+$messages['search_in_progress_wikitags'] = '_ARTICLELINK_ ಆವೃತ್ತಿ ಇತಿಹಾಸದಲ್ಲಿ <b>_NEEDLE_</b> ಎಂಬ ಸರಳ ಪಠ್ಯವು ಹುಡುಕಲ್ಪಡುತ್ತಿದೆ.';
 $messages['no_differences'] = 'ಹುಡುಕಲಾದ ಪರಿಷ್ಕರಣೆಗಳನ್ನು ಯಾವುದೇ ವ್ಯತ್ಯಾಸಗಳು ಇಲ್ಲ';
 $messages['first_version'] = 'ಬದಲಾವಣೆಗಳು ಮೊದಲನೇ ಅಥವಾ ಕೊನೆಯ ಪರಿಷ್ಕರನೆಗಳಲ್ಲಿ ಆಗಿರಬೇಕು';
 $messages['earlier_versions_available'] = 'ಬಹುಶಃ ಮೊದಲನೆ  ಪರಿಷ್ಕರನೆಗಳು ಇದ್ದಿರಬಹುದು';
 $messages['execution_time'] = 'ನಿರ್ವಹಿಸುವ  ಸಮಯ : _EXECUTIONTIME_ ಸೆಕೆಂಡುಗಳು';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ ಆವೃತ್ತಿಗಳು ಕಂಡುಬಂದಿವೆ';
 $messages['please_wait'] = 'ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ...';
+$messages['dead_end'] = 'ಕೊನೆ (ಕಾರಣ: ಸರಿಪಡಿಸಿಕೊಂಡ ರತಿ ಅಥವಾ ಬದಲಾವನೆಯ ವಾದಗಳು)';
 $messages['once_more'] = 'ಮತ್ತೆ ಇನ್ನೋಮೆ,  ಭಾವನೆ ಗಳೊಂದಿಗೆ';
 $messages['binary_enough'] = 'ಮರುಪ್ರಯತ್ನಗಳು ಸಾಕಷ್ಟು ಮಾಡಿದ್ದೀರ , ಉಲ್ಲೇಖನ ಇತಿಹಾಸವು ಸಾಕಷ್ಟು ಅವ್ಯವಸ್ಥೆಗೊಂಡಿದೆ , ಕೆಲವು ವ್ಯವಸ್ತಪನೆಗಳನ್ನು ಬದಲಾಯಿಸಿ ಪ್ರಯತ್ನಿಸಿ';
 $messages['insertion_found'] = 'ಅಳವಡಿಕೆಯು LEFT_VERSION ಮತ್ತು RIGHT_VERSION ನಡುವಿನ ಕಂಡುಬಂದಿದೆ';
