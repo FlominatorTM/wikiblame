@@ -238,7 +238,7 @@ function get_result_template($point_set_this_team)
 	$result_param = "Ergebnis=$points_of_this_team";
 	if($point_set_this_team["NumberMembers"] >= 4)
 	{
-		$result_param = "Rechnung+Ergebnis=<math>3\cdot \frac{". $point_set_this_team["TotalPoints"] ."}{". $point_set_this_team["NumberMembers"]."}=".sprintf("%0.1f", $points_of_this_team)."</math>";
+		$result_param = "Rechnung+Ergebnis=<math>3\cdot \\frac{". $point_set_this_team["TotalPoints"] ."}{". $point_set_this_team["NumberMembers"]."}=".sprintf("%0.1f", $points_of_this_team)."</math>";
 	}
 	
 	$text_to_insert = "\n{{Wikipedia:Wartungsbausteinwettbewerb/Vorlage Ergebnis\n|Anker=$anchor|Zwischenergebnis=$permalink|".$result_param."}}";
