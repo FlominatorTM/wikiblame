@@ -12,6 +12,7 @@
  *
  * @author Flominator
  * @author Hamilton Abreu
+ * @author Imperadeiro98
  * @author Luckas
  * @author Malafaya
  * @author Mosca
@@ -38,11 +39,11 @@ $messages['needle'] = 'Procurar';
 $messages['skipversions'] = 'Ignorar intervalos de x edições';
 $messages['ignorefirst'] = 'Ignorar as primeiras x edições';
 $messages['limit'] = 'Número de edições a verificar';
-$messages['start_date'] = 'Começar pela data';
+$messages['start_date'] = 'Data de início';
 $messages['date_format'] = 'DD de MM de YYYY';
 $messages['order'] = 'Ordem';
-$messages['newest_first'] = 'recentes primeiro';
-$messages['oldest_first'] = 'antigas primeiro';
+$messages['newest_first'] = 'mais recentes primeiro';
+$messages['oldest_first'] = 'mais antigas primeiro';
 $messages['binary_search_inverse'] = 'Procurar remoção de texto (somente binário)';
 $messages['search_method'] = 'Método de procura';
 $messages['binary'] = 'binária';

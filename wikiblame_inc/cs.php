@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Cvanca
  * @author Dontlietome7
  * @author Flominator
  * @author Jkjk
@@ -40,7 +41,7 @@ $messages['ignorefirst'] = 'Ignorovat prvních x verzí';
 $messages['limit'] = 'Počet prohledávaných revizí';
 $messages['start_date'] = 'Počáteční datum';
 $messages['date_format'] = 'DD MM RRRR';
-$messages['order'] = 'Řazení';
+$messages['order'] = 'Řadit';
 $messages['newest_first'] = 'od nejnovějších';
 $messages['oldest_first'] = 'od nejstarších';
 $messages['binary_search_inverse'] = 'Vyhledej smazaný text (pouze binární)';
@@ -59,10 +60,10 @@ $messages['get_less_versions'] = 'Vaše vyhledávání může dotázat __NUMREVI
 $messages['wrong_skips'] = 'Špatné nastavení: Jestliže prvních __VERSIONSTOSKIP__ verzí jhe přeskočeno, pak žádná z __VERSIONSTOSEARCH__ verzí k vyhledání nebude zpracována.';
 $messages['search_in_progress_text'] = 'Historie verzí _ARTICLELINK_ se prohledává na <b>_NEEDLE_</b> jako prostý text';
 $messages['search_in_progress_wikitags'] = 'Historie verzí _ARTICLELINK_ se prohledává na <b>_NEEDLE_</b> jako wiki text';
-$messages['no_differences'] = 'Žádné rozdíly v prohledávaných revizích.';
+$messages['no_differences'] = 'Nebyly nalezeny žádné rozdíly v prohledávaných revizích.';
 $messages['first_version'] = 'Ke změně muselo dojít v první nebo poslední revizi?';
 $messages['first_version_present'] = '__NEEDLE__ bylo nalezeno již v první revizi, datováno od __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Asi existují starší verze.';
+$messages['earlier_versions_available'] = 'Zřejmě existují starší verze.';
 $messages['execution_time'] = 'Doba zpracování: _EXECUTIONTIME_ sekund';
 $messages['versions_found'] = 'Nalezeno _NUMBEROFVERSIONS_ verzí';
 $messages['please_wait'] = 'Čekejte prosím ...';
