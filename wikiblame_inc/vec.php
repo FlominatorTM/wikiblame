@@ -70,4 +70,4 @@ $messages['deletion_found'] = 'Cancelasion paroła trovà fra LEFT_VERSION e RIG
 $messages['help_translating'] = 'Juta a tradure so translatewiki.net';
 $messages['start_here'] = 'Serca da cuà';
 $messages['too_much_versions'] = 'Te si rivà al to limite masimo de query de __VERSIONLIMIT__ richieste. Se prega de riprovare fra __WAITMINUTES__ minuti o pasare ała riçerca binaria. Se scuxemo par l\'inconveniente.';
-$messages['not_found_at_all'] = 'Il termine sercà no xe stà propio catà. Sito sicuro de aver sielto łe inpostasion corete?';
+$messages['not_found_at_all'] = 'El termine sercà no\'l xe stà propio catà. Controła łe inpostasion e riproa da novo.';
