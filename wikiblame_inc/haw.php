@@ -13,6 +13,7 @@
  * @author Kolonahe
  */
 
+$text_dir = 'ltr';
 $messages['January'] = 'Ianuali';
 $messages['February'] = 'Pepeluali';
 $messages['March'] = 'Malaki';
@@ -27,7 +28,9 @@ $messages['November'] = 'Nowemapa';
 $messages['December'] = 'Kēkēmapa';
 $messages['ui_lang'] = 'Hōʻike ʻŌlelo';
 $messages['lang'] = 'ʻŌlelo';
+$messages['lang_example'] = 'en, commons, …';
 $messages['project'] = 'Papahana';
+$messages['project_example'] = 'wikipikia, wikisōsa, wikimekia, ...';
 $messages['article'] = 'ʻAoʻao';
 $messages['needle'] = 'Huli no';
 $messages['skipversions'] = 'Lele i nā mana x i nā manawa a pau';
@@ -41,6 +44,7 @@ $messages['oldest_first'] = 'nā mea kahiko loa i mua';
 $messages['binary_search_inverse'] = 'E ʻike no ka wehe ʻana o ke kikokikona (baineli wale nō)';
 $messages['search_method'] = 'ʻAno Huli';
 $messages['binary'] = 'baineli';
+$messages['binary_in_wp'] = 'http://haw.wikipedia.org/wiki/Binary_search_algorithm';
 $messages['linear'] = 'laina pololei';
 $messages['interpolated'] = 'baineli (ʻāwiwi loa me nā mana ʻē aʻe)';
 $messages['ignore_minors'] = 'huli kua i nā hoʻololi liʻi (hoʻokolohua)';
@@ -48,7 +52,9 @@ $messages['force_wikitags'] = 'Haʻakoi ka huli ʻana no wikitext';
 $messages['start'] = 'Hoʻomaka';
 $messages['reset'] = 'Hōʻano Hou';
 $messages['manual'] = 'Puke ʻike';
+$messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
 $messages['contact'] = 'Hoʻokaʻaʻike';
+$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 $messages['get_less_versions'] = 'Loaʻa paha i kau huli __NUMREVISIONS__ mau mea ma kekahi manawa. I ka hoʻomalu ʻana o ke kikowaena pūnaewele, hiki wale ke huli no __ALLOWEDREVISIONS__ kēla me kēia huli. E ʻoluʻolu, e hoʻololi i nā makemake a i ʻole hoʻololi i ka ʻano hana huli baineli!';
 $messages['wrong_skips'] = 'Makemake hewa: Inā lele ʻia mana __VERSIONSTOSKIP__ mua, ʻaʻohe mana i hiki ke hana ʻia.';
 $messages['search_in_progress_text'] = 'Ke huli nei ka mana mōʻaukala o _ARTICLELINK_ no <b>_NEEDLE_</b> e like me ke kikokikona uʻi ʻole';
