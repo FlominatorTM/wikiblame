@@ -641,7 +641,7 @@ function listversions ($history)
 
 	if($asc==true)
 	{
-		echo "reversing the list";
+		//echo "reversing the list";
 		$versions = array_reverse($versions);
 	}
 
