@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Amgauna
  * @author Capmo
  * @author Giro720
  * @author Luckas
@@ -17,6 +18,7 @@
  * @author MisterSanderson
  * @author Pedroca cerebral
  * @author Raylton P. Sousa
+ * @author TheGabrielZaum
  * @author Tuliouel
  */
 
@@ -32,12 +34,12 @@ $messages['September'] = 'Setembro';
 $messages['October'] = 'Outubro';
 $messages['November'] = 'Novembro';
 $messages['December'] = 'Dezembro';
-$messages['ui_lang'] = 'Língua de exibição';
-$messages['lang'] = 'Língua';
+$messages['ui_lang'] = 'Idioma de exibição';
+$messages['lang'] = 'Idioma';
 $messages['project'] = 'Projeto';
 $messages['article'] = 'Página';
 $messages['needle'] = 'Procurar por';
-$messages['skipversions'] = 'Ignorar intervalos de x edições';
+$messages['skipversions'] = 'Sempre saltar x versões';
 $messages['ignorefirst'] = 'Ignorar as primeiras x edições';
 $messages['limit'] = 'Versões a checar';
 $messages['start_date'] = 'Data de início';
@@ -49,17 +51,17 @@ $messages['binary_search_inverse'] = 'Procurar remoção de texto (somente biná
 $messages['search_method'] = 'Método de pesquisa';
 $messages['binary'] = 'binária';
 $messages['linear'] = 'linear';
-$messages['interpolated'] = 'binária (mais rápida a pesquisar muitas edições)';
+$messages['interpolated'] = 'binária (mais rápida para pesquisar muitas edições)';
 $messages['ignore_minors'] = 'ignorar edições menores (experimental)';
-$messages['force_wikitags'] = 'forçar procura como texto wiki';
+$messages['force_wikitags'] = 'forçar a procura para texto wiki';
 $messages['start'] = 'Iniciar procura';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Instruções';
 $messages['contact'] = 'Contato';
-$messages['get_less_versions'] = 'A sua pesquisa pode consultar __NUMREVISIONS__ edições ao mesmo tempo. Para proteger o servidor, só pode consultar __ALLOWEDREVISIONS__ por chamada. Altere esta configuração ou mude o método de pesquisa para binária, por favor.';
+$messages['get_less_versions'] = 'A sua pesquisa pode consultar __NUMREVISIONS__ edições ao mesmo tempo. Para proteger o servidor, só pode consultar __ALLOWEDREVISIONS__ por chamada. Por favor, altere esta configuração ou mude o método de pesquisa para binária.';
 $messages['wrong_skips'] = 'Configurações erradas: Se as primeiras __VERSIONSTOSKIP__ edições são ignoradas, então nenhuma das __VERSIONSTOSEARCH__ edições a verificar serão processadas.';
-$messages['search_in_progress_text'] = '<b>_NEEDLE_</b> está sendo procurado como texto não formatado no histórico de edições de _ARTICLELINK_';
-$messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> está sendo procurado como texto wiki no histórico de edições de _ARTICLELINK_';
+$messages['search_in_progress_text'] = 'O histórico da versão de <b>_ARTICLELINK_</b> está sendo procurado para <b>_NEEDLE_</b> como texto não formatado.';
+$messages['search_in_progress_wikitags'] = 'O histórico da versão de _ARTICLELINK_ está sendo procurada para <b>_NEEDLE_</b> como texto wiki';
 $messages['no_differences'] = 'Não foram encontradas diferenças nas versões pesquisadas.';
 $messages['first_version'] = 'A mudança deve ter acontecido na primeira ou última versão?';
 $messages['first_version_present'] = '__NEEDLE__ já estava presente na primeira versão encontrada, datada de __REVISIONLINK__.';
@@ -70,7 +72,7 @@ $messages['please_wait'] = 'Aguarde, por favor …';
 $messages['binary_test'] = 'Comparando diferenças em _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ e _SECONDNUMBER_ a partir da _SOURCENUMBER_:';
 $messages['dead_end'] = 'Encontrado um beco sem saída (provavelmente causado por reversões ou guerras de edição)';
 $messages['once_more'] = 'Mais uma vez, com sentimento:';
-$messages['binary_enough'] = 'Foram realizadas várias tentativas, mas o histórico do artigo está bastante confuso, por favor alterar algumas configurações.';
+$messages['binary_enough'] = 'Foram realizadas várias tentativas, mas o histórico do artigo está bastante confuso, por favor altere algumas configurações.';
 $messages['insertion_found'] = 'O texto foi adicionado entre a edição LEFT_VERSION e a edição RIGHT_VERSION';
 $messages['deletion_found'] = 'O texto foi retirado entre a edição LEFT_VERSION e a edição RIGHT_VERSION';
 $messages['help_translating'] = 'Ajude a traduzir no translatewiki.net';
