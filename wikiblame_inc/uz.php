@@ -11,6 +11,7 @@
  * @file
  *
  * @author CoderSI
+ * @author Sociologist
  */
 
 $messages['January'] = 'yanvar';
@@ -25,7 +26,7 @@ $messages['September'] = 'sentabr';
 $messages['October'] = 'oktabr';
 $messages['November'] = 'noyabr';
 $messages['December'] = 'dekabr';
-$messages['ui_lang'] = 'Tasvirlash tili';
+$messages['ui_lang'] = 'Displey tili';
 $messages['lang'] = 'Til';
 $messages['project'] = 'Loyiha';
 $messages['article'] = 'Sahifa';

@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Fitoschido
  * @author Gemmaa
  * @author McDutchie
  * @author Paucabot
@@ -64,7 +65,7 @@ $messages['first_version_present'] = '__NEEDLE__ ja era en la primera revisió t
 $messages['earlier_versions_available'] = 'Probablement hi ha revisions anteriors.';
 $messages['execution_time'] = 'Temps d\'execució: segons _EXECUTIONTIME_';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions trobades';
-$messages['please_wait'] = 'Si us plau espereu ...';
+$messages['please_wait'] = 'Espereu...';
 $messages['binary_test'] = 'Comparant les diferències en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ i _SECONDNUMBER_ provinents de _SOURCENUMBER_:';
 $messages['dead_end'] = 'Trobat un carrer sense sortida (probablement causat per reversions o guerra d\'edicions)';
 $messages['once_more'] = 'Una vegada més, amb la sensació:';
