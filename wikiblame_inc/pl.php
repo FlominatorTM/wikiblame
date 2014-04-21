@@ -15,6 +15,7 @@
  * @author Leinad
  * @author Matma Rex
  * @author Sp5uhe
+ * @author WTM
  * @author WarX
  * @author Woytecr
  */
@@ -51,7 +52,7 @@ $messages['binary_in_wp'] = 'http://pl.wikipedia.org/wiki/Wyszukiwanie_binarne';
 $messages['linear'] = 'liniowa';
 $messages['interpolated'] = 'binarna (szybsza dla większej liczby wersji)';
 $messages['ignore_minors'] = 'ignoruj drobne zmiany (eksperymentalne)';
-$messages['force_wikitags'] = 'Wymuś wyszukiwanie tekstu w formacie wiki';
+$messages['force_wikitags'] = 'Wymuś wyszukiwanie wewnątrz wikikodu';
 $messages['start'] = 'Start';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Instrukcja';
