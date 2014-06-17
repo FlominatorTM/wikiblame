@@ -11,6 +11,7 @@
  * @file
  *
  * @author Calak
+ * @author Serwan
  */
 
 $messages['January'] = 'کانوونی دووەم';
@@ -25,6 +26,9 @@ $messages['September'] = 'ئەیلوول';
 $messages['October'] = 'تشرینی یەکەم';
 $messages['November'] = 'تشرینی دووەم';
 $messages['December'] = 'کانوونی یەکەم';
+$messages['ui_lang'] = 'پیشاندانی زمان';
 $messages['lang'] = 'زمان';
 $messages['project'] = 'پرۆژە';
 $messages['article'] = 'پەڕە';
+$messages['needle'] = 'گەڕان بۆ';
+$messages['start_here'] = 'لێرەوە بگەرێ';
