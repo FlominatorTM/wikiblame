@@ -18,8 +18,7 @@ $number_of_current_entries = 0;
 
 
 
-
-$plainfuture_text = retrieve_current_list_old($catenc, $template, $other_cat_enc, $template_missing);	
+$plainfuture_text = retrieve_current_list($catenc, $template, $other_cat_enc, $template_missing);	
 
 echo '<form method="post" action="https://'.$server.'/w/index.php?action=submit&title='. $articleenc .'" target="_blank">'."\n";
 echo "<textarea  name=\"wpTextbox1\">";
@@ -93,23 +92,32 @@ function compare_lists($needles, $haystack)
 	return $results;
 }
 
-function retrieve_current_list($catenc, $template)
+function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_not_present=false)
 {
 	global $cat, $number_of_current_entries;
 
 	$all_namespaces ="ns%5B-2%5D=1&ns%5B0%5D=1&ns%5B2%5D=1&ns%5B4%5D=1&ns%5B6%5D=1&ns%5B8%5D=1&ns%5B10%5D=1&ns%5B12%5D=1&ns%5B14%5D=1&ns%5B100%5D=1&ns%5B828%5D=1&ns%5B-1%5D=1&ns%5B1%5D=1&ns%5B3%5D=1&ns%5B5%5D=1&ns%5B7%5D=1&ns%5B9%5D=1&ns%5B11%5D=1&ns%5B13%5D=1&ns%5B15%5D=1&ns%5B101%5D=1&ns%5B829%5D=1";
-	$url ="http://tools.wmflabs.org/catscan2/catscan2.php?language=de&categories=$catenc&doit=1&format=csv&$all_namespaces";
+	$url ="http://tools.wmflabs.org/catscan2/catscan2.php?language=de&categories=$catenc%0D%0A$other_cat_enc&doit=1&format=csv&$all_namespaces&depth=15";
 	
-		if($template!="")
+   
+   if($template!="")
 	{
-		$url.="&templates_yes=$template";
-	}
+		
+      if(!$template_not_present)
+      {
+         $url.="&templates_yes=$template";
+      }
+      else
+		{
+			$url.="&templates_no=$template";
+		}
+  	}
+   
 	$csv_list = get_request("tools.wmflabs.org", $url, true );
 	
 	 
 	$rows = explode("\"\n", $csv_list);
 	$bulleted_list = "";
-	echo "done";
 
 	foreach($rows AS $row)
 	{
