@@ -11,6 +11,7 @@
  * @file
  *
  * @author L2212
+ * @author Taxandru
  */
 
 $messages['January'] = 'Ghennàrgiu';
@@ -61,7 +62,7 @@ $messages['execution_time'] = 'Tempus de faghidura: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones agatàs';
 $messages['please_wait'] = 'Iseta unu momentu...';
 $messages['binary_test'] = 'Cumparàntzia de sa diferèntzias in intro e sa revisione de su _FIRSTDATEVERSION_ intro e sa revisione _FIRSTNUMBER_ e sa _SECONDNUMBER_ mentre benit dae sa revisione _SOURCENUMBER_:';
-$messages['dead_end'] = 'Agatau unu puntu mortu (dabilmènte cajonau dae attrànsas o gherras de acòntzu)';
+$messages['dead_end'] = 'Agatau unu puntu mortu (dabilmènte cajonau dae attrànsas o gherras de modìfica)';
 $messages['once_more'] = 'Un\'attera borta, chin passione:';
 $messages['binary_enough'] = 'Fattas cumproadas bastantes, s\'istòria de s\'articulu este iscussertada meda, pro piaghere prova a mudare carchi preferèntzia.';
 $messages['insertion_found'] = 'Insertada agatà intra de LEFT_VERSION e RIGHT_VERSION';

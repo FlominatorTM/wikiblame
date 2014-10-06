@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** Albaamo innaaɬiilka (Albaamo innaaɬiilka)
+/** Alabama (Albaamo innaaɬiilka)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net

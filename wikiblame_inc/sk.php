@@ -12,6 +12,7 @@
  *
  * @author Flominator
  * @author Helix84
+ * @author Jaroslav.micek
  * @author Rudko
  * @author Teslaton
  * @author Wizzard
@@ -44,17 +45,17 @@ $messages['newest_first'] = 'najprv najnovšie';
 $messages['oldest_first'] = 'najprv najstaršie';
 $messages['binary_search_inverse'] = 'Vyhľadaj zmazaný text (iba binárne)';
 $messages['search_method'] = 'Metóda hľadania';
-$messages['binary'] = 'binárny';
+$messages['binary'] = 'binárna';
 $messages['binary_in_wp'] = 'http://sk.wikipedia.org/wiki/Bin%C3%A1rne_vyh%C4%BEad%C3%A1vanie';
-$messages['linear'] = 'lineárne';
-$messages['interpolated'] = 'binárny (rýchlejšie s viac verziami)';
+$messages['linear'] = 'lineárna';
+$messages['interpolated'] = 'binárna (rýchlejšia s viac verziami)';
 $messages['ignore_minors'] = 'ignorovať drobné zmeny (experimentálne)';
 $messages['force_wikitags'] = 'vynútiť vyhľadávanie wikitextu';
 $messages['start'] = 'Spustiť';
-$messages['reset'] = 'Reset';
+$messages['reset'] = 'Resetovať';
 $messages['manual'] = 'Manuálne';
 $messages['contact'] = 'Kontakt';
-$messages['get_less_versions'] = 'Vaše vyhľadávanie môže dopytovať __NUMREVISIONS__ revízie naraz. Kvôli ochrane servera sa naraz môže dopytovať maximálne na __ALLOWEDREVISIONS__ revízií. Prosím, zmeňte nastavenie alebo prepnite spôsob vyhľadávania na binárny!';
+$messages['get_less_versions'] = 'Vaše vyhľadávanie môže zoraďovať __NUMREVISIONS__ revízie naraz. Kvôli ochrane servera sa naraz môže zoraďovať maximálne na __ALLOWEDREVISIONS__ revízií. Prosím, zmeňte nastavenie alebo prepnite spôsob vyhľadávania na binárny!';
 $messages['wrong_skips'] = 'Chybné nastavenia: Ak bude prvých __VERSIONSTOSKIP__ preskočených, žiadne z verzií __VERSIONSTOSEARCH__ nebudú spracované.';
 $messages['search_in_progress_text'] = 'História verzií _ARTICLELINK_ sa prehľadáva na <b>_NEEDLE_</b> ako obyčajný text';
 $messages['search_in_progress_wikitags'] = 'História verzií _ARTICLELINK_ sa prehľadáva na <b>_NEEDLE_</b> ako wiki text';
@@ -69,8 +70,8 @@ $messages['binary_test'] = 'Porovnávajú sa rozdiely v _FIRSTDATEVERSION_ medzi
 $messages['dead_end'] = 'Dosiahnutá slepá ulička (pravdepodobne kvôli obnovení starej verzie alebo editačnej vojne)';
 $messages['once_more'] = 'Ešte raz, s pocitom:';
 $messages['binary_enough'] = 'Vykonaný dostatok opakovaní, história článku je celkom chaotická, skúste zmeniť niektoré nastavenia.';
-$messages['insertion_found'] = 'Medzi LEFT_VERSION a RIGHT_VERSION bolo zistené vloženie';
-$messages['deletion_found'] = 'Medzi LEFT_VERSION a RIGHT_VERSION bolo zistené odstránenie';
+$messages['insertion_found'] = 'Bolo zistené vloženie medzi verziou LEFT_VERSION a RIGHT_VERSION.';
+$messages['deletion_found'] = 'Bolo zistené vymazanie medzi verziou LEFT_VERSION a RIGHT_VERSION.';
 $messages['help_translating'] = 'Pomôžte s prekladom na translatewiki.net';
 $messages['start_here'] = 'Hľadať odtiaľto';
 $messages['too_much_versions'] = 'Dosiahli ste svoj limit dopytu __VERSIONLIMIT__ verzií. Skúste to prosím znova o __WAITMINUTES__ minút alebo prepnite na binárne vyhľadávanie. Ospravedlňujeme sa za nepríjemnosti.';

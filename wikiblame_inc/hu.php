@@ -12,22 +12,23 @@
  *
  * @author Dj
  * @author Glanthor Reviol
+ * @author Tacsipacsi
  * @author Tgr
  * @author Tgr <gtisza AT gmail.com>
  */
 
-$messages['January'] = 'Január';
-$messages['February'] = 'Február';
-$messages['March'] = 'Március';
-$messages['April'] = 'Április';
-$messages['May'] = 'Május';
-$messages['June'] = 'Június';
-$messages['July'] = 'Július';
-$messages['August'] = 'Augusztus';
-$messages['September'] = 'Szeptember';
-$messages['October'] = 'Október';
-$messages['November'] = 'November';
-$messages['December'] = 'December';
+$messages['January'] = 'január';
+$messages['February'] = 'február';
+$messages['March'] = 'március';
+$messages['April'] = 'április';
+$messages['May'] = 'május';
+$messages['June'] = 'június';
+$messages['July'] = 'július';
+$messages['August'] = 'augusztus';
+$messages['September'] = 'szeptember';
+$messages['October'] = 'október';
+$messages['November'] = 'november';
+$messages['December'] = 'december';
 $messages['ui_lang'] = 'Megjelenítési nyelv';
 $messages['lang'] = 'Nyelv';
 $messages['project'] = 'Projekt';
@@ -51,7 +52,7 @@ $messages['force_wikitags'] = 'keresés mint wikiszöveg';
 $messages['start'] = 'Mehet';
 $messages['reset'] = 'Mai dátumra';
 $messages['manual'] = 'Használati útmutató';
-$messages['manual_link'] = 'http://hu.wikipedia.org/wiki/Szerkeszt%C5%91:Tgr/WikiBlame';
+$messages['manual_link'] = 'http://hu.wikipedia.org/wiki/Wikipédia:WikiBlame';
 $messages['contact'] = 'Kapcsolat';
 $messages['get_less_versions'] = 'A keresésed egyszerre __NUMREVISIONS__ változatot próbált lekérdezni. A szerver védelme érdekében legfeljebb __ALLOWEDREVISIONS__ változatot kérdezhetsz le hívásonként. Kérlek változtasd meg a beállításokat, vagy válts bináris keresésre!';
 $messages['wrong_skips'] = 'Hibás beállítás: ha az első __VERSIONSTOSKIP__ változatot kell átugornom, akkor a vizsgálandó __VERSIONSTOSEARCH__ változat egyikét sem tudom feldolgozni.';
