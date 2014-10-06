@@ -13,4 +13,5 @@
  * @author פוילישער
  */
 
+$messages['start_date'] = 'אָנהייב דאַטע';
 $messages['reset'] = 'צוריקשטעלן';

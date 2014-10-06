@@ -14,6 +14,7 @@
  * @author Hamilton Abreu
  * @author Imperadeiro98
  * @author Luckas
+ * @author Macofe
  * @author Malafaya
  * @author Mosca
  * @author Waldir
@@ -54,7 +55,7 @@ $messages['ignore_minors'] = 'ignorar edições menores (experimental)';
 $messages['force_wikitags'] = 'forçar procura como código wiki';
 $messages['start'] = 'Iniciar procura';
 $messages['reset'] = 'Data de hoje';
-$messages['manual'] = 'Instruções';
+$messages['manual'] = 'Manual';
 $messages['contact'] = 'Contacto';
 $messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 $messages['get_less_versions'] = 'A sua pesquisa pode consultar __NUMREVISIONS__ versões ao mesmo tempo. Para proteger o servidor, só pode consultar __ALLOWEDREVISIONS__ por chamada. Altere esta configuração ou mude o método de pesquisa para binária, por favor.';

@@ -13,4 +13,5 @@
  * @author محک
  */
 
+$messages['August'] = 'آگوست';
 $messages['lang'] = 'زوون';

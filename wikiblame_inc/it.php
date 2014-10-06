@@ -17,6 +17,7 @@
  * @author Flominator
  * @author Gianfranco
  * @author Lou Crazy
+ * @author Macofe
  * @author Melos <nnico AT jumpy.it>
  * @author Rippitippi
  */
@@ -56,7 +57,7 @@ $messages['ignore_minors'] = 'ignora le modifiche minori (sperimentale)';
 $messages['force_wikitags'] = 'forza la ricerca di wikitext';
 $messages['start'] = 'Inizia';
 $messages['reset'] = 'Reimposta';
-$messages['manual'] = 'Guida';
+$messages['manual'] = 'Manuale';
 $messages['manual_link'] = 'http://it.wikipedia.org/wiki/Utente:Darth_Kule/WikiBlame';
 $messages['contact'] = 'Contatto';
 $messages['get_less_versions'] = 'La ricerca potrebbe controllare __NUMREVISIONS__ revisioni alla volta. Al fine di proteggere il server, però, si possono controllare soltanto __ALLOWEDREVISIONS__ revisioni per volta. Per favore modifica le impostazioni, oppure passa al metodo di ricerca binario!';

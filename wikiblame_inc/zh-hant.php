@@ -11,6 +11,7 @@
  * @file
  *
  * @author Frankou
+ * @author LNDDYL
  * @author Lauhenry
  * @author Wrightbus
  */
@@ -71,4 +72,4 @@ $messages['deletion_found'] = '在 LEFT_VERSION 與 RIGHT_VERSION 之間發現�
 $messages['help_translating'] = '在 translatewiki.net 協助翻譯';
 $messages['start_here'] = '由這裡開始搜尋';
 $messages['too_much_versions'] = '您已經達到 __VERSIONLIMIT__ 個版本的搜尋限制，請在 __WAITMINUTES__ 分鐘後再試或以折半方式搜尋。不便之處，敬請原諒。';
-$messages['not_found_at_all'] = '您的搜尋字詞未能找到，確定搜尋設置正確嗎？';
+$messages['not_found_at_all'] = '您的搜尋字詞未能找到，確定搜尋設定正確嗎？';
