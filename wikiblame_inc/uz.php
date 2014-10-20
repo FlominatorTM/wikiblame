@@ -10,29 +10,30 @@
  * @ingroup Language
  * @file
  *
+ * @author 6ahodir
  * @author CoderSI
  * @author Sociologist
  */
 
-$messages['January'] = 'yanvar';
-$messages['February'] = 'fevral';
-$messages['March'] = 'mart';
-$messages['April'] = 'aprel';
-$messages['May'] = 'may';
-$messages['June'] = 'iyun';
-$messages['July'] = 'iyul';
-$messages['August'] = 'avgust';
-$messages['September'] = 'sentabr';
-$messages['October'] = 'oktabr';
-$messages['November'] = 'noyabr';
-$messages['December'] = 'dekabr';
+$messages['January'] = 'Yanvar';
+$messages['February'] = 'Fevral';
+$messages['March'] = 'Mart';
+$messages['April'] = 'Aprel';
+$messages['May'] = 'May';
+$messages['June'] = 'Iyun';
+$messages['July'] = 'Iyul';
+$messages['August'] = 'Avgust';
+$messages['September'] = 'Sentabr';
+$messages['October'] = 'Oktabr';
+$messages['November'] = 'Noyabr';
+$messages['December'] = 'Dekabr';
 $messages['ui_lang'] = 'Displey tili';
 $messages['lang'] = 'Til';
 $messages['project'] = 'Loyiha';
 $messages['article'] = 'Sahifa';
 $messages['needle'] = 'Qidiruv uchun matn';
-$messages['skipversions'] = 'Doimo X versiyalarni oʻtkazib yuborish';
-$messages['ignorefirst'] = 'Birinchi X versiyalarni hisobga olmaslik';
+$messages['skipversions'] = 'Doimo x versiyalarni oʻtkazib yuborish';
+$messages['ignorefirst'] = 'Birinchi x versiyalarni hisobga olmaslik';
 $messages['limit'] = 'Tekshirish uchun versiyalar soni';
 $messages['start_date'] = 'Boshlanish sanasi';
 $messages['date_format'] = 'DD.MM.YYYY';
@@ -47,7 +48,7 @@ $messages['interpolated'] = 'ikkilik (agar versiyalar koʻp bo‘lsa tezroq)';
 $messages['ignore_minors'] = 'kichik tahrirlarni hisobga olmaslik (tajribaviy)';
 $messages['force_wikitags'] = 'Vikimatnga qidiruv o‘tkazish';
 $messages['start'] = 'Ishga tushirish';
-$messages['reset'] = 'Tashlash';
+$messages['reset'] = 'Tozalash';
 $messages['manual'] = 'Qo‘llanma';
 $messages['contact'] = 'Aloqa';
 $messages['get_less_versions'] = 'Sizning so‘rovingiz birvarakayiga __NUMREVISIONS__ ta versiyani berishi mumkin. Serverni himoya qilish maqsadida bitta chaqiruvda __ALLOWEDREVISIONS__ ta versiyadan ko‘p bo‘lmagan chaqiruvni amalga oshirish mumkin. Iltimos, moslamalarni o‘zgartiring yoki qidiruvning ikkilik tartibiga o‘ting!';
