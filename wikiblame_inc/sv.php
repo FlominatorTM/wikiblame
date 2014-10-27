@@ -13,6 +13,7 @@
  * @author Ainali
  * @author Cybjit
  * @author Flominator
+ * @author Jopparn
  * @author Liftarn
  * @author Lokal Profil
  * @author Per
@@ -69,7 +70,7 @@ $messages['execution_time'] = 'Körtid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versioner funna';
 $messages['please_wait'] = 'Var god vänta …';
 $messages['binary_test'] = 'Jämför skillnader i _FIRSTDATEVERSION_ mellan _FIRSTNUMBER_ och _SECONDNUMBER_ som kommer från _SOURCENUMBER_:';
-$messages['dead_end'] = 'Hamnade i en återvändsgränd (antagligen orsakat av återställningar eller editeringskrig)';
+$messages['dead_end'] = 'Hamnade i en återvändsgränd (antagligen orsakat av återställningar eller redigeringskrig)';
 $messages['once_more'] = 'En gång till, med känsla:';
 $messages['binary_enough'] = 'Försökt tillräckligt många gånger, artikelhistoriken är ganska rörig, försök med andra inställningar.';
 $messages['insertion_found'] = 'Inläggning hittades mellan LEFT_VERSION och RIGHT_VERSION';
