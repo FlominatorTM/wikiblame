@@ -13,6 +13,7 @@
  * @author Amir a57
  * @author Arjanizary
  * @author E THP
+ * @author Koroğlu
  */
 
 $messages['January'] = 'ژانویه';
@@ -30,7 +31,7 @@ $messages['December'] = 'دئسامبر';
 $messages['ui_lang'] = 'دیل گؤسترمه';
 $messages['lang'] = 'دیل';
 $messages['project'] = 'پروژه';
-$messages['article'] = 'صحیفه';
+$messages['article'] = 'صفحه';
 $messages['needle'] = 'آختاریش اوچون';
 $messages['skipversions'] = 'هر زامان x وئرسیاسینی آتلا';
 $messages['ignorefirst'] = 'هر زامان ایلک x وئرسیاسی آتلا';

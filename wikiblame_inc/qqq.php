@@ -12,6 +12,7 @@
  *
  * @author EugeneZelenko
  * @author Fryed-peach
+ * @author Liuxinyu970226
  * @author Lloffiwr
  * @author Lou Crazy
  * @author McDutchie
@@ -60,7 +61,8 @@ $messages['project_example'] = '{{Optional}}';
 $messages['article'] = 'Text before input box. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Page}}';
-$messages['needle'] = 'This message is used by wikiblame (http://wikipedia.ramselehof.de/wikiblame.php). It is the caption for the text to be searched for.';
+$messages['needle'] = 'This message is used by wikiblame (http://wikipedia.ramselehof.de/wikiblame.php). It is the caption for the text to be searched for.
+{{Identical|Search}}';
 $messages['skipversions'] = 'Label for a field in which the number of versions to skip while blaming can be entered. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['ignorefirst'] = 'Label for a field in which the number of early versions to skip while blaming can be entered. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['limit'] = 'Label before field (field is a number). See [http://wikipedia.ramselehof.de/wikiblame.php here].';
