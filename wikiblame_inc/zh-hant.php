@@ -13,11 +13,12 @@
  * @author Frankou
  * @author LNDDYL
  * @author Lauhenry
+ * @author Liuxinyu970226
  * @author Wrightbus
  */
 
 $messages['January'] = '1月';
-$messages['February'] = '2月';
+$messages['February'] = '二月';
 $messages['March'] = '3月';
 $messages['April'] = '4月';
 $messages['May'] = '5月';
@@ -44,6 +45,7 @@ $messages['oldest_first'] = '從最早開始';
 $messages['binary_search_inverse'] = '尋找去除文字 （僅適用於二進制）';
 $messages['search_method'] = '搜尋方式';
 $messages['binary'] = '二進制';
+$messages['binary_in_wp'] = 'http://zh.wikipedia.org/wiki/折半搜尋演算法';
 $messages['linear'] = '線性';
 $messages['interpolated'] = '二進制（在更多的版本中較快）';
 $messages['ignore_minors'] = '略過小修改（試驗性功能）';

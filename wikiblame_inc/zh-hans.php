@@ -13,6 +13,7 @@
  * @author Bencmq
  * @author Dimension
  * @author Hydra
+ * @author Liuxinyu970226
  * @author PhiLiP
  * @author Shizhao
  * @author Yfdyh000
@@ -47,6 +48,7 @@ $messages['oldest_first'] = '从最早开始';
 $messages['binary_search_inverse'] = '搜索移除相关文本的编辑（仅限二分法搜索）';
 $messages['search_method'] = '搜索方式';
 $messages['binary'] = '二分法';
+$messages['binary_in_wp'] = 'http://zh.wikipedia.org/wiki/折半搜索算法';
 $messages['linear'] = '线性';
 $messages['interpolated'] = '二分法（在版本更多时更快）';
 $messages['ignore_minors'] = '忽略小修改（试验性）';
