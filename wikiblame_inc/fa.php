@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Alirezaaa
  * @author Ebraminio
  * @author Huji
  * @author Reza1615
@@ -54,8 +55,8 @@ $messages['manual'] = 'دفترچه راهنما';
 $messages['contact'] = 'تماس';
 $messages['get_less_versions'] = 'جستجوی شما ممکن است __NUMREVISIONS__ نسخه را در یک زمان کوئری کرده باشد. به منظور حفاظت از سرور، شما فقط مجاز هستید تا به ازای هر درخواست برای __ALLOWEDREVISIONS__ کوئری بگیرید. لطفاً یا تنظیمات را تغییر دهید و یا روش جستجو را به دودویی تعویض کنید.';
 $messages['wrong_skips'] = 'تنظیمات نادرست: اگر __VERSIONSTOSKIP__ نسخهٔ اول جست‌زده شدند، در آنصورت هیچ‌یک از __VERSIONSTOSEARCH__ نسخه برای جستجو، پردازش نخواهد شد.';
-$messages['search_in_progress_text'] = 'تاریخچهٔ نسخهٔ _ARTICLELINK_ برای <b>_NEEDLE_</b> به‌عنوان متن ساده در حال جستجو است';
-$messages['search_in_progress_wikitags'] = 'تاریخچهٔ نسخهٔ _ARTICLELINK_ برای <b>_NEEDLE_</b> به‌عنوان متن ویکی در حال جستجو است';
+$messages['search_in_progress_text'] = 'تاریخچهٔ نسخهٔ _ARTICLELINK_ برای <b>_NEEDLE_</b> به عنوان متن ساده در حال جستجو است';
+$messages['search_in_progress_wikitags'] = 'تاریخچهٔ نسخهٔ _ARTICLELINK_ برای <b>_NEEDLE_</b> به عنوان متن ویکی در حال جستجو است';
 $messages['no_differences'] = 'هیچ تفاوتی در نسخه‌های جستجوشده یافت نشد.';
 $messages['first_version'] = 'باید تغییراتی در نسخهٔ اول یا آخر رخ داده باشد؟';
 $messages['first_version_present'] = '__NEEDLE__ همچنان در نسخهٔ اول یافت‌شده از تاریخ __REVISIONLINK__ موجود بود.';
