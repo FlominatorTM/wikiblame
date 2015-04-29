@@ -115,7 +115,7 @@ function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_
    
 	$csv_list = get_request("tools.wmflabs.org", $url, true );
 	
-	 
+	echo "$url<br/>";
 	$rows = explode("\"\n", $csv_list);
 	$bulleted_list = "";
 
@@ -125,10 +125,16 @@ function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_
 		{
 			//echo "$row<br>";
 			$cols = explode("\"", $row);
+
 			if($cols[1]!="")
 			{
+				$lemma = $cols[1];
+				if($cols[11]!="(Article)")
+				{
+						$lemma = ':'.$cols[11].':'.$cols[1];
+				}
 			//echo $cols[1]."<br>";
-				$bulleted_list.="* [[".$cols[1]."]]: [[:Kategorie:$cat|$cat]]\n";
+				$bulleted_list.="* [[".$lemma."]]: [[:Kategorie:$cat|$cat]]\n";
 				$number_of_current_entries = $number_of_current_entries + 1;
 			}
 		}
