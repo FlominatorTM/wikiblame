@@ -1,6 +1,8 @@
 <?php header('Content-Type: text/html; charset=utf-8');  ?>
 <?php 
 
+// $LastChangedDate$
+// $Rev$
 //shows the entries from zukunft that have been removed
 include("shared_inc/wiki_functions.inc.php");
 
