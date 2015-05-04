@@ -31,6 +31,7 @@ $messages['November'] = '11';
 $messages['December'] = '12';
 $messages['ui_lang'] = '보일 언어';
 $messages['lang'] = '언어';
+$messages['lang_example'] = 'ko, commons, …';
 $messages['project'] = '프로젝트';
 $messages['article'] = '문서';
 $messages['needle'] = '검색어';
