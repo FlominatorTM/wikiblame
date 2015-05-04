@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Obaid Raza
  * @author عثمان خان شاہ
  */
 
@@ -38,8 +39,11 @@ $messages['date_format'] = 'مہینہ دن،سال';
 $messages['order'] = 'ترتیب';
 $messages['newest_first'] = 'تازہ ترین پہلے';
 $messages['oldest_first'] = 'پرانا ترین پہلے';
+$messages['binary_search_inverse'] = 'حذف کرنے کے لئے متن دیکھیں (صرف بائنری)';
 $messages['search_method'] = 'تلاش کا طریقہ';
+$messages['binary'] = 'بائنری';
 $messages['linear'] = 'سطرحوی';
+$messages['interpolated'] = 'بائنری (دیگر ورژن سے تیزی کے ساتھ)';
 $messages['ignore_minors'] = 'معمولی تبدیلیاں نظرانداز کریں (تجربائی)';
 $messages['force_wikitags'] = 'فورس تلاش کررہا ہے ویکی ٹیکسٹ کے لئے';
 $messages['start'] = 'ابتدا';

@@ -14,6 +14,7 @@
  * @author Erdemaslancan
  * @author Flominator
  * @author Joseph
+ * @author Meelo
  * @author Vito Genovese
  */
 
@@ -49,7 +50,7 @@ $messages['binary'] = 'ikili';
 $messages['binary_in_wp'] = 'http://tr.wikipedia.org/wiki/%C4%B0kili_arama_algoritmas%C4%B1';
 $messages['linear'] = 'lineer';
 $messages['interpolated'] = 'ikili (fazla sürüm sayısı varsa daha hızı arar)';
-$messages['ignore_minors'] = 'ignore minor changes (experimental)';
+$messages['ignore_minors'] = 'Küçük değişiklikleri yoksay (deneysel)';
 $messages['force_wikitags'] = 'Vikimetin aramasına zorla';
 $messages['start'] = 'Başla';
 $messages['reset'] = 'Reset';

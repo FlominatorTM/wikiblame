@@ -14,17 +14,17 @@
  * @author Умар
  */
 
-$messages['January'] = 'январь';
-$messages['February'] = 'февраль';
+$messages['January'] = 'январехь';
+$messages['February'] = 'февралехь';
 $messages['March'] = 'мартехь';
-$messages['April'] = 'апрель';
-$messages['May'] = 'май';
-$messages['June'] = 'июнь';
-$messages['July'] = 'июль';
-$messages['August'] = 'август';
-$messages['September'] = 'сентябрь';
-$messages['October'] = 'октябрь';
-$messages['November'] = 'ноябрь';
+$messages['April'] = 'апрелехь';
+$messages['May'] = 'майхь';
+$messages['June'] = 'июнехь';
+$messages['July'] = 'июлехь';
+$messages['August'] = 'августехь';
+$messages['September'] = 'сентябрехь';
+$messages['October'] = 'октябрехь';
+$messages['November'] = 'ноябрехь';
 $messages['December'] = 'декабрехь';
 $messages['ui_lang'] = 'Сурт хӀотторан мотт';
 $messages['lang'] = 'Мотт';

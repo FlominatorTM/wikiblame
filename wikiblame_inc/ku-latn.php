@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Bikarhêner
  * @author George Animal
  */
 
@@ -25,12 +26,19 @@ $messages['September'] = 'Rezber';
 $messages['October'] = 'Kewçêr';
 $messages['November'] = 'Sermawez';
 $messages['December'] = 'berfanbar';
+$messages['ui_lang'] = 'Zimanê ekranê';
 $messages['lang'] = 'Ziman';
 $messages['project'] = 'Proje';
 $messages['article'] = 'Rûpel';
 $messages['needle'] = 'Bigere li';
 $messages['start_date'] = 'Dema destpêkê';
+$messages['linear'] = 'Lîner';
+$messages['force_wikitags'] = 'Lêgerîna wikinivîsê bi zorê pê bide kirin';
 $messages['start'] = 'Destpêk';
+$messages['reset'] = 'Jê bibe';
+$messages['manual'] = 'Manûel';
 $messages['contact'] = 'Têkilî';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ guherto hatin dîtin';
 $messages['please_wait'] = 'Ji kerema xwere bisekine ...';
+$messages['help_translating'] = 'Ji wergera translatewiki.net\'êre alîkarî bikin';
 $messages['start_here'] = 'Ji vir lêbigere';
