@@ -15,6 +15,7 @@
  * @author Bellayet
  * @author Ehsanulhb
  * @author RIPENDIL
+ * @author Wikisagnik
  */
 
 $messages['January'] = 'জানুয়ারি';
@@ -51,7 +52,7 @@ $messages['force_wikitags'] = 'বলপুর্বক উইকিটেক্
 $messages['start'] = 'শুরু';
 $messages['reset'] = 'আদি অবস্থায় ফেরত';
 $messages['manual'] = 'হস্তচালিত';
-$messages['contact'] = 'যোগাযোগের ঠিকানা';
+$messages['contact'] = 'যোগাযোগ';
 $messages['get_less_versions'] = 'আপনি __NUMREVISIONS__ টি পুনর্বিবেচনা একবারে অনুসন্ধান করতে পারবেন। সার্ভার এর সুরক্ষার জন্য, আপনি প্রতি বার সর্বোচ্চ __ALLOWEDREVISIONS__ টি প্রশ্নসম্বলিত অনুসন্ধান করতে পারবেন। দয়া করে সেটিংস পরিবর্তন করুন অথবা বাইনারি উপায়ে অনুসন্ধান চালান।';
 $messages['no_differences'] = 'অনুসন্ধানকৃত সংস্করণে কোন পার্থক্য পাওয়া যায় নি।';
 $messages['first_version'] = 'পরিবর্তনসমূহ কি প্রথম নাকি সর্বশেষ মুদ্রণে হয়েছিল?';
