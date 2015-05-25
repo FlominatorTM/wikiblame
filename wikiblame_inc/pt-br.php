@@ -12,6 +12,7 @@
  *
  * @author Amgauna
  * @author Capmo
+ * @author Dianakc
  * @author Giro720
  * @author Luckas
  * @author Luckas Blade
@@ -22,18 +23,18 @@
  * @author Tuliouel
  */
 
-$messages['January'] = 'Janeiro';
-$messages['February'] = 'Fevereiro';
-$messages['March'] = 'Março';
-$messages['April'] = 'Abril';
-$messages['May'] = 'Maio';
-$messages['June'] = 'Junho';
-$messages['July'] = 'Julho';
-$messages['August'] = 'Agosto';
-$messages['September'] = 'Setembro';
-$messages['October'] = 'Outubro';
-$messages['November'] = 'Novembro';
-$messages['December'] = 'Dezembro';
+$messages['January'] = 'janeiro';
+$messages['February'] = 'fevereiro';
+$messages['March'] = 'março';
+$messages['April'] = 'abril';
+$messages['May'] = 'maio';
+$messages['June'] = 'junho';
+$messages['July'] = 'julho';
+$messages['August'] = 'agosto';
+$messages['September'] = 'setembro';
+$messages['October'] = 'outubro';
+$messages['November'] = 'novembro';
+$messages['December'] = 'dezembro';
 $messages['ui_lang'] = 'Idioma de exibição';
 $messages['lang'] = 'Idioma';
 $messages['project'] = 'Projeto';

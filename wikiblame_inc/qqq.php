@@ -92,7 +92,8 @@ $messages['start'] = 'Text of the button to start the search. Translate as a ver
 $messages['reset'] = 'Button text next to date input boxes. Resets to today\'s date. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Reset}}';
-$messages['manual'] = 'Label for link to a user manual. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
+$messages['manual'] = 'Label for link to a user manual. See [http://wikipedia.ramselehof.de/wikiblame.php here].
+{{Identical|Manual}}';
 $messages['manual_link'] = '{{optional}} Contains the link to the Wikiblame manual. Should only contain a link if the manual has been localised.';
 $messages['contact'] = 'Link label to contact pages for Wikiblame. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 {{Identical|Contact}}';
