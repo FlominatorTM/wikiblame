@@ -20,7 +20,7 @@ $messages['template_location'] = 'Standort';
 $messages['template_range'] = 'Aktionsradius';
 
 //result
-$messages['distance_to'] = 'Photographers distance to coordinates from [[_ARTICLE_TO_]] ';
+$messages['distance_to'] = 'Photographers by distance to coordinates from [[_ARTICLE_TO_]] ';
 $messages['no_coordinates'] = 'location _LOCATION_ is invalid/does not have coordinates';
 $messages['proj_not_supported'] = 'project _PROJECT_ is currently not supported, please contact :de:user:Flominator for details';
 $messages['new_request'] = 'Perform new search';
