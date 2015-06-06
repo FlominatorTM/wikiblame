@@ -35,6 +35,7 @@ if(isset($_REQUEST['article_to']))
 {
     $article_to = $_REQUEST['article_to'];
 }
+echo '<h1>' . $messages['headline'] . '</h1>';
 if($article_to == "")
 {
 	echo '<form>';
@@ -95,9 +96,14 @@ else
 	}
 	
 	echo "<br><br><a href=\"?lang=$lang&project=$project\">".$messages['new_request']."</a>";
-	echo "<br><hr>$footNote";
-}
+    	echo "<br><hr>$footNote";
+    }
 
+        echo "<br><hr>";
+        echo '<a href="' . $messages['manual_link'] . '">'. $messages['manual']  . '</a>';
+        echo " - ";
+        echo '<a href="' . $messages['issue_link'] . '">'. $messages['issues']  . '</a>';
+        echo ' - by <a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">Flominator</a>';
 
 function print_debug($str)
 {

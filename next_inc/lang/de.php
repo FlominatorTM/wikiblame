@@ -3,6 +3,7 @@
 setlocale(LC_TIME, 'de_DE');	
 //form
 $messages['ui_lang'] = 'Anzeigesprache';
+$messages['headline'] = 'Nächste Fotografen';
 $messages['lang'] = 'Sprache';
 $messages['lang_example'] = 'de, commons, …';
 $messages['project'] = 'Projekt';
@@ -10,6 +11,11 @@ $messages['project_example'] = 'wikipedia, wikisource, wikimedia, …';
 $messages['article_to'] = 'Artikel';
 $messages['article_to_descr'] = 'Wikipedia-Artikel mit Koordinaten, an denen das Bild aufgenommen werden soll (z.B.  Stadt, Sehenswürdigkeit, Platz etc.)';
 $messages['find_next'] = 'Nächste Fotografen finden';
+$messages['manual'] = 'Anleitung';
+$messages['issues'] = 'Probleme und Feedback';
+$messages['manual_link'] = 'https://de.wikipedia.org/wiki/Wikipedia%3ABilderangebote';
+$messages['issue_link'] = 'https://github.com/FlominatorTM/wikipedia_nearest_photographers/issues';
+
 
 //template
 $messages['template_offer'] = 'Bilderangebot';

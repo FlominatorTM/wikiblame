@@ -4,13 +4,18 @@ setlocale(LC_TIME, 'en_US');
 
 //form
 $messages['ui_lang'] = 'Display language';
+$messages['headline'] = 'Nearest photographers';
 $messages['lang'] = 'Language';
 $messages['lang_example'] = 'en, commons, …';
 $messages['project'] = 'Project';
 $messages['project_example'] = 'wikipedia, wikisource, wikimedia, …';
 $messages['article_to'] = 'Article';
 $messages['article_to_descr'] = 'Wikipedia article with coordinates where picture should be taken at (e.g. some city, sight, place etc.)';
-$messages['find_next'] = 'Find next photographers';
+$messages['find_next'] = 'Find closest photographers';
+$messages['manual'] = 'Manual';
+$messages['issues'] = 'issues + feedback ';
+$messages['manual_link'] = 'https://en.wikipedia.org/wiki/Wikipedia%3AWikipedians%2FPhotographers';
+$messages['issue_link'] = 'https://github.com/FlominatorTM/wikipedia_nearest_photographers/issues';
 
 
 //template
