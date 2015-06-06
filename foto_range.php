@@ -35,9 +35,9 @@ if(isset($_REQUEST['article_to']))
 {
     $article_to = $_REQUEST['article_to'];
 }
-echo '<h1>' . $messages['headline'] . '</h1>';
 if($article_to == "")
 {
+        echo '<h1>' . $messages['headline'] . '</h1>';
 	echo '<form>';
 	echo $messages['lang'] . ': <input name="lang" value="' . $lang .'"/> ' . $messages['lang_example'] .'<br>';
 	echo $messages['project'] . ': <input name="project" value="' . $project .'"/>' . $messages['project_example'] .'<br>';
