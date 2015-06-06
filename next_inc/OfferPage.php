@@ -30,6 +30,7 @@ class OfferPage
 		$request_url="http://".$this->server."/w/api.php?action=query&prop=revisions&titles=".name_in_url($OfferPageName)."&format=xml";
 		@$xml = simplexml_load_file($request_url);
 		$this->revisionCurrent = $xml->query->pages->page->revisions->rev['revid'];
+		$this->pageEncoded = name_in_url($OfferPageName);
 		
 		$useCache = $this->IsCachedVersionUpToDate();
 			
@@ -65,8 +66,6 @@ class OfferPage
 				print_debug("deleting cache");
 				unlink($cacheFile);
 			}
-		
-			$this->pageEncoded = name_in_url($OfferPageName);
 			$page = "http://".$this->server."/w/index.php?action=raw&title=".$this->pageEncoded;
 
 			$page_src = removeheaders(get_request($this->server, $page, true ));
