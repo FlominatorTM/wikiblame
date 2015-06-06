@@ -22,10 +22,19 @@ get_language($user_lang, $inc_dir);
 // $usr->SetDateRangeISO("2013-12-20", "2014-04-01");
 
 // die("done");
-$is_debug = ($_REQUEST['debug']=="on" || $_REQUEST['debug']=="true" );
+$is_debug = false;
+if(isset($_REQUEST['debug']))
+{
+    $is_debug = ($_REQUEST['debug']=="on" || $_REQUEST['debug']=="true" );
+}
 
 $server = "$lang.$project.org";
-$article_to = $_REQUEST['article_to'];
+
+$article_to = "";
+if(isset($_REQUEST['article_to']))
+{
+    $article_to = $_REQUEST['article_to'];
+}
 if($article_to == "")
 {
 	echo '<form>';
