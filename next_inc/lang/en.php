@@ -14,7 +14,7 @@ $messages['article_to_descr'] = 'Wikipedia article with coordinates where pictur
 $messages['find_next'] = 'Find closest photographers';
 $messages['manual'] = 'Manual';
 $messages['issues'] = 'issues + feedback ';
-$messages['manual_link'] = 'https://en.wikipedia.org/wiki/Wikipedia%3AWikipedians%2FPhotographers';
+$messages['manual_link'] = 'https://en.wikipedia.org/wiki/Wikipedia:Wikipedians/Photographers/Manual';
 $messages['issue_link'] = 'https://github.com/FlominatorTM/wikipedia_nearest_photographers/issues';
 
 
