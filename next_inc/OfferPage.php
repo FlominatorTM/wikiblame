@@ -5,13 +5,25 @@ class OfferPage
 	private $userOffers;
 	public $server;
 	public $pageEncoded;
-	public $templateName;
+	public $TemplateName;
 	public $revisionCurrent;
+        private $TemplateUser;
+        private $TemplateLocation;
+        private $TemplateRange;
+        private $TemplateDateFrom;
+        private $TemplateDateUntil;
+        private $UserPrefixMale;
+        private $UserPrefixFemale;
+        private $IndexUserColumn;
+        private $IndexLocationColumn;
+        
 	public static $CONFIG_DIR = 'next_inc/proj';
 	public static $CACHE_DIR = 'next_inc/cached';
 	function __construct($server_in) 
 	{
-		global $messages;
+            
+		global $messages, $is_debug;
+	
 		//echo "page=".$page;
 		$this->server = $server_in;
 		$cacheFile = self::$CACHE_DIR . '/' . $this->server . '.cache';
@@ -28,7 +40,41 @@ class OfferPage
 		else
 		{
 			include($ConfigFile);
+
 			$this->templateName = $TemplateName;
+                        $this->TemplateUser = $TemplateUser;
+                        $this->TemplateLocation = $TemplateLocation;
+                        $this->TemplateRange = $TemplateRange;
+                        
+                        if(isset($TemplateDateFrom))
+                        {
+                          $this->TemplateDateFrom = $TemplateDateFrom;
+                        }
+                        
+                        if(isset($TemplateDateUntil))
+                        {
+                             $this->TemplateDateUntil = $TemplateDateUntil;
+                        }
+                        
+                        if(isset($UserPrefixMale))
+                        {
+                            $this->UserPrefixMale = $UserPrefixMale;
+                        }
+                                                
+                        if(isset($UserPrefixFemale))
+                        {
+                            $this->UserPrefixFemale = $UserPrefixFemale;
+                        }
+                        if(isset($IndexLocationColumn))
+                        {
+                            $this->IndexLocationColumn = $IndexLocationColumn;
+                        }
+                        if(isset($IndexUserColumn))
+                        {
+                            $this->IndexUserColumn = $IndexUserColumn;
+                        }
+                        
+                        
 		}
 		
 		$request_url="http://".$this->server."/w/api.php?action=query&prop=revisions&titles=".name_in_url($OfferPageName)."&format=xml";
@@ -37,7 +83,11 @@ class OfferPage
 		$this->pageEncoded = name_in_url($OfferPageName);
 		
 		$useCache = $this->IsCachedVersionUpToDate();
-			
+		
+                if($is_debug)
+                {
+                    $useCache = false;
+                }
 		$cacheIsFine = false;
 		if($useCache)
 		{
@@ -74,39 +124,17 @@ class OfferPage
 
 			$page_src = removeheaders(get_request($this->server, $page, true ));
 
-			//print_debug("page_src=".$page_src);
-			//print_debug("<hr><hr>");
+			print_debug("page_src=".$page_src);
+			print_debug("<hr><hr>");
 
-			$page_parts = explode('{{'.$this->templateName, $page_src);
-
-			foreach($page_parts as $template)
-			{
-				//print_debug("<hr>");
-				//print_debug("<h1>template</h1>$template");
-
-				$usr = new OfferingUser($this->extractTemplateParameter($template, $TemplateUser));
-				
-				$location = new GeoLocation($this->extractTemplateParameter($template, $TemplateLocation), $this->server);
-				$usr->SetLocation($location);
-				print_debug("<b>".$location->name."</b>");
-				$range = $this->extractTemplateParameter($template, $TemplateRange);
-				$dateFrom = trim($this->extractTemplateParameter($template, $TemplateDateFrom));
-				$dateUntil = trim($this->extractTemplateParameter($template, $TemplateDateUntil));
-				
-				//echo "Ö $dateFrom Ö ! Ö $dateUntil Ö";
-				$usr->SetDateRangeISO($dateFrom, $dateUntil);
-				
-				// print_debug("<b>".$range."</b><br />");
-				$usr->SetRange($range);
-				
-				//print_debug($usr->ToString());
-
-				if($usr->IsValid())
-				{
-					print_debug("user $usr->name is valid: ".$usr->ToString());
-					$this->userOffers[] = $usr;
-				}
-			}
+                        if($this->server == "pl.wikipedia.org")
+                        {
+                            $this->GenerateUsersUsingList($page_src);
+                        }
+                        else
+                        {
+                            $this->GenerateUsersUsingTemplate($page_src);
+                        }
 			
 			if($handleCacheFile = fopen($cacheFile, "w"))
 			{
@@ -124,6 +152,93 @@ class OfferPage
 			
 		}
 	}
+        
+        function GenerateUsersUsingList($page_src)
+        {
+            echo "<h1>hier</h1>";
+            
+            $page_parts = explode("|-", $page_src);
+             print_debug("page_parts:" . count($page_parts));
+            foreach($page_parts as $table_row)
+            {
+                print_debug("<b>row</b>:" . $table_row . "<br>");
+                $cols = explode("||", $table_row);
+                
+                print_debug("cols has " . count($cols));
+                if(count($cols)>= max($this->IndexUserColumn, $this->IndexLocationColumn) )
+                {
+                     print_debug("cols is big enough");
+                    $user_column_small = strtolower($cols[$this->IndexUserColumn]);
+                    print_debug("user_column_small:" . $user_column_small  . "<br>");
+                    
+                    if( strlen($user_column_small) > 0 
+                        && 
+                            (   stristr($user_column_small, "user")
+                                || stristr($user_column_small, strtolower($this->UserPrefixMale) )
+                                || stristr($user_column_small, strtolower($this->UserPrefixFemale) )
+                            )
+                        ) 
+                    {
+                        $usr_name = extract_link_target($cols[$this->IndexUserColumn], true);
+                        $loc_name = extract_link_target($cols[$this->IndexLocationColumn]);
+                        print_debug("usr:" . $usr_name ." loc:". $loc_name);
+                        if($usr_name && $loc_name)
+                        {
+                            $usr = new OfferingUser($usr_name);
+                            $location = new GeoLocation($loc_name, $this->server);
+                            $usr->SetLocation($location);
+                            if($usr->IsValid())
+                            {
+                                    print_debug("user $usr->name is valid: ".$usr->ToString());
+                                    $this->userOffers[] = $usr;
+                            }
+                            else
+                            {
+                                print_debug("user $usr->name is <b>not</b> valid: ".$usr->ToString());
+                            }
+                        
+                        }
+                    }
+                
+                }
+                 
+            }
+            
+        }
+  
+        function GenerateUsersUsingTemplate($page_src)
+        {
+            $page_parts = explode('{{'.$this->TemplateName, $page_src);
+
+            foreach($page_parts as $template)
+            {
+                    //print_debug("<hr>");
+                    //print_debug("<h1>template</h1>$template");
+
+                    $usr = new OfferingUser(extract_template_parameter($template, $this->TemplateUser));
+
+                    $location = new GeoLocation(extract_template_parameter($template, $this->TemplateLocation), $this->server);
+                    $usr->SetLocation($location);
+                    print_debug("<b>".$location->name."</b>");
+                    $range = extract_template_parameter($template, $this->TemplateRange);
+                    $dateFrom = trim(extract_template_parameter($template, $this->TemplateDateFrom));
+                    $dateUntil = trim(extract_template_parameter($template, $this->TemplateDateUntil));
+
+                    //echo "Ö $dateFrom Ö ! Ö $dateUntil Ö";
+                    $usr->SetDateRangeISO($dateFrom, $dateUntil);
+
+                    // print_debug("<b>".$range."</b><br />");
+                    $usr->SetRange($range);
+
+                    //print_debug($usr->ToString());
+
+                    if($usr->IsValid())
+                    {
+                            print_debug("user $usr->name is valid: ".$usr->ToString());
+                            $this->userOffers[] = $usr;
+                    }
+            }
+        }
 	
 	function UpdateCachedRevision($rev)
 	{
@@ -217,37 +332,5 @@ class OfferPage
 		return get_language_list(self::$CONFIG_DIR);
 	}
 	
-	private function extractTemplateParameter($template_text, $parameter)
-	{
-		$str_return = "";
-		if(stristr($template_text, $parameter))
-		{
-			$index_of_label = strpos($template_text, $parameter);
-			$index_of_equal_sign = strpos($template_text, "=", $index_of_label);
-			$index_of_pipe_sign = strpos($template_text, "|" , $index_of_label);
-			$index_of_template_end_sign = strpos($template_text, "}" , $index_of_label);
-			
-			$index_of_sign_after_parameter = $index_of_pipe_sign ;
-			
-			
-			if($index_of_sign_after_parameter == 0  
-			|| $index_of_template_end_sign < $index_of_pipe_sign)
-			{
-				$index_of_sign_after_parameter  = $index_of_template_end_sign;
-			}
-			$length_of_location = $index_of_sign_after_parameter - $index_of_equal_sign -2;
-			
-			// print_debug("location_label = $parameter");
-			// print_debug("index_of_label = $index_of_label");
-			// print_debug("index_of_equal_sign = $index_of_equal_sign");
-			// print_debug("index_of_pipe_sign = $index_of_pipe_sign");
-			// print_debug("index_of_template_end_sign = $index_of_template_end_sign");
-			// print_debug("index_of_sign_after_parameter= index_of_sign_after_parameter");
-			
-			// print_debug("length_of_location = $length_of_location");
-			
-			$str_return =  substr($template_text, $index_of_equal_sign+1, $length_of_location);
-		}
-		return $str_return ;
-	}
+
 }
