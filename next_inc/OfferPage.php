@@ -16,6 +16,10 @@ class OfferPage
 		$this->server = $server_in;
 		$cacheFile = self::$CACHE_DIR . '/' . $this->server . '.cache';
 
+                if(!file_exists(self::$CACHE_DIR))
+                {
+                    mkdir(self::$CACHE_DIR, "0777");
+                }
 		$ConfigFile = self::$CONFIG_DIR . '/' . $this->server . '.php';
 		if(!file_exists($ConfigFile))
 		{
