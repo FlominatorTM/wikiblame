@@ -2,6 +2,19 @@
 
 shared functions used by other repositories starting with "wikipedia_"
 
-since I fucked up this branch with the last commit, I'm trying again
+Adding this as subtree to another project
+=========================================
+1. create remote:
+git remote add -f shared_inc https://github.com/FlominatorTM/wikipedia_shared_includes
+(f only does a fetch immeditely afterwards)
 
-didn't go out that bad this time :)
+2. add subtree:
+git subtree add --prefix shared_inc shared_inc master 
+
+3. fetch changes after some time:
+git fetch shared_inc
+git subtree pull --prefix shared_inc shared_inc master --squash
+(squash prevents "merging by history")
+
+4. push back to origin of subtree
+git subtree push --prefix=shared_inc shared_inc master
