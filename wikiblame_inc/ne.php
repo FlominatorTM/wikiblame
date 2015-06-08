@@ -13,6 +13,7 @@
  * @author Bhawani Gautam
  * @author Krish Dulal
  * @author RajeshPandey
+ * @author सरोज कुमार ढकाल
  */
 
 $messages['January'] = 'जनवरी';
@@ -48,6 +49,7 @@ $messages['start'] = 'सुरु गर्ने';
 $messages['reset'] = 'रिसेट गर्नुहोस्';
 $messages['manual'] = 'मद्दत';
 $messages['contact'] = 'सम्पर्क गर्नुहोस';
+$messages['please_wait'] = 'पर्खनुहोस् ...';
 $messages['once_more'] = 'भावनाहरू सहित एकपल्ट पुनः';
 $messages['help_translating'] = 'ट्रानस्लेटविकि.नेट मा अनुवाद गर्न भद्दत गर्नुहोस';
 $messages['start_here'] = 'यहाँ बाट खोज्नुहोस';

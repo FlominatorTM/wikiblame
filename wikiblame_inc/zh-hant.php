@@ -17,18 +17,18 @@
  * @author Wrightbus
  */
 
-$messages['January'] = '1月';
+$messages['January'] = '一月';
 $messages['February'] = '二月';
-$messages['March'] = '3月';
-$messages['April'] = '4月';
-$messages['May'] = '5月';
-$messages['June'] = '6月';
-$messages['July'] = '7月';
-$messages['August'] = '8月';
-$messages['September'] = '9月';
-$messages['October'] = '10月';
-$messages['November'] = '11月';
-$messages['December'] = '12月';
+$messages['March'] = '三月';
+$messages['April'] = '四月';
+$messages['May'] = '五月';
+$messages['June'] = '六月';
+$messages['July'] = '七月';
+$messages['August'] = '八月';
+$messages['September'] = '九月';
+$messages['October'] = '十月';
+$messages['November'] = '十一月';
+$messages['December'] = '十二月';
 $messages['ui_lang'] = '顯示語言';
 $messages['lang'] = '語言';
 $messages['project'] = '計畫';
