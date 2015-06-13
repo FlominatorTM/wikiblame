@@ -438,7 +438,7 @@ if($needle!="")
 	$msg = str_replace('_NEEDLE_', htmlspecialchars($needle),$msg);
 	echo "$msg<br>\n";
 	
-	$history = get_request($server, $historyurl);
+	$history =  file_get_contents($historyurl);
 
 	//echo "<hr><pre>$history</pre><hr>";
 	$get_version_time = time()-$beginning;
@@ -712,12 +712,12 @@ function get_revision($id)
 	
 	if($tags_present)
 	{
-		$versionpage = get_request($server, $url."&action=raw");
+		$versionpage =  file_get_contents($url."&action=raw");
 	}
 	else
 	{
 		//remove the html tags (not included above because of <ref> and others)
-		$versionpage = get_request($server, $url);
+		$versionpage =  file_get_contents ($url);
 		//remove header and footer
 		$versionpage = strip_tags(chop_content($versionpage));
 	}
