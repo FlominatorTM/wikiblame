@@ -5,6 +5,7 @@ include_once("shared_inc/wiki_functions.inc.php");
 
 
 test_it("[[User:Flominator]]", "User:Flominator", false);
+test_it(" %nbsp;  [[User:Flominator]] %nbsp; ", "User:Flominator", false);
 test_it("[[User:Flominator|Flo]]", "User:Flominator", false);
 test_it("[[Flominator|Flo]]", "Flominator", false);
 test_it("[[Flo]]", "Flo", false);
@@ -16,6 +17,9 @@ test_it(" [[Flo]] ", "Flo", false);
 
 test_it(" [[Flo ", false, false);
 test_it("Flo ]] ", false, false);
+
+test_it("there was [[User:Flominator|Flo]] and some other, which was called [[User:Lupo|]]", "User:Flominator", false);
+test_it("there was [[User:Flominator]] and some other, which was called [[User:Lupo|]]", "User:Flominator", false);
 
 function test_it($in, $out_expected, $do_cut)
 {
