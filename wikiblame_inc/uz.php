@@ -13,6 +13,7 @@
  * @author 6ahodir
  * @author CoderSI
  * @author Sociologist
+ * @author Таржимон
  */
 
 $messages['January'] = 'Yanvar';

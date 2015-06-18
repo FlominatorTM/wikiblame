@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** Tacawit (Tacawit)
+/** Shawiya (Latin script) (Tacawit)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -25,3 +25,5 @@ $messages['September'] = 'Ctember';
 $messages['October'] = 'Kuber';
 $messages['November'] = 'Wember';
 $messages['December'] = 'Jember';
+$messages['needle'] = 'Iruzzi';
+$messages['date_format'] = 'UU II AAAA';
