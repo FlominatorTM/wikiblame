@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** Northern Luri (لوری مینجایی)
+/** Northern Luri (لۊری شومالی)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net

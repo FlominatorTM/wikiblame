@@ -13,6 +13,8 @@
  * @author Bhawani Gautam
  * @author Krish Dulal
  * @author RajeshPandey
+ * @author राम प्रसाद जोशी
+ * @author सरोज कुमार ढकाल
  */
 
 $messages['January'] = 'जनवरी';
@@ -43,11 +45,12 @@ $messages['oldest_first'] = 'पुराना पहिला';
 $messages['search_method'] = 'खोज्ने तरिका';
 $messages['binary'] = 'द्विआधारी';
 $messages['linear'] = 'रैखिक';
-$messages['ignore_minors'] = 'साना परिवर्तनहरु अनदेखा गर्ने (प्रायोगिक)';
+$messages['ignore_minors'] = 'साना परिवर्तनहरू अनदेखा गर्ने (प्रायोगिक)';
 $messages['start'] = 'सुरु गर्ने';
 $messages['reset'] = 'रिसेट गर्नुहोस्';
 $messages['manual'] = 'मद्दत';
 $messages['contact'] = 'सम्पर्क गर्नुहोस';
+$messages['please_wait'] = 'पर्खनुहोस् ...';
 $messages['once_more'] = 'भावनाहरू सहित एकपल्ट पुनः';
-$messages['help_translating'] = 'ट्रानस्लेटविकि.नेट मा अनुवाद गर्न भद्दत गर्नुहोस';
+$messages['help_translating'] = 'ट्रानस्लेटविकि.नेटमा अनुवाद गर्न मद्दत गर्नुहोस्';
 $messages['start_here'] = 'यहाँ बाट खोज्नुहोस';

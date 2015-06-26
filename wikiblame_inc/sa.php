@@ -69,5 +69,5 @@ $messages['insertion_found'] = 'LEFT_VERSION, RIGHT_VERSION च मध्ये 
 $messages['deletion_found'] = 'LEFT_VERSION, RIGHT_VERSION च मध्ये विलोपाः प्राप्ताः';
 $messages['help_translating'] = 'translatewiki.net इत्यत्र अनुवादं कृत्वा साहाय्यं करोतु';
 $messages['start_here'] = 'इत्यतः अन्विष्यताम्';
-$messages['too_much_versions'] = '__VERSIONLIMIT__ इत्यस्य अन्तिमसंस्करपर्यन्तम् अत्र प्रदर्शितम् । कृपया __WAITMINUTES__ कालानन्तरं प्रयासं करोतु । अन्वेषयस्य बाइनरी-विकल्पमपि चेतुं शक्नोति । असुविधार्थं क्षम्यताम् ।';
-$messages['not_found_at_all'] = 'भवतः/भवत्याः अन्वेषणपदं नैव लब्धम् । अभिविन्यासाः (settings) दृष्ट्वा पुनः प्रयासं करोतु ।';
+$messages['too_much_versions'] = '__VERSIONLIMIT__ इत्यस्य अन्तिमसंस्करपर्यन्तम् अत्र प्रदर्शितम् । कृपया __WAITMINUTES__ कालानन्तरं प्रयतताम् । अन्वेषयस्य बाइनरी-विकल्पमपि चेतुं शक्नोति । असुविधार्थं क्षम्यताम् ।';
+$messages['not_found_at_all'] = 'भवतः/भवत्याः अन्वेषणपदं नैव लब्धम् । अभिविन्यासाः (settings) दृष्ट्वा पुनः प्रयतताम् ।';
