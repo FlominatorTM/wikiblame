@@ -13,6 +13,7 @@
  * @author Bugoslav
  * @author Ex13
  * @author SpeedyGonsales
+ * @author Teoo3
  */
 
 $messages['January'] = 'siječnja';
@@ -71,4 +72,4 @@ $messages['deletion_found'] = 'Brisanje je pronađeno između LEFT_VERSION i RIG
 $messages['help_translating'] = 'Pomozite prevođenjem na translatewiki.net';
 $messages['start_here'] = 'Pretraži odavde';
 $messages['too_much_versions'] = 'Dostigli ste vaše ograničenje upita od __VERSIONLIMIT__ inačica. Molimo pokušajte ponovo za __WAITMINUTES__ minuta ili pređite na binarnu pretragu. Ispričavamo se zbog neugodnosti.';
-$messages['not_found_at_all'] = 'Vaš traženi pojam nije uopće pronađen. Jeste li sigurni da ste postavili pravilne postavke?';
+$messages['not_found_at_all'] = 'Vaš traženi pojam nije uopće pronađen. Provjerite postavke i pokušajte ponovno.';
