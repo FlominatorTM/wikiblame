@@ -18,10 +18,8 @@ $project = "wikipedia";
 $server = "$lang.$project.org";
 $number_of_current_entries = 0;
 
-
-
 $plainfuture_text = retrieve_current_list($catenc, $template, $other_cat_enc, $template_missing);	
-
+//echo "<hr>$plainfuture_text<hr>";
 echo '<form method="post" action="https://'.$server.'/w/index.php?action=submit&title='. $articleenc .'" target="_blank">'."\n";
 echo "<textarea  name=\"wpTextbox1\">";
 echo "\n== Einbindungen ==\n";
@@ -32,8 +30,8 @@ echo '<input type="hidden" value="1" name="wpSection" />';
 set_up_media_wiki_input_fields("Inventar-Seite mit inventory.php aktualisiert", "Inventar-Seite aktualisieren");
 echo "</form>\n";
 
-
 $plain_text = get_plain_text_from_article($articleenc);
+
 $entries_removed = compare_lists($plain_text, $plainfuture_text);
 $entries_added= compare_lists($plainfuture_text, $plain_text);
 
@@ -63,26 +61,21 @@ echo "</form>\n";
 function get_plain_text_from_article($articleenc)
 {
 	global $server;
-	$page = "http://".$server."/w/index.php?action=raw&title=".$articleenc;
-	//echo "$page<br>";
-			
-	//echo "get_request($server, $page, true )";
-	$art_text = get_request($server, $page, false );
-	//echo "<h1>art_text</h1>$art_text";
-	$plain_text = strip_tags(chop_content_local($art_text));
-	//echo "<h1>plain_text</h1>$plain_text<hr>";
-	return $plain_text;
+	$page = "https://".$server."/w/index.php?action=raw&title=".$articleenc;
+	return file_get_contents($page);
 }
 
 function compare_lists($needles, $haystack)
 {
+	//echo "entering compare_lists";
 	$results = array();
 	//$hits = 0;
 	$paragraphsRemoved = explode("\n",$needles);
-	// echo "<h2> haystack</h2>".$haystack;
-	// echo "<h2> needles</h2>".$needles;
+	 //echo "<h2> haystack</h2><textarea>$haystack</textarea>";
+	 //echo "<h2> needles</h2><textarea>$needles</textarea>";
 	foreach($paragraphsRemoved AS $newLine)
 	{
+		set_time_limit(60);
 		$onlyOneNewArticle = explode("]]:", $newLine);
 		if(stristr( $onlyOneNewArticle[0], "*" ) && !stristr($haystack, $onlyOneNewArticle[0] ))
 		{
@@ -91,6 +84,8 @@ function compare_lists($needles, $haystack)
 			//$hits++;
 		}
 	}
+	//echo "$hits hits";
+	//echo "leaving compare_lists";
 	return $results;
 }
 
@@ -99,7 +94,7 @@ function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_
 	global $cat, $number_of_current_entries;
 
 	$all_namespaces ="ns%5B-2%5D=1&ns%5B0%5D=1&ns%5B2%5D=1&ns%5B4%5D=1&ns%5B6%5D=1&ns%5B8%5D=1&ns%5B10%5D=1&ns%5B12%5D=1&ns%5B14%5D=1&ns%5B100%5D=1&ns%5B828%5D=1&ns%5B-1%5D=1&ns%5B1%5D=1&ns%5B3%5D=1&ns%5B5%5D=1&ns%5B7%5D=1&ns%5B9%5D=1&ns%5B11%5D=1&ns%5B13%5D=1&ns%5B15%5D=1&ns%5B101%5D=1&ns%5B829%5D=1";
-	$url ="http://tools.wmflabs.org/catscan2/catscan2.php?language=de&categories=$catenc%0D%0A$other_cat_enc&doit=1&format=csv&$all_namespaces&depth=15";
+	$url ="https://tools.wmflabs.org/catscan2/catscan2.php?language=de&categories=$catenc%0D%0A$other_cat_enc&doit=1&format=csv&$all_namespaces&depth=15";
 	
    
    if($template!="")
@@ -114,10 +109,21 @@ function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_
 			$url.="&templates_no=$template";
 		}
   	}
-   
-	$csv_list = get_request("tools.wmflabs.org", $url, true );
-	
+
+	ini_set('user_agent', 'script by de_user_Flominator'); 
+    $csv_list = file_get_contents($url); 
+
 	echo "$url<br/>";
+	if(!$csv_list)
+	{
+		var_dump($http_response_header);
+		die("<b>error while retrieving list from wmflabs</b>");
+	}
+	
+	echo strlen($csv_list);
+
+	//echo "<h1>csv</h1>$csv_list";
+
 	$rows = explode("\"\n", $csv_list);
 	$bulleted_list = "";
 
@@ -147,7 +153,7 @@ function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_
 function retrieve_current_list_old($catenc, $template="", $other_cat_enc="", $template_not_present=false)
 {
 	global $number_of_current_entries;
-	$catpage ="http://toolserver.org/~daniel/WikiSense/CategoryIntersect.php?wikilang=de&wikifam=.wikipedia.org&basecat=$catenc&basedeep=3&go=Scannen&format=wiki&userlang=de";
+	$catpage ="https://toolserver.org/~daniel/WikiSense/CategoryIntersect.php?wikilang=de&wikifam=.wikipedia.org&basecat=$catenc&basedeep=3&go=Scannen&format=wiki&userlang=de";
 	if($template!="")
 	{
 		$catpage.="&mode=ts&templates=$template";
@@ -165,7 +171,7 @@ function retrieve_current_list_old($catenc, $template="", $other_cat_enc="", $te
 	$catpage.="&mode=al";
 	}
 	
-	$page_content = strip_tags(chop_content_local(removeheaders(get_request("toolserver.org", $catpage, true ))));
+	$page_content = file_get_contents($catpage);
 	$number_of_current_entries = count(explode("*", $page_content))-1;
 	echo "<!-- $catpage -->";
 	return $page_content;
