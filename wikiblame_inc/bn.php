@@ -15,6 +15,7 @@
  * @author Bellayet
  * @author Ehsanulhb
  * @author RIPENDIL
+ * @author Sayma Jahan
  * @author Wikisagnik
  */
 
@@ -43,6 +44,7 @@ $messages['date_format'] = 'MM DD, YYYY';
 $messages['order'] = 'ক্রম';
 $messages['newest_first'] = 'সর্বশেষ প্রথমে';
 $messages['oldest_first'] = 'সর্বপ্রথম প্রথমে';
+$messages['binary_search_inverse'] = 'লেখার মুছার জন্য খোঁজ (শুধু বাইনারি)';
 $messages['search_method'] = 'খোজ প্রক্রিয়া';
 $messages['binary'] = 'বাইনারি';
 $messages['linear'] = 'লিনিয়ার';
@@ -54,12 +56,22 @@ $messages['reset'] = 'আদি অবস্থায় ফেরত';
 $messages['manual'] = 'হস্তচালিত';
 $messages['contact'] = 'যোগাযোগ';
 $messages['get_less_versions'] = 'আপনি __NUMREVISIONS__ টি পুনর্বিবেচনা একবারে অনুসন্ধান করতে পারবেন। সার্ভার এর সুরক্ষার জন্য, আপনি প্রতি বার সর্বোচ্চ __ALLOWEDREVISIONS__ টি প্রশ্নসম্বলিত অনুসন্ধান করতে পারবেন। দয়া করে সেটিংস পরিবর্তন করুন অথবা বাইনারি উপায়ে অনুসন্ধান চালান।';
+$messages['wrong_skips'] = 'ভুল সেটিংস: যদি প্রথমটি _VERSIONTOSKIP_ অনুবাদ গুলো বাদ দেওয়া হয়,তাহলে _VERSIONTOSEARCH_ অনুবাদের কোনটির অনুসন্ধান প্রক্রিয়াগত হবে না।';
+$messages['search_in_progress_text'] = '_ARTICLELINK_ এর অনুবাদ ইতিহাস <b>_ NEEDLE</b> এর জন্য সমতল লেখার মত অনুসন্ধান করা হচ্ছে';
+$messages['search_in_progress_wikitags'] = '_ARTICLELINK_ এর অনুবাদ ইতিহাস <b>_NEEDLE_</b> এর জন্য উইকি লেখা হিসেবে অনুসন্ধান করা হচ্ছে';
 $messages['no_differences'] = 'অনুসন্ধানকৃত সংস্করণে কোন পার্থক্য পাওয়া যায় নি।';
 $messages['first_version'] = 'পরিবর্তনসমূহ কি প্রথম নাকি সর্বশেষ মুদ্রণে হয়েছিল?';
 $messages['first_version_present'] = '__NEEDLE__ ইতিমধ্যেই প্রথশ পুনর্বিবেচনায় ছিল __REVISIONLINK__ এ সময় থেকেই।';
+$messages['earlier_versions_available'] = 'সেগুলো সম্ভবত প্রাক্কালিন সংশোধন।';
 $messages['execution_time'] = 'সম্পন্নের সময়: _EXECUTIONTIME_ সেকেন্ড';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ টি সংস্করণ পাওয়া গেছে';
 $messages['please_wait'] = 'অনুগ্রহ করে অপেক্ষা করুন...';
+$messages['binary_test'] = '_FIRSTDATEVERSION_  এবং _FIRSTNUMBER_ এবং _SECONDNUMBER_ এর মাঝে পার্থক্য তুলনা করা হচ্ছে যখন _SOURCENUMBER_: থেকে এসেছে';
+$messages['dead_end'] = 'কিছু অপরিবর্তনীয় খুঁজে পাওয়া গেছে (সম্ভবত ফিরে আসা বা সম্পাদনা যুদ্ধের জন্য)';
+$messages['once_more'] = 'আরেকবার, অনুভুতির সাথে:';
+$messages['binary_enough'] = 'যথেষ্টবার পুনরায় চেষ্টা করা হয়েছে,অনুচ্ছেদ ইতিহাস কিছুটা এলোমেলো, দয়া করে কিছু সেটিংস পরিবর্তনের চেষ্টা করুন।';
+$messages['insertion_found'] = 'বাম_অনুচ্ছেদ এবং ডান_অনুচ্ছেদ এর মাঝে সন্নিবেশ খুঁজে পাওয়া গেছে';
+$messages['deletion_found'] = 'বাম_অনুচ্ছেদ এবং ডান_অনুচ্ছেদ এর মাঝে মুছে ফেলা খুঁজে পাওয়া গেছে';
 $messages['help_translating'] = 'translatewiki.net এ অনুবাদে সাহায্য করুন';
 $messages['start_here'] = 'এখানে অনুসন্ধান করুন';
 $messages['too_much_versions'] = 'আপনার অনুসন্ধানের সীমা __VERSIONLIMIT__ গুলো মুদ্রণ পরিলক্ষিত। দয়া করে __WAITMINUTES__ মিনিট পর আবার চেষ্টা করুন অথবা বাইনারি অনুসন্ধান এ পরিবর্তন করুন। সাময়িক অসুবিধার জন্য দু:খিত।';
