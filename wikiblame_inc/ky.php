@@ -11,6 +11,7 @@
  * @file
  *
  * @author Growingup
+ * @author Janatkg
  * @author Maksat
  */
 
@@ -31,21 +32,26 @@ $messages['lang'] = 'Тил';
 $messages['project'] = 'Долбоор';
 $messages['article'] = 'Барак';
 $messages['needle'] = 'Издөө сабы';
+$messages['skipversions'] = 'Ар дайым x версиясын өткөрүп жиберүү';
+$messages['ignorefirst'] = 'Биринчи x версиясын этибарга албоо';
+$messages['limit'] = 'Текшерилүүчү версиялардын саны';
 $messages['start_date'] = 'Баштоо датасы';
 $messages['date_format'] = 'YYYY.MM.DD';
 $messages['order'] = 'Ирет';
-$messages['newest_first'] = 'Алгач жаңылар';
-$messages['oldest_first'] = 'Алгач эскилер';
+$messages['newest_first'] = 'алгач жаңылар';
+$messages['oldest_first'] = 'алгач эскилер';
+$messages['binary_search_inverse'] = 'Текстти өчүрүү издөөсү (экилик гана)';
 $messages['search_method'] = 'Издөө ыкмасы';
 $messages['binary'] = 'экилик';
 $messages['linear'] = 'сызыктык';
+$messages['ignore_minors'] = 'Майда өзгөртүүлөрдү эсепке албоо (эксперименталдык)';
 $messages['force_wikitags'] = 'Уикитексти издөөнү баштоо';
-$messages['start'] = 'Жүргүзүү';
-$messages['reset'] = 'Түшүрүү';
+$messages['start'] = 'Баштоо';
+$messages['reset'] = 'Тазалоо';
 $messages['manual'] = 'Колдонмо';
 $messages['contact'] = 'Байланыш';
 $messages['earlier_versions_available'] = 'Балким, кийинки чыккан үлгүлөрдө бардыр';
 $messages['execution_time'] = 'Аткаруу убакыты: _EXECUTIONTIME_ секунда';
 $messages['please_wait'] = 'Күтө туруңуз...';
-$messages['help_translating'] = 'translatewiki.net сайтынан которгонго жардам берүү';
+$messages['help_translating'] = 'translatewiki.net сайтынан которууга жардам берүү';
 $messages['start_here'] = 'Издөөнү бул жерден баштоо';
