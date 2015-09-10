@@ -13,6 +13,7 @@
  * @author දසනැබළයෝ
  * @author පසිඳු කාවින්ද
  * @author බිඟුවා
+ * @author හරිත
  */
 
 $messages['January'] = 'ජනවාරි';
@@ -51,6 +52,10 @@ $messages['start'] = 'අරඹන්න';
 $messages['reset'] = 'ප්‍රත්‍යාරම්භ කරන්න';
 $messages['manual'] = 'හස්තීය';
 $messages['contact'] = 'සම්බන්ධතාවන්';
+$messages['get_less_versions'] = 'ඔබේ සෙවුමෙන් එක් වරකට සංශෝධන __NUMREVISIONS__ ක් පමණක් විමසිය යුතුය. සර්වරය ආරක්ෂා කිරීම පිණිස, ඔබට අවසර ඇත්තේ ඇමතුමකට __ALLOWEDREVISIONS__ ක් සඳහා විමසීමට පමණි. කරුණාකර සැකසුම් වෙනස් කරන්න නැතහොත් සෙවුම් ක්‍රමය බයිනරි හෙවත් ද්වීමය වෙත මාරු කරන්න!';
+$messages['wrong_skips'] = 'වැරදි සැකසුම්: පළමු __VERSIONSTOSKIP__ අනුවාද මගහරින්නේ නම්, සෙවීමට ඇති කිසිදු __VERSIONSTOSEARCH__ අනුවාදයක් ක්‍රියා නොකෙරේ.';
+$messages['search_in_progress_text'] = '_ARTICLELINK_ හි අනුවාද ඉතිහාසය <b>_NEEDLE_</b> සඳහා හුදු පෙළක් ලෙස සෙවීමට ලක්කෙරේ.';
+$messages['search_in_progress_wikitags'] = '_ARTICLELINK_ හි අනුවාද ඉතිහාසය <b>_NEEDLE_</b> සඳහා විකි පෙළක් ලෙස සෙවීමට ලක්කෙරේ.';
 $messages['no_differences'] = 'සෙවූ සංශෝධනවල වෙනස්කම් දක්නට නොලැබුණි.';
 $messages['execution_time'] = 'සම්පාදන කාලය: තත්පර _EXECUTIONTIME_';
 $messages['versions_found'] = 'අනුවාද _NUMBEROFVERSIONS_ හමුවුණි';

@@ -12,6 +12,7 @@
  *
  * @author Flominator
  * @author Minisarm
+ * @author Wintereu
  */
 
 $messages['January'] = 'Ianuarie';
@@ -34,13 +35,13 @@ $messages['needle'] = 'De căutat';
 $messages['skipversions'] = 'Întotdeauna se omit x versiuni';
 $messages['ignorefirst'] = 'Se ignoră primele x versiuni';
 $messages['limit'] = 'Versiuni pentru verificare';
-$messages['start_date'] = 'Începând cu';
+$messages['start_date'] = 'Data de început';
 $messages['date_format'] = 'LL ZZ AAAA';
-$messages['order'] = 'Sortare';
+$messages['order'] = 'Ordonare';
 $messages['newest_first'] = 'întâi cele mai recente';
 $messages['oldest_first'] = 'întâi cele mai vechi';
 $messages['binary_search_inverse'] = 'Caută eliminări de text (doar binar)';
-$messages['search_method'] = 'Metoda căutării';
+$messages['search_method'] = 'Metodă de căutare';
 $messages['binary'] = 'binară';
 $messages['binary_in_wp'] = 'http://ro.wikipedia.org/wiki/C%C4%83utare_binar%C4%83';
 $messages['linear'] = 'lineară';

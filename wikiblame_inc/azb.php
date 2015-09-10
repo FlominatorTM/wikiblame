@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Alp Er Tunqa
  * @author Amir a57
  * @author Arjanizary
  * @author E THP
@@ -24,7 +25,7 @@ $messages['May'] = 'مئی';
 $messages['June'] = 'ژوئن';
 $messages['July'] = 'ژولای';
 $messages['August'] = 'آقوست';
-$messages['September'] = 'سئپتامبر';
+$messages['September'] = 'سپتامبر';
 $messages['October'] = 'اوکتوبر';
 $messages['November'] = 'نووامبر';
 $messages['December'] = 'دئسامبر';
