@@ -727,7 +727,7 @@ function get_revision($id)
 		$url = str_replace("&", "\&", $url); 
 		if(shell_exec("/usr/bin/wget --quiet -O - $url| /bin/grep \"$needle\"")!="")
 	*/
-	removeheaders(&$versionpage);
+	//removeheaders(&$versionpage);
 	return $versionpage;
 }
 
