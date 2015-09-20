@@ -11,6 +11,7 @@
  * @file
  *
  * @author Papuass
+ * @author Silraks
  * @author Xil
  */
 
@@ -35,6 +36,7 @@ $messages['skipversions'] = 'Vienmēr izlaist x versijas';
 $messages['ignorefirst'] = 'Ignorēt pirmās x versijas';
 $messages['limit'] = 'Pārbaudāmo versiju skaits';
 $messages['start_date'] = 'Sākuma datums';
+$messages['date_format'] = 'MM DD, GGGG';
 $messages['order'] = 'Secība';
 $messages['newest_first'] = 'vispirms jaunākās';
 $messages['oldest_first'] = 'vispirms vecākās';
@@ -49,3 +51,4 @@ $messages['contact'] = 'Kontakti';
 $messages['execution_time'] = 'Izpildes laiks: _EXECUTIONTIME_ sekundes';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versijas atrastas';
 $messages['please_wait'] = 'Lūdzu, uzgaidiet...';
+$messages['help_translating'] = 'Palīdzi tulkot iekš translatewiki.net';

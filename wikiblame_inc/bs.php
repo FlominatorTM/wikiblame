@@ -12,6 +12,7 @@
  *
  * @author CERminator
  * @author Edinwiki
+ * @author Palapa
  */
 
 $messages['January'] = 'januar';
@@ -39,13 +40,13 @@ $messages['date_format'] = 'DD. MM. YYYY';
 $messages['order'] = 'Poredak';
 $messages['newest_first'] = 'najsvježije naprijed';
 $messages['oldest_first'] = 'najstarije naprijed';
-$messages['binary_search_inverse'] = 'Traži uklonjen tekst (samo binarno)';
+$messages['binary_search_inverse'] = 'Traži uklonjeni tekst (samo binarno)';
 $messages['search_method'] = 'Način pretrage';
 $messages['binary'] = 'binarno';
 $messages['linear'] = 'linearno';
 $messages['interpolated'] = 'binarno (brže sa više verzija)';
 $messages['ignore_minors'] = 'zanemari manje izmjene (probno)';
-$messages['force_wikitags'] = 'nasilu traženje wiki teksta';
+$messages['force_wikitags'] = 'traženje wiki teksta nasilu';
 $messages['start'] = 'Početak';
 $messages['reset'] = 'Poništi';
 $messages['manual'] = 'Uputstvo';
@@ -67,7 +68,7 @@ $messages['once_more'] = 'Ponovljena pretraga:';
 $messages['binary_enough'] = 'Izvršene su brojne pretrage, historija članka je zbrkana, molimo pokušajte promijeniti neke postavke.';
 $messages['insertion_found'] = 'Pronađeno ubacivanje između LEFT_VERSION i RIGHT_VERSION';
 $messages['deletion_found'] = 'Pronađeno brisanje između LEFT_VERSION i RIGHT_VERSION';
-$messages['help_translating'] = 'Pomognite prevođenje na translatewiki.net';
+$messages['help_translating'] = 'Pomozite prevođenje na translatewiki.net';
 $messages['start_here'] = 'Traži odavde';
 $messages['too_much_versions'] = 'Dostigli ste vaše ograničenje upita od __VERSIONLIMIT__ verzija. Molimo pokušajte ponovo za __WAITMINUTES__ minuta ili pređite na binarnu pretragu. Žao nam je zbog ove neprijatnosti.';
 $messages['not_found_at_all'] = 'Vaš traženi pojam nije uopće pronađen. Provjerite postavke i pokušajte ponovo.';

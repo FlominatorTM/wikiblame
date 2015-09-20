@@ -13,23 +13,24 @@
  * @author Flominator
  * @author Hym411
  * @author Klutzy
+ * @author Kurousagi
  * @author Kwj2772
  * @author 아라
  */
 
-$messages['January'] = '1';
-$messages['February'] = '2';
-$messages['March'] = '3';
-$messages['April'] = '4';
-$messages['May'] = '5';
-$messages['June'] = '6';
-$messages['July'] = '7';
-$messages['August'] = '8';
-$messages['September'] = '9';
-$messages['October'] = '10';
-$messages['November'] = '11';
-$messages['December'] = '12';
-$messages['ui_lang'] = '보일 언어';
+$messages['January'] = '1월';
+$messages['February'] = '2월';
+$messages['March'] = '3월';
+$messages['April'] = '4월';
+$messages['May'] = '5월';
+$messages['June'] = '6월';
+$messages['July'] = '7월';
+$messages['August'] = '8월';
+$messages['September'] = '9월';
+$messages['October'] = '10월';
+$messages['November'] = '11월';
+$messages['December'] = '12월';
+$messages['ui_lang'] = '표시할 언어';
 $messages['lang'] = '언어';
 $messages['lang_example'] = 'ko, commons, …';
 $messages['project'] = '프로젝트';
@@ -55,7 +56,7 @@ $messages['start'] = '시작';
 $messages['reset'] = '초기화';
 $messages['manual'] = '사용법';
 $messages['contact'] = '연락하기';
-$messages['get_less_versions'] = '검색 한 번에 __NUMREVISIONS__ 판을 쿼리할 수 있습니다. 서버를 보호하기 위해서는 호출할 때마다 __ALLOWEDREVISIONS__에 대해 쿼리만 허용합니다. 설정을 바꾸거나 이진으로 검색 방식을 바꾸십시오!';
+$messages['get_less_versions'] = '검색 한 번에 __NUMREVISIONS__ 판을 검색할 수 있습니다. 서버를 보호하기 위해서는 호출할 때마다 __ALLOWEDREVISIONS__에 대해 검색만 허용합니다. 설정을 바꾸거나 이진으로 검색 방식을 바꾸십시오!';
 $messages['wrong_skips'] = '설정이 잘못됨: 처음 __VERSIONTOSKIP__개 판을 넘어가도록 하면 __VERSIONTOSEARCH__개의 판 중 검색될 판이 없습니다.';
 $messages['search_in_progress_text'] = '_ARTICLELINK_의 문서 역사를 일반 텍스트로 "<b>_NEEDLE_</b>"에 대해 검색하는 중입니다';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_의 문서 역사를 위키 텍스트로 "<b>_NEEDLE_</b>"에 대해 검색하는 중입니다';
