@@ -30,3 +30,5 @@ $messages['lang'] = 'Tlahtōlli';
 $messages['project'] = 'Tlatequipanōlli';
 $messages['article'] = 'Tlaīxtli';
 $messages['needle'] = 'Tiquīxtēmōz';
+$messages['date_format'] = 'MM II, XXXX';
+$messages['manual'] = 'Ohāmoxtli';
