@@ -11,6 +11,7 @@
  * @file
  *
  * @author Chess
+ * @author Taresi
  */
 
 $messages['January'] = 'January';
@@ -34,7 +35,7 @@ $messages['skipversions'] = 'Always skip x versions';
 $messages['ignorefirst'] = 'Ignore first x versions';
 $messages['limit'] = 'Versions to check';
 $messages['start_date'] = 'Start date';
-$messages['date_format'] = 'MM DD, YYYY';
+$messages['date_format'] = 'YYYY-MM-DD';
 $messages['order'] = 'Order';
 $messages['newest_first'] = 'latest first';
 $messages['oldest_first'] = 'oldest first';

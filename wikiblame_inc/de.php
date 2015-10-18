@@ -13,6 +13,7 @@
  * @author Flominator
  * @author Kghbln
  * @author Metalhead64
+ * @author Taresi
  * @author Umherirrender
  */
 
@@ -72,7 +73,7 @@ $messages['dead_end'] = 'Die Suche befindet sich in der Sackgasse (wahrscheinlic
 $messages['once_more'] = 'Erneuter Versuch:';
 $messages['binary_enough'] = 'Die Suche wurde etliche Male wiederholt. Da die Artikelhistorie sehr unübersichtlich ist, sollen die Sucheinstellungen verändert werden.';
 $messages['insertion_found'] = 'Einfügung zwischen LEFT_VERSION und RIGHT_VERSION gefunden';
-$messages['deletion_found'] = 'Löschung gefunden zwischen LEFT_VERSION und RIGHT_VERSION';
+$messages['deletion_found'] = 'Löschung zwischen LEFT_VERSION und RIGHT_VERSION gefunden';
 $messages['help_translating'] = 'Beim Übersetzen zu helfen, ist auf translatewiki.net möglich.';
 $messages['start_here'] = 'Ab hier suchen';
 $messages['too_much_versions'] = 'Die Abfragebegrenzung von __VERSIONLIMIT__ Versionen wurde erreicht. Eine erneute Suche ist in __WAITMINUTES__ Minuten möglich. Alternativ ist die Suchmethode „binär“ möglich. Entschuldigung für mögliche Unannehmlichkeiten.';

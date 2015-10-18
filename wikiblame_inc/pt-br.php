@@ -19,6 +19,7 @@
  * @author MisterSanderson
  * @author Pedroca cerebral
  * @author Raylton P. Sousa
+ * @author TheEduGobi
  * @author TheGabrielZaum
  * @author Tuliouel
  */
@@ -56,7 +57,7 @@ $messages['interpolated'] = 'binária (mais rápida para pesquisar muitas ediç�
 $messages['ignore_minors'] = 'ignorar edições menores (experimental)';
 $messages['force_wikitags'] = 'forçar a procura para texto wiki';
 $messages['start'] = 'Iniciar procura';
-$messages['reset'] = 'Reset';
+$messages['reset'] = 'Redefinir';
 $messages['manual'] = 'Instruções';
 $messages['contact'] = 'Contato';
 $messages['get_less_versions'] = 'A sua pesquisa pode consultar __NUMREVISIONS__ edições ao mesmo tempo. Para proteger o servidor, só pode consultar __ALLOWEDREVISIONS__ por chamada. Por favor, altere esta configuração ou mude o método de pesquisa para binária.';
