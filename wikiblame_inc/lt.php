@@ -13,6 +13,7 @@
  * @author Aswanas
  * @author Eitvys200
  * @author Mantak111
+ * @author Zygimantus
  */
 
 $messages['January'] = 'Sausis';
@@ -48,7 +49,7 @@ $messages['interpolated'] = 'binary (greitesnis su daugiau versijų)';
 $messages['ignore_minors'] = 'ignoruoti nedidelius pakeitimus (eksperimentiniai)';
 $messages['force_wikitags'] = 'ieškoti wikitext';
 $messages['start'] = 'Pradėti';
-$messages['reset'] = 'Atnaujinti';
+$messages['reset'] = 'Atstatyti';
 $messages['manual'] = 'Instrukcija';
 $messages['contact'] = 'Susisiekti';
 $messages['get_less_versions'] = 'Jūsų paieška kažkuriuo metu gali prašyti  __NUMREVISIONS__ pakeitimų. Siekiant apsaugoti serverį, jums yra leidžiama užklausti __ALLOWEDREVISIONS__ per pokalbį. Prašome pakeisti nustatymus arba perjungti paieškos metodą į dvejetainę sistemą!';
@@ -58,7 +59,7 @@ $messages['search_in_progress_wikitags'] = 'Versijos istorija _ARTICLELINK_ buvo
 $messages['no_differences'] = 'Jokių rastų skirtumų pataisymuose';
 $messages['first_version'] = 'Kaita turi būti įvykusios pirmosios arba paskutinės peržiūros?';
 $messages['first_version_present'] = '__NEEDLE__ jau buvo pirmojo peržiūrėjimo metu ir datuota __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Yra tikriausiai ankstesnių versijų.';
+$messages['earlier_versions_available'] = 'Tikriausiai yra ankstesnių versijų.';
 $messages['execution_time'] = 'Vykdymo laikas: _EXECUTIONTIME_ sekundžių';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versijos rastos';
 $messages['please_wait'] = 'Prašome palaukti ...';
@@ -69,6 +70,6 @@ $messages['binary_enough'] = 'Atlikta pakankamai bandymų, straipsnio istorija y
 $messages['insertion_found'] = ' Tarp LEFT_VERSION ir RIGHT_VERSION rastas įterpimas';
 $messages['deletion_found'] = ' Tarp LEFT_VERSION ir RIGHT_VERSION buvo ištrinta';
 $messages['help_translating'] = 'Padėkite versti translatewiki.net';
-$messages['start_here'] = 'Ieškoti iš čia';
+$messages['start_here'] = 'Ieškoti nuo čia';
 $messages['too_much_versions'] = 'Jūs pasiekėte savo versijų užklausų ribą __VERSIONLIMIT__. Bandykite dar kartą po __WAITMINUTES__ minučių arba pereikite į dvejetainę paieškos sistemą. Atsiprašome už nepatogumus.';
 $messages['not_found_at_all'] = 'Jūsų paieškos sąlygos nerastas. Patikrinkite nustatymus ir bandykite dar kartą.';

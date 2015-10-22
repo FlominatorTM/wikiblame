@@ -19,7 +19,7 @@
 $messages['January'] = 'pakkakuudu';
 $messages['February'] = 'tuhukuudu';
 $messages['March'] = 'kevätkuudu';
-$messages['April'] = 'kevätkuudu';
+$messages['April'] = 'sulakuudu';
 $messages['May'] = 'oraskuudu';
 $messages['June'] = 'kezäkuudu';
 $messages['July'] = 'heinykuudu';
