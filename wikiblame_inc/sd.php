@@ -11,6 +11,7 @@
  * @file
  *
  * @author Aursani
+ * @author Mehtab ahmed
  */
 
 $messages['January'] = 'جنوري';
@@ -30,6 +31,7 @@ $messages['lang'] = 'ٻولي';
 $messages['project'] = 'رٿا';
 $messages['article'] = 'صفحو';
 $messages['needle'] = 'ڳولا براءِ';
+$messages['start_date'] = 'شروعات جي تاريخ';
 $messages['date_format'] = 'م‌م ڏڏ، س‌س‌س‌س';
 $messages['order'] = 'ترتيب';
 $messages['newest_first'] = 'تازوترين اڳ ۾';
@@ -40,6 +42,10 @@ $messages['linear'] = 'سِڌِر';
 $messages['interpolated'] = 'ڏونائي (گھڻن ورزنس سان تڪڙو)';
 $messages['ignore_minors'] = 'معمولي تبديلين کي نظرانداز ڪريو (تجرباتي)';
 $messages['start'] = 'شروع ڪريو';
+$messages['reset'] = 'ٻيهر ترتيب ڪريو';
+$messages['manual'] = 'ترتيب نامو';
 $messages['contact'] = 'لهہ وچڙ ۾ اچو';
 $messages['please_wait'] = 'مهرباني ڪري انتظار فرمايو ...';
+$messages['once_more'] = 'هڪ دفعو ٻيهر، احساس سان:';
+$messages['help_translating'] = 'translatewiki.net تي ترجمو ڪرڻ ۾ مدد ڪريو';
 $messages['start_here'] = 'هتان ڳولا ڪريو';

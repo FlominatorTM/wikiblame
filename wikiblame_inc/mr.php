@@ -14,6 +14,7 @@
  * @author Kaajawa
  * @author Mahitgar
  * @author Shantanoo
+ * @author V.narsikar
  */
 
 $messages['January'] = 'जानेवारी';
@@ -32,10 +33,10 @@ $messages['ui_lang'] = 'भाषा दाखवा';
 $messages['lang'] = 'भाषा';
 $messages['project'] = 'प्रकल्प';
 $messages['article'] = 'पान';
-$messages['needle'] = 'यासाठी शोधा:';
-$messages['skipversions'] = 'नेहमी x आवृत्त्या  स्कीप करा';
-$messages['ignorefirst'] = 'पहील्या क्ष आवृत्त्त्या दुर्ल्क्षीत करा';
-$messages['limit'] = 'तपासावयाचि आवृत्ती';
+$messages['needle'] = 'यासाठी शोधा';
+$messages['skipversions'] = 'नेहमी x आवृत्त्या गाळा';
+$messages['ignorefirst'] = 'पहील्या x आवृत्त्यांकडे दुर्लक्ष करा';
+$messages['limit'] = 'तपासावयाची आवृत्ती';
 $messages['start_date'] = 'सुरूवात दिनांक';
 $messages['date_format'] = 'MM DD, YYYY';
 $messages['order'] = 'आदेश';
@@ -53,6 +54,11 @@ $messages['reset'] = 'पूर्ववत करा';
 $messages['manual'] = 'निदेशपुस्तक';
 $messages['contact'] = 'संपर्क';
 $messages['no_differences'] = 'शोधलेल्या आवृत्त्यात फरक आढळले नाहीत';
+$messages['first_version'] = 'पहिल्या किंवा शेवटच्या आवृत्तीमध्ये बदल घडला असेल?';
+$messages['earlier_versions_available'] = 'येथे बहुतेक आधीच्या आवृत्त्या आहेत.';
 $messages['execution_time'] = 'शोध वेळ: _EXECUTIONTIME_ सेकंद';
 $messages['please_wait'] = 'कृपया थांबा...';
+$messages['binary_enough'] = 'अनेकविध पुनर्प्रयत्न केलेत, पानाच्या इतिहासात बरीच सरमिसळ झाली आहे,कृपया काही मांडण्या बदलवुन प्रयत्न करा.';
+$messages['help_translating'] = ' translatewiki.net वर भाषांतरासाठी सहाय्य करा';
 $messages['start_here'] = 'येथून पुढे शोधा';
+$messages['not_found_at_all'] = 'आपली शोध बाब अजिबात सापडली नाही. मांडणी तपासून पुन्हा प्रयत्न करा.';

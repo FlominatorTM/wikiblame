@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Robin van der Vliet
  * @author Robin0van0der0vliet
  */
 

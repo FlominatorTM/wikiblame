@@ -12,6 +12,7 @@
  *
  * @author Flominator
  * @author Nghtwlkr
+ * @author Tarjeimo
  * @author Wouterkoch
  */
 
@@ -26,7 +27,7 @@ $messages['August'] = 'August';
 $messages['September'] = 'September';
 $messages['October'] = 'Oktober';
 $messages['November'] = 'November';
-$messages['December'] = 'Desember';
+$messages['December'] = 'desember';
 $messages['ui_lang'] = 'Visningsspråk';
 $messages['lang'] = 'Språk';
 $messages['project'] = 'Prosjekt';
