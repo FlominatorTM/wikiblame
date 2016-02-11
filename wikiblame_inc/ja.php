@@ -13,6 +13,7 @@
  * @author Aotake
  * @author Flominator
  * @author Fryed-peach
+ * @author Otokoume
  * @author Shirayuki
  * @author Whym
  */
@@ -47,7 +48,7 @@ $messages['search_method'] = '探索方法';
 $messages['binary'] = '二分探索';
 $messages['binary_in_wp'] = 'http://ja.wikipedia.org/wiki/二分探索';
 $messages['linear'] = '線型';
-$messages['interpolated'] = '二分探索 (版が多い場合に速い)';
+$messages['interpolated'] = '二分探索 (版が多い場合は高速)';
 $messages['ignore_minors'] = '細部の編集を無視 (実験的)';
 $messages['force_wikitags'] = 'ウィキテキストとして検索';
 $messages['start'] = '開始';
@@ -64,12 +65,12 @@ $messages['first_version'] = '変更は最初か最新の版で起きている�
 $messages['first_version_present'] = '__NEEDLE__は__REVISIONLINK__に作成された初版に既に存在していました。';
 $messages['earlier_versions_available'] = 'おそらく以前の版が存在します。';
 $messages['execution_time'] = '実行時間: _EXECUTIONTIME_秒';
-$messages['versions_found'] = '_NUMBEROFVERSIONS_版が見つかりました';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_件の版が見つかりました';
 $messages['please_wait'] = 'お待ちください…';
-$messages['binary_test'] = '_SOURCENUMBER_番の次に、_FIRSTDATEVERSION_における_FIRSTNUMBER_番と_SECONDNUMBER_番の違いを比較しています:';
+$messages['binary_test'] = '_SOURCENUMBER_番の次に、_FIRSTDATEVERSION_における_FIRSTNUMBER_番と_SECONDNUMBER_番の差分を比較しています:';
 $messages['dead_end'] = '行き止まりに入ってしまいました (理由はおそらくリバートか編集合戦です)';
 $messages['once_more'] = 'もう一度、心を込めて:';
-$messages['binary_enough'] = '何度か再試行してみましたが、記事の履歴が非常に込み入っているため、設定を変えて試行してください。';
+$messages['binary_enough'] = '何度か再試行しましたが、記事の履歴が非常に込み入っているため、設定を変えて試行してください。';
 $messages['insertion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で挿入されました';
 $messages['deletion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で削除されました';
 $messages['help_translating'] = 'translatewiki.net での翻訳作業を手伝う';
