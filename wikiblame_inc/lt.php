@@ -72,4 +72,4 @@ $messages['deletion_found'] = ' Tarp LEFT_VERSION ir RIGHT_VERSION buvo ištrint
 $messages['help_translating'] = 'Padėkite versti translatewiki.net';
 $messages['start_here'] = 'Ieškoti nuo čia';
 $messages['too_much_versions'] = 'Jūs pasiekėte savo versijų užklausų ribą __VERSIONLIMIT__. Bandykite dar kartą po __WAITMINUTES__ minučių arba pereikite į dvejetainę paieškos sistemą. Atsiprašome už nepatogumus.';
-$messages['not_found_at_all'] = 'Jūsų paieškos sąlygos nerastas. Patikrinkite nustatymus ir bandykite dar kartą.';
+$messages['not_found_at_all'] = 'Jūsų paieškos sąlygos nerastos. Patikrinkite nustatymus ir bandykite dar kartą.';
