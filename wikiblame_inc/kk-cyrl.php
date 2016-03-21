@@ -11,6 +11,7 @@
  * @file
  *
  * @author Arystanbek
+ * @author Batyrbek.kz
  * @author MrKarahanly
  */
 
@@ -54,7 +55,7 @@ $messages['search_in_progress_text'] = '_ARTICLELINK_ дегеннің нұсқ�
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ дегеннің нұсқа тарихы уикимәтін мәтін ретінде <b>_NEEDLE_</b> үшін ізделді';
 $messages['no_differences'] = 'Ізделген нұсқаларда айырмашылық табылмады.';
 $messages['earlier_versions_available'] = 'Мүмкін, бұрынғы нұсқаларында бар.';
-$messages['execution_time'] = 'Орындалу уақыты: _EXECUTIONTIME_ секунт';
+$messages['execution_time'] = 'Орындалу уақыты: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ нұсқа табылды';
 $messages['please_wait'] = 'Күте тұрыңыз...';
 $messages['help_translating'] = 'translatewiki.net ашық аударма жобасынан аударуға көмектесіңіз';
