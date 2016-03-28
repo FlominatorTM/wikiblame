@@ -1076,7 +1076,10 @@ function get_url($year, $month, $day, $hours=23, $minutes=55, $include_ignorefir
 	{
 		$url.="&amp;ignorefirst=".$_REQUEST['ignorefirst'];
 	}
-	$url.="&amp;binary_search_inverse=".$binary_search_inverse;
+	if($binary_search_inverse)
+	{
+		$url.="&amp;binary_search_inverse=on";
+	}
 	if($user != "")
 	{
 		$url.="&amp;user=".$user;
