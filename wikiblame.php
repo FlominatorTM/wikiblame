@@ -621,21 +621,26 @@ function listversions ($history)
 		
 		//result: <a href="/w/index.php?title=Hinterzarten&amp;oldid=64569839" title="Hinterzarten">11:27, 16. Sep. 2009
 
-		if($ignore_minors)
+		$is_deleted_revision = stristr($one_version, 'mw-userlink'); //there is no revision link
+
+		if(!$is_deleted_revision)
 		{
-			//checks if the revision was marked as minor edit
-			if(!stristr($one_version_link, "<span class=\"minor\">")) 
+			if($ignore_minors)
 			{
-				$versions[]= $one_version;
+				//checks if the revision was marked as minor edit
+				if(!stristr($one_version, "<span class=\"minor\">")) 
+				{
+					$versions[]= $one_version;
+				}
+				else
+				{
+					//echo "ignored a minor change";
+				}
 			}
 			else
 			{
-				//echo "ignored a minor change";
+				$versions[]= $one_version;
 			}
-		}
-		else
-		{
-			$versions[]= $one_version;
 		}
 	}
 
