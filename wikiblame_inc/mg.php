@@ -49,5 +49,7 @@ $messages['start'] = 'Atomboka';
 $messages['reset'] = 'Averina';
 $messages['manual'] = 'Atao tanana';
 $messages['contact'] = 'Fifandraisana';
+$messages['no_differences'] = 'Tsy nisy fahasamihafàna hita tamin\'ny versiona nokarohina.';
+$messages['first_version'] = 'Tamin\'ny versiona voalohany sa farany no nitrangan\'ny fiovàna?';
 $messages['please_wait'] = 'Andraso azafady...';
 $messages['start_here'] = 'Hitady manomboka eto';

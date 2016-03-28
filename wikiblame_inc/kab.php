@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Mezgoug
  * @author Mmistmurt
  */
 
@@ -25,3 +26,8 @@ $messages['September'] = 'Ctamber';
 $messages['October'] = 'Tuber';
 $messages['November'] = 'Wamber';
 $messages['December'] = 'Dujamber';
+$messages['lang'] = 'Tameslayt';
+$messages['project'] = 'Asenfar';
+$messages['article'] = 'Asebter';
+$messages['needle'] = 'Nadi';
+$messages['start_date'] = 'Azemz n tazwara';

@@ -11,6 +11,7 @@
  * @file
  *
  * @author Snævar
+ * @author Sveinn í Felli
  */
 
 $messages['January'] = 'Janúar';
@@ -39,8 +40,8 @@ $messages['order'] = 'Röðun';
 $messages['newest_first'] = 'nýjasta fyrst';
 $messages['oldest_first'] = 'elsta fyrst';
 $messages['binary_search_inverse'] = 'Leita að fjarlægðum texta (eingöngu í tvíunda ham)';
-$messages['search_method'] = 'Leitunaraðferð';
-$messages['binary'] = 'tvíunda';
+$messages['search_method'] = 'Leitaraðferð';
+$messages['binary'] = 'tvíundar';
 $messages['linear'] = 'línuleg';
 $messages['interpolated'] = 'tvíunda (hraðara og skoðar fleiri útgáfur)';
 $messages['ignore_minors'] = 'Útiloka minniháttar breytingar (á tilraunastigi)';
@@ -59,7 +60,7 @@ $messages['first_version_present'] = '__NEEDLE__ var þegar til staðar í fyrst
 $messages['earlier_versions_available'] = 'Eldri útgáfur eru líklega til.';
 $messages['execution_time'] = 'Leitin tók: _EXECUTIONTIME_ sekúndur';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ útgáfur fundust';
-$messages['please_wait'] = 'Vinsamlegast bíddu ...';
+$messages['please_wait'] = 'Bíddu aðeins ...';
 $messages['binary_test'] = 'Ber saman mismun útgáfu frá _FIRSTDATEVERSION_ á milli _FIRSTNUMBER_ og _SECONDNUMBER_ sem koma frá _SOURCENUMBER_:';
 $messages['dead_end'] = 'Fann dauðan enda (líklega vegna endurtekinna breytinga eða breytingastríðs)';
 $messages['once_more'] = 'Einu sinni enn, með tilfinningu:';

@@ -17,6 +17,7 @@
  * @author Geraki
  * @author Glavkos
  * @author Omnipaedista
+ * @author Protnet
  */
 
 $messages['January'] = 'Ιανουάριος';
@@ -42,7 +43,7 @@ $messages['limit'] = 'Εκδοχές προς έλεγχο';
 $messages['start_date'] = 'Ημερομηνία έναρξης';
 $messages['date_format'] = 'ΜΜ ΗΗ, ΕΕΕΕ';
 $messages['order'] = 'Σειρά';
-$messages['newest_first'] = 'πρώτα τα νεώτερα';
+$messages['newest_first'] = 'πρώτα τα πιο πρόσφατα';
 $messages['oldest_first'] = 'πρώτα τα παλαιότερα';
 $messages['binary_search_inverse'] = 'Ψάξτε για απομάκρυνση κειμένου (δυαδικό αρχείο μόνο)';
 $messages['search_method'] = 'Μέθοδος αναζήτησης';

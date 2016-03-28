@@ -12,6 +12,8 @@
  *
  * @author Flominator
  * @author Nghtwlkr
+ * @author SuperPotato
+ * @author Tarjeimo
  * @author Wouterkoch
  */
 
