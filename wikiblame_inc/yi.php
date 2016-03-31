@@ -15,3 +15,4 @@
 
 $messages['start_date'] = 'אָנהייב דאַטע';
 $messages['reset'] = 'צוריקשטעלן';
+$messages['earlier_versions_available'] = 'עס זענען פֿאראן ווארשיינלעך עלטערע ווערסיעס.';
