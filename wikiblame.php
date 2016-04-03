@@ -1076,7 +1076,7 @@ function get_url($year, $month, $day, $hours=23, $minutes=55, $include_ignorefir
 	{
 		$url.="&amp;ignorefirst=".$_REQUEST['ignorefirst'];
 	}
-	if($binary_search_inverse)
+	if($binary_search_inverse=="true")
 	{
 		$url.="&amp;binary_search_inverse=on";
 	}
