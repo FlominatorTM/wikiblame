@@ -11,6 +11,7 @@
  * @file
  *
  * @author BeginaFelicysym
+ * @author Chrumps
  * @author Flominator
  * @author Leinad
  * @author Matma Rex
@@ -64,7 +65,7 @@ $messages['search_in_progress_wikitags'] = 'Historia zmian _ARTICLELINK_ jest pr
 $messages['no_differences'] = 'Nie znaleziono różnic w przeszukiwanych wersjach.';
 $messages['first_version'] = 'Czy zmiana musi wystąpić w pierwszej czy ostatniej wersji?';
 $messages['first_version_present'] = '__NEEDLE__ było już w pierwszej wersji z __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'To są prawdopodobnie wcześniejsze wersje.';
+$messages['earlier_versions_available'] = 'To są prawdopodobnie starsze wersje.';
 $messages['execution_time'] = 'Czas wykonania: _EXECUTIONTIME_ sekund';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ wersji znaleziono';
 $messages['please_wait'] = 'Proszę czekać...';

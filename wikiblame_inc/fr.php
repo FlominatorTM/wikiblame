@@ -19,6 +19,7 @@
  * @author Od1n
  * @author Peter17
  * @author Tititou36
+ * @author Wladek92
  * @author Wyz
  */
 
@@ -65,8 +66,8 @@ $messages['search_in_progress_text'] = '<b>_NEEDLE_</b>, comme texte plein, est 
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b>, comme wikitexte, est recherché dans l’historique des versions de _ARTICLELINK_';
 $messages['no_differences'] = 'Aucune différence dans les révisions recherchées.';
 $messages['first_version'] = 'Les changements doivent s\'être produits dans la première ou dernière révision ?';
-$messages['first_version_present'] = '__NEEDLE__ était déjà présent dans la première version trouvée datant du __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Il y a probablement des révisions antérieures.';
+$messages['first_version_present'] = '__NEEDLE__ était déjà présent dans la plus ancienne version trouvée datant du __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Il existe probablement des révisions plus anciennes.';
 $messages['execution_time'] = 'Temps d’exécution : _EXECUTIONTIME_ secondes';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions trouvées';
 $messages['please_wait'] = 'Veuillez patienter…';
