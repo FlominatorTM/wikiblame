@@ -15,7 +15,7 @@
  */
 
 $messages['January'] = 'Нажгамсхой';
-$messages['February'] = 'Саькур';
+$messages['February'] = 'Саь-кур бетт';
 $messages['March'] = 'Мутхьол';
 $messages['April'] = 'Тушоли';
 $messages['May'] = 'Села бетт';
