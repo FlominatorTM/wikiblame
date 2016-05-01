@@ -77,7 +77,11 @@ function compare_lists($needles, $haystack)
 	{
 		set_time_limit(60);
 		$onlyOneNewArticle = explode("]]:", $newLine);
-		if(stristr( $onlyOneNewArticle[0], "*" ) && !stristr($haystack, $onlyOneNewArticle[0] ))
+		if(	stristr( $onlyOneNewArticle[0], "*" ) 
+		 &&	!stristr($haystack, $onlyOneNewArticle[0] )
+		 &&	!stristr($haystack, str_replace('_', ' ', $onlyOneNewArticle[0] ))
+		 &&	!stristr(str_replace('_', ' ',$haystack),  $onlyOneNewArticle[0] )
+		)
 		{
 			//echo str_replace('_', ' ', $newLine) ."\n";
 			$results[] = str_replace('_', ' ', $newLine);
@@ -94,7 +98,7 @@ function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_
 	global $cat, $number_of_current_entries;
 
 	$all_namespaces ="ns%5B-2%5D=1&ns%5B0%5D=1&ns%5B2%5D=1&ns%5B4%5D=1&ns%5B6%5D=1&ns%5B8%5D=1&ns%5B10%5D=1&ns%5B12%5D=1&ns%5B14%5D=1&ns%5B100%5D=1&ns%5B828%5D=1&ns%5B-1%5D=1&ns%5B1%5D=1&ns%5B3%5D=1&ns%5B5%5D=1&ns%5B7%5D=1&ns%5B9%5D=1&ns%5B11%5D=1&ns%5B13%5D=1&ns%5B15%5D=1&ns%5B101%5D=1&ns%5B829%5D=1";
-	$url ="https://tools.wmflabs.org/catscan2/catscan2.php?language=de&categories=$catenc%0D%0A$other_cat_enc&doit=1&format=csv&$all_namespaces&depth=15";
+	$url ="https://tools.wmflabs.org/catscan2/catscan2.php?language=de&categories=$catenc%0D%0A$other_cat_enc&doit=1&format=tsv&$all_namespaces&depth=15&sortby=title";
 	
    
    if($template!="")
@@ -124,27 +128,20 @@ function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_
 
 	//echo "<h1>csv</h1>$csv_list";
 
-	$rows = explode("\"\n", $csv_list);
+	$rows = explode("\n", $csv_list);
 	$bulleted_list = "";
 
+	echo count($rows) . "rows";
 	foreach($rows AS $row)
 	{
-		if(strpos($row, "\"") == 0)
-		{
-			//echo "$row<br>";
-			$cols = explode("\"", $row);
+		//echo "$row<br>";
+		$cols = explode("\t", $row);
 
-			if($cols[1]!="")
-			{
-				$lemma = $cols[1];
-				if($cols[11]!="(Article)")
-				{
-						$lemma = ':'.$cols[11].':'.$cols[1];
-				}
-			//echo $cols[1]."<br>";
-				$bulleted_list.="* [[".$lemma."]]: [[:Kategorie:$cat|$cat]]\n";
-				$number_of_current_entries = $number_of_current_entries + 1;
-			}
+		if($cols[1]!="" && $cols[1] != 'title')
+		{
+			$lemma = $cols[1];
+			$bulleted_list.="* [[".$lemma."]]: [[:Kategorie:$cat|$cat]]\n";
+			$number_of_current_entries = $number_of_current_entries + 1;
 		}
 	}
 	return $bulleted_list;
