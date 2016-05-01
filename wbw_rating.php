@@ -48,7 +48,7 @@ function extract_user_name_column($list_of_article_points)
 function rate_teams($server, $wbw_page)
 {
 	global $is_debug, $html_page;
-	$html_page = get_request($server, $wbw_page, true );
+	$html_page = file_get_contents($wbw_page);
 	$team_paragraphs = explode("h6>", $html_page);
 	$points_per_team;//[] = array("Team"=> "Dummy", "Points"=>"-1");
 
@@ -144,7 +144,7 @@ function sort_and_print_score_list($points_per_team)
 function get_source_code_paragraphs($server, $wbw_page)
 {
 	$wbw_page_raw = $wbw_page. "&action=raw";
-	$source_code_page = removeheaders(get_request($server, $wbw_page_raw, true )); 
+	$source_code_page = file_get_contents($wbw_page_raw); 
 
 	$paragraphs = explode("\n======", $source_code_page);
 	return $paragraphs;
