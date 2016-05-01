@@ -55,7 +55,7 @@ function rate_teams($server, $wbw_page)
 	for($iTeam = 1;$iTeam<count($team_paragraphs);$iTeam++)
 	{
 		//team name
-		$team_name = str_replace("[Bearbeiten]", "", strip_tags($team_paragraphs[$iTeam]));
+		$team_name = str_replace("[Quelltext bearbeiten]", "", strip_tags($team_paragraphs[$iTeam]));
 		if($is_debug) echo "Team=$team_name <br>";
 		$iTeam++; // ignore next part (end of h6-Tag)
 		
