@@ -91,9 +91,10 @@ $diff = getint('diff');
 
 order_old_and_diff(&$oldid, &$diff);
 
-$difflink = "http://$lang.$project.org/w/index.php?title=$articleenc&diff=$diff&oldid=$oldid";
-$afterlink = "http://$lang.$project.org/w/index.php?title=$articleenc&oldid=$diff";
-$beforelink= "http://$lang.$project.org/w/index.php?title=$articleenc&oldid=$oldid";
+$difflink = "https://$lang.$project.org/w/index.php?title=$articleenc&diff=$diff&oldid=$oldid";
+$difflink = "https://$lang.$project.org/w/index.php?title=$articleenc&diff=$diff&oldid=$oldid";
+$afterlink = "https://$lang.$project.org/w/index.php?title=$articleenc&oldid=$diff";
+$beforelink= "https://$lang.$project.org/w/index.php?title=$articleenc&oldid=$oldid";
 echo "[<a href=\"$beforelink\">vorher</a>]&nbsp;";
 echo "[<a href=\"$difflink\">Diff-Link</a>]&nbsp;";
 echo "[<a href=\"$afterlink\">nachher</a>]&nbsp;";
@@ -329,8 +330,8 @@ function ask_to_cut_org($oldid, $diff)
 {
 	global $src_old, $article, $diff, $lang, $project, $template_names, $rater, $comment_choices, $server, $forwardText;
 	$this_url = "article=$article&oldid=$oldid&diff=$diff&rater=$rater&project=$project&lang=$lang";
-	$src_old = removeheaders(get_source_code($article, $oldid));
-	$src_new = removeheaders(get_source_code($article, $diff));
+	$src_old = get_source_code($article, $oldid);
+	$src_new = get_source_code($article, $diff);
 
 	if(max(strlen($src_old), strlen($src_new))>110000 )
 	{
@@ -408,11 +409,11 @@ function get_source_code($article, $rev)
 {
 	$articleenc = name_in_url($article);
 	global $server;
-	$url = "http://".$server."/w/index.php?title=".$articleenc."&action=raw&oldid=$rev";
+	$url = "https://".$server."/w/index.php?title=".$articleenc."&action=raw&oldid=$rev";
 	//echo $url;
 	
 	//echo "<br><br>Suche nach $needle in $article";
-	if(!$article_text = get_request($server, $url))
+	if(!$article_text = file_get_contents($url))
 	{
 		//echo "error";
 		die("klappt nicht");
