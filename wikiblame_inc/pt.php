@@ -13,10 +13,12 @@
  * @author Flominator
  * @author Hamilton Abreu
  * @author Imperadeiro98
+ * @author Lemondoge
  * @author Luckas
  * @author Macofe
  * @author Malafaya
  * @author Mosca
+ * @author Vitorvicentevalente
  * @author Waldir
  */
 
@@ -64,8 +66,8 @@ $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> está a ser procurado co
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> está a ser procurado como código wiki no histórico de edições de _ARTICLELINK_';
 $messages['no_differences'] = 'Não foram encontradas diferenças nas versões pesquisadas.';
 $messages['first_version'] = 'A mudança deve ter acontecido na primeira ou última versão?';
-$messages['first_version_present'] = '__NEEDLE__ já estava presente na primeira versão encontrada, datada de __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Provavelmente existem versões anteriores.';
+$messages['first_version_present'] = '__NEEDLE__ já estava presente nas mais antigas revisão pesquisados namoro de __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Provavelmente existem revisões mais antigas.';
 $messages['execution_time'] = 'Tempo de execução: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versões encontradas';
 $messages['please_wait'] = 'Aguarde, por favor …';

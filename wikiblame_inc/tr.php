@@ -13,6 +13,7 @@
  * @author Emperyan
  * @author Erdemaslancan
  * @author Flominator
+ * @author Hbseren
  * @author Joseph
  * @author McAang
  * @author Meelo
@@ -63,8 +64,8 @@ $messages['search_in_progress_text'] = '_ARTICLELINK_ maddesinin sürüm geçmi�
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ maddesinin sürüm geçmişi b>_NEEDLE_</b> için viki metni olarak aranıyor';
 $messages['no_differences'] = 'Aranan revizyonlarda fark bulunmadı.';
 $messages['first_version'] = 'Değişiklik ilk veya en son revizyonda olmalı?';
-$messages['first_version_present'] = '__NEEDLE__ bulunan __REVISIONLINK__ tarihli ilk revizyonda zaten mevcut.';
-$messages['earlier_versions_available'] = 'Muhtemelen önceki revizyonlar var.';
+$messages['first_version_present'] = '__NEEDLE__ bulunan __REVISIONLINK__ tarihli ilk revizyonda zaten mevcuttu.';
+$messages['earlier_versions_available'] = 'Muhtemelen daha eski revizyonlar var.';
 $messages['execution_time'] = 'Çalıştoğı süre: _EXECUTIONTIME_ saniye';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ sürüm bulundu';
 $messages['please_wait'] = 'Lütfen bekleyin...';

@@ -11,6 +11,7 @@
  * @file
  *
  * @author HanV
+ * @author Lemondoge
  * @author SPQRobin
  * @author Siebrand
  */
@@ -58,8 +59,8 @@ $messages['search_in_progress_text'] = 'De versiegeschiedenis van _ARTICLELINK_ 
 $messages['search_in_progress_wikitags'] = 'De versiegeschiedenis van _ARTICLELINK_ wordt doorzocht op <b>_NEEDLE_</b> als wikitekst';
 $messages['no_differences'] = 'Er zijn geen verschillen aangetroffen in de doorzochte versies.';
 $messages['first_version'] = 'De wijziging moet aangebracht zijn in de eerste of laatste versie?';
-$messages['first_version_present'] = '__NEEDLE__ was al aanwezig in de eerste versie met bewerkingstijdstip  __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Er zijn waarschijnlijk eerdere versies.';
+$messages['first_version_present'] = '__NEEDLE__ al aanwezig was in de oudste versie die dateert van __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Er zijn waarschijnlijk oudere versies.';
 $messages['execution_time'] = 'Uitvoeringstijd: _EXECUTIONTIME_ seconden';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versies gevonden';
 $messages['please_wait'] = 'Een ogenblik geduld...';

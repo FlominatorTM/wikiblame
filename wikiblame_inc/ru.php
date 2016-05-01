@@ -13,6 +13,7 @@
  * @author Ferrer
  * @author Flominator
  * @author Ignatus
+ * @author Lemondoge
  * @author Lockal
  * @author Александр Сигачёв
  */
@@ -61,8 +62,8 @@ $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> ищется в исто
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> ищется в истории версий _ARTICLELINK_ как викитекст';
 $messages['no_differences'] = 'В найденных версиях нет различий.';
 $messages['first_version'] = 'Изменение должно было произойти в первой или последней версии?';
-$messages['first_version_present'] = '__NEEDLE__ уже присутствовала в первой ревизии, найденной начиная с __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Вероятно, есть в более ранних версиях.';
+$messages['first_version_present'] = '__NEEDLE__ уже присутствовала в старой редакции искал знакомств с __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Есть, вероятно, более старые версии.';
 $messages['execution_time'] = 'Время выполнения: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Найдено _NUMBEROFVERSIONS_ версий страницы';
 $messages['please_wait'] = 'Пожалуйста, подождите…';

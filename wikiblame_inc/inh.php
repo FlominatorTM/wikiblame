@@ -10,20 +10,21 @@
  * @ingroup Language
  * @file
  *
+ * @author Adam-Yourist
  * @author Sapral Mikail
  */
 
 $messages['January'] = 'Нажгамсхой';
-$messages['February'] = 'Саькур';
+$messages['February'] = 'Саь-кур бетт';
 $messages['March'] = 'Мутхьол';
 $messages['April'] = 'Тушоли';
-$messages['May'] = 'Бекарг';
+$messages['May'] = 'Села бетт';
 $messages['June'] = 'КIимарс';
-$messages['July'] = 'Аьтинг';
+$messages['July'] = 'Баьцамеа\Меа бетт';
 $messages['August'] = 'Мангал';
 $messages['September'] = 'Моажол';
 $messages['October'] = 'Тов';
-$messages['November'] = 'Лайчил';
+$messages['November'] = 'Лай чилла бетт';
 $messages['December'] = 'Чантар';
 $messages['ui_lang'] = 'Гойташ бола мотт';
 $messages['lang'] = 'Мотт';

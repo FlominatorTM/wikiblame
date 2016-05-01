@@ -13,6 +13,7 @@
  * @author Comp1089
  * @author Haqmar
  * @author Sagan
+ * @author Ләйсән
  * @author Рустам Нурыев
  */
 
@@ -62,7 +63,7 @@ $messages['first_version_present'] = '__NEEDLE__ беренсе тикшереү
 $messages['earlier_versions_available'] = 'Бәлки, иҫкерәк версияларҙа барҙыр.';
 $messages['execution_time'] = 'Башҡарыу ваҡыты: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Биттең _NUMBEROFVERSIONS_ версияһы табылды';
-$messages['please_wait'] = 'Зинһар өсөн көтөгөҙ...';
+$messages['please_wait'] = 'Зинһар, көтөгөҙ...';
 $messages['binary_test'] = '_SOURCENUMBER_ сығып _FIRSTDATEVERSION_ , _FIRSTNUMBER_ һәм _SECONDNUMBER_ араһындағы айырманы тикшереү::';
 $messages['dead_end'] = 'Тоҡон! (төҙәткәндәрҙе кире ҡайтарыу йәки төҙәтеүҙәр көрәше булғандыр)';
 $messages['once_more'] = 'тығы бер тапҡыр, хислерәк:';
