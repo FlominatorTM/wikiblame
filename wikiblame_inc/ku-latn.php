@@ -12,6 +12,7 @@
  *
  * @author Bikarhêner
  * @author George Animal
+ * @author Kiwi128
  */
 
 $messages['January'] = 'Rêbendan';
@@ -25,7 +26,7 @@ $messages['August'] = 'Gelawêj';
 $messages['September'] = 'Rezber';
 $messages['October'] = 'Kewçêr';
 $messages['November'] = 'Sermawez';
-$messages['December'] = 'berfanbar';
+$messages['December'] = 'Berfanbar';
 $messages['ui_lang'] = 'Zimanê ekranê';
 $messages['lang'] = 'Ziman';
 $messages['project'] = 'Proje';
