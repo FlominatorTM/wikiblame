@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** Gothic (Gothic)
+/** Gothic (𐌲𐌿𐍄𐌹𐍃𐌺)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net

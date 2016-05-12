@@ -15,6 +15,7 @@
  * @author LNDDYL
  * @author Lauhenry
  * @author Liuxinyu970226
+ * @author Reke
  * @author Wrightbus
  */
 
@@ -61,7 +62,7 @@ $messages['search_in_progress_text'] = '_ARTICLELINK_ 的版本記錄正在以�
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ 的版本記錄正在以wiki文字 <b>_NEEDLE_</b> 進行搜尋';
 $messages['no_differences'] = '在尋找到的版本中並未發現任何差異。';
 $messages['first_version'] = '必須在第一個或最新修訂版本中出現更改嗎？';
-$messages['first_version_present'] = '__NEEDLE__ 己被被發現可以追溯到自 __REVISIONLINK__ 的首個版本中存在。';
+$messages['first_version_present'] = '__NEEDLE__ 已經存在於追溯到 __REVISIONLINK__ 後最早的條訂版本。';
 $messages['earlier_versions_available'] = '可能有較舊的修訂版本。';
 $messages['execution_time'] = '執行時間：_EXECUTIONTIME_ 秒';
 $messages['versions_found'] = '找到 _NUMBEROFVERSIONS_ 個版本';
