@@ -55,9 +55,12 @@ $messages['manual'] = 'निदेशपुस्तक';
 $messages['contact'] = 'संपर्क';
 $messages['no_differences'] = 'शोधलेल्या आवृत्त्यात फरक आढळले नाहीत';
 $messages['first_version'] = 'पहिल्या किंवा शेवटच्या आवृत्तीमध्ये बदल घडला असेल?';
-$messages['earlier_versions_available'] = 'येथे बहुतेक आधीच्या आवृत्त्या आहेत.';
+$messages['earlier_versions_available'] = 'येथे बहुतेक जुन्या आवृत्त्या आहेत.';
 $messages['execution_time'] = 'शोध वेळ: _EXECUTIONTIME_ सेकंद';
+$messages['versions_found'] = '_NUMBEROFVERSIONS_ आवृत्या सापडल्या';
 $messages['please_wait'] = 'कृपया थांबा...';
+$messages['binary_test'] = '_SOURCENUMBER_ मधून येत असतांना _FIRSTNUMBER_ व _SECONDNUMBER_ च्या दरम्यानचा
+_FIRSTDATEVERSION_ मधील फरक ताडत आहे:';
 $messages['binary_enough'] = 'अनेकविध पुनर्प्रयत्न केलेत, पानाच्या इतिहासात बरीच सरमिसळ झाली आहे,कृपया काही मांडण्या बदलवुन प्रयत्न करा.';
 $messages['help_translating'] = ' translatewiki.net वर भाषांतरासाठी सहाय्य करा';
 $messages['start_here'] = 'येथून पुढे शोधा';
