@@ -14,6 +14,7 @@
  * @author Kghbln
  * @author Metalhead64
  * @author Taresi
+ * @author ThePiscin
  * @author Umherirrender
  */
 
@@ -36,11 +37,11 @@ $messages['project'] = 'Projekt';
 $messages['project_example'] = 'wikipedia, wikisource, wikimedia, …';
 $messages['article'] = 'Artikel';
 $messages['needle'] = 'Suchbegriff';
-$messages['skipversions'] = 'stets x Versionen überspringen';
-$messages['ignorefirst'] = 'Versionen am Anfang überspringen';
+$messages['skipversions'] = 'Immer x Versionen überspringen';
+$messages['ignorefirst'] = 'Die ersten x Versionen überspringen';
 $messages['limit'] = 'Versionen durchsuchen';
 $messages['start_date'] = 'Startdatum';
-$messages['date_format'] = 'DD.MM YYYY';
+$messages['date_format'] = 'DD.MM.YYYY';
 $messages['order'] = 'Reihenfolge';
 $messages['newest_first'] = 'neuere zuerst';
 $messages['oldest_first'] = 'ältere zuerst (nur bei linearer Suche)';
@@ -71,10 +72,10 @@ $messages['please_wait'] = 'Bitte warten …';
 $messages['binary_test'] = 'Prüfe Änderung vom _FIRSTDATEVERSION_ zwischen _FIRSTNUMBER_ und _SECONDNUMBER_ von _SOURCENUMBER_ aus:';
 $messages['dead_end'] = 'Die Suche befindet sich in der Sackgasse (wahrscheinlich aufgrund häufiger Artikelzurücksetzungen)';
 $messages['once_more'] = 'Erneuter Versuch:';
-$messages['binary_enough'] = 'Die Suche wurde etliche Male wiederholt. Da die Artikelhistorie sehr unübersichtlich ist, sollen die Sucheinstellungen verändert werden.';
+$messages['binary_enough'] = 'Die Suche wurde etliche Male wiederholt. Da die Artikelhistorie sehr unübersichtlich ist, sollten die Sucheinstellungen verändert werden.';
 $messages['insertion_found'] = 'Einfügung zwischen LEFT_VERSION und RIGHT_VERSION gefunden';
 $messages['deletion_found'] = 'Löschung zwischen LEFT_VERSION und RIGHT_VERSION gefunden';
-$messages['help_translating'] = 'Beim Übersetzen zu helfen, ist auf translatewiki.net möglich.';
+$messages['help_translating'] = 'Hilf beim Übersetzen auf translatewiki.net';
 $messages['start_here'] = 'Ab hier suchen';
-$messages['too_much_versions'] = 'Die Abfragebegrenzung von __VERSIONLIMIT__ Versionen wurde erreicht. Eine erneute Suche ist in __WAITMINUTES__ Minuten möglich. Alternativ ist die Suchmethode „binär“ möglich. Entschuldigung für mögliche Unannehmlichkeiten.';
+$messages['too_much_versions'] = 'Die Abfragebegrenzung von __VERSIONLIMIT__ Versionen wurde erreicht. Eine erneute Suche ist in __WAITMINUTES__ Minuten möglich. Alternativ ist die Suchmethode „binär“ möglich. Entschuldige die Unannehmlichkeiten.';
 $messages['not_found_at_all'] = 'Der Suchbegriff wurde nicht gefunden. Überprüfe die Einstellungen und versuche es erneut.';
