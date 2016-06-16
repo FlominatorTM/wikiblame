@@ -12,6 +12,7 @@
  *
  * @author Cvanca
  * @author Dontlietome7
+ * @author Dvorapa
  * @author Flominator
  * @author Jkjk
  * @author Kuvaly
@@ -62,7 +63,7 @@ $messages['search_in_progress_text'] = 'Historie verzí _ARTICLELINK_ se prohled
 $messages['search_in_progress_wikitags'] = 'Historie verzí _ARTICLELINK_ se prohledává na <b>_NEEDLE_</b> jako wiki text';
 $messages['no_differences'] = 'Nebyly nalezeny žádné rozdíly v prohledávaných revizích.';
 $messages['first_version'] = 'Ke změně muselo dojít v první nebo poslední revizi?';
-$messages['first_version_present'] = '__NEEDLE__ bylo nalezeno již v první revizi, datováno od __REVISIONLINK__.';
+$messages['first_version_present'] = '__NEEDLE__ bylo nalezeno již v nejstarší revizi, datováno od __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Zřejmě existují starší verze.';
 $messages['execution_time'] = 'Doba zpracování: _EXECUTIONTIME_ sekund';
 $messages['versions_found'] = 'Nalezeno _NUMBEROFVERSIONS_ verzí';
