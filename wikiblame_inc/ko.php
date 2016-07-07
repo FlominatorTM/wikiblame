@@ -15,6 +15,7 @@
  * @author Klutzy
  * @author Kurousagi
  * @author Kwj2772
+ * @author Ykhwong
  * @author 아라
  */
 
@@ -62,14 +63,14 @@ $messages['search_in_progress_text'] = '_ARTICLELINK_의 문서 역사를 일반
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_의 문서 역사를 위키 텍스트로 "<b>_NEEDLE_</b>"에 대해 검색하는 중입니다';
 $messages['no_differences'] = '검색된 판에서 찾은 차이가 없습니다.';
 $messages['first_version'] = '바뀜이 첫 판이나 최신 판에서 일어나야 합니까?';
-$messages['first_version_present'] = '__NEEDLE__은 이미 __REVISIONLINK__에서 기간동안 찾은 첫 판에 존재합니다.';
-$messages['earlier_versions_available'] = '초기 버전이 아마도 있을 것입니다.';
+$messages['first_version_present'] = '__NEEDLE__은 이미 __REVISIONLINK__에서 기간동안 검색된 오래된 판에 존재합니다.';
+$messages['earlier_versions_available'] = '아마도 더 이전의 판이 있을 것입니다.';
 $messages['execution_time'] = '실행 시간: _EXECUTIONTIME_초';
 $messages['versions_found'] = '판 _NUMBEROFVERSIONS_개를 찾았습니다';
 $messages['please_wait'] = '기다려 주세요 …';
 $messages['binary_test'] = '_SOURCENUMBER_에서 _FIRSTNUMBER_번과 _SECONDNUMBER_번 사이의 _FIRSTDATEVERSION_ 버전의 차이를 비교하는 중:';
 $messages['dead_end'] = '일부 막다른 문서를 잡았습니다 (아마도 되돌리기에 의해 발생하거나 편집 분쟁이 있을 것입니다)';
-$messages['once_more'] = '느낌대로 한번 더:';
+$messages['once_more'] = '느낌대로 한 번 더:';
 $messages['binary_enough'] = '수행할 충분히 다시 시도했지만 문서 역사가 꽤 엉망진창입니다. 일부 설정을 바꿔보십시오.';
 $messages['insertion_found'] = 'LEFT_VERSION과 RIGHT_VERSION 사이에 추가되었음';
 $messages['deletion_found'] = 'LEFT_VERSION 버전과 RIGHT_VERSION 버전 사이에서 삭제됨';
