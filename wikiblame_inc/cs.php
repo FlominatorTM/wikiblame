@@ -18,6 +18,7 @@
  * @author Kuvaly
  * @author Mormegil
  * @author Utar
+ * @author Walter Klosse
  */
 
 $messages['January'] = 'Leden';
@@ -41,7 +42,7 @@ $messages['skipversions'] = 'Vždy přeskočit x verzí';
 $messages['ignorefirst'] = 'Ignorovat prvních x verzí';
 $messages['limit'] = 'Počet prohledávaných revizí';
 $messages['start_date'] = 'Počáteční datum';
-$messages['date_format'] = 'DD MM RRRR';
+$messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Řadit';
 $messages['newest_first'] = 'od nejnovějších';
 $messages['oldest_first'] = 'od nejstarších';
@@ -74,7 +75,7 @@ $messages['once_more'] = 'Ještě jednou, s pocitem:';
 $messages['binary_enough'] = 'Proveden dostatek opakování, historie článku je docela chaotická, zkuste změnit některá nastavení.';
 $messages['insertion_found'] = 'Vložení nalezeno mezi LEFT_VERSION a RIGHT_VERSION';
 $messages['deletion_found'] = 'Odstranění nalezeno mezi LEFT_VERSION a RIGHT_VERSION';
-$messages['help_translating'] = 'Pomožte překládat na translatewiki.net';
+$messages['help_translating'] = 'Pomozte překládat na translatewiki.net';
 $messages['start_here'] = 'Hledat odsud';
 $messages['too_much_versions'] = 'Dosáhli jste svůj limit dotazu __VERSIONLIMIT__ verzí. Zkuste to prosím znovu za __WAITMINUTES__ minut nebo přepněte na binární vyhledávání. Omlouváme se za vzniklé potíže.';
 $messages['not_found_at_all'] = 'Hledaný výraz nebyl nalezen. Zkontrolujte nastavení a zkuste to znovu.';
