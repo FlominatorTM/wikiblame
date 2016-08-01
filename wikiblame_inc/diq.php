@@ -12,6 +12,7 @@
  *
  * @author Erdemaslancan
  * @author Gorizon
+ * @author Kumkumuk
  * @author Mirzali
  */
 
@@ -25,8 +26,8 @@ $messages['June'] = 'Heziran';
 $messages['July'] = 'Temuz';
 $messages['August'] = 'Tebaxe';
 $messages['September'] = 'Keşkelun';
-$messages['October'] = 'Tışrino Verên';
-$messages['November'] = 'Tışrino Peyên';
+$messages['October'] = 'Cetan';
+$messages['November'] = 'Kelverdan';
 $messages['December'] = 'Kanun';
 $messages['ui_lang'] = 'Zıwani bımocne';
 $messages['lang'] = 'Zıwan';
