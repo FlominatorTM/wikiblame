@@ -12,6 +12,8 @@
  *
  * @author Erdemaslancan
  * @author Gorizon
+ * @author Gırd
+ * @author Kumkumuk
  * @author Mirzali
  */
 
@@ -25,8 +27,8 @@ $messages['June'] = 'Heziran';
 $messages['July'] = 'Temuz';
 $messages['August'] = 'Tebaxe';
 $messages['September'] = 'Keşkelun';
-$messages['October'] = 'Tışrino Verên';
-$messages['November'] = 'Tışrino Peyên';
+$messages['October'] = 'Cetan';
+$messages['November'] = 'Kelverdan';
 $messages['December'] = 'Kanun';
 $messages['ui_lang'] = 'Zıwani bımocne';
 $messages['lang'] = 'Zıwan';
@@ -48,7 +50,7 @@ $messages['linear'] = 'Lineer';
 $messages['interpolated'] = 'Dıletın (Veşi versiyon esto se rew vineno)';
 $messages['ignore_minors'] = 'Vurnayışane werdiya mevac (Cerbneyin)';
 $messages['force_wikitags'] = 'Wikinuştey be zor geyreno';
-$messages['start'] = 'Serokne';
+$messages['start'] = 'Suru bık';
 $messages['reset'] = 'Reset kerê';
 $messages['manual'] = 'Manuel';
 $messages['contact'] = 'İrtıbat';
@@ -58,8 +60,8 @@ $messages['search_in_progress_text'] = 'Qandi _ARTICLELINK_ verin versiyoni cı 
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ erin versiyonde cı <b>_NEEDLE_</b> için viki metin o vineyino';
 $messages['no_differences'] = 'Çımraviyarnayışanê cıgeyrayeyan de qet ferqi nêvêniyay.';
 $messages['first_version'] = 'Vurnayış gani çımraviyarnayışo sıfteyın ya zi peyên de bıbo?';
-$messages['first_version_present'] = 'Vineyaye __NEEDLE__ revizyon da __REVISIONLINK__ xora eşit bı';
-$messages['earlier_versions_available'] = 'Ma ra ke rewizyon de verêni de esto.';
+$messages['first_version_present'] = '__NEEDLE__ miyan de be tarixê __REVISIONLINK__ çımraviyarnayışo verên xora est bi.';
+$messages['earlier_versions_available'] = 'Revizyonê verêni şenê bıbê.';
 $messages['execution_time'] = 'Demê veciyayışi: _EXECUTIONTIME_ saniyeyi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiyonê weqfi';
 $messages['please_wait'] = 'Tay pıpawe...';

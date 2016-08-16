@@ -12,6 +12,7 @@
  *
  * @author Ciphers
  * @author DRIHEM
+ * @author Hhaboh162002
  * @author Houcinee1
  * @author Meno25
  * @author Mutarjem horr
@@ -64,8 +65,8 @@ $messages['search_in_progress_text'] = 'تاريخ النسخةهذه  _ARTICLEL
 $messages['search_in_progress_wikitags'] = 'تاريخ النسخة هذه  _ARTICLELINK_ يجري البحث عنها <b>_NEEDLE_</b> كنص ويكي';
 $messages['no_differences'] = 'لا توجد اختلافات في البحث في التنقيحات.';
 $messages['first_version'] = 'يجب أن يكون قد حدث تغيير في التنقيح الأول أو الأخير؟';
-$messages['first_version_present'] = '__NEEDLE__ موجود بالفعل في المراجعة الأولى و  يرجع تاريخها إلى __REVISIONLINK__ .';
-$messages['earlier_versions_available'] = 'ربما يكون هناك في وقت سابق من المراجعات.';
+$messages['first_version_present'] = '__NEEDLE__ موجود بالفعل في أقدم مراجعة بحثت عنها منذ __REVISIONLINK__ .';
+$messages['earlier_versions_available'] = 'يحتمل أن توجد مراجعات أقدم.';
 $messages['execution_time'] = 'وقت التنفيذ: _EXECUTIONTIME_ ثانية';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ نسخ موجودة';
 $messages['please_wait'] = 'الرجاء الانتظار...';
