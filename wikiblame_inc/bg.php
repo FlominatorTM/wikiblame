@@ -11,6 +11,7 @@
  * @file
  *
  * @author DCLXVI
+ * @author StanProg
  * @author Vodnokon4e
  */
 
@@ -53,6 +54,7 @@ $messages['get_less_versions'] = 'Търсенето може да зададе 
 $messages['wrong_skips'] = 'Неправилни настройки: Ако първите __VERSIONSTOSKIP__ версии са пропуснати, то нито едно търсене за __VERSIONSTOSEARCH__ версии няма да бъде изпълнено.';
 $messages['no_differences'] = 'Не са открити разлики между избраните версии.';
 $messages['earlier_versions_available'] = 'Вероятно има и по-стари версии.';
+$messages['execution_time'] = 'Време на изпълнение: _EXECUTIONTIME_ секунди';
 $messages['please_wait'] = 'Моля, изчакайте...';
 $messages['binary_test'] = 'Сравнение на разликите в _FIRSTDATEVERSION_ между _FIRSTNUMBER_ и _SECONDNUMBER_ по време на прехода от _SOURCENUMBER_:';
 $messages['binary_enough'] = 'Извършени са достатъчно опити, историята на статията е твърде объркана. Моля, опитайте се да промените някои от настройките.';
