@@ -68,6 +68,9 @@ function get_plain_text_from_article($articleenc)
 function compare_lists($needles, $haystack)
 {
 	//echo "entering compare_lists";
+	echo '<!--- it seems that some output every once in a while keeps the browser';
+	echo ' from stopping to load the page. Therefor here there will be a lot of dots ';
+	echo " that pop up while the script is working it's ass off: ";
 	$results = array();
 	//$hits = 0;
 	$paragraphsRemoved = explode("\n",$needles);
@@ -75,7 +78,8 @@ function compare_lists($needles, $haystack)
 	 //echo "<h2> needles</h2><textarea>$needles</textarea>";
 	foreach($paragraphsRemoved AS $newLine)
 	{
-		set_time_limit(60);
+		set_time_limit(120);
+		echo ".";
 		$onlyOneNewArticle = explode("]]:", $newLine);
 		if(	stristr( $onlyOneNewArticle[0], "*" ) 
 		 &&	!stristr($haystack, $onlyOneNewArticle[0] )
@@ -90,6 +94,7 @@ function compare_lists($needles, $haystack)
 	}
 	//echo "$hits hits";
 	//echo "leaving compare_lists";
+	echo '-->';
 	return $results;
 }
 
