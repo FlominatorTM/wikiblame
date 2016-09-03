@@ -124,14 +124,14 @@ function retrieve_current_list($catenc, $template, $other_cat_enc="", $template_
 		die("<b>error while retrieving list from wmflabs</b>");
 	}
 	
-	echo strlen($csv_list);
+	//echo strlen($csv_list);
 
 	//echo "<h1>csv</h1>$csv_list";
 
 	$rows = explode("\n", $csv_list);
 	$bulleted_list = "";
 
-	echo count($rows) . "rows";
+	//echo count($rows) . "rows";
 	foreach($rows AS $row)
 	{
 		//echo "$row<br>";
