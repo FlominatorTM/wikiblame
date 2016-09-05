@@ -27,8 +27,7 @@ echo $plainfuture_text;
 echo "\n&nbsp;Anzahl: $number_of_current_entries";
 echo "</textarea><br>";
 echo '<input type="hidden" value="1" name="wpSection" />';
-$timeStamp = get_page_time_stamp($server, $articleenc);
-set_up_media_wiki_input_fields("Inventar-Seite mit inventory.php aktualisiert", "Inventar-Seite aktualisieren", $timeStamp);
+set_up_media_wiki_input_fields("Inventar-Seite mit inventory.php aktualisiert", "Inventar-Seite aktualisieren", $articleenc);
 echo "</form>\n";
 
 $plain_text = get_plain_text_from_article($articleenc);
@@ -56,7 +55,7 @@ foreach($entries_added AS $added)
 echo "\n Änderungen: ". count($entries_added);
 echo "</textarea><br>";
 echo '<input type="hidden" value="new" name="wpSection" />';
-set_up_media_wiki_input_fields("Änderungen", "Änderungen anschauen");
+set_up_media_wiki_input_fields("Änderungen", "Änderungen anschauen", urlencode('Wikipedia:Spielwiese'));
 echo "</form>\n";
 
 function get_plain_text_from_article($articleenc)

@@ -5,9 +5,9 @@ $is_debug = ($_REQUEST['debug']=="on" || $_REQUEST['debug']=="true" );
 
 include("shared_inc/wiki_functions.inc.php");
 $server = "$lang.$project.org";
-
-$wbw_page = "http://".$server."/w/index.php?title="."Wikipedia:Wartungsbausteinwettbewerb/".name_in_url($_REQUEST['edition']);
-$purge_page = "http://".$server."/w/api.php?action=purge&titles=Wikipedia:Wartungsbausteinwettbewerb/".name_in_url($_REQUEST['edition']);
+$article = "Wikipedia:Wartungsbausteinwettbewerb/".name_in_url($_REQUEST['edition']);
+$wbw_page = "http://".$server."/w/index.php?title=".$article;
+$purge_page = "http://".$server."/w/api.php?action=purge&titles=".$article;
 
 $purge = post_request($server, $purge_page, "", "");
 
@@ -20,7 +20,7 @@ if($is_debug)
 $points_per_team = rate_teams($server, $wbw_page);
 
 sort_and_print_score_list($points_per_team);
-print_form($wbw_page, update_paragraphs(get_source_code_paragraphs($server, $wbw_page), $points_per_team));
+print_form($wbw_page, update_paragraphs(get_source_code_paragraphs($server, $wbw_page), $points_per_team), $article);
 
 function extract_user_name_column($list_of_article_points)
 {
@@ -176,10 +176,10 @@ function update_paragraphs($paragraphs, $points_per_team)
 	return $paragraphs;
 }
 	
-function print_form($wbw_page, $paragraphs)
+function print_form($wbw_page, $paragraphs, $article)
 {
 	echo '<form method="post" action="' . str_replace('http', 'https', $wbw_page) . '&action=submit">';
-	set_up_media_wiki_input_fields("Zwischenstände aktualisiert", "Aktualisieren");
+	set_up_media_wiki_input_fields("Zwischenstände aktualisiert", "Aktualisieren", $article);
 	
 	if(!$is_debug) $style="style=\"display: none;\"";
 	echo "<textarea name=\"wpTextbox1\" cols=\"80\" rows=\"25\" $style >" . implode($paragraphs, "\n======"). "</textarea><br>";
