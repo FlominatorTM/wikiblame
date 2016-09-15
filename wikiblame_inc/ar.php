@@ -15,6 +15,7 @@
  * @author Hhaboh162002
  * @author Houcinee1
  * @author Meno25
+ * @author Moud hosny
  * @author Mutarjem horr
  * @author OsamaK
  * @author ترجمان05
@@ -22,23 +23,23 @@
  */
 
 $text_dir = 'rtl';
-$messages['January'] = 'كانون الثاني/يناير';
-$messages['February'] = 'شباط/فبراير';
-$messages['March'] = 'آذار/مارس';
-$messages['April'] = 'نيسان/أبريل';
-$messages['May'] = 'أيار/مايو';
-$messages['June'] = 'حزيران/يونيه';
-$messages['July'] = 'تموز/يوليه';
-$messages['August'] = 'آب/أغسطس';
-$messages['September'] = 'أيلول/سبتمبر';
-$messages['October'] = 'تشرين الأول/أكتوبر';
-$messages['November'] = 'تشرين الثاني/نوفمبر';
-$messages['December'] = 'كانون الأول/ديسمبر';
+$messages['January'] = 'يناير/كانون الثاني';
+$messages['February'] = 'فبراير/شباط';
+$messages['March'] = 'مارس/آذار';
+$messages['April'] = 'أبريل/نيسان';
+$messages['May'] = 'مايو/أيار';
+$messages['June'] = 'يونيو/حزيران';
+$messages['July'] = 'يوليو/تموز';
+$messages['August'] = 'أغسطس/آب';
+$messages['September'] = 'سبتمبر/أيلول';
+$messages['October'] = 'أكتوبر/تشرين الأول';
+$messages['November'] = 'نوفمبر/تشرين الثاني';
+$messages['December'] = 'ديسمبر/كانون الأول';
 $messages['ui_lang'] = 'لغة العرض';
 $messages['lang'] = 'اللغة';
 $messages['project'] = 'المشروع';
 $messages['article'] = 'الصفحة';
-$messages['needle'] = 'إبحث عن';
+$messages['needle'] = 'ابحث عن';
 $messages['skipversions'] = 'تخطَّ دائما النسخ س';
 $messages['ignorefirst'] = 'أهمل النسخة س الأولى';
 $messages['limit'] = 'نسخ للمراجعة';
@@ -55,10 +56,10 @@ $messages['linear'] = 'خطيّة';
 $messages['interpolated'] = 'ثنائي (أسرع بنسخ أكثر)';
 $messages['ignore_minors'] = 'تجاهل التغييرات الثانوية (تجريبية)';
 $messages['force_wikitags'] = 'إجبار البحث على نص ويكي';
-$messages['start'] = 'إبدأ';
+$messages['start'] = 'ابدأ';
 $messages['reset'] = 'أعد الضبط';
 $messages['manual'] = 'دليل الإستعمال';
-$messages['contact'] = 'للإتصال';
+$messages['contact'] = 'اتصل';
 $messages['get_less_versions'] = 'يمكن لبحثك أن يظم __NUMREVISIONS__ تعديلات في وقت واحد. يسمح لك بالبحث عن __ALLOWEDREVISIONS__ لكل مكالمة، وذلك لحماية الخادم. رجاءً قم بتعديل الإعدادات أو حول طريقة البحث إلى ثنائي!';
 $messages['wrong_skips'] = 'إعدادات غير صحيحة: لو أن أول نسخ __VERSIONSTOSKIP__ تم تجاوزها, إذا فلا شيء من نسخ __VERSIONSTOSEARCH__ للبحث ستتم معالجتها.';
 $messages['search_in_progress_text'] = 'تاريخ النسخةهذه  _ARTICLELINK_ يجري البحث عنها <b>_NEEDLE_</b> كنص عادي';
