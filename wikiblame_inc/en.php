@@ -83,6 +83,7 @@ $messages['once_more'] = 'Once more, with feeling:';
 $messages['binary_enough'] = 'Performed enough retries, article history is quite messed up, please try changing some settings.';
 $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';
+$messages['here'] = 'here';
 $messages['help_translating'] = 'Help translating at translatewiki.net';
 $messages['start_here'] = 'Search from here';
 $messages['too_much_versions'] = 'You have reached your query limit of __VERSIONLIMIT__ versions. Please try again in __WAITMINUTES__ minutes or switch to binary search. Sorry for the inconvenience.';

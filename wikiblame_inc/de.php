@@ -75,6 +75,7 @@ $messages['once_more'] = 'Erneuter Versuch:';
 $messages['binary_enough'] = 'Die Suche wurde etliche Male wiederholt. Da die Artikelhistorie sehr unübersichtlich ist, sollten die Sucheinstellungen verändert werden.';
 $messages['insertion_found'] = 'Einfügung zwischen LEFT_VERSION und RIGHT_VERSION gefunden';
 $messages['deletion_found'] = 'Löschung zwischen LEFT_VERSION und RIGHT_VERSION gefunden';
+$messages['here'] = 'hier';
 $messages['help_translating'] = 'Hilf beim Übersetzen auf translatewiki.net';
 $messages['start_here'] = 'Ab hier suchen';
 $messages['too_much_versions'] = 'Die Abfragebegrenzung von __VERSIONLIMIT__ Versionen wurde erreicht. Eine erneute Suche ist in __WAITMINUTES__ Minuten möglich. Alternativ ist die Suchmethode „binär“ möglich. Entschuldige die Unannehmlichkeiten.';
