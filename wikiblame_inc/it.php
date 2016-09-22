@@ -80,6 +80,7 @@ $messages['once_more'] = 'Ancora una volta, con sentimento:';
 $messages['binary_enough'] = 'Eseguiti sufficienti tentativi, la cronologia della voce è purtroppo abbastanza in disordine, prova a cambiare qualche impostazione.';
 $messages['insertion_found'] = 'Inserimento della parola trovato fra la revisione del LEFT_VERSION e quella del RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancellazione trovata fra LEFT_VERSION e RIGHT_VERSION';
+$messages['here'] = 'qui';
 $messages['help_translating'] = 'Aiuta a tradurre su translatewiki.net';
 $messages['start_here'] = 'Cerca da qui';
 $messages['too_much_versions'] = 'Hai raggiunto il limite massimo  di __VERSIONLIMIT__ richieste. Si prega di riprovare passati __WAITMINUTES__ o passare alla ricerca binaria. Ci scusiamo per l\'inconveniente.';

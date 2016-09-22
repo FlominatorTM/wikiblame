@@ -78,6 +78,7 @@ $messages['once_more'] = 'Encore une fois, avec conviction :';
 $messages['binary_enough'] = 'Vous avez assez réessayé. L’historique de l’article est mal en point. Veuillez essayer de changer certains paramètres.';
 $messages['insertion_found'] = 'Insertion détectée entre LEFT_VERSION et RIGHT_VERSION';
 $messages['deletion_found'] = 'Suppression détectée entre LEFT_VERSION et RIGHT_VERSION';
+$messages['here'] = '<b>comparaison des versions</b>';
 $messages['help_translating'] = 'Aidez à traduire sur translatewiki.net';
 $messages['start_here'] = 'Rechercher à partir d\'ici';
 $messages['too_much_versions'] = 'Vous avez atteint votre limite de requête de __VERSIONLIMIT__ versions. Essayez de nouveau dans __WAITMINUTES__ minutes ou basculez vers la recherche binaire. Désolé pour les inconvénients.';

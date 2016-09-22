@@ -13,6 +13,7 @@
  * @author Aotake
  * @author Flominator
  * @author Fryed-peach
+ * @author Omotecho
  * @author Otokoume
  * @author Shirayuki
  * @author Whym
@@ -62,8 +63,8 @@ $messages['search_in_progress_text'] = '「_ARTICLELINK_」の版履歴を、「
 $messages['search_in_progress_wikitags'] = '「_ARTICLELINK_」の版履歴を、「<b>_NEEDLE_</b>」をウィキテキストして検索しています';
 $messages['no_differences'] = '検索された範囲の版で差分は見つかりませんでした。';
 $messages['first_version'] = '変更は最初か最新の版で起きている必要がありますか?';
-$messages['first_version_present'] = '__NEEDLE__は__REVISIONLINK__に作成された初版に既に存在していました。';
-$messages['earlier_versions_available'] = 'おそらく以前の版が存在します。';
+$messages['first_version_present'] = '__NEEDLE__は検索の結果、__REVISIONLINK__までに作成された初版に既に存在しています。';
+$messages['earlier_versions_available'] = '以前の版が存在するかもしれません。';
 $messages['execution_time'] = '実行時間: _EXECUTIONTIME_秒';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_件の版が見つかりました';
 $messages['please_wait'] = 'お待ちください…';

@@ -11,6 +11,7 @@
  * @file
  *
  * @author HalanTul
+ * @author Туллук
  */
 
 $messages['January'] = 'тохсунньу';
@@ -28,3 +29,4 @@ $messages['December'] = 'Ахсынньы';
 $messages['lang'] = 'Тыл';
 $messages['project'] = 'Бырайыак';
 $messages['article'] = 'Сирэй';
+$messages['here'] = 'манна';

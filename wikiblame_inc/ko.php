@@ -74,6 +74,7 @@ $messages['once_more'] = '느낌대로 한 번 더:';
 $messages['binary_enough'] = '수행할 충분히 다시 시도했지만 문서 역사가 꽤 엉망진창입니다. 일부 설정을 바꿔보십시오.';
 $messages['insertion_found'] = 'LEFT_VERSION과 RIGHT_VERSION 사이에 추가되었음';
 $messages['deletion_found'] = 'LEFT_VERSION 버전과 RIGHT_VERSION 버전 사이에서 삭제됨';
+$messages['here'] = '여기';
 $messages['help_translating'] = 'translatewiki.net에서 번역 돕기';
 $messages['start_here'] = '여기서부터 검색';
 $messages['too_much_versions'] = '__VERSIONLIMIT__ 버전의 쿼리 한도에 도달했습니다. __WAITMINUTES__분 후에 다시 시도하거나 이진 검색으로 전환하시기 바랍니다. 불편을 끼쳐 드려 죄송합니다.';

@@ -18,6 +18,7 @@
  * @author Luckas
  * @author Macofe
  * @author Malafaya
+ * @author Mansil
  * @author Mosca
  * @author Vitorvicentevalente
  * @author Waldir
@@ -78,6 +79,7 @@ $messages['once_more'] = 'Mais uma vez, com sentimento:';
 $messages['binary_enough'] = 'Foram realizadas várias tentativas, mas o histórico do artigo está bastante confuso. Tente alterar algumas configurações.';
 $messages['insertion_found'] = 'O texto foi adicionado entre a versão LEFT_VERSION e a versão RIGHT_VERSION';
 $messages['deletion_found'] = 'O texto foi retirado entre a versão LEFT_VERSION e a versão RIGHT_VERSION';
+$messages['here'] = 'aqui';
 $messages['help_translating'] = 'Ajude a traduzir no translatewiki.net';
 $messages['start_here'] = 'Procurar a partir daqui';
 $messages['too_much_versions'] = 'Atingiu o seu limite de consultas, de __VERSIONLIMIT__ versões. Tente novamente dentro de __WAITMINUTES__ minutos ou mude para pesquisa binária. Desculpe este transtorno.';

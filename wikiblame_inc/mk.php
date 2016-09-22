@@ -72,6 +72,7 @@ $messages['once_more'] = 'Уште еднаш, со чувство:';
 $messages['binary_enough'] = 'Извршивте доволно обиди. Историјата на статијата е многу побркана. Изменете некои нагодувања.';
 $messages['insertion_found'] = 'Пронајдено е вметнување помеѓу LEFT_VERSION и RIGHT_VERSION';
 $messages['deletion_found'] = 'Пронајдено е бришење помеѓу LEFT_VERSION и RIGHT_VERSION';
+$messages['here'] = 'тука';
 $messages['help_translating'] = 'Помош со преведувањето на translatewiki.net';
 $messages['start_here'] = 'Барај оттука';
 $messages['too_much_versions'] = 'Ги достигнавте ограничувањето за пребарување на  __VERSIONLIMIT__ дозволени верзии. Обидете се пак за __WAITMINUTES__ минути или префрлете се на бинарно пребарување. Се извинуваме за непријатностите.';

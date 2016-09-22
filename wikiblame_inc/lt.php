@@ -69,6 +69,7 @@ $messages['once_more'] = 'Dar kartą, su jausmu:';
 $messages['binary_enough'] = 'Atlikta pakankamai bandymų, straipsnio istorija yra  supainiota, prašome bandyti keisti kuriuos nors parametrus.';
 $messages['insertion_found'] = ' Tarp LEFT_VERSION ir RIGHT_VERSION rastas įterpimas';
 $messages['deletion_found'] = ' Tarp LEFT_VERSION ir RIGHT_VERSION buvo ištrinta';
+$messages['here'] = 'čia';
 $messages['help_translating'] = 'Padėkite versti translatewiki.net';
 $messages['start_here'] = 'Ieškoti nuo čia';
 $messages['too_much_versions'] = 'Jūs pasiekėte savo versijų užklausų ribą __VERSIONLIMIT__. Bandykite dar kartą po __WAITMINUTES__ minučių arba pereikite į dvejetainę paieškos sistemą. Atsiprašome už nepatogumus.';

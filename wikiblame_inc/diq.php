@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Asmen
  * @author Erdemaslancan
  * @author Gorizon
  * @author Gırd
@@ -33,7 +34,7 @@ $messages['December'] = 'Kanun';
 $messages['ui_lang'] = 'Zıwani bımocne';
 $messages['lang'] = 'Zıwan';
 $messages['project'] = 'Proce';
-$messages['article'] = 'Perr';
+$messages['article'] = 'Pele';
 $messages['needle'] = 'Cı geyre';
 $messages['skipversions'] = 'Tım u tım versiyona x serçekere';
 $messages['ignorefirst'] = 'Tım u tım versiyonê x ser çeke';
@@ -71,6 +72,7 @@ $messages['once_more'] = 'Zerri ra, fına:';
 $messages['binary_enough'] = 'Cerebnayış kafi biyo, tarixê meqaley xeylê alaziyayeyo, tayê eyaranê cı bıvurne u fına bıcerebne.';
 $messages['insertion_found'] = 'LEFT_VERSION u RIGHT_VERSION de debeste vineya.';
 $messages['deletion_found'] = 'LEFT_VERSION u RIGHT_VERSION besternaye vineya';
+$messages['here'] = 'tiya';
 $messages['help_translating'] = 'Translatewiki.net de açarnayışi rê pheşti bıdên';
 $messages['start_here'] = 'Tiya ra cı geyre';
 $messages['too_much_versions'] = 'Limiti neticiy __VERSIONLIMIT__ şıma resti versiyon. Reca kem __WAITMINUTES__ vınderi bu fına bıcerebni';

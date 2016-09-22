@@ -12,6 +12,7 @@
  *
  * @author An13sa
  * @author Kobazulo
+ * @author Sator
  * @author Xabier Armendaritz
  */
 
@@ -58,5 +59,6 @@ $messages['please_wait'] = 'Mesedez itxaron ...';
 $messages['once_more'] = 'Berriro ere, bihotz-bihotzez:';
 $messages['insertion_found'] = 'Insertzioa topatu da LEFT_VERSION eta RIGHT_VERSION artean';
 $messages['deletion_found'] = 'Ezabaketa topatu da LEFT_VERSION eta RIGHT_VERSION artean';
+$messages['here'] = 'hemen';
 $messages['help_translating'] = 'translatewiki.net-en itzultzen lagundu';
 $messages['start_here'] = 'Bilatu hemendik';

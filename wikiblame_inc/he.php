@@ -12,6 +12,7 @@
  *
  * @author Amire80
  * @author Flominator
+ * @author Guycn2
  * @author Neukoln
  * @author Rotemliss
  * @author YaronSh
@@ -73,6 +74,7 @@ $messages['once_more'] = 'עוד פעם, ועכשיו ברגש:';
 $messages['binary_enough'] = 'נעשו מספיק ניסיונות חוזרים, היסטוריית הגרסאות מבולגנת למדי, אפשר לנסות לשנות הגדרות.';
 $messages['insertion_found'] = 'נמצא שיבוץ בין LEFT_VERSION לבין RIGHT_VERSION';
 $messages['deletion_found'] = 'נמצאה מחיקה בין LEFT_VERSION ל־RIGHT_VERSION';
+$messages['here'] = 'כאן';
 $messages['help_translating'] = 'ניתן לעזור בתרגום באתר translatewiki.net';
 $messages['start_here'] = 'חיפוש מכאן';
 $messages['too_much_versions'] = 'הגעתם למגבלת השאילתות של __VERSIONLIMIT__ גרסאות. נא לנסות שוב בעוד __WAITMINUTES__ דקות או לעבור לחיפוש בינארי. אנו מצטערים על חוסר הנוחות.';

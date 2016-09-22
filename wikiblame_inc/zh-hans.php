@@ -74,6 +74,7 @@ $messages['once_more'] = '再来一次：';
 $messages['binary_enough'] = '重试次数够多了，条目历史太乱了，请试着更改某些设置。';
 $messages['insertion_found'] = '目标在 LEFT_VERSION 和 RIGHT_VERSION 之间被加入';
 $messages['deletion_found'] = '目标在 LEFT_VERSION 和 RIGHT_VERSION 之间被删除';
+$messages['here'] = '这里';
 $messages['help_translating'] = '在Translatewiki.net帮助翻译';
 $messages['start_here'] = '从这里开始搜索';
 $messages['too_much_versions'] = '您已到达您的 __VERSIONLIMIT__ 个版本的查询限制。请在 __WAITMINUTES__ 分钟后再试，或切换到二分法搜索。不便之处，敬请原谅。';

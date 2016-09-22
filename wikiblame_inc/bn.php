@@ -17,6 +17,7 @@
  * @author RIPENDIL
  * @author Sayma Jahan
  * @author Wikisagnik
+ * @author আজিজ
  */
 
 $messages['January'] = 'জানুয়ারি';
@@ -74,6 +75,7 @@ $messages['once_more'] = 'আরেকবার, অনুভুতির সা
 $messages['binary_enough'] = 'যথেষ্টবার পুনরায় চেষ্টা করা হয়েছে, অনুচ্ছেদ ইতিহাস কিছুটা এলোমেলো, দয়া করে কিছু সেটিংস পরিবর্তনের চেষ্টা করুন।';
 $messages['insertion_found'] = 'LEFT_VERSION এবং RIGHT_VERSION এর মাঝে সন্নিবেশ খুঁজে পাওয়া গেছে';
 $messages['deletion_found'] = 'LEFT_VERSION এবং RIGHT_VERSION এর মাঝে অপসারণ খুঁজে পাওয়া গেছে';
+$messages['here'] = 'এখানে';
 $messages['help_translating'] = 'translatewiki.net এ অনুবাদে সাহায্য করুন';
 $messages['start_here'] = 'এখানে অনুসন্ধান করুন';
 $messages['too_much_versions'] = 'আপনার অনুসন্ধানের সীমা __VERSIONLIMIT__ গুলো মুদ্রণ পরিলক্ষিত। দয়া করে __WAITMINUTES__ মিনিট পর আবার চেষ্টা করুন অথবা বাইনারি অনুসন্ধান এ পরিবর্তন করুন। সাময়িক অসুবিধার জন্য দু:খিত।';

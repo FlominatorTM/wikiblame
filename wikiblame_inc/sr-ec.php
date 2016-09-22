@@ -12,6 +12,7 @@
  *
  * @author Charmed94
  * @author FriedrickMILBarbarossa
+ * @author Milicevic01
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -75,6 +76,7 @@ $messages['once_more'] = 'Поновљена претрага:';
 $messages['binary_enough'] = 'Извршено је довољно покушаја, историја чланка је збркана. Промените неке поставке.';
 $messages['insertion_found'] = 'Унос је пронађен између LEFT_VERSION и RIGHT_VERSION';
 $messages['deletion_found'] = 'Брисање је пронађено између LEFT_VERSION и RIGHT_VERSION';
+$messages['here'] = 'овде';
 $messages['help_translating'] = 'Помозите нам с превођењем';
 $messages['start_here'] = 'Тражи одавде';
 $messages['too_much_versions'] = 'Достигли сте ограничење од __VERSIONLIMIT__ издања. Покушајте поново за __WAITMINUTES__ мин. или промените на бинарну претрагу. Извињавамо се на неприлици.';

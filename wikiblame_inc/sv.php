@@ -76,6 +76,7 @@ $messages['once_more'] = 'En gång till, med känsla:';
 $messages['binary_enough'] = 'Försökt tillräckligt många gånger, artikelhistoriken är ganska rörig, försök med andra inställningar.';
 $messages['insertion_found'] = 'Inläggning hittades mellan LEFT_VERSION och RIGHT_VERSION';
 $messages['deletion_found'] = 'Radering funnen mellan LEFT_VERSION och RIGHT_VERSION';
+$messages['here'] = 'här';
 $messages['help_translating'] = 'Hjälp till med översättning på translatewiki.net';
 $messages['start_here'] = 'Sök härifrån';
 $messages['too_much_versions'] = 'Du har nått begränsningen för antalet frågor på __VERSIONLIMIT_ versioner. Försök igen om __WAITMINUTES__ minuter eller byt till binär sökning. Beklagar olägenheten.';

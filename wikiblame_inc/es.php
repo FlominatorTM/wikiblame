@@ -77,6 +77,7 @@ $messages['once_more'] = 'Una vez más, con sentimiento:';
 $messages['binary_enough'] = 'Se realizaron suficientes reintentos. El historial del artículo está en mal estado. Trata de cambiar algunas configuraciones.';
 $messages['insertion_found'] = 'Inserción encontrada entre LEFT_VERSION y RIGHT_VERSION';
 $messages['deletion_found'] = 'Borrado encontrado entre LEFT_VERSION y RIGHT_VERSION';
+$messages['here'] = 'aquí';
 $messages['help_translating'] = 'Ayuda traduciendo en translatewiki.net';
 $messages['start_here'] = 'Búsqueda desde aquí';
 $messages['too_much_versions'] = 'Has llegado a tu límite de consultas de __VERSIONLIMIT__ versiones. Por favor intenta nuevamente en __WAITMINUTES__ minutos o cambia a la búsqueda binaria.

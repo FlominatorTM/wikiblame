@@ -75,6 +75,7 @@ $messages['once_more'] = 'Raz jeszcze, z wyczuciem:';
 $messages['binary_enough'] = 'Wykonano zbyt wiele prób, historia artykuł jest bardzo zagmatwana, proszę spróbować zmienić niektóre ustawienia.';
 $messages['insertion_found'] = 'Wstawienia odnalezione pomiędzy LEFT_VERSION i RIGHT_VERSION';
 $messages['deletion_found'] = 'Usunięcia odnalezione pomiędzy LEFT_VERSION i RIGHT_VERSION';
+$messages['here'] = 'tutaj';
 $messages['help_translating'] = 'Pomóż w tłumaczeniu na translatewiki.net';
 $messages['start_here'] = 'Szukaj od tego miejsca';
 $messages['too_much_versions'] = 'Osiągnąłeś limit zapytań, który wynosi __VERSIONLIMIT__ wersji. Spróbuj ponownie za __WAITMINUTES__ minut lub przełącz na wyszukiwanie binarne. Przepraszamy za utrudnienia.';

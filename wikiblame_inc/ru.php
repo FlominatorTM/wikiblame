@@ -15,6 +15,7 @@
  * @author Ignatus
  * @author Lemondoge
  * @author Lockal
+ * @author Okras
  * @author Александр Сигачёв
  */
 
@@ -73,6 +74,7 @@ $messages['once_more'] = 'Ещё раз, с чувством:';
 $messages['binary_enough'] = 'Выполнено достаточно попыток, история статьи совершенно запуталась, пожалуйста, попробуйте изменить какие-нибудь параметры.';
 $messages['insertion_found'] = 'Добавление обнаружено между LEFT_VERSION и RIGHT_VERSION';
 $messages['deletion_found'] = 'Исключение обнаружено между LEFT_VERSION и RIGHT_VERSION';
+$messages['here'] = 'здесь';
 $messages['help_translating'] = 'Помочь в переводе на translatewiki.net';
 $messages['start_here'] = 'Начинать поиск отсюда';
 $messages['too_much_versions'] = 'Достигнут предел запроса по количеству версий: __VERSIONLIMIT__. Пожалуйста, попробуйте ещё раз через __WAITMINUTES__ минут или переключитесь в двоичный режим. Извините за доставленные неудобства.';

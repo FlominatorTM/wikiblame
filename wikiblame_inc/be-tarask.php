@@ -69,6 +69,7 @@ $messages['once_more'] = 'Яшчэ раз, з пачуцьцем:';
 $messages['binary_enough'] = 'Выканана дастаткова спробаў, гісторыя артыкула заблытаная. Калі ласка, паспрабуйце зьмяніць якія-небудзь налады.';
 $messages['insertion_found'] = 'Знойдзеная ўстаўка паміж LEFT_VERSION і RIGHT_VERSION';
 $messages['deletion_found'] = 'Знойдзенае выдаленьне паміж LEFT_VERSION і RIGHT_VERSION';
+$messages['here'] = 'тут';
 $messages['help_translating'] = 'Дапамагчы з перакладам ў перакладзе на translatewiki.net';
 $messages['start_here'] = 'Шукаць адгэтуль';
 $messages['too_much_versions'] = 'Вы дасягнулі абмежаваньне запытаў па колькасьці вэрсіяў __VERSIONLIMIT__. Калі ласка, паспрабуйце зноў праз __WAITMINUTES__ хвілінаў, ці пераключыцеся ў рэжым двайковага пошуку. Прабачце за нязручнасьць.';
