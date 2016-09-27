@@ -69,6 +69,7 @@ $messages['once_more'] = 'Unha vez máis, co presentimento:';
 $messages['binary_enough'] = 'Xa se levaron a cabo intentos dabondo, o historial do artigo está bastante confuso. Inténteo cambiando algunha opción.';
 $messages['insertion_found'] = 'Atopouse unha inserción entre LEFT_VERSION e RIGHT_VERSION';
 $messages['deletion_found'] = 'Atopouse un borrado entre LEFT_VERSION e RIGHT_VERSION';
+$messages['here'] = 'aquí';
 $messages['help_translating'] = 'Axúdanos coas traducións en translatewiki.net';
 $messages['start_here'] = 'Procurar a partir de aquí';
 $messages['too_much_versions'] = 'Alcanzou o límite de pescudas de __VERSIONLIMIT__ versións. Inténteo de novo dentro de __WAITMINUTES__ minutos ou cambie á procura binaria. Sentimos o inconveniente.';

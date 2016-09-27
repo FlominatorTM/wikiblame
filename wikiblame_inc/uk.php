@@ -15,6 +15,7 @@
  * @author KEL
  * @author Microcell
  * @author Olvin
+ * @author Piramidion
  * @author Prima klasy4na
  * @author Тест
  */
@@ -63,7 +64,7 @@ $messages['search_in_progress_text'] = 'Ведеться пошук <b>_NEEDLE_<
 $messages['search_in_progress_wikitags'] = 'Ведеться пошук <b>_NEEDLE_</b> в історії версій _ARTICLELINK_ як вікітексту';
 $messages['no_differences'] = 'Не знайдено відмінностей між обраними версіями.';
 $messages['first_version'] = 'Зміна мала відбутися в першій чи останній версії?';
-$messages['first_version_present'] = '__NEEDLE__ уже була присутня у першій ревізії, знайденій починаючи з __REVISIONLINK__.';
+$messages['first_version_present'] = '__NEEDLE__ уже була присутня у найстаршій версії, знайденій починаючи з __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Вірогідно, є старіші версії.';
 $messages['execution_time'] = 'Час виконання: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Знайдено _NUMBEROFVERSIONS_ версії';
@@ -74,6 +75,7 @@ $messages['once_more'] = 'Ще раз, з почуттям:';
 $messages['binary_enough'] = 'Виконано достатньо спроб, історія статті заплуталась. Будь ласка, змініть які-небудь параметри.';
 $messages['insertion_found'] = 'Вставку знайдено між LEFT_VERSION і RIGHT_VERSION';
 $messages['deletion_found'] = 'Видалення знайдено між LEFT_VERSION і RIGHT_VERSION';
+$messages['here'] = 'тут';
 $messages['help_translating'] = 'Допоможіть перекласти на translatewiki.net';
 $messages['start_here'] = 'Початик пошук звідси';
 $messages['too_much_versions'] = 'Ви досягнули ліміту запитів по кількості версій: __VERSIONLIMIT__. Будь ласка, спробуйте ще раз за __WAITMINUTES__ хвилин або використовуйте двійковий режим. Перепрошуємо за незручності.';

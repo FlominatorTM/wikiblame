@@ -12,6 +12,7 @@
  *
  * @author Bugoslav
  * @author Ex13
+ * @author Ivi104
  * @author SpeedyGonsales
  * @author Teoo3
  */
@@ -58,7 +59,7 @@ $messages['search_in_progress_text'] = 'Povijest inačice _ARTICLELINK_ se traž
 $messages['search_in_progress_wikitags'] = 'Povijest inačica _ARTICLELINK_ se traži za <b>_NEEDLE_</b> kao wiki tekst';
 $messages['no_differences'] = 'Nisu nađene razlike u traženim revizijama.';
 $messages['first_version'] = 'Promjena se morala dogoditi u prvoj ili zadnjoj reviziji?';
-$messages['first_version_present'] = '__NEEDLE__ već postoji u prvoj reviziji iz __REVISIONLINK__.';
+$messages['first_version_present'] = '__NEEDLE__ već postoji u starijoj reviziji iz __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Možda postoje i ranija uređivanja.';
 $messages['execution_time'] = 'Vrijeme izvršavanja: _EXECUTIONTIME_ sekundi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ inačica pronađeno';
@@ -69,6 +70,7 @@ $messages['once_more'] = 'Još jednom, s osjećajem:';
 $messages['binary_enough'] = 'Izvršeno je dovoljno pokušaja, povijest članka je zbrkan, molimo pokušajte promijeniti neke postavke.';
 $messages['insertion_found'] = 'Umetak je pronađen između LEFT_VERSION i RIGHT_VERSION';
 $messages['deletion_found'] = 'Brisanje je pronađeno između LEFT_VERSION i RIGHT_VERSION';
+$messages['here'] = 'ovdje';
 $messages['help_translating'] = 'Pomozite prevođenjem na translatewiki.net';
 $messages['start_here'] = 'Pretraži odavde';
 $messages['too_much_versions'] = 'Dostigli ste vaše ograničenje upita od __VERSIONLIMIT__ inačica. Molimo pokušajte ponovo za __WAITMINUTES__ minuta ili pređite na binarnu pretragu. Ispričavamo se zbog neugodnosti.';

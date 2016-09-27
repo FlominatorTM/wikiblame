@@ -11,6 +11,7 @@
  * @file
  *
  * @author Flominator
+ * @author Jon Harald Søby
  * @author Nghtwlkr
  * @author SuperPotato
  * @author Tarjeimo
@@ -60,8 +61,8 @@ $messages['search_in_progress_text'] = 'Versjonshistorikken til _ARTICLELINK_ bl
 $messages['search_in_progress_wikitags'] = 'Versjonshistorikken til _ARTICLELINK_ blir søkt gjennom etter <b>_NEEDLE_</b> som wikitekst';
 $messages['no_differences'] = 'Ingen forskjell funnet i søkte revisjoner.';
 $messages['first_version'] = 'Endring må ha skjedd i første eller siste revisjon?';
-$messages['first_version_present'] = '__NEEDLE__ var allerede til stede i den første revisjonen funnet fra __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Det finnes sannsynligvis tidligere revisjoner.';
+$messages['first_version_present'] = '__NEEDLE__ var allerede til stede i den eldste revisjonen funnet fra __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Det finnes sannsynligvis eldre revisjoner.';
 $messages['execution_time'] = 'Kjøretid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versjoner funnet';
 $messages['please_wait'] = 'Vennligst vent …';
@@ -71,6 +72,7 @@ $messages['once_more'] = 'En gang til, med følelse:';
 $messages['binary_enough'] = 'Utførte nok forsøk, artikkelhistorikken er ganske rotete, prøv igjen med andre innstillinger.';
 $messages['insertion_found'] = 'Innsettelse funnet mellom LEFT_VERSION og RIGHT_VERSION';
 $messages['deletion_found'] = 'Sletting funnet mellom LEFT_VERSION og RIGHT_VERSION';
+$messages['here'] = 'her';
 $messages['help_translating'] = 'Hjelp til med å oversette på translatewiki.net';
 $messages['start_here'] = 'Søk herfra';
 $messages['too_much_versions'] = 'Du har nådd spørregrensen din på __VERSIONLIMIT__ versjoner. Prøv igjen om __WAITMINUTES__ minutter eller bytt til binært søk. Beklager bryderiet.';
