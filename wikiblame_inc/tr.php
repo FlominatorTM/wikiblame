@@ -15,6 +15,7 @@
  * @author Flominator
  * @author Hbseren
  * @author Joseph
+ * @author Kumkumuk
  * @author McAang
  * @author Meelo
  * @author Vito Genovese
@@ -75,6 +76,7 @@ $messages['once_more'] = 'Bir kez daha, duygu ile:';
 $messages['binary_enough'] = 'Yeterince yeniden denendi, madde geçmişi fazlaca talan oldu, lütfen birkaç ayarı değiştirmeyi deneyin.';
 $messages['insertion_found'] = 'LEFT_VERSION ve RIGHT_VERSION arasında ekleme bulundu';
 $messages['deletion_found'] = 'LEFT_VERSION ve RIGHT_VERSION arasında silme bulundu';
+$messages['here'] = 'burada';
 $messages['help_translating'] = 'translatewiki.net\'de çevirmeye yardımcı olun';
 $messages['start_here'] = 'Burada ara';
 $messages['too_much_versions'] = 'Sorgu limitiniz olan __VERSIONLIMIT__ sürüme ulaştınız. Lütfen __WAITMINUTES__ dakika sonra tekrar deneyin ya da ikili aramaya geçin. Rahatsızlıktan dolayı özür dileriz.';

@@ -62,6 +62,7 @@ $messages['please_wait'] = 'कृपया थांबा...';
 $messages['binary_test'] = '_SOURCENUMBER_ मधून येत असतांना _FIRSTNUMBER_ व _SECONDNUMBER_ च्या दरम्यानचा
 _FIRSTDATEVERSION_ मधील फरक ताडत आहे:';
 $messages['binary_enough'] = 'अनेकविध पुनर्प्रयत्न केलेत, पानाच्या इतिहासात बरीच सरमिसळ झाली आहे,कृपया काही मांडण्या बदलवुन प्रयत्न करा.';
+$messages['here'] = 'येथे';
 $messages['help_translating'] = ' translatewiki.net वर भाषांतरासाठी सहाय्य करा';
 $messages['start_here'] = 'येथून पुढे शोधा';
 $messages['not_found_at_all'] = 'आपली शोध बाब अजिबात सापडली नाही. मांडणी तपासून पुन्हा प्रयत्न करा.';
