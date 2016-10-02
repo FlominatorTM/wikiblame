@@ -860,7 +860,7 @@ function needle_regex($needle)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit;
+	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $binary_search_restarted, $needle_ever_found, $limit;
 	//echo "binary_search(".$middle.",".$from.")";
 	
 	if($middle<1)
@@ -873,16 +873,32 @@ function binary_search($middle, $from)
 	if($middle==$from)
 	{
 		log_search("no_differences");
+		
+		//looking for insertion => maybe it was always there 
+		//=> checking first revision => highest array index
+		$first_index = count($versions)-1;
+		$rev_text = get_revision(idfromurl($versions[$first_index]));
+		$found_in_first_revision = stristr($rev_text, $needle);
+		
 		if($binary_search_inverse == "true")
 		{
-			echo ('<br>'.$messages['no_differences']);
+			if($found_in_first_revision || $binary_search_restarted) 
+			{
+				//already missing then, link to earlier search
+				echo ('<br>'.$messages['no_differences']);
+			}
+			else
+			{
+				$binary_search_restarted = true;
+				//probably went into wrong direction initially
+				//restarting from beginning with other direction as before
+				echo $messages['inverse_restart'].'<br>';
+				binary_search(floor(count($versions)/4), floor(count($versions)/2));
+			}
 		}
 		else
 		{
-			//looking for insertion => maybe it was always there => checking first revision => highest array index
-			$first_index = count($versions)-1;
-			$rev_text = get_revision(idfromurl($versions[$first_index]));
-			if(stristr($rev_text, $needle))
+			if($found_in_first_revision)
 			{
 				$revLink = str_replace("/w/", "http://".$server."/w/", $versions[$first_index])."</a>";
 				$msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
