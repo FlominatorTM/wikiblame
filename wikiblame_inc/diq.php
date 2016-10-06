@@ -16,6 +16,7 @@
  * @author Gırd
  * @author Kumkumuk
  * @author Mirzali
+ * @author Velg
  */
 
 $text_dir = 'ltr';
@@ -60,6 +61,7 @@ $messages['wrong_skips'] = 'Xırab eyar krrdış:Eğer ne __VERSIONSTOSKIP__ ver
 $messages['search_in_progress_text'] = 'Qandi _ARTICLELINK_ verin versiyoni cı  <b>_NEEDLE_</b> düz metin vineyino';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ erin versiyonde cı <b>_NEEDLE_</b> için viki metin o vineyino';
 $messages['no_differences'] = 'Çımraviyarnayışanê cıgeyrayeyan de qet ferqi nêvêniyay.';
+$messages['inverse_restart'] = 'Çebyaye yana wedaryaye nêvineya, terim vinayış ser çebya yo?';
 $messages['first_version'] = 'Vurnayış gani çımraviyarnayışo sıfteyın ya zi peyên de bıbo?';
 $messages['first_version_present'] = '__NEEDLE__ miyan de be tarixê __REVISIONLINK__ çımraviyarnayışo verên xora est bi.';
 $messages['earlier_versions_available'] = 'Revizyonê verêni şenê bıbê.';

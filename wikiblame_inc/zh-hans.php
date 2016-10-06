@@ -62,6 +62,7 @@ $messages['wrong_skips'] = '错误的设置：如果跳过__VERSIONSTOSKIP__个�
 $messages['search_in_progress_text'] = '_ARTICLELINK_的版本记录正在以<b>_NEEDLE_</b>作为纯文本进行搜索';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_的版本记录正在以<b>_NEEDLE_</b>作为wiki文本进行搜索';
 $messages['no_differences'] = '搜索修订中没有发现差异。';
+$messages['inverse_restart'] = '找不到插入或移除的内容，搜索关键词是否已在之后插入？';
 $messages['first_version'] = '更改是在第一个或最新的版本中发生的吧？';
 $messages['first_version_present'] = '__NEEDLE__已存在于最旧修订版本，搜索可追溯到__REVISIONLINK__。';
 $messages['earlier_versions_available'] = '可能存在更旧的修订版本。';

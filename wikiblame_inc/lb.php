@@ -55,6 +55,7 @@ $messages['wrong_skips'] = 'Falsch Astellung: Wann déi éischt __VERSIONSTOSKIP
 $messages['search_in_progress_text'] = 'An alle Versioune vun _ARTICLELINK_ gëtt nom Text <b>_NEEDLE_</b> gesicht';
 $messages['search_in_progress_wikitags'] = 'An alle Versioune vun _ARTICLELINK_ gëtt nom Wiki-Text <b>_NEEDLE_</b> gesicht';
 $messages['no_differences'] = 'Keen Ënnerscheed an den duerchsichte Versioune fonnt.';
+$messages['inverse_restart'] = 'Näischt fonnt wat dragesat oder erausgeholl gouf, gouf de Sichbegrëff méi spéit dragesat?';
 $messages['first_version'] = 'D\'Ännerung muss an der éischter oder leschter Versioun geschitt sinn?';
 $messages['first_version_present'] = '__NEEDLE__ war schonn an der eelster gesichter Versioun vum __REVISIONLINK__ dran.';
 $messages['earlier_versions_available'] = 'Et gëtt wahrscheinlech méi al Versiounen.';

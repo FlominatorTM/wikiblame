@@ -57,6 +57,7 @@ $messages['wrong_skips'] = 'Няслушныя ўстаноўкі: Калі пе
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> шукаецца ў гісторыя вэрсіяў _ARTICLELINK_ як звычайны тэкст';
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> шукаецца ў гісторыі вэрсіяў _ARTICLELINK_ як вікі-тэкст';
 $messages['no_differences'] = 'У шукаемых вэрсіях зьменаў ня знойдзена.';
+$messages['inverse_restart'] = 'Устаўкі ці выдаленьня ня знойдзена, ці не было пошукавае слова ўстаўленае пазьней?';
 $messages['first_version'] = 'Зьмена павінна адбыцца ў першай ці апошняй вэрсіі?';
 $messages['first_version_present'] = '__NEEDLE__ ужо прысутнічаў у старой вэрсіі пошуку з __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Імаверна, існуюць больш старыя вэрсіі.';

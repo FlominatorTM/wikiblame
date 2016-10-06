@@ -21,6 +21,7 @@
  * @author Macofe
  * @author Melos <nnico AT jumpy.it>
  * @author Rippitippi
+ * @author Selven
  */
 
 $messages['January'] = 'Gennaio';
@@ -68,6 +69,7 @@ da ricercare sarà processata.';
 $messages['search_in_progress_text'] = 'La cronologia di _ARTICLELINK_ viene ora analizzata alla ricerca di <b>_NEEDLE_</b> come testo semplice';
 $messages['search_in_progress_wikitags'] = 'La cronologia di _ARTICLELINK_ viene ora analizzata alla ricerca di <b>_NEEDLE_</b> come testo wiki';
 $messages['no_differences'] = 'Nessuna differenza nelle revisioni trovate.';
+$messages['inverse_restart'] = 'Nessun inserimento o rimozione trovati, il termine di ricerca è stato inserito in un secondo momento?';
 $messages['first_version'] = 'La modifica è avvenuta nella prima o nell\'ultima revisione?';
 $messages['first_version_present'] = '__NEEDLE__ era già presente nella versione più vecchia cercata del __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probabilmente ci sono versioni più vecchie.';

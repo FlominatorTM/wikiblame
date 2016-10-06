@@ -13,6 +13,7 @@
  * @author Coyau
  * @author Cquoi
  * @author Crochet.david
+ * @author Gomoko
  * @author IAlex
  * @author Jean-Frédéric
  * @author McDutchie
@@ -66,6 +67,7 @@ $messages['wrong_skips'] = 'Paramètres incorrects : Si les premières __VERSION
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b>, comme texte brut, est recherché dans l’historique des versions de _ARTICLELINK_';
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b>, comme code wiki, est recherché dans l’historique des versions de _ARTICLELINK_';
 $messages['no_differences'] = 'Aucune différence dans les versions recherchées.';
+$messages['inverse_restart'] = 'Aucune insertion ou suppression trouvée, le terme recherché a-t-il été inséré plus tard ?';
 $messages['first_version'] = 'Les changements doivent s\'être produits dans la première ou dernière version ?';
 $messages['first_version_present'] = '__NEEDLE__ était déjà présent dans la plus ancienne version trouvée datant du __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Il existe probablement des versions plus anciennes.';

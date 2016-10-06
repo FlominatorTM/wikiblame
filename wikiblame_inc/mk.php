@@ -60,6 +60,7 @@ $messages['wrong_skips'] = 'Погрешни прилагодувања: Ако 
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> се пребарува по историјата на верзиите на _ARTICLELINK_ како прост текст';
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> се пребарува по историјата на верзиите на _ARTICLELINK_ како викитекст';
 $messages['no_differences'] = 'Нема пронајдено разлики во пребараните преработки.';
+$messages['inverse_restart'] = 'Не најдов ниедно вметнување или отстранување. Да не сте го внеле поимот подоцна?';
 $messages['first_version'] = 'Веројатно промените се случиле првата или последната преработка?';
 $messages['first_version_present'] = '__NEEDLE__ беше уште во најстарата пребарана преработка која е од __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Веројатно постојат најстари верзии.';

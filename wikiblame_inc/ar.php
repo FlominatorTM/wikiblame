@@ -19,6 +19,7 @@
  * @author Mutarjem horr
  * @author OsamaK
  * @author ترجمان05
+ * @author ديفيد
  * @author محمد أحمد عبد الفتاح
  */
 
@@ -77,6 +78,7 @@ $messages['once_more'] = 'مرة أخرى، مع الشعور :';
 $messages['binary_enough'] = 'قمت بتنفيذ أكبر عدد من المحاولات، إن التاريخ المادة قد أفسد تماما، رجاء حاول تغيير بعض الإعدادات.';
 $messages['insertion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION';
 $messages['deletion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION';
+$messages['here'] = 'هنا';
 $messages['help_translating'] = 'ساعد في الترجمة عبر translatewiki.net';
 $messages['start_here'] = 'ابحث من هنا';
 $messages['too_much_versions'] = 'لقد وصلت إلى حد الاستعلام المخصص بعدد __VERSIONLIMIT__ إصدار. يرجى المحاولة مرة أخرى في غضون __WAITMINUTES__دقائق أو التبديل للبحث الثنائي. نأسف للإزعاج.';

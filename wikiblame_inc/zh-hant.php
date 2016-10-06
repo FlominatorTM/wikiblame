@@ -63,6 +63,7 @@ $messages['wrong_skips'] = '設定錯誤：如果跳過首 __VERSIONSTOSKIP__ �
 $messages['search_in_progress_text'] = '_ARTICLELINK_ 的版本記錄正在以純文字 <b>_NEEDLE_</b> 進行搜尋';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ 的版本記錄正在以wiki文字 <b>_NEEDLE_</b> 進行搜尋';
 $messages['no_differences'] = '在尋找到的版本中並未發現任何差異。';
+$messages['inverse_restart'] = '查無插入或移除內容，搜尋項目是否是在之後插入？';
 $messages['first_version'] = '必須在第一個或最新修訂版本中出現更改嗎？';
 $messages['first_version_present'] = '__NEEDLE__ 已經存在於追溯到 __REVISIONLINK__ 後最早的條訂版本。';
 $messages['earlier_versions_available'] = '可能有較舊的修訂版本。';
