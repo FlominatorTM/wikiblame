@@ -70,6 +70,7 @@ $messages['once_more'] = 'Nog een keer, nu met gevoel:';
 $messages['binary_enough'] = 'Er is een aantal keer geprobeerd uw opdracht uit te voeren, maar vanwege de rommelige paginageschiedenis is het niet gelukt een resultaat te verkrijgen. Probeer het opnieuw met andere instellingen.';
 $messages['insertion_found'] = 'Invoeging gevonden tussen LEFT_VERSION en RIGHT_VERSION';
 $messages['deletion_found'] = 'Verwijdering gevonden tussen LEFT_VERSION en RIGHT_VERSION';
+$messages['here'] = 'hier';
 $messages['help_translating'] = 'Helpen met vertalen in translatewiki.net';
 $messages['start_here'] = 'Vanaf hier zoeken';
 $messages['too_much_versions'] = 'U hebt de zoeklimiet van __VERSIONLIMIT__ versies bereikt. Probeer het opnieuw over __WAITMINUTES__ minuten of gebruik de binaire zoekmethode. Excuses voor het ongemak.';

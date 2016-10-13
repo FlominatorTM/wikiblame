@@ -60,6 +60,7 @@ $messages['wrong_skips'] = 'Feil innstillinger: Dersom de første __VERSIONTOSKI
 $messages['search_in_progress_text'] = 'Versjonshistorikken til _ARTICLELINK_ blir søkt gjennom etter <b>_NEEDLE_</b> som ren tekst';
 $messages['search_in_progress_wikitags'] = 'Versjonshistorikken til _ARTICLELINK_ blir søkt gjennom etter <b>_NEEDLE_</b> som wikitekst';
 $messages['no_differences'] = 'Ingen forskjell funnet i søkte revisjoner.';
+$messages['inverse_restart'] = 'Ingen innsetting eller fjerning funnet, ble søkebegrepet innsatt senere?';
 $messages['first_version'] = 'Endring må ha skjedd i første eller siste revisjon?';
 $messages['first_version_present'] = '__NEEDLE__ var allerede til stede i den eldste revisjonen funnet fra __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Det finnes sannsynligvis eldre revisjoner.';
