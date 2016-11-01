@@ -17,6 +17,7 @@
  * @author Otokoume
  * @author Shirayuki
  * @author Whym
+ * @author にょきにょき
  */
 
 $messages['January'] = '1月';
@@ -74,6 +75,7 @@ $messages['once_more'] = 'もう一度、心を込めて:';
 $messages['binary_enough'] = '何度か再試行しましたが、記事の履歴が非常に込み入っているため、設定を変えて試行してください。';
 $messages['insertion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で挿入されました';
 $messages['deletion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で削除されました';
+$messages['here'] = '差分の確認';
 $messages['help_translating'] = 'translatewiki.net での翻訳作業を手伝う';
 $messages['start_here'] = 'ここから検索';
 $messages['too_much_versions'] = '検索の上限である__VERSIONLIMIT__版に達しました。__WAITMINUTES__分待ってから再試行するか、二分探索に切り替えてください。ご迷惑をおかけしてしまい申し訳ありません。';

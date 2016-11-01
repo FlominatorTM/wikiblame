@@ -57,6 +57,7 @@ $messages['wrong_skips'] = 'Definicións erróneas: se se saltan as primeiras ve
 $messages['search_in_progress_text'] = 'Estase buscando "<b>_NEEDLE_</b>" como texto completo no historial de versións de "_ARTICLELINK_"';
 $messages['search_in_progress_wikitags'] = 'Estase buscando "<b>_NEEDLE_</b>" como texto wiki no historial de versións de "_ARTICLELINK_"';
 $messages['no_differences'] = 'Non se atoparon diferenzas nas revisións nas que se buscou.';
+$messages['inverse_restart'] = 'Non se atopou ningunha inserción nin eliminación, insertouse o termo de busca máis tarde?';
 $messages['first_version'] = 'O cambio debeu ocorrer na primeira ou última revisión?';
 $messages['first_version_present'] = '"__NEEDLE__" xa estaba presente na última revisión buscada, con data do __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probablemente haxa algunha revisión anterior.';
