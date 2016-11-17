@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Artificial123
  * @author Mechanizatar
  * @author SamGold
  */
@@ -50,13 +51,19 @@ $messages['start'] = 'Запусціць';
 $messages['reset'] = 'Скінуць';
 $messages['manual'] = 'Інструкцыя';
 $messages['contact'] = 'Кантактная інфармацыя';
+$messages['get_less_versions'] = 'Ваш пошук можа запытаць __NUMREVISIONS__ змен за адзін раз. Для таго, каб абараніць сервер, дазваляецца толькі __ALLOWEDREVISIONS__ запытаў за кожны раз. Калі ласка, змяніце налады або пераключыце метад пошуку ў двайковы!';
+$messages['wrong_skips'] = 'Няправільныя налады: калі першыя __VERSIONSTOSKIP__ версіі прапускаюцца, то ніводная з __VERSIONSTOSEARCH__ версіяй для пошуку не будзе апрацавана.';
+$messages['search_in_progress_text'] = 'Версія гісторыі _ARTICLELINK_ шукаецца <b>_NEEDLE_</b> як звычайны тэкст';
+$messages['search_in_progress_wikitags'] = 'Версія гісторыі _ARTICLELINK_ шукаецца <b>_NEEDLE_</b> як Вікі-тэкст';
 $messages['no_differences'] = 'У шукаемых версіях адрозненняў ня знойдзена.';
 $messages['inverse_restart'] = 'Устаўкі ці выдалення не знойдзена. Ці не было пошукавае слова ўстаўлена пазней?';
 $messages['first_version'] = 'Змена павінна адбыцца ў першай ці апошняй версіі?';
+$messages['first_version_present'] = '__NEEDLE__ ужо прысутнічае ў старой рэдакцыі з __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Магчыма, існуюць больш старыя версіі.';
 $messages['execution_time'] = 'Час выканання: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ версіяў знойдзена';
 $messages['please_wait'] = 'Калі ласка, пачакайце…';
+$messages['binary_test'] = 'Параўноўваем адрозненні ў _FIRSTDATEVERSION_ паміж _FIRSTNUMBER_ і _SECONDNUMBER_ пакуль прыходзіць з _SOURCENUMBER_:';
 $messages['dead_end'] = 'Перашкаджае тупік (верагодна, выкліканы адкатамі ці вайной правак)';
 $messages['once_more'] = 'Яшчэ раз, з пачуццём:';
 $messages['binary_enough'] = 'Выканана дастаткова спробаў, гісторыя артыкула зусім заблыталася. Калі ласка, паспрабуйце змяніць некаторыя параметры.';
@@ -65,4 +72,5 @@ $messages['deletion_found'] = 'Ёсць выдаленне паміж LEFT_VERSI
 $messages['here'] = 'тут';
 $messages['help_translating'] = 'Дапамагчы з перакладам на translatewiki.net';
 $messages['start_here'] = 'Пошук адсюль';
+$messages['too_much_versions'] = 'У вас дасягнуты ліміт запытаў __VERSIONLIMIT__ версіі. Калі ласка, паспрабуйце зноў праз __WAITMINUTES__ хвілін або пераключыцеся на бінарны пошук. Прабачце за нязручнасці.';
 $messages['not_found_at_all'] = 'Па вашым пошукавым запыце нічога не знойдзена. Праверце правільнасць наладаў і паспрабуйце яшчэ раз.';
