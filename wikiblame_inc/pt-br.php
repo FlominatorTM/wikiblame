@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author !Silent
  * @author Amgauna
  * @author ArgonSim
  * @author Capmo
@@ -66,6 +67,7 @@ $messages['wrong_skips'] = 'Configurações erradas: Se as primeiras __VERSIONST
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> está a ser procurado como texto não formatado no histórico de edições de _ARTICLELINK_';
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> está a ser procurado como código wiki no histórico de edições de _ARTICLELINK_';
 $messages['no_differences'] = 'Não foram encontradas diferenças nas versões pesquisadas.';
+$messages['inverse_restart'] = 'Nenhuma inserção ou remoção encontrada, o termo de pesquisa foi inserido depois?';
 $messages['first_version'] = 'A mudança deve ter acontecido na primeira ou última versão?';
 $messages['first_version_present'] = '__NEEDLE__ já estava presente na versão mais antiga buscada, datada de __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Provavelmente existem revisões mais antigas.';
