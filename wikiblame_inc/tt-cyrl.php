@@ -55,6 +55,7 @@ $messages['wrong_skips'] = 'Хаталы көйләүләр. Әгәрдә бер
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b>  -  _ARTICLELINK_  юрамаларының тарихы арасында гади текст кебек эзләнә';
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> - _ARTICLELINK_  юрамаларының тарихы арасында вики текст буларак эзләнә';
 $messages['no_differences'] = 'Табылган юрамалар арасында аермалар юк.';
+$messages['inverse_restart'] = 'Өстәүләр яисә куюлар табылмады. Бәлкем, алар соңрак куелгандыр?';
 $messages['first_version'] = 'Аермалар беренче яисә соңгы юрамаларда булырга тиеш идеме?';
 $messages['first_version_present'] = '__NEEDLE__ элеккеге юрамаларда да бар иде охшашларны эзләде __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Бәлки искерәк юрамалар да бардыр.';
