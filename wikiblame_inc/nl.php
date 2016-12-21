@@ -58,6 +58,7 @@ $messages['wrong_skips'] = 'Onjuiste instellingen: Als de eerste __VERSIONSTOSKI
 $messages['search_in_progress_text'] = 'De versiegeschiedenis van _ARTICLELINK_ wordt doorzocht op <b>_NEEDLE_</b> als tekst zonder opmaak';
 $messages['search_in_progress_wikitags'] = 'De versiegeschiedenis van _ARTICLELINK_ wordt doorzocht op <b>_NEEDLE_</b> als wikitekst';
 $messages['no_differences'] = 'Er zijn geen verschillen aangetroffen in de doorzochte versies.';
+$messages['inverse_restart'] = 'Er is geen toevoeging of verwijdering gevonden. Is de zoekterm later toegevoegd?';
 $messages['first_version'] = 'De wijziging moet aangebracht zijn in de eerste of laatste versie?';
 $messages['first_version_present'] = '__NEEDLE__ al aanwezig was in de oudste versie die dateert van __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Er zijn waarschijnlijk oudere versies.';

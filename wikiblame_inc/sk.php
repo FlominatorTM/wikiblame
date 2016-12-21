@@ -13,6 +13,7 @@
  * @author Flominator
  * @author Helix84
  * @author Jaroslav.micek
+ * @author Kusavica
  * @author Rudko
  * @author Teslaton
  * @author Wizzard
@@ -61,7 +62,7 @@ $messages['search_in_progress_text'] = 'História verzií _ARTICLELINK_ sa preh�
 $messages['search_in_progress_wikitags'] = 'História verzií _ARTICLELINK_ sa prehľadáva na <b>_NEEDLE_</b> ako wiki text';
 $messages['no_differences'] = 'Žiadne rozdiely v prehľadávaných revíziách.';
 $messages['first_version'] = 'Ku zmene muselo dôjsť v prvej alebo poslednej revízii?';
-$messages['first_version_present'] = '__NEEDLE__ bolo nájdené už v prvej revízii, datované od __REVISIONLINK__.';
+$messages['first_version_present'] = '__NEEDLE__ bolo nájdené už v staršej revízii, datované od __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Asi existujú staršie verzie.';
 $messages['execution_time'] = 'Čas behu: _EXECUTIONTIME_ sekúnd';
 $messages['versions_found'] = 'Nájdených _NUMBEROFVERSIONS_ verzií';

@@ -17,6 +17,7 @@
  * @author LNDDYL
  * @author Lauhenry
  * @author Liuxinyu970226
+ * @author Maskers
  * @author Reke
  * @author Wrightbus
  */
@@ -35,7 +36,7 @@ $messages['November'] = '十一月';
 $messages['December'] = '十二月';
 $messages['ui_lang'] = '顯示語言';
 $messages['lang'] = '語言';
-$messages['project'] = '計畫';
+$messages['project'] = '項目';
 $messages['article'] = '頁面';
 $messages['needle'] = '尋找';
 $messages['skipversions'] = '永遠跳過的版本數量';

@@ -56,6 +56,7 @@ $messages['wrong_skips'] = 'गलत सेटिङ: यदि पैल्ल
 $messages['search_in_progress_text'] = '_ARTICLELINK_को संस्करण इतिहास सादा पाठआ रूपमी <b>_NEEDLE_</b> खिलाइ खोजिन्नाछ़।';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_को संस्करण इतिहास विकिटेक्स्टआ रूपमी <b>_NEEDLE_</b> खिलाइ खोजिन्नाछ़।';
 $messages['no_differences'] = 'खोजी अरीयाऽ संशोधनअनमी कोइ फरक नाइपायियो।';
+$messages['inverse_restart'] = 'मेट्या या थप्या केइ नाइ पाइयो, खोज्ज्यार्या आँखर पछा थपियाऽ थ्यो कि?';
 $messages['first_version'] = 'परिवर्तन पैल्लो या छाड्डीबारआ संशोधनमी भयाऽ हुनुपणन्छ?';
 $messages['first_version_present'] = '__REVISIONLINK__ बठेइका खोजी अरीयाऽ सब है पुरानु संशोधनमी __NEEDLE__ पैली बठेइ मौजुद थ्यो।';
 $messages['earlier_versions_available'] = 'सम्भबत: याँ पुरना संशोधनअन छन।';

@@ -54,6 +54,7 @@ $messages['wrong_skips'] = 'Error de configuración: Si se salten les primeres _
 $messages['search_in_progress_text'] = 'Ta buscandose  <b>_NEEDLE_</b> como testu ensin formatu nel historial de versiones de _ARTICLELINK_';
 $messages['search_in_progress_wikitags'] = 'Ta buscandose  <b>_NEEDLE_</b> como testu wiki nel historial de versiones de _ARTICLELINK_';
 $messages['no_differences'] = 'Nun s\'atoparon diferencies nes revisiones nes que se buscó.';
+$messages['inverse_restart'] = 'Nun s\'atopó nengún insertamientu o estraición. ¿Insertóse\'l términu de busca dempués?';
 $messages['first_version'] = '¿El cambiu tendría de ser na primera o na cabera revisión?';
 $messages['first_version_present'] = '__NEEDLE__ yá taba presente na revisión más antigua buscada, con data __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probablemente esistan revisiones anteriores.';

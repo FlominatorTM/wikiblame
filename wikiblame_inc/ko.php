@@ -62,6 +62,7 @@ $messages['wrong_skips'] = '설정이 잘못됨: 처음 __VERSIONTOSKIP__개 판
 $messages['search_in_progress_text'] = '_ARTICLELINK_의 문서 역사를 일반 텍스트로 "<b>_NEEDLE_</b>"에 대해 검색하는 중입니다';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_의 문서 역사를 위키 텍스트로 "<b>_NEEDLE_</b>"에 대해 검색하는 중입니다';
 $messages['no_differences'] = '검색된 판에서 찾은 차이가 없습니다.';
+$messages['inverse_restart'] = '추가되거나 제거된 내용을 발견하지 못했습니다. 검색 항목을 나중에 추가하셨나요?';
 $messages['first_version'] = '바뀜이 첫 판이나 최신 판에서 일어나야 합니까?';
 $messages['first_version_present'] = '__NEEDLE__은 이미 __REVISIONLINK__에서 기간동안 검색된 오래된 판에 존재합니다.';
 $messages['earlier_versions_available'] = '아마도 더 이전의 판이 있을 것입니다.';
