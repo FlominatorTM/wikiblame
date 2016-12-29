@@ -12,6 +12,7 @@
  *
  * @author Als-Chlämens
  * @author Als-Holder
+ * @author Terfili
  */
 
 $messages['January'] = 'Jänner';
@@ -67,6 +68,7 @@ $messages['once_more'] = 'No emool probiere:';
 $messages['binary_enough'] = 'Die Suech isch jenschti Mool wiiderholt worde. Wyl d Versionsgschicht zimli liedrig isch, sötte d Suechyystellige verändret werde.';
 $messages['insertion_found'] = 'Yyfiegig gfunde zwische LEFT_VERSION un RIGHT_VERSION';
 $messages['deletion_found'] = 'Leschig gfunde zwische LEFT_VERSION un RIGHT_VERSION';
+$messages['here'] = 'do';
 $messages['help_translating'] = 'Bim Ibersetze hälfe uf translatewiki.net';
 $messages['start_here'] = 'Vu do ab sueche';
 $messages['too_much_versions'] = 'Du bisch bi de Abfroogebegränzig vo __VERSIONLIMIT__ Versione aacho. E nöii Suech isch in __WAITMINUTES__ Minute mögli. Alternativ isch d Suechmethod „binär“ mögli. Exgüsi für d Unannehmlichkeite.';
