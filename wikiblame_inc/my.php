@@ -11,6 +11,7 @@
  * @file
  *
  * @author Erikoo
+ * @author Ninjastrikers
  */
 
 $messages['January'] = 'ဇန်​န​ဝါ​ရီ​';
@@ -20,14 +21,14 @@ $messages['April'] = 'ဧ​ပြီ​';
 $messages['May'] = 'မေ​';
 $messages['June'] = 'ဇွန်​';
 $messages['July'] = 'ဇူ​လိုင်​';
-$messages['August'] = 'ဩ​ဂုတ်​';
+$messages['August'] = 'ဩဂုတ်';
 $messages['September'] = 'စက်​တင်​ဘာ​';
 $messages['October'] = 'အောက်​တို​ဘာ​';
 $messages['November'] = 'နို​ဝင်​ဘာ​';
 $messages['December'] = 'ဒီ​ဇင်​ဘာ​';
-$messages['ui_lang'] = 'ဘာသာအားဖော်ပြပါ';
-$messages['lang'] = 'ဘာသာ';
-$messages['project'] = 'Project';
+$messages['ui_lang'] = 'ဖော်ပြဘာသာစကား';
+$messages['lang'] = 'ဘာသာစကား';
+$messages['project'] = 'ပရောဂျက်';
 $messages['article'] = 'စာ​မျက်​နှာ​';
 $messages['needle'] = 'ဤအကြောင်းအရာအတွက် ရှာဖွေရန်';
 $messages['skipversions'] = 'အမြဲတမ်း x versions အားကျော်ရန်';
