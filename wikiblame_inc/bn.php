@@ -14,6 +14,7 @@
  * @author Aftabuzzaman
  * @author Bellayet
  * @author Ehsanulhb
+ * @author Elias Ahmmad
  * @author RIPENDIL
  * @author Sayma Jahan
  * @author Wikisagnik
@@ -39,8 +40,8 @@ $messages['project'] = 'প্রকল্প';
 $messages['project_example'] = 'উইকিপিডিয়া, উইকিসংকলন, উইকিমিডিয়া, …';
 $messages['article'] = 'পাতা';
 $messages['needle'] = 'অনুসন্ধান করো';
-$messages['skipversions'] = 'সর্বদা x টি সংস্করণ এড়িয়ে যান';
-$messages['ignorefirst'] = 'প্রথম x টি সংস্করণ উপেক্ষা করুন';
+$messages['skipversions'] = 'সর্বদা x সংস্করণ এড়িয়ে যান';
+$messages['ignorefirst'] = 'প্রথম x সংস্করণ উপেক্ষা করুন';
 $messages['limit'] = 'সংস্করণ যা পরীক্ষা করতে হবে';
 $messages['start_date'] = 'শুরুর তারিখ';
 $messages['date_format'] = 'মম দদ, বববব';
