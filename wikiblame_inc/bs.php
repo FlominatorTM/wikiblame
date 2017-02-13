@@ -13,6 +13,7 @@
  * @author CERminator
  * @author Edinwiki
  * @author Palapa
+ * @author Srdjan m
  */
 
 $messages['January'] = 'januar';
@@ -51,14 +52,15 @@ $messages['start'] = 'Početak';
 $messages['reset'] = 'Poništi';
 $messages['manual'] = 'Uputstvo';
 $messages['contact'] = 'Kontakt';
-$messages['get_less_versions'] = 'Vaša pretraga može da ima __NUMREVISIONS__ revizija po upitu odjednom. Da biste zaštitili server, možete da imate samo __ALLOWEDREVISIONS__ po pozivu upita. Molimo promijenite postavke ili pređite na binarnu metodu pretrage!';
+$messages['get_less_versions'] = 'Vaša pretraga može imati __NUMREVISIONS__ izmjena po upitu odjednom. Da biste zaštitili server, možete imati samo __ALLOWEDREVISIONS__ po pozivu upita. Promijenite postavke ili pređite na binarnu metodu pretrage!';
 $messages['wrong_skips'] = 'Pogrešne postavke: ako je prvih __VERSIONSTOSKIP__ verzija preskočeno, onda nijedna od __VERSIONSTOSEARCH__ verzija koje se traže neće biti obrađena.';
 $messages['search_in_progress_text'] = 'Historija verzije _ARTICLELINK_ je pretražena za <b>_NEEDLE_</b> kao obični tekst';
 $messages['search_in_progress_wikitags'] = 'Historija verzije  _ARTICLELINK_ je pretražena za <b>_NEEDLE_</b> kao wiki tekst';
-$messages['no_differences'] = 'Nisu pronađene razlike u traženim revizijama.';
-$messages['first_version'] = 'Izmjena se desila u prvoj i posljednjoj reviziji?';
-$messages['first_version_present'] = '__NEEDLE__ je već bio prisutan u prvoj pronađenoj reviziji koja datira od __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Vjerovatno ima ranijih revizija.';
+$messages['no_differences'] = 'Nisu pronađene razlike u traženim izmjenama.';
+$messages['inverse_restart'] = 'Nije pronađeno dodavanje niti uklanjanje. Je li termin za pretragu dodan kasnije?';
+$messages['first_version'] = 'Promjena se desila u prvoj ili posljednjoj izmjeni?';
+$messages['first_version_present'] = '__NEEDLE__ je već bio prisutan u najstarijoj pronađenoj izmjeni koja datira od __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Vjerovatno ima starijih izmjena.';
 $messages['execution_time'] = 'Vrijeme izvršavanja: _EXECUTIONTIME_ sekundi';
 $messages['versions_found'] = 'Pronađeno _NUMBEROFVERSIONS_ verzija';
 $messages['please_wait'] = 'Molimo pričekajte ...';
@@ -68,6 +70,7 @@ $messages['once_more'] = 'Ponovljena pretraga:';
 $messages['binary_enough'] = 'Izvršene su brojne pretrage, historija članka je zbrkana, molimo pokušajte promijeniti neke postavke.';
 $messages['insertion_found'] = 'Pronađeno ubacivanje između LEFT_VERSION i RIGHT_VERSION';
 $messages['deletion_found'] = 'Pronađeno brisanje između LEFT_VERSION i RIGHT_VERSION';
+$messages['here'] = 'ovdje';
 $messages['help_translating'] = 'Pomozite prevođenje na translatewiki.net';
 $messages['start_here'] = 'Traži odavde';
 $messages['too_much_versions'] = 'Dostigli ste vaše ograničenje upita od __VERSIONLIMIT__ verzija. Molimo pokušajte ponovo za __WAITMINUTES__ minuta ili pređite na binarnu pretragu. Žao nam je zbog ove neprijatnosti.';
