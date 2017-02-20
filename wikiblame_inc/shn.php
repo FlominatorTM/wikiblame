@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Saimawnkham
  * @author Saosukham
  */
 
@@ -55,8 +56,8 @@ $messages['search_in_progress_text'] = 'ပိုၼ်းလွင်ႈလု�
 $messages['search_in_progress_wikitags'] = 'ပိုၼ်းလွင်ႈလုၼ်ႈ _ARTICLELINK_ လႆႈၶၢမ်ႇသွၵ်ႈႁႃ ပုၼ်ႈတႃႇ <b>_NEEDLE_</b> ၼင်ႇ တူဝ်လိၵ်ႈဝီႇၶီႇ';
 $messages['no_differences'] = 'ၼႂ်းဢၼ်ၶိုၼ်းမႄးသွၵ်ႈႁႃၼႆႉ ဢမ်ႇႁၼ်ဢၼ်ပႅၵ်ႇပိူင်ႈ';
 $messages['first_version'] = 'လွင်ႈလႅၵ်ႈလၢႆႈ တၵ်းလႆႈပဵၼ် လုၼ်ႈဢွၼ်တၢင်းသုတ်း ဢမ်ႇၼၼ် လုၼ်ႈၵမ်းလိုၼ်းသုတ်းႁိုဝ်?';
-$messages['first_version_present'] = '__NEEDLE__ ၼႆႉ လႆႈႁၼ်ဝႆႉယူႇ တီႈၼႂ်း ၶေႃႈမုၼ်း လုၼ်ႈဢွၼ်တၢင်းသုတ်း __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'တႅတ်ႈၼႅတ်ႈယူႇ ၸိူဝ်းၼႆႉပဵၼ် လုၼ်ႈမိူဝ်ႈၸဝ်ႉ';
+$messages['first_version_present'] = '__NEEDLE__ ၼႆႉ လႆႈႁၼ်ဝႆႉယူႇ တီႈၼႂ်း ၶေႃႈမုၼ်း လွင်ႈၶူၼ်ႉၶႆႈဢွၼ်တၢင်းသုတ်း ဝၼ်းထီႉဢၼ်ၶူၼ်ႉႁႃဝႆႉ ၵႃႈတီႈ__REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'ၸိူဝ်းၼႆႉပဵၼ် လွင်ႈၶူၼ်ႉၶႆႈမိူဝ်ႈၸဝ်ႉၼႆ တႅတ်ႈၼႅတ်ႈယူႇ';
 $messages['execution_time'] = 'ၶၢဝ်းယၢမ်းပိူင်တၢႆ: _EXECUTIONTIME_ သႅၵ်ႉၵႅၼ်ႉ';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ လုၼ်ႈ ၸိူဝ်းႁၼ်';
 $messages['please_wait'] = 'ၶႅၼ်းတေႃႈ ပႂ်ႉၵွၼ်ႇ ...';
@@ -66,6 +67,7 @@ $messages['once_more'] = 'ထႅင်ႈပွၵ်ႈၼိုင်ႈ, ၵ�
 $messages['binary_enough'] = 'ဢၼ်ႁဵတ်းယဝ်ႉ တဵမ်ထူၼ်ႈလႄႈ ၸိူင်းမူႇလိၵ်ႈၼၼ်ႉ သင်ဝႃႈ ဝူၺ်ႇႁင်ႈၸိုင် ၶႅၼ်းတေႃႈ မႄးလႅၵ်ႈလၢႆႈၵမ်ႈၽွင်ႈ';
 $messages['insertion_found'] = 'ဢၼ်ထႅမ်သႂ်ႇႁၼ် ၼႂ်းၵႄႈ LEFT_VERSION လႄႈ RIGHT_VERSION';
 $messages['deletion_found'] = 'ဢၼ်မွတ်ႇပႅတ်ႈႁၼ် ၼႂ်းၵႄႈ LEFT_VERSION လႄႈ RIGHT_VERSION';
+$messages['here'] = 'တီႈၼႆႈ';
 $messages['help_translating'] = 'လွင်ႈၸွႆႈပိၼ်ႇၽႃႇသႃႇၼၼ်ႉ မီးတီႈ translatewiki.net';
 $messages['start_here'] = 'သွၵ်ႈႁႃ တီႈၼႆႈ';
 $messages['too_much_versions'] = 'ၸဝ်ႈၵဝ်ႇ ႁွတ်ႈထိုင် တမ်ႈတီႈ ငႅင်ႈတိူၵ်ႈသၼ် လုၼ်ႈ __VERSIONLIMIT__ ယဝ်ႉ. ၶႅၼ်းတေႃႈ ၶတ်းၸႂ်တူၺ်းထႅင်ႈ တီႈ __WAITMINUTES__ မိၼိတ်ႉ ဢမ်ႇၼၼ် ပိုတ်ႇႁႃဢၼ်ၵူပ်ႉတ။ ဢႃးၼႃႇလူၺ်ႈ ဢမ်ႇသၢင်ႇထုၵ်ႇၼၼ်ႉယူႇ';

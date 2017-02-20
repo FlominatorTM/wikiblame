@@ -55,8 +55,7 @@ $messages['search_method'] = 'طريقة البحث';
 $messages['binary'] = 'ثنائي';
 $messages['binary_in_wp'] = 'http://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%A7%D9%84%D8%A8%D8%AD%D8%AB_%D8%A7%D9%84%D8%AB%D9%86%D8%A7%D8%A6%D9%8A';
 $messages['linear'] = 'خطيّة';
-$messages['interpolated'] = 'ثنائي (أسرع بنسخ أكثر)
-الثنائي (أسرع مع المزيد من الإصدارات)';
+$messages['interpolated'] = 'ثنائي (أسرع بنسخ أكثر)';
 $messages['ignore_minors'] = 'تجاهل التغييرات الثانوية (تجريبية)';
 $messages['force_wikitags'] = 'إجبار البحث على نص ويكي';
 $messages['start'] = 'ابدأ';
@@ -70,8 +69,7 @@ $messages['search_in_progress_text'] = 'تاريخ هذه النسخة  _ARTICLE
 $messages['search_in_progress_wikitags'] = 'تاريخ النسخة هذه  _ARTICLELINK_ يجري البحث عنها <b>_NEEDLE_</b> كنص ويكي';
 $messages['no_differences'] = 'لا توجد اختلافات في البحث في التنقيحات.';
 $messages['inverse_restart'] = 'لا وجود لإدراج أو إزالة قد يتم إدخال مصطلح البحث في وقت لاحق ؟';
-$messages['first_version'] = 'يجب أن يكون قد حدث تغيير في التنقيح الأول أو الأخير؟
-التغيير يجب أن يحدث في أول أو آخر التنقيح ؟';
+$messages['first_version'] = 'يجب أن يكون قد حدث تغيير في التنقيح الأول أو الأخير؟';
 $messages['first_version_present'] = '__NEEDLE__ موجود بالفعل في أقدم مراجعة بحثت عنها منذ __REVISIONLINK__ .';
 $messages['earlier_versions_available'] = 'يحتمل أن توجد مراجعات أقدم.';
 $messages['execution_time'] = 'وقت التنفيذ: _EXECUTIONTIME_ ثواني';
@@ -81,9 +79,7 @@ $messages['binary_test'] = 'مقارنة الاختلافات في _FIRSTDATEVER
 $messages['dead_end'] = 'وصلت إلى طريق مسدود (سببه على الأرجح رجوع أو حروب تحريرية)';
 $messages['once_more'] = 'مرة أخرى، بالمشاعر :';
 $messages['binary_enough'] = 'قمت بتنفيذ أكبر عدد من المحاولات، إن التاريخ المادة قد أفسد تماما، رجاء حاول تغيير بعض الإعدادات.';
-$messages['insertion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION
-
-وجد الإدراج بين LEFT_VERSION وRIGHT_VERSION';
+$messages['insertion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION';
 $messages['deletion_found'] = 'وجد الحذف بين LEFT_VERSION و RIGHT_VERSION';
 $messages['here'] = 'هنا';
 $messages['help_translating'] = 'ساعد في الترجمة عبر ترانسليت ويكي دوت نت';
