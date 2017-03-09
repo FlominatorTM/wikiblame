@@ -14,6 +14,7 @@
  * @author Helix84
  * @author Jaroslav.micek
  * @author Kusavica
+ * @author Lexected
  * @author Rudko
  * @author Teslaton
  * @author Wizzard
@@ -61,6 +62,7 @@ $messages['wrong_skips'] = 'Chybné nastavenia: Ak bude prvých __VERSIONSTOSKIP
 $messages['search_in_progress_text'] = 'História verzií _ARTICLELINK_ sa prehľadáva na <b>_NEEDLE_</b> ako obyčajný text';
 $messages['search_in_progress_wikitags'] = 'História verzií _ARTICLELINK_ sa prehľadáva na <b>_NEEDLE_</b> ako wiki text';
 $messages['no_differences'] = 'Žiadne rozdiely v prehľadávaných revíziách.';
+$messages['inverse_restart'] = 'Žiadne vloženie alebo vymazanie nebolo nájdené - bol teda vyhľadávaný výraz pridaný neskôr?';
 $messages['first_version'] = 'Ku zmene muselo dôjsť v prvej alebo poslednej revízii?';
 $messages['first_version_present'] = '__NEEDLE__ bolo nájdené už v staršej revízii, datované od __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Asi existujú staršie verzie.';
@@ -73,6 +75,7 @@ $messages['once_more'] = 'Ešte raz, s pocitom:';
 $messages['binary_enough'] = 'Vykonaný dostatok opakovaní, história článku je celkom chaotická, skúste zmeniť niektoré nastavenia.';
 $messages['insertion_found'] = 'Bolo zistené vloženie medzi verziou LEFT_VERSION a RIGHT_VERSION.';
 $messages['deletion_found'] = 'Bolo zistené vymazanie medzi verziou LEFT_VERSION a RIGHT_VERSION.';
+$messages['here'] = 'tu';
 $messages['help_translating'] = 'Pomôžte s prekladom na translatewiki.net';
 $messages['start_here'] = 'Hľadať odtiaľto';
 $messages['too_much_versions'] = 'Dosiahli ste svoj limit dopytu __VERSIONLIMIT__ verzií. Skúste to prosím znova o __WAITMINUTES__ minút alebo prepnite na binárne vyhľadávanie. Ospravedlňujeme sa za nepríjemnosti.';
