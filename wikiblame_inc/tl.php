@@ -11,6 +11,7 @@
  * @file
  *
  * @author AnakngAraw
+ * @author KahitAnongPangalan
  */
 
 $messages['January'] = 'Enero';
@@ -56,7 +57,7 @@ $messages['search_in_progress_wikitags'] = 'Ang kasaysayan ng bersyon ng _ARTICL
 $messages['no_differences'] = 'Walang mga pagkakaibang natagpuan sa pinaghanapang mga rebisyon.';
 $messages['first_version'] = 'Maaaring naganap ang pagbabago sa loob ng una o huling rebisyon?';
 $messages['first_version_present'] = 'Naroroon na ang __NEEDLE__ sa loob ng unang rebisyong natagpuan na nagpepetsa magmula sa __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Marahil mayroong mas maagang mga rebisyon.';
+$messages['earlier_versions_available'] = 'Marahil mayroong mas lumang mga rebisyon.';
 $messages['execution_time'] = 'Panahon ng pagtupad: _EXECUTIONTIME_ mga segundo';
 $messages['versions_found'] = 'natagpuang mga bersyon ng _NUMBEROFVERSIONS_';
 $messages['please_wait'] = 'Pakihintay ...';
@@ -66,6 +67,7 @@ $messages['once_more'] = 'Isang ulit pa, may damdamin:';
 $messages['binary_enough'] = 'Nakapagsagawa ng sapat na mga pagpapasok, lubos na magulo ang kasaysayan ng artikulo, pakisubukan ang pagbago ng ilang mga katakdaan.';
 $messages['insertion_found'] = 'Nakatagpo ng pagpapaloob sa pagitan ng LEFT_VERSION at ng RIGHT_VERSION';
 $messages['deletion_found'] = 'Nakatagpo ng pagbura sa pagitan ng LEFT_VERSION at ng RIGHT_VERSION';
+$messages['here'] = 'dito';
 $messages['help_translating'] = 'Tumulong magsalinwika sa translatewiki.net';
 $messages['start_here'] = 'Maghanap mula rito';
 $messages['too_much_versions'] = 'Naabot mo na ang hangganan mo ng pagtatanong na __VERSIONLIMIT__ mga bersyon. Pakisubukan uli sa loob ng __WAITMINUTES__ mga minuto o pumunta sa paghahanap na tambalan.  Paumanhin sa abala.';
