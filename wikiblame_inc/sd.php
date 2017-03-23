@@ -11,6 +11,7 @@
  * @file
  *
  * @author Aursani
+ * @author Indus Asia
  * @author Mehtab ahmed
  */
 
@@ -47,5 +48,6 @@ $messages['manual'] = 'ترتيب نامو';
 $messages['contact'] = 'لهہ وچڙ ۾ اچو';
 $messages['please_wait'] = 'مهرباني ڪري انتظار فرمايو ...';
 $messages['once_more'] = 'هڪ دفعو ٻيهر، احساس سان:';
+$messages['here'] = 'هتي';
 $messages['help_translating'] = 'translatewiki.net تي ترجمو ڪرڻ ۾ مدد ڪريو';
 $messages['start_here'] = 'هتان ڳولا ڪريو';
