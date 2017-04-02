@@ -1,4 +1,5 @@
-<?php header('Content-Type: text/html; charset=utf-8'); ?>
+<?php header('Content-Type: text/html; charset=utf-8');  
+while (@ob_end_flush());/* no output buffering (via http://stackoverflow.com/a/15319311/4609258)*/ ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
