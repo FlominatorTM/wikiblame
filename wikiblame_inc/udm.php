@@ -11,8 +11,10 @@
  * @file
  *
  * @author AlnashPiyash2
+ * @author Shklyaev
  */
 
+$messages['January'] = 'Толшор';
 $messages['February'] = 'тулыспалэ';
 $messages['March'] = 'южтолэзе';
 $messages['April'] = 'оштолэзе';
@@ -29,3 +31,4 @@ $messages['project'] = 'Проект';
 $messages['article'] = 'Бам';
 $messages['start_date'] = 'Кутсконлэн датаез';
 $messages['newest_first'] = 'нырысь выльзэ';
+$messages['here'] = 'татын';

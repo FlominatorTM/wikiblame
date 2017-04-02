@@ -11,6 +11,7 @@
  * @file
  *
  * @author AZISS
+ * @author Archaeodontosaurus
  * @author Cekli829
  * @author Sortilegus
  */
@@ -68,6 +69,7 @@ $messages['once_more'] = 'Bir daha, ancaq hislə:';
 $messages['binary_enough'] = 'Kifayət qədər cəhdlər yerinə yetirilmişdir, məqalənin tarixcəsi tamamilə dolaşıb, zəhmət olmasa, hər hansı parametrləri dəyişdirməklə yenidən cəhd edin.';
 $messages['insertion_found'] = 'LEFT_VERSION və RIGHT_VERSION arasında əlavə edilmə aşkar edilmişdir';
 $messages['deletion_found'] = 'LEFT_VERSION və RIGHT_VERSION arasında silinmə aşkar edilmişdir';
+$messages['here'] = 'burada';
 $messages['help_translating'] = 'Translatewiki.net-də tərcüməyə kömək etmək';
 $messages['start_here'] = 'Axtarış üçün burdan başlayın';
 $messages['too_much_versions'] = 'Versiyaların sayına görə sizə ayrılmış __VERSIONLIMIT__ sorğu limitini keçmisiniz. Zəhmət olmasa, __WAITMINUTES__ dəqiqədən sonra yenidən yoxlayın və ya ikili sistem üzrə axtarış rejiminə keçin. Narahatçılığa görə bağışlayın.';
