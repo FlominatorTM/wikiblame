@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author AmaryllisGardener
  * @author Avicennasis
  * @author John Reid
  */
@@ -55,9 +56,10 @@ $messages['wrong_skips'] = 'Wrang settins: gif the foremaist __VERSIONSTOSKIP__ 
 $messages['search_in_progress_text'] = 'The version histerie o _ARTICLELINK_ is bein raked fer <b>_NEEDLE_</b> aes plain tex';
 $messages['search_in_progress_wikitags'] = 'The version histerie o _ARTICLELINK_ is bein raked fer <b>_NEEDLE_</b> aes wiki tex';
 $messages['no_differences'] = 'Naw differences foond in raked reveesions.';
+$messages['inverse_restart'] = 'Na insertion or remuival foond, wis the sairch term insertit later?';
 $messages['first_version'] = 'Chynge maun hae happen\'t in foremaist or latest reveesion?';
-$messages['first_version_present'] = '__NEEDLE__ wis awreadie present in the foremaist reveesion foond datin fae __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Thaur\'s proablie earlier luikowers.';
+$messages['first_version_present'] = '__NEEDLE__ wis already present in the auldest reveesion sairched datin frae __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Thare are probably aulder reveesions.';
 $messages['execution_time'] = 'Execution time: _EXECUTIONTIME_ seconds';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions foond';
 $messages['please_wait'] = 'Please wait …';
@@ -67,6 +69,7 @@ $messages['once_more'] = 'Yince mair, wi feelin:';
 $messages['binary_enough'] = 'Performed enoogh retries, airticle histerie is fair messed up, please gie chyngin some settins ae gae.';
 $messages['insertion_found'] = 'Insertion foond atween LEFT_VERSION n RIGHT_VERSION';
 $messages['deletion_found'] = 'Delytion foond atween LEFT_VERSION n RIGHT_VERSION';
+$messages['here'] = 'here';
 $messages['help_translating'] = 'Hulp translating at translatewiki.net';
 $messages['start_here'] = 'Rake frum here';
 $messages['too_much_versions'] = 'Ye\'v reached yer speirin limit o __VERSIONLIMIT__ versions. Please try again in __WAITMINUTES__ minutes or switch til binarie rake. Sorrie fer the onconvenience.';

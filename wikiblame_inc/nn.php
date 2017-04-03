@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Asmen
  * @author Gunnernett
  * @author Harald Khan
  * @author Njardarlogar
@@ -18,7 +19,7 @@
 $messages['January'] = 'Januar';
 $messages['February'] = 'Februar';
 $messages['March'] = 'Mars';
-$messages['April'] = 'April';
+$messages['April'] = 'Nisane';
 $messages['May'] = 'Mai';
 $messages['June'] = 'Juni';
 $messages['July'] = 'Juli';
