@@ -13,6 +13,7 @@
  * @author Ferrer
  * @author Flominator
  * @author Ignatus
+ * @author Jack who built the house
  * @author Lemondoge
  * @author Lockal
  * @author MaxBioHazard
@@ -52,8 +53,8 @@ $messages['binary'] = 'двоичный';
 $messages['binary_in_wp'] = 'http://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA';
 $messages['linear'] = 'линейный';
 $messages['interpolated'] = 'двоичный (быстрее, если много версий)';
-$messages['ignore_minors'] = 'не учитывать малые изменения (экспериментально)';
-$messages['force_wikitags'] = 'произвести поиск викитекста';
+$messages['ignore_minors'] = 'Не учитывать малые изменения (экспериментально)';
+$messages['force_wikitags'] = 'Произвести поиск викитекста';
 $messages['start'] = 'Запустить';
 $messages['reset'] = 'Сбросить';
 $messages['manual'] = 'Руководство';
