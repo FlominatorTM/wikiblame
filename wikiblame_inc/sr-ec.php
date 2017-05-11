@@ -13,6 +13,7 @@
  * @author Charmed94
  * @author FriedrickMILBarbarossa
  * @author Milicevic01
+ * @author Obsuser
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -64,9 +65,10 @@ $messages['wrong_skips'] = 'Погрешне поставке: ако је пр�
 $messages['search_in_progress_text'] = 'Историја издања чланка _ARTICLELINK_ се тражи за <b>_NEEDLE_</b> као обичан текст';
 $messages['search_in_progress_wikitags'] = 'Историја издања чланка _ARTICLELINK_ се тражи за <b>_NEEDLE_</b> као викитекст';
 $messages['no_differences'] = 'Нису пронађене разлике у прегледаним изменама.';
+$messages['inverse_restart'] = 'Није пронађено убацивање или уклањање; је ли термин претраге убачен касније?';
 $messages['first_version'] = 'Промена се десила у првој или последњој измени?';
-$messages['first_version_present'] = '__NEEDLE__ већ постоји у првој измени из __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Вероватно постоје и ранија издања.';
+$messages['first_version_present'] = '__NEEDLE__ већ постоји у најстаријој претраживаној измени, од датума __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Вероватно постоје и старија издања.';
 $messages['execution_time'] = 'Време извршавања: _EXECUTIONTIME_ сек.';
 $messages['versions_found'] = 'Пронађено издања: _NUMBEROFVERSIONS_.';
 $messages['please_wait'] = 'Сачекајте…';
