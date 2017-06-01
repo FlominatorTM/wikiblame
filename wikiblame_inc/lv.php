@@ -51,4 +51,5 @@ $messages['contact'] = 'Kontakti';
 $messages['execution_time'] = 'Izpildes laiks: _EXECUTIONTIME_ sekundes';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versijas atrastas';
 $messages['please_wait'] = 'Lūdzu, uzgaidiet...';
+$messages['here'] = 'šeit';
 $messages['help_translating'] = 'Palīdzi tulkot iekš translatewiki.net';
