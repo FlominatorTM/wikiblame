@@ -16,6 +16,7 @@
  * @author Paucabot
  * @author SMP
  * @author Solde
+ * @author Ssola
  * @author Vriullop
  */
 
@@ -60,8 +61,9 @@ $messages['wrong_skips'] = 'Configuració errònia: si les primeres __VERSIONSTO
 $messages['search_in_progress_text'] = 'S\'està cercant <b>_NEEDLE_</b> com a text pla en l\'historial de versions de: _ARTICLELINK_';
 $messages['search_in_progress_wikitags'] = 'S\'està cercant <b>_NEEDLE_</b> com a text wiki en l\'historial de versions de: _ARTICLELINK_';
 $messages['no_differences'] = 'No s\'ha trobat cap diferència en les revisions cercades.';
+$messages['inverse_restart'] = 'No s\'ha trobat cap inserció ni esborrat. Que el terme cercat s\'ha inserit més tard?';
 $messages['first_version'] = 'El canvi ha d\'haver passat a la primera o l\'última revisió?';
-$messages['first_version_present'] = '__NEEDLE__ ja era en la primera revisió trobada amb data __REVISIONLINK__.';
+$messages['first_version_present'] = '__NEEDLE__ ja era present en la primera revisió trobada amb data __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probablement hi ha revisions anteriors.';
 $messages['execution_time'] = 'Temps d\'execució: segons _EXECUTIONTIME_';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions trobades';
@@ -72,6 +74,7 @@ $messages['once_more'] = 'Una vegada més, amb la sensació:';
 $messages['binary_enough'] = 'Torna a intentar prou representades, història de l\'article és molt desordenat, si us plau, proveu de canviar algunes escenes.';
 $messages['insertion_found'] = 'Inserció trobat entre LEFT_VERSION i RIGHT_VERSION';
 $messages['deletion_found'] = 'Supressió s\'ha trobat entre LEFT_VERSION i RIGHT_VERSION';
+$messages['here'] = 'aquí';
 $messages['help_translating'] = 'Ajuda de la traducció en translatewiki.net';
 $messages['start_here'] = 'Cerca des d\'aquí';
 $messages['too_much_versions'] = 'Heu assolit el límit de consulta de les versions d\'__VERSIONLIMIT__. Si us plau provi una altra vegada en minuts __WAITMINUTES__ o es canvia a Cerca binari. Disculpeu les molèsties.';
