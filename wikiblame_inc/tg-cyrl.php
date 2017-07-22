@@ -13,4 +13,8 @@
  * @author ToJack
  */
 
+$messages['April'] = 'Апрел';
 $messages['May'] = 'майи';
+$messages['lang'] = 'Забон';
+$messages['needle'] = 'Ҷустан барои';
+$messages['contact'] = 'Тамос';
