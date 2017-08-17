@@ -11,6 +11,7 @@
  * @file
  *
  * @author Erisos
+ * @author Joedalton
  * @author Peter Alberti
  */
 
@@ -55,9 +56,10 @@ $messages['wrong_skips'] = 'Forkerte indstillinger: Hvis de første __VERSIONSTO
 $messages['search_in_progress_text'] = 'Versionshistorikken af _ARTICLELINK_ bliver gennemsøgt for <b>_NEEDLE_</b> som uformateret tekst';
 $messages['search_in_progress_wikitags'] = 'Versionshistorikken af _ARTICLELINK_ bliver gennemsøgt for <b>_NEEDLE_</b> som wikitekst';
 $messages['no_differences'] = 'Ingen forskelle fundet i de gennemsøgte revisioner.';
+$messages['inverse_restart'] = 'Ingen indsættelse eller fjernelse blev fundet, blev søgetermen indsat senere?';
 $messages['first_version'] = 'Ændringen må være sket i første eller sidste revision?';
-$messages['first_version_present'] = '__NEEDLE__ var allerede tilstede i den første, fundne revision fra __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Der findes sandsynligvis tidligere versioner.';
+$messages['first_version_present'] = '__NEEDLE__ var allerede til stede i den ældste fundne revision fra __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Der findes sandsynligvis ældre versioner.';
 $messages['execution_time'] = 'Kørselstid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versioner fundet';
 $messages['please_wait'] = 'Vent venligst…';
@@ -67,6 +69,7 @@ $messages['once_more'] = 'En gang til, med følelse:';
 $messages['binary_enough'] = 'Har prøvet tilstrækkelig mange gange, artikelhistorikken er ganske rodet, prøv venligst igen med andre indstillinger.';
 $messages['insertion_found'] = 'Indsættelse fundet mellem LEFT_VERSION og RIGHT_VERSION';
 $messages['deletion_found'] = 'Sletning fundet mellem LEFT_VERSION og RIGHT_VERSION';
+$messages['here'] = 'her';
 $messages['help_translating'] = 'Hjælp til med at oversætte på translatewiki.net';
 $messages['start_here'] = 'Søg herfra';
 $messages['too_much_versions'] = 'Du har nået din forespørgselsbegrænsning på __VERSIONLIMIT__ versioner. Prøv venligst igen om __WAITMINUTES__ minutter eller skift til binær søgning. Beklager ulejligheden.';
