@@ -13,6 +13,7 @@
  * @author Belkacem77
  * @author Mezgoug
  * @author Mmistmurt
+ * @author Sayem AtVkm
  */
 
 $messages['January'] = 'Yennayer';
@@ -41,11 +42,13 @@ $messages['newest_first'] = 'melmi kan d amezwaru';
 $messages['oldest_first'] = 'aqbuṛ d amezwaru';
 $messages['search_method'] = 'Tarrayt n unadi';
 $messages['binary'] = 'imsin';
+$messages['linear'] = 'Imzireg';
 $messages['start'] = 'Bdu';
 $messages['reset'] = 'Ales awennez';
 $messages['manual'] = 'Awfus';
 $messages['contact'] = 'Anermes';
 $messages['earlier_versions_available'] = 'Ahat llan ileqman iwburen.';
+$messages['execution_time'] = 'Akud n uselkem:_EXECUTIONTIME_n tesinin';
 $messages['please_wait'] = 'Rǧu...';
 $messages['insertion_found'] = 'Taguri gar LEFT_VERSION akked RIGHT_VERSION';
 $messages['deletion_found'] = 'Tukksa gar LEFT_VERSION akked RIGHT_VERSION';
