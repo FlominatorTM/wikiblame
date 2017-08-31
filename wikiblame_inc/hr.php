@@ -15,6 +15,7 @@
  * @author Ivi104
  * @author SpeedyGonsales
  * @author Teoo3
+ * @author Wumbolo
  */
 
 $messages['January'] = 'siječnja';
@@ -29,7 +30,7 @@ $messages['September'] = 'rujna';
 $messages['October'] = 'listopada';
 $messages['November'] = 'studenoga';
 $messages['December'] = 'prosinca';
-$messages['ui_lang'] = 'Prikaži jezik';
+$messages['ui_lang'] = 'Jezik';
 $messages['lang'] = 'Jezik';
 $messages['project'] = 'Projekt';
 $messages['article'] = 'Stranica';
@@ -65,7 +66,7 @@ $messages['execution_time'] = 'Vrijeme izvršavanja: _EXECUTIONTIME_ sekundi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ inačica pronađeno';
 $messages['please_wait'] = 'Molimo pričekajte ...';
 $messages['binary_test'] = 'Uspoređujući razlike u _FIRSTDATEVERSION_ između _FIRSTNUMBER_ i _SECONDNUMBER_, koje dolaze iz _SOURCENUMBER_:';
-$messages['dead_end'] = 'Pretraga je došla do mrtve točke (možda jesu uzrok uklonjene izmjene ili uređivački rat)';
+$messages['dead_end'] = 'Pretraga je došla do mrtve točke (možda su uzrok uklonjene izmjene ili uređivački rat)';
 $messages['once_more'] = 'Još jednom, s osjećajem:';
 $messages['binary_enough'] = 'Izvršeno je dovoljno pokušaja, povijest članka je zbrkan, molimo pokušajte promijeniti neke postavke.';
 $messages['insertion_found'] = 'Umetak je pronađen između LEFT_VERSION i RIGHT_VERSION';
