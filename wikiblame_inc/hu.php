@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Bináris
  * @author Dj
  * @author Glanthor Reviol
  * @author Tacsipacsi
@@ -76,4 +77,4 @@ $messages['here'] = 'itt';
 $messages['help_translating'] = 'Segíts a fordításban a translatewiki.net oldalon';
 $messages['start_here'] = 'Keresés innen';
 $messages['too_much_versions'] = 'Elérted a __VERSIONLIMIT__ típusú lekérdezések maximális számát. Próbáld újra __WAITMINUTES__ perc múlva, vagy kapcsolj át bináris keresésre. Elnézést a kényelmetlenségért.';
-$messages['not_found_at_all'] = 'A kereső kifejezést egyáltalán nem található. Ellenőrizd a beállításokat, és próbáld meg újra!';
+$messages['not_found_at_all'] = 'A keresett kifejezés egyáltalán nem található. Ellenőrizd a beállításokat, és próbáld meg újra!';
