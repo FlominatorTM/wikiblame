@@ -53,3 +53,5 @@ $messages['once_more'] = '느낌대로 한 번 더:';
 $messages['here'] = '여기';
 $messages['help_translating'] = 'translatewiki.net에서 번역 돕기';
 $messages['start_here'] = '여기서부터 검색';
+$messages['too_much_versions'] = '__VERSIONLIMIT__ 판본의 질문 한도에 도달했습니다. __WAITMINUTES__분 후에 다시 시도하거나 이진 검색으로 전환하시기 바랍니다. 불편을 끼쳐드려 죄송합니다.';
+$messages['not_found_at_all'] = '검색어를 전혀 찾을수 없습니다. 설정을 확인하고 다시 시도하세요.';

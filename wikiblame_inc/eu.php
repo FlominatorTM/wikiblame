@@ -12,6 +12,7 @@
  *
  * @author An13sa
  * @author Kobazulo
+ * @author Mikel Ibaiba
  * @author Sator
  * @author Xabier Armendaritz
  */
@@ -52,13 +53,17 @@ $messages['reset'] = 'Hasieratu';
 $messages['manual'] = 'Gidaliburua';
 $messages['contact'] = 'Kontaktatu';
 $messages['no_differences'] = 'Ez da ezberdintasunik aurkitu bilatutako bertsioen artean.';
+$messages['inverse_restart'] = 'Ez da txertatzea edo kentzea aurkitu, bilaketa-terminoa geroago sartu da?';
+$messages['first_version'] = 'Aldaketa lehen edo azken berrikuspenean gertatu behar al zen?';
 $messages['earlier_versions_available'] = 'Ziurrenik bertsio zaharragoak egongo dira.';
 $messages['execution_time'] = 'Exekuzio-denbora: _EXECUTIONTIME_ segundo';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ bertsio aurkitu dira';
 $messages['please_wait'] = 'Mesedez itxaron ...';
 $messages['once_more'] = 'Berriro ere, bihotz-bihotzez:';
+$messages['binary_enough'] = 'Saiaketa nahikoa burutu da, artikuluaren historia oso nahasia dago, saiatu ezarpen batzuk aldatzen mesedez.';
 $messages['insertion_found'] = 'Insertzioa topatu da LEFT_VERSION eta RIGHT_VERSION artean';
 $messages['deletion_found'] = 'Ezabaketa topatu da LEFT_VERSION eta RIGHT_VERSION artean';
 $messages['here'] = 'hemen';
 $messages['help_translating'] = 'translatewiki.net-en itzultzen lagundu';
 $messages['start_here'] = 'Bilatu hemendik';
+$messages['not_found_at_all'] = 'Bilaketa-terminoa ez da aurkitu. Egiaztatu ezarpenak eta saiatu berriro.';
