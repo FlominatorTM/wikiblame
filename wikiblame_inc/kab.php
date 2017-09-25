@@ -50,6 +50,7 @@ $messages['contact'] = 'Anermes';
 $messages['earlier_versions_available'] = 'Ahat llan ileqman iwburen.';
 $messages['execution_time'] = 'Akud n uselkem:_EXECUTIONTIME_n tesinin';
 $messages['please_wait'] = 'Rǧu...';
+$messages['binary_enough'] = 'Dayen atas i turmeḍ. Amazray n umagrad yenṭar. Ttxil-ek(m) arem ad tebeddleḍ kra n yiɣewwaren.';
 $messages['insertion_found'] = 'Taguri gar LEFT_VERSION akked RIGHT_VERSION';
 $messages['deletion_found'] = 'Tukksa gar LEFT_VERSION akked RIGHT_VERSION';
 $messages['here'] = 'dagi';
