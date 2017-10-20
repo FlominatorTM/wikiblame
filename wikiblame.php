@@ -862,7 +862,7 @@ function needle_regex($needle)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $binary_search_restarted, $needle_ever_found, $limit;
+	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit;
 	//echo "binary_search(".$middle.",".$from.")";
 	
 	if($middle<1)
