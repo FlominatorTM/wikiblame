@@ -877,13 +877,13 @@ function binary_search($middle, $from)
 		
 		//looking for insertion => maybe it was always there 
 		//=> checking first revision => highest array index
-		$first_index = count($versions)-1;
-		$rev_text = get_revision(idfromurl($versions[$first_index]));
-		$found_in_first_revision = stristr($rev_text, $needle);
+		$earliest_index = count($versions)-1;
+		$rev_text = get_revision(idfromurl($versions[$earliest_index]));
+		$found_in_earliest_revision = stristr($rev_text, $needle);
 		
 		if($binary_search_inverse == "true")
 		{
-			if($found_in_first_revision || $binary_search_restarted) 
+			if($found_in_earliest_revision || $binary_search_restarted) 
 			{
 				//already missing then, link to earlier search
 				echo ('<br>'.$messages['no_differences']);
@@ -899,16 +899,16 @@ function binary_search($middle, $from)
 		}
 		else
 		{
-			if($found_in_first_revision)
+			if($found_in_earliest_revision)
 			{
-				$revLink = str_replace("/w/", "http://".$server."/w/", $versions[$first_index])."</a>";
+				$revLink = str_replace("/w/", "http://".$server."/w/", $versions[$earliest_index])."</a>";
 				$msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
 				echo (str_replace('__REVISIONLINK__', $revLink, $msg));
 				if(count($versions)==$limit)
 				{
 					//there might be revisions before 
 					echo '<br>'.$messages['earlier_versions_available'].' ';
-					$rev_text = get_revision(idfromurl($versions[$first_index]));
+					$rev_text = get_revision(idfromurl($versions[$earliest_index]));
 					start_over_here($rev_text);
 				}
 				
