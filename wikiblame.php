@@ -581,6 +581,7 @@ function correct_language_mistakes($lang)
 }
 
 //takes the requested history page, extracts links to the revisions and puts them into an array that is returned
+//in default (meaning $asc!=true) index 0 contains the latest revision
 function listversions ($history)
 {
 	global $articleenc, $asc, $messages, $ignore_minors;
@@ -875,30 +876,19 @@ function binary_search($middle, $from)
 	{
 		log_search("no_differences");
 		
-		//looking for insertion => maybe it was always there 
-		//=> checking first revision => highest array index
-		$earliest_index = count($versions)-1;
-		$rev_text = get_revision(idfromurl($versions[$earliest_index]));
-		$found_in_earliest_revision = stristr($rev_text, $needle);
-		
 		if($binary_search_inverse == "true")
 		{
-			if($found_in_earliest_revision || $binary_search_restarted) 
-			{
-				//already missing then, link to earlier search
-				echo ('<br>'.$messages['no_differences']);
-			}
-			else
-			{
-				$binary_search_restarted = true;
-				//probably went into wrong direction initially
-				//restarting from beginning with other direction as before
-				echo $messages['inverse_restart'].'<br>';
-				binary_search(floor(count($versions)/4), floor(count($versions)/2));
-			}
+            //start at a later revision (maybe it was not even inserted at this point of $from)     
+            echo $messages['inverse_restart'].'<br>';
+            binary_search(floor($from/4), floor($from/2));
 		}
-		else
-		{
+		else //looking for insertion => maybe it was always there 
+		{	
+            //checking first/earliest revision => highest array index
+            $earliest_index = count($versions)-1;
+            $rev_text = get_revision(idfromurl($versions[$earliest_index]));
+            $found_in_earliest_revision = stristr($rev_text, $needle); 
+
 			if($found_in_earliest_revision)
 			{
 				$revLink = str_replace("/w/", "http://".$server."/w/", $versions[$earliest_index])."</a>";
