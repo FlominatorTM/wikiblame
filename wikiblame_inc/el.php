@@ -16,6 +16,7 @@
  * @author Evropi
  * @author Geraki
  * @author Glavkos
+ * @author Nikosgranturismogt
  * @author Omnipaedista
  * @author Protnet
  */
@@ -61,6 +62,7 @@ $messages['wrong_skips'] = 'Λάθος ρυθμίσεις: εάν παρακάμ
 $messages['search_in_progress_text'] = 'Στο ιστορικό εκδόσεων του _ARTICLELINK_ γίνεται αναζήτηση για <b>_NEEDLE_</b> ως απλό κείμενο';
 $messages['search_in_progress_wikitags'] = 'Στο ιστορικό εκδόσεων του _ARTICLELINK_ γίνεται αναζήτηση για <b>_NEEDLE_</b> ως κείμενο wiki';
 $messages['no_differences'] = 'Δεν βρέθηκαν  διαφορές στην αναζητηθείσες αναθεωρήσεις.';
+$messages['inverse_restart'] = 'Δεν βρέθηκε εισαγωγή ή αφαίρεση, ήταν ο όρος αναζήτησης που εισήχθη αργότερα;';
 $messages['first_version'] = 'Η αλλαγή πρέπει να έχει συμβεί στην πρώτη ή στην τελευταία αναθεώρηση;';
 $messages['first_version_present'] = '__NEEDLE__ υπήρχε ήδη κατά την παλαιότερη αναθεώρηση που βρέθηκε και αναζητήθηκε από __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Υπάρχουν πιθανότατα παλαιότερες αναθεωρήσεις.';
@@ -73,6 +75,7 @@ $messages['once_more'] = 'Για άλλη μια φορά, με συναίσθη
 $messages['binary_enough'] = 'Εκτελέστηκαν πολλές επαναλήψεις, το ιστορικό του λήμματος είναι αρκετά μπερδεμένο, παρακαλούμε προσπαθήστε να αλλάξετε κάποιες ρυθμίσεις.';
 $messages['insertion_found'] = 'Βρέθηκε εισαγωγή  μεταξύ LEFT_VERSION και RIGHT_VERSION';
 $messages['deletion_found'] = 'Διαγραφή διαπιστώθηκε μεταξύ LEFT_VERSION και RIGHT_VERSION';
+$messages['here'] = 'εδώ';
 $messages['help_translating'] = 'Βοηθήστε στη μετάφραση στο translatewiki.net';
 $messages['start_here'] = 'Αναζήτηση από εδώ';
 $messages['too_much_versions'] = 'Έχετε φτάσει το όριο ερωτήματος των __VERSIONLIMIT__ εκδόσεων. Δοκιμάστε ξανά σε __WAITMINUTES__ λεπτά ή μεταβείτε σε δυαδικό αναζήτησης. Συγγνώμη για την ταλαιπωρία.';

@@ -18,6 +18,7 @@
  * @author Kumkumuk
  * @author McAang
  * @author Meelo
+ * @author Trockya
  * @author Velg
  * @author Vito Genovese
  */
@@ -46,7 +47,7 @@ $messages['limit'] = 'İncelenecek sürümler';
 $messages['start_date'] = 'Başlangıç tarihi';
 $messages['date_format'] = 'GG AA YYYY';
 $messages['order'] = 'Sıra';
-$messages['newest_first'] = 'Sondan birinci';
+$messages['newest_first'] = 'en yeni ilk';
 $messages['oldest_first'] = 'en eski ilk';
 $messages['binary_search_inverse'] = 'Metnin kaldırılması için ara (sadece ikili)';
 $messages['search_method'] = 'Arama tipi';
