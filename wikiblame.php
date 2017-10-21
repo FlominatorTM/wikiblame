@@ -951,8 +951,18 @@ function binary_search($middle, $from)
 			echo "<br>";
 			if($binary_search_inverse == "true")
 			{
-				//looking for removal => found in both => must have been removed later => check later versions => lower index in history array
+				//looking for removal => found in both => must have been removed later => remove the rest
+                $first_to_remove = $middle + 2; //$middle + 1 was checked and might be needed for output
+                $last_to_remove = count($versions);
+                echo str_replace('_NUMBEROFVERSIONS_', $last_to_remove-$first_to_remove, $messages['delete_from_here']).'<br><br>';
+                
+                for($i=$first_to_remove;$i<$last_to_remove;$i++)
+                {
+                    unset($versions[$i]);
+                }
+                echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
 				binary_search(floor($middle-$step_length), $middle);
+                
 			}
 			else
 			{
