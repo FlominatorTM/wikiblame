@@ -686,7 +686,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 				{
 					echo " <font color=\"red\">XXX</font>\n";
 				}
-				//start_over_here($version, $skipversions);
+				start_over_here($version, $skipversions);
 				$version_counter=$skipversions;
 			}
 			else
