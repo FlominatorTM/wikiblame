@@ -81,6 +81,7 @@ $messages['please_wait'] = 'Please wait …';
 $messages['binary_test'] = 'Comparing differences in _FIRSTDATEVERSION_ between _FIRSTNUMBER_ and _SECONDNUMBER_ while coming from _SOURCENUMBER_:';
 $messages['dead_end'] = 'Caught some dead end (probably caused by reverts or edit wars)';
 $messages['once_more'] = 'Once more, with feeling:';
+$messages['delete_from_here'] = 'Deleting _NUMBEROFVERSIONS_ earlier revisions, since removal was performed later';
 $messages['binary_enough'] = 'Performed enough retries, article history is quite messed up, please try changing some settings.';
 $messages['insertion_found'] = 'Insertion found between LEFT_VERSION and RIGHT_VERSION';
 $messages['deletion_found'] = 'Deletion found between LEFT_VERSION and RIGHT_VERSION';

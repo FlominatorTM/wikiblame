@@ -876,28 +876,41 @@ function binary_search($middle, $from)
 	{
 		log_search("no_differences");
 		
+        //checking first/earliest revision => highest array index
+        $earliest_index = count($versions)-1;
+        $rev_text = get_revision(idfromurl($versions[$earliest_index]));
+        $found_in_earliest_revision = stristr($rev_text, $needle); 
+        
+        if($found_in_earliest_revision)
+        {
+            $revLink = str_replace("/w/", "http://".$server."/w/", $versions[$earliest_index])."</a>";
+            $msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
+            echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
+        }
+            
 		if($binary_search_inverse == "true")
 		{
-            //start at a later revision (maybe it was not even inserted at this point of $from)     
-            echo $messages['inverse_restart'].'<br>';
-            binary_search(floor($from/4), floor($from/2));
-		}
+            if($found_in_earliest_revision)
+            {
+                //must have been removed between earliest and where we just checked
+                $middle = floor($from + ($earliest_index-$from)/2);
+                binary_search($middle, $from);
+            }
+            else
+            {
+                //start at a later revision (maybe it was not even inserted at this point of $from)     
+                echo $messages['inverse_restart'].'<br>';
+                binary_search(floor($from/4), floor($from/2));
+            }
+        }
 		else //looking for insertion => maybe it was always there 
 		{	
-            //checking first/earliest revision => highest array index
-            $earliest_index = count($versions)-1;
-            $rev_text = get_revision(idfromurl($versions[$earliest_index]));
-            $found_in_earliest_revision = stristr($rev_text, $needle); 
-
 			if($found_in_earliest_revision)
 			{
-				$revLink = str_replace("/w/", "http://".$server."/w/", $versions[$earliest_index])."</a>";
-				$msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
-				echo (str_replace('__REVISIONLINK__', $revLink, $msg));
 				if(count($versions)==$limit)
 				{
 					//there might be revisions before 
-					echo '<br>'.$messages['earlier_versions_available'].' ';
+					echo $messages['earlier_versions_available'].' ';
 					$rev_text = get_revision(idfromurl($versions[$earliest_index]));
 					start_over_here($rev_text);
 				}
