@@ -424,8 +424,6 @@ if($needle!="")
 		check_calls_from_this_ip($limit, $ignorefirst, $skipversions);
 	}
 	
-	$historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=$user_lang";
-	
 	//@TODO: create a method from this
 	if($tags_present==true)
 	{
@@ -439,11 +437,8 @@ if($needle!="")
 	$msg = str_replace('_NEEDLE_', htmlspecialchars($needle),$msg);
 	echo "$msg<br>\n";
 	
-	$history =  file_get_contents($historyurl);
-
-	//echo "<hr><pre>$history</pre><hr>";
-	$get_version_time = time()-$beginning;
-	$versions = listversions($history);
+	$versions = get_all_versions($articleenc, $offset);
+    $get_version_time = time()-$beginning;
 	log_search();
 	$needle_ever_found = false;
 	$binary_search_retries = 3;
@@ -475,6 +470,14 @@ if($needle!="")
 	echo '<br><br><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
 }
 
+function get_all_versions($articleenc, $offset)
+{
+    global $limit, $server, $user_lang;
+    $historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=$user_lang";	
+	$history =  file_get_contents($historyurl);
+	//echo "<hr><pre>$history</pre><hr>";
+	return listversions($history);
+}
 
 function language_selection($user_lang)
 {
