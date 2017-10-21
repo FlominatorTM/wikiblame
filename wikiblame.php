@@ -767,11 +767,7 @@ function get_month_number($month_text)
 {
     global $the_months;
     $num =  array_search($month_text, $the_months) + 1;
-    if($num < 10)
-    {
-        $num = '0'.$num;
-    }
-    return $num;
+    return str_pad($num, 2, '0', STR_PAD_LEFT);
 }
 
 // 0: time, 1: day, 2: month, 3: year
@@ -790,9 +786,9 @@ function extract_date_parts_from_history_link($versionpage)
 		//extract date from revision text
 		$strDate = substr($versionpage, $beginning+strlen($strBegin));
         $dateParts = explode(' ', trim($strDate));
-        if($dateParts[1] < 10) $dateParts[1] = '0'.$dateParts[1];
+        
+        $dateParts[1] = str_pad($dateParts[1], 2, '0', STR_PAD_LEFT);
         $dateParts[2] = get_month_number($dateParts[2]);
-        if($dateParts[1] < 10) $dateParts[2] = '0'.$dateParts[1];
         $ret = $dateParts;
     }
     return $ret;
