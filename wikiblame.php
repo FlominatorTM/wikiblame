@@ -686,7 +686,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 				{
 					echo " <font color=\"red\">XXX</font>\n";
 				}
-				start_over_here($rev_text, $skipversions);
+				//start_over_here($version, $skipversions);
 				$version_counter=$skipversions;
 			}
 			else
@@ -745,19 +745,17 @@ function get_revision($id)
 //currently only works when not searching for wiki text
 function start_over_here($versionpage, $skip=0)
 {
-	global $messages, $limit;
+	global $messages, $limit, $article;
 	// every revision (except the current on contains a text like this:
 	//as of 10:01, 7 November 2006 by username
 
-	$strBegin = "Revision as of ";
+	$strBegin = "title=\"$article\">";
 	$beginning = strpos($versionpage, $strBegin);
 
 	if($beginning>0) //this is not the current revision (which looks different)
 	{
-		$ending = strpos($versionpage, " by ", $beginning);
 		//extract date from revision text
-		$strDate = substr($versionpage, $beginning+strlen($strBegin), $ending-$beginning-strlen($strBegin));
-
+		$strDate = substr($versionpage, $beginning+strlen($strBegin));
 		$dateParts = explode(' ', trim($strDate));
 		
 		$hour = substr($dateParts[0], 0, 2);
@@ -921,8 +919,7 @@ function binary_search($middle, $from)
 				{
 					//there might be revisions before 
 					echo $messages['earlier_versions_available'].' ';
-					$rev_text = get_revision(idfromurl($versions[$earliest_index]));
-					start_over_here($rev_text);
+					start_over_here($versions[$earliest_index]);
 				}
 				
 				$needle_ever_found = true;
@@ -970,7 +967,7 @@ function binary_search($middle, $from)
 		{
 			$needle_ever_found = true;
 			echo "<font color=\"green\">OO</font>\n";
-			start_over_here($rev_text, 0, 0);
+			//start_over_here($versions[$middle], 0, 0);
 			echo "<br>";
 			if($binary_search_inverse == "true")
 			{
@@ -998,7 +995,7 @@ function binary_search($middle, $from)
 			if(!$in_this AND !$in_next)
 			{
 				echo "<font color=\"red\">XX</font>\n";
-				start_over_here($rev_text);
+				//start_over_here($versions[$middle]);
 				echo "<br>";
 				if($binary_search_inverse == "true")
 				{
@@ -1029,7 +1026,7 @@ function binary_search($middle, $from)
 					$needle_ever_found = true;
 					echo "<font color=\"green\">O</font>\n";
 					echo "<font color=\"red\">X</font><br>\n";
-					//start_over_here($rev_text);
+					//start_over_here($versions[$middle]);
 					$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $deletion_found).': ';
 				}			
