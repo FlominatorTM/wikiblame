@@ -865,13 +865,20 @@ function binary_search($middle, $from)
 	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit;
 	//echo "binary_search(".$middle.",".$from.")";
 	
-	if($middle<1 && $from != 2 && $from != 1)
+	if($middle<1)
 	{
-		log_search("first_version");
-		//echo ('<br>'.$messages['first_version']);
-		return;
+        if($from != 2 && $from != 1)
+        {
+            log_search("first_version");
+            //echo ('<br>'.$messages['first_version']);
+            return;
+        }    
+        else
+        {
+            $middle=0;
+        }
 	}
-	
+    
 	if($middle==$from)
 	{
 		log_search("no_differences");
