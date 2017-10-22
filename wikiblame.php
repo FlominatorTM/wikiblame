@@ -667,11 +667,18 @@ function add_one_version($one_version, &$versions)
 {
     //echo "one version: " . htmlspecialchars($one_version);
     $offset_parts = extract_date_parts_from_history_link($one_version);
-    $date = $offset_parts[3] . $offset_parts[2] . $offset_parts[1];
-    $time =  substr($offset_parts[0], 0, 2) . substr($offset_parts[0], 3, 2);
-    $offset = $date . $time;
+    $month = $offset_parts[2];
+    $day = $offset_parts[1];
+    $year = $offset_parts[3];
     
-    $versions[] = array('legacy' => $one_version, 'offset' => $offset);
+    $hour = substr($offset_parts[0], 0, 2);
+    $minute = substr($offset_parts[0], 3, 2);
+    $offset = $year . $month . $day . $hour . $minute;
+    
+    $timestamp = mktime($hour, $minute, 0, $month, $day, $year);
+    $versions[] = array('legacy' => $one_version, 
+                        'offset' => $offset,
+                        'timestamp' => $timestamp);
     
 }
 
