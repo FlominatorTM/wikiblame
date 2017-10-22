@@ -765,9 +765,19 @@ function start_over_here($versionpage, $skip=0)
 
 function get_month_number($month_text)
 {
-    global $the_months;
-    $num =  array_search($month_text, $the_months) + 1;
-    return str_pad($num, 2, '0', STR_PAD_LEFT);
+    $months['January'] = '01';
+    $months['February'] = '02';
+    $months['March'] = '03';
+    $months['April'] = '04';
+    $months['May'] = '05';
+    $months['June'] = '06';
+    $months['July'] = '07';
+    $months['August'] = '08';
+    $months['September'] = '09';
+    $months['October'] = '10';
+    $months['November'] = '11';
+    $months['December'] = '12';
+    return $months[$month_text] ;
 }
 
 // 0: time, 1: day, 2: month, 3: year
