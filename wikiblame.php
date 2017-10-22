@@ -147,11 +147,11 @@ if(strlen($offset)<12)
 
 if($_REQUEST['binary_search_inverse'] == "on")
 {
-	$binary_search_inverse = "true";
+	$binary_search_inverse = true;
 }
 else
 {
-	$binary_search_inverse = "false";
+	$binary_search_inverse = false;
 }
 
 $asc = false;
@@ -380,7 +380,7 @@ function submitAndWait()
 				</tr>				
 				<tr>
 					<td align="<?php  echo $alignment ?>">
-					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <?php  if ($binary_search_inverse=="true") echo checked; ?> >
+					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <?php  if ($binary_search_inverse) echo checked; ?> >
 					</td>
 					<td>
 						<label for="binary_search_inverse">
@@ -954,7 +954,7 @@ function binary_search($middle, $from)
 	}
 
     $earliest_index = count($versions)-1;
-    if($from == $earliest_index && $binary_search_inverse!="true")
+    if($from == $earliest_index && !$binary_search_inverse)
     {
         if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
         {
@@ -977,7 +977,7 @@ function binary_search($middle, $from)
 	{
 		log_search("no_differences");
 		
-		if($binary_search_inverse == "true")
+		if($binary_search_inverse)
 		{
             if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
             {
@@ -1037,7 +1037,7 @@ function binary_search($middle, $from)
 			echo "<font color=\"green\">OO</font>\n";
 			//start_over_here($versions[$middle]['legacy'], 0, 0);
 			echo "<br>";
-			if($binary_search_inverse == "true")
+			if($binary_search_inverse)
 			{
 				//looking for removal => found in both => must have been removed later => remove the rest
                 $first_to_remove = $middle + 2; //$middle + 1 was checked and might be needed for output
@@ -1065,7 +1065,7 @@ function binary_search($middle, $from)
 				echo "<font color=\"red\">XX</font>\n";
 				//start_over_here($versions[$middle]['legacy']);
 				echo "<br>";
-				if($binary_search_inverse == "true")
+				if($binary_search_inverse)
 				{
 					//looking for removal => not found in any of both => must have been removed earlier => higher index in history array
 					binary_search(floor($middle+$step_length), $middle);
@@ -1191,7 +1191,7 @@ function get_url($year, $month, $day, $hours=23, $minutes=55, $include_ignorefir
 	{
 		$url.="&amp;ignorefirst=".$_REQUEST['ignorefirst'];
 	}
-	if($binary_search_inverse=="true")
+	if($binary_search_inverse)
 	{
 		$url.="&amp;binary_search_inverse=on";
 	}
