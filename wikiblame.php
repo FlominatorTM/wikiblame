@@ -697,7 +697,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 	echo "<ul>";
 	foreach($versions as $version)
 	{
-        $link = 'http://' . $server . '/w/index.php?title=' . $articleend . '&diff=prev&oldid=' . $version['id'];
+        $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $version['id'];
         
 		echo "<li>".'<a href="' . $link . '">' . $version['local_date'].'</a>';
 		
@@ -931,12 +931,13 @@ function binary_search($middle, $from)
 		
         //checking first/earliest revision => highest array index
         $earliest_index = count($versions)-1;
-        $rev_text = get_revision(idfromurl($versions[$earliest_index]['legacy']));
+        $rev_text = get_revision($versions[$earliest_index]['id']);
         $found_in_earliest_revision = stristr($rev_text, $needle); 
         
         if($found_in_earliest_revision)
         {
-            $revLink = str_replace("/w/", "http://".$server."/w/", $versions[$earliest_index]['legacy'])."</a>";
+            $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $versions[$earliest_index]['id'];
+            $revLink = '<a href="' . $link . '">' . $version['local_date'].'</a>';
             $msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
             echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
         }
@@ -1009,9 +1010,9 @@ function binary_search($middle, $from)
 		 [2]: 18. Jan. 2011 17:00
 		 [3]: 15. Jan. 2011 15:00 */
 		  
-		$rev_text = get_revision(idfromurl($versions[$middle]['legacy']));
+		$rev_text = get_revision($versions[$middle]['id']);
 		$in_this = stristr($rev_text, $needle);
-		$in_next = stristr(get_revision(idfromurl($versions[$middle+1]['legacy'])), $needle);
+		$in_next = stristr(get_revision($versions[$middle+1]['id']), $needle);
 		$step_length = abs(($from-$middle)/2);
 		if($in_this AND $in_next)
 		{
@@ -1092,11 +1093,15 @@ function binary_search($middle, $from)
  
 function get_diff_link($index, $order="prev")
 {
-	global $versions, $server;
+	global $versions, $server, $articleenc;
 	
 	$versionslink = str_replace("/w/", "http://".$server."/w/", $versions[$index]['legacy'])."</a>";
 	$versionslink = str_replace("oldid", "diff=".$order."&amp;oldid", $versionslink);
-	return($versionslink);
+    
+    $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $versions[$index]['id'];
+    
+    return '<a href="' . $link . '">' . $versions[$index]['local_date'].'</a>';
+	//return($versionslink);
 }
 
 function wikitags_present()
