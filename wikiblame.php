@@ -919,6 +919,21 @@ function needle_regex($needle)
 	return($needle);
 }
 
+function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
+{
+    global $messages;
+    //checking first/earliest revision => highest array index
+    $rev_text = get_revision($versions[$earliest_index]['id']);
+    $found_in_earliest_revision = stristr($rev_text, $needle); 
+    if($found_in_earliest_revision)
+    {
+        $revLink = get_diff_link($versions[$earliest_index]);
+        $msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
+        echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
+    }
+    return $found_in_earliest_revision;
+}
+
 function binary_search($middle, $from)
 {
 	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit, $articleenc, $deleted_revisions;
@@ -937,26 +952,34 @@ function binary_search($middle, $from)
             $middle=0;
         }
 	}
+
+    $earliest_index = count($versions)-1;
+    if($from == $earliest_index && $binary_search_inverse!="true")
+    {
+        if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
+        {
+            if((count($versions)+$deleted_revisions)==$limit)
+            {
+                //there might be revisions before 
+                echo $messages['earlier_versions_available'].' ';
+                //start_over_here($versions[$earliest_index]['legacy']);
+                $offset = $versions[$earliest_index]['offset'];
+                $versions = get_all_versions($articleenc, $offset);
+                binary_search(floor(count($versions)/2), count($versions)-1);
+                return; //do not continue once this search is done
+            }
+            $needle_ever_found = true;
+        }
+    }
     
+        
 	if($middle==$from)
 	{
 		log_search("no_differences");
 		
-        //checking first/earliest revision => highest array index
-        $earliest_index = count($versions)-1;
-        $rev_text = get_revision($versions[$earliest_index]['id']);
-        $found_in_earliest_revision = stristr($rev_text, $needle); 
-        
-        if($found_in_earliest_revision)
-        {
-            $revLink = get_diff_link($versions[$earliest_index]);
-            $msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
-            echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
-        }
-            
 		if($binary_search_inverse == "true")
 		{
-            if($found_in_earliest_revision)
+            if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
             {
                 //must have been removed between earliest and where we just checked
                 $middle = floor($from + ($earliest_index-$from)/2);
@@ -967,40 +990,24 @@ function binary_search($middle, $from)
                 //start at a later revision (maybe it was not even inserted at this point of $from)     
                 echo $messages['inverse_restart'].'<br>';
                 binary_search(floor($from/4), floor($from/2));
+                //no clue if there would be a point in checking if was removed earlier
             }
         }
-		else //looking for insertion => maybe it was always there 
+		else //looking for insertion => maybe we hit an edit war 
 		{	
-			if($found_in_earliest_revision)
-			{
-				if((count($versions)+$deleted_revisions)==$limit)
-				{
-					//there might be revisions before 
-					echo $messages['earlier_versions_available'].' ';
-					//start_over_here($versions[$earliest_index]['legacy']);
-                    $offset = $versions[($earliest_index -1)]['offset'];
-                    $versions = get_all_versions($articleenc, $offset);
-                    binary_search(floor(count($versions)/2), count($versions)-1);
-				}
-				
-				$needle_ever_found = true;
-			}
-			else
-			{
-				if($binary_search_retries>0)
-				{
-					echo $messages['dead_end'].'<br><br>';
-					echo $messages['once_more'].'<br>';
-					binary_search($middle, $from-$binary_search_retries);
-					$binary_search_retries--;
-					log_search("retry");
-				}
-				else
-				{
-					echo  ($messages['binary_enough']);
-					log_search("enough, done");
-				}
-			}
+            if($binary_search_retries>0)
+            {
+                echo $messages['dead_end'].'<br><br>';
+                echo $messages['once_more'].'<br>';
+                binary_search($middle, $from-$binary_search_retries);
+                $binary_search_retries--;
+                log_search("retry");
+            }
+            else
+            {
+                echo $messages['binary_enough'];
+                log_search("enough, done");
+            }
 		}
 	}
 	else
