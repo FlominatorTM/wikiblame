@@ -178,6 +178,17 @@ $the_months[] =  $messages['October'];
 $the_months[] =  $messages['November'];
 $the_months[] =  $messages['December'];
 
+if( !stristr($messages['revision_date_format'], '%d') //day
+ || !stristr($messages['revision_date_format'], '%B') //monthname
+ || !stristr($messages['revision_date_format'], '%Y') //year
+ || !stristr($messages['revision_date_format'], '%H') //hour
+ || !stristr($messages['revision_date_format'], '%M')) //minute
+ {
+     //fallback to en in case of fucked up format
+     $messages['revision_date_format'] = "%H:%M, %d %B %Y";
+ }
+
+
 $force_wikitags = $_REQUEST['force_wikitags'];
 if($force_wikitags=="on")
 {
@@ -473,7 +484,7 @@ if($needle!="")
 function get_all_versions($articleenc, $offset)
 {
     global $limit, $server, $user_lang;
-    $historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=$user_lang";	
+    $historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
 	$history =  file_get_contents($historyurl);
 	//echo "<hr><pre>$history</pre><hr>";
 	return listversions($history);
@@ -635,7 +646,8 @@ function listversions ($history)
 				//checks if the revision was marked as minor edit
 				if(!stristr($one_version, "<span class=\"minor\">")) 
 				{
-					$versions[]= $one_version;
+                    add_one_version($one_version, $versions);
+					
 				}
 				else
 				{
@@ -644,7 +656,7 @@ function listversions ($history)
 			}
 			else
 			{
-				$versions[]= $one_version;
+                add_one_version($one_version, $versions);
 			}
 		}
 	}
@@ -662,21 +674,47 @@ function listversions ($history)
 	//!oldid=(\d+)".*>([^<]+)</a>.*>([^<]+)</a>! 1=date, 2=revid 3=user
 }
 
+function add_one_version($one_version, &$versions)
+{
+    global $server, $the_months, $messages;
+    //echo "one version: " . htmlspecialchars($one_version);
+    $offset_parts = extract_date_parts_from_history_link($one_version);
+    $month = $offset_parts[2];
+    $day = $offset_parts[1];
+    $year = $offset_parts[3];
+    
+    $hour = substr($offset_parts[0], 0, 2);
+    $minute = substr($offset_parts[0], 3, 2);
+    $offset = $year . $month . $day . $hour . $minute;
+    
+    $timestamp = mktime($hour, $minute, 0, $month, $day, $year);
+    $month_localized = $the_months[$month-1];
+    $pattern = str_replace('%B', $month_localized, $messages['revision_date_format']);
+    $date_localized = strftime($pattern, $timestamp);
+
+    $id = idfromurl ($one_version);
+    $versions[] = array('legacy' => $one_version, 
+                        'offset' => $offset,
+                        'timestamp' => $timestamp,
+                        'id' => $id,
+                        'local_date' => $date_localized);
+}
+
 function checkversions ($versions, $skipversions, $ignorefirst)
 {
-	global $server, $needle, $needle_ever_found, $limit;
+	global $server, $needle, $needle_ever_found, $limit, $articleenc, $the_months ;
 
 	$version_counter = 0;
 	echo "<ul>";
 	foreach($versions as $version)
 	{
-		echo "<li>".str_replace("/w/", "http://".$server."/w/", $version)."</a> ";
+		echo "<li>". get_diff_link($version);
 		
 		if($ignorefirst==0)
 		{
 			if($version_counter==0)
 			{
-				$rev_text = get_revision(idfromurl($version));
+				$rev_text = get_revision($version['id']);
 				if(stristr($rev_text, $needle))
 				{
 					echo " <font color=\"green\">OOO</font>\n";
@@ -686,7 +724,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 				{
 					echo " <font color=\"red\">XXX</font>\n";
 				}
-				start_over_here($rev_text, $skipversions);
+				start_over_here($version['legacy'], $skipversions);
 				$version_counter=$skipversions;
 			}
 			else
@@ -789,6 +827,46 @@ function start_over_here($versionpage, $skip=0)
 
 }
 
+function get_month_number($month_text)
+{
+    $months['January'] = '01';
+    $months['February'] = '02';
+    $months['March'] = '03';
+    $months['April'] = '04';
+    $months['May'] = '05';
+    $months['June'] = '06';
+    $months['July'] = '07';
+    $months['August'] = '08';
+    $months['September'] = '09';
+    $months['October'] = '10';
+    $months['November'] = '11';
+    $months['December'] = '12';
+    return $months[$month_text] ;
+}
+
+// 0: time, 1: day, 2: month, 3: year
+function extract_date_parts_from_history_link($versionpage)
+{
+    global $article;
+    $ret = false;
+    // every revision (except the current on contains a text like this:
+	//<a href="/w/index.php?title=Hinterzarten&amp;oldid=151152765" class="mw-changeslist-date" title="Hinterzarten">17:28, 6 February 2016
+
+	$strBegin = "title=\"$article\">";
+	$beginning = strpos($versionpage, $strBegin);
+
+	if($beginning>0) //this is not the current revision (which looks different)
+	{
+		//extract date from revision text
+		$strDate = substr($versionpage, $beginning+strlen($strBegin));
+        $dateParts = explode(' ', trim($strDate));
+        
+        $dateParts[1] = str_pad($dateParts[1], 2, '0', STR_PAD_LEFT);
+        $dateParts[2] = get_month_number($dateParts[2]);
+        $ret = $dateParts;
+    }
+    return $ret;
+}
 function log_search ($time="started")
 {
 	global $article, $needle, $lang, $project, $asc, $use_binary_search, $server, $limit, $skipversions, $get_version_time, $versions, $offset, $user, $user_lang;
@@ -888,12 +966,12 @@ function binary_search($middle, $from)
 		
         //checking first/earliest revision => highest array index
         $earliest_index = count($versions)-1;
-        $rev_text = get_revision(idfromurl($versions[$earliest_index]));
+        $rev_text = get_revision($versions[$earliest_index]['id']);
         $found_in_earliest_revision = stristr($rev_text, $needle); 
         
         if($found_in_earliest_revision)
         {
-            $revLink = str_replace("/w/", "http://".$server."/w/", $versions[$earliest_index])."</a>";
+            $revLink = get_diff_link($versions[$earliest_index]);
             $msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
             echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
         }
@@ -921,8 +999,12 @@ function binary_search($middle, $from)
 				{
 					//there might be revisions before 
 					echo $messages['earlier_versions_available'].' ';
-					$rev_text = get_revision(idfromurl($versions[$earliest_index]));
-					start_over_here($rev_text);
+					//start_over_here($versions[$earliest_index]['legacy']);
+                    echo htmlspecialchars($versions[($earliest_index -1)]['legacy']);
+                    $offset = $versions[($earliest_index -1)]['offset'];
+                    echo "offset=$offset";
+                    $versions = get_all_versions($articleenc, $offset);
+                    binary_search(floor(count($versions)/2), count($versions)-1);
 				}
 				
 				$needle_ever_found = true;
@@ -950,7 +1032,7 @@ function binary_search($middle, $from)
 		//echo "Checking differences between ".get_diff_link($middle)." between $middle and ". ($middle+1)." starting from $from : ";
 		//echo $messages['search_in_progress'];
 		
-		$test_msg = str_replace('_FIRSTDATEVERSION_', get_diff_link($middle), $messages['binary_test']);
+		$test_msg = str_replace('_FIRSTDATEVERSION_', get_diff_link($versions[$middle]), $messages['binary_test']);
 		$test_msg = str_replace('_FIRSTNUMBER_', $middle, $test_msg);
 		$test_msg = str_replace('_SECONDNUMBER_', $middle+1, $test_msg); 
 		$test_msg = str_replace('_SOURCENUMBER_', $from, $test_msg);
@@ -962,15 +1044,15 @@ function binary_search($middle, $from)
 		 [2]: 18. Jan. 2011 17:00
 		 [3]: 15. Jan. 2011 15:00 */
 		  
-		$rev_text = get_revision(idfromurl($versions[$middle]));
+		$rev_text = get_revision($versions[$middle]['id']);
 		$in_this = stristr($rev_text, $needle);
-		$in_next = stristr(get_revision(idfromurl($versions[$middle+1])), $needle);
+		$in_next = stristr(get_revision($versions[$middle+1]['id']), $needle);
 		$step_length = abs(($from-$middle)/2);
 		if($in_this AND $in_next)
 		{
 			$needle_ever_found = true;
 			echo "<font color=\"green\">OO</font>\n";
-			start_over_here($rev_text, 0, 0);
+			//start_over_here($versions[$middle]['legacy'], 0, 0);
 			echo "<br>";
 			if($binary_search_inverse == "true")
 			{
@@ -998,7 +1080,7 @@ function binary_search($middle, $from)
 			if(!$in_this AND !$in_next)
 			{
 				echo "<font color=\"red\">XX</font>\n";
-				start_over_here($rev_text);
+				//start_over_here($versions[$middle]['legacy']);
 				echo "<br>";
 				if($binary_search_inverse == "true")
 				{
@@ -1014,8 +1096,8 @@ function binary_search($middle, $from)
 			else
 			{
 			//$right_version was 1
-				$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+1])."</a> ";
-				$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle])."</a>";
+				$left_version = get_old_link ($versions[$middle+1]);
+				$right_version = get_old_link($versions[$middle]);
 				if($in_this AND !$in_next)
 				{
 					$needle_ever_found = true;
@@ -1029,11 +1111,11 @@ function binary_search($middle, $from)
 					$needle_ever_found = true;
 					echo "<font color=\"green\">O</font>\n";
 					echo "<font color=\"red\">X</font><br>\n";
-					//start_over_here($rev_text);
+					//start_over_here($versions[$middle]['legacy']);
 					$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $deletion_found).': ';
 				}			
-				$difflink = get_diff_link($middle);
+				$difflink = get_diff_link($versions[$middle]);
 				$end_of_opening_a = strpos($difflink, '>');
 				echo substr($difflink, 0, $end_of_opening_a +1) . '<b>' . $messages['here'] . '</b></a>';
 				echo "<br>";
@@ -1043,15 +1125,22 @@ function binary_search($middle, $from)
 
 }
  
-function get_diff_link($index, $order="prev")
+function get_diff_link($version, $order="prev")
 {
-	global $versions, $server;
-	
-	$versionslink = str_replace("/w/", "http://".$server."/w/", $versions[$index])."</a>";
-	$versionslink = str_replace("oldid", "diff=".$order."&amp;oldid", $versionslink);
-	return($versionslink);
+	global $server, $articleenc;
+    
+    $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $version['id'];
+    
+    return '<a href="' . $link . '">' . $version['local_date'].'</a>';
 }
 
+function get_old_link($version)
+{
+    global $server, $articleenc;
+    $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&oldid=' . $version['id'];
+    return '<a href="' . $link . '">' . $version['local_date'].'</a>';
+
+}
 function wikitags_present()
 {
 	global $needle;
