@@ -178,6 +178,17 @@ $the_months[] =  $messages['October'];
 $the_months[] =  $messages['November'];
 $the_months[] =  $messages['December'];
 
+if( !stristr($messages['revision_date_format'], '%d') //day
+ || !stristr($messages['revision_date_format'], '%B') //monthname
+ || !stristr($messages['revision_date_format'], '%Y') //year
+ || !stristr($messages['revision_date_format'], '%H') //hour
+ || !stristr($messages['revision_date_format'], '%M')) //minute
+ {
+     //fallback to en in case of fucked up format
+     $messages['revision_date_format'] = "%H:%M, %d %B %Y";
+ }
+
+
 $force_wikitags = $_REQUEST['force_wikitags'];
 if($force_wikitags=="on")
 {
