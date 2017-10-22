@@ -665,6 +665,7 @@ function listversions ($history)
 
 function add_one_version($one_version, &$versions)
 {
+    global $server, $the_months, $messages;
     //echo "one version: " . htmlspecialchars($one_version);
     $offset_parts = extract_date_parts_from_history_link($one_version);
     $month = $offset_parts[2];
@@ -676,27 +677,35 @@ function add_one_version($one_version, &$versions)
     $offset = $year . $month . $day . $hour . $minute;
     
     $timestamp = mktime($hour, $minute, 0, $month, $day, $year);
+    $month_localized = $the_months[$month-1];
+    $pattern = str_replace('%B', $month_localized, $messages['revision_date_format']);
+    $date_localized = strftime($pattern, $timestamp);
+
+    $id = idfromurl ($one_version);
     $versions[] = array('legacy' => $one_version, 
                         'offset' => $offset,
-                        'timestamp' => $timestamp);
-    
+                        'timestamp' => $timestamp,
+                        'id' => $id,
+                        'local_date' => $date_localized);
 }
 
 function checkversions ($versions, $skipversions, $ignorefirst)
 {
-	global $server, $needle, $needle_ever_found, $limit;
+	global $server, $needle, $needle_ever_found, $limit, $articleenc, $the_months ;
 
 	$version_counter = 0;
 	echo "<ul>";
 	foreach($versions as $version)
 	{
-		echo "<li>".str_replace("/w/", "http://".$server."/w/", $version['legacy'])."</a> ";
+        $link = 'http://' . $server . '/w/index.php?title=' . $articleend . '&diff=prev&oldid=' . $version['id'];
+        
+		echo "<li>".'<a href="' . $link . '">' . $version['local_date'].'</a>';
 		
 		if($ignorefirst==0)
 		{
 			if($version_counter==0)
 			{
-				$rev_text = get_revision(idfromurl($version['legacy']));
+				$rev_text = get_revision($version['id']);
 				if(stristr($rev_text, $needle))
 				{
 					echo " <font color=\"green\">OOO</font>\n";
