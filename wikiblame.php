@@ -780,41 +780,15 @@ function get_revision($id)
 }
 
 //generate link to start a new search with the date of this revision
-//currently only works when not searching for wiki text
 function start_over_here($versionpage, $skip=0)
 {
 	global $messages, $limit;
-	// every revision (except the current on contains a text like this:
-	//as of 10:01, 7 November 2006 by username
-
-	$strBegin = "Revision as of ";
-	$beginning = strpos($versionpage, $strBegin);
-
-	if($beginning>0) //this is not the current revision (which looks different)
-	{
-		$ending = strpos($versionpage, " by ", $beginning);
-		//extract date from revision text
-		$strDate = substr($versionpage, $beginning+strlen($strBegin), $ending-$beginning-strlen($strBegin));
-
-		$dateParts = explode(' ', trim($strDate));
-		
+    if($dateParts = extract_date_parts_from_history_link($versionpage))
+    {
 		$hour = substr($dateParts[0], 0, 2);
 		$minute = substr($dateParts[0], 3, 2);
-		
 		$day = $dateParts[1];
-		$months['January'] = 1;
-		$months['February'] = 2;
-		$months['March'] = 3;
-		$months['April'] = 4;
-		$months['May'] = 5;
-		$months['June'] = 6;
-		$months['July'] = 7;
-		$months['August'] = 8;
-		$months['September'] = 9;
-		$months['October'] = 10;
-		$months['November'] = 11;
-		$months['December'] = 12;
-		$month = $months[$dateParts[2]] ;
+		$month = $dateParts[2];		
 		$year = $dateParts[3];
 		$theUrl = get_url($year,$month , $day, $hour, $minute, false);
 		
@@ -943,7 +917,7 @@ function needle_regex($needle)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit;
+	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit, $articleenc;
 	//echo "binary_search(".$middle.",".$from.")";
 	
 	if($middle<1)
@@ -1000,9 +974,7 @@ function binary_search($middle, $from)
 					//there might be revisions before 
 					echo $messages['earlier_versions_available'].' ';
 					//start_over_here($versions[$earliest_index]['legacy']);
-                    echo htmlspecialchars($versions[($earliest_index -1)]['legacy']);
                     $offset = $versions[($earliest_index -1)]['offset'];
-                    echo "offset=$offset";
                     $versions = get_all_versions($articleenc, $offset);
                     binary_search(floor(count($versions)/2), count($versions)-1);
 				}
