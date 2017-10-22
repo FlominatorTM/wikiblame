@@ -473,7 +473,7 @@ if($needle!="")
 function get_all_versions($articleenc, $offset)
 {
     global $limit, $server, $user_lang;
-    $historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=$user_lang";	
+    $historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
 	$history =  file_get_contents($historyurl);
 	//echo "<hr><pre>$history</pre><hr>";
 	return listversions($history);
@@ -635,7 +635,7 @@ function listversions ($history)
 				//checks if the revision was marked as minor edit
 				if(!stristr($one_version, "<span class=\"minor\">")) 
 				{
-					$versions[]= $one_version;
+					$versions[] = array('legacy' => $one_version);
 				}
 				else
 				{
@@ -644,7 +644,7 @@ function listversions ($history)
 			}
 			else
 			{
-				$versions[]= $one_version;
+				$versions[] = array('legacy'=> $one_version);
 			}
 		}
 	}
@@ -670,13 +670,13 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 	echo "<ul>";
 	foreach($versions as $version)
 	{
-		echo "<li>".str_replace("/w/", "http://".$server."/w/", $version)."</a> ";
+		echo "<li>".str_replace("/w/", "http://".$server."/w/", $version['legacy'])."</a> ";
 		
 		if($ignorefirst==0)
 		{
 			if($version_counter==0)
 			{
-				$rev_text = get_revision(idfromurl($version));
+				$rev_text = get_revision(idfromurl($version['legacy']));
 				if(stristr($rev_text, $needle))
 				{
 					echo " <font color=\"green\">OOO</font>\n";
@@ -686,7 +686,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 				{
 					echo " <font color=\"red\">XXX</font>\n";
 				}
-				start_over_here($version, $skipversions);
+				start_over_here($version['legacy'], $skipversions);
 				$version_counter=$skipversions;
 			}
 			else
@@ -892,12 +892,12 @@ function binary_search($middle, $from)
 		
         //checking first/earliest revision => highest array index
         $earliest_index = count($versions)-1;
-        $rev_text = get_revision(idfromurl($versions[$earliest_index]));
+        $rev_text = get_revision(idfromurl($versions[$earliest_index]['legacy']));
         $found_in_earliest_revision = stristr($rev_text, $needle); 
         
         if($found_in_earliest_revision)
         {
-            $revLink = str_replace("/w/", "http://".$server."/w/", $versions[$earliest_index])."</a>";
+            $revLink = str_replace("/w/", "http://".$server."/w/", $versions[$earliest_index]['legacy'])."</a>";
             $msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
             echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
         }
@@ -925,11 +925,13 @@ function binary_search($middle, $from)
 				{
 					//there might be revisions before 
 					echo $messages['earlier_versions_available'].' ';
-					//start_over_here($versions[$earliest_index]);
-                    $offset_parts = extract_date_parts_from_history_link($versions[($earliest_index -1)]);
+					//start_over_here($versions[$earliest_index]['legacy']);
+                    echo htmlspecialchars($versions[($earliest_index -1)]['legacy']);
+                    $offset_parts = extract_date_parts_from_history_link($versions[($earliest_index -1)]['legacy']);
                     $date = $offset_parts[3] . $offset_parts[2] . $offset_parts[1];
                     $time =  substr($offset_parts[0], 0, 2) . substr($offset_parts[0], 3, 2);
                     $offset = $date . $time;
+                    echo "offset=$offset";
                     $versions = get_all_versions($articleenc, $offset);
                     binary_search(floor(count($versions)/2), count($versions)-1);
 				}
@@ -971,15 +973,15 @@ function binary_search($middle, $from)
 		 [2]: 18. Jan. 2011 17:00
 		 [3]: 15. Jan. 2011 15:00 */
 		  
-		$rev_text = get_revision(idfromurl($versions[$middle]));
+		$rev_text = get_revision(idfromurl($versions[$middle]['legacy']));
 		$in_this = stristr($rev_text, $needle);
-		$in_next = stristr(get_revision(idfromurl($versions[$middle+1])), $needle);
+		$in_next = stristr(get_revision(idfromurl($versions[$middle+1]['legacy'])), $needle);
 		$step_length = abs(($from-$middle)/2);
 		if($in_this AND $in_next)
 		{
 			$needle_ever_found = true;
 			echo "<font color=\"green\">OO</font>\n";
-			//start_over_here($versions[$middle], 0, 0);
+			//start_over_here($versions[$middle]['legacy'], 0, 0);
 			echo "<br>";
 			if($binary_search_inverse == "true")
 			{
@@ -1007,7 +1009,7 @@ function binary_search($middle, $from)
 			if(!$in_this AND !$in_next)
 			{
 				echo "<font color=\"red\">XX</font>\n";
-				//start_over_here($versions[$middle]);
+				//start_over_here($versions[$middle]['legacy']);
 				echo "<br>";
 				if($binary_search_inverse == "true")
 				{
@@ -1023,8 +1025,8 @@ function binary_search($middle, $from)
 			else
 			{
 			//$right_version was 1
-				$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+1])."</a> ";
-				$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle])."</a>";
+				$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+1]['legacy'])."</a> ";
+				$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle]['legacy'])."</a>";
 				if($in_this AND !$in_next)
 				{
 					$needle_ever_found = true;
@@ -1038,7 +1040,7 @@ function binary_search($middle, $from)
 					$needle_ever_found = true;
 					echo "<font color=\"green\">O</font>\n";
 					echo "<font color=\"red\">X</font><br>\n";
-					//start_over_here($versions[$middle]);
+					//start_over_here($versions[$middle]['legacy']);
 					$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $deletion_found).': ';
 				}			
@@ -1056,7 +1058,7 @@ function get_diff_link($index, $order="prev")
 {
 	global $versions, $server;
 	
-	$versionslink = str_replace("/w/", "http://".$server."/w/", $versions[$index])."</a>";
+	$versionslink = str_replace("/w/", "http://".$server."/w/", $versions[$index]['legacy'])."</a>";
 	$versionslink = str_replace("oldid", "diff=".$order."&amp;oldid", $versionslink);
 	return($versionslink);
 }
