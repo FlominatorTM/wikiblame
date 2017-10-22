@@ -635,7 +635,8 @@ function listversions ($history)
 				//checks if the revision was marked as minor edit
 				if(!stristr($one_version, "<span class=\"minor\">")) 
 				{
-					$versions[] = array('legacy' => $one_version);
+                    add_one_version($one_version, $versions);
+					
 				}
 				else
 				{
@@ -644,7 +645,7 @@ function listversions ($history)
 			}
 			else
 			{
-				$versions[] = array('legacy'=> $one_version);
+                add_one_version($one_version, $versions);
 			}
 		}
 	}
@@ -660,6 +661,18 @@ function listversions ($history)
 	
 	//regular expression that could be used to extract data from the revision links somewhen
 	//!oldid=(\d+)".*>([^<]+)</a>.*>([^<]+)</a>! 1=date, 2=revid 3=user
+}
+
+function add_one_version($one_version, &$versions)
+{
+    //echo "one version: " . htmlspecialchars($one_version);
+    $offset_parts = extract_date_parts_from_history_link($one_version);
+    $date = $offset_parts[3] . $offset_parts[2] . $offset_parts[1];
+    $time =  substr($offset_parts[0], 0, 2) . substr($offset_parts[0], 3, 2);
+    $offset = $date . $time;
+    
+    $versions[] = array('legacy' => $one_version, 'offset' => $offset);
+    
 }
 
 function checkversions ($versions, $skipversions, $ignorefirst)
@@ -937,10 +950,7 @@ function binary_search($middle, $from)
 					echo $messages['earlier_versions_available'].' ';
 					//start_over_here($versions[$earliest_index]['legacy']);
                     echo htmlspecialchars($versions[($earliest_index -1)]['legacy']);
-                    $offset_parts = extract_date_parts_from_history_link($versions[($earliest_index -1)]['legacy']);
-                    $date = $offset_parts[3] . $offset_parts[2] . $offset_parts[1];
-                    $time =  substr($offset_parts[0], 0, 2) . substr($offset_parts[0], 3, 2);
-                    $offset = $date . $time;
+                    $offset = $versions[($earliest_index -1)]['offset'];
                     echo "offset=$offset";
                     $versions = get_all_versions($articleenc, $offset);
                     binary_search(floor(count($versions)/2), count($versions)-1);
