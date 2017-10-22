@@ -598,11 +598,11 @@ function correct_language_mistakes($lang)
 //in default (meaning $asc!=true) index 0 contains the latest revision
 function listversions ($history)
 {
-	global $articleenc, $asc, $messages, $ignore_minors;
+	global $articleenc, $asc, $messages, $ignore_minors, $deleted_revisions;
 	$searchterm = "name=\"diff\" "; //assumes that the history begins at the first occurrence of name="diff" />  <!--removed />-->
 
 	$versionen=array(); //array to store the links in
-	
+	$deleted_revisions = 0;
 	$revision_html_blocks = explode($searchterm, $history); 
 	
 	/*
@@ -639,7 +639,11 @@ function listversions ($history)
 
 		$is_deleted_revision = stristr($one_version, 'mw-userlink'); //there is no revision link
 
-		if(!$is_deleted_revision)
+		if($is_deleted_revision)
+        {
+            $deleted_revisions++;
+        }
+        else
 		{
 			if($ignore_minors)
 			{
@@ -917,7 +921,7 @@ function needle_regex($needle)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit, $articleenc;
+	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit, $articleenc, $deleted_revisions;
 	//echo "binary_search(".$middle.",".$from.")";
 	
 	if($middle<1)
@@ -969,7 +973,7 @@ function binary_search($middle, $from)
 		{	
 			if($found_in_earliest_revision)
 			{
-				if(count($versions)==$limit)
+				if((count($versions)+$deleted_revisions)==$limit)
 				{
 					//there might be revisions before 
 					echo $messages['earlier_versions_available'].' ';
