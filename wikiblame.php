@@ -47,7 +47,7 @@ if($text_dir=='rtl')
 //for benchmarking reasons
 $beginning = time();
 
-$article = $_REQUEST['article']; 
+$article = str_replace('_', ' ', $_REQUEST['article']); 
 $articleenc = name_in_url($article);
 
 $needle = trim($_REQUEST['needle']); 
@@ -1178,7 +1178,7 @@ function print_translator($lang)
 function get_url($year, $month, $day, $hours=23, $minutes=55, $include_ignorefirst=true)
 {
 	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse, $user;
-	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".name_in_url($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;offhour=$hours&amp;offmin=$minutes&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
+	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".urlencode($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;offhour=$hours&amp;offmin=$minutes&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
 	
 	if($include_ignorefirst)
 	{
