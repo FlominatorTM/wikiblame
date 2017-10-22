@@ -1087,7 +1087,6 @@ function binary_search($middle, $from)
 					$needle_ever_found = true;
 					echo "<font color=\"green\">O</font>\n";
 					echo "<font color=\"red\">X</font><br>\n";
-					//start_over_here($versions[$middle]['legacy']);
 					$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $deletion_found).': ';
 				}			
@@ -1095,6 +1094,7 @@ function binary_search($middle, $from)
 				$end_of_opening_a = strpos($difflink, '>');
 				echo substr($difflink, 0, $end_of_opening_a +1) . '<b>' . $messages['here'] . '</b></a>';
 				echo "<br>";
+                start_over_here($versions[$middle]['legacy']);
 			}
 		}
 	}
