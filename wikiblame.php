@@ -697,9 +697,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 	echo "<ul>";
 	foreach($versions as $version)
 	{
-        $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $version['id'];
-        
-		echo "<li>".'<a href="' . $link . '">' . $version['local_date'].'</a>';
+		echo "<li>". get_diff_link($version);
 		
 		if($ignorefirst==0)
 		{
@@ -936,8 +934,7 @@ function binary_search($middle, $from)
         
         if($found_in_earliest_revision)
         {
-            $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $versions[$earliest_index]['id'];
-            $revLink = '<a href="' . $link . '">' . $version['local_date'].'</a>';
+            $revLink = get_diff_link($versions[$earliest_index]);
             $msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
             echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
         }
@@ -998,7 +995,7 @@ function binary_search($middle, $from)
 		//echo "Checking differences between ".get_diff_link($middle)." between $middle and ". ($middle+1)." starting from $from : ";
 		//echo $messages['search_in_progress'];
 		
-		$test_msg = str_replace('_FIRSTDATEVERSION_', get_diff_link($middle), $messages['binary_test']);
+		$test_msg = str_replace('_FIRSTDATEVERSION_', get_diff_link($versions[$middle]), $messages['binary_test']);
 		$test_msg = str_replace('_FIRSTNUMBER_', $middle, $test_msg);
 		$test_msg = str_replace('_SECONDNUMBER_', $middle+1, $test_msg); 
 		$test_msg = str_replace('_SOURCENUMBER_', $from, $test_msg);
@@ -1062,8 +1059,8 @@ function binary_search($middle, $from)
 			else
 			{
 			//$right_version was 1
-				$left_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle+1]['legacy'])."</a> ";
-				$right_version = str_replace("/w/", "http://".$server."/w/", $versions[$middle]['legacy'])."</a>";
+				$left_version = get_old_link ($versions[$middle+1]);
+				$right_version = get_old_link($versions[$middle]);
 				if($in_this AND !$in_next)
 				{
 					$needle_ever_found = true;
@@ -1081,7 +1078,7 @@ function binary_search($middle, $from)
 					$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $deletion_found).': ';
 				}			
-				$difflink = get_diff_link($middle);
+				$difflink = get_diff_link($versions[$middle]);
 				$end_of_opening_a = strpos($difflink, '>');
 				echo substr($difflink, 0, $end_of_opening_a +1) . '<b>' . $messages['here'] . '</b></a>';
 				echo "<br>";
@@ -1091,19 +1088,22 @@ function binary_search($middle, $from)
 
 }
  
-function get_diff_link($index, $order="prev")
+function get_diff_link($version, $order="prev")
 {
-	global $versions, $server, $articleenc;
-	
-	$versionslink = str_replace("/w/", "http://".$server."/w/", $versions[$index]['legacy'])."</a>";
-	$versionslink = str_replace("oldid", "diff=".$order."&amp;oldid", $versionslink);
+	global $server, $articleenc;
     
-    $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $versions[$index]['id'];
+    $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $version['id'];
     
-    return '<a href="' . $link . '">' . $versions[$index]['local_date'].'</a>';
-	//return($versionslink);
+    return '<a href="' . $link . '">' . $version['local_date'].'</a>';
 }
 
+function get_old_link($version)
+{
+    global $server, $articleenc;
+    $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&oldid=' . $version['id'];
+    return '<a href="' . $link . '">' . $version['local_date'].'</a>';
+
+}
 function wikitags_present()
 {
 	global $needle;
