@@ -966,9 +966,9 @@ function binary_search($middle, $from)
                 $offset = $versions[$earliest_index]['offset'];
                 $versions = get_all_versions($articleenc, $offset);
                 binary_search(floor(count($versions)/2), count($versions)-1);
-                return; //do not continue once this search is done
             }
             $needle_ever_found = true;
+            return; //either the new search was started or it was present in the initial version"
         }
     }
     
