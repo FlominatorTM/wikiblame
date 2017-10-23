@@ -452,7 +452,7 @@ if($needle!="")
     $get_version_time = time()-$beginning;
 	log_search();
 	$needle_ever_found = false;
-	$binary_search_retries = 3;
+	$binary_search_retries = 4;
 	if(count($versions)>0)
 	{
 		if($use_binary_search)
@@ -999,8 +999,8 @@ function binary_search($middle, $from)
             {
                 echo $messages['dead_end'].'<br><br>';
                 echo $messages['once_more'].'<br>';
+                $binary_search_retries--; //this only is applied after the recursion :(
                 binary_search($middle, $from-$binary_search_retries);
-                $binary_search_retries--;
                 log_search("retry");
             }
             else
