@@ -77,6 +77,7 @@ $messages['please_wait'] = 'Veuillez patienter…';
 $messages['binary_test'] = 'Comparaison des différences du _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ et _SECONDNUMBER_ en venant de _SOURCENUMBER_ :';
 $messages['dead_end'] = 'Tombé dans une impasse (probablement causée par des révocations ou des guerres d’éditions)';
 $messages['once_more'] = 'Encore une fois, avec conviction :';
+$messages['delete_from_here'] = 'Effacement de _NUMBEROFVERSIONS_ versions antérieures car la supression a été effectuée postérieurement';
 $messages['binary_enough'] = 'Vous avez assez réessayé. L’historique de l’article est mal en point. Veuillez essayer de changer certains paramètres.';
 $messages['insertion_found'] = 'Insertion détectée entre le LEFT_VERSION et le RIGHT_VERSION';
 $messages['deletion_found'] = 'Suppression détectée entre LEFT_VERSION et RIGHT_VERSION';

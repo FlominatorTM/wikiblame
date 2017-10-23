@@ -64,6 +64,7 @@ $messages['please_wait'] = 'Aguarda, por favor…';
 $messages['binary_test'] = 'Comparando les diferencies en _FIRSTDATEVERSION_ ente _FIRSTNUMBER_ y _SECONDNUMBER_ cuando vengan de _SOURCENUMBER_:';
 $messages['dead_end'] = 'S\'alcontró un puntu ensin salida (ye probable que por causa de tornes o guerres d\'edición)';
 $messages['once_more'] = 'Otra vuelta, con xeitu:';
+$messages['delete_from_here'] = 'Desaniciando _NUMBEROFVERSIONS_ revisiones anteriores, porque después fíxose un desaniciu';
 $messages['binary_enough'] = 'Yá se ficieron intentos abondo, l\'historial del artículu ta enforma enguedeyáu. Por favor, intentalo cambiando dalguna opción.';
 $messages['insertion_found'] = 'S\'alcontró un inxertu ente LEFT_VERSION y RIGHT_VERSION';
 $messages['deletion_found'] = 'S\'alcontró un desaniciu ente LEFT_VERSION y RIGHT_VERSION';

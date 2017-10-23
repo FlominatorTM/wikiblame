@@ -65,6 +65,7 @@ $messages['please_wait'] = 'Waart w.e.g. ...';
 $messages['binary_test'] = 'D\'Ënnerscheeder vu(n) _FIRSTDATEVERSION_ tësche(n)_FIRSTNUMBER_ a(n)_SECONDNUMBER_ weisen, vu(n) _SOURCENUMBER_ aus:';
 $messages['dead_end'] = 'An enger Sakgaass hänkebliwwen (wahrscheinlech wéint Zerécksetze vun Artikelen oder Ännerungskonflikten)';
 $messages['once_more'] = 'Nach emol, mat Gefill:';
+$messages['delete_from_here'] = 'Läsche vu(n) _NUMBEROFVERSIONS_ virege Versioune, well d\'Ewechuele méi spéit gemaach gouf';
 $messages['binary_enough'] = 'D\'Sich gouf en etlech mol widderholl, den Historique vum Artikel ass net iwwersiichtlech, probéiert w.e.g. fir e puer Astellungen z\'änneren.';
 $messages['insertion_found'] = 'Insertioun tëscht LEFT_VERSION a(n) RIGHT_VERSION fonnt';
 $messages['deletion_found'] = 'Läschung fonnt tëscht LEFT_VERSION a(n) RIGHT_VERSION';
