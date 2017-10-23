@@ -72,6 +72,7 @@ $messages['please_wait'] = '请稍等 …';
 $messages['binary_test'] = '由 _SOURCENUMBER_ 开始，正在比较在 _FIRSTNUMBER_ 和 _SECONDNUMBER_ 之间的差异 _FIRSTDATEVERSION_ ：';
 $messages['dead_end'] = '发现一些循环（可能由回退或编辑战引起）';
 $messages['once_more'] = '再来一次：';
+$messages['delete_from_here'] = '正在删除_NUMBEROFVERSIONS_个早期修订版本，因为移除是在此之后进行的';
 $messages['binary_enough'] = '重试次数够多了，条目历史太乱了，请试着更改某些设置。';
 $messages['insertion_found'] = '目标在 LEFT_VERSION 和 RIGHT_VERSION 之间被加入';
 $messages['deletion_found'] = '目标在 LEFT_VERSION 和 RIGHT_VERSION 之间被删除';

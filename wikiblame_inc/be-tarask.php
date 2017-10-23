@@ -38,6 +38,7 @@ $messages['ignorefirst'] = 'Ня ўлічваць першыя X вэрсіяў'
 $messages['limit'] = 'Вэрсіі да праверкі';
 $messages['start_date'] = 'Дата пачатку';
 $messages['date_format'] = 'DD.MM.YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Парадак';
 $messages['newest_first'] = 'спачатку найноўшыя';
 $messages['oldest_first'] = 'спачатку найстарэйшыя';

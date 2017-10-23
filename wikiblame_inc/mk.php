@@ -70,6 +70,7 @@ $messages['please_wait'] = 'Почекајте…';
 $messages['binary_test'] = 'Споредба на разликите во _FIRSTDATEVERSION_ помеѓу _FIRSTNUMBER_ и _SECONDNUMBER_ при преодот од _SOURCENUMBER_:';
 $messages['dead_end'] = 'Западнавте во некој ќорсокак (веројатно предизвикан од враќања или уредувачки војни)';
 $messages['once_more'] = 'Уште еднаш, со чувство:';
+$messages['delete_from_here'] = 'Бришам _NUMBEROFVERSIONS_ претходни преработки, бидејќи отстранувањето е направено подоцна';
 $messages['binary_enough'] = 'Извршивте доволно обиди. Историјата на статијата е многу побркана. Изменете некои нагодувања.';
 $messages['insertion_found'] = 'Пронајдено е вметнување помеѓу LEFT_VERSION и RIGHT_VERSION';
 $messages['deletion_found'] = 'Пронајдено е бришење помеѓу LEFT_VERSION и RIGHT_VERSION';
