@@ -928,7 +928,7 @@ function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
     if($found_in_earliest_revision)
     {
         $revLink = get_diff_link($versions[$earliest_index]);
-        $msg = str_replace('__NEEDLE__', "<b>$needle</b>", $messages['first_version_present']);
+        $msg = str_replace('__NEEDLE__', '<b>'.htmlspecialchars($needle).'</b>', $messages['first_version_present']);
         echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
     }
     return $found_in_earliest_revision;
