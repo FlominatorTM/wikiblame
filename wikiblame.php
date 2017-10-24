@@ -422,7 +422,7 @@ function submitAndWait()
 <a href='<?php  echo $messages['manual_link'] ?>'><?php  echo $messages['manual'] ?></a> - 
 <a href='<?php  echo $messages['contact_link'] ?>'><?php  echo $messages['contact'] ?></a> - 
 <a href='http://translatewiki.net/wiki/Translating:Wikiblame'><?php  echo $messages['help_translating'] ?></a> -
-<a href="http://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
+<a href="https://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
 </div>
 <?php
 
@@ -438,11 +438,11 @@ if($needle!="")
 	//@TODO: create a method from this
 	if($tags_present==true)
 	{
-		$msg = str_replace('_ARTICLELINK_', "<a href=\"http://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress_wikitags']);	
+		$msg = str_replace('_ARTICLELINK_', "<a href=\"https://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress_wikitags']);	
 	}
 	else
 	{
-		$msg = str_replace('_ARTICLELINK_', "<a href=\"http://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress_text']);	
+		$msg = str_replace('_ARTICLELINK_', "<a href=\"https://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress_text']);	
 	}
 
 	$msg = str_replace('_NEEDLE_', htmlspecialchars($needle),$msg);
@@ -1112,7 +1112,7 @@ function get_diff_link($version, $order="prev")
 {
 	global $server, $articleenc;
     
-    $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $version['id'];
+    $link = 'https://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $version['id'];
     
     return '<a href="' . $link . '">' . $version['local_date'].'</a>';
 }
@@ -1120,7 +1120,7 @@ function get_diff_link($version, $order="prev")
 function get_old_link($version)
 {
     global $server, $articleenc;
-    $link = 'http://' . $server . '/w/index.php?title=' . $articleenc . '&oldid=' . $version['id'];
+    $link = 'https://' . $server . '/w/index.php?title=' . $articleenc . '&oldid=' . $version['id'];
     return '<a href="' . $link . '">' . $version['local_date'].'</a>';
 
 }

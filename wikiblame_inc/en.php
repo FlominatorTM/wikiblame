@@ -51,7 +51,7 @@ $messages['oldest_first'] = 'oldest first';
 $messages['binary_search_inverse'] = 'Look for removal of text (binary only)';
 $messages['search_method'] = 'Search method';
 $messages['binary'] = 'binary';
-$messages['binary_in_wp'] = 'http://en.wikipedia.org/wiki/Binary_search_algorithm';
+$messages['binary_in_wp'] = 'https://en.wikipedia.org/wiki/Binary_search_algorithm';
 $messages['linear'] = 'linear';
 
 $messages['interpolated'] = 'binary (faster with more versions)';
@@ -62,7 +62,7 @@ $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';
 $messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
 $messages['contact'] = 'Contact';
-$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 $messages['get_less_versions'] = "Your search might query __NUMREVISIONS__ revisions at one time. In order to protect the server, you are only allowed to query for __ALLOWEDREVISIONS__ per call. Please change the settings or switch the search method to binary!";
 
 //Output elements
