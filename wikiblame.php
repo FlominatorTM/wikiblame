@@ -484,8 +484,8 @@ if($needle!="")
 function get_all_versions($articleenc, $offset)
 {
     global $limit, $server, $user_lang;
-    $historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
-	$history =  file_get_contents($historyurl);
+    $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
+	$history =  file_get_contents_ssl($historyurl);
 	//echo "<hr><pre>$history</pre><hr>";
 	return listversions($history);
 }
@@ -760,16 +760,16 @@ function get_revision($id)
 {
 	set_time_limit(60);
 	global $needle, $server, $articleenc, $tags_present;
-	$url = "http://".$server."/w/index.php?uselang=en&title=".$articleenc."&oldid=".$id;
-	
+	$url = "https://".$server."/w/index.php?uselang=en&title=".$articleenc."&oldid=".$id;
+    
 	if($tags_present)
 	{
-		$versionpage =  file_get_contents($url."&action=raw");
+		$versionpage =  file_get_contents_ssl($url."&action=raw");
 	}
 	else
 	{
 		//remove the html tags (not included above because of <ref> and others)
-		$versionpage =  file_get_contents ($url);
+		$versionpage =  file_get_contents_ssl($url);
 		//remove header and footer
 		$versionpage = strip_tags(chop_content($versionpage));
 	}
@@ -1271,14 +1271,13 @@ function write_simple_file($filename, $content)
 
 function Get_UTC_Hours($localHours, $server)
 {
-	$url = "http://" . $server . "/w/api.php?action=query&meta=siteinfo&format=php";
+	$url = "https://" . $server . "/w/api.php?action=query&meta=siteinfo&format=php";
 	ini_set( 'user_agent', 'WikiBlame_by_Flominator' );
-	$SiteInfo = unserialize ( file_get_contents ( $url) ) ;
+	$SiteInfo = unserialize ( file_get_contents_ssl ( $url) ) ;
 	$offsetToUtc = $SiteInfo['query']['general']['timeoffset'];
 	$UtcHours = $localHours -($offsetToUtc / 60);
 	return $UtcHours;
 }
-
 ?>
  <p align="<?php  echo $alignment ?>"> 
     <!--<a href="http://www.ps-webhosting.de/?ref=k3591" target="_blank"><img alt="Webhosting von ps-webhosting.de" border="0" src="http://www.ps-webhosting.de/banner/ps_button2.gif"></a>-->
