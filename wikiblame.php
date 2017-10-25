@@ -27,10 +27,6 @@ if($text_dir=='rtl')
 
 fill_variables($user_lang);
 $the_months = get_months($messages);
-
-//for benchmarking reasons
-$beginning = time();
-
 ?>
 <body onload="document.mainform.<?php 
 //set cursor into needle or article field
@@ -422,7 +418,8 @@ function fill_variables($user_lang)
 function do_search()
 {
     global $versions, $articleenc, $offset, $needle_ever_found, $binary_search_retries, $use_binary_search, $skipversions, $ignorefirst, $messages;
-    //todo: consider renaming $offset
+
+    $beginning = time();//for benchmarking reasons
     $versions = get_all_versions($articleenc, $offset);
     
 	log_search();
@@ -439,7 +436,7 @@ function do_search()
 			checkversions($versions, $skipversions, $ignorefirst);
 		}
 	}
-	
+    $finished = time()-$beginning;
 	$exec_time =  str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
 	
 	if(!$needle_ever_found)
