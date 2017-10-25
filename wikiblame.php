@@ -280,35 +280,7 @@ if($needle!="")
 	$msg = str_replace('_NEEDLE_', htmlspecialchars($needle),$msg);
 	echo "$msg<br>\n";
 	
-	$versions = get_all_versions($articleenc, $offset);
-    $get_version_time = time()-$beginning;
-	log_search();
-	$needle_ever_found = false;
-	$binary_search_retries = 4;
-	if(count($versions)>0)
-	{
-		if($use_binary_search)
-		{
-			binary_search(floor(count($versions)/2), count($versions)-1);
-		}
-		else
-		{
-			checkversions($versions, $skipversions, $ignorefirst);
-		}
-	}
-	
-	$finished = time()-$beginning;
-	
-	$exec_time =  str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
-	
-	if(!$needle_ever_found)
-	{	
-		echo "<br>";
-		echo $messages['not_found_at_all']."\n";
-		$finished.="_nf";
-	}	
-
-	log_search($finished);
+	$exec_time = do_search();
 	echo '<br>'.$exec_time;
 	echo '<br><br><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
 }
@@ -445,6 +417,39 @@ function fill_variables($user_lang)
         $tags_present=wikitags_present();
     }
     
+}
+
+function do_search()
+{
+    global $versions, $articleenc, $offset, $needle_ever_found, $binary_search_retries, $use_binary_search, $skipversions, $ignorefirst, $messages;
+    //todo: consider renaming $offset
+    $versions = get_all_versions($articleenc, $offset);
+    
+	log_search();
+	$needle_ever_found = false;
+	$binary_search_retries = 4;
+	if(count($versions)>0)
+	{
+		if($use_binary_search)
+		{
+			binary_search(floor(count($versions)/2), count($versions)-1);
+		}
+		else
+		{
+			checkversions($versions, $skipversions, $ignorefirst);
+		}
+	}
+	
+	$exec_time =  str_replace('_EXECUTIONTIME_', $finished, $messages['execution_time']);
+	
+	if(!$needle_ever_found)
+	{	
+		echo "<br>";
+		echo $messages['not_found_at_all']."\n";
+		$finished.="_nf";
+	}	
+	log_search($finished);
+    return $exec_time;
 }
 
 function check_revision_date_format($messages)
