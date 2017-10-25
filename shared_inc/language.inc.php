@@ -63,4 +63,21 @@ function read_language()
 	}
 	return $user_lang;
 }
+
+function get_months($messages)
+{
+    $the_months[] =  $messages['January'];
+    $the_months[] =  $messages['February'];
+    $the_months[] =  $messages['March'];
+    $the_months[] =  $messages['April'];
+    $the_months[] =  $messages['May'];
+    $the_months[] =  $messages['June'];
+    $the_months[] =  $messages['July'];
+    $the_months[] =  $messages['August'];
+    $the_months[] =  $messages['September'];
+    $the_months[] =  $messages['October'];
+    $the_months[] =  $messages['November'];
+    $the_months[] =  $messages['December'];
+    return $the_months;
+}
 ?>

@@ -14,7 +14,6 @@ include("shared_inc/wiki_functions.inc.php");
 prevent_automatic_escaping_of_input_strings();
 $inc_dir = "wikiblame_inc";
 
-
 //get the language file and decide whether rtl oder ltr is used
 $user_lang = read_language();
 get_language('en', $inc_dir); //not translated messages will be printed in English
@@ -25,23 +24,14 @@ if($text_dir=='rtl')
 {
 	$alignment = 'left';
 }
+
 fill_variables($user_lang);
+$the_months = get_months($messages);
 
 //for benchmarking reasons
 $beginning = time();
 
-$the_months[] =  $messages['January'];
-$the_months[] =  $messages['February'];
-$the_months[] =  $messages['March'];
-$the_months[] =  $messages['April'];
-$the_months[] =  $messages['May'];
-$the_months[] =  $messages['June'];
-$the_months[] =  $messages['July'];
-$the_months[] =  $messages['August'];
-$the_months[] =  $messages['September'];
-$the_months[] =  $messages['October'];
-$the_months[] =  $messages['November'];
-$the_months[] =  $messages['December'];
+
 
 if( !stristr($messages['revision_date_format'], '%d') //day
  || !stristr($messages['revision_date_format'], '%B') //monthname
