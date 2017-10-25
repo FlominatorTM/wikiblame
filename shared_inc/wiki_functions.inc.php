@@ -138,16 +138,21 @@ function get_history($server, $articleenc, $limit=50, $offset="")
 
 function curl_request($url, $post_data = null)
 {
-	$ch = curl_init();
+	static $ch;
 
-	curl_setopt_array($ch, array(
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_FOLLOWLOCATION => true,
-		CURLOPT_MAXREDIRS => 5,
-		CURLOPT_FAILONERROR => true,
-		//https://raw.githubusercontent.com/bagder/ca-bundle/master/ca-bundle.crt
-		CURLOPT_CAINFO => __DIR__ . '/ca-bundle.crt',
-	));
+	if(empty($ch))
+	{
+		$ch = curl_init();
+
+		curl_setopt_array($ch, array(
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_FOLLOWLOCATION => true,
+			CURLOPT_MAXREDIRS => 5,
+			CURLOPT_FAILONERROR => true,
+			//https://raw.githubusercontent.com/bagder/ca-bundle/master/ca-bundle.crt
+			CURLOPT_CAINFO => __DIR__ . '/ca-bundle.crt',
+		));
+	}
 
 	curl_setopt($ch, CURLOPT_URL, $url);
 
@@ -155,6 +160,11 @@ function curl_request($url, $post_data = null)
 	{
 		// CURLOPT_POSTFIELDS implies CURLOPT_POST
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+	}
+	else
+	{
+		// Reset method in case the handle performed a POST request before
+		curl_setopt($ch, CURLOPT_HTTPGET, true);
 	}
 
 	return curl_exec($ch);
