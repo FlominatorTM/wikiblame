@@ -520,6 +520,22 @@ function extract_link_target($source_part, $remove_namespace=false)
     return $ret_val;
 }
 
+function wikitags_present()
+{
+	global $needle;
+	$tag_elements=array('[', ']', '{', '}', '*', '#', '==', "''", '<', '>', '|', '__', '---');
+	
+	foreach ($tag_elements as $tag_element)
+	{
+		if(stristr($needle, $tag_element))
+		{
+			return true;
+			break;
+		}
+	}
+	
+	return false;
+}
 	
 function print_debug($str)
 {
@@ -529,7 +545,6 @@ function print_debug($str)
 	echo $str."\n";
     }
 }
-
 
 function prevent_automatic_escaping_of_input_strings()
 {

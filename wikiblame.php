@@ -1108,22 +1108,6 @@ function get_old_link($version)
     return '<a href="' . $link . '">' . $version['local_date'].'</a>';
 
 }
-function wikitags_present()
-{
-	global $needle;
-	$tag_elements=array('[', ']', '{', '}', '*', '#', '==', "''", '<', '>', '|', '__', '---');
-	
-	foreach ($tag_elements as $tag_element)
-	{
-		if(stristr($needle, $tag_element))
-		{
-			return true;
-			break;
-		}
-	}
-	
-	return false;
-}
 
 function check_options()
 {
