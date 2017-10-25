@@ -106,9 +106,7 @@ function post_request($host, $path, $referer, $data_to_send) {
 //http://stackoverflow.com/a/6609181/4609258
 function purge($server, $article, $is_debug=false)
 {
-	$purge_page = "https://".$server."/w/api.php?action=purge&titles=".$article;
-
-	$url = $purge_page;
+	$url = "https://".$server."/w/api.php";
 	$data = array('action' => 'purge', 'titles' => $article);
 
 	// use key 'http' even if you send the request to https://...
@@ -122,11 +120,9 @@ function purge($server, $article, $is_debug=false)
 	$context  = stream_context_create($options);
 	$result = file_get_contents($url, false, $context);
 
-	$purge = $result;
-
 	if($is_debug)
 	{
-		echo "Purging via $purge_page returned $purge";
+		echo "Purging via $purge_page returned $result";
 	}
 }
 
