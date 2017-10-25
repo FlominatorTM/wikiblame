@@ -96,7 +96,7 @@ function submitAndWait()
 		<div align="<?php  echo $alignment ?>">
 		<?php 
 			echo $messages['ui_lang'].'<br>';
-			language_selection($user_lang);?>
+			language_selection($user_lang, $inc_dir);?>
 		</div>
 
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
@@ -469,110 +469,6 @@ function get_all_versions($articleenc, $offset)
 	$history = curl_request($historyurl);
 	//echo "<hr><pre>$history</pre><hr>";
 	return listversions($history);
-}
-
-function language_selection($user_lang)
-{
-	global $inc_dir;
-	echo "<select name=\"user_lang\" onchange=\"javascript:forms['mainform'].submit()\">\n";
-	//create links to all languages
-	foreach(get_language_list($inc_dir) AS $language)
-	{
-		if($language!=$user_lang)
-		{
-			echo "<option>$language</option>\n";
-			//echo "[<a href=\"?user_lang=$language\">$language</a>]&nbsp;";
-		}
-		else
-		{
-			echo "<option selected>$language</option>\n";
-			//echo "[$language]&nbsp;";
-		}
-	}
-	echo "</select>\n";
-}
-//tries to avoid most of the incorrect entered languages
-function correct_language_mistakes($lang)
-{
-	$lang = strtolower(trim($lang));
-	
-	//first: parts of strings that occour in a lot of translations of a language
-	if(stristr($lang, 'esp'))
-	{
-		return 'es';
-	}
-	
-	if(stristr($lang, 'eng'))
-	{
-		return 'en';
-	}
-	
-	if(stristr($lang, 'catal'))
-	{
-		return 'ca';
-	}
-	
-	if(stristr($lang, 'ita'))
-	{
-		return 'it';
-	}
-	
-	if(stristr($lang, 'pol'))
-	{
-		return 'pl';
-	}
-	
-	if(stristr($lang, 'portu'))
-	{
-		return 'pt';
-	}
-	
-	if(stristr($lang, 'viet'))
-	{
-		return 'vi';
-	}
-	
-	if(stristr($lang, 'α'))
-	{
-		return 'el';
-	}
-	
-	//second: some known words
-	switch($lang)
-	{
-		case 'afrikaans':	return 'af';
-		case 'aleman':		return 'de';
-		case 'anglais':		return 'en';
-		case 'arabic':		return 'ar';
-		case 'عربي':		return 'ar';
-		case 'العربية':		return 'ar';
-		case 'bosanski':	return 'bs';
-		case 'castellano':	return 'es';
-		case 'deutsch':		return 'de';
-		case 'enlish': 		return 'en';
-		case 'elinika':		return 'el';
-		case 'ellinika':	return 'el';
-		case 'ΕΛΛΗΝΙΚΑ':	return 'el';
-		case 'ελληνικη':	return 'el';
-		case 'ΕΛΛΗΝΙΚΗ':	return 'el';
-		case 'françai';		return 'fr';
-		case 'francais';	return 'fr';
-		case 'français';	return 'fr';
-		case 'française';	return 'fr';
-		case 'french';		return 'fr';
-		case 'german': 		return 'de';
-		case 'hindi': 		return 'hi';
-		case 'inggris': 	return 'id';
-		case 'khmer':		return 'km';
-		case 'malay':		return 'ms';
-		case 'nepali':		return 'ne';
-		case 'spanish':		return 'es';
-		case 'tamil':		return 'ta';
-		case '中文':			return 'zh';
-		default: return $lang;
-	}
-	
-	
 }
 
 //takes the requested history page, extracts links to the revisions and puts them into an array that is returned
