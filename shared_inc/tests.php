@@ -10,6 +10,7 @@ test_it_link("[[User:Flominator|Flo]]", "User:Flominator", false);
 test_it_link("[[Flominator|Flo]]", "Flominator", false);
 test_it_link("[[Flo]]", "Flo", false);
 test_it_link(" [[Flo]] ", "Flo", false);
+test_it_link("#WEITERLEITUNG[[Flo]] ", "Flo", false);
 
 test_it_link("[[User:Flominator]]", "Flominator", true);
 test_it_link("[[User:Flominator|Flo]]", "Flominator", true);
