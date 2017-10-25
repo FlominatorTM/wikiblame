@@ -25,127 +25,10 @@ if($text_dir=='rtl')
 {
 	$alignment = 'left';
 }
+fill_variables($user_lang);
 
 //for benchmarking reasons
 $beginning = time();
-
-$article = str_replace('_', ' ', $_REQUEST['article']); 
-$articleenc = name_in_url($article);
-
-$needle = trim($_REQUEST['needle']); 
-
-$lang = correct_language_mistakes($_REQUEST['lang']);
-if($lang=="")
-{
-	$lang=$user_lang; 
-}
-
-$project = $_REQUEST['project'];
-if($project=="")
-{
-	$project="wikipedia";
-}
-if($lang=="blank")
-{
-	$server= $project.".org";
-}
-else
-{
-	$server= $lang.".".$project.".org";
-}
-
-
-$use_binary_search = true;
-if($_REQUEST['searchmethod']=="lin")
-{
-	$use_binary_search = false;
-}
-
-$limit = $_REQUEST['limit'];
-
-if($limit=="")
-{
-	if($use_binary_search)
-	{
-		$limit = 500;
-	}
-	else
-	{
-		$limit = 50;
-	}
-}
-
-$ignorefirst = $_REQUEST['ignorefirst'];
-if($ignorefirst=="")
-{
-	$ignorefirst = 0;
-}
-
-$skipversions = $_REQUEST['skipversions'];
-if($skipversions=="")
-{
-	$skipversions = 0;
-}
-
-$ignore_minors = $_REQUEST['ignore_minors'];
-if($ignore_minors=="on")
-{
-	$ignore_minors = true;
-}
-else
-{
-	$ignore_minors = false;
-}
-
-	
-
-//Offset = YYYYMMDDmmhhss
-$offset = $_REQUEST['offjahr'];
-$offset.= str_pad ($_REQUEST['offmon'], 2, '0', STR_PAD_LEFT);
-$offset.= str_pad ($_REQUEST['offtag'], 2, '0', STR_PAD_LEFT);
-
-$offhour = str_pad ($_REQUEST['offhour'], 2, '0', STR_PAD_LEFT);;
-if($offhour == "00")
-{
-	$offhour = 23;
-}
-else
-{
-	$offhour = str_pad (Get_UTC_Hours($offhour, $server), 2, '0', STR_PAD_LEFT);
-}
-
-$offmin = str_pad ($_REQUEST['offmin'], 2, '0', STR_PAD_LEFT);;
-
-if($offmin == "00")
-{
-	$offmin = 55;
-}
-$offset.= $offhour.$offmin.'00';
-
-if(strlen($offset)<12)
-{	
-	$offset=strftime("%Y%m%d%H%M%S");
-}
-
-if($_REQUEST['binary_search_inverse'] == "on")
-{
-	$binary_search_inverse = true;
-}
-else
-{
-	$binary_search_inverse = false;
-}
-
-$asc = false;
-if($_REQUEST['order']=="asc")
-{
-	if(!$use_binary_search)
-	{
-		$asc=true;
-	}
-}
-
-$user=$_REQUEST['user'];
 
 $the_months[] =  $messages['January'];
 $the_months[] =  $messages['February'];
@@ -171,16 +54,7 @@ if( !stristr($messages['revision_date_format'], '%d') //day
  }
 
 
-$force_wikitags = $_REQUEST['force_wikitags'];
-if($force_wikitags=="on")
-{
-	$tags_present = true;
-}
-else
-{
-	$force_wikitags = "off";
-	$tags_present=wikitags_present();
-}
+
 
 ?>
 <body onload="document.mainform.<?php 
@@ -418,7 +292,7 @@ if($needle!="")
 	}
 	
 	//@TODO: create a method from this
-	if($tags_present==true)
+	if($tags_present)
 	{
 		$msg = str_replace('_ARTICLELINK_', "<a href=\"https://".$server."/wiki/".$article."\">$article</a>", $messages['search_in_progress_wikitags']);	
 	}
@@ -461,6 +335,140 @@ if($needle!="")
 	log_search($finished);
 	echo '<br>'.$exec_time;
 	echo '<br><br><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
+}
+
+function fill_variables($user_lang)
+{
+    global $article, $articleenc, $needle, $lang, $project, $server,
+        $use_binary_search, $limit, $ignorefirst, $skipversions, $ignore_minors, $offset, $binary_search_inverse, $asc,
+        $user, $force_wikitags, $tags_present; //todo: probably $tags_present doesn't need to be exposed
+    $article = str_replace('_', ' ', $_REQUEST['article']); 
+    $articleenc = name_in_url($article);
+
+    $needle = trim($_REQUEST['needle']); 
+
+    $lang = correct_language_mistakes($_REQUEST['lang']);
+    if($lang=="")
+    {
+        $lang=$user_lang; 
+    }
+
+    $project = $_REQUEST['project'];
+    if($project=="")
+    {
+        $project="wikipedia";
+    }
+    if($lang=="blank")
+    {
+        $server= $project.".org";
+    }
+    else
+    {
+        $server= $lang.".".$project.".org";
+    }
+
+
+    $use_binary_search = true;
+    if($_REQUEST['searchmethod']=="lin")
+    {
+        $use_binary_search = false;
+    }
+
+    $limit = $_REQUEST['limit'];
+
+    if($limit=="")
+    {
+        if($use_binary_search)
+        {
+            $limit = 500;
+        }
+        else
+        {
+            $limit = 50;
+        }
+    }
+
+    $ignorefirst = $_REQUEST['ignorefirst'];
+    if($ignorefirst=="")
+    {
+        $ignorefirst = 0;
+    }
+
+    $skipversions = $_REQUEST['skipversions'];
+    if($skipversions=="")
+    {
+        $skipversions = 0;
+    }
+
+    $ignore_minors = $_REQUEST['ignore_minors'];
+    if($ignore_minors=="on")
+    {
+        $ignore_minors = true;
+    }
+    else
+    {
+        $ignore_minors = false;
+    }
+
+    //Offset = YYYYMMDDmmhhss
+    $offset = $_REQUEST['offjahr'];
+    $offset.= str_pad ($_REQUEST['offmon'], 2, '0', STR_PAD_LEFT);
+    $offset.= str_pad ($_REQUEST['offtag'], 2, '0', STR_PAD_LEFT);
+
+    $offhour = str_pad ($_REQUEST['offhour'], 2, '0', STR_PAD_LEFT);;
+    if($offhour == "00")
+    {
+        $offhour = 23;
+    }
+    else
+    {
+        $offhour = str_pad (Get_UTC_Hours($offhour, $server), 2, '0', STR_PAD_LEFT);
+    }
+
+    $offmin = str_pad ($_REQUEST['offmin'], 2, '0', STR_PAD_LEFT);;
+
+    if($offmin == "00")
+    {
+        $offmin = 55;
+    }
+    $offset.= $offhour.$offmin.'00';
+
+    if(strlen($offset)<12)
+    {	
+        $offset=strftime("%Y%m%d%H%M%S");
+    }
+
+    if($_REQUEST['binary_search_inverse'] == "on")
+    {
+        $binary_search_inverse = true;
+    }
+    else
+    {
+        $binary_search_inverse = false;
+    }
+
+    $asc = false;
+    if($_REQUEST['order']=="asc")
+    {
+        if(!$use_binary_search)
+        {
+            $asc=true;
+        }
+    }
+
+    $user=$_REQUEST['user'];
+
+    $force_wikitags = $_REQUEST['force_wikitags'];
+    if($force_wikitags=="on")
+    {
+        $tags_present = true;
+    }
+    else
+    {
+        $force_wikitags = "off";
+        $tags_present=wikitags_present();
+    }
+    
 }
 
 function get_all_versions($articleenc, $offset)
