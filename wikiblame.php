@@ -31,20 +31,7 @@ $the_months = get_months($messages);
 //for benchmarking reasons
 $beginning = time();
 
-
-
-if( !stristr($messages['revision_date_format'], '%d') //day
- || !stristr($messages['revision_date_format'], '%B') //monthname
- || !stristr($messages['revision_date_format'], '%Y') //year
- || !stristr($messages['revision_date_format'], '%H') //hour
- || !stristr($messages['revision_date_format'], '%M')) //minute
- {
-     //fallback to en in case of fucked up format
-     $messages['revision_date_format'] = "%H:%M, %d %B %Y";
- }
-
-
-
+check_revision_date_format($messages)
 
 ?>
 <body onload="document.mainform.<?php 
@@ -459,6 +446,19 @@ function fill_variables($user_lang)
         $tags_present=wikitags_present();
     }
     
+}
+
+function check_revision_date_format($messages)
+{
+    if( !stristr($messages['revision_date_format'], '%d') //day
+     || !stristr($messages['revision_date_format'], '%B') //monthname
+     || !stristr($messages['revision_date_format'], '%Y') //year
+     || !stristr($messages['revision_date_format'], '%H') //hour
+     || !stristr($messages['revision_date_format'], '%M')) //minute
+     {
+         //fallback to en in case of fucked up format
+         $messages['revision_date_format'] = "%H:%M, %d %B %Y";
+     }
 }
 
 function get_all_versions($articleenc, $offset)
