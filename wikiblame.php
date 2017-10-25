@@ -31,8 +31,6 @@ $the_months = get_months($messages);
 //for benchmarking reasons
 $beginning = time();
 
-check_revision_date_format($messages)
-
 ?>
 <body onload="document.mainform.<?php 
 //set cursor into needle or article field
@@ -263,6 +261,7 @@ if($needle!="")
 {
 	//$needle = needle_regex($needle); necessary if you work with html, which is currently not the case
 	check_options(); // stops script, when wrong options are used
+    check_revision_date_format($messages);
 	if(!$use_binary_search && $_REQUEST['user']=="")
 	{
 		check_calls_from_this_ip($limit, $ignorefirst, $skipversions);
