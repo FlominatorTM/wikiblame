@@ -485,7 +485,7 @@ function get_all_versions($articleenc, $offset)
 {
     global $limit, $server, $user_lang;
     $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
-	$history =  file_get_contents_ssl($historyurl);
+	$history = curl_request($historyurl);
 	//echo "<hr><pre>$history</pre><hr>";
 	return listversions($history);
 }
@@ -764,12 +764,12 @@ function get_revision($id)
     
 	if($tags_present)
 	{
-		$versionpage =  file_get_contents_ssl($url."&action=raw");
+		$versionpage = curl_request($url."&action=raw");
 	}
 	else
 	{
 		//remove the html tags (not included above because of <ref> and others)
-		$versionpage =  file_get_contents_ssl($url);
+		$versionpage = curl_request($url);
 		//remove header and footer
 		$versionpage = strip_tags(chop_content($versionpage));
 	}
@@ -1273,7 +1273,7 @@ function Get_UTC_Hours($localHours, $server)
 {
 	$url = "https://" . $server . "/w/api.php?action=query&meta=siteinfo&format=php";
 	ini_set( 'user_agent', 'WikiBlame_by_Flominator' );
-	$SiteInfo = unserialize ( file_get_contents_ssl ( $url) ) ;
+	$SiteInfo = unserialize ( curl_request ( $url) ) ;
 	$offsetToUtc = $SiteInfo['query']['general']['timeoffset'];
 	$UtcHours = $localHours -($offsetToUtc / 60);
 	return $UtcHours;

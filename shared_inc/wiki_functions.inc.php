@@ -106,27 +106,14 @@ function post_request($host, $path, $referer, $data_to_send) {
 //http://stackoverflow.com/a/6609181/4609258
 function purge($server, $article, $is_debug=false)
 {
-	$purge_page = "https://".$server."/w/api.php?action=purge&titles=".$article;
-
-	$url = $purge_page;
+	$url = "https://".$server."/w/api.php";
 	$data = array('action' => 'purge', 'titles' => $article);
 
-	// use key 'http' even if you send the request to https://...
-	$options = array(
-		'http' => array(
-			'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-			'method'  => 'POST',
-			'content' => http_build_query($data)
-		)
-	);
-	$context  = stream_context_create($options);
-	$result = file_get_contents($url, false, $context);
-
-	$purge = $result;
+	$result = curl_request($url, $data);
 
 	if($is_debug)
 	{
-		echo "Purging via $purge_page returned $purge";
+		echo "Purging via $purge_page returned $result";
 	}
 }
 
@@ -149,16 +136,38 @@ function get_history($server, $articleenc, $limit=50, $offset="")
 	return get_request($server, $historyurl);
 }
 
-function file_get_contents_ssl($url)
+function curl_request($url, $post_data = null)
 {
-    //https://stackoverflow.com/a/38720392/4609258
-    $arrContextOptions = array(
-        "ssl"=>array(
-            "verify_peer"=>false,
-            "verify_peer_name"=>false,
-        ),
-    );  
-    return file_get_contents($url, false, stream_context_create($arrContextOptions));
+	static $ch;
+
+	if(empty($ch))
+	{
+		$ch = curl_init();
+
+		curl_setopt_array($ch, array(
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_FOLLOWLOCATION => true,
+			CURLOPT_MAXREDIRS => 5,
+			CURLOPT_FAILONERROR => true,
+			//https://raw.githubusercontent.com/bagder/ca-bundle/master/ca-bundle.crt
+			CURLOPT_CAINFO => __DIR__ . '/ca-bundle.crt',
+		));
+	}
+
+	curl_setopt($ch, CURLOPT_URL, $url);
+
+	if(isset($post_data))
+	{
+		// CURLOPT_POSTFIELDS implies CURLOPT_POST
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+	}
+	else
+	{
+		// Reset method in case the handle performed a POST request before
+		curl_setopt($ch, CURLOPT_HTTPGET, true);
+	}
+
+	return curl_exec($ch);
 }
 
 function create_images($was_found)
