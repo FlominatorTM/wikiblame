@@ -20,6 +20,7 @@
  * @author Malafaya
  * @author Mansil
  * @author Mosca
+ * @author Od1n
  * @author Vitorvicentevalente
  * @author Waldir
  */
@@ -52,7 +53,7 @@ $messages['oldest_first'] = 'mais antigas primeiro';
 $messages['binary_search_inverse'] = 'Procurar remoção de texto (somente binário)';
 $messages['search_method'] = 'Método de procura';
 $messages['binary'] = 'binária';
-$messages['binary_in_wp'] = 'http://pt.wikipedia.org/wiki/Pesquisa_bin%C3%A1ria';
+$messages['binary_in_wp'] = 'https://pt.wikipedia.org/wiki/Pesquisa_bin%C3%A1ria';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'binária (mais rápida a pesquisar muitas edições)';
 $messages['ignore_minors'] = 'ignorar edições menores (experimental)';
@@ -61,7 +62,7 @@ $messages['start'] = 'Iniciar procura';
 $messages['reset'] = 'Data de hoje';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Contacto';
-$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 $messages['get_less_versions'] = 'A sua pesquisa pode consultar __NUMREVISIONS__ versões ao mesmo tempo. Para proteger o servidor, só pode consultar __ALLOWEDREVISIONS__ por chamada. Altere esta configuração ou mude o método de pesquisa para binária, por favor.';
 $messages['wrong_skips'] = 'Erro nas configurações: se as primeiras __VERSIONSTOSKIP__ versões são ignoradas, então nenhuma das __VERSIONSTOSEARCH__ versões a verificar serão processadas.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> está a ser procurado como texto não formatado no histórico de edições de _ARTICLELINK_';

@@ -18,6 +18,7 @@
  * @author Kumkumuk
  * @author McAang
  * @author Meelo
+ * @author Od1n
  * @author Trockya
  * @author Velg
  * @author Vito Genovese
@@ -52,7 +53,7 @@ $messages['oldest_first'] = 'en eski ilk';
 $messages['binary_search_inverse'] = 'Metnin kaldırılması için ara (sadece ikili)';
 $messages['search_method'] = 'Arama tipi';
 $messages['binary'] = 'ikili';
-$messages['binary_in_wp'] = 'http://tr.wikipedia.org/wiki/%C4%B0kili_arama_algoritmas%C4%B1';
+$messages['binary_in_wp'] = 'https://tr.wikipedia.org/wiki/%C4%B0kili_arama_algoritmas%C4%B1';
 $messages['linear'] = 'lineer';
 $messages['interpolated'] = 'ikili (fazla sürüm sayısı varsa daha hızı arar)';
 $messages['ignore_minors'] = 'Küçük değişiklikleri yoksay (deneysel)';

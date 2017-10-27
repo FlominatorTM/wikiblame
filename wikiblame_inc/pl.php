@@ -15,6 +15,7 @@
  * @author Flominator
  * @author Leinad
  * @author Matma Rex
+ * @author Od1n
  * @author Sp5uhe
  * @author WTM
  * @author WarX
@@ -49,7 +50,7 @@ $messages['oldest_first'] = 'najstarsze na początku';
 $messages['binary_search_inverse'] = 'Szukaj usunięcia tekstu (tylko wyszukiwanie binarne)';
 $messages['search_method'] = 'Metoda wyszukiwania';
 $messages['binary'] = 'binarna';
-$messages['binary_in_wp'] = 'http://pl.wikipedia.org/wiki/Wyszukiwanie_binarne';
+$messages['binary_in_wp'] = 'https://pl.wikipedia.org/wiki/Wyszukiwanie_binarne';
 $messages['linear'] = 'liniowa';
 $messages['interpolated'] = 'binarna (szybsza dla większej liczby wersji)';
 $messages['ignore_minors'] = 'ignoruj drobne zmiany (eksperymentalne)';

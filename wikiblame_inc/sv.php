@@ -17,6 +17,7 @@
  * @author Jopparn
  * @author Liftarn
  * @author Lokal Profil
+ * @author Od1n
  * @author Per
  * @author Tobulos1
  * @author WikiPhoenix
@@ -51,7 +52,7 @@ $messages['oldest_first'] = 'Äldsta först';
 $messages['binary_search_inverse'] = 'Leta efter borttagning av text (endast binär)';
 $messages['search_method'] = 'Sökmetod';
 $messages['binary'] = 'binär';
-$messages['binary_in_wp'] = 'http://sv.wikipedia.org/wiki/Bin%C3%A4rs%C3%B6kning';
+$messages['binary_in_wp'] = 'https://sv.wikipedia.org/wiki/Bin%C3%A4rs%C3%B6kning';
 $messages['linear'] = 'linjär';
 $messages['interpolated'] = 'binär (snabbare med fler versioner)';
 $messages['ignore_minors'] = 'Ignorera mindre ändringar (experimentell)';

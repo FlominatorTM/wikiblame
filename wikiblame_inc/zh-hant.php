@@ -18,6 +18,7 @@
  * @author Lauhenry
  * @author Liuxinyu970226
  * @author Maskers
+ * @author Od1n
  * @author Reke
  * @author Wrightbus
  */
@@ -44,14 +45,14 @@ $messages['ignorefirst'] = '略過開始的版本數量';
 $messages['limit'] = '要檢查的版本數量';
 $messages['start_date'] = '開始日期';
 $messages['date_format'] = 'YYYY MM DD';
-$messages['revision_date_format'] = '%H:%M, %d %B %Y';
+$messages['revision_date_format'] = '%Y年%B%d日 %H:%M';
 $messages['order'] = '排列次序';
 $messages['newest_first'] = '從最近開始';
 $messages['oldest_first'] = '從最早開始';
 $messages['binary_search_inverse'] = '尋找去除相關文字的編輯 （僅適用於二分法）';
 $messages['search_method'] = '搜尋方式';
 $messages['binary'] = '二分法';
-$messages['binary_in_wp'] = 'http://zh.wikipedia.org/wiki/折半搜尋演算法';
+$messages['binary_in_wp'] = 'https://zh.wikipedia.org/wiki/折半搜尋演算法';
 $messages['linear'] = '線性';
 $messages['interpolated'] = '二分法（在版本較多時更快）';
 $messages['ignore_minors'] = '略過小修改（試驗性功能）';

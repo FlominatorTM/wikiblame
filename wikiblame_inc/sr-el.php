@@ -12,6 +12,7 @@
  *
  * @author Charmed94
  * @author FriedrickMILBarbarossa
+ * @author Od1n
  * @author Rancher
  */
 
@@ -46,7 +47,7 @@ $messages['oldest_first'] = 'prvo starije';
 $messages['binary_search_inverse'] = 'traži uklanjanje teksta (binarno)';
 $messages['search_method'] = 'Način pretrage:';
 $messages['binary'] = 'binarni';
-$messages['binary_in_wp'] = 'http://sr.wikipedia.org/wiki/Binarna_pretraga';
+$messages['binary_in_wp'] = 'https://sr.wikipedia.org/wiki/Binarna_pretraga';
 $messages['linear'] = 'linearni';
 $messages['interpolated'] = 'binarni (brže s više izdanja)';
 $messages['ignore_minors'] = 'zanemari manje izmene (probno)';
@@ -54,9 +55,9 @@ $messages['force_wikitags'] = 'primoraj traženje vikiteksta';
 $messages['start'] = 'Započni';
 $messages['reset'] = 'Poništi';
 $messages['manual'] = 'Priručnik';
-$messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=sr-el';
+$messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=sr-el';
 $messages['contact'] = 'Kontakt';
-$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=sr-el';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=sr-el';
 $messages['get_less_versions'] = 'Pretraga može ispisati __NUMREVISIONS__ izmena odjednom. Radi bezbednosti servera, dozvoljeno vam je da tražite __ALLOWEDREVISIONS__ po pozivu. Promenite postavke ili način pretrage na binarni.';
 $messages['wrong_skips'] = 'Pogrešne postavke: ako je prvih __VERSIONSTOSKIP__ izdanja preskočeno, onda nijedna od __VERSIONSTOSEARCH__ izdanja koje se traže neće biti obrađena.';
 $messages['search_in_progress_text'] = 'Istorija izdanja članka _ARTICLELINK_ se traži za <b>_NEEDLE_</b> kao običan tekst';

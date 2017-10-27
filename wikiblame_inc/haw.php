@@ -11,6 +11,7 @@
  * @file
  *
  * @author Kolonahe
+ * @author Od1n
  */
 
 $text_dir = 'ltr';
@@ -44,7 +45,7 @@ $messages['oldest_first'] = 'nā mea kahiko loa i mua';
 $messages['binary_search_inverse'] = 'E ʻike no ka wehe ʻana o ke kikokikona (baineli wale nō)';
 $messages['search_method'] = 'ʻAno Huli';
 $messages['binary'] = 'baineli';
-$messages['binary_in_wp'] = 'http://haw.wikipedia.org/wiki/Binary_search_algorithm';
+$messages['binary_in_wp'] = 'https://haw.wikipedia.org/wiki/Binary_search_algorithm';
 $messages['linear'] = 'laina pololei';
 $messages['interpolated'] = 'baineli (ʻāwiwi loa me nā mana ʻē aʻe)';
 $messages['ignore_minors'] = 'huli kua i nā hoʻololi liʻi (hoʻokolohua)';
@@ -52,9 +53,9 @@ $messages['force_wikitags'] = 'Haʻakoi ka huli ʻana no wikitext';
 $messages['start'] = 'Hoʻomaka';
 $messages['reset'] = 'Hōʻano Hou';
 $messages['manual'] = 'Puke ʻike';
-$messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
+$messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
 $messages['contact'] = 'Hoʻokaʻaʻike';
-$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 $messages['get_less_versions'] = 'Loaʻa paha i kau huli __NUMREVISIONS__ mau mea ma kekahi manawa. I ka hoʻomalu ʻana o ke kikowaena pūnaewele, hiki wale ke huli no __ALLOWEDREVISIONS__ kēla me kēia huli. E ʻoluʻolu, e hoʻololi i nā makemake a i ʻole hoʻololi i ka ʻano hana huli baineli!';
 $messages['wrong_skips'] = 'Makemake hewa: Inā lele ʻia mana __VERSIONSTOSKIP__ mua, ʻaʻohe mana i hiki ke hana ʻia.';
 $messages['search_in_progress_text'] = 'Ke huli nei ka mana mōʻaukala o _ARTICLELINK_ no <b>_NEEDLE_</b> e like me ke kikokikona uʻi ʻole';

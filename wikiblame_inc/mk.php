@@ -12,6 +12,7 @@
  *
  * @author Bjankuloski06
  * @author Flominator
+ * @author Od1n
  */
 
 $messages['January'] = 'јануари';
@@ -38,13 +39,14 @@ $messages['ignorefirst'] = 'Занемари ги првите x верзии';
 $messages['limit'] = 'Верзии за проверка';
 $messages['start_date'] = 'Почетен датум';
 $messages['date_format'] = 'ДД, ММ, ГГГГ';
+$messages['revision_date_format'] = '%d %B %Y г., %H:%M ч.';
 $messages['order'] = 'Редослед';
 $messages['newest_first'] = 'прво најнови';
 $messages['oldest_first'] = 'прво најстари';
 $messages['binary_search_inverse'] = 'Барај избришан текст (само бинарен)';
 $messages['search_method'] = 'Метод на пребарување';
 $messages['binary'] = 'бинарен';
-$messages['binary_in_wp'] = 'http://mk.wikipedia.org/wiki/%D0%91%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D0%BE_%D0%BF%D1%80%D0%B5%D0%B1%D0%B0%D1%80%D1%83%D0%B2%D0%B0%D1%9A%D0%B5';
+$messages['binary_in_wp'] = 'https://mk.wikipedia.org/wiki/%D0%91%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D0%BE_%D0%BF%D1%80%D0%B5%D0%B1%D0%B0%D1%80%D1%83%D0%B2%D0%B0%D1%9A%D0%B5';
 $messages['linear'] = 'линеарен';
 $messages['interpolated'] = 'бинарен (побрз, ако има многу верзии)';
 $messages['ignore_minors'] = 'занемари ситни промени (пробно)';
@@ -52,9 +54,9 @@ $messages['force_wikitags'] = 'принуди пребарување по вик
 $messages['start'] = 'Почни';
 $messages['reset'] = 'Одново';
 $messages['manual'] = 'Прирачник';
-$messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=mk';
+$messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=mk';
 $messages['contact'] = 'Контакт';
-$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=mk';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=mk';
 $messages['get_less_versions'] = 'Вашето пребарување може да пројде __NUMREVISIONS__ преработки наеднаш. За да се заштити опслужувачот, дозволени се само __ALLOWEDREVISIONS__ барања по повик. Сменете ги нагодувањата или префрлете се на бинарен метод на пребарување!';
 $messages['wrong_skips'] = 'Погрешни прилагодувања: Ако првите __VERSIONSTOSKIP__ верзии се прескокнат, тогаш ниту една од __VERSIONSTOSEARCH__ верзии за пребарување нема да биде обработена.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> се пребарува по историјата на верзиите на _ARTICLELINK_ како прост текст';

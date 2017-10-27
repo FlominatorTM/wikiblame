@@ -13,6 +13,7 @@
  * @author Bináris
  * @author Dj
  * @author Glanthor Reviol
+ * @author Od1n
  * @author Tacsipacsi
  * @author Tgr
  * @author Tgr <gtisza AT gmail.com>
@@ -53,7 +54,7 @@ $messages['force_wikitags'] = 'keresés mint wikiszöveg';
 $messages['start'] = 'Mehet';
 $messages['reset'] = 'Mai dátumra';
 $messages['manual'] = 'Használati útmutató';
-$messages['manual_link'] = 'http://hu.wikipedia.org/wiki/Wikipédia:WikiBlame';
+$messages['manual_link'] = 'https://hu.wikipedia.org/wiki/Wikipédia:WikiBlame';
 $messages['contact'] = 'Kapcsolat';
 $messages['get_less_versions'] = 'A keresésed egyszerre __NUMREVISIONS__ változatot próbált lekérdezni. A szerver védelme érdekében legfeljebb __ALLOWEDREVISIONS__ változatot kérdezhetsz le hívásonként. Kérlek változtasd meg a beállításokat, vagy válts bináris keresésre!';
 $messages['wrong_skips'] = 'Hibás beállítás: ha az első __VERSIONSTOSKIP__ változatot kell átugornom, akkor a vizsgálandó __VERSIONSTOSEARCH__ változat egyikét sem tudom feldolgozni.';

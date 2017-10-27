@@ -13,6 +13,7 @@
  * @author Flominator
  * @author Kghbln
  * @author Metalhead64
+ * @author Od1n
  * @author Taresi
  * @author ThePiscin
  * @author Umherirrender
@@ -49,7 +50,7 @@ $messages['oldest_first'] = 'ältere zuerst (nur bei linearer Suche)';
 $messages['binary_search_inverse'] = 'Nach Löschung des Textes suchen (nur bei binärer Suche)';
 $messages['search_method'] = 'Suchmethode';
 $messages['binary'] = 'binär';
-$messages['binary_in_wp'] = 'http://de.wikipedia.org/wiki/Binäre_Suche';
+$messages['binary_in_wp'] = 'https://de.wikipedia.org/wiki/Binäre_Suche';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'binär (bei vielen Versionen schneller)';
 $messages['ignore_minors'] = 'Kleine Änderungen ignorieren (experimentell)';
@@ -57,7 +58,7 @@ $messages['force_wikitags'] = 'Suche nach Wikitext erzwingen';
 $messages['start'] = 'Start';
 $messages['reset'] = 'zurücksetzen';
 $messages['manual'] = 'Handbuch';
-$messages['manual_link'] = 'http://de.wikipedia.org/wiki/Benutzer:Flominator/WikiBlame';
+$messages['manual_link'] = 'https://de.wikipedia.org/wiki/Benutzer:Flominator/WikiBlame';
 $messages['contact'] = 'Kontakt';
 $messages['get_less_versions'] = 'Die angegebene Suche könnte zur gleichzeitigen Abfrage von __NUMREVISIONS__ Versionen führen. Zum Schutz der Serverleistung, sind je Abfrage maximal __ALLOWEDREVISIONS__ Versionen zulässig. Bitte daher die Abfrageeinstellungen ändern oder auf die Suchmethode „binär“ umstellen.';
 $messages['wrong_skips'] = 'Falsche Einstellung: Sofern die ersten __VERSIONSTOSKIP__ Versionen übersprungen werden sollen, wird keine der gewählten __VERSIONSTOSEARCH__ Versionen durchsucht.';

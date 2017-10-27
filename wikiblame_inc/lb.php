@@ -36,6 +36,7 @@ $messages['ignorefirst'] = 'Déi éischt x Versiounen ignoréieren';
 $messages['limit'] = 'Versioune fir nozekucken';
 $messages['start_date'] = 'Ufanksdatum';
 $messages['date_format'] = 'DD.MM.YYYY';
+$messages['revision_date_format'] = '%d. %B %Y, %H:%M Auer';
 $messages['order'] = 'Reiefolleg';
 $messages['newest_first'] = 'déi Neist fir d\'éischt';
 $messages['oldest_first'] = 'déi Eelst fir d\'éischt';

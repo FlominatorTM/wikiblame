@@ -20,6 +20,7 @@
  * @author Lou Crazy
  * @author Macofe
  * @author Melos <nnico AT jumpy.it>
+ * @author Od1n
  * @author Rippitippi
  * @author Selven
  */
@@ -46,13 +47,14 @@ $messages['ignorefirst'] = 'Ignora le prime x versioni';
 $messages['limit'] = 'Versioni da controllare';
 $messages['start_date'] = 'Data inizio';
 $messages['date_format'] = 'DD MM YYYY';
+$messages['revision_date_format'] = '%d %B %Y, %H:%M';
 $messages['order'] = 'Ordinamento';
 $messages['newest_first'] = 'prima le più recenti';
 $messages['oldest_first'] = 'prima le meno recenti';
 $messages['binary_search_inverse'] = 'Cerca la rimozione del testo (solo binario)';
 $messages['search_method'] = 'Metodo di ricerca';
 $messages['binary'] = 'binario';
-$messages['binary_in_wp'] = 'http://it.wikipedia.org/wiki/Ricerca_dicotomica';
+$messages['binary_in_wp'] = 'https://it.wikipedia.org/wiki/Ricerca_dicotomica';
 $messages['linear'] = 'lineare';
 $messages['interpolated'] = 'binario (più veloce con molte versioni da controllare)';
 $messages['ignore_minors'] = 'ignora le modifiche minori (sperimentale)';
@@ -60,7 +62,7 @@ $messages['force_wikitags'] = 'forza la ricerca di wikitext';
 $messages['start'] = 'Inizia';
 $messages['reset'] = 'Reimposta';
 $messages['manual'] = 'Manuale';
-$messages['manual_link'] = 'http://it.wikipedia.org/wiki/Utente:Darth_Kule/WikiBlame';
+$messages['manual_link'] = 'https://it.wikipedia.org/wiki/Utente:Darth_Kule/WikiBlame';
 $messages['contact'] = 'Contatto';
 $messages['get_less_versions'] = 'La ricerca potrebbe controllare __NUMREVISIONS__ revisioni alla volta. Al fine di proteggere il server, però, si possono controllare soltanto __ALLOWEDREVISIONS__ revisioni per volta. Per favore modifica le impostazioni, oppure passa al metodo di ricerca binario!';
 $messages['wrong_skips'] = 'Impostazioni sbagliate: se le prime __VERSIONSTOSKIP__
@@ -79,6 +81,7 @@ $messages['please_wait'] = 'Attendere prego …';
 $messages['binary_test'] = 'Confronto delle differenze nella revisione del _FIRSTDATEVERSION_ fra la revisione _FIRSTNUMBER_ e la _SECONDNUMBER_ mentre proviene dalla revisione _SOURCENUMBER_:';
 $messages['dead_end'] = 'Trovato un punto morto (probabilmente causato da rollback o edit war)';
 $messages['once_more'] = 'Ancora una volta, con sentimento:';
+$messages['delete_from_here'] = 'Cancellando _NUMBEROFVERSIONS_ versioni precedenti, poiché la cancellazione è stata eseguita in seguito';
 $messages['binary_enough'] = 'Eseguiti sufficienti tentativi, la cronologia della voce è purtroppo abbastanza in disordine, prova a cambiare qualche impostazione.';
 $messages['insertion_found'] = 'Inserimento della parola trovato fra la revisione del LEFT_VERSION e quella del RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancellazione trovata fra LEFT_VERSION e RIGHT_VERSION';

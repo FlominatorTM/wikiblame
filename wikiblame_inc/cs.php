@@ -17,6 +17,7 @@
  * @author Jkjk
  * @author Kuvaly
  * @author Mormegil
+ * @author Od1n
  * @author Utar
  * @author Walter Klosse
  */
@@ -49,7 +50,7 @@ $messages['oldest_first'] = 'od nejstarších';
 $messages['binary_search_inverse'] = 'Vyhledej smazaný text (pouze binární)';
 $messages['search_method'] = 'Metoda vyhledávání';
 $messages['binary'] = 'binární';
-$messages['binary_in_wp'] = 'http://cs.wikipedia.org/wiki/Bin%C3%A1rn%C3%AD_vyhled%C3%A1v%C3%A1n%C3%AD';
+$messages['binary_in_wp'] = 'https://cs.wikipedia.org/wiki/Bin%C3%A1rn%C3%AD_vyhled%C3%A1v%C3%A1n%C3%AD';
 $messages['linear'] = 'lineární';
 $messages['interpolated'] = 'binární (rychlejší s více verzemi)';
 $messages['ignore_minors'] = 'ignorovat malé editace (experimentální)';
