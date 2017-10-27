@@ -14,6 +14,7 @@
  * @author Dimension
  * @author Hydra
  * @author Liuxinyu970226
+ * @author Od1n
  * @author PhiLiP
  * @author Shizhao
  * @author Yfdyh000
@@ -42,20 +43,22 @@ $messages['ignorefirst'] = '忽略开始的x个版本';
 $messages['limit'] = '要检查的版本数量';
 $messages['start_date'] = '开始日期';
 $messages['date_format'] = 'YYYY MM DD';
+$messages['revision_date_format'] = '%Y年%B%d日 %H:%M';
 $messages['order'] = '排序';
 $messages['newest_first'] = '从最近开始';
 $messages['oldest_first'] = '从最早开始';
 $messages['binary_search_inverse'] = '搜索移除相关文本的编辑（仅限二分法搜索）';
 $messages['search_method'] = '搜索方式';
 $messages['binary'] = '二分法';
-$messages['binary_in_wp'] = 'http://zh.wikipedia.org/wiki/折半搜索算法';
+$messages['binary_in_wp'] = 'https://zh.wikipedia.org/wiki/折半搜索算法';
 $messages['linear'] = '线性';
 $messages['interpolated'] = '二分法（在版本更多时更快）';
 $messages['ignore_minors'] = '忽略小修改（实验功能）';
-$messages['force_wikitags'] = '强制搜索 wikitext';
+$messages['force_wikitags'] = '强制搜索wiki文本';
 $messages['start'] = '开始';
 $messages['reset'] = '重置';
 $messages['manual'] = '手册';
+$messages['manual_link'] = 'https://zh.wikipedia.org/wiki/User:Gqqnb/WikiBlame文档';
 $messages['contact'] = '联系';
 $messages['get_less_versions'] = '您的搜索可能一次查询 __NUMREVISIONS__ 个修订版本。为了保护服务器，您的每次调用只被允许查询 __ALLOWEDREVISIONS__ 个修订。请更改设置或切换查询模式到二分法搜索！';
 $messages['wrong_skips'] = '错误的设置：如果跳过__VERSIONSTOSKIP__个版本，那么要搜索的__VERSIONSTOSEARCH__个版本将不会被处理。';
@@ -66,7 +69,7 @@ $messages['inverse_restart'] = '找不到插入或移除的内容，搜索关键
 $messages['first_version'] = '更改是在第一个或最新的版本中发生的吧？';
 $messages['first_version_present'] = '__NEEDLE__已存在于最旧修订版本，搜索可追溯到__REVISIONLINK__。';
 $messages['earlier_versions_available'] = '可能存在更旧的修订版本。';
-$messages['execution_time'] = '执行时间： _EXECUTIONTIME_ 秒';
+$messages['execution_time'] = '执行时间：_EXECUTIONTIME_秒';
 $messages['versions_found'] = '发现 _NUMBEROFVERSIONS_ 个版本';
 $messages['please_wait'] = '请稍等 …';
 $messages['binary_test'] = '由 _SOURCENUMBER_ 开始，正在比较在 _FIRSTNUMBER_ 和 _SECONDNUMBER_ 之间的差异 _FIRSTDATEVERSION_ ：';

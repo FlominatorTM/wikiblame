@@ -15,6 +15,7 @@
  * @author Flominator
  * @author IvanLanin
  * @author Iwan Novirion
+ * @author Od1n
  */
 
 $messages['January'] = 'Januari';
@@ -45,7 +46,7 @@ $messages['oldest_first'] = 'mulai dengan terlama';
 $messages['binary_search_inverse'] = 'Cari penghapusan teks (biner saja)';
 $messages['search_method'] = 'Metode pencarian';
 $messages['binary'] = 'biner';
-$messages['binary_in_wp'] = 'http://id.wikipedia.org/wiki/Pencarian_biner';
+$messages['binary_in_wp'] = 'https://id.wikipedia.org/wiki/Pencarian_biner';
 $messages['linear'] = 'linier';
 $messages['interpolated'] = 'biner (lebih cepat jika versi lebih banyak)';
 $messages['ignore_minors'] = 'abaikan perubahan minor (eksperimental)';

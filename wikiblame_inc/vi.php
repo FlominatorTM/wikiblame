@@ -11,6 +11,7 @@
  * @file
  *
  * @author Minh Nguyen
+ * @author Od1n
  * @author Tuankiet65
  * @author Vinhtantran
  */
@@ -44,7 +45,7 @@ $messages['oldest_first'] = 'cũ nhất trước';
 $messages['binary_search_inverse'] = 'Tìm các thay đổi xóa văn bản (chỉ có nhị phân)';
 $messages['search_method'] = 'Phương pháp tìm kiếm';
 $messages['binary'] = 'nhị phân';
-$messages['binary_in_wp'] = 'http://vi.wikipedia.org/wiki/Tìm_kiếm_nhị_phân';
+$messages['binary_in_wp'] = 'https://vi.wikipedia.org/wiki/Tìm_kiếm_nhị_phân';
 $messages['linear'] = 'tuyến tính';
 $messages['interpolated'] = 'nhị phân (nhanh hơn với nhiều phiên bản)';
 $messages['ignore_minors'] = 'bỏ qua sửa đổi nhỏ (thử nghiệm)';

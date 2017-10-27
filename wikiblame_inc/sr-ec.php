@@ -14,6 +14,7 @@
  * @author FriedrickMILBarbarossa
  * @author Milicevic01
  * @author Obsuser
+ * @author Od1n
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -43,13 +44,14 @@ $messages['ignorefirst'] = 'Занемари првих x издања';
 $messages['limit'] = 'Издања за проверу';
 $messages['start_date'] = 'Почетни датум';
 $messages['date_format'] = 'DD MM YYYY';
+$messages['revision_date_format'] = '%d. %B %Y, %H:%M';
 $messages['order'] = 'Редослед';
 $messages['newest_first'] = 'прво новије';
 $messages['oldest_first'] = 'прво старије';
 $messages['binary_search_inverse'] = 'Тражи уклањање текста (бинарно)';
 $messages['search_method'] = 'Начин претраге:';
 $messages['binary'] = 'бинаран';
-$messages['binary_in_wp'] = 'http://sr.wikipedia.org/wiki/Бинарна_претрага';
+$messages['binary_in_wp'] = 'https://sr.wikipedia.org/wiki/Бинарна_претрага';
 $messages['linear'] = 'линеаран';
 $messages['interpolated'] = 'бинаран (брже с више издања)';
 $messages['ignore_minors'] = 'Занемари мање измене (пробно)';
@@ -57,9 +59,9 @@ $messages['force_wikitags'] = 'Приморај тражење викитекс�
 $messages['start'] = 'Започни';
 $messages['reset'] = 'Поништи';
 $messages['manual'] = 'Приручник';
-$messages['manual_link'] = 'http://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=sr';
+$messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=sr';
 $messages['contact'] = 'Контакт';
-$messages['contact_link'] = 'http://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=sr';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=sr';
 $messages['get_less_versions'] = 'Претрага може исписати __NUMREVISIONS__ измена одједном. Ради безбедности сервера, дозвољено вам је да тражите __ALLOWEDREVISIONS__ по позиву. Промените поставке или начин претраге на бинарни.';
 $messages['wrong_skips'] = 'Погрешне поставке: ако је првих __VERSIONSTOSKIP__ издања прескочено, онда ниједно од __VERSIONSTOSEARCH__ издања која се траже неће бити обрађено.';
 $messages['search_in_progress_text'] = 'Историја издања чланка _ARTICLELINK_ се тражи за <b>_NEEDLE_</b> као обичан текст';
@@ -75,6 +77,7 @@ $messages['please_wait'] = 'Сачекајте…';
 $messages['binary_test'] = 'Поређење разлика у _FIRSTDATEVERSION_ између _FIRSTNUMBER_ и _SECONDNUMBER_ што долази из _SOURCENUMBER_:';
 $messages['dead_end'] = 'Претрага је дошла до мртве тачке. Узрок је вероватно враћање измена или уређивачки рат.';
 $messages['once_more'] = 'Поновљена претрага:';
+$messages['delete_from_here'] = 'Брисање _NUMBEROFVERSIONS_ ранијих измена, пошто је уклањање извршено касније';
 $messages['binary_enough'] = 'Извршено је довољно покушаја, историја чланка је збркана. Промените неке поставке.';
 $messages['insertion_found'] = 'Унос је пронађен између LEFT_VERSION и RIGHT_VERSION';
 $messages['deletion_found'] = 'Брисање је пронађено између LEFT_VERSION и RIGHT_VERSION';

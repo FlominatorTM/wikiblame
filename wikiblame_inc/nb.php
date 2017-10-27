@@ -13,6 +13,7 @@
  * @author Flominator
  * @author Jon Harald Søby
  * @author Nghtwlkr
+ * @author Od1n
  * @author SuperPotato
  * @author Tarjeimo
  * @author Wouterkoch
@@ -46,7 +47,7 @@ $messages['oldest_first'] = 'eldste først';
 $messages['binary_search_inverse'] = 'Se etter fjerning av tekst (kun binært)';
 $messages['search_method'] = 'Søkemetode';
 $messages['binary'] = 'binært';
-$messages['binary_in_wp'] = 'http://no.wikipedia.org/wiki/Bin%C3%A6rs%C3%B8k';
+$messages['binary_in_wp'] = 'https://no.wikipedia.org/wiki/Bin%C3%A6rs%C3%B8k';
 $messages['linear'] = 'lineær';
 $messages['interpolated'] = 'binært (raskere med flere versjoner)';
 $messages['ignore_minors'] = 'ignorer mindre endringer (eksperimentell)';

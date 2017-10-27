@@ -14,6 +14,7 @@
  * @author Eleassar
  * @author Flominator
  * @author Irena Plahuta
+ * @author Od1n
  */
 
 $messages['January'] = 'januar';
@@ -44,7 +45,7 @@ $messages['oldest_first'] = 'starejši najprej';
 $messages['binary_search_inverse'] = 'Poglej za odstranitev besedila (samo dvojiško)';
 $messages['search_method'] = 'Način iskanja';
 $messages['binary'] = 'binarno';
-$messages['binary_in_wp'] = 'http://sl.wikipedia.org/wiki/Binarno_iskanje';
+$messages['binary_in_wp'] = 'https://sl.wikipedia.org/wiki/Binarno_iskanje';
 $messages['linear'] = 'linearno';
 $messages['interpolated'] = 'dvojiško (hitrejše pri več različicah)';
 $messages['ignore_minors'] = 'prezri manjše spremembe (preizkusno)';

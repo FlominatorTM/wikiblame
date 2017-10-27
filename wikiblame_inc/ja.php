@@ -13,6 +13,7 @@
  * @author Aotake
  * @author Flominator
  * @author Fryed-peach
+ * @author Od1n
  * @author Omotecho
  * @author Otokoume
  * @author Shirayuki
@@ -48,7 +49,7 @@ $messages['oldest_first'] = '古い順';
 $messages['binary_search_inverse'] = 'テキストの除去を探す (二分探索)';
 $messages['search_method'] = '探索方法';
 $messages['binary'] = '二分探索';
-$messages['binary_in_wp'] = 'http://ja.wikipedia.org/wiki/二分探索';
+$messages['binary_in_wp'] = 'https://ja.wikipedia.org/wiki/二分探索';
 $messages['linear'] = '線型';
 $messages['interpolated'] = '二分探索 (版が多い場合は高速)';
 $messages['ignore_minors'] = '細部の編集を無視 (実験的)';
@@ -56,7 +57,7 @@ $messages['force_wikitags'] = 'ウィキテキストとして検索';
 $messages['start'] = '開始';
 $messages['reset'] = 'リセット';
 $messages['manual'] = 'マニュアル';
-$messages['manual_link'] = 'http://ja.wikipedia.org/wiki/Wikipedia:%E3%83%84%E3%83%BC%E3%83%AB/WikiBlame';
+$messages['manual_link'] = 'https://ja.wikipedia.org/wiki/Wikipedia:%E3%83%84%E3%83%BC%E3%83%AB/WikiBlame';
 $messages['contact'] = '連絡先';
 $messages['get_less_versions'] = 'あなたの検索クエリは__NUMREVISIONS__件の版を一度に検査する可能性があります。サーバーを保護するため、一度の呼び出しでは__ALLOWEDREVISIONS__件までに制限されています。設定を変更するか、検索方法を二分探索にしてください!';
 $messages['wrong_skips'] = '設定の不備: 初めの__VERSIONSTOSKIP__版をとばしてしまうと、検査すべき__VERSIONSTOSEARCH__版のどれも処理されないことになります。';

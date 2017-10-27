@@ -15,6 +15,7 @@
  * @author Flominator
  * @author Nedergard
  * @author Nike
+ * @author Od1n
  * @author Pyscowicz
  * @author Silvonen
  * @author VezonThunder
@@ -48,7 +49,7 @@ $messages['oldest_first'] = 'vanhimmat ensin';
 $messages['binary_search_inverse'] = 'Etsi tekstipoistoa (vain binaari)';
 $messages['search_method'] = 'Hakualgoritmi';
 $messages['binary'] = 'binaarinen';
-$messages['binary_in_wp'] = 'http://fi.wikipedia.org/wiki/Puolitushaku';
+$messages['binary_in_wp'] = 'https://fi.wikipedia.org/wiki/Puolitushaku';
 $messages['linear'] = 'lineraarinen';
 $messages['interpolated'] = 'binaari (nopeampi, jos versioita on paljon)';
 $messages['ignore_minors'] = 'Ohita pienet muutokset (kokeellinen)';

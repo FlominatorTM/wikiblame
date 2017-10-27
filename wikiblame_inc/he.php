@@ -14,6 +14,7 @@
  * @author Flominator
  * @author Guycn2
  * @author Neukoln
+ * @author Od1n
  * @author Rotemliss
  * @author YaronSh
  * @author Yoni <yonidebest AT  gmail.com>
@@ -48,7 +49,7 @@ $messages['oldest_first'] = 'מהישנה יותר לעדכנית';
 $messages['binary_search_inverse'] = 'חיפוש מחיקת טקסט (בינארי בלבד)';
 $messages['search_method'] = 'שיטת חיפוש';
 $messages['binary'] = 'בינארי';
-$messages['binary_in_wp'] = 'http://he.wikipedia.org/wiki/%D7%97%D7%99%D7%A4%D7%95%D7%A9_%D7%91%D7%99%D7%A0%D7%90%D7%A8%D7%99';
+$messages['binary_in_wp'] = 'https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%A4%D7%95%D7%A9_%D7%91%D7%99%D7%A0%D7%90%D7%A8%D7%99';
 $messages['linear'] = 'לינארי';
 $messages['interpolated'] = 'בינארי (מהיר יותר כשיש מספר רב של גרסאות)';
 $messages['ignore_minors'] = 'התעלמות מעריכות משניות (ניסיוני)';

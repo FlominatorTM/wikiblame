@@ -17,6 +17,7 @@
  * @author Lemondoge
  * @author Lockal
  * @author MaxBioHazard
+ * @author Od1n
  * @author Okras
  * @author Александр Сигачёв
  */
@@ -44,13 +45,14 @@ $messages['ignorefirst'] = 'Не учитывать первые X версий'
 $messages['limit'] = 'Количество версий для проверки';
 $messages['start_date'] = 'Дата начала';
 $messages['date_format'] = 'DD.MM.YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Порядок';
 $messages['newest_first'] = 'вначале новейшие';
 $messages['oldest_first'] = 'вначале старейшие';
 $messages['binary_search_inverse'] = 'Поиск удаления текста (только двоичный)';
 $messages['search_method'] = 'Способ поиска';
 $messages['binary'] = 'двоичный';
-$messages['binary_in_wp'] = 'http://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA';
+$messages['binary_in_wp'] = 'https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA';
 $messages['linear'] = 'линейный';
 $messages['interpolated'] = 'двоичный (быстрее, если много версий)';
 $messages['ignore_minors'] = 'Не учитывать малые изменения (экспериментально)';

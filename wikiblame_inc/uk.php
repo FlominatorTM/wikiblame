@@ -14,6 +14,7 @@
  * @author Gucci Mane Burrr
  * @author KEL
  * @author Microcell
+ * @author Od1n
  * @author Olvin
  * @author Piramidion
  * @author Prima klasy4na
@@ -49,7 +50,7 @@ $messages['oldest_first'] = 'Спочатку старіші';
 $messages['binary_search_inverse'] = 'Пошук видаленого тексту (тільки двійковий)';
 $messages['search_method'] = 'Метод пошуку';
 $messages['binary'] = 'двійковий';
-$messages['binary_in_wp'] = 'http://uk.wikipedia.org/wiki/%D0%94%D0%B2%D1%96%D0%B9%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%BF%D0%BE%D1%88%D1%83%D0%BA';
+$messages['binary_in_wp'] = 'https://uk.wikipedia.org/wiki/%D0%94%D0%B2%D1%96%D0%B9%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%BF%D0%BE%D1%88%D1%83%D0%BA';
 $messages['linear'] = 'лінійний';
 $messages['interpolated'] = 'двійковий (швидше, якщо багато версій)';
 $messages['ignore_minors'] = 'не враховувати незначні зміни (у розробці)';

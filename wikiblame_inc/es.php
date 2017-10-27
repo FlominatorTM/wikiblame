@@ -16,6 +16,7 @@
  * @author Fitoschido
  * @author Macofe
  * @author McDutchie
+ * @author Od1n
  * @author Pertile
  * @author Peter17
  * @author VegaDark
@@ -58,7 +59,7 @@ $messages['force_wikitags'] = 'Forzar la búsqueda de wikitexto';
 $messages['start'] = 'Iniciar';
 $messages['reset'] = 'Restablecer';
 $messages['manual'] = 'Manual';
-$messages['manual_link'] = 'http://es.wikipedia.org/wiki/Usuario:XalD/WikiBlame';
+$messages['manual_link'] = 'https://es.wikipedia.org/wiki/Usuario:XalD/WikiBlame';
 $messages['contact'] = 'Contacto';
 $messages['get_less_versions'] = 'Tu búsqueda podría consultar __NUMREVISIONS__ revisiones a la vez. Con el fin de proteger el servidor, solamente estás permitido consultar por __ALLOWEDREVISIONS__ por llamada. Por favor cambia la configuración o el método de búsqueda a binario.';
 $messages['wrong_skips'] = 'Configuraciones erróneas: Si las primeras __VERSIONSTOSKIP__ versiones se omiten, entonces ninguna de las __VERSIONSTOSEARCH__ versiones que buscar se procesarán.';

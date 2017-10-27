@@ -35,6 +35,7 @@ $messages['ignorefirst'] = 'Saltar les primeres x versiones';
 $messages['limit'] = 'Versiones a comprobar';
 $messages['start_date'] = 'Data d\'aniciu';
 $messages['date_format'] = 'DD MM YYYY';
+$messages['revision_date_format'] = '%d %B de %Y, a les %H:%M';
 $messages['order'] = 'Orde';
 $messages['newest_first'] = 'últimes primero';
 $messages['oldest_first'] = 'la más antigua primero';
