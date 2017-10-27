@@ -1012,7 +1012,6 @@ function clear_array_starting_at(&$versions, $first_to_remove)
     $end = count($versions);
     for($i=$first_to_remove;$i<$end;$i++)
     {
-        echo "unset(versions[$i])<br>";
         unset($versions[$i]);
     }
 }
