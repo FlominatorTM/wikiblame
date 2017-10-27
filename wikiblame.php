@@ -973,6 +973,28 @@ function binary_search($middle, $from)
 					echo "<font color=\"red\">X</font><br>\n";
 					$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $deletion_found).': ';
+                    if(!$binary_search_inverse)
+                    {
+                        //was inserted before it got deleted
+                        //forget everything later than this version and do re-indexing
+                        $first_to_remove = 0;
+                        $last_to_remove = $middle;
+                        echo "<br>";
+                        echo str_replace('_NUMBEROFVERSIONS_', $last_to_remove-$first_to_remove, $messages['delete_until_here']).'<br><br>';
+                        for($i=$first_to_remove;$i<$last_to_remove;$i++)
+                        {
+                            $old_index = $last_to_remove+$i;
+                            $new_index = $i;
+                            //echo "$old_index => $new_index<br>";
+                            $versions[$new_index] = $versions[$old_index];
+                            unset($versions[$old_index]);
+                        }                  
+                        
+                        $count =  count($versions);
+                        echo str_replace('_NUMBEROFVERSIONS_', $count, $messages['versions_found']).'<br>';
+                        binary_search(floor($count/2), $count-1);                        
+                        return; //new search started, therefore we don't continue with this one
+                    }
 				}			
 				$difflink = get_diff_link($versions[$middle]);
 				$end_of_opening_a = strpos($difflink, '>');
