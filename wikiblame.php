@@ -830,8 +830,9 @@ function binary_search($middle, $from)
         }
 	}*/
 
-    $earliest_index = count($versions)-1;
-    if($from == $earliest_index && !$binary_search_inverse)
+    $first_possible_from_value = count($versions);
+    $earliest_index = $first_possible_from_value-1;
+    if($from == $first_possible_from_value && !$binary_search_inverse)
     {
         if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
         {
