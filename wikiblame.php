@@ -919,13 +919,21 @@ function binary_search($middle, $from)
 			{
 				//looking for removal => found in both => must have been removed later => remove the rest
                 $first_to_remove = $middle + 2; //$middle + 1 was checked and might be needed for output
-                
-                echo str_replace('_NUMBEROFVERSIONS_', $last_to_remove-$first_to_remove, $messages['delete_from_here']).'<br><br>';
-                
-                clear_array_starting_at($versions, $first_to_remove);
-                
-                echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
-                binary_search_from_earliest_index($versions); 
+                $count = count($versions);
+                if($count>$first_to_remove)
+                {
+                    echo str_replace('_NUMBEROFVERSIONS_', $count-$first_to_remove, $messages['delete_from_here']).'<br><br>';
+                    
+                    clear_array_starting_at($versions, $first_to_remove);
+                    
+                    echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
+                    binary_search_from_earliest_index($versions); 
+                }
+                else
+                {
+                    //prevent endless loops in the last four revisions
+                    binary_search(floor($middle-1), $middle);
+                }
                 
 			}
 			else
