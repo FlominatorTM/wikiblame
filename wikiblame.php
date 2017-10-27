@@ -429,7 +429,7 @@ function do_search()
 	{
 		if($use_binary_search)
 		{
-			binary_search(floor(count($versions)/2), count($versions)-1);
+            binary_search_from_earliest_index($versions);
 		}
 		else
 		{
@@ -816,7 +816,7 @@ function binary_search($middle, $from)
 	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit, $articleenc, $deleted_revisions;
 	//echo "binary_search(".$middle.",".$from.")";
 	
-	if($middle<0)
+	/*if($middle<0)
 	{
         if($from != 2 && $from != 1)
         {
@@ -828,7 +828,7 @@ function binary_search($middle, $from)
         {
             $middle=0;
         }
-	}
+	}*/
 
     $earliest_index = count($versions)-1;
     if($from == $earliest_index && !$binary_search_inverse)
@@ -842,7 +842,7 @@ function binary_search($middle, $from)
                 //start_over_here($versions[$earliest_index]['legacy']);
                 $offset = $versions[$earliest_index]['offset'];
                 $versions = get_all_versions($articleenc, $offset);
-                binary_search(floor(count($versions)/2), count($versions)-1);
+                binary_search_from_earliest_index($versions);
             }
             $needle_ever_found = true;
             return; //either the new search was started or it was present in the initial version"
@@ -989,10 +989,8 @@ function binary_search($middle, $from)
                             $versions[$new_index] = $versions[$old_index];
                             unset($versions[$old_index]);
                         }                  
-                        
-                        $count =  count($versions);
-                        echo str_replace('_NUMBEROFVERSIONS_', $count, $messages['versions_found']).'<br>';
-                        binary_search(floor($count/2), $count-1);                        
+                        echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
+                        binary_search_from_earliest_index($versions);                       
                         return; //new search started, therefore we don't continue with this one
                     }
 				}			
@@ -1005,6 +1003,12 @@ function binary_search($middle, $from)
 		}
 	}
 
+}
+ 
+function binary_search_from_earliest_index($versions)
+{
+    $earliest_index = count($versions);
+    binary_search(floor($earliest_index/2), $earliest_index);
 }
  
 function get_diff_link($version, $order="prev")
