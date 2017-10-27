@@ -925,7 +925,7 @@ function binary_search($middle, $from)
                 clear_array_starting_at($versions, $first_to_remove);
                 
                 echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
-				binary_search(floor($middle-$step_length), $middle);
+                binary_search_from_earliest_index($versions); 
                 
 			}
 			else
