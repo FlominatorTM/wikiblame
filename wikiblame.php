@@ -816,7 +816,7 @@ function binary_search($middle, $from)
 	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit, $articleenc, $deleted_revisions;
 	//echo "binary_search(".$middle.",".$from.")";
 	
-	if($middle<1)
+	if($middle<0)
 	{
         if($from != 2 && $from != 1)
         {
