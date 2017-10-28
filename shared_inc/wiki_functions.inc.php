@@ -28,7 +28,6 @@ if($limit=="")
 }
 
 
-//http://stackoverflow.com/a/6609181/4609258
 function purge($server, $article, $is_debug=false)
 {
 	$url = "https://".$server."/w/api.php";
