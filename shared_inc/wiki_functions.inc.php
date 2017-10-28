@@ -132,8 +132,8 @@ function get_history($server, $articleenc, $limit=50, $offset="")
 		$offset = strftime("%Y%m%d%H%M%S");
 	}
 	
-	$historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset";
-	return get_request($server, $historyurl);
+	$historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset";
+	return curl_request($historyurl);
 }
 
 function curl_request($url, $post_data = null)
