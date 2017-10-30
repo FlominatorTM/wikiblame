@@ -25,18 +25,18 @@
  * @author Selven
  */
 
-$messages['January'] = 'Gennaio';
-$messages['February'] = 'Febbraio';
-$messages['March'] = 'Marzo';
-$messages['April'] = 'Aprile';
-$messages['May'] = 'Maggio';
-$messages['June'] = 'Giugno';
-$messages['July'] = 'Luglio';
-$messages['August'] = 'Agosto';
-$messages['September'] = 'Settembre';
-$messages['October'] = 'Ottobre';
-$messages['November'] = 'Novembre';
-$messages['December'] = 'Dicembre';
+$messages['January'] = 'gennaio';
+$messages['February'] = 'febbraio';
+$messages['March'] = 'marzo';
+$messages['April'] = 'aprile';
+$messages['May'] = 'maggio';
+$messages['June'] = 'giugno';
+$messages['July'] = 'luglio';
+$messages['August'] = 'agosto';
+$messages['September'] = 'settembre';
+$messages['October'] = 'ottobre';
+$messages['November'] = 'novembre';
+$messages['December'] = 'dicembre';
 $messages['ui_lang'] = 'Lingua di visualizzazione';
 $messages['lang'] = 'Lingua';
 $messages['project'] = 'Progetto';

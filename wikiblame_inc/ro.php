@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Adrianbblk
  * @author Flominator
  * @author Minisarm
  * @author Od1n
@@ -44,7 +45,7 @@ $messages['oldest_first'] = 'întâi cele mai vechi';
 $messages['binary_search_inverse'] = 'Caută eliminări de text (doar binar)';
 $messages['search_method'] = 'Metodă de căutare';
 $messages['binary'] = 'binară';
-$messages['binary_in_wp'] = 'https://ro.wikipedia.org/wiki/C%C4%83utare_binar%C4%83';
+$messages['binary_in_wp'] = 'https://en.wikipedia.org/wiki/Binary_search_algorithm';
 $messages['linear'] = 'lineară';
 $messages['interpolated'] = 'binară (mai rapidă în cazul unui număr mare de versiuni)';
 $messages['ignore_minors'] = 'Ignoră modificările minore (experimental)';

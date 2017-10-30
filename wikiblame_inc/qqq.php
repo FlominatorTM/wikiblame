@@ -82,7 +82,7 @@ $messages['binary'] = 'Radio button option for \'search method\'. See [http://wi
 There is a [[w:en:Binary_search_algorithm|Wikipedia article explaining how it works]].
 {{Identical|Binary}}';
 $messages['binary_in_wp'] = '{{Optional}}
-Link to your local wikipedia article about Binary_search_algorithm';
+Link to your local wikipedia article about Binary search algorithm (see [[w:d:Q243754|Wikidata]] if you can\'t find it easy).';
 $messages['linear'] = 'Radio button option for \'search method\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['interpolated'] = 'Interpolated is a binary search. It is faster than linear search when a lot of versions have to be checked. Radio button option for search \'order\' (not yet used?). See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['ignore_minors'] = 'Checkbox option. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
