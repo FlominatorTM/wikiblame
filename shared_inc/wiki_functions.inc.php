@@ -28,82 +28,6 @@ if($limit=="")
 }
 
 
-function removeheaders($buf) {
-	preg_match ("/\r\n\r\n(.*)$/is",$buf,$hit);
-	return $hit[1];
-}
-
-
-function get_request($server,$page,$ignore_redir=false) {
-	set_time_limit(120);
-	//echo $server.$page;
-
-	$fp = fsockopen ($server, 80, $errno, $errstr, 3);
-
-	if (!$fp) {
-			echo "Problem beim Zugriff auf ";
-			echo "<a href=\"".$server.$page."\">".$server.$page."</a>:\n";
-			echo "Fehler $errno -  $errstr<br />\n";
-	} else {
-
-	if (!defined ('USERAGENT')) {
-		define('USERAGENT', "script by de_user_Flominator");
-	}
-	$buf = "";
-	$http_command = "GET $page HTTP/1.0\r\nHost: $server \r\nUser-Agent: ".USERAGENT."\r\n\r\n";
-	//echo $http_command;
-		fputs ($fp,$http_command);
-
-		while (!feof($fp)) {
-			$buf.= fgets($fp,128);
-		}
-
-		fclose($fp);
-
-		//$buf2=getheaders($buf);
-
-		//preg_match('@Location: http://(.*)/(.*)\r\n@iU',$buf2,$hit);
-/* Hit is undefined...
-		if($hit[1]!="" && (!$ignore_redir)) {
-			$buf=get_request($hit[1],"/".$hit[2]);
-		}
-*/
-		// flush();
-		// Commented out by Lupo, 2010-05-10. This flushes the output buffer and causes
-		// the "Cannot modify header information - headers already sent" error! 
-		return $buf;
-
-	}
-}
-//http://www.php-faq.de/q-code-post.html
-//todo: can be replaced by the solutin from purge()  below
-function post_request($host, $path, $referer, $data_to_send) {
-  $fp = fsockopen($host, 80);
-  //printf("Open!\n");
-  fputs($fp, "POST $path HTTP/1.1\r\n");
-  fputs($fp, "Host: $host\r\n");
-  fputs($fp, "Referer: $referer\r\n");
-    if (!defined ('USERAGENT')) {
-		define('USERAGENT', "script by de_user_Flominator");
-	}
-
-  fputs($fp, "User-Agent: ".USERAGENT."\r\n");
-  fputs($fp, "Content-type: application/x-www-form-urlencoded\r\n");
-  fputs($fp, "Content-length: ". strlen($data_to_send) ."\r\n");
-  
-  fputs($fp, "Connection: close\r\n\r\n");
-  fputs($fp, $data_to_send);
-  //printf("Sent!\n");
-  while(!feof($fp)) {
-      $res .= fgets($fp, 128);
-  }
-  //printf("Done!\n");
-  fclose($fp);
- 
-  return $res;
-}
-
-//http://stackoverflow.com/a/6609181/4609258
 function purge($server, $article, $is_debug=false)
 {
 	$url = "https://".$server."/w/api.php";
@@ -132,8 +56,8 @@ function get_history($server, $articleenc, $limit=50, $offset="")
 		$offset = strftime("%Y%m%d%H%M%S");
 	}
 	
-	$historyurl = "http://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset";
-	return get_request($server, $historyurl);
+	$historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset";
+	return curl_request($historyurl);
 }
 
 function curl_request($url, $post_data = null)
