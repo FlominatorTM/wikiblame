@@ -869,6 +869,7 @@ function binary_search($middle, $from)
 		{
             if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
             {
+                 $needle_ever_found = true;
                 //must have been removed between earliest and where we just checked
                 $middle = floor($from + ($earliest_index-$from)/2);
                 binary_search($middle, $from);
