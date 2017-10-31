@@ -585,7 +585,9 @@ function add_one_version($one_version, &$versions)
     $versions[] = array('offset' => $offset,
                         'timestamp' => $timestamp,
                         'id' => $id,
-                        'local_date' => $date_localized);
+                        'local_date' => $date_localized,
+                        'checked' => false,
+                        'found' => false);
 }
 
 function checkversions ($versions, $skipversions, $ignorefirst)
@@ -594,7 +596,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 
 	$version_counter = 0;
 	echo "<ul>";
-	foreach($versions as $version)
+	for($i=0;$i<count($versions);$i++)
 	{
 		echo "<li>". get_diff_link($version);
 		
@@ -602,8 +604,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 		{
 			if($version_counter==0)
 			{
-				$rev_text = get_revision($version['id']);
-				if(stristr($rev_text, $needle))
+				if(needle_in_version($needle, $versions, $i))
 				{
 					echo " <font color=\"green\">OOO</font>\n";
 					$needle_ever_found = true;
@@ -612,7 +613,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 				{
 					echo " <font color=\"red\">XXX</font>\n";
 				}
-				start_over_here($version['offset'], $skipversions);
+				start_over_here($versions[$i]['offset'], $skipversions);
 				$version_counter=$skipversions;
 			}
 			else
@@ -806,12 +807,23 @@ function needle_regex($needle)
 	return($needle);
 }
 
+function needle_in_version ($needle, &$versions, $index)
+{
+    if(!$versions[$index]['checked'])
+    {
+        $rev_text = get_revision($versions[$index]['id']);
+        $found = stristr($rev_text, $needle); 
+        $versions[$index]['checked'] = true;
+        $versions[$index]['found'] = $found;
+    }
+    return  $versions[$index]['found'];
+}
 function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
 {
     global $messages;
     //checking first/earliest revision => highest array index
-    $rev_text = get_revision($versions[$earliest_index]['id']);
-    $found_in_earliest_revision = stristr($rev_text, $needle); 
+    $found_in_earliest_revision = needle_in_version ($needle, $versions, $earliest_index);
+    
     if($found_in_earliest_revision)
     {
         $revLink = get_diff_link($versions[$earliest_index]);
@@ -895,9 +907,7 @@ function binary_search($middle, $from)
 		{	
             if($binary_search_retries>0)
             {
-                $rev_text = get_revision($versions[$middle]['id']);
-                $in_this = stristr($rev_text, $needle);
-                if($in_this)
+                if(needle_in_version ($needle, $versions, $middle))
                 {
                     //was present here already, remove later revisions
                     clear_array_until_including($versions, $middle+1); //middle+1 might be the inserting revision
@@ -937,9 +947,8 @@ function binary_search($middle, $from)
 		 [2]: 18. Jan. 2011 17:00
 		 [3]: 15. Jan. 2011 15:00 */
 		  
-		$rev_text = get_revision($versions[$middle]['id']);
-		$in_this = stristr($rev_text, $needle);
-		$in_next = stristr(get_revision($versions[$middle+1]['id']), $needle);
+		$in_this = needle_in_version ($needle, $versions, $middle);
+		$in_next = needle_in_version ($needle, $versions, $middle+1);
 		$step_length = abs(($from-$middle)/2);
 		if($in_this AND $in_next)
 		{
