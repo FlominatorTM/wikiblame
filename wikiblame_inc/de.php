@@ -65,8 +65,7 @@ $messages['wrong_skips'] = 'Falsche Einstellung: Sofern die ersten __VERSIONSTOS
 $messages['search_in_progress_text'] = 'Die Versionsgeschichte des Artikels _ARTICLELINK_ wird nach <b>_NEEDLE_</b> als einfachem Text durchsucht';
 $messages['search_in_progress_wikitags'] = 'Die Versionsgeschichte von _ARTICLELINK_ wird nach <b>_NEEDLE_</b> als Wikitext durchsucht';
 $messages['no_differences'] = 'Keine Unterschiede in den durchsuchten Versionen gefunden';
-$messages['inverse_restart'] = 'Keine Einfügung oder Löschung gefunden. Wurde der Suchbegr
-iff vielleicht später eingefügt?';
+$messages['inverse_restart'] = 'Keine Einfügung oder Löschung gefunden. Wurde der Suchbegriff vielleicht später eingefügt?';
 $messages['inverse_stuck'] = 'Keine Einfügung oder Löschung in diesen  _NUMBEROFVERSIONS_  Versionen gefunden. Wurde der Suchbegriff vielleicht früher eingefügt?';
 $messages['inverse_earliest'] = 'Frühere Versionen durchsuchen';
 $messages['first_version'] = 'Die Änderung muss in der ersten oder letzten Version passiert sein?';
