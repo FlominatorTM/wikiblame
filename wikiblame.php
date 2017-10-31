@@ -710,13 +710,12 @@ function get_month_number($month_text)
 // 0: time, 1: day, 2: month, 3: year
 function extract_date_parts_from_history_link($versionpage)
 {
-    global $article;
     $ret = false;
-    // every revision (except the current on contains a text like this:
+    // every revision history link contains a text like this:
 	//<a href="/w/index.php?title=Hinterzarten&amp;oldid=151152765" class="mw-changeslist-date" title="Hinterzarten">17:28, 6 February 2016
 
-	$strBegin = "title=\"$article\">";
-	$beginning = strpos($versionpage, $strBegin);
+	$strBegin = ">"; 
+	$beginning = strrpos($versionpage, $strBegin);
 
 	if($beginning>0) //this is not the current revision (which looks different)
 	{

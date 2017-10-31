@@ -8,6 +8,7 @@ http://wikipedia.ramselehof.de/wikiblame.php?project=wikipedia&article=Sauergas&
 * [with one hidden revision](http://wikipedia.ramselehof.de/wikiblame.php?lang=en&project=wikipedia&article=Human+trafficking&needle=one+place+to+another&skipversions=0&ignorefirst=0&limit=500&offtag=22&offmon=10&offjahr=2017&searchmethod=int&order=desc)
 * [with a lot previous revision](http://wikipedia.ramselehof.de/wikiblame.php?user_lang=de&lang=de&project=wikipedia&article=Deutschland&needle=Adenauer&skipversions=0&ignorefirst=0&limit=500&offtag=22&offmon=10&offjahr=2017&searchmethod=int&order=desc&user=)
 * [with html tags and present in initial version](http://wikipedia.ramselehof.de/wikiblame.php?user_lang=en&lang=fr&project=wikipedia&article=Mod%C3%A8le%3AM%C3%A9ta+bandeau+d%27%C3%A9v%C3%A9nement+r%C3%A9cent&needle=%3Cu%3E&skipversions=0&ignorefirst=0&limit=50&offmon=10&offtag=23&offjahr=2017&searchmethod=int&order=desc&force_wikitags=on)
+* [with ambersand in name](http://wikipedia.ramselehof.de/wikiblame.php?user_lang=en&lang=en&project=wikipedia&article=B%26H+Photo+Video&needle=until+Saturday+evening&skipversions=0&ignorefirst=0&offtag=10&offmon=12&offjahr=2009&order=desc&searchmethod=int&limit=500)
 * [with forced https](http://wikipedia.ramselehof.de/wikiblame.php?user_lang=en&lang=wikitech&project=wikimedia&article=Deployments&needle=Week+of+June&skipversions=0&ignorefirst=0&limit=500&offmon=6&offtag=24&offjahr=2013&searchmethod=int&order=desc&force_wikitags=on)
 
 ### Search for deletion
