@@ -53,10 +53,12 @@ $messages['search_method'] = 'Search method';
 $messages['binary'] = 'binary';
 $messages['binary_in_wp'] = 'https://en.wikipedia.org/wiki/Binary_search_algorithm';
 $messages['linear'] = 'linear';
-
 $messages['interpolated'] = 'binary (faster with more versions)';
 $messages['ignore_minors'] = 'Ignore minor changes (experimental)';
 $messages['force_wikitags'] = 'Force searching for wikitext';
+$messages['from_url'] = 'Fill from url';
+$messages['paste_url'] = 'Please paste url to MediaWiki page';
+$messages['no_valid_url'] = 'This is no valid MediaWiki url';
 $messages['start'] = 'Start';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';

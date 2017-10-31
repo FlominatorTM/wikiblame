@@ -91,6 +91,68 @@ function checkScanAmount()
 	}
 }
 
+function pasteFieldsFromUrl()
+{
+    mediaWikiUrl = window.prompt('<?php echo $messages['paste_url'] ?>', '');
+    if(mediaWikiUrl==null) return;
+    var a = document.createElement('a');
+    a.href=mediaWikiUrl;
+
+    var hostParts = (a.hostname).split('.');
+    var article;
+    var language;
+    var project;
+    if(hostParts.length==3)
+    {
+        language = hostParts[0];
+        project = hostParts[1];
+    }
+    if(hostParts.length==2)
+    {
+        language = 'blank';
+        project = hostParts[0];
+    }
+
+    var titleFound = false;
+    var slashWiki = '/wiki/';
+    var slashWSlashIndex = '/w/index.php';
+    if(a.pathname.startsWith(slashWiki))
+    {
+        article = a.pathname.substr(slashWiki.length);
+        titleFound = true;
+    }
+    else if(a.pathname.startsWith(slashWSlashIndex))
+    {
+        urlParts = mediaWikiUrl.split('?');
+       
+        if(urlParts.length==2)
+        {
+            var paramParts = urlParts[1].split('&');
+            var titleEquals = 'title=';
+            for (var i=0; i<paramParts.length; i++)
+            {
+                if(paramParts[i].startsWith(titleEquals))
+                {
+                    article = paramParts[i].substr(titleEquals.length);
+                    titleFound = true;
+                    break;
+                }
+            }
+        }
+    }
+
+    if(!titleFound)
+    {
+        alert("<?php echo $messages['no_valid_url'] ?>");
+    }
+    else
+    {
+        document.forms['mainform'].elements['lang'].value=language;
+        document.forms['mainform'].elements['project'].value=project;
+        document.forms['mainform'].elements['article'].value=article;
+    }
+}
+
 function submitAndWait()
 {
 	var startButton = document.getElementById("start");
@@ -137,6 +199,7 @@ function submitAndWait()
 					</td>
 					<td>
 						<input type="text" name="article" id="article" value="<?php echo htmlspecialchars($article); ?>">
+                        <input type="button" onclick="javascript:pasteFieldsFromUrl()" value="<?php echo $messages['from_url']?>">
 					</td>
 				</tr>
 				<tr>
