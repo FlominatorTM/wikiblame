@@ -900,7 +900,7 @@ function binary_search($middle, $from)
                 if($in_this)
                 {
                     //was present here already, remove later revisions
-                    clear_array_before($versions, $middle);
+                    clear_array_until_including($versions, $middle+1); //middle+1 might be the inserting revision
                     echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
                     binary_search_from_earliest_index($versions); 
                 }
@@ -1015,7 +1015,7 @@ function binary_search($middle, $from)
                     if(!$binary_search_inverse)
                     {
                         //was inserted before it got deleted
-                        clear_array_before($versions, $middle);
+                        clear_array_until_including($versions, $middle+1);//middle+1 might be the inserting revision
 
                         echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
                         binary_search_from_earliest_index($versions);                       
@@ -1042,13 +1042,12 @@ function clear_array_starting_at(&$versions, $first_to_remove)
     }
 }
 
-function clear_array_before(&$versions, $first_to_keep)
+function clear_array_until_including(&$versions, $last_to_remove)
 {
     global $messages;
     //forget everything later than this version and do re-indexing
     $first_to_remove = 0;
-    $last_to_remove = $first_to_keep+1;
-    $end = count($versions)-1;
+    $end = count($versions)-$last_to_remove;
     echo "<br>";
     echo str_replace('_NUMBEROFVERSIONS_', $last_to_remove-$first_to_remove, $messages['delete_until_here']).'<br><br>';
     for($i=$first_to_remove;$i<$end;$i++)
@@ -1058,8 +1057,7 @@ function clear_array_before(&$versions, $first_to_keep)
         //echo "$old_index => $new_index<br>";
         $versions[$new_index] = $versions[$old_index];
     }                  
-    
-    clear_array_starting_at($versions, $end-$last_to_remove);   
+    clear_array_starting_at($versions, $end);   
 }
 function binary_search_from_earliest_index($versions)
 {
