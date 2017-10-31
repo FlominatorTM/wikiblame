@@ -21,3 +21,5 @@ http://wikipedia.ramselehof.de/wikiblame.php?project=wikipedia&article=Sauergas&
 * [with underscore in article parameter](http://wikipedia.ramselehof.de/wikiblame.php?project=wikipedia&article=Human_trafficking&needle=one+place+to+another&lang=en&limit=500&offjahr=2014&offmon=04&offtag=22&offhour=21&offmin=30&searchmethod=int&order=desc&force_wikitags=off&user_lang=de)
 ## Linear search
 * [with hidden revisions](http://wikipedia.ramselehof.de/wikiblame.php?project=wikipedia&article=AEG-Kleinow-Gestell&needle=18.047&lang=de&limit=50&offjahr=2015&offmon=11&offtag=2&offhour=23&offmin=55&searchmethod=lin&order=desc&force_wikitags=off&user_lang=de&ignorefirst=0&binary_search_inverse=false)
+* [not found at all, link to further search (was endless loop)](http://wikipedia.ramselehof.de/wikiblame.php?user_lang=de&lang=de&project=wikipedia&article=Benutzer+Diskussion%3ADoc.Heintz&needle=Vorlage%3ABilderwunsch&skipversions=0&ignorefirst=0&limit=500&offtag=31&offmon=10&offjahr=2017&searchmethod=int&order=desc&binary_search_inverse=on&force_wikitags=on&user=
+)

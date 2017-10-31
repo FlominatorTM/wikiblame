@@ -872,10 +872,16 @@ function binary_search($middle, $from)
             }
             else
             {
-                //start at a later revision (maybe it was not even inserted at this point of $from)     
-                echo $messages['inverse_restart'].'<br>';
-                binary_search(floor($from/4), floor($from/2));
-                //no clue if there would be a point in checking if was removed earlier
+                if($from>0)
+                {
+                    //start at a later revision (maybe it was not even inserted at this point of $from)     
+                    echo $messages['inverse_restart'].'<br>';
+                    binary_search(floor($from/4), floor($from/2));
+                }
+                else
+                {
+                    start_over_here($versions[$earliest_index]['legacy']);
+                }
             }
         }
 		else //looking for insertion => maybe we hit an edit war 
