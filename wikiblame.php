@@ -613,7 +613,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 				{
 					echo " <font color=\"red\">XXX</font>\n";
 				}
-				start_over_here($version['legacy'], $skipversions);
+				start_over_here($version['offset'], $skipversions);
 				$version_counter=$skipversions;
 			}
 			else
@@ -669,24 +669,28 @@ function get_revision($id)
 }
 
 //generate link to start a new search with the date of this revision
-function start_over_here($versionpage, $skip=0)
+function start_over_here($offset, $skip=0, $link_text="")
 {
 	global $messages, $limit;
-    if($dateParts = extract_date_parts_from_history_link($versionpage))
+    
+    if($link_text=="") //poor man's default parameter
     {
-		$hour = substr($dateParts[0], 0, 2);
-		$minute = substr($dateParts[0], 3, 2);
-		$day = $dateParts[1];
-		$month = $dateParts[2];		
-		$year = $dateParts[3];
-		$theUrl = get_url($year,$month , $day, $hour, $minute, false);
-		
-		if($skip != 0)
-		{
-			$theUrl = str_replace("limit=$limit", "limit=$skip", $theUrl);
-		}
-		echo "<a href=\"".$theUrl."\">[".$messages['start_here']."]</a>";
-	}
+        $link_text = $messages['start_here'];
+    }
+    $parts = str_split($offset, 2);
+    $hour = $parts[4];
+    $minute = $parts[5];
+    $day = $parts[3];
+    $month = $parts[2];		
+    $year = $parts[0].$parts[1];
+    $theUrl = get_url($year,$month , $day, $hour, $minute, false);
+    
+    if($skip != 0)
+    {
+        $theUrl = str_replace("limit=$limit", "limit=$skip", $theUrl);
+    }
+    echo "<a href=\"".$theUrl."\">[".$link_text."]</a>";
+
 
 }
 
@@ -847,7 +851,7 @@ function binary_search($middle, $from)
             {
                 //there might be revisions before 
                 echo $messages['earlier_versions_available'].' ';
-                //start_over_here($versions[$earliest_index]['legacy']);
+                //start_over_here($versions[$earliest_index]['offset']);
                 $offset = $versions[$earliest_index]['offset'];
                 $versions = get_all_versions($articleenc, $offset);
                 binary_search_from_earliest_index($versions);
@@ -880,7 +884,7 @@ function binary_search($middle, $from)
                 }
                 else
                 {
-                    start_over_here($versions[$earliest_index]['legacy']);
+                    start_over_here($versions[$earliest_index]['offset']);
                 }
             }
         }
@@ -926,7 +930,7 @@ function binary_search($middle, $from)
 		{
 			$needle_ever_found = true;
 			echo "<font color=\"green\">OO</font>\n";
-			//start_over_here($versions[$middle]['legacy'], 0, 0);
+			//start_over_here($versions[$middle]['offset'], 0, 0);
 			echo "<br>";
 			if($binary_search_inverse)
 			{
@@ -960,7 +964,7 @@ function binary_search($middle, $from)
 			if(!$in_this AND !$in_next)
 			{
 				echo "<font color=\"red\">XX</font>\n";
-				//start_over_here($versions[$middle]['legacy']);
+				//start_over_here($versions[$middle]['offset']);
 				echo "<br>";
 				if($binary_search_inverse)
 				{
@@ -1021,7 +1025,7 @@ function binary_search($middle, $from)
 				$end_of_opening_a = strpos($difflink, '>');
 				echo substr($difflink, 0, $end_of_opening_a +1) . '<b>' . $messages['here'] . '</b></a>';
 				echo "<br>";
-                start_over_here($versions[$middle]['legacy']);
+                start_over_here($versions[$middle]['offset']);
 			}
 		}
 	}
