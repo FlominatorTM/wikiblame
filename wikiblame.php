@@ -582,8 +582,7 @@ function add_one_version($one_version, &$versions)
     $date_localized = strftime($pattern, $timestamp);
 
     $id = idfromurl ($one_version);
-    $versions[] = array('legacy' => $one_version, 
-                        'offset' => $offset,
+    $versions[] = array('offset' => $offset,
                         'timestamp' => $timestamp,
                         'id' => $id,
                         'local_date' => $date_localized);
