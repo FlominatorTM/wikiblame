@@ -43,7 +43,15 @@ $allowedRevisionsPerCall = 50;
 
 $jsTextLessVersions = str_replace( "__ALLOWEDREVISIONS__", $allowedRevisionsPerCall, $messages['get_less_versions']);
 
-?>.focus();checkScanAmount();" style="background: #F9F9F9; font-family: arial; font-size: 84%;  direction: <?php  echo $text_dir ?>; unicode-bidi: embed">
+?>.focus();checkScanAmount();" style="background: <?php 
+if(stristr($_SERVER["PHP_SELF"], 'wikiblame.exp.php'))
+{
+    echo "#FFEBAD";
+}
+else 
+{
+    echo "#F9F9F9";
+}?>; font-family: arial; font-size: 84%;  direction: <?php  echo $text_dir ?>; unicode-bidi: embed">
 
 <script type="text/javascript">
 function setFormDate(year, mon, day)
