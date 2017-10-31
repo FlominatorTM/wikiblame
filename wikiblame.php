@@ -118,7 +118,7 @@ function pasteFieldsFromUrl()
     var slashWSlashIndex = '/w/index.php';
     if(a.pathname.startsWith(slashWiki))
     {
-        article = a.pathname.substr(slashWiki.length);
+        article = decodeURIComponent(a.pathname.substr(slashWiki.length));
         titleFound = true;
     }
     else if(a.pathname.startsWith(slashWSlashIndex))
@@ -133,7 +133,7 @@ function pasteFieldsFromUrl()
             {
                 if(paramParts[i].startsWith(titleEquals))
                 {
-                    article = paramParts[i].substr(titleEquals.length);
+                    article = decodeURIComponent(paramParts[i].substr(titleEquals.length));
                     titleFound = true;
                     break;
                 }
