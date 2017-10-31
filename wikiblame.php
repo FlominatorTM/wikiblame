@@ -115,30 +115,29 @@ function pasteFieldsFromUrl()
 
     var titleFound = false;
     var slashWiki = '/wiki/';
-    var slashWSlashIndex = '/w/index.php';
-    if(a.pathname.startsWith(slashWiki))
-    {
-        article = decodeURIComponent(a.pathname.substr(slashWiki.length));
-        titleFound = true;
-    }
-    else if(a.pathname.startsWith(slashWSlashIndex))
+    var titleEquals = 'title=';
+    if(mediaWikiUrl.search(titleEquals)>0)
     {
         urlParts = mediaWikiUrl.split('?');
        
         if(urlParts.length==2)
         {
             var paramParts = urlParts[1].split('&');
-            var titleEquals = 'title=';
             for (var i=0; i<paramParts.length; i++)
             {
                 if(paramParts[i].startsWith(titleEquals))
                 {
-                    article = decodeURIComponent(paramParts[i].substr(titleEquals.length));
+                    article = decodeURIComponent(paramParts[i].substr(titleEquals.length)).replace(/_/gm, ' ');
                     titleFound = true;
                     break;
                 }
             }
         }
+    }
+    else if(a.pathname.startsWith(slashWiki))
+    {
+        article = decodeURIComponent(a.pathname.substr(slashWiki.length)).replace(/_/gm, ' ');
+        titleFound = true;
     }
 
     if(!titleFound)
