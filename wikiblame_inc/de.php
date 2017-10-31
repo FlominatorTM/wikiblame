@@ -67,8 +67,7 @@ $messages['search_in_progress_wikitags'] = 'Die Versionsgeschichte von _ARTICLEL
 $messages['no_differences'] = 'Keine Unterschiede in den durchsuchten Versionen gefunden';
 $messages['inverse_restart'] = 'Keine Einfügung oder Löschung gefunden. Wurde der Suchbegr
 iff vielleicht später eingefügt?';
-$messages['inverse_stuck'] = 'Keine Einfügung oder Löschung gefunden. Wurde der Suchbegr
-iff vielleicht früher eingefügt?';
+$messages['inverse_stuck'] = 'Keine Einfügung oder Löschung in diesen  _NUMBEROFVERSIONS_  Versionen gefunden. Wurde der Suchbegriff vielleicht früher eingefügt?';
 $messages['inverse_earliest'] = 'Frühere Versionen durchsuchen';
 $messages['first_version'] = 'Die Änderung muss in der ersten oder letzten Version passiert sein?';
 $messages['first_version_present'] = '__NEEDLE__ war bereits in der ältesten durchsuchten Version vom __REVISIONLINK__ enthalten.';
