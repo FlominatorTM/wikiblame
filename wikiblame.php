@@ -883,7 +883,10 @@ function binary_search($middle, $from)
                 }
                 else
                 {
-                    start_over_here($versions[$earliest_index]['offset']);
+                     $needle_ever_found = true; //actually it was not, but like this the message "try again" will disappear and the search will be over anyway
+                     echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['inverse_stuck']).'<br>';
+                    start_over_here($versions[$earliest_index]['offset'], 0, $messages['inverse_earliest']);
+                    echo '<br>';
                 }
             }
         }

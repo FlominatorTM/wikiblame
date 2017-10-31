@@ -73,6 +73,8 @@ $messages['search_in_progress_wikitags'] = 'The version history of _ARTICLELINK_
 
 $messages['no_differences'] = 'No differences found in searched revisions.';
 $messages['inverse_restart'] = 'No insertion or removal found, was the search term inserted later?';
+$messages['inverse_stuck'] = 'No insertion or removal found in these _NUMBEROFVERSIONS_ revisions. Was the search term maybe removed earlier?';
+$messages['inverse_earliest'] = 'Search in earlier revisions';
 $messages['first_version'] = 'Change must have happened in first or latest revision?';
 $messages['first_version_present'] = '__NEEDLE__ was already present in the oldest revision searched dating from __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'There are probably older revisions.';
