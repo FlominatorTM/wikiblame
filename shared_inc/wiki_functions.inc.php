@@ -408,6 +408,29 @@ function get_page_time_stamp($server, $article)
 	return $str_return ;
 }
 
+function update_template_parameter($template_text, $parameter, $new_value)
+{
+    $ret = $template_text;
+    $current_value = extract_template_parameter($template_text, $parameter);
+    if($current_value!="")
+    {
+        $count = substr_count($template_text, $current_value);
+        if($count==1)
+        {
+            $ret = str_replace($current_value, $new_value, $template_text);
+        }
+        else
+        {
+            die("update_template_parameter only supports parameter values present once - $current_value is present $count times");
+        }
+    }
+    else
+    {
+        die("update_template_parameter only supports present parameters with a value");
+    }
+    return $ret;
+}
+
 function extract_link_target($source_part, $remove_namespace=false)
 {
     $ret_val = false;
