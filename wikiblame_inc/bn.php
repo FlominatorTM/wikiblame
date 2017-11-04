@@ -65,6 +65,7 @@ $messages['search_in_progress_text'] = '_ARTICLELINK_ এর অনুবাদ 
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ এর অনুবাদ ইতিহাস <b>_NEEDLE_</b> এর জন্য উইকি লেখা হিসেবে অনুসন্ধান করা হচ্ছে';
 $messages['no_differences'] = 'অনুসন্ধানকৃত সংস্করণে কোন পার্থক্য পাওয়া যায় নি।';
 $messages['inverse_restart'] = 'কোন সন্নিবেশ বা সরানো পাওয়া যায় নি, অনুসন্ধান শব্দ কি পরে সন্নিবেশ করা হয়েছে?';
+$messages['inverse_earliest'] = 'আগের সংস্করণে অনুসন্ধান করুন';
 $messages['first_version'] = 'পরিবর্তনসমূহ কি প্রথম নাকি সর্বশেষ মুদ্রণে হয়েছিল?';
 $messages['first_version_present'] = '__NEEDLE__ ইতিমধ্যেই __REVISIONLINK__ তারিখে অনুসন্ধান করা পুরাতন সংশোধনে উপস্থিত আছে।';
 $messages['earlier_versions_available'] = 'সেগুলো সম্ভবত পুরাতন সংশোধন।';

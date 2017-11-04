@@ -49,6 +49,7 @@ $messages['linear'] = 'лінейны';
 $messages['interpolated'] = 'бінарны (хутчэй, калі шмат вэрсіяў)';
 $messages['ignore_minors'] = 'ігнараваць дробныя зьмены (экспэрымэнтальна)';
 $messages['force_wikitags'] = 'шукаць па вікі-тэксьце';
+$messages['from_url'] = 'з url-адрасу';
 $messages['start'] = 'Старт';
 $messages['reset'] = 'Скінуць';
 $messages['manual'] = 'Інструкцыя';
