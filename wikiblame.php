@@ -159,6 +159,11 @@ function submitAndWait()
 	startButton.value='<?php  echo $messages['please_wait'] ?>';
 	return true;
 }
+
+function markChecked(id)
+{
+    document.getElementById(id).checked=true;
+}
 </script>
 <div align="center">
 		<form method="get" name="mainform" onsubmit="submitAndWait();" action="<?php  echo $datei ?>">
@@ -169,7 +174,7 @@ function submitAndWait()
 		</div>
 
 		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
-			<table style="font-family: arial; font-size: 84%;" cellspacing="5">
+			<table style="font-family: arial; font-size: 84%;" cellspacing="5" border="0">
 				<tr>
 					<td align="<?php  echo $alignment ?>">
 						<label for="lang">
@@ -213,100 +218,106 @@ function submitAndWait()
 				</tr>
 				<tr>
 					<td align="<?php  echo $alignment ?>">
-						<label for="skipversions"> 
-							<?php  echo $messages['skipversions'] ?>
-						</label>
 					</td>
 					<td>
-						<input type="text" name="skipversions" id="skipversions" onchange="javascript:checkScanAmount()" value="<?php echo  $skipversions; ?>">
+						<input type="checkbox" name="force_wikitags" id="force_wikitags" <?php  if ($force_wikitags=="on") echo checked; ?> >
+						<label for="force_wikitags">
+							<?php  echo $messages['force_wikitags'] ?>
+						</label>
 					</td>
-				</tr>				
-				<tr>
+				</tr>                
+                <tr>
 					<td align="<?php  echo $alignment ?>">
-						<label for="ignorefirst">
-							<?php  echo $messages['ignorefirst'] ?>
-						</label>
 					</td>
 					<td>
-						<input type="text" name="ignorefirst" id="ignorefirst" onchange="javascript:checkScanAmount()" value="<?php echo $ignorefirst; ?>">
-					</td>
-				</tr>	
-				<tr>
-					<td align="<?php  echo $alignment ?>">
-						<label for="limit">
-							<?php  echo $messages['limit'] ?>
-						</label>
-					</td>
-					<td>
-						<input type="text" name="limit" id="limit" onchange="javascript:checkScanAmount()" value="<?php echo $limit; ?>">
-					</td>
-				</tr>	
-				<tr>
-					<td align="<?php  echo $alignment ?>">
-						<?php  echo $messages['start_date'] ?>
-					</td>
-					<td>
-						<?php datedrop_with_months( "", "off", false, 2001, date("Y"), $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months, $messages['date_format']); ?>
-						<input type="button" value="<?php  echo $messages['reset'] ?>" onclick="javascript:var now=new Date();setFormDate(now.getFullYear(),now.getMonth()+1, now.getDate());">
-					</td>
-				<tr>
-					<td align="<?php  echo $alignment ?>"><?php  echo $messages['search_method'] ?></td>
-					<td>
-						<input type="radio" name="searchmethod" id="linear" value="lin"  onchange="javascript:checkScanAmount()"  <?php  if ($use_binary_search!=true) echo checked; ?> >
-						<label for="linear">
-							<?php  echo $messages['linear'] ?>
-						</label>
-						<input type="radio" name="searchmethod" id="int" value="int" onchange="javascript:checkScanAmount()"   <?php  if ($use_binary_search==true) echo checked; ?> >
-						<label for="int">
-						<a href="<?php  echo $messages['binary_in_wp']?>"><?php  echo $messages['binary'] ?></a>
-						</label>
-					</td>
-				</tr>	
-				<tr>
-					<td align="<?php  echo $alignment ?>"><?php  echo $messages['order'] ?></td>
-					<td>
-						<input type="radio" name="order" id="desc" value="desc" <?php  if ($asc!=true) echo checked; ?> >
-						<label for="desc">
-							<?php  echo $messages['newest_first'] ?>
-						</label>
-						<input type="radio" name="order" id="asc" value="asc" <?php  if ($asc==true) echo checked; ?> >
-						<label for="asc">
-							<?php  echo $messages['oldest_first'] ?>
-						</label>
-					</td>
-				</tr>				
-				<tr>
-					<td align="<?php  echo $alignment ?>">
-					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <?php  if ($binary_search_inverse) echo checked; ?> >
-					</td>
-					<td>
-						<label for="binary_search_inverse">
-							<?php  echo $messages['binary_search_inverse'] ?>
-						</label>
-					</td>
-				</tr>		
-				<tr>
-					<td align="<?php  echo $alignment ?>">
-						
 						<input type="checkbox" name="ignore_minors" id="ignore_minors" <?php  if ($ignore_minors==true) echo checked; ?> >
-					</td>
-					<td>
 						<label for="ignore_minors">
 							<?php  echo $messages['ignore_minors'] ?>
 						</label>
 					</td>
 				</tr>
+                <tr>
+                    <td colspan="2"><br></td>
+                </tr>                
 				<tr>
 					<td align="<?php  echo $alignment ?>">
-						
-						<input type="checkbox" name="force_wikitags" id="force_wikitags" <?php  if ($force_wikitags=="on") echo checked; ?> >
+						<?php echo $messages['latest_to_check']?>
 					</td>
 					<td>
-						<label for="force_wikitags">
-							<?php  echo $messages['force_wikitags'] ?>
-						</label>
+						<input type="radio" name="latest_version" value="date" id="latest_version_date" <?php if($_REQUEST['latest_version'] != "number") echo checked; ?>> 
+                        <?php
+                            $label_parts_start_date = explode('__INPUTFIELD__', $messages['start_date_p']);
+                            echo $label_parts_start_date[0];                   
+                            datedrop_with_months( "", "off", false, 2001, date("Y"), $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months, $messages['date_format'], "javascript:markChecked('latest_version_date')"); 
+                            echo $label_parts_start_date[1];                   
+                            ?>
+                        <input type="button" value="<?php  echo $messages['reset'] ?>" onclick="javascript:markChecked('latest_version_date');var now=new Date();setFormDate(now.getFullYear(),now.getMonth()+1, now.getDate());">
+                        <br>
+                        <input type="radio" name="latest_version" value="number" id="latest_version_number" <?php if($_REQUEST['latest_version'] == "number") echo checked; ?>>
+                        <?php
+                            $input_latest = '<input onclick="javascript:markChecked(' . "'latest_version_number'" . ')" type="text" name="ignorefirst" id="ignorefirst" onchange="javascript:checkScanAmount()" value="' . $ignorefirst .'">';
+                            echo str_replace('__INPUTFIELD__', $input_latest, $messages['revisions_older_than']);
+                        ?>
+					</td>         
+                </tr>    
+				<tr>
+					<td align="<?php  echo $alignment ?>">
+						<?php echo $messages['earliest_to_check']?>
 					</td>
-				</tr>
+					<td>
+                        <input type="radio" name="earliest_version" value="date" id="earliest_version_date" <?php if($_REQUEST['earliest_version'] == "date") echo checked; ?>>
+                        <?php
+                            echo $label_parts_start_date[0];         
+                            datedrop_with_months( "", "unt", false, 2001, date("Y"), $_REQUEST['untjahr'], $_REQUEST['untmon'], $_REQUEST['unttag'], $the_months, $messages['date_format'], "javascript:markChecked('earliest_version_date')"); 
+                            echo $label_parts_start_date[1];         
+                        ?>
+                        <br>
+                        <input type="radio" name="earliest_version" value="number" id="earliest_version_number" <?php if($_REQUEST['earliest_version'] != "date") echo checked; ?>>
+                        <?php
+                            $input_earliest = '<input onclick="javascript:markChecked(' . "'earliest_version_number'" . ')" type="text" name="limit" id="limit" onchange="javascript:checkScanAmount()" value="' . $limit . '">';
+                            echo str_replace('__INPUTFIELD__', $input_earliest, $messages['revisions_older_than']);
+                        ?>
+					</td>         
+                </tr>
+                <tr>
+                    <td align="<?php  echo $alignment ?>" valign="top" rowspan="2">
+                        <?php  echo $messages['search_method'] ?>
+                    </td>
+                    <td>
+                        <input type="radio" name="searchmethod" id="int" value="int" onchange="javascript:checkScanAmount()"   <?php  if ($use_binary_search==true) echo checked; ?> >
+                        <label for="int">
+                            <a href="<?php  echo $messages['binary_in_wp']?>"><?php  echo $messages['binary'] ?></a>
+						</label>
+                        <br>
+                        <div style="margin-left: 40px;">
+                            <input onclick="javascript:markChecked('int')" type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <?php  if ($binary_search_inverse) echo checked; ?> >
+                            <label for="binary_search_inverse">
+                                <?php  echo $messages['binary_search_inverse'] ?>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="searchmethod" id="linear" value="lin"  onchange="javascript:checkScanAmount()"  <?php  if ($use_binary_search!=true) echo checked;?> >
+                        <label for="linear">
+							<?php  echo $messages['linear'] ?>
+						</label>
+                        <br>
+                        <div style="margin-left: 40px;">                     
+                            <label for="skipversions"> 
+                            <?php   
+                            $input_skipversions = '<input onclick="javascript:markChecked(' ."'linear'" .')" type="text" name="skipversions" id="skipversions" onchange="javascript:checkScanAmount()" value="'.$skipversions.'">';
+                            echo str_replace('_INPUTFIELD_', $input_skipversions, $messages['skipversions_p']);?>
+                            </label>
+                            <br>
+                            <input onclick="javascript:markChecked('linear')" type="checkbox" name="order" id="asc" value="asc" <?php  if ($asc==true) echo checked; ?> >
+                            <label for="asc">
+                                <?php  echo $messages['oldest_first'] ?>
+                            </label>
+                        </div>
+                    </td>
+          
 				<tr>
 					<td colspan="2" align="center"><br><br>
 						<input name="start" id="start" type="submit" value="<?php  echo $messages['start'] ?>" >
@@ -354,7 +365,7 @@ if($needle!="")
 function fill_variables($user_lang)
 {
     global $article, $articleenc, $needle, $lang, $project, $server,
-        $use_binary_search, $limit, $ignorefirst, $skipversions, $ignore_minors, $offset, $binary_search_inverse, $asc,
+        $use_binary_search, $limit, $ignorefirst, $skipversions, $ignore_minors, $offset, $until, $binary_search_inverse, $asc,
         $user, $force_wikitags, $tags_present; //todo: probably $tags_present doesn't need to be exposed
     $article = str_replace('_', ' ', $_REQUEST['article']); 
     $articleenc = name_in_url($article);
@@ -388,7 +399,10 @@ function fill_variables($user_lang)
         $use_binary_search = false;
     }
 
-    $limit = $_REQUEST['limit'];
+    if($_REQUEST['earliest_version'] == "number")
+    {
+        $limit = $_REQUEST['limit'];
+    }
 
     if($limit=="")
     {
@@ -402,13 +416,19 @@ function fill_variables($user_lang)
         }
     }
 
-    $ignorefirst = $_REQUEST['ignorefirst'];
+    if($_REQUEST['latest_version'] == "number")
+    {
+        $ignorefirst = $_REQUEST['ignorefirst'];
+    }
     if($ignorefirst=="")
     {
         $ignorefirst = 0;
     }
 
-    $skipversions = $_REQUEST['skipversions'];
+    if(!$use_binary_search)
+    {
+        $skipversions = $_REQUEST['skipversions'];
+    }
     if($skipversions=="")
     {
         $skipversions = 0;
@@ -424,33 +444,37 @@ function fill_variables($user_lang)
         $ignore_minors = false;
     }
 
-    //Offset = YYYYMMDDmmhhss
-    $offset = $_REQUEST['offjahr'];
-    $offset.= str_pad ($_REQUEST['offmon'], 2, '0', STR_PAD_LEFT);
-    $offset.= str_pad ($_REQUEST['offtag'], 2, '0', STR_PAD_LEFT);
-
-    $offhour = str_pad ($_REQUEST['offhour'], 2, '0', STR_PAD_LEFT);;
-    if($offhour == "00")
+    if($_REQUEST['latest_version'] == "date")
     {
-        $offhour = 23;
-    }
-    else
-    {
-        $offhour = str_pad (Get_UTC_Hours($offhour, $server), 2, '0', STR_PAD_LEFT);
-    }
+        //Offset = YYYYMMDDmmhhss
+        $offset = $_REQUEST['offjahr'];
+        $offset.= str_pad ($_REQUEST['offmon'], 2, '0', STR_PAD_LEFT);
+        $offset.= str_pad ($_REQUEST['offtag'], 2, '0', STR_PAD_LEFT);
 
-    $offmin = str_pad ($_REQUEST['offmin'], 2, '0', STR_PAD_LEFT);;
+        $offhour = str_pad ($_REQUEST['offhour'], 2, '0', STR_PAD_LEFT);;
+        if($offhour == "00")
+        {
+            $offhour = 23;
+        }
+        else
+        {
+            $offhour = str_pad (Get_UTC_Hours($offhour, $server), 2, '0', STR_PAD_LEFT);
+        }
 
-    if($offmin == "00")
-    {
-        $offmin = 55;
+        $offmin = str_pad ($_REQUEST['offmin'], 2, '0', STR_PAD_LEFT);;
+
+        if($offmin == "00")
+        {
+            $offmin = 55;
+        }
+        $offset.= $offhour.$offmin.'00';
     }
-    $offset.= $offhour.$offmin.'00';
-
+    
     if(strlen($offset)<12)
     {	
         $offset=strftime("%Y%m%d%H%M%S");
     }
+
 
     if($_REQUEST['binary_search_inverse'] == "on")
     {
@@ -462,12 +486,9 @@ function fill_variables($user_lang)
     }
 
     $asc = false;
-    if($_REQUEST['order']=="asc")
+    if($use_binary_search && $_REQUEST['order']=="asc")
     {
-        if(!$use_binary_search)
-        {
-            $asc=true;
-        }
+        $asc=true;
     }
 
     $user=$_REQUEST['user'];
@@ -1300,6 +1321,11 @@ function Get_UTC_Hours($localHours, $server)
 	$offsetToUtc = $SiteInfo['query']['general']['timeoffset'];
 	$UtcHours = $localHours -($offsetToUtc / 60);
 	return $UtcHours;
+}
+
+function js_check_box($id)
+{
+    echo "javascript:document.getElementById($id).checked=true";
 }
 ?>
  <p align="<?php  echo $alignment ?>"> 

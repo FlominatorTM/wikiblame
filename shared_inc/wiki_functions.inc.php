@@ -127,7 +127,7 @@ function create_images($was_found)
 	imagedestroy($bild);	
 }
 
-function datedrop_with_months ($name, $varanf="", $intab=true, $jahranf="", $jahrbis="", $seljahr="", $selmon="", $seltag="", $the_months, $date_format)
+function datedrop_with_months ($name, $varanf="", $intab=true, $jahranf="", $jahrbis="", $seljahr="", $selmon="", $seltag="", $the_months, $date_format, $onchange="")
 {
 	if($jahranf=="")	
 	{
@@ -176,9 +176,9 @@ function datedrop_with_months ($name, $varanf="", $intab=true, $jahranf="", $jah
 	
 	echo $headers;
 	
-	$drop_down_text = str_replace("DD", dropdown ($varanf."tag", 1, 31, 1, "", "", $seltag), $date_format);
-	$drop_down_text = str_replace("MM", array_drop ($varanf."mon", $the_months, 1, "", "", $the_months[($selmon-1)]), $drop_down_text);
-	$drop_down_text = str_replace("YYYY", dropdown ($varanf."jahr", $jahranf, $jahrbis, 1, "", "", $seljahr), $drop_down_text);
+	$drop_down_text = str_replace("DD", dropdown ($varanf."tag", 1, 31, 1, "", $onchange, $seltag), $date_format);
+	$drop_down_text = str_replace("MM", array_drop ($varanf."mon", $the_months, 1, "", $onchange, $the_months[($selmon-1)]), $drop_down_text);
+	$drop_down_text = str_replace("YYYY", dropdown ($varanf."jahr", $jahranf, $jahrbis, 1, "", $onchange, $seljahr), $drop_down_text);
 	
 	echo 	$drop_down_text;
 	
