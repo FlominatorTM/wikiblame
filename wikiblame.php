@@ -93,7 +93,7 @@ function checkScanAmount()
 
 function pasteFieldsFromUrl()
 {
-    mediaWikiUrl = window.prompt('<?php echo $messages['paste_url'] ?>', '');
+    var mediaWikiUrl = window.prompt('<?php echo $messages['paste_url'] ?>', '');
     if(mediaWikiUrl==null) return;
     var a = document.createElement('a');
     a.href=mediaWikiUrl;
@@ -118,7 +118,7 @@ function pasteFieldsFromUrl()
     var titleEquals = 'title=';
     if(mediaWikiUrl.search(titleEquals)>0)
     {
-        urlParts = mediaWikiUrl.split('?');
+        var urlParts = mediaWikiUrl.split('?');
        
         if(urlParts.length==2)
         {
@@ -660,7 +660,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 	echo "<ul>";
 	for($i=0;$i<count($versions);$i++)
 	{
-		echo "<li>". get_diff_link($version);
+		echo "<li>". get_diff_link($versions[$i]);
 		
 		if($ignorefirst==0)
 		{
