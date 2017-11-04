@@ -1075,6 +1075,17 @@ function binary_search($middle, $from)
 					echo "<font color=\"green\">0</font><br>\n";
 					$insertion_found = str_replace('LEFT_VERSION', $left_version, $messages['insertion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $insertion_found).': ';;
+                    if($binary_search_inverse)
+                    {
+                        $first_to_remove = $middle +1;
+                        $count = count($versions);
+                        echo '<br>' . str_replace('_NUMBEROFVERSIONS_', $count-$first_to_remove, $messages['delete_from_here']).'<br><br>';
+                        //removed afterwards
+                        clear_array_starting_at($versions, $middle+1);
+                        echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
+                        binary_search_from_earliest_index($versions);                       
+                        return; //new search started, therefore we don't continue with this one
+                    }
 				}
 				else
 				{
