@@ -1270,9 +1270,10 @@ function print_translator($lang)
 
 function get_url($year, $month, $day, $hours=23, $minutes=55, $include_ignorefirst=true)
 {
-	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse, $user;
+	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse, $user, $until;
 	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".urlencode($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;offhour=$hours&amp;offmin=$minutes&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
 	
+    $url.='&amp;earliest_version=' . $_REQUEST['earliest_version'] . '&amp;latest_version=' .   $_REQUEST['latest_version'];
 	if($include_ignorefirst)
 	{
 		$url.="&amp;ignorefirst=".$_REQUEST['ignorefirst'];
@@ -1285,6 +1286,10 @@ function get_url($year, $month, $day, $hours=23, $minutes=55, $include_ignorefir
 	{
 		$url.="&amp;user=".$user;
 	}
+    if($until > 0)
+    {
+        $url.='&amp;untmon=' . $_REQUEST['untmon'] . '&amp;untmon=' . $_REQUEST['unttag'] .'&amp;untmon=' . $_REQUEST['untjahr'];
+    }
 	return $url;
 }
 
