@@ -561,16 +561,40 @@ function check_revision_date_format($messages)
 
 function get_all_versions($articleenc, $offset)
 {
-    global $limit, $server, $has_more_versions, $offset;
+    global $limit, $server, $has_more_versions, $until, $messages;
     $versions_local = array();
-    $get_more_versions = false;
+    $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";
+    
     do
     {
-        $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
+        $get_more_versions = false;
         $history = curl_request($historyurl);
         $has_more_versions = stristr($history, 'class="mw-lastlink"');
-        $versions_local = array_merge($versions_local, listversions($history));
+        $new_versions = listversions($history);
+
+        if($until>0)
+        {
+            $versions_removed = false;
+            $num_versions = count($new_versions);
+            for($i=0;$i<$num_versions;$i++)
+            {
+               if($new_versions[$i]['timestamp']<$until)
+               {
+                   //echo "removing " . $new_versions[$i]['local_date'];
+                   unset($new_versions[$i]);
+                   $versions_removed = true;
+               }
+            }
+            if(!$versions_removed && $has_more_versions)
+            {
+                $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=" . $new_versions[count($new_versions)-1]['offset'] . "&uselang=en";
+                $get_more_versions = true;
+            }
+        }
+        $versions_local = array_merge($versions_local, $new_versions);
     }while($get_more_versions);
+    
+    echo str_replace('_NUMBEROFVERSIONS_', count($versions_local), $messages['versions_found']).'<br>';
 	//echo "<hr><pre>$history</pre><hr>";
 	return $versions_local;
 }
