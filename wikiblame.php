@@ -560,22 +560,28 @@ function check_revision_date_format($messages)
 
 function get_all_versions($articleenc, $offset)
 {
-    global $limit, $server, $has_more_versions;
-    $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
-    $history = curl_request($historyurl);
-    $has_more_versions = stristr($history, 'class="mw-lastlink"');
+    global $limit, $server, $has_more_versions, $offset;
+    $versions_local = array();
+    $get_more_versions = false;
+    do
+    {
+        $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
+        $history = curl_request($historyurl);
+        $has_more_versions = stristr($history, 'class="mw-lastlink"');
+        $versions_local = array_merge($versions_local, listversions($history));
+    }while($get_more_versions);
 	//echo "<hr><pre>$history</pre><hr>";
-	return listversions($history);
+	return $versions_local;
 }
 
 //takes the requested history page, extracts links to the revisions and puts them into an array that is returned
 //in default (meaning $asc!=true) index 0 contains the latest revision
 function listversions ($history)
 {
-	global $articleenc, $asc, $messages, $ignore_minors, $deleted_revisions;
+	global $articleenc, $asc, $messages, $ignore_minors;
 	$searchterm = "name=\"diff\" "; //assumes that the history begins at the first occurrence of name="diff" />  <!--removed />-->
 
-	$versionen=array(); //array to store the links in
+	$versions_local=array(); //array to store the links in
 	$revision_html_blocks = explode($searchterm, $history); 
 	
 	/*
@@ -612,18 +618,14 @@ function listversions ($history)
 
 		$is_deleted_revision = stristr($one_version, 'mw-userlink'); //there is no revision link
 
-		if($is_deleted_revision)
-        {
-            $deleted_revisions++;
-        }
-        else
+		if(!$is_deleted_revision)
 		{
 			if($ignore_minors)
 			{
 				//checks if the revision was marked as minor edit
 				if(!stristr($one_version, "<span class=\"minor\">")) 
 				{
-                    add_one_version($one_version, $versions);
+                    $versions_local[] = add_one_version($one_version);
 					
 				}
 				else
@@ -633,7 +635,7 @@ function listversions ($history)
 			}
 			else
 			{
-                add_one_version($one_version, $versions);
+                $versions_local[] = add_one_version($one_version);
 			}
 		}
 	}
@@ -641,11 +643,11 @@ function listversions ($history)
 	if($asc==true)
 	{
 		//echo "reversing the list";
-		$versions = array_reverse($versions);
+		$versions_local = array_reverse($versions_local);
 	}
 
-	echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
-	return $versions;
+	echo str_replace('_NUMBEROFVERSIONS_', count($versions_local), $messages['versions_found']).'<br>';
+	return $versions_local;
 	
 	//regular expression that could be used to extract data from the revision links somewhen
 	//!oldid=(\d+)".*>([^<]+)</a>.*>([^<]+)</a>! 1=date, 2=revid 3=user
