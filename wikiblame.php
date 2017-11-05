@@ -406,6 +406,7 @@ function fill_variables($user_lang)
     }
     else 
     {
+        $limit = "";
         $until = mktime(0,0,0, $_REQUEST['untmon'], $_REQUEST['unttag'], $_REQUEST['untjahr']);
     }
 
