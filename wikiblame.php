@@ -492,7 +492,7 @@ function fill_variables($user_lang)
     }
 
     $asc = false;
-    if($use_binary_search && $_REQUEST['order']=="asc")
+    if(!$use_binary_search && $_REQUEST['order']=="asc")
     {
         $asc=true;
     }
