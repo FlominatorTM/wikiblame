@@ -560,9 +560,10 @@ function check_revision_date_format($messages)
 
 function get_all_versions($articleenc, $offset)
 {
-    global $limit, $server;
+    global $limit, $server, $has_more_versions;
     $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
-	$history = curl_request($historyurl);
+    $history = curl_request($historyurl);
+    $has_more_versions = stristr($history, 'class="mw-lastlink"');
 	//echo "<hr><pre>$history</pre><hr>";
 	return listversions($history);
 }
@@ -575,7 +576,6 @@ function listversions ($history)
 	$searchterm = "name=\"diff\" "; //assumes that the history begins at the first occurrence of name="diff" />  <!--removed />-->
 
 	$versionen=array(); //array to store the links in
-	$deleted_revisions = 0;
 	$revision_html_blocks = explode($searchterm, $history); 
 	
 	/*
@@ -680,7 +680,7 @@ function add_one_version($one_version, &$versions)
 
 function checkversions ($versions, $skipversions, $ignorefirst)
 {
-	global $server, $needle, $needle_ever_found, $limit, $articleenc, $the_months ;
+	global $server, $needle, $needle_ever_found, $articleenc, $the_months ;
 
 	$version_counter = 0;
 	echo "<ul>";
@@ -923,7 +923,7 @@ function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
 
 function binary_search($middle, $from)
 {
-	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit, $articleenc, $deleted_revisions;
+	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $has_more_versions, $articleenc;
 	//echo "binary_search(".$middle.",".$from.")";
 	
 	if($middle<0)
@@ -946,7 +946,7 @@ function binary_search($middle, $from)
     {
         if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
         {
-            if((count($versions)+$deleted_revisions)==$limit)
+            if($has_more_versions) //revisions before
             {
                 //there might be revisions before 
                 echo $messages['earlier_versions_available'].' ';
