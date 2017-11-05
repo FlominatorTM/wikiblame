@@ -603,7 +603,7 @@ function get_all_versions($articleenc, $offset)
 //in default (meaning $asc!=true) index 0 contains the latest revision
 function listversions ($history)
 {
-	global $articleenc, $asc, $ignore_minors;
+	global $articleenc, $asc, $ignore_minors, $until;
 	$searchterm = "name=\"diff\" "; //assumes that the history begins at the first occurrence of name="diff" />  <!--removed />-->
 
 	$versions_local=array(); //array to store the links in
@@ -645,12 +645,13 @@ function listversions ($history)
 
 		if(!$is_deleted_revision)
 		{
+            $array_of_one_version = null;
 			if($ignore_minors)
 			{
 				//checks if the revision was marked as minor edit
 				if(!stristr($one_version, "<span class=\"minor\">")) 
 				{
-                    $versions_local[] = read_one_version($one_version);
+                    $array_of_one_version = read_one_version($one_version);
 					
 				}
 				else
@@ -660,8 +661,19 @@ function listversions ($history)
 			}
 			else
 			{
-                $versions_local[] = read_one_version($one_version);
+                $array_of_one_version = read_one_version($one_version);
 			}
+            
+            if($array_of_one_version != null)
+            {
+                $versions_local[] = $array_of_one_version;
+                if($until > 0 && $array_of_one_version['timestamp'] < $until)
+                {
+                    //one is sufficient to know above that we skipped the rest
+                    break;
+                }
+            }
+           
 		}
 	}
 
