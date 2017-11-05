@@ -579,7 +579,7 @@ function get_all_versions($articleenc, $offset)
 //in default (meaning $asc!=true) index 0 contains the latest revision
 function listversions ($history)
 {
-	global $articleenc, $asc, $messages, $ignore_minors;
+	global $articleenc, $asc, $ignore_minors;
 	$searchterm = "name=\"diff\" "; //assumes that the history begins at the first occurrence of name="diff" />  <!--removed />-->
 
 	$versions_local=array(); //array to store the links in
@@ -626,7 +626,7 @@ function listversions ($history)
 				//checks if the revision was marked as minor edit
 				if(!stristr($one_version, "<span class=\"minor\">")) 
 				{
-                    $versions_local[] = add_one_version($one_version);
+                    $versions_local[] = read_one_version($one_version);
 					
 				}
 				else
@@ -636,7 +636,7 @@ function listversions ($history)
 			}
 			else
 			{
-                $versions_local[] = add_one_version($one_version);
+                $versions_local[] = read_one_version($one_version);
 			}
 		}
 	}
@@ -646,18 +646,16 @@ function listversions ($history)
 		//echo "reversing the list";
 		$versions_local = array_reverse($versions_local);
 	}
-
-	echo str_replace('_NUMBEROFVERSIONS_', count($versions_local), $messages['versions_found']).'<br>';
 	return $versions_local;
 	
 	//regular expression that could be used to extract data from the revision links somewhen
 	//!oldid=(\d+)".*>([^<]+)</a>.*>([^<]+)</a>! 1=date, 2=revid 3=user
 }
 
-function add_one_version($one_version, &$versions)
+function read_one_version($one_version)
 {
     global $server, $the_months, $messages;
-    //echo "one version: " . htmlspecialchars($one_version);
+    //$echo "one version: " . htmlspecialchars($one_version);
     $offset_parts = extract_date_parts_from_history_link($one_version);
     $month = $offset_parts[2];
     $day = $offset_parts[1];
@@ -673,7 +671,7 @@ function add_one_version($one_version, &$versions)
     $date_localized = strftime($pattern, $timestamp);
 
     $id = idfromurl ($one_version);
-    $versions[] = array('offset' => $offset,
+    return array('offset' => $offset,
                         'timestamp' => $timestamp,
                         'id' => $id,
                         'local_date' => $date_localized,
