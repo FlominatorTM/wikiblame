@@ -402,6 +402,11 @@ function fill_variables($user_lang)
     if($_REQUEST['earliest_version'] == "number")
     {
         $limit = $_REQUEST['limit'];
+        $until = -1;
+    }
+    else 
+    {
+        $until = mktime(0,0,0, $_REQUEST['untmon'], $_REQUEST['unttag'], $_REQUEST['untjahr']);
     }
 
     if($limit=="")
@@ -555,7 +560,7 @@ function check_revision_date_format($messages)
 
 function get_all_versions($articleenc, $offset)
 {
-    global $limit, $server, $user_lang;
+    global $limit, $server;
     $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
 	$history = curl_request($historyurl);
 	//echo "<hr><pre>$history</pre><hr>";
