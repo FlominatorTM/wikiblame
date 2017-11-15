@@ -16,6 +16,7 @@
  * @author Evropi
  * @author Geraki
  * @author Glavkos
+ * @author KATRINE1992
  * @author Nikosgranturismogt
  * @author Omnipaedista
  * @author Protnet
@@ -53,6 +54,9 @@ $messages['linear'] = 'γραμμική';
 $messages['interpolated'] = 'δυαδική (ταχύτερη με τις περισσότερες εκδόσεις)';
 $messages['ignore_minors'] = 'Αγνόηση αλλαγών μικρής κλίμακας (πειραματικές)';
 $messages['force_wikitags'] = 'Εξαναγκασμός αναζήτησης για βικικείμενο';
+$messages['from_url'] = 'από το url';
+$messages['paste_url'] = 'Παρακαλώ επικολλήστε το url για την σελίδα MediaWiki';
+$messages['no_valid_url'] = 'Δεν υπάρχει έγκυρο url MediaWiki';
 $messages['start'] = 'Έναρξη';
 $messages['reset'] = 'Επαναφορά';
 $messages['manual'] = 'Εγχειρίδιο';
@@ -63,6 +67,8 @@ $messages['search_in_progress_text'] = 'Στο ιστορικό εκδόσεων
 $messages['search_in_progress_wikitags'] = 'Στο ιστορικό εκδόσεων του _ARTICLELINK_ γίνεται αναζήτηση για <b>_NEEDLE_</b> ως κείμενο wiki';
 $messages['no_differences'] = 'Δεν βρέθηκαν  διαφορές στην αναζητηθείσες αναθεωρήσεις.';
 $messages['inverse_restart'] = 'Δεν βρέθηκε εισαγωγή ή αφαίρεση, ήταν ο όρος αναζήτησης που εισήχθη αργότερα;';
+$messages['inverse_stuck'] = 'Δεν βρέθηκε εισαγωγή ή διαγραφή σε αυτές τις NUMBEROFREVISIONS_revisions. Μήπως διαγράφηκε ο όρο =ς αναζήτησης νωρίτερα;';
+$messages['inverse_earliest'] = 'Αναζητήστε σε προηγούμενες επαναλήψεις';
 $messages['first_version'] = 'Η αλλαγή πρέπει να έχει συμβεί στην πρώτη ή στην τελευταία αναθεώρηση;';
 $messages['first_version_present'] = '__NEEDLE__ υπήρχε ήδη κατά την παλαιότερη αναθεώρηση που βρέθηκε και αναζητήθηκε από __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Υπάρχουν πιθανότατα παλαιότερες αναθεωρήσεις.';
