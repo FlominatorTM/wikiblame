@@ -267,9 +267,10 @@ function markChecked(id)
 					<td>
                         <input type="radio" name="earliest_version" value="date" id="earliest_version_date" <?php if($_REQUEST['earliest_version'] == "date") echo checked; ?>>
                         <?php
-                            echo $label_parts_start_date[0];         
+                            $label_parts_end_date = explode('__INPUTFIELD__', $messages['end_date_p']);
+                            echo $label_parts_end_date[0];         
                             datedrop_with_months( "", "unt", false, 2001, date("Y"), $_REQUEST['untjahr'], $_REQUEST['untmon'], $_REQUEST['unttag'], $the_months, $messages['date_format'], "javascript:markChecked('earliest_version_date')"); 
-                            echo $label_parts_start_date[1];         
+                            echo $label_parts_end_date[1];         
                         ?>
                         <br>
                         <input type="radio" name="earliest_version" value="number" id="earliest_version_number" <?php if($_REQUEST['earliest_version'] != "date") echo checked; ?>>
