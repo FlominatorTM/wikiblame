@@ -21,6 +21,7 @@
  * @author Peter17
  * @author The RedBurn
  * @author Tititou36
+ * @author Urhixidur
  * @author Wladek92
  * @author Wyz
  */
@@ -72,7 +73,7 @@ $messages['search_in_progress_text'] = '<b>_NEEDLE_</b>, comme texte brut, est r
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b>, est recherché dans l’historique des versions de _ARTICLELINK_ en tant que texte wiki,';
 $messages['no_differences'] = 'Aucune différence dans les versions recherchées.';
 $messages['inverse_restart'] = 'Aucune insertion ou suppression trouvée, le terme recherché a-t-il été inséré plus tard ?';
-$messages['inverse_stuck'] = 'Pas d\'insertion ni de supression trouvée parmi ces _NUMBEROFVERSIONS_ versions. Peut-être que le terme recherché avait déjà été supprimé antérieurement ?';
+$messages['inverse_stuck'] = 'Pas d’insertion ni de suppression trouvée parmi ces _NUMBEROFVERSIONS_ versions. Peut-être que le terme recherché avait déjà été supprimé antérieurement ?';
 $messages['inverse_earliest'] = 'Rechercher parmi les versions plus anciennes';
 $messages['first_version'] = 'Les changements doivent s\'être produits dans la première ou la dernière version ?';
 $messages['first_version_present'] = '__NEEDLE__ était déjà présent dans la plus ancienne version trouvée datant du __REVISIONLINK__.';
