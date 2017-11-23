@@ -20,6 +20,7 @@
  * @author MaxBioHazard
  * @author Od1n
  * @author Okras
+ * @author Wirbel78
  * @author Александр Сигачёв
  */
 
@@ -72,7 +73,7 @@ $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> ищется в ис
 $messages['no_differences'] = 'В найденных версиях нет различий.';
 $messages['inverse_restart'] = 'Не обнаружено вставок или удалений. Возможно, искомая фраза была вставлена позже?';
 $messages['inverse_stuck'] = 'В этих _NUMBEROFVERSIONS_ версиях не обнаружено вставок или удалений. Возможно, искомая фраза была удалена раньше?';
-$messages['inverse_earliest'] = 'Искать в ранних версиях';
+$messages['inverse_earliest'] = 'Поиск в более ранних версиях';
 $messages['first_version'] = 'Изменение должно было произойти в первой или последней версии?';
 $messages['first_version_present'] = '__NEEDLE__ уже присутствовала в первой ревизии, найденной начиная с __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Есть, вероятно, более старые версии.';
