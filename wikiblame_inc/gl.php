@@ -49,6 +49,7 @@ $messages['linear'] = 'linear';
 $messages['interpolated'] = 'binario (máis rápido con máis versións)';
 $messages['ignore_minors'] = 'Ignorar as edicións pequenas (experimental)';
 $messages['force_wikitags'] = 'Forzar a procura de texto wiki';
+$messages['from_url'] = 'a partir dunha URL';
 $messages['start'] = 'Comezar';
 $messages['reset'] = 'Restablecer';
 $messages['manual'] = 'Manual';
