@@ -16,6 +16,7 @@
  * @author Kurousagi
  * @author Kwj2772
  * @author Od1n
+ * @author Revi
  * @author Ykhwong
  * @author 아라
  */
@@ -55,6 +56,7 @@ $messages['linear'] = '순차 검색';
 $messages['interpolated'] = '이진 (많은 버전에 대해 빠름)';
 $messages['ignore_minors'] = '사소한 편집을 무시 (실험 중)';
 $messages['force_wikitags'] = '위키텍스트 강제 검색';
+$messages['from_url'] = 'url에서';
 $messages['paste_url'] = 'url을 미디어위키 페이지로 붙여넣어 주십시오';
 $messages['no_valid_url'] = '유효한 미디어위키 url이 없습니다';
 $messages['start'] = '시작';
