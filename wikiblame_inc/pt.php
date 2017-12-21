@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Athena in Wonderland
  * @author Flominator
  * @author Hamilton Abreu
  * @author He7d3r

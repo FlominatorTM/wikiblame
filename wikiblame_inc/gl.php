@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Athena in Wonderland
  * @author Elisardojm
  * @author Toliño
  */
@@ -50,6 +51,7 @@ $messages['interpolated'] = 'binario (máis rápido con máis versións)';
 $messages['ignore_minors'] = 'Ignorar as edicións pequenas (experimental)';
 $messages['force_wikitags'] = 'Forzar a procura de texto wiki';
 $messages['from_url'] = 'a partir dunha URL';
+$messages['no_valid_url'] = 'Este url do MediaWiki non é válido';
 $messages['start'] = 'Comezar';
 $messages['reset'] = 'Restablecer';
 $messages['manual'] = 'Manual';
@@ -60,6 +62,7 @@ $messages['search_in_progress_text'] = 'Estase buscando "<b>_NEEDLE_</b>" como t
 $messages['search_in_progress_wikitags'] = 'Estase buscando "<b>_NEEDLE_</b>" como texto wiki no historial de versións de "_ARTICLELINK_"';
 $messages['no_differences'] = 'Non se atoparon diferenzas nas revisións nas que se buscou.';
 $messages['inverse_restart'] = 'Non se atopou ningunha inserción nin eliminación, insertouse o termo de busca máis tarde?';
+$messages['inverse_earliest'] = 'Buscar en revisións anteriores';
 $messages['first_version'] = 'O cambio debeu ocorrer na primeira ou última revisión?';
 $messages['first_version_present'] = '"__NEEDLE__" xa estaba presente na última revisión buscada, con data do __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probablemente haxa algunha revisión anterior.';
