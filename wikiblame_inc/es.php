@@ -11,6 +11,7 @@
  * @file
  *
  * @author Armando-Martin
+ * @author Athena in Wonderland
  * @author Crazymadlover
  * @author DJ Nietzsche
  * @author Fitoschido
@@ -47,6 +48,7 @@ $messages['ignorefirst'] = 'Ignorar las primeras x versiones';
 $messages['limit'] = 'Versiones para revisar';
 $messages['start_date'] = 'Fecha de inicio';
 $messages['date_format'] = 'MM DD, AAAA';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Orden';
 $messages['newest_first'] = 'la última primero';
 $messages['oldest_first'] = 'la más antigua primero';
