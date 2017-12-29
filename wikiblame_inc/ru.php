@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Facenapalm
  * @author Ferrer
  * @author Flominator
  * @author Ignatus
@@ -19,6 +20,7 @@
  * @author MaxBioHazard
  * @author Od1n
  * @author Okras
+ * @author Wirbel78
  * @author Александр Сигачёв
  */
 
@@ -57,6 +59,9 @@ $messages['linear'] = 'линейный';
 $messages['interpolated'] = 'двоичный (быстрее, если много версий)';
 $messages['ignore_minors'] = 'Не учитывать малые изменения (экспериментально)';
 $messages['force_wikitags'] = 'Произвести поиск викитекста';
+$messages['from_url'] = 'из ссылки';
+$messages['paste_url'] = 'Пожалуйста, вставьте ссылку на страницу MediaWiki';
+$messages['no_valid_url'] = 'Это некорректная MediaWiki-ссылка';
 $messages['start'] = 'Запустить';
 $messages['reset'] = 'Сбросить';
 $messages['manual'] = 'Руководство';
@@ -67,6 +72,8 @@ $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> ищется в исто
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> ищется в истории версий _ARTICLELINK_ как викитекст';
 $messages['no_differences'] = 'В найденных версиях нет различий.';
 $messages['inverse_restart'] = 'Не обнаружено вставок или удалений. Возможно, искомая фраза была вставлена позже?';
+$messages['inverse_stuck'] = 'В этих _NUMBEROFVERSIONS_ версиях не обнаружено вставок или удалений. Возможно, искомая фраза была удалена раньше?';
+$messages['inverse_earliest'] = 'Поиск в более ранних версиях';
 $messages['first_version'] = 'Изменение должно было произойти в первой или последней версии?';
 $messages['first_version_present'] = '__NEEDLE__ уже присутствовала в первой ревизии, найденной начиная с __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Есть, вероятно, более старые версии.';
@@ -76,6 +83,8 @@ $messages['please_wait'] = 'Пожалуйста, подождите…';
 $messages['binary_test'] = 'Сравнение различий _FIRSTDATEVERSION_ между _FIRSTNUMBER_ и _SECONDNUMBER_ при переходе с _SOURCENUMBER_:';
 $messages['dead_end'] = 'Тупик (вероятно, вызван откатом или войной правок)';
 $messages['once_more'] = 'Ещё раз, с чувством:';
+$messages['delete_from_here'] = 'Удалены _NUMBEROFVERSIONS_ ранних версий, так как удаление должно было осуществиться позже.';
+$messages['delete_until_here'] = 'Удалены _NUMBEROFVERSIONS_ поздних версий, так как добавление должно было осуществиться раньше.';
 $messages['binary_enough'] = 'Выполнено достаточно попыток, история статьи совершенно запуталась, пожалуйста, попробуйте изменить какие-нибудь параметры.';
 $messages['insertion_found'] = 'Добавление обнаружено между LEFT_VERSION и RIGHT_VERSION';
 $messages['deletion_found'] = 'Исключение обнаружено между LEFT_VERSION и RIGHT_VERSION';
