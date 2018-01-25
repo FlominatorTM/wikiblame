@@ -54,6 +54,7 @@ $messages['linear'] = 'lineraarinen';
 $messages['interpolated'] = 'binaari (nopeampi, jos versioita on paljon)';
 $messages['ignore_minors'] = 'Ohita pienet muutokset (kokeellinen)';
 $messages['force_wikitags'] = 'Pakota haku wikitekstistä';
+$messages['paste_url'] = 'Ole hyvä ja liitä url-osoite MediaWiki sivulle';
 $messages['no_valid_url'] = 'Tämä ei ole kelvollinen MediaWiki -web-osoite';
 $messages['start'] = 'Aloita';
 $messages['reset'] = 'Nollaa';
