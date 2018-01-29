@@ -44,6 +44,7 @@ $messages['ignorefirst'] = 'Αγνοήστε πρώτες x εκδόσεις';
 $messages['limit'] = 'Εκδοχές προς έλεγχο';
 $messages['start_date'] = 'Ημερομηνία έναρξης';
 $messages['date_format'] = 'ΜΜ ΗΗ, ΕΕΕΕ';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Σειρά';
 $messages['newest_first'] = 'πρώτα τα πιο πρόσφατα';
 $messages['oldest_first'] = 'πρώτα τα παλαιότερα';

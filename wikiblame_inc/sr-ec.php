@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Acamicamacaraca
  * @author Charmed94
  * @author FriedrickMILBarbarossa
  * @author Milicevic01
@@ -67,7 +68,7 @@ $messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBl
 $messages['contact'] = 'Контакт';
 $messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=sr';
 $messages['get_less_versions'] = 'Претрага може исписати __NUMREVISIONS__ измена одједном. Ради безбедности сервера, дозвољено вам је да тражите __ALLOWEDREVISIONS__ по позиву. Промените поставке или начин претраге на бинарни.';
-$messages['wrong_skips'] = 'Погрешне поставке: ако је првих __VERSIONSTOSKIP__ издања прескочено, онда ниједно од __VERSIONSTOSEARCH__ издања која се траже неће бити обрађено.';
+$messages['wrong_skips'] = 'Погрешна подешавања: ако је првих __VERSIONSTOSKIP__ издања прескочено, онда ниједно од __VERSIONSTOSEARCH__ издања која се траже неће бити обрађено.';
 $messages['search_in_progress_text'] = 'Историја издања чланка _ARTICLELINK_ се тражи за <b>_NEEDLE_</b> као обичан текст';
 $messages['search_in_progress_wikitags'] = 'Историја издања чланка _ARTICLELINK_ се тражи за <b>_NEEDLE_</b> као викитекст';
 $messages['no_differences'] = 'Нису пронађене разлике у прегледаним изменама.';
@@ -85,7 +86,7 @@ $messages['dead_end'] = 'Претрага је дошла до мртве тач
 $messages['once_more'] = 'Поновљена претрага:';
 $messages['delete_from_here'] = 'Брисање _NUMBEROFVERSIONS_ ранијих измена, пошто уклањање мора да буде извршено касније';
 $messages['delete_until_here'] = 'Брисање _NUMBEROFVERSIONS_ каснијих измена, пошто уклањање мора да буде извршено раније';
-$messages['binary_enough'] = 'Извршено је довољно покушаја, историја чланка је збркана. Промените неке поставке.';
+$messages['binary_enough'] = 'Извршено је довољно покушаја, историја чланка је збркана. Промените нека подешавања.';
 $messages['insertion_found'] = 'Унос је пронађен између LEFT_VERSION и RIGHT_VERSION';
 $messages['deletion_found'] = 'Брисање је пронађено између LEFT_VERSION и RIGHT_VERSION';
 $messages['here'] = 'овде';
