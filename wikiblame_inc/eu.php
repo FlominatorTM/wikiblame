@@ -11,6 +11,7 @@
  * @file
  *
  * @author An13sa
+ * @author EukeneFL
  * @author Kobazulo
  * @author Mikel Ibaiba
  * @author Sator
@@ -43,6 +44,7 @@ $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Ordena';
 $messages['newest_first'] = 'azkenak lehenik';
 $messages['oldest_first'] = 'zaharrenak lehenik';
+$messages['binary_search_inverse'] = 'Testua kentzeko aukera bilatu (bitarra soilik)';
 $messages['search_method'] = 'Bilaketa-metodoa';
 $messages['binary'] = 'bitarra';
 $messages['linear'] = 'lineala';
@@ -64,6 +66,7 @@ $messages['earlier_versions_available'] = 'Ziurrenik bertsio zaharragoak egongo 
 $messages['execution_time'] = 'Exekuzio-denbora: _EXECUTIONTIME_ segundo';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ bertsio aurkitu dira';
 $messages['please_wait'] = 'Mesedez itxaron ...';
+$messages['dead_end'] = 'Amaitu gabeko testuak aurkitu dira (seguruenik erreberzioak edo aldiberekotasuneko aldaketengatik)';
 $messages['once_more'] = 'Berriro ere, bihotz-bihotzez:';
 $messages['binary_enough'] = 'Saiaketa nahikoa burutu da, artikuluaren historia oso nahasia dago, saiatu ezarpen batzuk aldatzen mesedez.';
 $messages['insertion_found'] = 'Insertzioa topatu da LEFT_VERSION eta RIGHT_VERSION artean';
