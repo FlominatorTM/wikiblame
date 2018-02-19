@@ -20,6 +20,7 @@
  * @author MaxBioHazard
  * @author Od1n
  * @author Okras
+ * @author Smigles
  * @author Wirbel78
  * @author Александр Сигачёв
  */
@@ -69,7 +70,7 @@ $messages['contact'] = 'Контактная информация';
 $messages['get_less_versions'] = 'Ваш запрос может выдать __NUMREVISIONS__ версий за раз. В целях защиты сервера, за один вызов допускается запрашивать не более __ALLOWEDREVISIONS__ версий. Пожалуйста, измените настройки или переключитесь в двоичный режим поиска!';
 $messages['wrong_skips'] = 'Ошибочные настройки. Если первые __VERSIONSTOSKIP__ версий будут пропущены, то ни одна из __VERSIONSTOSEARCH__ версий для поиска не будет обработана.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> ищется в истории версий _ARTICLELINK_ как обычный текст';
-$messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> ищется в истории версий _ARTICLELINK_ как викитекст';
+$messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> ищется в истории версий _ARTICLELINK_ как вики-текст';
 $messages['no_differences'] = 'В найденных версиях нет различий.';
 $messages['inverse_restart'] = 'Не обнаружено вставок или удалений. Возможно, искомая фраза была вставлена позже?';
 $messages['inverse_stuck'] = 'В этих _NUMBEROFVERSIONS_ версиях не обнаружено вставок или удалений. Возможно, искомая фраза была удалена раньше?';
