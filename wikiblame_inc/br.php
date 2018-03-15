@@ -62,6 +62,7 @@ $messages['search_in_progress_text'] = 'Stumm istor  _ARTICLELINK_ a zo klasket 
 $messages['search_in_progress_wikitags'] = 'Stumm istor  _ARTICLELINK_ a zo klasket evit <b>_NEEDLE_</b> evel testenn wiki';
 $messages['no_differences'] = 'N\'eus bet kavet diforc\'h ebet en adweladennoù bet klasket enno';
 $messages['inverse_restart'] = 'N\'eus bet kavet tamm ensoc\'hadenn na diverkadenn ebet. Ha diwezhatoc\'h eo bet ensoc\'het ar ger klasket ?';
+$messages['inverse_stuck'] = 'N\'eus bet kavet na ensoc\'hadurioù na lamadurioù e-touez an _NUMBEROFVERSIONS_versions(-se). Lamet e oa bet ar ger klasket dija a-raok marteze ?';
 $messages['inverse_earliest'] = 'Klask er stummoù koshoc\'h';
 $messages['first_version'] = 'Rankout a ra ar c\'hemmoù bezañ c\'hoarvezet en adweladenn gentañ pe diwezhatoc\'h ?';
 $messages['first_version_present'] = '__NEEDLE__ a oa anezhañ c\'hoazh er stumm koshañ bet enklasket hag a sav d\'an __REVISIONLINK__.';
