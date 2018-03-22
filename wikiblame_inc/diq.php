@@ -64,6 +64,7 @@ $messages['search_in_progress_text'] = 'Qandi _ARTICLELINK_ verin versiyoni cı 
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ erin versiyonde cı <b>_NEEDLE_</b> için viki metin o vineyino';
 $messages['no_differences'] = 'Çımraviyarnayışanê cıgeyrayeyan de qet ferqi nêvêniyay.';
 $messages['inverse_restart'] = 'Çebyaye yana wedaryaye nêvineya, terim vinayış ser çebya yo?';
+$messages['inverse_earliest'] = 'Vurnayışanê verênan de cıgeyre';
 $messages['first_version'] = 'Vurnayış gani çımraviyarnayışo sıfteyın ya zi peyên de bıbo?';
 $messages['first_version_present'] = '__NEEDLE__ miyan de be tarixê __REVISIONLINK__ çımraviyarnayışo verên xora est bi.';
 $messages['earlier_versions_available'] = 'Revizyonê verêni şenê bıbê.';
