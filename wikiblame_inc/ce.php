@@ -47,6 +47,7 @@ $messages['linear'] = 'сизийн';
 $messages['interpolated'] = 'шалха (сиха, версеш дукха елахь)';
 $messages['ignore_minors'] = 'жим хийцамаш ма лара (зуьйш)';
 $messages['force_wikitags'] = 'вики-йоза лаха';
+$messages['from_url'] = 'хьажорг чура';
 $messages['start'] = 'Долор';
 $messages['reset'] = 'Кхоссар';
 $messages['manual'] = 'Куьйгалла дар';
