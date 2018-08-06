@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Leducthn
  * @author Minh Nguyen
  * @author Od1n
  * @author Tuankiet65
@@ -39,6 +40,7 @@ $messages['ignorefirst'] = 'Số phiên bản đầu tiên để bỏ qua';
 $messages['limit'] = 'Số phiên bản để kiểm tra';
 $messages['start_date'] = 'Ngày bắt đầu';
 $messages['date_format'] = 'DD MM, YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Thứ tự';
 $messages['newest_first'] = 'mới nhất trước';
 $messages['oldest_first'] = 'cũ nhất trước';
@@ -50,6 +52,9 @@ $messages['linear'] = 'tuyến tính';
 $messages['interpolated'] = 'nhị phân (nhanh hơn với nhiều phiên bản)';
 $messages['ignore_minors'] = 'bỏ qua sửa đổi nhỏ (thử nghiệm)';
 $messages['force_wikitags'] = 'cố tìm kiếm mã wiki';
+$messages['from_url'] = 'từ đường dẫn';
+$messages['paste_url'] = 'Xin hãy dán đường dẫn dẫn tới trang MediaWiki';
+$messages['no_valid_url'] = 'Đường dẫn MediaWiki này không hợp lệ';
 $messages['start'] = 'Bắt đầu';
 $messages['reset'] = 'Tái tạo';
 $messages['manual'] = 'Hướng dẫn';
