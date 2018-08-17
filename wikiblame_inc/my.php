@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Dr Lotus Black
  * @author Erikoo
  * @author Ninjastrikers
  */
@@ -40,3 +41,5 @@ $messages['oldest_first'] = 'အဟောင်းဆုံးအား စတ�
 $messages['search_method'] = 'ရှာဖွေရန်နည်းလမ်းများ';
 $messages['reset'] = 'ပြန်စရန်';
 $messages['please_wait'] = 'ခေတ္တစောင့်ပါ...';
+$messages['help_translating'] = 'translatewiki.net တွင် ဘာသာပြန်ခြင်းကို ကူညီပါ';
+$messages['start_here'] = 'ဤနေရာမှ ရှာဖွေရန်';
