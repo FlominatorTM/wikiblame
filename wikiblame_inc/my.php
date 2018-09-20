@@ -45,6 +45,7 @@ $messages['start'] = 'စတင်';
 $messages['reset'] = 'ပြန်စရန်';
 $messages['manual'] = 'လမ်းညွှန်';
 $messages['contact'] = 'ဆက်သွယ်ရန်';
+$messages['inverse_earliest'] = 'အစောပိုင်း မူများထဲတွင် ရှာဖွေရန်';
 $messages['please_wait'] = 'ခေတ္တစောင့်ပါ...';
 $messages['help_translating'] = 'translatewiki.net တွင် ဘာသာပြန်ခြင်းကို ကူညီပါ';
 $messages['start_here'] = 'ဤနေရာမှ ရှာဖွေရန်';
