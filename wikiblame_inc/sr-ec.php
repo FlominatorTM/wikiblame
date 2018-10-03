@@ -11,6 +11,7 @@
  * @file
  *
  * @author Acamicamacaraca
+ * @author BadDog
  * @author Charmed94
  * @author FriedrickMILBarbarossa
  * @author Milicevic01
@@ -44,7 +45,7 @@ $messages['needle'] = 'Тражи';
 $messages['skipversions'] = 'Увек прескочи x издања:';
 $messages['ignorefirst'] = 'Занемари првих x издања';
 $messages['limit'] = 'Издања за проверу';
-$messages['start_date'] = 'Почетни датум';
+$messages['start_date'] = 'Датум почетка';
 $messages['date_format'] = 'DD MM YYYY';
 $messages['revision_date_format'] = '%d. %B %Y, %H:%M';
 $messages['order'] = 'Редослед';
