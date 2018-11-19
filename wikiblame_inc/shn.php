@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ninjastrikers
  * @author Saimawnkham
  * @author Saosukham
  */
@@ -24,7 +25,7 @@ $messages['July'] = 'ၵျူႇလၢႆႇ';
 $messages['August'] = 'ဢေႃးၵၢတ်ႉသ်';
 $messages['September'] = 'သႅပ်ႇထိမ်ႇပႃႇ';
 $messages['October'] = 'ဢွၵ်ႇထူဝ်ႇပႃႇ';
-$messages['November'] = 'ၼူဝ်ႇဝိမ်ႇပႃႇ';
+$messages['November'] = 'ၼူဝ်ႇဝႅမ်ႇပႃႇ';
 $messages['December'] = 'တီႇသိမ်ႇပႃႇ';
 $messages['ui_lang'] = 'ၼႄၽႃႇသႃႇၵႂၢမ်း';
 $messages['lang'] = 'ၽႃႇသႃႇၵႂၢမ်း';

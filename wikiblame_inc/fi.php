@@ -44,6 +44,7 @@ $messages['ignorefirst'] = 'Ohita ensimmäiset x versiota';
 $messages['limit'] = 'Versioiden tarkistaminen';
 $messages['start_date'] = 'Alkamispäivä';
 $messages['date_format'] = 'DD.MM.YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Lajittele';
 $messages['newest_first'] = 'uusimmat ensin';
 $messages['oldest_first'] = 'vanhimmat ensin';
