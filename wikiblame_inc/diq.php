@@ -16,6 +16,7 @@
  * @author Gırd
  * @author Kumkumuk
  * @author Mirzali
+ * @author Orbot707
  * @author Velg
  */
 
@@ -54,6 +55,8 @@ $messages['interpolated'] = 'Dıletın (Veşi versiyon esto se rew vineno)';
 $messages['ignore_minors'] = 'Vurnayışane werdiya mevac (Cerbneyin)';
 $messages['force_wikitags'] = 'Wikinuştey be zor geyreno';
 $messages['from_url'] = 'url ra';
+$messages['paste_url'] = 'Kerem keme url yê pela MediaWiki pıronê';
+$messages['no_valid_url'] = 'No ravêrde url yê MediaWiki niyo';
 $messages['start'] = 'Suru bık';
 $messages['reset'] = 'Reset kerê';
 $messages['manual'] = 'Manuel';

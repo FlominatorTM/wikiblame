@@ -15,6 +15,7 @@
  * @author Flominator
  * @author Ignatus
  * @author Jack who built the house
+ * @author Le Loi
  * @author Lemondoge
  * @author Lockal
  * @author MaxBioHazard
@@ -50,8 +51,8 @@ $messages['start_date'] = 'Дата начала';
 $messages['date_format'] = 'DD.MM.YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Порядок';
-$messages['newest_first'] = 'вначале новейшие';
-$messages['oldest_first'] = 'вначале старейшие';
+$messages['newest_first'] = 'сначала новые';
+$messages['oldest_first'] = 'сначала старые';
 $messages['binary_search_inverse'] = 'Поиск удаления текста (только двоичный)';
 $messages['search_method'] = 'Способ поиска';
 $messages['binary'] = 'двоичный';
