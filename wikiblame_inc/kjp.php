@@ -37,6 +37,6 @@ $messages['newest_first'] = 'အ်ုလါင်ခါင့်ခဝ့်မ
 $messages['from_url'] = 'url ခဝ့်အိုဝ်';
 $messages['start'] = 'ပ္တံင်';
 $messages['reset'] = 'မ်ုပ္တုံၮါင်';
-$messages['manual'] = 'ၮဲကျံင်းဖၠံင်';
+$messages['manual'] = 'ဏဲကျံင်းဖၠံင်';
 $messages['please_wait'] = 'အုဲးသာဆိုင် အင်းခိုဝ်ဖှ်ေလာၮင်းမၞိင်ႋ...';
 $messages['here'] = 'ထံင်ႋယိုဝ်';
