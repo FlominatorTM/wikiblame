@@ -13,18 +13,18 @@
  * @author Rul1902
  */
 
-$messages['January'] = 'လာတာ';
-$messages['February'] = 'လာယာ့';
-$messages['March'] = 'လာနုဲး';
-$messages['April'] = 'လာၰိုင်';
-$messages['May'] = 'လာခုဂ်';
-$messages['June'] = 'လာဆီ့မူႋ';
-$messages['July'] = 'လာက်ုတုဂ်ဝှ်';
-$messages['August'] = 'လာဏင့်';
-$messages['September'] = 'လာလိင်';
-$messages['October'] = 'လာထါင့်ခုက်ဖေါဟ်';
-$messages['November'] = 'လာထါင့်ခုက်ဖါဍောဟ်';
-$messages['December'] = 'လာထင်းကၠံင်';
+$messages['January'] = 'ထါင့်ခုက်ဖေါဟ်';
+$messages['February'] = 'ထါင့်ခုက်ဖါဍောဟ်';
+$messages['March'] = 'လါသိုင့်';
+$messages['April'] = 'လါတါ';
+$messages['May'] = 'လါယါ့';
+$messages['June'] = 'လါနုဲး';
+$messages['July'] = 'လါၰိုဝ်';
+$messages['August'] = 'လါခုဂ်';
+$messages['September'] = 'ဆီ့မူႋ';
+$messages['October'] = 'က္တုက်ဝဝ်ႋ';
+$messages['November'] = 'လါဏင့်';
+$messages['December'] = 'လါလိင်';
 $messages['ui_lang'] = 'ၮဲဖှ်ေဆ်ုခၠါင်ဘာႋသာ့';
 $messages['lang'] = 'ဆ်ုခၠါင်ဘာႋသာ့';
 $messages['project'] = 'ပ်ုရောဲဂျက်';
