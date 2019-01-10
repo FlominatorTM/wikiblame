@@ -13,23 +13,23 @@
  * @author Rul1902
  */
 
-$messages['January'] = 'ထါင့်ခုက်ဖေါဟ်';
-$messages['February'] = 'ထါင့်ခုက်ဖါဍောဟ်';
-$messages['March'] = 'လါသိုင့်';
-$messages['April'] = 'လါတါ';
-$messages['May'] = 'လါယါ့';
-$messages['June'] = 'လါနုဲး';
-$messages['July'] = 'လါၰိုဝ်';
-$messages['August'] = 'လါခုဂ်';
-$messages['September'] = 'ဆီ့မူႋ';
-$messages['October'] = 'က္တုက်ဝဝ်ႋ';
-$messages['November'] = 'လါဏင့်';
-$messages['December'] = 'လါလိင်';
+$messages['January'] = 'ဂျာင်ဏ်ုဝါရီ';
+$messages['February'] = 'ဖဲၜၠူဝ်ုရီ';
+$messages['March'] = 'မးချိုဒ်';
+$messages['April'] = 'အေပ်ုရိုင်';
+$messages['May'] = 'မေ';
+$messages['June'] = 'ဂျံင်';
+$messages['July'] = 'ဂျူလာင်';
+$messages['August'] = 'အဝ်ႋဂိုင်း';
+$messages['September'] = 'စက်တေန်ဘာ';
+$messages['October'] = 'အုဂ်ဍိုဝ်ၜိုင်';
+$messages['November'] = 'နိုဝ်ဝေန်ၜိုင်';
+$messages['December'] = 'ဍီဇေန်ၜိုင်';
 $messages['ui_lang'] = 'ၮဲဖှ်ေဆ်ုခၠါင်ဘာႋသာ့';
 $messages['lang'] = 'ဆ်ုခၠါင်ဘာႋသာ့';
 $messages['project'] = 'ပ်ုရောဲဂျက်';
 $messages['article'] = 'လိက်မေံၜၠာ်';
-$messages['needle'] = 'မ်ုအင်းၰူ့ၮ်ှ';
+$messages['needle'] = 'မ်ုအင်းၰူ့ဏှ်';
 $messages['skipversions'] = 'ကိုဝ်ၜၠင် x versions ၮှ် မ်ုခင်းဖါ';
 $messages['start_date'] = 'ပ္တုံထင်းမူႋၮီ';
 $messages['order'] = 'လဝ်ႋထါင်ဆ်ုခၠါင်';
