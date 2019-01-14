@@ -32,6 +32,7 @@ $messages['article'] = 'လိက်မေံၜၠာ်';
 $messages['needle'] = 'မ်ုအင်းၰူ့ဏှ်';
 $messages['skipversions'] = 'ကိုဝ်ၜၠင် x versions ၮှ် မ်ုခင်းဖါ';
 $messages['start_date'] = 'ပ္တုံထင်းမူႋၮီ';
+$messages['date_format'] = 'MM DD, YYYY';
 $messages['order'] = 'လဝ်ႋထါင်ဆ်ုခၠါင်';
 $messages['newest_first'] = 'အ်ုလါင်ခါင့်ခဝ့်မ်ုပ္တုံလဝ်ႋဝီႋ';
 $messages['from_url'] = 'url ခဝ့်အိုဝ်';
