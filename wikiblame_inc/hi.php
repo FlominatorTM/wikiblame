@@ -13,6 +13,7 @@
  * @author Ansumang
  * @author Gopalindians
  * @author Htt
+ * @author Prong$31
  * @author Sachinkatiyar
  * @author Sfic
  * @author Siddhartha Ghai
@@ -36,11 +37,12 @@ $messages['lang'] = 'भाषा';
 $messages['project'] = 'परियोजना';
 $messages['article'] = 'पृष्ठ';
 $messages['needle'] = 'खोजें';
-$messages['skipversions'] = 'हमेशा x संस्करण छोङें';
+$messages['skipversions'] = 'हमेशा x संस्करण छोड़े';
 $messages['ignorefirst'] = 'पहले x संस्करण छोड़ें';
 $messages['limit'] = 'जाँचने हेतु संस्करण';
 $messages['start_date'] = 'प्रारम्भ तिथि';
 $messages['date_format'] = 'DD MM, YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'क्रम';
 $messages['newest_first'] = 'नया पहले';
 $messages['oldest_first'] = 'पुराना पहले';

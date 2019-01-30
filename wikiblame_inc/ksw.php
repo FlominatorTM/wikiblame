@@ -10,17 +10,20 @@
  * @ingroup Language
  * @file
  *
+ * @author Jaeminlovetaejoon
  * @author Rul1902
+ * @author SawJaemin
  */
 
-$messages['January'] = 'ယနူၤအါရံၤဝါရီ';
-$messages['February'] = 'ဖ့ၣ်ဘြူၤအါရံၤ';
-$messages['March'] = 'မာ်ၡး';
-$messages['April'] = 'အ့ဖြ့ၣ်';
-$messages['May'] = 'မ့ၤ';
-$messages['June'] = 'ယူၤ';
-$messages['July'] = 'ယူၤလံ';
-$messages['August'] = 'အီကူး';
-$messages['September'] = 'အီးကထိဘၢၣ်';
-$messages['November'] = 'နိၣ်ဝ့ဘၢၣ်';
-$messages['December'] = 'စံၣ်စဲဘၢၣ်';
+$messages['January'] = 'လါယနူၤအါရံၤ';
+$messages['February'] = 'လါဖ့ၣ်ဘြူၤအါရံၤ';
+$messages['March'] = 'လါမာ်ၡး';
+$messages['April'] = 'လါအ့ဖြ့ၣ်';
+$messages['May'] = 'လါမ့ၤ';
+$messages['June'] = 'လါယူၤ';
+$messages['July'] = 'လါယူၤလံ';
+$messages['August'] = 'လါအီကူး';
+$messages['September'] = 'လါစဲးပတ့ဘၢၣ်';
+$messages['October'] = 'လါအီးကထိဘၢၣ်';
+$messages['November'] = 'လါနိၣ်ဝ့ဘၢၣ်';
+$messages['December'] = 'လါဒံၣ်စဲဘၢၣ်';
