@@ -15,3 +15,4 @@
 
 $messages['January'] = 'Çele';
 $messages['February'] = 'Gucige';
+$messages['article'] = 'Pele';
