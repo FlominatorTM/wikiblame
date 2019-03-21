@@ -13,13 +13,13 @@
  * @author Mogoeilor
  */
 
-$messages['January'] = 'جانويه';
-$messages['February'] = 'فوريه';
+$messages['January'] = 'جانڤیٱ';
+$messages['February'] = 'فڤریٱ';
 $messages['March'] = 'مارس';
-$messages['April'] = 'آوريل';
+$messages['April'] = 'آڤریل';
 $messages['May'] = 'ما';
-$messages['June'] = 'جوئن';
-$messages['July'] = 'جولا';
+$messages['June'] = 'جوئٱن';
+$messages['July'] = 'جۊلای';
 $messages['August'] = 'اگوست';
 $messages['September'] = 'سپتامر';
 $messages['October'] = 'اكتور';
