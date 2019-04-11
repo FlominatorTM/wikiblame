@@ -14,6 +14,7 @@
  * @author Amirsara
  * @author Ebraminio
  * @author Huji
+ * @author Meysamzare23
  * @author Reza1615
  * @author Wayiran
  */
@@ -52,6 +53,7 @@ $messages['interpolated'] = 'دودویی (سریع‌تر با نسخه‌ها�
 $messages['ignore_minors'] = 'چشم‌پوشی از تغییرات جزئی (آزمایشی)';
 $messages['force_wikitags'] = 'جستجوی اجباری ویکی متن';
 $messages['from_url'] = 'از نشانی اینترنتی';
+$messages['paste_url'] = 'لطفا آدرس را در پیج mediawiki  وارد کنید';
 $messages['start'] = 'شروع';
 $messages['reset'] = 'بازنشانی';
 $messages['manual'] = 'دفترچه راهنما';
