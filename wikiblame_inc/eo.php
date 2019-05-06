@@ -13,6 +13,7 @@
  * @author Blahma
  * @author Lucas
  * @author Mihxil
+ * @author Mirin
  * @author Objectivesea
  * @author Yekrats
  */
@@ -39,6 +40,7 @@ $messages['ignorefirst'] = 'Ignori unuajn x versiojn';
 $messages['limit'] = 'Versioj kontrolotaj';
 $messages['start_date'] = 'Komenca dato';
 $messages['date_format'] = 'YYYY-MM-DD';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Mendi';
 $messages['newest_first'] = 'Plej novaj unue';
 $messages['oldest_first'] = 'Plej malnovaj unue';
@@ -49,6 +51,9 @@ $messages['linear'] = 'lineara';
 $messages['interpolated'] = 'Binara interpolado (pli rapidas kun multaj versioj)';
 $messages['ignore_minors'] = 'Ignori ŝanĝetojn (eksperimente)';
 $messages['force_wikitags'] = 'Devige serĉi viki-tekston';
+$messages['from_url'] = 'el reteja adreso';
+$messages['paste_url'] = 'Bonvolu alglui adreson de MediaVikia retpaĝo';
+$messages['no_valid_url'] = 'Tiu ĉi ne estas valida MediaViki-retpaĝa adreso';
 $messages['start'] = 'Komenci';
 $messages['reset'] = 'Hodiaŭ';
 $messages['manual'] = 'Manlibro';
@@ -58,6 +63,7 @@ $messages['wrong_skips'] = 'Malĝustaj agordoj: Se la unuaj __VERSIONSTOSKIP__ v
 $messages['search_in_progress_text'] = 'La versihistorio de _ARTICLELINK_  estas serĉata pri <b>_NEEDLE_</b> kiel plata teksto';
 $messages['search_in_progress_wikitags'] = 'La versihistorio de _ARTICLELINK_ estas serĉata pri <b>_NEEDLE_</b> kiel vikia teksto';
 $messages['no_differences'] = 'Neniu diferenco trovitas en la serĉitaj revizoj.';
+$messages['inverse_earliest'] = 'Serĉi en pli fruaj versioj';
 $messages['first_version'] = 'Ĉu la ŝanĝo okazu en la unua aŭ lasta revizioj?';
 $messages['first_version_present'] = '__NEEDLE__ jam ĉeestis en la unua versio de __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Kredeble, estas pli malfruaj revizioj.';
@@ -70,6 +76,7 @@ $messages['once_more'] = 'Ankoraŭfoje, ĉi-foje kun sento:';
 $messages['binary_enough'] = 'Plurajn fojojn provis plenumi vian peton, sed la historio de tiu ĉi artikolo estas tro ĥaosa. Bonvolu reprovi kun aliaj agordoj.';
 $messages['insertion_found'] = 'Enmeto troviĝis inter LEFT_VERSION kaj RIGHT_VERSION';
 $messages['deletion_found'] = 'Forigo troviĝis inter LEFT_VERSION kaj RIGHT_VERSION';
+$messages['here'] = 'ĉi tie';
 $messages['help_translating'] = 'Helpi tradukadon ĉe translatewiki.net';
 $messages['start_here'] = 'Ekserĉi ĉi tie';
 $messages['too_much_versions'] = 'Vi atingis petolimon de __VERSIONLIMIT__ da versioj. Bonvolu reprovi post __WAITMINUTES__ da minutoj aŭ ŝanĝu al binara interpolado. Pardonu pro tio.';
