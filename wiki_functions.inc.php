@@ -75,7 +75,7 @@ function curl_request($url, $post_data = null)
 			CURLOPT_FAILONERROR => true,
 			//https://raw.githubusercontent.com/bagder/ca-bundle/master/ca-bundle.crt
 			CURLOPT_CAINFO => __DIR__ . '/ca-bundle.crt',
-            CURLOPT_USERAGENT => _SERVER['SCRIPT_URI'] . 'by Flominator',
+            CURLOPT_USERAGENT => $_SERVER['SCRIPT_URI'] . 'by Flominator',
 		));
 	}
 	curl_setopt($ch, CURLOPT_URL, $url);
