@@ -13,23 +13,23 @@
  * @author Ukabia
  */
 
-$messages['January'] = 'Önwa Mbú';
-$messages['February'] = 'Önwa Abụọ';
-$messages['March'] = 'Önwa Atọ';
-$messages['April'] = 'Önwa Anọ';
-$messages['May'] = 'Önwa Ise';
-$messages['June'] = 'Önwa Isii';
-$messages['July'] = 'Önwa Asaa';
-$messages['August'] = 'Önwa Asatọ';
-$messages['September'] = 'Önwa Itolu';
-$messages['October'] = 'Önwa Iri';
-$messages['November'] = 'Önwa Iri na otu';
-$messages['December'] = 'Önwa Iri na abụọ';
+$messages['January'] = 'Ọnwam̀bụ';
+$messages['February'] = 'Ọnwaàbụọ';
+$messages['March'] = 'Ọnwaàtọ';
+$messages['April'] = 'Ọnwaànọ';
+$messages['May'] = 'Ọnwaìse';
+$messages['June'] = 'Ọnwaìsiì';
+$messages['July'] = 'Ọnwaàsaà';
+$messages['August'] = 'Ọnwaàsatọ';
+$messages['September'] = 'Ọnwaìtoolu';
+$messages['October'] = 'Ọnwaìri';
+$messages['November'] = 'Ọnwaìrinàotù';
+$messages['December'] = 'Ọnwaìrinààbụọ';
 $messages['ui_lang'] = 'Ásụ̀sụ̀ i zi';
 $messages['lang'] = 'Ásụ̀sụ̀';
 $messages['project'] = 'Nzu';
 $messages['article'] = 'Ihü';
-$messages['needle'] = 'Chọwa màkà';
+$messages['needle'] = 'Tùwe màkà';
 $messages['start_date'] = 'Bìdó ubochi';
 $messages['date_format'] = 'MM DD, YYYY';
 $messages['order'] = 'Sòró';

@@ -13,6 +13,7 @@
  * @author Aswanas
  * @author Eitvys200
  * @author Mantak111
+ * @author Manvydasz
  * @author Zygimantus
  */
 
@@ -28,7 +29,7 @@ $messages['September'] = 'Rugsėjis';
 $messages['October'] = 'Spalis';
 $messages['November'] = 'Lapkritis';
 $messages['December'] = 'Gruodis';
-$messages['ui_lang'] = 'Rodyti kalba';
+$messages['ui_lang'] = 'Rodymo kalba';
 $messages['lang'] = 'Kalba';
 $messages['project'] = 'Projektas';
 $messages['article'] = 'Puslapis';
@@ -39,9 +40,9 @@ $messages['limit'] = 'Versijos patikrinimui';
 $messages['start_date'] = 'Pradžios data';
 $messages['date_format'] = 'MM DD, YYYY';
 $messages['order'] = 'Tvarka';
-$messages['newest_first'] = 'nauji pirmesni';
-$messages['oldest_first'] = 'seni pirmesni';
-$messages['binary_search_inverse'] = 'Ieškoti pašalinto teksto (tik dvejetainis )';
+$messages['newest_first'] = 'naujesni pirmiau';
+$messages['oldest_first'] = 'senesni pirmiau';
+$messages['binary_search_inverse'] = 'Ieškoti pašalinto teksto (tik dvejetainė paieška)';
 $messages['search_method'] = 'Paieškos tipas';
 $messages['binary'] = 'binary';
 $messages['linear'] = 'linear';
@@ -66,9 +67,9 @@ $messages['please_wait'] = 'Prašome palaukti ...';
 $messages['binary_test'] = 'Lyginant skirtumus su _FIRSTDATEVERSION_ tarp _FIRSTNUMBER_ ir _SECONDNUMBER_, kai ateina iš _SOURCENUMBER_:';
 $messages['dead_end'] = 'Priėjome aklavietę (turbūt iššaukta grąžinimų ar redagavimo konflikto)';
 $messages['once_more'] = 'Dar kartą, su jausmu:';
-$messages['binary_enough'] = 'Atlikta pakankamai bandymų, straipsnio istorija yra  supainiota, prašome bandyti keisti kuriuos nors parametrus.';
-$messages['insertion_found'] = ' Tarp LEFT_VERSION ir RIGHT_VERSION rastas įterpimas';
-$messages['deletion_found'] = ' Tarp LEFT_VERSION ir RIGHT_VERSION buvo ištrinta';
+$messages['binary_enough'] = 'Atlikta pakankamai bandymų, straipsnio istorija yra supainiota, prašome bandyti keisti kuriuos nors parametrus.';
+$messages['insertion_found'] = 'Tarp LEFT_VERSION ir RIGHT_VERSION rastas įterpimas';
+$messages['deletion_found'] = 'Tarp LEFT_VERSION ir RIGHT_VERSION buvo ištrinta';
 $messages['here'] = 'čia';
 $messages['help_translating'] = 'Padėkite versti translatewiki.net';
 $messages['start_here'] = 'Ieškoti nuo čia';

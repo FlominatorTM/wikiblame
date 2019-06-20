@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Dr Lotus Black
  * @author Erikoo
  * @author Ninjastrikers
  */
@@ -32,11 +33,19 @@ $messages['project'] = 'ပရောဂျက်';
 $messages['article'] = 'စာမျက်နှာ';
 $messages['needle'] = 'ဤအကြောင်းအရာအတွက် ရှာဖွေရန်';
 $messages['skipversions'] = 'အမြဲတမ်း x versions အားကျော်ရန်';
+$messages['limit'] = 'စစ်ဆေးရန် ဗားရှင်းများ';
 $messages['start_date'] = 'စတင်သည့်ရက်စွဲ';
 $messages['date_format'] = 'DD MM, YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'မှာကြားရန်';
 $messages['newest_first'] = 'နောက်ဆုံးမှစတင်၍ဖော်ပြရန်';
 $messages['oldest_first'] = 'အဟောင်းဆုံးအား စတင်ဖော်ပြရန်';
 $messages['search_method'] = 'ရှာဖွေရန်နည်းလမ်းများ';
+$messages['start'] = 'စတင်';
 $messages['reset'] = 'ပြန်စရန်';
+$messages['manual'] = 'လမ်းညွှန်';
+$messages['contact'] = 'ဆက်သွယ်ရန်';
+$messages['inverse_earliest'] = 'အစောပိုင်း မူများထဲတွင် ရှာဖွေရန်';
 $messages['please_wait'] = 'ခေတ္တစောင့်ပါ...';
+$messages['help_translating'] = 'translatewiki.net တွင် ဘာသာပြန်ခြင်းကို ကူညီပါ';
+$messages['start_here'] = 'ဤနေရာမှ ရှာဖွေရန်';

@@ -11,8 +11,10 @@
  * @file
  *
  * @author Alirezaaa
+ * @author Amirsara
  * @author Ebraminio
  * @author Huji
+ * @author Meysamzare23
  * @author Reza1615
  * @author Wayiran
  */
@@ -39,6 +41,7 @@ $messages['ignorefirst'] = 'چشم‌پوشی از نخستین نسخه‌ها�
 $messages['limit'] = 'نسخه‌ها برای بررسی';
 $messages['start_date'] = 'تاریخ شروع';
 $messages['date_format'] = 'م‌م رر، س‌س‌س‌س';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'سفارش';
 $messages['newest_first'] = 'نخست آخرین';
 $messages['oldest_first'] = 'نخست قدیمی‌ترین';
@@ -49,6 +52,8 @@ $messages['linear'] = 'خطی';
 $messages['interpolated'] = 'دودویی (سریع‌تر با نسخه‌های بیشتر)';
 $messages['ignore_minors'] = 'چشم‌پوشی از تغییرات جزئی (آزمایشی)';
 $messages['force_wikitags'] = 'جستجوی اجباری ویکی متن';
+$messages['from_url'] = 'از نشانی اینترنتی';
+$messages['paste_url'] = 'لطفاً آدرس را در صفحه ویکی‌مدیا جای گذاری کنید';
 $messages['start'] = 'شروع';
 $messages['reset'] = 'بازنشانی';
 $messages['manual'] = 'دفترچه راهنما';

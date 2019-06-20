@@ -20,6 +20,7 @@
  * @author Sayma Jahan
  * @author Wikisagnik
  * @author আজিজ
+ * @author আফতাবুজ্জামান
  */
 
 $messages['January'] = 'জানুয়ারি';

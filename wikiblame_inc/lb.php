@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Les Meloures
  * @author Robby
  * @author Soued031
  */
@@ -48,6 +49,7 @@ $messages['interpolated'] = 'binär (bei méi Versioune méi séier)';
 $messages['ignore_minors'] = 'Kleng ännerungen ignoréieren (experimentel)';
 $messages['force_wikitags'] = 'd\'Sichen op Wikitext limitéieren';
 $messages['from_url'] = 'vun der URL';
+$messages['paste_url'] = 'Setzt d\'URL op eng MediaWiki-Säit derbäi';
 $messages['no_valid_url'] = 'Dëst ass keng valabel MediaWiki URL';
 $messages['start'] = 'Ufank';
 $messages['reset'] = 'Zrécksetzen';

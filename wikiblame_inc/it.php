@@ -21,6 +21,7 @@
  * @author Macofe
  * @author Melos <nnico AT jumpy.it>
  * @author Od1n
+ * @author Ontsed
  * @author Rippitippi
  * @author Selven
  */
@@ -59,6 +60,9 @@ $messages['linear'] = 'lineare';
 $messages['interpolated'] = 'binario (più veloce con molte versioni da controllare)';
 $messages['ignore_minors'] = 'ignora le modifiche minori (sperimentale)';
 $messages['force_wikitags'] = 'forza la ricerca di wikitext';
+$messages['from_url'] = 'dall’URL';
+$messages['paste_url'] = 'Incollare l’URL della pagina MediaWiki';
+$messages['no_valid_url'] = 'Non è un URL MediaWiki valido';
 $messages['start'] = 'Inizia';
 $messages['reset'] = 'Reimposta';
 $messages['manual'] = 'Manuale';
@@ -72,6 +76,8 @@ $messages['search_in_progress_text'] = 'La cronologia di _ARTICLELINK_ viene ora
 $messages['search_in_progress_wikitags'] = 'La cronologia di _ARTICLELINK_ viene ora analizzata alla ricerca di <b>_NEEDLE_</b> come testo wiki';
 $messages['no_differences'] = 'Nessuna differenza nelle revisioni trovate.';
 $messages['inverse_restart'] = 'Nessun inserimento o rimozione trovati, il termine di ricerca è stato inserito in un secondo momento?';
+$messages['inverse_stuck'] = 'Non sono stati trovati inserimenti o rimozioni in queste _NUMBEROFVERSIONS_ revisioni. Forse il termine di ricerca è stato rimosso precedentemente?';
+$messages['inverse_earliest'] = 'Ricerca in versioni precedenti';
 $messages['first_version'] = 'La modifica è avvenuta nella prima o nell\'ultima revisione?';
 $messages['first_version_present'] = '__NEEDLE__ era già presente nella versione più vecchia cercata del __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probabilmente ci sono versioni più vecchie.';

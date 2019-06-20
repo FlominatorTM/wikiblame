@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** 한국어 (조선) (한국어 (조선))
+/** Korean (North Korea) (조선말)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net

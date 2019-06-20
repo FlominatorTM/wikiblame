@@ -18,6 +18,7 @@
  * @author Kuvaly
  * @author Mormegil
  * @author Od1n
+ * @author Patriccck
  * @author Utar
  * @author Walter Klosse
  */
@@ -44,6 +45,7 @@ $messages['ignorefirst'] = 'Ignorovat prvních x verzí';
 $messages['limit'] = 'Počet prohledávaných revizí';
 $messages['start_date'] = 'Počáteční datum';
 $messages['date_format'] = 'DD MM YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %M %R';
 $messages['order'] = 'Řadit';
 $messages['newest_first'] = 'od nejnovějších';
 $messages['oldest_first'] = 'od nejstarších';
@@ -55,6 +57,9 @@ $messages['linear'] = 'lineární';
 $messages['interpolated'] = 'binární (rychlejší s více verzemi)';
 $messages['ignore_minors'] = 'ignorovat malé editace (experimentální)';
 $messages['force_wikitags'] = 'vynutit vyhledávání wikitextu';
+$messages['from_url'] = 'z URL';
+$messages['paste_url'] = 'Prosím vložte URL na MediaWiki stránku';
+$messages['no_valid_url'] = 'Toto není platná MediaWiki URL';
 $messages['start'] = 'Začít';
 $messages['reset'] = 'Vynulovat';
 $messages['manual'] = 'Příručka';
@@ -65,6 +70,7 @@ $messages['search_in_progress_text'] = 'Historie verzí _ARTICLELINK_ se prohled
 $messages['search_in_progress_wikitags'] = 'Historie verzí _ARTICLELINK_ se prohledává na <b>_NEEDLE_</b> jako wiki text';
 $messages['no_differences'] = 'Nebyly nalezeny žádné rozdíly v prohledávaných revizích.';
 $messages['inverse_restart'] = 'Nebylo nalezeno žádné vložení nebo odebrání, mám hledat termín později?';
+$messages['inverse_earliest'] = 'Hledat v předcházejících revizích';
 $messages['first_version'] = 'Ke změně muselo dojít v první nebo poslední revizi?';
 $messages['first_version_present'] = '__NEEDLE__ bylo nalezeno již v nejstarší revizi, datováno od __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Zřejmě existují starší verze.';

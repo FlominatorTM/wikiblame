@@ -13,6 +13,7 @@
  * @author Aotake
  * @author Flominator
  * @author Fryed-peach
+ * @author Gulpin
  * @author Od1n
  * @author Omotecho
  * @author Otokoume
@@ -43,6 +44,7 @@ $messages['ignorefirst'] = '先頭のいくつかの版を無視';
 $messages['limit'] = '検査する版数';
 $messages['start_date'] = '開始日';
 $messages['date_format'] = 'YYYY年MM月DD日';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = '順序';
 $messages['newest_first'] = '新しい順';
 $messages['oldest_first'] = '古い順';
@@ -54,6 +56,7 @@ $messages['linear'] = '線型';
 $messages['interpolated'] = '二分探索 (版が多い場合は高速)';
 $messages['ignore_minors'] = '細部の編集を無視 (実験的)';
 $messages['force_wikitags'] = 'ウィキテキストとして検索';
+$messages['from_url'] = 'URLから';
 $messages['paste_url'] = 'MediaWiki ページのurlをコピーして貼り付けてください';
 $messages['no_valid_url'] = '無効な MediaWiki url です。';
 $messages['start'] = '開始';
@@ -66,6 +69,8 @@ $messages['wrong_skips'] = '設定の不備: 初めの__VERSIONSTOSKIP__版を�
 $messages['search_in_progress_text'] = '「_ARTICLELINK_」の版履歴を、「<b>_NEEDLE_</b>」をプレーンテキストとして検索しています';
 $messages['search_in_progress_wikitags'] = '「_ARTICLELINK_」の版履歴を、「<b>_NEEDLE_</b>」をウィキテキストして検索しています';
 $messages['no_differences'] = '検索された範囲の版で差分は見つかりませんでした。';
+$messages['inverse_restart'] = '挿入や削除は見つかりませんでした。検索語があとで挿入されましたか？';
+$messages['inverse_stuck'] = ' _NUMBEROFVERSIONS_ リビジョン中に挿入や削除は見つかりませんでした。検索語が前に削除されましたか？';
 $messages['inverse_earliest'] = '古い版で検索';
 $messages['first_version'] = '変更は最初か最新の版で起きている必要がありますか?';
 $messages['first_version_present'] = '__NEEDLE__は検索の結果、__REVISIONLINK__までに作成された初版に既に存在しています。';
@@ -76,6 +81,8 @@ $messages['please_wait'] = 'お待ちください…';
 $messages['binary_test'] = '_SOURCENUMBER_番の次に、_FIRSTDATEVERSION_における_FIRSTNUMBER_番と_SECONDNUMBER_番の差分を比較しています:';
 $messages['dead_end'] = '行き止まりに入ってしまいました (理由はおそらくリバートか編集合戦です)';
 $messages['once_more'] = 'もう一度、心を込めて:';
+$messages['delete_from_here'] = '削除は後で実行しなければならないので、_NUMBEROFVERSIONS_ の早期のリビジョンを削除しています。';
+$messages['delete_until_here'] = '削除は先に実行しなければならないので、_NUMBEROFVERSIONS_ のより新しいリビジョンを削除しています。';
 $messages['binary_enough'] = '何度か再試行しましたが、記事の履歴が非常に込み入っているため、設定を変えて試行してください。';
 $messages['insertion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で挿入されました';
 $messages['deletion_found'] = 'LEFT_VERSION と RIGHT_VERSION の間で削除されました';

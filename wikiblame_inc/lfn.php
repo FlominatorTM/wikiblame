@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** Kirmanjki (Kırmancki)
+/** Lingua Franca Nova (Lingua Franca Nova)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -10,9 +10,8 @@
  * @ingroup Language
  * @file
  *
- * @author Mirzali
+ * @author Robin van der Vliet
  */
 
-$messages['January'] = 'Çele';
-$messages['February'] = 'Gucige';
-$messages['article'] = 'Pele';
+$messages['lang'] = 'Lingua';
+$messages['project'] = 'Projeta';

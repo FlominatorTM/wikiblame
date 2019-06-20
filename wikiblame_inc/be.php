@@ -11,6 +11,7 @@
  * @file
  *
  * @author Artificial123
+ * @author Artsiom91
  * @author Mechanizatar
  * @author SamGold
  */
@@ -19,7 +20,7 @@ $messages['January'] = 'Студзень';
 $messages['February'] = 'Люты';
 $messages['March'] = 'Сакавік';
 $messages['April'] = 'Красавік';
-$messages['May'] = 'Май';
+$messages['May'] = 'мая';
 $messages['June'] = 'Чэрвень';
 $messages['July'] = 'Ліпень';
 $messages['August'] = 'Жнівень';

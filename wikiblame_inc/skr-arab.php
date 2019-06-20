@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** سرائیکی (سرائیکی)
+/** Saraiki (Arabic script) (سرائیکی)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -32,14 +32,17 @@ $messages['article'] = 'ورقہ';
 $messages['needle'] = 'کیتے ڳول';
 $messages['skipversions'] = 'ہمیشہ x ورژن کوں چھوڑ ݙیوو';
 $messages['ignorefirst'] = 'پہلا x ورژن چھوڑ ݙیوو';
-$messages['start_date'] = 'شروع کرݨ دی تاریخ';
+$messages['limit'] = 'ورژن جیندی پڑتال کرݨی ہے';
+$messages['start_date'] = 'شروع کرݨ دی تریخ';
 $messages['date_format'] = 'مم ݙینہ،سال';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'ترتیب';
 $messages['newest_first'] = 'تازہ ترین پہلے';
 $messages['oldest_first'] = 'پراݨا ترین پہلے';
 $messages['search_method'] = 'ڳولݨ دا طریقہ';
 $messages['binary'] = 'بائنری';
 $messages['linear'] = 'سطرحوی';
+$messages['from_url'] = 'یوآرایل کنوں';
 $messages['start'] = 'شروع';
 $messages['reset'] = 'ولدا ٹھیک کرو';
 $messages['manual'] = 'دستی';

@@ -2,7 +2,7 @@
 /** WikiBlame
  *
  */
-/** Kirmanjki (Kırmancki)
+/** Guianan Creole (kriyòl gwiyannen)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit http://translatewiki.net
@@ -10,9 +10,7 @@
  * @ingroup Language
  * @file
  *
- * @author Mirzali
+ * @author LeGuyanaisPure
  */
 
-$messages['January'] = 'Çele';
-$messages['February'] = 'Gucige';
-$messages['article'] = 'Pele';
+$messages['manual'] = 'Manniyèl';

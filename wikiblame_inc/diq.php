@@ -16,15 +16,16 @@
  * @author Gırd
  * @author Kumkumuk
  * @author Mirzali
+ * @author Orbot707
  * @author Velg
  */
 
 $text_dir = 'ltr';
 $messages['January'] = 'Çele';
-$messages['February'] = 'Zemherı';
-$messages['March'] = 'Mert';
+$messages['February'] = 'Gucige';
+$messages['March'] = 'Adar';
 $messages['April'] = 'Nisane';
-$messages['May'] = 'Gúlan';
+$messages['May'] = 'Gulane';
 $messages['June'] = 'Heziran';
 $messages['July'] = 'Temuz';
 $messages['August'] = 'Tebaxe';
@@ -40,18 +41,22 @@ $messages['needle'] = 'Cı geyre';
 $messages['skipversions'] = 'Tım u tım versiyona x serçekere';
 $messages['ignorefirst'] = 'Tım u tım versiyonê x ser çeke';
 $messages['limit'] = 'Versiyonê ke gani qontrol bê';
-$messages['start_date'] = 'Destpêkerdışeya demi';
+$messages['start_date'] = 'Tarixê destpêkerdışi';
 $messages['date_format'] = 'RR MM, SSSS';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Pepeyin';
 $messages['newest_first'] = 'Verni ra verên';
 $messages['oldest_first'] = 'Tewr kehani ra sıfteyên';
 $messages['binary_search_inverse'] = 'nusni hewadayış (qande dıletine)';
-$messages['search_method'] = 'babeti cıgeyrayışi';
+$messages['search_method'] = 'Babetê cıgeyrayışi';
 $messages['binary'] = 'dıletine';
 $messages['linear'] = 'Lineer';
 $messages['interpolated'] = 'Dıletın (Veşi versiyon esto se rew vineno)';
 $messages['ignore_minors'] = 'Vurnayışane werdiya mevac (Cerbneyin)';
 $messages['force_wikitags'] = 'Wikinuştey be zor geyreno';
+$messages['from_url'] = 'url ra';
+$messages['paste_url'] = 'Kerem kerên, urlê pela MediaWiki pıranê';
+$messages['no_valid_url'] = 'No urlê MediaWikiyo vêrde niyo';
 $messages['start'] = 'Suru bık';
 $messages['reset'] = 'Reset kerê';
 $messages['manual'] = 'Manuel';
@@ -62,15 +67,19 @@ $messages['search_in_progress_text'] = 'Qandi _ARTICLELINK_ verin versiyoni cı 
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ erin versiyonde cı <b>_NEEDLE_</b> için viki metin o vineyino';
 $messages['no_differences'] = 'Çımraviyarnayışanê cıgeyrayeyan de qet ferqi nêvêniyay.';
 $messages['inverse_restart'] = 'Çebyaye yana wedaryaye nêvineya, terim vinayış ser çebya yo?';
+$messages['inverse_stuck'] = 'Revizyonê _NUMBEROFVERSIONS_i de cıkerdış u wedardış nêvêniya. Terimê cıgeyrayışi beno ke dariyo we?';
+$messages['inverse_earliest'] = 'Vurnayışanê verênan de cıgeyre';
 $messages['first_version'] = 'Vurnayış gani çımraviyarnayışo sıfteyın ya zi peyên de bıbo?';
 $messages['first_version_present'] = '__NEEDLE__ miyan de be tarixê __REVISIONLINK__ çımraviyarnayışo verên xora est bi.';
 $messages['earlier_versions_available'] = 'Revizyonê verêni şenê bıbê.';
 $messages['execution_time'] = 'Demê veciyayışi: _EXECUTIONTIME_ saniyeyi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiyonê weqfi';
-$messages['please_wait'] = 'Tay pıpawe...';
+$messages['please_wait'] = 'Kerem kerên, bıpawên...';
 $messages['binary_test'] = 'Çıme de _SOURCENUMBER_ amyayış de _FIRSTDATEVERSION_ miyan de _FIRSTNUMBER_ u _SECONDNUMBER_ ferqi beni piver:';
 $messages['dead_end'] = 'Tayê nêciyayey tepışiyay (mıhtemelen sebebê loğbiyayış u lecê vurnayışi ra)';
 $messages['once_more'] = 'Zerri ra, fına:';
+$messages['delete_from_here'] = '_NUMBEROFVERSIONS_ revizyonê peyêni esternayış, dehana veror kar herun ardış icab keno.';
+$messages['delete_until_here'] = '_NUMBEROFVERSIONS_ revizyonê peyêni esternayıi, dehana veror kar herun ardeış icab keno.';
 $messages['binary_enough'] = 'Cerebnayış kafi biyo, tarixê meqaley xeylê alaziyayeyo, tayê eyaranê cı bıvurne u fına bıcerebne.';
 $messages['insertion_found'] = 'LEFT_VERSION u RIGHT_VERSION de debeste vineya.';
 $messages['deletion_found'] = 'LEFT_VERSION u RIGHT_VERSION besternaye vineya';

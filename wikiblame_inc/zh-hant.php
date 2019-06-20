@@ -11,6 +11,7 @@
  * @file
  *
  * @author 578985s
+ * @author A2093064
  * @author Bowleerin
  * @author Frankou
  * @author Kly
@@ -20,21 +21,22 @@
  * @author Maskers
  * @author Od1n
  * @author Reke
+ * @author Shangkuanlc
  * @author Wrightbus
  */
 
-$messages['January'] = '一月';
-$messages['February'] = '二月';
-$messages['March'] = '三月';
-$messages['April'] = '四月';
-$messages['May'] = '五月';
-$messages['June'] = '六月';
-$messages['July'] = '七月';
-$messages['August'] = '八月';
-$messages['September'] = '九月';
-$messages['October'] = '十月';
-$messages['November'] = '十一月';
-$messages['December'] = '十二月';
+$messages['January'] = '1月';
+$messages['February'] = '2月';
+$messages['March'] = '3月';
+$messages['April'] = '4月';
+$messages['May'] = '5月';
+$messages['June'] = '6月';
+$messages['July'] = '7月';
+$messages['August'] = '8月';
+$messages['September'] = '9月';
+$messages['October'] = '10月';
+$messages['November'] = '11月';
+$messages['December'] = '12月';
 $messages['ui_lang'] = '顯示語言';
 $messages['lang'] = '語言';
 $messages['project'] = '項目';
@@ -57,7 +59,7 @@ $messages['linear'] = '線性';
 $messages['interpolated'] = '二分法（在版本較多時更快）';
 $messages['ignore_minors'] = '略過小修改（試驗性功能）';
 $messages['force_wikitags'] = '強制搜尋 wikitext';
-$messages['from_url'] = '自 URL';
+$messages['from_url'] = '來自 URL';
 $messages['paste_url'] = '請貼上至 MediaWiki 頁面的 URL';
 $messages['no_valid_url'] = '這不是有效的 MediaWiki URL';
 $messages['start'] = '開始';
@@ -78,7 +80,7 @@ $messages['earlier_versions_available'] = '可能有較舊的修訂版本。';
 $messages['execution_time'] = '執行時間：_EXECUTIONTIME_ 秒';
 $messages['versions_found'] = '找到 _NUMBEROFVERSIONS_ 個版本';
 $messages['please_wait'] = '請稍候...';
-$messages['binary_test'] = '在來自 _SOURCENUMBER_ 時，正在比較在 _FIRSTNUMBER_ 和 _SECONDNUMBER_ 之間， _FIRSTDATEVERSION_ 的差異：';
+$messages['binary_test'] = '在 _SOURCENUMBER_ 個版本中，正在比較在第 _FIRSTNUMBER_ 個和第 _SECONDNUMBER_ 個版本之間 _FIRSTDATEVERSION_ 的差異：';
 $messages['dead_end'] = '找到一些死胡同（可能由回退或編輯戰所造成）';
 $messages['once_more'] = '再一次，有感而發：';
 $messages['delete_from_here'] = '因為去除步驟必須要安排在後續進行，正在刪除 _NUMBEROFVERSIONS_ 較前面的修訂版本';

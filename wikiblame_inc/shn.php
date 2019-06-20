@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ninjastrikers
  * @author Saimawnkham
  * @author Saosukham
  */
@@ -24,7 +25,7 @@ $messages['July'] = 'ၵျူႇလၢႆႇ';
 $messages['August'] = 'ဢေႃးၵၢတ်ႉသ်';
 $messages['September'] = 'သႅပ်ႇထိမ်ႇပႃႇ';
 $messages['October'] = 'ဢွၵ်ႇထူဝ်ႇပႃႇ';
-$messages['November'] = 'ၼူဝ်ႇဝိမ်ႇပႃႇ';
+$messages['November'] = 'ၼူဝ်ႇဝႅမ်ႇပႃႇ';
 $messages['December'] = 'တီႇသိမ်ႇပႃႇ';
 $messages['ui_lang'] = 'ၼႄၽႃႇသႃႇၵႂၢမ်း';
 $messages['lang'] = 'ၽႃႇသႃႇၵႂၢမ်း';
@@ -36,6 +37,7 @@ $messages['ignorefirst'] = 'ဢုပဵၵ်ႉၶႃႇ လုၼ်ႈ x ဢ
 $messages['limit'] = 'လုၼ်ႈတင်းၼမ် လူဝ်ႇၵူတ်ႇ';
 $messages['start_date'] = 'တႄႇၶေႃႈမုၼ်း';
 $messages['date_format'] = 'လလ ဝဝ, ပပပပ';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'သင်ႇ';
 $messages['newest_first'] = 'ႁူဝ်ပိုင်း လိုၼ်းသုတ်းပိူၼ်ႈ';
 $messages['oldest_first'] = 'ႁူဝ်ပိုင်း ယႂ်ႇသေပိူၼ်ႈ';
@@ -46,6 +48,9 @@ $messages['linear'] = 'ၸွမ်းမၢႆၶပ်ႉ';
 $messages['interpolated'] = 'ဢၼ်ၵူပ်ႉ (ဝႆးလိူဝ် လူၺ်ႈ လုၼ်ႈတၢင်ႇၸိူဝ်း)';
 $messages['ignore_minors'] = 'ဢုပဵၵ်ႉၶႃႇ လွင်ႈလႅၵ်ႈလၢႆႈ ယွႆႈယႅမ်း (တူဝ်ထူပ်း)';
 $messages['force_wikitags'] = 'သွၵ်ႈႁႃႁိပ်ႈၼႅတ်ႈ တႃႇ ဝီႇၶီႇထႅၵ်ႉ';
+$messages['from_url'] = 'ၵႃႈတီႈ url';
+$messages['paste_url'] = 'ၶႅၼ်းတေႃႈ ဝၢင်းသႂ်ႇ url ၸူးတီႈ ၼႃႈလိၵ်ႈ မီႇတီႇယႃႇဝီႇၶီႇ';
+$messages['no_valid_url'] = 'ဢမ်ႇႁၼ်မီးဝႆႉ url မီႇတီႇယႃႇဝီႇၶီႇ ဢၼ်ၸၢင်ႈၸႂ်ႉလႆႈ';
 $messages['start'] = 'တႄႇ';
 $messages['reset'] = 'ၶိုၼ်းႁဵတ်း';
 $messages['manual'] = 'မိုဝ်းႁဵတ်း';
@@ -55,6 +60,9 @@ $messages['wrong_skips'] = 'ႁဵတ်းၽိတ်း: သင်ဝႃႈ �
 $messages['search_in_progress_text'] = 'ပိုၼ်းလွင်ႈလုၼ်ႈ _ARTICLELINK_ လႆႈၶၢမ်ႇသွၵ်ႈႁႃ ပုၼ်ႈတႃႇ <b>_NEEDLE_</b> ၼင်ႇ တူဝ်လိၵ်ႈပဝ်ႇ';
 $messages['search_in_progress_wikitags'] = 'ပိုၼ်းလွင်ႈလုၼ်ႈ _ARTICLELINK_ လႆႈၶၢမ်ႇသွၵ်ႈႁႃ ပုၼ်ႈတႃႇ <b>_NEEDLE_</b> ၼင်ႇ တူဝ်လိၵ်ႈဝီႇၶီႇ';
 $messages['no_differences'] = 'ၼႂ်းဢၼ်ၶိုၼ်းမႄးသွၵ်ႈႁႃၼႆႉ ဢမ်ႇႁၼ်ဢၼ်ပႅၵ်ႇပိူင်ႈ';
+$messages['inverse_restart'] = 'ဢမ်ႇႁၼ်မီး လွင်ႈထႅမ်သႂ်ႇ ဢမ်ႇၼၼ် လွင်ႈထွၼ်ပႅတ်ႈ၊ ၸွင်ႇၵွႆႈထႅမ်ၶိုၼ်း ၶေႃႈၵႂၢမ်းသွၵ်ႈႁႃၼႄႇ?';
+$messages['inverse_stuck'] = 'ဢမ်ႇႁၼ်မီး လွင်ႈထႅမ်သႂ်ႇ ဢမ်ႇၼၼ် လွင်ႈထွၼ်ပႅတ်ႈ ၵႃႈတီႈ_NUMBEROFVERSIONS_ ၶေႃႈၶူၼ်ႉတူၺ်းၶိုၼ်း။ ၶေႃႈသွၵ်ႈႁႃၸိူဝ်းၼၼ်ႉ ထုၵ်ႇမွတ်ႇပႅတ်ႈ မိူဝ်ႈၸဝ်ႉၼၼ်ႉယဝ်ႉႁိုဝ်?';
+$messages['inverse_earliest'] = 'သွၵ်ႈႁႃတီႈၼႂ်း သဵၼ်ႈမၢႆမိူဝ်ႈၸဝ်ႉ';
 $messages['first_version'] = 'လွင်ႈလႅၵ်ႈလၢႆႈ တၵ်းလႆႈပဵၼ် လုၼ်ႈဢွၼ်တၢင်းသုတ်း ဢမ်ႇၼၼ် လုၼ်ႈၵမ်းလိုၼ်းသုတ်းႁိုဝ်?';
 $messages['first_version_present'] = '__NEEDLE__ ၼႆႉ လႆႈႁၼ်ဝႆႉယူႇ တီႈၼႂ်း ၶေႃႈမုၼ်း လွင်ႈၶူၼ်ႉၶႆႈဢွၼ်တၢင်းသုတ်း ဝၼ်းထီႉဢၼ်ၶူၼ်ႉႁႃဝႆႉ ၵႃႈတီႈ__REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'ၸိူဝ်းၼႆႉပဵၼ် လွင်ႈၶူၼ်ႉၶႆႈမိူဝ်ႈၸဝ်ႉၼႆ တႅတ်ႈၼႅတ်ႈယူႇ';
@@ -64,6 +72,8 @@ $messages['please_wait'] = 'ၶႅၼ်းတေႃႈ ပႂ်ႉၵွၼ်
 $messages['binary_test'] = 'လွင်ႈတႅၵ်ႈၼိူင်း ပႅၵ်ႇပိူင်ႈ ၼႂ်း _FIRSTDATEVERSION_ ဝူင်ႈၵၢင် _FIRSTNUMBER_ လႄႈ _SECONDNUMBER_ မိူဝ်ႈမႃးတမ်ႈတီႈ _SOURCENUMBER_:';
 $messages['dead_end'] = 'ၵိုတ်းယိုတ်း ငိူင်ႈဝႄႈ (တမ်ႈတီႈ လွင်ႈတၢင်းတႅတ်ႈၼႅတ်ႈၼၼ်ႉ လွင်ႈတွပ်ႇတႅၼ်း ဢမ်ႇၼၼ် ပွႆးတိုၵ်းထတ်းလိၵ်ႈ)';
 $messages['once_more'] = 'ထႅင်ႈပွၵ်ႈၼိုင်ႈ, ၵိုၵ်းလူၺ်ႈ တၢင်းၶဝ်ႈၸႂ်';
+$messages['delete_from_here'] = 'လွင်ႈမွတ်ႇပႅတ်ႈ _NUMBEROFVERSIONS_ သဵၼ်ႈမၢႆမိူဝ်ႈၸိုဝ်ႉ, လွင်ႈမွတ်ႇပႅတ်ႈၼႆႉ တေလႆႈႁဵတ်းသၢင်ႈၵႂႃႇ ဝၢႆးလင်';
+$messages['delete_until_here'] = 'လွင်ႈမွတ်ႇပႅတ်ႈ _NUMBEROFVERSIONS_ သဵၼ်ႈမၢႆဝၢႆးလင်, လွင်ႈထႅမ်သႂ်ႇၼႆႉ တေလႆႈထုၵ်ႇႁဵတ်းမႃး မိူဝ်ႈၸဝ်ႉၼၼ်ႉ';
 $messages['binary_enough'] = 'ဢၼ်ႁဵတ်းယဝ်ႉ တဵမ်ထူၼ်ႈလႄႈ ၸိူင်းမူႇလိၵ်ႈၼၼ်ႉ သင်ဝႃႈ ဝူၺ်ႇႁင်ႈၸိုင် ၶႅၼ်းတေႃႈ မႄးလႅၵ်ႈလၢႆႈၵမ်ႈၽွင်ႈ';
 $messages['insertion_found'] = 'ဢၼ်ထႅမ်သႂ်ႇႁၼ် ၼႂ်းၵႄႈ LEFT_VERSION လႄႈ RIGHT_VERSION';
 $messages['deletion_found'] = 'ဢၼ်မွတ်ႇပႅတ်ႈႁၼ် ၼႂ်းၵႄႈ LEFT_VERSION လႄႈ RIGHT_VERSION';

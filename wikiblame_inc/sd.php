@@ -12,6 +12,7 @@
  *
  * @author Aursani
  * @author Indus Asia
+ * @author JogiAsad
  * @author Mehtab ahmed
  */
 
@@ -32,8 +33,12 @@ $messages['lang'] = 'ٻولي';
 $messages['project'] = 'رٿا';
 $messages['article'] = 'صفحو';
 $messages['needle'] = 'ڳولا براءِ';
+$messages['skipversions'] = 'x ورزن سدائين تَرڪ ڪيو';
+$messages['ignorefirst'] = 'پهريان x ورزن نظرانداز ڪريو';
+$messages['limit'] = 'ورزن چڪاس';
 $messages['start_date'] = 'شروعات جي تاريخ';
 $messages['date_format'] = 'م‌م ڏڏ، س‌س‌س‌س';
+$messages['revision_date_format'] = '%ڪ:%م, %ڏ %ب %س';
 $messages['order'] = 'ترتيب';
 $messages['newest_first'] = 'تازوترين اڳ ۾';
 $messages['oldest_first'] = 'قديم ترين اڳ ۾';
@@ -42,6 +47,8 @@ $messages['binary'] = 'ڏونائي';
 $messages['linear'] = 'سِڌِر';
 $messages['interpolated'] = 'ڏونائي (گھڻن ورزنس سان تڪڙو)';
 $messages['ignore_minors'] = 'معمولي تبديلين کي نظرانداز ڪريو (تجرباتي)';
+$messages['from_url'] = 'يوآرايل کان';
+$messages['paste_url'] = 'مهرباني ڪري ميڊياوڪي صفو ڏانهن يوآرايل چسپايو';
 $messages['start'] = 'شروع ڪريو';
 $messages['reset'] = 'ٻيهر ترتيب ڪريو';
 $messages['manual'] = 'ترتيب نامو';
