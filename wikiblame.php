@@ -1,5 +1,17 @@
 <?php header('Content-Type: text/html; charset=utf-8');  
-while (@ob_end_flush());/* no output buffering (via http://stackoverflow.com/a/15319311/4609258)*/ ?>
+
+// Emulate the header BigPipe sends so we can test through Varnish.
+header('Surrogate-Control: BigPipe/1.0');
+
+// Explicitly disable caching so Varnish and other upstreams won't cache.
+header("Cache-Control: no-cache, must-revalidate");
+
+// Setting this header instructs Nginx to disable fastcgi_buffering and disable
+// gzip for this request.
+header('X-Accel-Buffering: no');
+
+//last four lines come from https://www.jeffgeerling.com/blog/2016/streaming-php-disabling-output-buffering-php-apache-nginx-and-varnish
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -693,6 +705,7 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 		echo "</li>\n";
 	}
 	echo "</ul>";
+	flush();
 }
 
 function idfromurl ($url)
@@ -892,6 +905,7 @@ function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
         $msg = str_replace('__NEEDLE__', '<b>'.htmlspecialchars($needle).'</b>', $messages['first_version_present']);
         echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
     }
+	flush();
     return $found_in_earliest_revision;
 }
 
@@ -899,7 +913,7 @@ function binary_search($middle, $from)
 {
 	global $needle, $versions, $server, $messages, $binary_search_inverse, $binary_search_retries, $needle_ever_found, $limit, $articleenc, $deleted_revisions;
 	//echo "binary_search(".$middle.",".$from.")";
-	
+	flush();
 	if($middle<0)
 	{
         if($from != 2 && $from != 1)
