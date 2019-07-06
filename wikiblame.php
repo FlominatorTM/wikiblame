@@ -1097,10 +1097,9 @@ function binary_search($middle, $from)
 			}
 			else
 			{
-			//$right_version was 1
 				$left_version = get_old_link ($versions[$middle+1]);
 				$right_version = get_old_link($versions[$middle]);
-				if(!$in_right AND $in_left)
+				if(!$in_left AND $in_right) //XO
 				{
 					$needle_ever_found = true;
 					echo "<font color=\"red\">X</font>\n";
@@ -1109,10 +1108,14 @@ function binary_search($middle, $from)
 					echo str_replace('RIGHT_VERSION', $right_version, $insertion_found).': ';;
                     if($binary_search_inverse)
                     {
+						//looking for removal
+						//was inserted at version "right"
+						//removal must have happend afterwards = more right = lower indexes
+						
+						
                         $first_to_remove = $middle +1;
                         $count = count($versions);
                         echo '<br>' . str_replace('_NUMBEROFVERSIONS_', $count-$first_to_remove, $messages['delete_from_here']).'<br><br>';
-                        //removed afterwards
                         clear_array_starting_at($versions, $middle+1);
                         echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']).'<br>';
                         binary_search_from_earliest_index($versions);                       
