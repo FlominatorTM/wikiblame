@@ -887,9 +887,9 @@ function needle_in_version ($needle, &$versions, $index)
     if(!$versions[$index]['checked'])
     {
         $rev_text = get_revision($versions[$index]['id']);
-        $found = stristr($rev_text, $needle); 
+        $found = !stristr($rev_text, $needle); 
         $versions[$index]['checked'] = true;
-        $versions[$index]['found'] = $found;
+        $versions[$index]['found'] = !(!$found); //to have the boolean instead of the text
     }
     return  $versions[$index]['found'];
 }
