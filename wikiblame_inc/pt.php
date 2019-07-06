@@ -25,6 +25,7 @@
  * @author Od1n
  * @author Vitorvicentevalente
  * @author Waldir
+ * @author Waldyrious
  */
 
 $messages['January'] = 'Janeiro';

@@ -11,6 +11,7 @@
  * @file
  *
  * @author Baloch Afghanistan
+ * @author Sultanselim baloch
  */
 
 $messages['January'] = 'جنوری';
@@ -25,7 +26,7 @@ $messages['September'] = 'سپٹامبر';
 $messages['October'] = 'اکتوبر';
 $messages['November'] = 'نوامبر';
 $messages['December'] = 'دسمبر';
-$messages['ui_lang'] = 'نمایش زبان';
+$messages['ui_lang'] = 'زبانء سۏج';
 $messages['lang'] = 'زبان';
 $messages['project'] = 'پروژه';
 $messages['article'] = 'دیم یا تاک';
