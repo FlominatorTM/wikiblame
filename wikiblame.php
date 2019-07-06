@@ -1158,7 +1158,7 @@ function clear_array_until_including(&$versions, $last_to_remove)
 function binary_search_from_earliest_index($versions)
 {
     $earliest_index = count($versions);
-    binary_search(floor($earliest_index/2), $earliest_index);
+    binary_search(floor($earliest_index/2), $earliest_index-1);
 }
  
 function get_diff_link($version, $order="prev")
