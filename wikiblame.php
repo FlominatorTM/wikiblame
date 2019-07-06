@@ -994,6 +994,15 @@ function binary_search($middle, $from)
         }
 		else //looking for insertion => maybe we hit an edit war 
 		{	
+			/*
+				quick and dirty hack to fix this endless loop:
+				wikiblame.php?user_lang=en&lang=fr&project=wikipedia&article=Modèle%3AMéta+bandeau+d'événement+récent&needle=<u>&skipversions=0&ignorefirst=0&limit=50&offmon=10&offtag=23&offjahr=2017&searchmethod=int&order=desc&force_wikitags=on
+			*/
+			if(count($versions)==1) 
+			{
+				$binary_search_retries = 0;
+			}
+			
             if($binary_search_retries>0)
             {
                 if(needle_in_version ($needle, $versions, $middle))
