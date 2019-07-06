@@ -970,6 +970,7 @@ function binary_search($middle, $from)
 		{
 			if(check_if_found_in_earliest_version($needle, $versions, 0))
 			{
+				$needle_ever_found = true;
 				//searching for removal, brick wall, found in latest version
 				// return
 			}
