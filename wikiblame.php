@@ -897,12 +897,25 @@ function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
 {
     global $messages;
     //checking first/earliest revision => highest array index
+	
+	
+	echo "check_if_found_in_earliest_version<br><pre>";
+	debug_print_backtrace (DEBUG_BACKTRACE_IGNORE_ARGS );
+	echo "</pre>";
+	
     $found_in_earliest_revision = needle_in_version ($needle, $versions, $earliest_index);
     
     if($found_in_earliest_revision)
     {
-        $revLink = get_diff_link($versions[$earliest_index]);
-        $msg = str_replace('__NEEDLE__', '<b>'.htmlspecialchars($needle).'</b>', $messages['first_version_present']);
+		$revLink = get_diff_link($versions[$earliest_index]);
+		if($$earliest_index>0)
+		{
+			$msg = str_replace('__NEEDLE__', '<b>'.htmlspecialchars($needle).'</b>', $messages['first_version_present']);
+		}
+		else
+		{
+			$msg = str_replace('__NEEDLE__', '<b>'.htmlspecialchars($needle).'</b>', $messages['latest_version_present']);
+		}
         echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
     }
 	flush();
@@ -955,7 +968,12 @@ function binary_search($middle, $from)
 		
 		if($binary_search_inverse)
 		{
-            if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
+			if(check_if_found_in_earliest_version($needle, $versions, 0)
+			{
+				//searching for removal, brick wall, found in latest version
+				// return
+			}
+            else if(check_if_found_in_earliest_version($needle, $versions, $earliest_index))
             {
                  $needle_ever_found = true;
                 //must have been removed between earliest and where we just checked

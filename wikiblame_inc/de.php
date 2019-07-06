@@ -73,6 +73,7 @@ $messages['inverse_stuck'] = 'Keine Einfügung oder Löschung in diesen  _NUMBER
 $messages['inverse_earliest'] = 'Frühere Versionen durchsuchen';
 $messages['first_version'] = 'Die Änderung muss in der ersten oder letzten Version passiert sein?';
 $messages['first_version_present'] = '__NEEDLE__ war bereits in der ältesten durchsuchten Version vom __REVISIONLINK__ enthalten.';
+$messages['latest_version_present'] = '__NEEDLE__ war bereits in der jüngsten durchsuchten Version vom __REVISIONLINK__ enthalten.';
 $messages['earlier_versions_available'] = 'Es existieren wahrscheinlich ältere Versionen.';
 $messages['execution_time'] = 'Ausführungszeit: _EXECUTIONTIME_ Sekunden';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ Versionen gefunden';

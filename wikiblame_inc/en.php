@@ -79,6 +79,7 @@ $messages['inverse_stuck'] = 'No insertion or removal found in these _NUMBEROFVE
 $messages['inverse_earliest'] = 'Search in earlier revisions';
 $messages['first_version'] = 'Change must have happened in first or latest revision?';
 $messages['first_version_present'] = '__NEEDLE__ was already present in the oldest revision searched dating from __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ was already present in the youngest revision searched dating from __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'There are probably older revisions.';
 $messages['execution_time'] = 'Execution time: _EXECUTIONTIME_ seconds';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions found';
