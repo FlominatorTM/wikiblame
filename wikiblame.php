@@ -893,7 +893,7 @@ function needle_in_version ($needle, &$versions, $index)
     }
     return  $versions[$index]['found'];
 }
-function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
+function check_if_found_in_earliest_version($needle, $versions, $earliest_index, $youngest_version=false)
 {
     global $messages;
     //checking first/earliest revision => highest array index
@@ -902,12 +902,14 @@ function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
     if($found_in_earliest_revision)
     {
 		$revLink = get_diff_link($versions[$earliest_index]);
-		if($$earliest_index>0)
+		if(!$youngest_version)
 		{
+			//highest array index
 			$msg = str_replace('__NEEDLE__', '<b>'.htmlspecialchars($needle).'</b>', $messages['first_version_present']);
 		}
 		else
 		{
+			//lowest array index
 			$msg = str_replace('__NEEDLE__', '<b>'.htmlspecialchars($needle).'</b>', $messages['latest_version_present']);
 		}
         echo (str_replace('__REVISIONLINK__', $revLink, $msg)).'<br>';
@@ -962,7 +964,7 @@ function binary_search($middle, $from)
 		
 		if($binary_search_inverse)
 		{
-			if(check_if_found_in_earliest_version($needle, $versions, 0))
+			if(check_if_found_in_earliest_version($needle, $versions, 0, true))
 			{
 				$needle_ever_found = true;
 				//searching for removal, brick wall, found in latest version
@@ -1000,7 +1002,14 @@ function binary_search($middle, $from)
 			*/
 			if(count($versions)==1) 
 			{
-				$binary_search_retries = 0;
+				if(check_if_found_in_earliest_version($needle, $versions, 0, false))
+				{				
+					return;
+				}
+				else
+				{
+					$binary_search_retries=0;
+				}
 			}
 			
             if($binary_search_retries>0)
