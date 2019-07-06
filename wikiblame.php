@@ -968,7 +968,7 @@ function binary_search($middle, $from)
 		
 		if($binary_search_inverse)
 		{
-			if(check_if_found_in_earliest_version($needle, $versions, 0)
+			if(check_if_found_in_earliest_version($needle, $versions, 0))
 			{
 				//searching for removal, brick wall, found in latest version
 				// return
