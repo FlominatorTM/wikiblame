@@ -1082,7 +1082,7 @@ function binary_search($middle, $from)
 			//$right_version was 1
 				$left_version = get_old_link ($versions[$middle+1]);
 				$right_version = get_old_link($versions[$middle]);
-				if($in_this AND !$in_next)
+				if(!$in_this AND $in_next)
 				{
 					$needle_ever_found = true;
 					echo "<font color=\"red\">X</font>\n";
