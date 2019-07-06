@@ -897,12 +897,6 @@ function check_if_found_in_earliest_version($needle, $versions, $earliest_index)
 {
     global $messages;
     //checking first/earliest revision => highest array index
-	
-	
-	echo "check_if_found_in_earliest_version<br><pre>";
-	debug_print_backtrace (DEBUG_BACKTRACE_IGNORE_ARGS );
-	echo "</pre>";
-	
     $found_in_earliest_revision = needle_in_version ($needle, $versions, $earliest_index);
     
     if($found_in_earliest_revision)
