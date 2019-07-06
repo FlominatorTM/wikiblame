@@ -173,7 +173,7 @@ function submitAndWait()
 }
 </script>
 <div align="center">
-		<form method="get" name="mainform" onsubmit="submitAndWait();" action="<?php  echo $datei ?>">
+		<form method="get" name="mainform" onsubmit="submitAndWait();">
 		<div align="<?php  echo $alignment ?>">
 		<?php 
 			echo $messages['ui_lang'].'<br>';
