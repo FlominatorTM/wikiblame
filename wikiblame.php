@@ -1023,10 +1023,10 @@ function binary_search($middle, $from)
 		 [2]: 18. Jan. 2011 17:00
 		 [3]: 15. Jan. 2011 15:00 */
 		  
-		$in_this = needle_in_version ($needle, $versions, $middle);
-		$in_next = needle_in_version ($needle, $versions, $middle+1);
+		$in_right = needle_in_version ($needle, $versions, $middle);
+		$in_left = needle_in_version ($needle, $versions, $middle+1);
 		$step_length = abs(($from-$middle)/2);
-		if($in_this AND $in_next)
+		if($in_right AND $in_left)
 		{
 			$needle_ever_found = true;
 			echo "<font color=\"green\">OO</font>\n";
@@ -1061,7 +1061,7 @@ function binary_search($middle, $from)
 		}
 		else
 		{
-			if(!$in_this AND !$in_next)
+			if(!$in_right AND !$in_left)
 			{
 				echo "<font color=\"red\">XX</font>\n";
 				//start_over_here($versions[$middle]['offset']);
@@ -1082,7 +1082,7 @@ function binary_search($middle, $from)
 			//$right_version was 1
 				$left_version = get_old_link ($versions[$middle+1]);
 				$right_version = get_old_link($versions[$middle]);
-				if(!$in_this AND $in_next)
+				if(!$in_right AND $in_left)
 				{
 					$needle_ever_found = true;
 					echo "<font color=\"red\">X</font>\n";
