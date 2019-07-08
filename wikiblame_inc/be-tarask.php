@@ -66,6 +66,7 @@ $messages['inverse_stuck'] = 'Устаўкі ці выдаленьні не бы
 $messages['inverse_earliest'] = 'Шукаць у ранейшых вэрсіях';
 $messages['first_version'] = 'Зьмена павінна адбыцца ў першай ці апошняй вэрсіі?';
 $messages['first_version_present'] = '__NEEDLE__ ужо прысутнічаў у старой вэрсіі пошуку з __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ ужо прысутнічае ў найноўшай вэрсіі, знойдзенай ад __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Імаверна, існуюць больш старыя вэрсіі.';
 $messages['execution_time'] = 'Час выкананьня: _EXECUTIONTIME_ сэкунд';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ вэрсіяў знойдзена';

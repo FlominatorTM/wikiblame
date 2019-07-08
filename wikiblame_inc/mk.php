@@ -70,6 +70,7 @@ $messages['inverse_stuck'] = 'Не најдов вметнување или от
 $messages['inverse_earliest'] = 'Пребарај по претходни преработки';
 $messages['first_version'] = 'Веројатно промените се случиле првата или последната преработка?';
 $messages['first_version_present'] = '__NEEDLE__ беше уште во најстарата пребарана преработка која е од __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ беше уште во најстарата пребарана преработка која е од __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Веројатно постојат најстари верзии.';
 $messages['execution_time'] = 'Време за извршување: _EXECUTIONTIME_ секунди';
 $messages['versions_found'] = 'Пронајдени се _NUMBEROFVERSIONS_  верзии';

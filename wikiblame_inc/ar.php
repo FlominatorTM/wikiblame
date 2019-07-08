@@ -77,6 +77,7 @@ $messages['inverse_stuck'] = 'لم يتم العثور على إدراج أو إ
 $messages['inverse_earliest'] = 'البحث في المراجات السابقة';
 $messages['first_version'] = 'يجب أن يكون قد حدث تغيير في المراجعة الأولى أو الأخيرة؟';
 $messages['first_version_present'] = '__NEEDLE__ موجود بالفعل في أقدم مراجعة بحثت عنها منذ __REVISIONLINK__ .';
+$messages['latest_version_present'] = '__NEEDLE__ كانت موجودة بالفعل في أصغر مراجعة حثت عنها والتي يرجع تاريخها إلى __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'يحتمل أن توجد مراجعات أقدم.';
 $messages['execution_time'] = 'وقت التنفيذ: _EXECUTIONTIME_ ثواني';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ نسخ موجودة';
