@@ -19,6 +19,7 @@
  * @author Lemondoge
  * @author Lockal
  * @author MaxBioHazard
+ * @author Movses
  * @author Od1n
  * @author Okras
  * @author Smigles
@@ -78,6 +79,7 @@ $messages['inverse_stuck'] = 'В этих _NUMBEROFVERSIONS_ версиях не
 $messages['inverse_earliest'] = 'Поиск в более ранних версиях';
 $messages['first_version'] = 'Изменение должно было произойти в первой или последней версии?';
 $messages['first_version_present'] = '__NEEDLE__ уже присутствовала в первой ревизии, найденной начиная с __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ уже присутствует в самой новой ревизии, найденной начиная с __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Есть, вероятно, более старые версии.';
 $messages['execution_time'] = 'Время выполнения: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Найдено _NUMBEROFVERSIONS_ версий страницы';

@@ -16,6 +16,7 @@
  * @author Athena in Wonderland
  * @author Capmo
  * @author Dianakc
+ * @author Eduardo Addad de Oliveira
  * @author Giro720
  * @author Luckas
  * @author Luckas Blade
@@ -77,6 +78,7 @@ $messages['inverse_stuck'] = 'Não foram encontradas introduções ou eliminaç�
 $messages['inverse_earliest'] = 'Pesquisar nas revisões anteriores';
 $messages['first_version'] = 'A mudança deve ter acontecido na primeira ou última versão?';
 $messages['first_version_present'] = '__NEEDLE__ já estava presente na versão mais antiga buscada, datada de __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ já estava presente na revisão mais recente pesquisada, cuja data é __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Provavelmente existem revisões mais antigas.';
 $messages['execution_time'] = 'Tempo de execução: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ edições encontradas';

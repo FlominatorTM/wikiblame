@@ -14,6 +14,7 @@
  * @author Minh Nguyen
  * @author Od1n
  * @author Tuankiet65
+ * @author Tuanminh01
  * @author Vinhtantran
  */
 
@@ -65,8 +66,11 @@ $messages['search_in_progress_text'] = 'Đang tìm kiếm văn bản thuần <b>
 $messages['search_in_progress_wikitags'] = 'Đang tìm kiếm mã wiki <b>_NEEDLE_</b> trong lịch sử phiên bản _ARTICLELINK_';
 $messages['no_differences'] = 'Không tìm thấy khác biệt giữa các phiên bản được tìm kiếm.';
 $messages['inverse_restart'] = 'Không tìm thấy tác vụ chèn hoặc xóa. Từ khóa tìm kiếm có phải được chèn về sau không?';
+$messages['inverse_stuck'] = 'Không tìm thấy chèn hoặc loại bỏ trong các bản sửa đổi _NUMBEROFVERSIONS_ này. Thuật ngữ tìm kiếm này có thể đã được loại bỏ trước đó?';
+$messages['inverse_earliest'] = 'Tìm kiếm trong các phiên bản trước';
 $messages['first_version'] = 'Thay đổi có phải xảy ra trong phiên bản cũ hoặc mới nhất?';
 $messages['first_version_present'] = '__NEEDLE__ đã có mặt trong phiên bản cũ nhất được tìm kiếm kể từ __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ đã có mặt trong phiên bản cũ nhất được tìm kiếm kể từ __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Chắc có thay đổi cũ hơn.';
 $messages['execution_time'] = 'Thời gian thực thi: _EXECUTIONTIME_ giây';
 $messages['versions_found'] = 'Tìm thấy _NUMBEROFVERSIONS_ phiên bản';
@@ -74,6 +78,8 @@ $messages['please_wait'] = 'Vui lòng chờ…';
 $messages['binary_test'] = 'So sánh khác biệt trong _FIRSTDATEVERSION_ giữa _FIRSTNUMBER_ và _SECONDNUMBER_ trong khi đến từ _SOURCENUMBER_:';
 $messages['dead_end'] = 'Gặp đường cùng (có lẽ do lùi sửa hoặc bút chiến)';
 $messages['once_more'] = 'Một lần nữa, lần này là thật:';
+$messages['delete_from_here'] = 'Xóa _NUMBEROFVERSIONS_ sửa đổi trước đó, vì việc xóa phải được thực hiện sau';
+$messages['delete_until_here'] = 'Xóa _NUMBEROFVERSIONS_ sửa đổi sau, vì việc chèn phải được thực hiện trước đó';
 $messages['binary_enough'] = 'Đã thử lại quá nhiều lần. Lịch sử bài khá lộn xộn; xin vui lòng thử chỉnh lại các thiết lập.';
 $messages['insertion_found'] = 'Tìm thấy có sự chèn vào giữa LEFT_VERSION và RIGHT_VERSION';
 $messages['deletion_found'] = 'Tìm thấy có tác vụ xóa giữa LEFT_VERSION và RIGHT_VERSION';
