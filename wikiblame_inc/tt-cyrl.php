@@ -11,6 +11,7 @@
  * @file
  *
  * @author Ilnur efende
+ * @author Ерней
  * @author Ильнар
  */
 
@@ -30,25 +31,27 @@ $messages['ui_lang'] = 'Сайланган тел';
 $messages['lang'] = 'Тел';
 $messages['project'] = 'Проект';
 $messages['article'] = 'Бит';
-$messages['needle'] = 'Эзләү юлы';
-$messages['skipversions'] = 'Һәрвакыт X юрамаларны төшереп калдырырга';
-$messages['ignorefirst'] = 'Башлангыч X юрамаларны исәпкә алмаска';
+$messages['needle'] = 'Эзләргә';
+$messages['skipversions'] = 'Һәрвакыт X юраманы төшереп калдырырга';
+$messages['ignorefirst'] = 'Баштагы X юраманы исәпкә алмаска';
 $messages['limit'] = 'Тикшерү өчен юрамалар саны';
 $messages['start_date'] = 'Башлау вакыты';
 $messages['date_format'] = 'DD.MM.YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Тәртип';
 $messages['newest_first'] = 'башта яңалары';
 $messages['oldest_first'] = 'башта искеләре';
-$messages['binary_search_inverse'] = 'Текс эзләү (бары тик икеле)';
+$messages['binary_search_inverse'] = 'Текст бетерүен эзләү (бары тик икеле)';
 $messages['search_method'] = 'Эзләү ысулы';
 $messages['binary'] = 'икеле';
 $messages['linear'] = 'сызыкча';
 $messages['interpolated'] = 'икеле (тизрәк, әгәрдә бик күп юрамалар булса)';
 $messages['ignore_minors'] = 'вак үзгәртүләрне исәпкә алмаска (тәҗрибә)';
 $messages['force_wikitags'] = 'викитекстны эзләргә';
+$messages['from_url'] = 'сылтамадан';
 $messages['start'] = 'Башлау';
 $messages['reset'] = 'Яңарту';
-$messages['manual'] = 'Әсбап';
+$messages['manual'] = 'Кулланма';
 $messages['contact'] = 'Элемтә';
 $messages['get_less_versions'] = 'Сезнең сорау бер ук вакытта __NUMREVISIONS__ юрамага кадәр күрсәтергә мөмкин. Серверны  саклау максатыннан сез __ALLOWEDREVISIONS__ юрамадан да артык сорый алмыйсыз. Зинһар, көйләүләрне үзгәртегез яисә икеле эзләү системасына күчегез!';
 $messages['wrong_skips'] = 'Хаталы көйләүләр. Әгәрдә беренче __VERSIONSTOSKIP__ юрамлар төшереп калдырылса,  __VERSIONSTOSEARCH__ юраманың берсе эзләүдә күрсәтелмәячәк.';

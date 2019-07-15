@@ -74,6 +74,7 @@ $messages['inverse_stuck'] = ' _NUMBEROFVERSIONS_ リビジョン中に挿入や
 $messages['inverse_earliest'] = '古い版で検索';
 $messages['first_version'] = '変更は最初か最新の版で起きている必要がありますか?';
 $messages['first_version_present'] = '__NEEDLE__は検索の結果、__REVISIONLINK__までに作成された初版に既に存在しています。';
+$messages['latest_version_present'] = '__NEEDLE__は検索の結果、__REVISIONLINK__までに作成された初版に既に存在しています。';
 $messages['earlier_versions_available'] = '以前の版が存在するかもしれません。';
 $messages['execution_time'] = '実行時間: _EXECUTIONTIME_秒';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_件の版が見つかりました';
