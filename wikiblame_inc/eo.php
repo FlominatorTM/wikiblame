@@ -68,6 +68,7 @@ $messages['inverse_stuck'] = 'Neniu enmeto aŭ forigo en tiuj _NUMBEROFVERSIONS_
 $messages['inverse_earliest'] = 'Serĉi en pli fruaj versioj';
 $messages['first_version'] = 'Ĉu la ŝanĝo okazu en la unua aŭ lasta revizioj?';
 $messages['first_version_present'] = '__NEEDLE__ jam ĉeestis en la plej malnova versio ekde __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ jam ĉeestis en la plej nova versio serĉita ekde __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Kredeble, estas pli malnovaj revizioj.';
 $messages['execution_time'] = 'Bezonata  tempo: _EXECUTIONTIME_ sekundoj';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ da versioj estas trovitaj';

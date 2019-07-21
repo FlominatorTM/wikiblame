@@ -72,6 +72,7 @@ $messages['inverse_stuck'] = 'לא נמצאו תוספות או מחיקות ב�
 $messages['inverse_earliest'] = 'חיפוש במהדורות קודמות';
 $messages['first_version'] = 'השינוי התרחש בגרסה הראשונה או האחרונה?';
 $messages['first_version_present'] = 'הטקסט __NEEDLE__ כבר היה קיים בגרסה הראשונה מ־__REVISIONLINK__.';
+$messages['latest_version_present'] = 'הטקסט __NEEDLE__ כבר היה קיים בגרסה הראשונה מ־__REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'כנראה יש גרסאות ישנות יותר.';
 $messages['execution_time'] = 'זמן חיפוש: _EXECUTIONTIME_ שניות';
 $messages['versions_found'] = 'נמצאו _NUMBEROFVERSIONS_ גרסאות';

@@ -16,6 +16,7 @@
  * @author Athena in Wonderland
  * @author Capmo
  * @author Dianakc
+ * @author Eduardo Addad de Oliveira
  * @author Giro720
  * @author Luckas
  * @author Luckas Blade
@@ -27,6 +28,7 @@
  * @author Tuliouel
  */
 
+$text_dir = 'ltr';
 $messages['January'] = 'janeiro';
 $messages['February'] = 'fevereiro';
 $messages['March'] = 'março';
@@ -41,7 +43,9 @@ $messages['November'] = 'novembro';
 $messages['December'] = 'dezembro';
 $messages['ui_lang'] = 'Idioma de exibição';
 $messages['lang'] = 'Idioma';
+$messages['lang_example'] = 'pt, commons, www, …';
 $messages['project'] = 'Projeto';
+$messages['project_example'] = 'wikipédia, wikisource, wikimedia, wikidata, …';
 $messages['article'] = 'Página';
 $messages['needle'] = 'Procurar por';
 $messages['skipversions'] = 'Sempre saltar x versões';
@@ -56,6 +60,7 @@ $messages['oldest_first'] = 'mais antigos primeiro';
 $messages['binary_search_inverse'] = 'Procurar remoção de texto (somente binário)';
 $messages['search_method'] = 'Método de pesquisa';
 $messages['binary'] = 'binária';
+$messages['binary_in_wp'] = 'https://pt.wikipedia.org/wiki/Pesquisa_bin%C3%A1ria';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'binária (mais rápida para pesquisar muitas edições)';
 $messages['ignore_minors'] = 'ignorar edições menores (experimental)';
@@ -66,7 +71,9 @@ $messages['no_valid_url'] = 'Este url do MediaWiki não é válido';
 $messages['start'] = 'Iniciar procura';
 $messages['reset'] = 'Redefinir';
 $messages['manual'] = 'Manual';
+$messages['manual_link'] = 'https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Ferramentas/WikiBlame';
 $messages['contact'] = 'Contato';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 $messages['get_less_versions'] = 'A sua pesquisa pode consultar __NUMREVISIONS__ edições ao mesmo tempo. Para proteger o servidor, só pode consultar __ALLOWEDREVISIONS__ por chamada. Por favor, altere a configuração ou mude o método de pesquisa para binária.';
 $messages['wrong_skips'] = 'Configurações erradas: Se as primeiras __VERSIONSTOSKIP__ edições são ignoradas, então nenhuma das __VERSIONSTOSEARCH__ edições a verificar serão processadas.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> está a ser procurado como texto não formatado no histórico de edições de _ARTICLELINK_';
@@ -77,6 +84,7 @@ $messages['inverse_stuck'] = 'Não foram encontradas introduções ou eliminaç�
 $messages['inverse_earliest'] = 'Pesquisar nas revisões anteriores';
 $messages['first_version'] = 'A mudança deve ter acontecido na primeira ou última versão?';
 $messages['first_version_present'] = '__NEEDLE__ já estava presente na versão mais antiga buscada, datada de __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ já estava presente na revisão mais recente pesquisada, cuja data é __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Provavelmente existem revisões mais antigas.';
 $messages['execution_time'] = 'Tempo de execução: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ edições encontradas';

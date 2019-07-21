@@ -11,6 +11,7 @@
  * @file
  *
  * @author Octahedron80
+ * @author กิ๊ฟ เลิกล่ะ สายแข็ง
  */
 
 $messages['January'] = 'มกราคม';
@@ -53,6 +54,7 @@ $messages['search_in_progress_text'] = 'ประวัติรุ่นขอ�
 $messages['search_in_progress_wikitags'] = 'ประวัติรุ่นของ _ARTICLELINK_ กำลังค้นหา <b>_NEEDLE_</b> ด้วยข้อความวิกิ';
 $messages['no_differences'] = 'ไม่พบความแตกต่างในรุ่นที่ค้นหา';
 $messages['first_version'] = 'การเปลี่ยนแปลงต้องปรากฏในรุ่นแรกหรือรุ่นล่าสุดหรือไม่';
+$messages['latest_version_present'] = '__NEEDLE__ was already present in the youngest revision searched dating from __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'เป็นไปได้ว่ามีรุ่นก่อนหน้านี้';
 $messages['execution_time'] = 'เวลาดำเนินการ: _EXECUTIONTIME_ วินาที';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ รุ่นที่พบ';

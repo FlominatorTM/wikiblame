@@ -68,6 +68,7 @@ $messages['inverse_stuck'] = 'Ez da ezabaketa edo gehiketarik topatu hurrengo _N
 $messages['inverse_earliest'] = 'Aurrekoagoak diren berrikusketetan bilatu';
 $messages['first_version'] = 'Aldaketa lehen edo azken berrikuspenean gertatu behar al zen?';
 $messages['first_version_present'] = '__NEEDLE__ jadanik presentatu zen bere bertsiorik zaharreneanm bilaketa dataketa __REVISIONLINK__-tik hartuta.';
+$messages['latest_version_present'] = '__NEEDLE__ jadanik presentatu zen bere bertsiorik zaharrenean bilaketa dataketa __REVISIONLINK__-tik hartuta.';
 $messages['earlier_versions_available'] = 'Ziurrenik bertsio zaharragoak egongo dira.';
 $messages['execution_time'] = 'Exekuzio-denbora: _EXECUTIONTIME_ segundo';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ bertsio aurkitu dira';

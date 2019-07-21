@@ -74,6 +74,7 @@ $messages['inverse_stuck'] = 'У цих _NUMBEROFVERSIONS_ версіях не �
 $messages['inverse_earliest'] = 'Пошук у попередніх версіях';
 $messages['first_version'] = 'Зміна мала відбутися в першій чи останній версії?';
 $messages['first_version_present'] = '__NEEDLE__ уже була присутня у найстаршій версії, знайденій починаючи з __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ уже була присутня у найновішій версії, знайденій починаючи з __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Вірогідно, є старіші версії.';
 $messages['execution_time'] = 'Час виконання: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Знайдено _NUMBEROFVERSIONS_ версії';

@@ -77,6 +77,7 @@ $messages['inverse_stuck'] = 'Pas d’insertion ni de suppression trouvée parmi
 $messages['inverse_earliest'] = 'Rechercher parmi les versions plus anciennes';
 $messages['first_version'] = 'Les changements doivent s\'être produits dans la première ou la dernière version ?';
 $messages['first_version_present'] = '__NEEDLE__ était déjà présent dans la plus ancienne version trouvée datant du __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ était déjà présent dans la révision la plus récente recherchée à partir de __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Il existe probablement des versions plus anciennes.';
 $messages['execution_time'] = 'Temps d’exécution : _EXECUTIONTIME_ secondes';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions trouvées';
