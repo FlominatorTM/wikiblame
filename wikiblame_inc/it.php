@@ -80,6 +80,7 @@ $messages['inverse_stuck'] = 'Non sono stati trovati inserimenti o rimozioni in 
 $messages['inverse_earliest'] = 'Ricerca in versioni precedenti';
 $messages['first_version'] = 'La modifica è avvenuta nella prima o nell\'ultima revisione?';
 $messages['first_version_present'] = '__NEEDLE__ era già presente nella versione più vecchia cercata del __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ era già presente nella versione più recente ricercata del __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probabilmente ci sono versioni più vecchie.';
 $messages['execution_time'] = 'Tempo di esecuzione: _EXECUTIONTIME_ secondi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ revisioni trovate';

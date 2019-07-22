@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Abijeet Patro
  * @author Armando-Martin
  * @author Athena in Wonderland
  * @author Crazymadlover
@@ -47,7 +48,7 @@ $messages['skipversions'] = 'Saltar siempre x versiones';
 $messages['ignorefirst'] = 'Ignorar las primeras x versiones';
 $messages['limit'] = 'Versiones para revisar';
 $messages['start_date'] = 'Fecha de inicio';
-$messages['date_format'] = 'MM DD, AAAA';
+$messages['date_format'] = 'MM DD, YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Orden';
 $messages['newest_first'] = 'la última primero';
