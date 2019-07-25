@@ -63,6 +63,7 @@ $messages['inverse_stuck'] = 'Nun s\'alcontraron inxertos nin desanicios nestes 
 $messages['inverse_earliest'] = 'Buscar nes revisiones anteriores';
 $messages['first_version'] = '¿El cambiu tendría de ser na primera o na cabera revisión?';
 $messages['first_version_present'] = '__NEEDLE__ yá taba presente na revisión más antigua buscada, con data __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ yá taba presente na revisión más nueva buscada, con data __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probablemente esistan revisiones anteriores.';
 $messages['execution_time'] = 'Tiempu d\'execución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones alcontraes';
