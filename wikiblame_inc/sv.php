@@ -74,6 +74,7 @@ $messages['inverse_stuck'] = 'Inga inläggningar eller borttagningar hittades i 
 $messages['inverse_earliest'] = 'Sök i tidigare versioner';
 $messages['first_version'] = 'Ändringen måste ha inträffat i första eller senaste versionen?';
 $messages['first_version_present'] = '__NEEDLE__ fanns redan i den äldsta sökta revisionen som daterar från __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ fanns redan i den senaste sökta revisionen som daterar från __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Det finns förmodligen äldre versioner.';
 $messages['execution_time'] = 'Körtid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versioner funna';

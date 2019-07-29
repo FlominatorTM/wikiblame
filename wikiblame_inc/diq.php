@@ -71,6 +71,7 @@ $messages['inverse_stuck'] = 'Revizyonê _NUMBEROFVERSIONS_i de cıkerdış u we
 $messages['inverse_earliest'] = 'Vurnayışanê verênan de cıgeyre';
 $messages['first_version'] = 'Vurnayış gani çımraviyarnayışo sıfteyın ya zi peyên de bıbo?';
 $messages['first_version_present'] = '__NEEDLE__ miyan de be tarixê __REVISIONLINK__ çımraviyarnayışo verên xora est bi.';
+$messages['latest_version_present'] = '__NEEDLE__ miyan de be tarixê __REVISIONLINK__ çımraviyarnayışo neweyên xora est bi.';
 $messages['earlier_versions_available'] = 'Revizyonê verêni şenê bıbê.';
 $messages['execution_time'] = 'Demê veciyayışi: _EXECUTIONTIME_ saniyeyi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiyonê weqfi';
