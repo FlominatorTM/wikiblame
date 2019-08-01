@@ -13,16 +13,17 @@
  * @author Bikarhêner
  * @author George Animal
  * @author Kiwi128
+ * @author MikaelF
  */
 
-$messages['January'] = 'Rêbendan';
-$messages['February'] = 'Reşemî';
+$messages['January'] = 'Kanûna paşîn';
+$messages['February'] = 'Sibat';
 $messages['March'] = 'Adar';
-$messages['April'] = 'Avrêl';
+$messages['April'] = 'Nîsan';
 $messages['May'] = 'Gulan';
 $messages['June'] = ' Pûşper';
 $messages['July'] = 'Tîrmeh';
-$messages['August'] = 'Gelawêj';
+$messages['August'] = 'Tebax';
 $messages['September'] = 'Rezber';
 $messages['October'] = 'Kewçêr';
 $messages['November'] = 'Sermawez';
