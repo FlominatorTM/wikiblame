@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Brazal.dang
  * @author Geopoet
  */
 
@@ -35,6 +36,7 @@ $messages['ignorefirst'] = 'Dae pansinon an enot na mga x bersyon';
 $messages['limit'] = 'Mga bersyon na i-tsek';
 $messages['start_date'] = 'Petsa sa pagpoon';
 $messages['date_format'] = 'BB AA, TTTT';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Pasurunudan';
 $messages['newest_first'] = 'enot an pinakabaguhon';
 $messages['oldest_first'] = 'enot an pinakalumaon';
@@ -45,6 +47,9 @@ $messages['linear'] = 'linaryo';
 $messages['interpolated'] = 'binaryo (marikas kaiba an iba pang mga bersyon)';
 $messages['ignore_minors'] = 'Balewalaon an saraditon na mga kaliwatan (pinuprubaran)';
 $messages['force_wikitags'] = 'Puwersahang paghanapon para sa wikiteksto';
+$messages['from_url'] = 'hali sa URL';
+$messages['paste_url'] = 'Pakikaag kan URL sa pahina kan MediaWiki';
+$messages['no_valid_url'] = 'Mayong balidong MediaWiki URL';
 $messages['start'] = 'Poonan';
 $messages['reset'] = 'Likwaton';
 $messages['manual'] = 'Manwal';
@@ -54,8 +59,13 @@ $messages['wrong_skips'] = 'Sala an mga panuytoy: Kun an enot _VERSIONSTOSKIP_ n
 $messages['search_in_progress_text'] = 'An bersyon kan historiya nin _ARTICLELINK_ iyo an pighahanap para sa <b>_DAGOM_</b> bilang yanong teksto';
 $messages['search_in_progress_wikitags'] = 'An bersyon kan historiya nin _ARTICLELINK_ iyo an pighahanap para sa <b>_DAGOM_</b> bilang wiking teksto';
 $messages['no_differences'] = 'Mayong kalaenan an nanumpungan sa mga rebisyon kan pighahanap.';
+$messages['inverse_restart'] = 'Mayong pagdagdag asin pagtanggal na nahiling, an paghanap kan termino huri nang naikaag?';
+$messages['inverse_stuck'] = 'Mayong pagsumpay o paghali an nakua sa _NUMBEROFVERSIONS_ mga rebisyon. An termino baka nainot nang nahali?';
+$messages['inverse_earliest'] = 'Maghanap sa mga mas amay na rebisyon';
 $messages['first_version'] = 'An kaliwatan kaipong nangyari sa enot o pinakahuring rebisyon?';
-$messages['first_version_present'] = '_DAGOM_ nagin presente na sa enot na rebisyon na nanumpungan pinipetsahan gikan sa _REVISIONLINK_.';
+$messages['first_version_present'] = '__NEEDLE__ nagin presente na sa enot na rebisyon na nanumpungan pinipetsahan gikan sa
+__REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ yaun na sa pinakabagong rebisyon sa petsa puon__REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Nagkaigwa na gayod nin amay na mga rebisyon.';
 $messages['execution_time'] = 'Oras nin Pagpadalagan: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ mga bersyon na nanumpungan';
@@ -63,9 +73,12 @@ $messages['please_wait'] = 'Pakihalat man tabi...';
 $messages['binary_test'] = 'Pinagkumparang mga kalaenan sa _FIRSTDATEVERSION_ sa tahaw kan _FIRSTNUMBER_ asin _SECONDNUMBER_ mantang minagikan sa _SOURCENUMBER_:';
 $messages['dead_end'] = 'Nakadakop nin nagkapirang kapuruhan (na puwedeng pinagkausa nin baranggaan kan mga binaralikwas o pagliwat).';
 $messages['once_more'] = 'Saro pa, may pagmati:';
+$messages['delete_from_here'] = 'Pinupura an _NUMBEROFVERSIONS_ mga bagong rebisyon, ta dapat napaamay na an pagpura';
+$messages['delete_until_here'] = 'Pinupura an _NUMBEROFVERSIONS_ pinakabagong rebisyon, an pagdugang dapat ginibo nang amay-amay';
 $messages['binary_enough'] = 'Naghimo na nin awad-awad na mga oro-otro, an historiya nin artikulo medyo nagkagurulo, paki-otroha tabi an pagliliwat nin nagkapirang mga panuytoy.';
 $messages['insertion_found'] = 'Siniringit nanumpungan sa tahaw kan LEFT_VERSION asin RIGHT_VERSION';
 $messages['deletion_found'] = 'Pinuraan nanumpungan sa tahaw kan LEFT_VERSION asin RIGHT_VERSION';
+$messages['here'] = 'igdi';
 $messages['help_translating'] = 'Magtabang sa pagdadakit-taramon sa translatewiki.net';
 $messages['start_here'] = 'Maghanap poon digde';
 $messages['too_much_versions'] = 'Ika nakaabot na sa saimong kasagkodan sa paghapot _VERSIONLIMT_ na mga bersyon. Paki-otroha giraray sa laog nin _WAITMINUTES_ minutos o magribay na magin binaryo sa paghanap. Pasensiya na po sa abala.';

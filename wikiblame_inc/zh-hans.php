@@ -17,6 +17,7 @@
  * @author Od1n
  * @author PhiLiP
  * @author Shizhao
+ * @author VulpesVulpes825
  * @author Yfdyh000
  * @author 阿pp
  */
@@ -73,6 +74,7 @@ $messages['inverse_stuck'] = '在这些_NUMBEROFVERSIONS_个修订版本中找�
 $messages['inverse_earliest'] = '在早期修订版本中搜索';
 $messages['first_version'] = '更改是在第一个或最新的版本中发生的吧？';
 $messages['first_version_present'] = '__NEEDLE__已存在于最旧修订版本，搜索可追溯到__REVISIONLINK__。';
+$messages['latest_version_present'] = '__NEEDLE__已存在于最新修订版本，搜索可追溯到__REVISIONLINK__。';
 $messages['earlier_versions_available'] = '可能存在更旧的修订版本。';
 $messages['execution_time'] = '执行时间：_EXECUTIONTIME_秒';
 $messages['versions_found'] = '发现 _NUMBEROFVERSIONS_ 个版本';
