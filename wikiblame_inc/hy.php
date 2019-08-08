@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Azniv Stepanian
  * @author Vahe Gharakhanyan
  * @author Xelgen
  */
@@ -34,7 +35,7 @@ $messages['needle'] = 'Որոնել';
 $messages['skipversions'] = 'Բաղ թողնել x տարբերակները';
 $messages['ignorefirst'] = 'Բաց թողնել առաջին x տարբերակները';
 $messages['limit'] = 'Ստուգելու համար տարբերակներ';
-$messages['start_date'] = 'Սկսբնական ամսաթիվը';
+$messages['start_date'] = 'Սկզբնական ամսաթիվը';
 $messages['date_format'] = 'DD.MM.YYYY';
 $messages['order'] = 'Կարգ';
 $messages['newest_first'] = 'սկզբում նորերը';
