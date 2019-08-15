@@ -15,6 +15,7 @@
  * @author Bellayet
  * @author Ehsanulhb
  * @author Elias Ahmmad
+ * @author Masumrezarock100
  * @author RIPENDIL
  * @author Rasal Lia
  * @author Sayma Jahan
@@ -62,7 +63,7 @@ $messages['from_url'] = 'ইউআরএল লিংক হতে';
 $messages['paste_url'] = 'দয়া করে মিডিয়াউইকির পাতায় url প্রতিলেপন করুন';
 $messages['no_valid_url'] = 'এটা কার্যকর MediaWiki ইউঅারএল লিংক নয়';
 $messages['start'] = 'শুরু';
-$messages['reset'] = 'আদি অবস্থায় ফেরত';
+$messages['reset'] = 'পুনঃস্থাপন';
 $messages['manual'] = 'হস্তচালিত';
 $messages['contact'] = 'যোগাযোগ';
 $messages['get_less_versions'] = 'আপনি __NUMREVISIONS__ টি পুনর্বিবেচনা একবারে অনুসন্ধান করতে পারবেন। সার্ভার এর সুরক্ষার জন্য, আপনি প্রতি বার সর্বোচ্চ __ALLOWEDREVISIONS__ টি প্রশ্নসম্বলিত অনুসন্ধান করতে পারবেন। দয়া করে সেটিংস পরিবর্তন করুন অথবা বাইনারি উপায়ে অনুসন্ধান চালান।';
