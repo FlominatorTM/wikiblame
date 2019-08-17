@@ -47,7 +47,6 @@ $messages['skipversions'] = 'Toujours sauter x versions';
 $messages['ignorefirst'] = 'Ignorer les x premières versions';
 $messages['limit'] = 'Versions à vérifier';
 $messages['start_date'] = 'Date de début';
-$messages['date_format'] = 'JJ MM AAAA';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Ordre';
 $messages['newest_first'] = 'plus récent d\'abord';

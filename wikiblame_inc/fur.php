@@ -34,7 +34,6 @@ $messages['skipversions'] = 'Salte simpri x versions';
 $messages['ignorefirst'] = 'Ignore li primis x versions';
 $messages['limit'] = 'Version di controlâ';
 $messages['start_date'] = 'Date iniziâl';
-$messages['date_format'] = 'MM DD, AAAA';
 $messages['order'] = 'Ordenament';
 $messages['newest_first'] = 'prime lis plui gnovis';
 $messages['oldest_first'] = 'prime lis plui vecjis';

@@ -35,7 +35,6 @@ $messages['skipversions'] = 'Escludi sempri x virsioni';
 $messages['ignorefirst'] = 'Gnora li primi x virsioni';
 $messages['limit'] = 'Virsioni a cuntrullari';
 $messages['start_date'] = 'Data accuminzagghia';
-$messages['date_format'] = 'JJ MM AAAA';
 $messages['order'] = 'Ordinamentu';
 $messages['newest_first'] = 'prima li chiù ricenti';
 $messages['oldest_first'] = 'prima li menu ricenti';

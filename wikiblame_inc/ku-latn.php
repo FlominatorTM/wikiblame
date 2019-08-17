@@ -37,7 +37,6 @@ $messages['skipversions'] = 'Versiyonên x daîma derbas bike';
 $messages['ignorefirst'] = 'Versiyonên x yên ewil hesab neke';
 $messages['limit'] = 'Versiyonên ku wê bên kontrolkirin';
 $messages['start_date'] = 'Dema destpêkê';
-$messages['date_format'] = 'RR.MM.SSSS';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Dor';
 $messages['newest_first'] = 'pêşî yê nû';

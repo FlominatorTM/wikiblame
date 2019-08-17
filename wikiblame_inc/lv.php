@@ -36,7 +36,6 @@ $messages['skipversions'] = 'Vienmēr izlaist x versijas';
 $messages['ignorefirst'] = 'Ignorēt pirmās x versijas';
 $messages['limit'] = 'Pārbaudāmo versiju skaits';
 $messages['start_date'] = 'Sākuma datums';
-$messages['date_format'] = 'MM DD, GGGG';
 $messages['order'] = 'Secība';
 $messages['newest_first'] = 'vispirms jaunākās';
 $messages['oldest_first'] = 'vispirms vecākās';

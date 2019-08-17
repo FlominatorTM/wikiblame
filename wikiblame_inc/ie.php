@@ -34,7 +34,6 @@ $messages['skipversions'] = 'Sempre saltettar x versiones';
 $messages['ignorefirst'] = 'Ignorar prim x versiones';
 $messages['limit'] = 'Versiones por controlar';
 $messages['start_date'] = 'Comensar date';
-$messages['date_format'] = 'MM DD, AAAA';
 $messages['order'] = 'Órdine';
 $messages['newest_first'] = 'max ultim prim';
 $messages['oldest_first'] = 'max antiqui prim';

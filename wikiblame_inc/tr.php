@@ -47,7 +47,6 @@ $messages['skipversions'] = 'Her zaman x sürümünü atla';
 $messages['ignorefirst'] = 'Her zaman ilk x sürümü atla';
 $messages['limit'] = 'İncelenecek sürümler';
 $messages['start_date'] = 'Başlangıç tarihi';
-$messages['date_format'] = 'GG AA YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Sıra';
 $messages['newest_first'] = 'en yeni ilk';

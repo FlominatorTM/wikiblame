@@ -40,7 +40,6 @@ $messages['skipversions'] = 'Alltid hopp over x versjoner';
 $messages['ignorefirst'] = 'Ignorer de første x versjonene';
 $messages['limit'] = 'Versjoner som skal sjekkes';
 $messages['start_date'] = 'Startdato';
-$messages['date_format'] = 'MM DD, ÅÅÅÅ';
 $messages['revision_date_format'] = '%H:%M, %e. %B %Y';
 $messages['order'] = 'Sorter';
 $messages['newest_first'] = 'siste først';

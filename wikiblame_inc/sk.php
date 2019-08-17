@@ -42,7 +42,6 @@ $messages['skipversions'] = 'Vždy preskočiť x verzií';
 $messages['ignorefirst'] = 'Ignorovať prvých x verzií';
 $messages['limit'] = 'Skontrolovať verzie';
 $messages['start_date'] = 'Počiatočný dátum';
-$messages['date_format'] = 'DD MM RRRR';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Poradie';
 $messages['newest_first'] = 'najprv najnovšie';
