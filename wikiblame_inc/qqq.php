@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Abijeet Patro
  * @author EugeneZelenko
  * @author Fryed-peach
  * @author Liuxinyu970226
@@ -72,6 +73,13 @@ $messages['start_date'] = 'Label of date input boxes. See [http://wikipedia.rams
 {{Identical|Start date}}';
 $messages['date_format'] = 'Format string to describe how dates have to be displayed. Must contain these symbols: "MM" (month) "DD" (day) and "YYYY" (year). Example in en would be MM DD, YYYY. Do not localise the symbols as this message will not appear in the interface (although as of 25.1.11 it does appear, during the implementation of the formats and localisation for major languages - see [http://sourceforge.net/tracker/?func=detail&aid=3164948&group_id=261179&atid=1127548 sourceforge]. Please note that the input box for the month shows the month names, which are translated in other Wikiblame messages in this group. See [http://wikipedia.ramselehof.de/wikiblame.php Wikiblame interface].
 {{DataFormatSpecifiers/en}}';
+$messages['revision_date_format'] = 'This is used for formatting the date/time data of the revisions. 
+
+* %H:%M is the 2 digit representation of the time in 24 Hour format
+* %d is the 2-digit day of the month
+* %m is the 2-digit representation of the month
+* %B is replaced by the localized month name
+* %Y is the 4-digit representation for the year';
 $messages['order'] = 'Label for search option radio buttons, \'latest first\' and \'oldest first\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 {{Identical|Order}}';
 $messages['newest_first'] = 'Radio button option for search \'order\'. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
