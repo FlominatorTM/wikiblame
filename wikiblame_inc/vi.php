@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Awdsweq123
  * @author Leducthn
  * @author Minh Nguyen
  * @author Od1n
@@ -54,7 +55,7 @@ $messages['interpolated'] = 'nhị phân (nhanh hơn với nhiều phiên bản)
 $messages['ignore_minors'] = 'bỏ qua sửa đổi nhỏ (thử nghiệm)';
 $messages['force_wikitags'] = 'cố tìm kiếm mã wiki';
 $messages['from_url'] = 'từ đường dẫn';
-$messages['paste_url'] = 'Xin hãy dán đường dẫn dẫn tới trang MediaWiki';
+$messages['paste_url'] = 'Xin hãy dán đường dẫn đến trang MediaWiki';
 $messages['no_valid_url'] = 'Đường dẫn MediaWiki này không hợp lệ';
 $messages['start'] = 'Bắt đầu';
 $messages['reset'] = 'Tái tạo';

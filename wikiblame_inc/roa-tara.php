@@ -30,3 +30,4 @@ $messages['lang'] = 'Lènghe';
 $messages['project'] = 'Proggette';
 $messages['article'] = 'Pàgene';
 $messages['needle'] = 'Cirche pe';
+$messages['no_valid_url'] = 'Non g\'è \'na URL de MediaUicchi valide';
