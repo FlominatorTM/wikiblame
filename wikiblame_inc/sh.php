@@ -11,6 +11,7 @@
  * @file
  *
  * @author Conquistador
+ * @author Vlad5250
  */
 
 $messages['January'] = 'januara';
@@ -25,3 +26,14 @@ $messages['September'] = 'septembra';
 $messages['October'] = 'oktobra';
 $messages['November'] = 'novembra';
 $messages['December'] = 'decembra';
+$messages['lang'] = 'Jezik';
+$messages['project'] = 'Projekat';
+$messages['article'] = 'Stranica';
+$messages['needle'] = 'Pretraži:';
+$messages['skipversions'] = 'Uvijek preskoči x verzija';
+$messages['ignorefirst'] = 'Zanemari prvih x verzija';
+$messages['order'] = 'Poredak';
+$messages['newest_first'] = 'prvo najnovije';
+$messages['oldest_first'] = 'prvo najstarije';
+$messages['binary_search_inverse'] = 'Traži uklonjeni tekst (samo binarni)';
+$messages['search_method'] = 'Metoda pretrage';

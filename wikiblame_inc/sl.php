@@ -69,6 +69,7 @@ $messages['inverse_stuck'] = 'Vstavljanje ali izbris ni bilo mogoče najti v teh
 $messages['inverse_earliest'] = 'Išči v prejšnjih revizijah';
 $messages['first_version'] = 'Sprememba se je zgodila v prvi ali zadnji redakciji?';
 $messages['first_version_present'] = '__NEEDLE__ je bil prisoten že v starejši iskani redakciji z dne __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ je bil prisoten že v mlajši reviziji iskani od dne __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Verjetno obstajajo starejše redakcije.';
 $messages['execution_time'] = 'Čas izvajanja: _EXECUTIONTIME_ sekund';
 $messages['versions_found'] = 'najdenih _NUMBEROFVERSIONS_ različic';
