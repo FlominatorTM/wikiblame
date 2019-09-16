@@ -22,7 +22,7 @@
 
 $text_dir = 'ltr';
 $messages['January'] = 'Çele';
-$messages['February'] = 'Gucige';
+$messages['February'] = 'Sıbate';
 $messages['March'] = 'Adar';
 $messages['April'] = 'Nisane';
 $messages['May'] = 'Gulane';
