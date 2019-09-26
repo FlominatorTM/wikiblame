@@ -89,6 +89,6 @@ $messages['insertion_found'] = 'Вставку знайдено між LEFT_VERS
 $messages['deletion_found'] = 'Видалення знайдено між LEFT_VERSION і RIGHT_VERSION';
 $messages['here'] = 'тут';
 $messages['help_translating'] = 'Допоможіть перекласти на translatewiki.net';
-$messages['start_here'] = 'Початик пошук звідси';
+$messages['start_here'] = 'Почати пошук звідси';
 $messages['too_much_versions'] = 'Ви досягнули ліміту запитів по кількості версій: __VERSIONLIMIT__. Будь ласка, спробуйте ще раз за __WAITMINUTES__ хвилин або використовуйте двійковий режим. Перепрошуємо за незручності.';
 $messages['not_found_at_all'] = 'За вашим запитом нічого не знайдено. Перевірте правильність налаштувань і спробуйте знову.';
