@@ -11,20 +11,23 @@
  * @file
  *
  * @author Enzoreg
+ * @author SADIQUI
  * @author زكريا
  */
 
-$messages['January'] = 'Yanayer';
-$messages['February'] = 'Febrayer';
-$messages['March'] = 'Mars';
-$messages['April'] = 'Abril';
-$messages['May'] = 'May';
-$messages['June'] = 'Yonyo';
-$messages['July'] = 'Yolyoz';
-$messages['August'] = 'Ġoċṫ';
-$messages['September'] = 'Ċoṫanbir';
-$messages['October'] = 'Okṫober';
-$messages['November'] = 'Nowanbir';
-$messages['December'] = 'Dojanbir';
+$text_dir = 'rtl';
+$messages['January'] = 'يناير';
+$messages['February'] = 'فبراير';
+$messages['March'] = 'مارس';
+$messages['April'] = 'أبريل';
+$messages['May'] = 'ماي';
+$messages['June'] = 'يونيو';
+$messages['July'] = 'يوليوز';
+$messages['August'] = 'غشت';
+$messages['September'] = 'شتنبر';
+$messages['October'] = 'أكتوبر';
+$messages['November'] = 'نونبر';
+$messages['December'] = 'دجنبر';
+$messages['lang'] = 'اللوغة';
 $messages['article'] = 'ṣfḫa';
-$messages['needle'] = 'Qelleb ĝla';
+$messages['needle'] = 'قلّب على';
