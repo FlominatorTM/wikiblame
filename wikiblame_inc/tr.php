@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author BaRaN6161 TURK
  * @author Emperyan
  * @author Erdemaslancan
  * @author Flominator
@@ -47,6 +48,7 @@ $messages['skipversions'] = 'Her zaman x sürümünü atla';
 $messages['ignorefirst'] = 'Her zaman ilk x sürümü atla';
 $messages['limit'] = 'İncelenecek sürümler';
 $messages['start_date'] = 'Başlangıç tarihi';
+$messages['date_format'] = 'MM DD, YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Sıra';
 $messages['newest_first'] = 'en yeni ilk';
@@ -76,6 +78,7 @@ $messages['inverse_stuck'] = 'Bu _NUMBEROFVERSIONS_ revizyonunda ekleme veya kal
 $messages['inverse_earliest'] = 'Önceki revizyonlarda ara';
 $messages['first_version'] = 'Değişiklik ilk veya en son revizyonda olmalı?';
 $messages['first_version_present'] = '__NEEDLE__ bulunan __REVISIONLINK__ tarihli ilk revizyonda zaten mevcuttu.';
+$messages['latest_version_present'] = '__NEEDLE__, __REVISIONLINK__ tarihine göre arama yapılan en genç revizyonda zaten mevcuttu.';
 $messages['earlier_versions_available'] = 'Muhtemelen daha eski revizyonlar var.';
 $messages['execution_time'] = 'Çalıştoğı süre: _EXECUTIONTIME_ saniye';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ sürüm bulundu';
