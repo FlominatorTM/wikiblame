@@ -64,6 +64,7 @@ $messages['inverse_stuck'] = 'Peruna insertada o rimotzione agatada in custas _N
 $messages['inverse_earliest'] = 'Chirca in sas versiones prus betzas';
 $messages['first_version'] = 'Sa mudada est accontèssia in sa prima o s\'urtima revisione?';
 $messages['first_version_present'] = '__NEEDLE__ fiat giai presente in intro de sa versione prus betza chircada de su __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ fiat giai presente in intro de sa versione prus betza chircada de su __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Est dàbile chi bi siant versiones prus betzas.';
 $messages['execution_time'] = 'Tempus de faghidura: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones agatàs';

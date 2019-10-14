@@ -14,6 +14,7 @@
  * @author Emperyan
  * @author Erdemaslancan
  * @author Flominator
+ * @author Grkn gll
  * @author Hbseren
  * @author Hedda
  * @author Joseph
@@ -67,7 +68,7 @@ $messages['no_valid_url'] = 'Bu geçerli bir MediaWiki URL\'sideğil';
 $messages['start'] = 'Başla';
 $messages['reset'] = 'Sıfırla';
 $messages['manual'] = 'Manuel';
-$messages['contact'] = 'Bağlantı';
+$messages['contact'] = 'İletişim';
 $messages['get_less_versions'] = 'Aramanız tek seferde __NUMREVISIONS__ revizyon sorgulayabilir. Sunucuyu korumak adına, arama başına sadece __ALLOWEDREVISIONS__ revizyon sorgulamanıza izin verilir. Lütfen seçenekleri değiştirin ya da arama metodunu ikili\'ye çevirin!';
 $messages['wrong_skips'] = 'Yanlış ayar: Eğer ilk __VERSIONSTOSKIP__ sürüm atlanırsa, hiçbir __VERSIONSTOSEARCH__ aranacak sürüm işlenmeyecektir.';
 $messages['search_in_progress_text'] = '_ARTICLELINK_ maddesinin sürüm geçmişi b>_NEEDLE_</b> için düz metin olarak aranıyor';
