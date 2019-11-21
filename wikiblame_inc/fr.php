@@ -19,6 +19,7 @@
  * @author McDutchie
  * @author Od1n
  * @author Peter17
+ * @author Pols12
  * @author The RedBurn
  * @author Tititou36
  * @author Urhixidur
@@ -58,7 +59,7 @@ $messages['search_method'] = 'Méthode de recherche';
 $messages['binary'] = 'dichotomique';
 $messages['binary_in_wp'] = 'https://fr.wikipedia.org/wiki/Recherche_dichotomique';
 $messages['linear'] = 'linéaire';
-$messages['interpolated'] = 'binaire (plus rapide avec plus de versions)';
+$messages['interpolated'] = 'dichotomique (plus rapide avec plus de versions)';
 $messages['ignore_minors'] = 'Ignorer les modifications mineures (expérimental)';
 $messages['force_wikitags'] = 'Forcer la recherche de code wiki';
 $messages['from_url'] = 'depuis l’URL';
@@ -94,5 +95,5 @@ $messages['deletion_found'] = 'Suppression détectée entre le LEFT_VERSION et l
 $messages['here'] = 'comparaison des versions';
 $messages['help_translating'] = 'Aidez à traduire sur translatewiki.net';
 $messages['start_here'] = 'Rechercher à partir d’ici';
-$messages['too_much_versions'] = 'Vous avez atteint votre limite de requête de __VERSIONLIMIT__ versions. Essayez de nouveau dans __WAITMINUTES__ minutes ou basculez vers la recherche binaire. Désolé pour les inconvénients.';
+$messages['too_much_versions'] = 'Vous avez atteint votre limite de requête de __VERSIONLIMIT__ versions. Essayez de nouveau dans __WAITMINUTES__ minutes ou choisissez la recherche dichotomique. Désolé pour le désagrément.';
 $messages['not_found_at_all'] = 'Le contenu recherché n’a pas été trouvé. Vérifiez les paramètres et réessayez.';
