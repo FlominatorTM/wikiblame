@@ -15,6 +15,7 @@
  * @author Jaroslav.micek
  * @author Kusavica
  * @author Lexected
+ * @author Nykta 1917
  * @author Od1n
  * @author Rudko
  * @author Teslaton
@@ -42,6 +43,7 @@ $messages['skipversions'] = 'Vždy preskočiť x verzií';
 $messages['ignorefirst'] = 'Ignorovať prvých x verzií';
 $messages['limit'] = 'Skontrolovať verzie';
 $messages['start_date'] = 'Počiatočný dátum';
+$messages['date_format'] = 'MM DD, YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Poradie';
 $messages['newest_first'] = 'najprv najnovšie';
@@ -54,9 +56,9 @@ $messages['linear'] = 'lineárna';
 $messages['interpolated'] = 'binárna (rýchlejšia s viac verziami)';
 $messages['ignore_minors'] = 'ignorovať drobné zmeny (experimentálne)';
 $messages['force_wikitags'] = 'vynútiť vyhľadávanie wikitextu';
-$messages['from_url'] = 'z url';
-$messages['paste_url'] = 'Prosím, prilepte url na stránku MediaWiki';
-$messages['no_valid_url'] = 'Toto nie je platné MediaWiki url';
+$messages['from_url'] = 'z URL';
+$messages['paste_url'] = 'Prosím, prilepte URL na stránku MediaWiki';
+$messages['no_valid_url'] = 'Toto nie je platné MediaWiki URL';
 $messages['start'] = 'Spustiť';
 $messages['reset'] = 'Resetovať';
 $messages['manual'] = 'Manuálne';
@@ -70,8 +72,9 @@ $messages['inverse_restart'] = 'Žiadne vloženie alebo vymazanie nebolo nájden
 $messages['inverse_stuck'] = 'Žiadne vloženie alebo vymazanie nebolo nájdené v týchto _NUMBEROFVERSIONS_ revíziách. Bol vyhľadávaný výraz odstránený skôr?';
 $messages['inverse_earliest'] = 'Hľadať v predchádzajúcich revíziách';
 $messages['first_version'] = 'Ku zmene muselo dôjsť v prvej alebo poslednej revízii?';
-$messages['first_version_present'] = '__NEEDLE__ bolo nájdené už v staršej revízii, datované od __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Asi existujú staršie verzie.';
+$messages['first_version_present'] = '__NEEDLE__ bolo nájdené už v staršej revízii, datovanej od __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ bolo nájdené už v staršej revízii, datovanej od __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'Asi existujú staršie revízie.';
 $messages['execution_time'] = 'Čas behu: _EXECUTIONTIME_ sekúnd';
 $messages['versions_found'] = 'Nájdených _NUMBEROFVERSIONS_ verzií';
 $messages['please_wait'] = 'Čakajte prosím...';

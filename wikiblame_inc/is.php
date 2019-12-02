@@ -64,6 +64,7 @@ $messages['inverse_stuck'] = 'Engin innsetning eða fjarlæging fundust í þess
 $messages['inverse_earliest'] = 'Leita í eldri útgáfum';
 $messages['first_version'] = 'Breytingin hlýtur að hafa gerst í fyrstu eða síðustu útgáfu?';
 $messages['first_version_present'] = '__NEEDLE__ var þegar til staðar í elstu útgáfu sem leitað var að frá __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ var þegar til staðar í nýjustu útgáfu sem leitað var að frá __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Eldri útgáfur eru líklega til.';
 $messages['execution_time'] = 'Leitin tók: _EXECUTIONTIME_ sekúndur';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ útgáfur fundust';
