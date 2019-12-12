@@ -17,6 +17,7 @@
  * @author DJ Nietzsche
  * @author Fitoschido
  * @author KATRINE1992
+ * @author Ktranz
  * @author Macofe
  * @author McDutchie
  * @author Od1n
@@ -48,6 +49,7 @@ $messages['skipversions'] = 'Saltar siempre x versiones';
 $messages['ignorefirst'] = 'Ignorar las primeras x versiones';
 $messages['limit'] = 'Versiones para revisar';
 $messages['start_date'] = 'Fecha de inicio';
+$messages['date_format'] = 'MM DD, YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Orden';
 $messages['newest_first'] = 'la última primero';
@@ -77,6 +79,7 @@ $messages['inverse_stuck'] = 'No se encontró ninguna inserción ni eliminación
 $messages['inverse_earliest'] = 'Buscar en las revisiones anteriores';
 $messages['first_version'] = '¿El cambio debió haber ocurrido en la primera o en la última revisión?';
 $messages['first_version_present'] = '__NEEDLE__ ya estaba presente en la revisión más antigua buscada el __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ ya estaba presente en la revisión más antigua buscada el __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probablemente existan revisiones anteriores.';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
