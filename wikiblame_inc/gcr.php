@@ -11,6 +11,8 @@
  * @file
  *
  * @author LeGuyanaisPure
+ * @author Léon973
  */
 
 $messages['manual'] = 'Manniyèl';
+$messages['contact'] = 'Kontak';
