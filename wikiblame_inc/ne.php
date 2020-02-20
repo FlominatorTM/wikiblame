@@ -15,6 +15,7 @@
  * @author RajeshPandey
  * @author राम प्रसाद जोशी
  * @author सरोज कुमार ढकाल
+ * @author हिमाल सुबेदी
  */
 
 $messages['January'] = 'जनवरी';
@@ -29,7 +30,7 @@ $messages['September'] = 'सेप्टेम्बर';
 $messages['October'] = 'अक्टोबर';
 $messages['November'] = 'नोभेम्बर';
 $messages['December'] = 'डिसेम्बर';
-$messages['ui_lang'] = 'भाशा प्रदर्शन गर्नुहोस्';
+$messages['ui_lang'] = 'भाषा प्रदर्शन गर्नुहोस्';
 $messages['lang'] = 'भाषा';
 $messages['project'] = 'परियोजना';
 $messages['article'] = 'पृष्ठ';
