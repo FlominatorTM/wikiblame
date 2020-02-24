@@ -40,6 +40,7 @@ $messages['ignorefirst'] = 'Zanemari prvih x inačica';
 $messages['limit'] = 'Inačice za provjeru';
 $messages['start_date'] = 'Početni datum';
 $messages['date_format'] = 'DD. MM. YYYY.';
+$messages['revision_date_format'] = '%e %B %Y, %k,%M';
 $messages['order'] = 'Poredak';
 $messages['newest_first'] = 'prvo najnovije';
 $messages['oldest_first'] = 'prvo najstarije';
