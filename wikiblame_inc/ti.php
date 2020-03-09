@@ -26,5 +26,5 @@ $messages['October'] = 'ጥቅምቲ';
 $messages['November'] = 'ሕዳር';
 $messages['December'] = 'ታሕሳስ';
 $messages['lang'] = 'ቋንቋ';
-$messages['article'] = 'ገጽ';
+$messages['article'] = 'ጹሑፍ';
 $messages['please_wait'] = 'ብኽብረትካ ተጸበይ...';
