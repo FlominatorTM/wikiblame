@@ -10,25 +10,26 @@
  * @ingroup Language
  * @file
  *
+ * @author Patriot Kur
  * @author Гусейн
  */
 
 $messages['January'] = 'Јанвар';
-$messages['February'] = 'Феврал';
-$messages['March'] = 'Март';
-$messages['April'] = 'Апрел';
+$messages['February'] = 'Fevral';
+$messages['March'] = 'Mart';
+$messages['April'] = 'Aprel';
 $messages['May'] = 'Мај';
 $messages['June'] = 'Ијун';
-$messages['July'] = 'Ијул';
+$messages['July'] = 'İyul';
 $messages['August'] = 'Август';
-$messages['September'] = 'Сентјабр';
+$messages['September'] = 'Sentyabr';
 $messages['October'] = 'Октјабр';
 $messages['November'] = 'Нојабр';
-$messages['December'] = 'Декабр';
+$messages['December'] = 'Dekabr';
 $messages['ui_lang'] = 'Нишо доје зывон';
 $messages['lang'] = 'Зывон';
 $messages['project'] = 'Нәхшә';
-$messages['article'] = 'Сәһифә';
+$messages['article'] = 'Səhifə';
 $messages['needle'] = 'Сәтыр бо отырније';
 $messages['skipversions'] = 'Һежо Х рәвојәтон вадој';
 $messages['ignorefirst'] = 'Иминә Х рәвојәтон һисоб ныкарде';
