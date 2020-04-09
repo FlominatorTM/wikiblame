@@ -66,6 +66,7 @@ $messages['inverse_stuck'] = 'N\'eus bet kavet na ensoc\'hadurioù na lamadurio�
 $messages['inverse_earliest'] = 'Klask er stummoù koshoc\'h';
 $messages['first_version'] = 'Rankout a ra ar c\'hemmoù bezañ c\'hoarvezet en adweladenn gentañ pe diwezhatoc\'h ?';
 $messages['first_version_present'] = '__NEEDLE__ a oa anezhañ c\'hoazh er stumm koshañ bet enklasket hag a sav d\'an __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ a oa bezant c\'hoazh er stumm klasket nevesañ deiziet eus an__REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Adweladennoù koshoc\'h zo sur a-walc\'h.';
 $messages['execution_time'] = 'Amzer seveniñ : _EXECUTIONTIME_ eilenn';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ stumm kavet';
