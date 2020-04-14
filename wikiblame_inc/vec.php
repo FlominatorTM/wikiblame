@@ -11,6 +11,7 @@
  * @file
  *
  * @author Alunardon90
+ * @author Fierodelveneto
  * @author GatoSelvadego
  */
 
@@ -32,7 +33,7 @@ $messages['project'] = 'Projeto';
 $messages['article'] = 'Pàjina';
 $messages['needle'] = 'Serca';
 $messages['skipversions'] = 'Escludi senpre x version';
-$messages['ignorefirst'] = 'Ignora łe prime x version';
+$messages['ignorefirst'] = 'Ignorar łe prime x version';
 $messages['limit'] = 'Version da controłare';
 $messages['start_date'] = 'Data de scuminsio';
 $messages['date_format'] = 'DD MM YYYY';

@@ -14,7 +14,7 @@
  * @author Гусейн
  */
 
-$messages['January'] = 'Јанвар';
+$messages['January'] = 'Yanvar';
 $messages['February'] = 'Fevral';
 $messages['March'] = 'Mart';
 $messages['April'] = 'Aprel';
