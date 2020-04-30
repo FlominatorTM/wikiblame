@@ -11,6 +11,7 @@
  * @file
  *
  * @author Azniv Stepanian
+ * @author Kareyac
  * @author Vahe Gharakhanyan
  * @author Xelgen
  */
@@ -49,3 +50,4 @@ $messages['ignore_minors'] = 'Հաշվի չառնել չնչին փոփոխու�
 $messages['start'] = 'Սկսել';
 $messages['contact'] = 'Կոնտակտային տվյալներ';
 $messages['please_wait'] = 'Խնդրում ենք սպասել...';
+$messages['here'] = 'այստեղ';
