@@ -50,7 +50,6 @@ function read_language()
 
 	if($user_lang=="")
 	{
-		$acceptLang = isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]) ? $_SERVER["HTTP_ACCEPT_LANGUAGE"] : "";
 		//http://www.php-resource.de/forum/showthread.php?threadid=22545
 		preg_match("/^([a-z]+)-?([^,;]*)/i", $_SERVER["HTTP_ACCEPT_LANGUAGE"], $matches);
 		
