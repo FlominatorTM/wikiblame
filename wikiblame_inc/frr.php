@@ -63,6 +63,7 @@ $messages['inverse_stuck'] = 'Nian iinsaaten of striken uun jodiar _NUMBEROFVERS
 $messages['inverse_earliest'] = 'Schük uun ääler werjuunen';
 $messages['first_version'] = 'Det feranrang mut uun\'t iarst of leetst werjuun föörnimen wurden wees.';
 $messages['first_version_present'] = '__NEEDLE__ wiar al diar uun det iarst werjuun faan __REVISIONLINK__ .';
+$messages['latest_version_present'] = '__NEEDLE__ wiar al uun det leetst werjuun faan __REVISIONLINK__ banen.';
 $messages['earlier_versions_available'] = 'Woorskiinelk san diar ääler werjuunen.';
 $messages['execution_time'] = 'Tidj för\'t ütjfeeren: _EXECUTIONTIME_ sekunden';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ werjuunen fünjen';
