@@ -1,4 +1,8 @@
 <?php
+if(stristr($_SERVER['HTTP_USER_AGENT'], "AspiegelBot"))
+{
+	die("AspiegelBot is not allowed");
+}
 require_once("shared_inc/language.inc.php");
 
 $user_lang = read_language();
