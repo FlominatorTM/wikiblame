@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author AVIADOR71
  * @author Abijeet Patro
  * @author Armando-Martin
  * @author Athena in Wonderland
@@ -88,7 +89,7 @@ $messages['binary_test'] = 'Comparando diferencias en _FIRSTDATEVERSION_ entre _
 $messages['dead_end'] = 'Atrapados algunos sin salida (probablemente causados por reversiones o guerras de edición)';
 $messages['once_more'] = 'Una vez más, con sentimiento:';
 $messages['delete_from_here'] = 'Eliminar_NUMBEROFVERSIONS_earlier revisions, como ellas se han performado mas temprano';
-$messages['delete_until_here'] = 'Eliminando _NUMBEROFVERSIONS_ later revisions, como la insercion debe qua haber sido performado mas temprano';
+$messages['delete_until_here'] = 'Eliminando _NUMBEROFVERSIONS_ revisiones posteriores, ya que la inserción debió haber sido realizada antes';
 $messages['binary_enough'] = 'Se realizaron suficientes reintentos. El historial del artículo está en mal estado. Trata de cambiar algunas configuraciones.';
 $messages['insertion_found'] = 'Inserción encontrada entre LEFT_VERSION y RIGHT_VERSION';
 $messages['deletion_found'] = 'Borrado encontrado entre LEFT_VERSION y RIGHT_VERSION';
