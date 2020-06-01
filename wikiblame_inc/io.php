@@ -16,4 +16,5 @@
 $messages['lang'] = 'Linguo';
 $messages['project'] = 'Projeto';
 $messages['article'] = 'Pagino';
+$messages['needle'] = 'Serchez por';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> serchesis kom simpla texto (sen formato) en la modifikuri di _ARTICLELINK_';
