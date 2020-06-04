@@ -13,6 +13,9 @@
  * @author Joao Xavier
  */
 
+$messages['January'] = 'januaro';
+$messages['February'] = 'februaro';
+$messages['May'] = 'mayo';
 $messages['lang'] = 'Linguo';
 $messages['project'] = 'Projeto';
 $messages['article'] = 'Pagino';
