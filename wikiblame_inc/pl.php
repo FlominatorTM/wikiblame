@@ -74,6 +74,7 @@ $messages['inverse_stuck'] = 'Nie znaleziono miejsca dodania lub usunięcia w ty
 $messages['inverse_earliest'] = 'Wyszukiwanie we wcześniejszych wersjach';
 $messages['first_version'] = 'Zmiana musiała wystąpić w pierwszej lub w ostatniej wersji?';
 $messages['first_version_present'] = '__NEEDLE__ było już obecne w najstarszej z przeszukanych wersji z __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ było już obecne w najmłodszej z przeszukanych wersji z __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Prawdopodobnie są starsze wersje.';
 $messages['execution_time'] = 'Czas wykonania: _EXECUTIONTIME_ sekund';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ wersji znaleziono';
