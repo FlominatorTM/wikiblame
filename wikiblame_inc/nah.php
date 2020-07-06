@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Akapochtli
  * @author Taresi
  */
 
@@ -28,6 +29,6 @@ $messages['December'] = 'Īcmahtlactliomōmemētztli';
 $messages['ui_lang'] = 'Īxtlahtōlli';
 $messages['lang'] = 'Tlahtōlli';
 $messages['project'] = 'Tlatequipanōlli';
-$messages['article'] = 'Tlaīxtli';
-$messages['needle'] = 'Tiquīxtēmōz';
+$messages['article'] = 'Tlahcuilolamatl';
+$messages['needle'] = 'Tictemoz';
 $messages['manual'] = 'Ohāmoxtli';
