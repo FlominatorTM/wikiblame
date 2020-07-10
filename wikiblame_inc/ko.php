@@ -18,6 +18,7 @@
  * @author Od1n
  * @author Revi
  * @author Ykhwong
+ * @author 그냥기여자
  * @author 아라
  */
 
@@ -73,6 +74,7 @@ $messages['inverse_stuck'] = '이 _NUMBEROFVERSIONS_개의 판에서 추가나 �
 $messages['inverse_earliest'] = '이전 판에서 검색';
 $messages['first_version'] = '바뀜이 첫 판이나 최신 판에서 일어나야 합니까?';
 $messages['first_version_present'] = '__NEEDLE__은 이미 __REVISIONLINK__에서 기간동안 검색된 오래된 판에 존재합니다.';
+$messages['latest_version_present'] = '__NEEDLE__은 이미 __REVISIONLINK__에서 기간동안 검색된 최근 판에 존재합니다.';
 $messages['earlier_versions_available'] = '아마도 더 이전의 판이 있을 것입니다.';
 $messages['execution_time'] = '실행 시간: _EXECUTIONTIME_초';
 $messages['versions_found'] = '판 _NUMBEROFVERSIONS_개를 찾았습니다';
