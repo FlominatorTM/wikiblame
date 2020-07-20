@@ -14,6 +14,7 @@
  * @author Edinwiki
  * @author Palapa
  * @author Srdjan m
+ * @author Srđan
  */
 
 $messages['January'] = 'januar';
