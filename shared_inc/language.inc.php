@@ -140,7 +140,11 @@ function correct_language_mistakes($lang)
 		case 'nepali':		return 'ne';
 		case 'spanish':		return 'es';
 		case 'tamil':		return 'ta';
-		case '中文':			return 'zh';
+		/* chinese file names do not fit for automatic selection */
+		case '中文':			return 'zh-hans';
+		case 'zh':			return 'zh-hans';
+		case 'zh-tw':		return 'zh-hant';
+		case 'zh-hk':		return 'zh-hant';
 		default: return $lang;
 	}
 }
