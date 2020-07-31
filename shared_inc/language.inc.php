@@ -59,6 +59,23 @@ function read_language()
 		{
 			$user_lang='en';
 		}
+		if($matches[1] == 'zh')
+		{
+			switch(strtolower($matches[2]))
+			{
+				case "tw":
+				case "hk":
+				{
+					$user_lang="zh-hant";
+					break;
+				}
+				default:
+				{
+					$user_lang="zh-hans";
+					break;
+				}
+			}
+		}
 	}
 	return $user_lang;
 }
