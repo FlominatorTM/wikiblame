@@ -1,4 +1,8 @@
 <?php
+if(stristr($_SERVER['HTTP_USER_AGENT'], "AspiegelBot"))
+{
+	die("AspiegelBot is not allowed");
+}
 require_once("shared_inc/language.inc.php");
 
 $user_lang = read_language();
@@ -164,7 +168,9 @@ function datedrop_with_months ($name, $varanf="", $intab=true, $jahranf="", $jah
 		$trailers =  " </td>\n</tr>\n";
 	}	
 	
-	$date_format = strtoupper($date_format);
+	//removed to fix Issue #24
+	//$date_format = strtoupper($date_format);
+	
 	if($date_format=="" 
 	|| !stristr($date_format, "DD")  
 	|| !stristr($date_format, "MM")  
