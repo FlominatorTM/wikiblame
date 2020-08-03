@@ -11,6 +11,7 @@
  * @file
  *
  * @author Chrisportelli
+ * @author ToniSant
  */
 
 $messages['January'] = 'Jannar';
@@ -44,6 +45,7 @@ $messages['linear'] = 'lineari';
 $messages['interpolated'] = 'binarju (aktar veloċi b\'aktar verżjonijiet)';
 $messages['ignore_minors'] = 'injora l-modifiki minuri (sperimentali)';
 $messages['force_wikitags'] = 'inforza t-tfittxija għat-test wiki';
+$messages['from_url'] = 'mill-URL';
 $messages['start'] = 'Ibda';
 $messages['reset'] = 'Bħall-bidu';
 $messages['manual'] = 'Gwida';
@@ -52,8 +54,10 @@ $messages['wrong_skips'] = 'Impostazzjonijiet żbaljati: Jekk l-ewwel __VERSIONS
 $messages['search_in_progress_text'] = 'Il-verżjoni tal-kronoloġija ta\' _ARTICLELINK_ qegħda tiġi mfittxa għal <b>_NEEDLE_</b> bħala test sempliċi';
 $messages['search_in_progress_wikitags'] = 'Il-verżjoni tal-kronoloġija ta\' _ARTICLELINK_ qegħda tiġi mfittxa għal <b>_NEEDLE_</b> bħala test wiki';
 $messages['no_differences'] = 'Ebda differenza misjuba fir-reviżjonijiet imfittxija.';
+$messages['inverse_earliest'] = 'Fittex fil-verżjonijijet ta\' qabel';
 $messages['first_version'] = 'Il-bidla setgħet seħħet fl-ewwel jew f\'reviżjonijiet aktar lejn l-aħħar?';
-$messages['first_version_present'] = '__NEEDLE__ kienet diġà preżenti fl-ewwel reviżjoni tal-__REVISIONLINK__.';
+$messages['first_version_present'] = '__NEEDLE__ kienet diġà preżenti fl-ewwel reviżjoni ta\'__REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ kien/et diġà preżenti fl-aktar reviżjoni riċenti bid-data __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probabilment hemm reviżjonijiet preċedenti.';
 $messages['execution_time'] = 'Ħin ta\' eżekuzzjoni: _EXECUTIONTIME_ sekonda';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ verżjoni misjuba';
@@ -62,6 +66,7 @@ $messages['binary_test'] = 'Paragun tad-differenzi f\'_FIRSTDATEVERSION_ bejn _F
 $messages['once_more'] = 'Għal darb\'oħra, b\'sentiment:';
 $messages['insertion_found'] = 'Inserzjoni misjuba bejn LEFT_VERSION u RIGHT_VERSION';
 $messages['deletion_found'] = 'Tħassir instab bejn LEFT_VERSION u RIGHT_VERSION';
+$messages['here'] = 'hawn';
 $messages['help_translating'] = 'Għin biex tittraduċi fuq translatewiki.net';
 $messages['start_here'] = 'Fittex minn hawnhekk';
 $messages['not_found_at_all'] = 'It-terminu tat-tfittxija tiegħek ma nstabx. Iċċekkja l-issettjar tiegħek u erġa\' pprova.';
