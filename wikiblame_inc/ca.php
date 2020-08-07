@@ -13,6 +13,7 @@
  * @author Fitoschido
  * @author Gemmaa
  * @author McDutchie
+ * @author Mguix
  * @author Paucabot
  * @author SMP
  * @author Solde
@@ -53,6 +54,9 @@ $messages['linear'] = 'lineal';
 $messages['interpolated'] = 'binari (és més ràpid amb moltes versions)';
 $messages['ignore_minors'] = 'ignora els canvis menors (experimental)';
 $messages['force_wikitags'] = 'força la cerca de codi wiki';
+$messages['from_url'] = 'des de l\'url';
+$messages['paste_url'] = 'Si us plau enganxeu l\'URL a la pàgina de MediaWiki';
+$messages['no_valid_url'] = 'Això no és cap URL de MediaWiki vàlida';
 $messages['start'] = 'Iniciar';
 $messages['reset'] = 'Reestableix';
 $messages['manual'] = 'Manual';
@@ -63,8 +67,11 @@ $messages['search_in_progress_text'] = 'S\'està cercant <b>_NEEDLE_</b> com a t
 $messages['search_in_progress_wikitags'] = 'S\'està cercant <b>_NEEDLE_</b> com a text wiki en l\'historial de versions de: _ARTICLELINK_';
 $messages['no_differences'] = 'No s\'ha trobat cap diferència en les revisions cercades.';
 $messages['inverse_restart'] = 'No s\'ha trobat cap inserció ni esborrat. Que el terme cercat s\'ha inserit més tard?';
+$messages['inverse_stuck'] = 'No s\'ha trobat cap inserció ni eliminació en aquestes _NUMBEROFVERSIONS_ revisions. És possible que el terme de cerca s\'hagi eliminat amb anterioritat.';
+$messages['inverse_earliest'] = 'Buscar en les revisions anteriors';
 $messages['first_version'] = 'El canvi ha d\'haver passat a la primera o l\'última revisió?';
 $messages['first_version_present'] = '__NEEDLE__ ja era present en la primera revisió trobada amb data __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ ja era present en la revisió més antiga buscada el __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probablement hi ha revisions anteriors.';
 $messages['execution_time'] = 'Temps d\'execució: segons _EXECUTIONTIME_';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versions trobades';
@@ -72,6 +79,8 @@ $messages['please_wait'] = 'Espereu...';
 $messages['binary_test'] = 'Comparant les diferències en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ i _SECONDNUMBER_ provinents de _SOURCENUMBER_:';
 $messages['dead_end'] = 'Trobat un carrer sense sortida (probablement causat per reversions o guerra d\'edicions)';
 $messages['once_more'] = 'Una vegada més, amb la sensació:';
+$messages['delete_from_here'] = 'Eliminant les  _NUMBEROFVERSIONS_ revisions anteriors, ja que la supressió s\'ha de realitzar posteriorment';
+$messages['delete_until_here'] = 'Se suprimeix _NUMBEROFVERSIONS_ revisions posteriors, ja que la inserció s\'ha de realitzar amb anterioritat';
 $messages['binary_enough'] = 'Torna a intentar prou representades, història de l\'article és molt desordenat, si us plau, proveu de canviar algunes escenes.';
 $messages['insertion_found'] = 'Inserció trobat entre LEFT_VERSION i RIGHT_VERSION';
 $messages['deletion_found'] = 'Supressió s\'ha trobat entre LEFT_VERSION i RIGHT_VERSION';
