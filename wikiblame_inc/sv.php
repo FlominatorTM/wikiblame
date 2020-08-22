@@ -19,6 +19,7 @@
  * @author Lokal Profil
  * @author Od1n
  * @author Per
+ * @author Sabelöga
  * @author Tobulos1
  * @author WikiPhoenix
  */
@@ -47,8 +48,8 @@ $messages['start_date'] = 'Startdatum';
 $messages['date_format'] = 'DD MM YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Sortera';
-$messages['newest_first'] = 'Senaste först';
-$messages['oldest_first'] = 'Äldsta först';
+$messages['newest_first'] = 'senaste först';
+$messages['oldest_first'] = 'äldsta först';
 $messages['binary_search_inverse'] = 'Leta efter borttagning av text (endast binär)';
 $messages['search_method'] = 'Sökmetod';
 $messages['binary'] = 'binär';
@@ -57,10 +58,10 @@ $messages['linear'] = 'linjär';
 $messages['interpolated'] = 'binär (snabbare med fler versioner)';
 $messages['ignore_minors'] = 'Ignorera mindre ändringar (experimentell)';
 $messages['force_wikitags'] = 'Tvinga sökning i wikitext';
-$messages['from_url'] = 'från url';
-$messages['paste_url'] = 'Klistra in url till MediaWiki-sidan';
-$messages['no_valid_url'] = 'Detta är inte en giltig MediaWiki-url';
-$messages['start'] = 'Starta';
+$messages['from_url'] = 'från URL';
+$messages['paste_url'] = 'Klistra in URL till MediaWiki-sidan';
+$messages['no_valid_url'] = 'Detta är inte en giltig MediaWiki-URL';
+$messages['start'] = 'Börja';
 $messages['reset'] = 'Återställ';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Kontakt';
@@ -70,7 +71,7 @@ $messages['search_in_progress_text'] = 'Versionshistoriken för _ARTICLELINK_ bl
 $messages['search_in_progress_wikitags'] = 'Versionshistoriken för _ARTICLELINK_ blir genomsökt efter <b>_NEEDLE_</b> som wikitext';
 $messages['no_differences'] = 'Inga skillnader hittades i de jämförda versionerna.';
 $messages['inverse_restart'] = 'Ingen inläggning eller borttagning hittades, infogades söktermen senare?';
-$messages['inverse_stuck'] = 'Inga inläggningar eller borttagningar hittades i dessa _NUMBEROFVERSIONS_ versionerna. Togs kanske söktermen bort tidigare?';
+$messages['inverse_stuck'] = 'Inga inläggningar eller borttagningar hittades i dessa _NUMBEROFVERSIONS_ versioner. Togs kanske söktermen bort tidigare?';
 $messages['inverse_earliest'] = 'Sök i tidigare versioner';
 $messages['first_version'] = 'Ändringen måste ha inträffat i första eller senaste versionen?';
 $messages['first_version_present'] = '__NEEDLE__ fanns redan i den äldsta sökta revisionen som daterar från __REVISIONLINK__.';
