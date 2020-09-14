@@ -65,6 +65,7 @@ $messages['inverse_stuck'] = 'Nun so\' state truvate azzeccamiente o luvamiente 
 $messages['inverse_earliest'] = 'Ascià dint\' e verziune e primma';
 $messages['first_version'] = '\'O cagnamiento è succiesso dint\'a primma o a ll\'úrdema rivisione?';
 $messages['first_version_present'] = '__NEEDLE__ era già prisente dint\'a rivisione cchiù viecchia ca se truvava d\' \'o __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ fuje già presente dint\'a rivisione cchiù viecchia ca se truvava d"o __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Può darse ch\'esistono rivisione cchiù viecchie.';
 $messages['execution_time'] = 'Tiempo d\'esecuzione: _EXECUTIONTIME_ sicunne';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ verziune truvate';
