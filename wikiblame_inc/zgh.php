@@ -37,6 +37,7 @@ $messages['search_method'] = 'ⴰⵎⵎⴰⴽ ⵏ ⵓⵔⵣⵣⵓ';
 $messages['from_url'] = 'ⵙⴳ URL';
 $messages['start'] = 'ⵙⵙⵏⵜⵉ';
 $messages['contact'] = 'ⴰⵡⴰⴹ';
+$messages['please_wait'] = 'ⵕⴰⵊⴰ...';
 $messages['binary_test'] = 'ⴰⵙⵎⵣⴰⵣⴰⵍ ⵏ ⵓⵎⵣⴰⵔⴰⵢ ⴳ _FIRSTDATEVERSION_ ⴳⵔ _FIRSTNUMBER_ ⴷ _SECONDNUMBER_ ⴰⴷⴷⴰⵢ ⴷ ⵜⵜⴰⵙⵏ ⵙⴳ _SOURCENUMBER_:';
 $messages['once_more'] = 'ⵉⵛⵜ ⵢⴰⴹⵏ, ⵙ ⵜⵓⴼⵔⴰⵢⵜ:';
 $messages['here'] = 'ⴷⴰ';
