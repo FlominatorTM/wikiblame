@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Andriy.v
  * @author Flominator
  * @author Gucci Mane Burrr
  * @author KEL
@@ -36,7 +37,7 @@ $messages['November'] = 'листопада';
 $messages['December'] = 'грудня';
 $messages['ui_lang'] = 'Мова відображення';
 $messages['lang'] = 'Мова';
-$messages['project'] = 'Проект';
+$messages['project'] = 'Проєкт';
 $messages['project_example'] = 'Вікіпедія, Вікіджерела, Вікімедіа, Вікідані, …';
 $messages['article'] = 'Сторінка';
 $messages['needle'] = 'Знайти';

@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Hakim1bal
  * @author Tifinaghes
  */
 
@@ -29,7 +30,7 @@ $messages['ui_lang'] = 'ⵜⵓⵜⵍⴰⵢⵜ ⵉⵏⵓ';
 $messages['lang'] = 'ⵜⵓⵜⵍⴰⵢⵜ';
 $messages['project'] = 'ⴰⵙⵏⴼⴰⵔ';
 $messages['article'] = 'ⵜⴰⵙⵏⴰ';
-$messages['needle'] = 'ⴰⵔⵣⵣⵓ ⵅⴼ';
+$messages['needle'] = 'Rzu ɣef';
 $messages['newest_first'] = 'ⴰⵏⴳⴳⴰⵔⵓ ⴷ ⴰⵎⵣⵡⴰⵔⵓ';
 $messages['contact'] = 'ⴰⵎⵢⴰⵡⴰⴹ';
 $messages['please_wait'] = 'Please wait...';
