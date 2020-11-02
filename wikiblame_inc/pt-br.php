@@ -21,6 +21,7 @@
  * @author Luckas
  * @author Luckas Blade
  * @author MisterSanderson
+ * @author MuratTheTurkish
  * @author Pedroca cerebral
  * @author Raylton P. Sousa
  * @author TheEduGobi
@@ -60,7 +61,7 @@ $messages['oldest_first'] = 'mais antigos primeiro';
 $messages['binary_search_inverse'] = 'Procurar remoção de texto (somente binário)';
 $messages['search_method'] = 'Método de pesquisa';
 $messages['binary'] = 'binária';
-$messages['binary_in_wp'] = 'https://pt.wikipedia.org/wiki/Pesquisa_bin%C3%A1ria';
+$messages['binary_in_wp'] = 'https://pt.wikipedia.org/wiki/Pesquisa_binária';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'binária (mais rápida para pesquisar muitas edições)';
 $messages['ignore_minors'] = 'ignorar edições menores (experimental)';

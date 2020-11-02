@@ -13,6 +13,7 @@
  * @author Adrianbblk
  * @author Flominator
  * @author Minisarm
+ * @author MuratTheTurkish
  * @author Od1n
  * @author Strainu
  * @author Wintereu
@@ -46,7 +47,7 @@ $messages['oldest_first'] = 'întâi cele mai vechi';
 $messages['binary_search_inverse'] = 'Caută eliminări de text (doar binar)';
 $messages['search_method'] = 'Metodă de căutare';
 $messages['binary'] = 'binară';
-$messages['binary_in_wp'] = 'https://ro.wikipedia.org/wiki/C%C4%83utare_binar%C4%83';
+$messages['binary_in_wp'] = 'https://ro.wikipedia.org/wiki/Căutare_binară';
 $messages['linear'] = 'lineară';
 $messages['interpolated'] = 'binară (mai rapidă în cazul unui număr mare de versiuni)';
 $messages['ignore_minors'] = 'Ignoră modificările minore (experimental)';

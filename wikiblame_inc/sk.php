@@ -15,6 +15,7 @@
  * @author Jaroslav.micek
  * @author Kusavica
  * @author Lexected
+ * @author MuratTheTurkish
  * @author Nykta 1917
  * @author Od1n
  * @author Rudko
@@ -51,7 +52,7 @@ $messages['oldest_first'] = 'najprv najstaršie';
 $messages['binary_search_inverse'] = 'Vyhľadaj zmazaný text (iba binárne)';
 $messages['search_method'] = 'Metóda hľadania';
 $messages['binary'] = 'binárna';
-$messages['binary_in_wp'] = 'https://sk.wikipedia.org/wiki/Bin%C3%A1rne_vyh%C4%BEad%C3%A1vanie';
+$messages['binary_in_wp'] = 'https://sk.wikipedia.org/wiki/Binárne_vyhľadávanie';
 $messages['linear'] = 'lineárna';
 $messages['interpolated'] = 'binárna (rýchlejšia s viac verziami)';
 $messages['ignore_minors'] = 'ignorovať drobné zmeny (experimentálne)';
