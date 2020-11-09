@@ -13,6 +13,7 @@
  * @author AmaryllisGardener
  * @author Avicennasis
  * @author John Reid
+ * @author MJL
  */
 
 $messages['January'] = 'Januair';
@@ -55,7 +56,7 @@ $messages['get_less_versions'] = 'Yer rake micht speir __NUMREVISIONS__ reveesio
 $messages['wrong_skips'] = 'Wrang settins: gif the foremaist __VERSIONSTOSKIP__ versions ar pass\'t ower, than nane o the __VERSIONSTOSEARCH__ versions tae be raked will be processed.';
 $messages['search_in_progress_text'] = 'The version histerie o _ARTICLELINK_ is bein raked fer <b>_NEEDLE_</b> aes plain tex';
 $messages['search_in_progress_wikitags'] = 'The version histerie o _ARTICLELINK_ is bein raked fer <b>_NEEDLE_</b> aes wiki tex';
-$messages['no_differences'] = 'Naw differences foond in raked reveesions.';
+$messages['no_differences'] = 'Nae differences foond in raked reveesions.';
 $messages['inverse_restart'] = 'Na insertion or remuival foond, wis the sairch term insertit later?';
 $messages['first_version'] = 'Chynge maun hae happen\'t in foremaist or latest reveesion?';
 $messages['first_version_present'] = '__NEEDLE__ wis already present in the auldest reveesion sairched datin frae __REVISIONLINK__.';
