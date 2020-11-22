@@ -20,6 +20,7 @@
  * @author Lockal
  * @author MaxBioHazard
  * @author Movses
+ * @author MuratTheTurkish
  * @author Od1n
  * @author Okras
  * @author Smigles
@@ -57,7 +58,7 @@ $messages['oldest_first'] = 'сначала старые';
 $messages['binary_search_inverse'] = 'Поиск удаления текста (только двоичный)';
 $messages['search_method'] = 'Способ поиска';
 $messages['binary'] = 'двоичный';
-$messages['binary_in_wp'] = 'https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%BF%D0%BE%D0%B8%D1%81%D0%BA';
+$messages['binary_in_wp'] = 'https://ru.wikipedia.org/wiki/Двоичный_поиск';
 $messages['linear'] = 'линейный';
 $messages['interpolated'] = 'двоичный (быстрее, если много версий)';
 $messages['ignore_minors'] = 'Не учитывать малые изменения (экспериментально)';

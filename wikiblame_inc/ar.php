@@ -17,6 +17,7 @@
  * @author Houcinee1
  * @author Meno25
  * @author Moud hosny
+ * @author MuratTheTurkish
  * @author Mutarjem horr
  * @author Od1n
  * @author OsamaK
@@ -57,7 +58,7 @@ $messages['oldest_first'] = 'الأقدم أولا';
 $messages['binary_search_inverse'] = 'ابحث عن حذف النص (ثنائي فقط)';
 $messages['search_method'] = 'طريقة البحث';
 $messages['binary'] = 'ثنائي';
-$messages['binary_in_wp'] = 'https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D8%A8%D8%AD%D8%AB_%D8%AB%D9%86%D8%A7%D8%A6%D9%8A';
+$messages['binary_in_wp'] = 'https://ar.wikipedia.org/wiki/خوارزمية_البحث_الثنائي';
 $messages['linear'] = 'خطيّة';
 $messages['interpolated'] = 'ثنائي (أسرع بنسخ أكثر)';
 $messages['ignore_minors'] = 'تجاهل التغييرات الطفيفة (تجريبي)';

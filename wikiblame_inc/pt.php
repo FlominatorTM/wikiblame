@@ -22,6 +22,7 @@
  * @author Mansil
  * @author MokaAkashiyaPT
  * @author Mosca
+ * @author MuratTheTurkish
  * @author Od1n
  * @author Vitorvicentevalente
  * @author Waldir
@@ -57,7 +58,7 @@ $messages['oldest_first'] = 'mais antigas primeiro';
 $messages['binary_search_inverse'] = 'Procurar remoção de texto (somente binário)';
 $messages['search_method'] = 'Método de procura';
 $messages['binary'] = 'binária';
-$messages['binary_in_wp'] = 'https://pt.wikipedia.org/wiki/Pesquisa_bin%C3%A1ria';
+$messages['binary_in_wp'] = 'https://pt.wikipedia.org/wiki/Pesquisa_binária';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'binária (mais rápida a pesquisar muitas edições)';
 $messages['ignore_minors'] = 'ignorar edições menores (experimental)';

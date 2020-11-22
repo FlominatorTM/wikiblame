@@ -15,6 +15,7 @@
  * @author Klutzy
  * @author Kurousagi
  * @author Kwj2772
+ * @author MuratTheTurkish
  * @author Od1n
  * @author Revi
  * @author Ykhwong
@@ -52,7 +53,7 @@ $messages['oldest_first'] = '과거 항목 먼저';
 $messages['binary_search_inverse'] = '제거할 텍스트를 찾음 (이진 검색만)';
 $messages['search_method'] = '검색 방법';
 $messages['binary'] = '이진 검색';
-$messages['binary_in_wp'] = 'https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84_%EA%B2%80%EC%83%89_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98';
+$messages['binary_in_wp'] = 'https://ko.wikipedia.org/wiki/이진_검색_알고리즘';
 $messages['linear'] = '순차 검색';
 $messages['interpolated'] = '이진 (많은 버전에 대해 빠름)';
 $messages['ignore_minors'] = '사소한 편집을 무시 (실험 중)';
