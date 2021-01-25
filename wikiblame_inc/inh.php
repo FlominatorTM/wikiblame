@@ -14,7 +14,7 @@
  * @author Sapral Mikail
  */
 
-$messages['January'] = 'АгIой';
+$messages['January'] = 'АгӀой';
 $messages['February'] = 'Саь-кур';
 $messages['March'] = 'Мутт-хьал';
 $messages['April'] = 'Тушол';
