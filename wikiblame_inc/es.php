@@ -11,7 +11,6 @@
  * @file
  *
  * @author AVIADOR71
- * @author Abijeet Patro
  * @author Armando-Martin
  * @author Athena in Wonderland
  * @author Crazymadlover
