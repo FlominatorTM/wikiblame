@@ -547,7 +547,7 @@ function check_revision_date_format($messages)
 function get_all_versions($articleenc, $offset)
 {
     global $limit, $server, $user_lang;
-    $historyurl = "https://".$server."/w/index.php?title=".$articleenc."&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
+    $historyurl = "https://".$server."/wiki/".$articleenc."?action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
 	$history = curl_request($historyurl);
 	//echo "<hr><pre>$history</pre><hr>";
 	return listversions($history);
