@@ -17,6 +17,7 @@
  * @author Capmo
  * @author Dianakc
  * @author Eduardo Addad de Oliveira
+ * @author Eduardoaddad
  * @author Giro720
  * @author Luckas
  * @author Luckas Blade

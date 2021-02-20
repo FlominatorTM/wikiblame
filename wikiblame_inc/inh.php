@@ -14,18 +14,18 @@
  * @author Sapral Mikail
  */
 
-$messages['January'] = 'АгIой';
-$messages['February'] = 'Саь-кур';
-$messages['March'] = 'Мутт-хьал';
+$messages['January'] = 'АгӀой';
+$messages['February'] = 'Саькур';
+$messages['March'] = 'Муттхьал';
 $messages['April'] = 'Тушол';
 $messages['May'] = 'Села';
 $messages['June'] = 'Этинга';
 $messages['July'] = 'Баьцамеа';
 $messages['August'] = 'Мяцхали';
 $messages['September'] = 'Михий';
-$messages['October'] = 'АьрхIий';
+$messages['October'] = 'АьрхӀий';
 $messages['November'] = 'Лайчилла';
-$messages['December'] = 'Чан-тар';
+$messages['December'] = 'Чантар';
 $messages['ui_lang'] = 'Интерфейса мотт';
 $messages['lang'] = 'Мотт';
 $messages['project'] = 'Проект';
