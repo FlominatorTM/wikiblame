@@ -10,6 +10,7 @@
  * @ingroup Language
  * @file
  *
+ * @author AVSmalnad77
  * @author Akoppad
  * @author Kamalaksha
  * @author M G Harish
@@ -18,7 +19,7 @@
  */
 
 $messages['January'] = 'ಜನವರಿ';
-$messages['February'] = 'ಫೆಬ್ರುವರಿ';
+$messages['February'] = 'ಫೆಬ್ರವರಿ';
 $messages['March'] = 'ಮಾರ್ಚ್';
 $messages['April'] = 'ಏಪ್ರಿಲ್';
 $messages['May'] = 'ಮೇ';
