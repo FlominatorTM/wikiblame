@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Hebrew (עברית)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

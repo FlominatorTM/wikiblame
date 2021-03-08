@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

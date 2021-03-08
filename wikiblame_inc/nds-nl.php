@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Low Saxon (Nedersaksies)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

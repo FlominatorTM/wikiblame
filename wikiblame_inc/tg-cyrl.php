@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Tajik (Cyrillic script) (тоҷикӣ)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

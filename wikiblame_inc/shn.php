@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Shan (လိၵ်ႈတႆး)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

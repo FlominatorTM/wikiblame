@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Basa Banyumasan (Basa Banyumasan)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

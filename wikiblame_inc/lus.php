@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Mizo (Mizo ţawng)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Tamil (தமிழ்)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Lingua Franca Nova (Lingua Franca Nova)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

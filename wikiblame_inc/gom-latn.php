@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Goan Konkani (Latin script) (Gõychi Konknni)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

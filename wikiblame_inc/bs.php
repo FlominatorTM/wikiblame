@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Bosnian (bosanski)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

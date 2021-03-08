@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Message documentation (Message documentation)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

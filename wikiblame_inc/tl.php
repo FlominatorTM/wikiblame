@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Tagalog (Tagalog)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

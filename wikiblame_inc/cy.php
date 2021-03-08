@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Welsh (Cymraeg)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

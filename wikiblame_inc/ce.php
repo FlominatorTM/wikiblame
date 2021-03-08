@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Chechen (нохчийн)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

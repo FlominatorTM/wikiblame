@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Tunisian Arabic (تونسي/Tûnsî)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

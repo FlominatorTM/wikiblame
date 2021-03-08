@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Central Bikol (Bikol Central)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

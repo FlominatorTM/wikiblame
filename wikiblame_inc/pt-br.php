@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Brazilian Portuguese (português do Brasil)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

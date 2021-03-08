@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Latin (Latina)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

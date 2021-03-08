@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Khmer (ភាសាខ្មែរ)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

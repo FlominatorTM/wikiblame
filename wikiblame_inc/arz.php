@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Egyptian Arabic (مصرى)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

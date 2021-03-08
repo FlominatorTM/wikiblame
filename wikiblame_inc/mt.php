@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Maltese (Malti)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

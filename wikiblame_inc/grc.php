@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Tatar (Cyrillic script) (татарча)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

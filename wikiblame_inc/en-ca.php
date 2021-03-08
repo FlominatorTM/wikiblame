@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Canadian English (Canadian English)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

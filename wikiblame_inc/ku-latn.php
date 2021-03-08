@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Kurdish (Latin script) (kurdî (latînî)‎)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

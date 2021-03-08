@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

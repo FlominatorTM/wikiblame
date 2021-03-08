@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Standard Moroccan Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

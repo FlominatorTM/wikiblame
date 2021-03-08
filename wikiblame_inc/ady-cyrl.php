@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Adyghe (Cyrillic script) (адыгабзэ)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

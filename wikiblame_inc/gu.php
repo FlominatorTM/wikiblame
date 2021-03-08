@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Gujarati (ગુજરાતી)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

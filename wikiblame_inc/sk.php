@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Slovak (slovenčina)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
@@ -21,6 +18,7 @@
  * @author Rudko
  * @author Teslaton
  * @author Wizzard
+ * @author Yardom78
  */
 
 $messages['January'] = 'Január';
@@ -58,13 +56,13 @@ $messages['interpolated'] = 'binárna (rýchlejšia s viac verziami)';
 $messages['ignore_minors'] = 'ignorovať drobné zmeny (experimentálne)';
 $messages['force_wikitags'] = 'vynútiť vyhľadávanie wikitextu';
 $messages['from_url'] = 'z URL';
-$messages['paste_url'] = 'Prosím, prilepte URL na stránku MediaWiki';
-$messages['no_valid_url'] = 'Toto nie je platné MediaWiki URL';
+$messages['paste_url'] = 'Prosím, vložte URL na stránku MediaWiki';
+$messages['no_valid_url'] = 'Toto nie je platná MediaWiki URL';
 $messages['start'] = 'Spustiť';
 $messages['reset'] = 'Resetovať';
 $messages['manual'] = 'Manuálne';
 $messages['contact'] = 'Kontakt';
-$messages['get_less_versions'] = 'Vaše vyhľadávanie môže zoraďovať __NUMREVISIONS__ revízie naraz. Kvôli ochrane servera sa naraz môže zoraďovať maximálne na __ALLOWEDREVISIONS__ revízií. Prosím, zmeňte nastavenie alebo prepnite spôsob vyhľadávania na binárny!';
+$messages['get_less_versions'] = 'Maximálny počet verzií naraz pre vaše vyhľadávanie: __NUMREVISIONS__. Pre ochranu servera je máte povolený maximálny počet revízií: __ALLOWEDREVISIONS__ . Prosím, zmeňte nastavenie alebo prepnite spôsob vyhľadávania na binárny!';
 $messages['wrong_skips'] = 'Chybné nastavenia: Ak bude prvých __VERSIONSTOSKIP__ preskočených, žiadne z verzií __VERSIONSTOSEARCH__ nebudú spracované.';
 $messages['search_in_progress_text'] = 'História verzií _ARTICLELINK_ sa prehľadáva na <b>_NEEDLE_</b> ako obyčajný text';
 $messages['search_in_progress_wikitags'] = 'História verzií _ARTICLELINK_ sa prehľadáva na <b>_NEEDLE_</b> ako wiki text';
@@ -75,20 +73,20 @@ $messages['inverse_earliest'] = 'Hľadať v predchádzajúcich revíziách';
 $messages['first_version'] = 'Ku zmene muselo dôjsť v prvej alebo poslednej revízii?';
 $messages['first_version_present'] = '__NEEDLE__ bolo nájdené už v staršej revízii, datovanej od __REVISIONLINK__.';
 $messages['latest_version_present'] = '__NEEDLE__ bolo nájdené už v staršej revízii, datovanej od __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Asi existujú staršie revízie.';
-$messages['execution_time'] = 'Čas behu: _EXECUTIONTIME_ sekúnd';
-$messages['versions_found'] = 'Nájdených _NUMBEROFVERSIONS_ verzií';
+$messages['earlier_versions_available'] = 'Pravdepodobne existujú staršie revízie.';
+$messages['execution_time'] = 'Trvanie: _EXECUTIONTIME_ sekúnd';
+$messages['versions_found'] = 'Počet nájdených verzií: _NUMBEROFVERSIONS_';
 $messages['please_wait'] = 'Čakajte prosím...';
-$messages['binary_test'] = 'Porovnávajú sa rozdiely v _FIRSTDATEVERSION_ medzi _FIRSTNUMBER_ a _SECONDNUMBER_ prichádzajúc z _SOURCENUMBER_:';
-$messages['dead_end'] = 'Dosiahnutá slepá ulička (pravdepodobne kvôli obnovení starej verzie alebo editačnej vojne)';
+$messages['binary_test'] = 'Porovnávajú sa rozdiely v _FIRSTDATEVERSION_ medzi _FIRSTNUMBER_ a _SECONDNUMBER_ prichádzajúce z _SOURCENUMBER_:';
+$messages['dead_end'] = 'Chytený v slepej uličke (pravdepodobne kvôli obnovení starej verzie alebo editačnej vojne)';
 $messages['once_more'] = 'Ešte raz, s pocitom:';
-$messages['delete_from_here'] = 'Odstraňujem _NUMBEROFVERSIONS_ predchádzajúcich revízií, keďže k odstráneniu došlo neskôr';
-$messages['delete_until_here'] = 'Odstraňujem _NUMBEROFVERSIONS_ neskorších revízií, keďže k vloženiu došlo skôr';
+$messages['delete_from_here'] = 'Odstraňovanie predchádzajúcich revízií: _NUMBEROFVERSIONS_';
+$messages['delete_until_here'] = 'Odstraňovanie neskorších revízií:_NUMBEROFVERSIONS_';
 $messages['binary_enough'] = 'Vykonaný dostatok opakovaní, história článku je celkom chaotická, skúste zmeniť niektoré nastavenia.';
 $messages['insertion_found'] = 'Bolo zistené vloženie medzi verziou LEFT_VERSION a RIGHT_VERSION.';
 $messages['deletion_found'] = 'Bolo zistené vymazanie medzi verziou LEFT_VERSION a RIGHT_VERSION.';
 $messages['here'] = 'tu';
 $messages['help_translating'] = 'Pomôžte s prekladom na translatewiki.net';
 $messages['start_here'] = 'Hľadať odtiaľto';
-$messages['too_much_versions'] = 'Dosiahli ste svoj limit dopytu __VERSIONLIMIT__ verzií. Skúste to prosím znova o __WAITMINUTES__ minút alebo prepnite na binárne vyhľadávanie. Ospravedlňujeme sa za nepríjemnosti.';
+$messages['too_much_versions'] = 'Dosiahli ste svoj limit dopytovaných verzií:  __VERSIONLIMIT__. Za nepríjemnosti sa ospravedlňujeme. Prepnite na binárne vyhľadávanie, alebo počkajte a skúste to prosím znova neskôr. Počet minút: __WAITMINUTES__';
 $messages['not_found_at_all'] = 'Hľadaný výraz sa nenašiel. Skontrolujte nastavenie a skúste hľadať znova.';

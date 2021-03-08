@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Hakka Chinese (客家語/Hak-kâ-ngî)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

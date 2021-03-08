@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Aragonese (aragonés)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Uyghur (Arabic script) (ئۇيغۇرچە)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

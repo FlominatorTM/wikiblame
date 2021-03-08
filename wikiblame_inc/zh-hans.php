@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Simplified Chinese (中文（简体）‎)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

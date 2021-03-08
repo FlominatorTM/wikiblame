@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** German (Deutsch)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

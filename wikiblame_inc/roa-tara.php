@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Tarantino (tarandíne)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

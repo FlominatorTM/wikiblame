@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Korean (한국어)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Gothic (𐌲𐌿𐍄𐌹𐍃𐌺)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

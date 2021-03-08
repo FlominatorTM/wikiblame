@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Guianan Creole (kriyòl gwiyannen)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

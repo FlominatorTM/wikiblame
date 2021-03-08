@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

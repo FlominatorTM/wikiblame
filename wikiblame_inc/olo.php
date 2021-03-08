@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Livvi-Karelian (livvinkarjala)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

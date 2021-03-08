@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Southern Balochi (جهلسری بلوچی)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

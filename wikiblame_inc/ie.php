@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Interlingue (Interlingue)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Chuvash (Чӑвашла)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

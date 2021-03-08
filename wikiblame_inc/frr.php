@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Northern Frisian (Nordfriisk)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

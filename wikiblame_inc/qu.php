@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Quechua (Runa Simi)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

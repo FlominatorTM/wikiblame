@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Western Balochi (روچ کپتین بلوچی)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

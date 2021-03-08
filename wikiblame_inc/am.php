@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Amharic (አማርኛ)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

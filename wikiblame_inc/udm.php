@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Udmurt (удмурт)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

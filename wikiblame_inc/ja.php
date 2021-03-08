@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Japanese (日本語)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

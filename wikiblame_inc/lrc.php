@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Northern Luri (لۊری شومالی)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

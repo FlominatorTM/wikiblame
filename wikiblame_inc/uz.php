@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Uzbek (oʻzbekcha/ўзбекча)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

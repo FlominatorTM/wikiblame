@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Pennsylvania German (Deitsch)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

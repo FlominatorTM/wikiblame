@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Saraiki (Arabic script) (سرائیکی)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

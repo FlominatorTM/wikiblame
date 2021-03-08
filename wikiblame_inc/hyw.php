@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Western Armenian (Արեւմտահայերէն)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

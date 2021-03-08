@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Sakha (саха тыла)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Eastern Pwo (ဖၠုံလိက်)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters

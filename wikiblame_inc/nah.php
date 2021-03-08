@@ -1,7 +1,4 @@
 <?php
-/** WikiBlame
- *
- */
 /** Nāhuatl (Nāhuatl)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
