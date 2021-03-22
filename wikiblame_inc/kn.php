@@ -13,6 +13,7 @@
  * @author M G Harish
  * @author Nayan
  * @author Nayvik
+ * @author ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ
  */
 
 $messages['January'] = 'ಜನವರಿ';

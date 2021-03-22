@@ -70,6 +70,7 @@ $messages['inverse_stuck'] = 'Δεν βρέθηκε εισαγωγή ή διαγ
 $messages['inverse_earliest'] = 'Αναζητήστε σε προηγούμενες επαναλήψεις';
 $messages['first_version'] = 'Η αλλαγή πρέπει να έχει συμβεί στην πρώτη ή στην τελευταία αναθεώρηση;';
 $messages['first_version_present'] = '__NEEDLE__ υπήρχε ήδη κατά την παλαιότερη αναθεώρηση που βρέθηκε και αναζητήθηκε από __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ υπήρχε ήδη κατά την παλαιότερη αναθεώρηση που βρέθηκε και αναζητήθηκε από __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Υπάρχουν πιθανότατα παλαιότερες αναθεωρήσεις.';
 $messages['execution_time'] = 'Χρόνος Εκτέλεσης: _EXECUTIONTIME_ δευτερόλεπτα';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ εκδόσεις βρέθηκαν';
