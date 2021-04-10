@@ -330,7 +330,7 @@ function submitAndWait()
 <hr>
 <a href='<?php  echo $messages['manual_link'] ?>'><?php  echo $messages['manual'] ?></a> - 
 <a href='<?php  echo $messages['contact_link'] ?>'><?php  echo $messages['contact'] ?></a> - 
-<a href='http://translatewiki.net/wiki/Translating:Wikiblame'><?php  echo $messages['help_translating'] ?></a> -
+<a href="https://translatewiki.net/wiki/Translating:WikiBlame"><?php  echo $messages['help_translating'] ?></a> -
 <a href="https://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
 </div>
 <?php
@@ -577,7 +577,7 @@ function listversions ($history)
 	</span> 
 	<abbr class="minor" title="Kleine Änderung">K</abbr> 
 	<span class="history-size">(10.740 Bytes)</span> 
-	<span class="comment">(Bot: Ergänze: <a href="http://vi.wikipedia.org/wiki/Hinterzarten" class="extiw" title="vi:Hinterzarten">vi:Hinterzarten</a>)</span> (<span class="mw-history-undo"><a href="/w/index.php?title=Hinterzarten&amp;action=edit&amp;undoafter=64556690&amp;undo=64569839" title="Hinterzarten">entfernen</a></span>) </span> <small><span class='fr-hist-autoreviewed plainlinks'>[<a href="http://de.wikipedia.org/w/index.php?title=Hinterzarten&amp;stableid=64569839" class="external text" rel="nofollow">automatisch gesichtet</a>]</span></small></li> <li><span class='flaggedrevs-color-1'>(<a href="/w/index.php?title=Hinterzarten&amp;diff=64569839&amp;oldid=64556690" title="Hinterzarten">Aktuell</a>) (<a href="/w/index.php?title=Hinterzarten&amp;diff=64556690&amp;oldid=63484457" title="Hinterzarten">Vorherige</a>) <input type="radio" value="64556690" checked="checked" name="oldid" id="mw-oldid-64556690" /><input type="radio" value="64556690" 
+	<span class="comment">(Bot: Ergänze: <a href="https://vi.wikipedia.org/wiki/Hinterzarten" class="extiw" title="vi:Hinterzarten">vi:Hinterzarten</a>)</span> (<span class="mw-history-undo"><a href="/w/index.php?title=Hinterzarten&amp;action=edit&amp;undoafter=64556690&amp;undo=64569839" title="Hinterzarten">entfernen</a></span>) </span> <small><span class='fr-hist-autoreviewed plainlinks'>[<a href="https://de.wikipedia.org/w/index.php?title=Hinterzarten&amp;stableid=64569839" class="external text" rel="nofollow">automatisch gesichtet</a>]</span></small></li> <li><span class='flaggedrevs-color-1'>(<a href="/w/index.php?title=Hinterzarten&amp;diff=64569839&amp;oldid=64556690" title="Hinterzarten">Aktuell</a>) (<a href="/w/index.php?title=Hinterzarten&amp;diff=64556690&amp;oldid=63484457" title="Hinterzarten">Vorherige</a>) <input type="radio" value="64556690" checked="checked" name="oldid" id="mw-oldid-64556690" /><input type="radio" value="64556690" 
 	</li>	*/
 	
 	if(count($revision_html_blocks)==1) 
@@ -1263,7 +1263,8 @@ function print_translator($lang)
 function get_url($year, $month, $day, $hours=23, $minutes=55, $include_ignorefirst=true)
 {
 	global $project, $article, $needle, $lang, $limit, $ignorefirst,$order, $force_wikitags, $user_lang, $binary_search_inverse, $user;
-	$url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".urlencode($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;offhour=$hours&amp;offmin=$minutes&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
+	$proto = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ? 'https://' : 'http://';
+	$url = $proto.$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?project=$project&amp;article=".urlencode($article)."&amp;needle=".urlencode($needle)."&amp;"."lang=$lang&amp;limit=$limit"."&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;offhour=$hours&amp;offmin=$minutes&amp;searchmethod=".$_REQUEST['searchmethod']."&amp;order=".$_REQUEST['order']."&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
 	
 	if($include_ignorefirst)
 	{
@@ -1362,8 +1363,8 @@ function Get_UTC_Hours($localHours, $server)
 	<a href="http://www.ramselehof.de"><img border="0"
         src="ramselehof_powered_feddich.jpg"
         alt="Ramselehof.de"></a>
-    <a href="http://validator.w3.org/check?uri=referer"><img border="0"
-        src="http://www.w3.org/Icons/valid-html401-blue"
+    <a href="https://validator.w3.org/check?uri=referer"><img border="0"
+        src="https://www.w3.org/Icons/valid-html401-blue"
         alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
   </p>
 	</body>
