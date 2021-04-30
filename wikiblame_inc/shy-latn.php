@@ -1,5 +1,5 @@
 <?php
-/** Shawiya (Latin script) (Tacawit)
+/** Shawiya (Latin script) (tacawit)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net
