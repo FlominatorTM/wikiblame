@@ -1,5 +1,5 @@
 <?php
-/** Kurdish (Latin script) (kurdî (latînî))
+/** Kurdish (Latin script) (kurdî (latînî)‎)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net
