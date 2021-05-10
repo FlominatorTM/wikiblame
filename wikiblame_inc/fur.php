@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Klenje
  * @author Tocaibon
  */
 
@@ -31,6 +32,7 @@ $messages['skipversions'] = 'Salte simpri x versions';
 $messages['ignorefirst'] = 'Ignore li primis x versions';
 $messages['limit'] = 'Version di controlâ';
 $messages['start_date'] = 'Date iniziâl';
+$messages['date_format'] = 'DD MM YYYY';
 $messages['order'] = 'Ordenament';
 $messages['newest_first'] = 'prime lis plui gnovis';
 $messages['oldest_first'] = 'prime lis plui vecjis';
@@ -52,8 +54,8 @@ $messages['search_in_progress_text'] = 'La cronologje di _ARTICLELINK_ a ven cum
 $messages['search_in_progress_wikitags'] = 'La cronologje di _ARTICLELINK_ a ven cumò analizade te ricerche <b>_NEEDLE_</b> come test wiki';
 $messages['no_differences'] = 'Nissune difarence cjatade';
 $messages['first_version'] = 'La modifiche e je stade te prime o te ultime version?';
-$messages['first_version_present'] = '__NEEDLE__ al jere za presint inte prime revision dal __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'A varessin di sei revisions precedentis';
+$messages['first_version_present'] = '__NEEDLE__ al jere za presint inte revision plui viere cirude dal __REVISIONLINK__.';
+$messages['earlier_versions_available'] = 'A varessin di sei revisions plui vieris';
 $messages['execution_time'] = 'Timp di esecuzion: _EXECUTIONTIME_ seconts';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ revisions cjatadis';
 $messages['please_wait'] = 'Par plasê spiete.....';
@@ -63,6 +65,7 @@ $messages['once_more'] = 'Ancjemò une volte, cun passion';
 $messages['binary_enough'] = 'Fats un numar suficient di tentatîfs, la cronologjie de vô e je dut câs ancjemo masse incasinade, prove par plasê a cambiâ culachi impostazion.';
 $messages['insertion_found'] = 'Inseriment de paraule cjatât tra la revision dal LEFT_VERSION e chê dal RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancelazion cjatâde tra la revision dal LEFT_VERSION e chê dal RIGHT_VERSION';
+$messages['here'] = 'culì';
 $messages['help_translating'] = 'Jude a traduzi su translatewiki.net';
 $messages['start_here'] = 'Cîr di ca vie';
 $messages['too_much_versions'] = 'Tu sês rivât/rivade al limit massim  di __VERSIONLIMIT__ domandadis. Par plasê torne a provâ fra __WAITMINUTES__ minéts o passe ael metodi di ricerche binari. Nus displâs pal inconvenient.';
