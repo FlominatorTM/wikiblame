@@ -384,15 +384,20 @@ function fill_variables($user_lang)
     {
         $project="wikipedia";
     }
+	
+	$tld = $_REQUEST['tld'];
+	if($tld=="")
+	{
+		$tld = "org";
+	}
     if($lang=="blank")
     {
-        $server= $project.".org";
+        $server = "$project.$tld";
     }
     else
     {
-        $server= $lang.".".$project.".org";
+        $server = "$lang.$project.$tld";
     }
-
 
     $use_binary_search = true;
     if($_REQUEST['searchmethod']=="lin")
