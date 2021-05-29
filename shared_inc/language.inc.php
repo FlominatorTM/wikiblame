@@ -50,7 +50,7 @@ function read_language()
 
 	if($user_lang=="")
 	{
-		//http://www.php-resource.de/forum/showthread.php?threadid=22545
+		//https://www.php-resource.de/forum/php-developer-forum/22545-unterschiede-zwischen-versch-browsern-bei-http_accept_language.html
 		preg_match("/^([a-z]+)-?([^,;]*)/i", $_SERVER["HTTP_ACCEPT_LANGUAGE"], $matches);
 		
 		$user_lang = $matches[1];

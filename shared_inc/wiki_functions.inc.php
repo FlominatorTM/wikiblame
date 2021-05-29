@@ -324,11 +324,11 @@ function set_up_media_wiki_input_fields($summary, $button, $article="")
 	global $server;
 	$editTime = "";
 	
-	//switch to UTC http://stackoverflow.com/a/38665239/4609258
+	//switch to UTC https://stackoverflow.com/questions/6275614
 	$TZ=date_default_timezone_get();
 	date_default_timezone_set('UTC');
 		
-	$UtcNow = time() - date('Z'); //http://php.net/manual/de/function.time.php#117251
+	$UtcNow = time() - date('Z'); //https://secure.php.net/manual/de/function.time.php#117251
 	if($article!="" && $server != "")
 	{
 		$editTime = get_page_time_stamp($server, $article);
@@ -502,7 +502,7 @@ function print_debug($str)
 function prevent_automatic_escaping_of_input_strings()
 {
     // required to prevent automatic escaping of input strings
-    // thanks to http://www.php.net/manual/de/security.magicquotes.disabling.php	
+    // thanks to https://secure.php.net/manual/de/security.magicquotes.disabling.php
     if (get_magic_quotes_gpc()) 
     {
         function stripslashes_deep($value)
