@@ -45,6 +45,7 @@ $messages['linear'] = 'գծային';
 $messages['interpolated'] = 'երկուական';
 $messages['ignore_minors'] = 'Հաշվի չառնել չնչին փոփոխությունները (փորձնական)';
 $messages['start'] = 'Սկսել';
+$messages['reset'] = 'Վերակայել';
 $messages['contact'] = 'Կոնտակտային տվյալներ';
 $messages['please_wait'] = 'Խնդրում ենք սպասել...';
 $messages['here'] = 'այստեղ';
