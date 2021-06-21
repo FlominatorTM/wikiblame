@@ -8,6 +8,7 @@
  * @file
  *
  * @author David1010
+ * @author Narazeni
  * @author Silovan
  */
 
@@ -33,6 +34,7 @@ $messages['ignorefirst'] = 'მაართა x ვერსიეფიშ ი
 $messages['limit'] = 'გინაჯინალი ვერსიეფი';
 $messages['start_date'] = 'დოჭყაფაშ თარიღი';
 $messages['date_format'] = 'DD.MM.YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'რანწკი';
 $messages['newest_first'] = 'დუდმაართაშე უახალაში';
 $messages['oldest_first'] = 'დუდმაართაშე უახალაში';
@@ -43,8 +45,12 @@ $messages['linear'] = 'ხაზობური';
 $messages['interpolated'] = 'ორობითი (შხვა ვერსიეფწკჷმა ართო მალასი რე)';
 $messages['ignore_minors'] = 'ციქა თირუეფიშ იგნორირება (ექსპერიმენტული)';
 $messages['force_wikitags'] = 'ვიკიტექსტიშ გორუა';
+$messages['from_url'] = 'რცხუშე';
+$messages['paste_url'] = 'ქორთხინთ, ქენახუნეთ რცხუ MediaWiki-შ ხასჷლაშა';
+$messages['no_valid_url'] = 'თენა ჩილათირი MediaWiki-რცხუ რე';
 $messages['start'] = 'დოჭყაფა';
 $messages['reset'] = 'გოუქვაფა';
 $messages['manual'] = 'ხეთ';
 $messages['contact'] = 'კონტაქტი';
+$messages['get_less_versions'] = 'თქვან მოთხირით შილებე ართშაიანო __NUMREVISIONS__ ვერსიაშ ძირაფა. სერვერიშ ტხილუაშ ღანკით, ართშაიანი მოთხირით შილებე __ALLOWEDREVISIONS__ ვერსიაშ ძირაფა. ქორთხინთ, დოთირეთ პარამეტრეფი ვარ-და გორუაშ ჟირნერი რეჟიმშა გეგნორთით!';
 $messages['please_wait'] = 'ქორთხინთ ქიმიცადით …';
