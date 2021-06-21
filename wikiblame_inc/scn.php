@@ -7,22 +7,23 @@
  * @ingroup Language
  * @file
  *
+ * @author Ajeje Brazorf
  * @author Markos90
  * @author Sarvaturi
  */
 
-$messages['January'] = 'Jinnaru';
-$messages['February'] = 'Frivaru';
-$messages['March'] = 'Marzu';
-$messages['April'] = 'Aprili';
+$messages['January'] = 'jinnaru';
+$messages['February'] = 'frivaru';
+$messages['March'] = 'marzu';
+$messages['April'] = 'aprili';
 $messages['May'] = 'Maiu';
-$messages['June'] = 'Giugnu';
-$messages['July'] = 'Giugnettu';
-$messages['August'] = 'Austu';
-$messages['September'] = 'Sittèmmiru';
-$messages['October'] = 'Uttùviru';
-$messages['November'] = 'Nuvèmmiru';
-$messages['December'] = 'Dicèmmiru';
+$messages['June'] = 'giugnu';
+$messages['July'] = 'giugnettu';
+$messages['August'] = 'austu';
+$messages['September'] = 'sittèmmiru';
+$messages['October'] = 'uttùviru';
+$messages['November'] = 'nuvèmmiru';
+$messages['December'] = 'dicèmmiru';
 $messages['ui_lang'] = 'Lingua di visualizzazzioni';
 $messages['lang'] = 'Lingua';
 $messages['project'] = 'Pruggettu';
