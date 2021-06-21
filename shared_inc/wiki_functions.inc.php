@@ -310,7 +310,8 @@ function analyse_array($arr)
 function chop_content($art_text)
 {
 	//echo "chopping text";
-	$start_token = 'class="mw-content-ltr">';
+	//$start_token = 'class="mw-content-ltr">';
+	$start_token = '<div class="mw-parser-output">';
 	$end_token = '<div id="mw-navigation">';
 	$content_begins = strpos($art_text, $start_token) + strlen($start_token);
 	$content_ends = strpos($art_text, $end_token);
