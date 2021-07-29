@@ -9,6 +9,7 @@
  *
  * @author Artificial123
  * @author Artsiom91
+ * @author Maksim L.
  * @author Mechanizatar
  * @author SamGold
  */
@@ -56,7 +57,7 @@ $messages['search_in_progress_wikitags'] = 'Версія гісторыі _ARTIC
 $messages['no_differences'] = 'У шукаемых версіях адрозненняў ня знойдзена.';
 $messages['inverse_restart'] = 'Устаўкі ці выдалення не знойдзена. Ці не было пошукавае слова ўстаўлена пазней?';
 $messages['first_version'] = 'Змена павінна адбыцца ў першай ці апошняй версіі?';
-$messages['first_version_present'] = '__NEEDLE__ ужо прысутнічае ў старой рэдакцыі з __REVISIONLINK__.';
+$messages['first_version_present'] = '__NEEDLE__ ужо ёсць ў старай рэдакцыі з __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Магчыма, існуюць больш старыя версіі.';
 $messages['execution_time'] = 'Час выканання: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ версіяў знойдзена';

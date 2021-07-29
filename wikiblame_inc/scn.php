@@ -66,6 +66,7 @@ $messages['once_more'] = 'Ancora na vota, cu sintimentu:';
 $messages['binary_enough'] = 'Esiguiti abbastanti tintativi, la crunuluggìa dâ vuci è purtroppu abbastanti n disòrdini, prova a canciari quarchi mpustazzioni.';
 $messages['insertion_found'] = 'Nzirimentu dâ palora attruvatu ntra la rivisioni dô LEFT_VERSION e chidda dô RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancillazzioni attruvata ntra LEFT_VERSION e RIGHT_VERSION';
+$messages['here'] = 'ccà';
 $messages['help_translating'] = 'Aiuta a tradùciri nta translatewiki.net';
 $messages['start_here'] = 'Arricerca di ccà';
 $messages['too_much_versions'] = 'Juncisti lu lìmiti màssimu  di __VERSIONLIMIT__ addumannati. Si prega di pruvari arrè passati __WAITMINUTES__ o passari a l\'arricerca binaria. Ni scusamu pô ncunvinienti.';
