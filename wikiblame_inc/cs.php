@@ -13,6 +13,7 @@
  * @author Flominator
  * @author Jkjk
  * @author Kuvaly
+ * @author Matěj Suchánek
  * @author Mormegil
  * @author MuratTheTurkish
  * @author Od1n
@@ -44,7 +45,7 @@ $messages['ignorefirst'] = 'Ignorovat prvních x verzí';
 $messages['limit'] = 'Počet prohledávaných revizí';
 $messages['start_date'] = 'Počáteční datum';
 $messages['date_format'] = 'DD MM YYYY';
-$messages['revision_date_format'] = '%H:%M, %d %M %R';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Řadit';
 $messages['newest_first'] = 'od nejnovějších';
 $messages['oldest_first'] = 'od nejstarších';
@@ -54,8 +55,8 @@ $messages['binary'] = 'binární';
 $messages['binary_in_wp'] = 'https://cs.wikipedia.org/wiki/Binární_vyhledávání';
 $messages['linear'] = 'lineární';
 $messages['interpolated'] = 'binární (rychlejší s více verzemi)';
-$messages['ignore_minors'] = 'ignorovat malé editace (experimentální)';
-$messages['force_wikitags'] = 'vynutit vyhledávání wikitextu';
+$messages['ignore_minors'] = 'Ignorovat malé editace (experimentální)';
+$messages['force_wikitags'] = 'Vynutit vyhledávání wikitextu';
 $messages['from_url'] = 'z URL';
 $messages['paste_url'] = 'Prosím vložte URL na MediaWiki stránku';
 $messages['no_valid_url'] = 'Toto není platná MediaWiki URL';
@@ -64,7 +65,7 @@ $messages['reset'] = 'Vynulovat';
 $messages['manual'] = 'Příručka';
 $messages['contact'] = 'Kontakt';
 $messages['get_less_versions'] = 'Vaše vyhledávání může dotázat __NUMREVISIONS__ revizí najednou. Kvůli ochraně serveru se najednou můžete dotázat maximálně na __ALLOWEDREVISIONS__ revizí. Prosím, změňte nastavení nebo přepněte způsob vyhledávání na binární!';
-$messages['wrong_skips'] = 'Špatné nastavení: Jestliže prvních __VERSIONSTOSKIP__ verzí jhe přeskočeno, pak žádná z __VERSIONSTOSEARCH__ verzí k vyhledání nebude zpracována.';
+$messages['wrong_skips'] = 'Špatné nastavení: Jestliže prvních __VERSIONSTOSKIP__ verzí je přeskočeno, pak žádná z __VERSIONSTOSEARCH__ verzí k vyhledání nebude zpracována.';
 $messages['search_in_progress_text'] = 'Historie verzí _ARTICLELINK_ se prohledává na <b>_NEEDLE_</b> jako prostý text';
 $messages['search_in_progress_wikitags'] = 'Historie verzí _ARTICLELINK_ se prohledává na <b>_NEEDLE_</b> jako wiki text';
 $messages['no_differences'] = 'Nebyly nalezeny žádné rozdíly v prohledávaných revizích.';
