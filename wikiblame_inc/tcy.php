@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Chidananda Kampa
  * @author VASANTH S.N.
  */
 
@@ -23,7 +24,7 @@ $messages['October'] = 'ಅಕ್ಟೋಬರ';
 $messages['November'] = 'ನವಂಬರೊ';
 $messages['December'] = 'ದಸಂಬರೊ';
 $messages['ui_lang'] = 'ಪ್ರದರ್ಶಕ ಭಾಷೆ';
-$messages['lang'] = 'ಭಾಸೆ';
+$messages['lang'] = 'ಬಾಸೆ';
 $messages['project'] = 'ಯೋಜನೆಲು';
 $messages['article'] = 'ಪುಟೊ';
 $messages['needle'] = 'ನಾಡ್ಲೆ...';
