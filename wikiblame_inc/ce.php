@@ -65,6 +65,6 @@ $messages['dead_end'] = 'КӀажбухе (иза хила мега йухада
 $messages['once_more'] = 'Кхин цӀа:';
 $messages['insertion_found'] = 'ТӀетохар карина юкъахь LEFT_VERSION а, RIGHT_VERSION а';
 $messages['deletion_found'] = 'Юкъарадаккхар карина юкъахь LEFT_VERSION а, RIGHT_VERSION а';
-$messages['help_translating'] = 'ГӀо де гочян translatewiki.net чохь';
+$messages['help_translating'] = 'ГӀо де гочйан translatewiki.net чохь';
 $messages['start_here'] = 'Доладе лахар кхузахь';
 $messages['not_found_at_all'] = 'ХӀокху жоп дехарца хӀума цакарийна. ГӀирсе хьаже йуха лаха.';
