@@ -312,9 +312,11 @@ function chop_content($art_text)
 	//echo "chopping text";
 	//$start_token = 'class="mw-content-ltr">';
 	$start_token = '<div class="mw-parser-output">';
-	$end_token = '<div id="mw-navigation">';
+	//$end_token = '<div id="mw-navigation">';
+	$end_token = "<div id='mw-data-after-content'>";
 	$content_begins = strpos($art_text, $start_token) + strlen($start_token);
 	$content_ends = strpos($art_text, $end_token);
+	//echo "content_begins: $content_begins ; content_ends: $content_ends";
 	$content = substr($art_text, $content_begins, $content_ends-$content_begins);
 	//echo "<h1>start content</h1>$content<h1>end content</h1>";
 	return str_replace('[bearbeiten]', '', $content);
