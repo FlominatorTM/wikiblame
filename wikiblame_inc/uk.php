@@ -8,6 +8,7 @@
  * @file
  *
  * @author Andriy.v
+ * @author DDPAT
  * @author Flominator
  * @author Gucci Mane Burrr
  * @author KEL
@@ -77,7 +78,7 @@ $messages['latest_version_present'] = '__NEEDLE__ уже була присутн
 $messages['earlier_versions_available'] = 'Вірогідно, є старіші версії.';
 $messages['execution_time'] = 'Час виконання: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Знайдено _NUMBEROFVERSIONS_ версії';
-$messages['please_wait'] = 'Будь ласка, зачекайте …';
+$messages['please_wait'] = 'Будь ласка, зачекайте…';
 $messages['binary_test'] = 'Порівняння відмінностей _FIRSTDATEVERSION_ між _FIRSTNUMBER_ і _SECONDNUMBER_ при переході з _SOURCENUMBER_:';
 $messages['dead_end'] = 'Глухий кут (можливо, зумовлений відкатом чи конфліктом змін)';
 $messages['once_more'] = 'Ще раз, з почуттям:';
