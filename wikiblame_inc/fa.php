@@ -9,6 +9,7 @@
  *
  * @author Alirezaaa
  * @author Amirsara
+ * @author Darafsh
  * @author Ebraminio
  * @author Huji
  * @author Meysamzare23
@@ -51,6 +52,7 @@ $messages['ignore_minors'] = 'چشم‌پوشی از تغییرات جزئی (آ
 $messages['force_wikitags'] = 'جستجوی اجباری ویکی متن';
 $messages['from_url'] = 'از نشانی اینترنتی';
 $messages['paste_url'] = 'لطفاً آدرس را در صفحه ویکی‌مدیا جای گذاری کنید';
+$messages['no_valid_url'] = 'بدون نشانی مدیاویکی مناسب';
 $messages['start'] = 'شروع';
 $messages['reset'] = 'بازنشانی';
 $messages['manual'] = 'دفترچه راهنما';
@@ -61,8 +63,11 @@ $messages['search_in_progress_text'] = 'تاریخچهٔ نسخهٔ _ARTICLELINK
 $messages['search_in_progress_wikitags'] = 'تاریخچهٔ نسخهٔ _ARTICLELINK_ برای <b>_NEEDLE_</b> به عنوان متن ویکی در حال جستجو است';
 $messages['no_differences'] = 'هیچ تفاوتی در نسخه‌های جستجوشده یافت نشد.';
 $messages['inverse_restart'] = 'هیچ افزودنی یا حذف‌شدنی یافت نشد، آیا جستجو به بعدا موکول شود؟';
+$messages['inverse_stuck'] = 'درج یا حذفی در این نسخه‌های _NUMBEROFVERSIONS_ یافت نشد. آیا ممکن است عبارت جستجو زودتر حذف شده‌باشد؟';
+$messages['inverse_earliest'] = 'جستجو در نسخه‌های قبلی';
 $messages['first_version'] = 'باید تغییراتی در نسخهٔ اول یا آخر رخ داده باشد؟';
 $messages['first_version_present'] = '__NEEDLE__ همچنان در قدیمی‌ترین نسخه یافت‌شده از تاریخ __REVISIONLINK__ موجود بود.';
+$messages['latest_version_present'] = '__NEEDLE__ was already present in the youngest revision searched dating from __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'احتمالاً نسخه‌های قدیمی‌تری وجود دارند.';
 $messages['execution_time'] = 'زمان اجرا: _EXECUTIONTIME_ ثانیه';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ نسخه یافت شد';
@@ -70,6 +75,8 @@ $messages['please_wait'] = 'لطفاً صبر کنید…';
 $messages['binary_test'] = 'مقایسهٔ تفاوت‌های بین _FIRSTNUMBER_ و _SECONDNUMBER_در  _FIRSTDATEVERSION_ در حالی که از _SOURCENUMBER_ می‌آید:';
 $messages['dead_end'] = 'چند بن‌بست گرفته شد (احتمالاً ناشی از واگردانی‌ها یا جنگ‌های ویرایشی)';
 $messages['once_more'] = 'بار دیگر، با احساس:';
+$messages['delete_from_here'] = 'Deleting _NUMBEROFVERSIONS_ earlier revisions, since removal must have been performed later';
+$messages['delete_until_here'] = 'Deleting _NUMBEROFVERSIONS_ later revisions, since insertion must have been performed earlier';
 $messages['binary_enough'] = 'به اندازهٔ کافی بازآزمایی صورت گرفت، تاریخچهٔ مقاله حسابی درهم‌برهم شده است، لطفاً برخی تنظیمات را تغییر دهید.';
 $messages['insertion_found'] = 'درج بین LEFT_VERSION و RIGHT_VERSION یافت شد';
 $messages['deletion_found'] = 'حذف بین LEFT_VERSION و RIGHT_VERSION یافت شد';
