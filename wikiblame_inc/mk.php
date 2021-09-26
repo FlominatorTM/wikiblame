@@ -13,6 +13,7 @@
  * @author Od1n
  */
 
+$text_dir = 'ltr';
 $messages['January'] = 'јануари';
 $messages['February'] = 'февруари';
 $messages['March'] = 'март';

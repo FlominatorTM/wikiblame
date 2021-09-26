@@ -14,6 +14,7 @@
  * @author Od1n
  * @author PhiLiP
  * @author Shizhao
+ * @author Tranve
  * @author VulpesVulpes825
  * @author Yfdyh000
  * @author 阿pp
@@ -52,7 +53,7 @@ $messages['binary_in_wp'] = 'https://zh.wikipedia.org/wiki/二分搜索算法';
 $messages['linear'] = '线性';
 $messages['interpolated'] = '二分法（在版本更多时更快）';
 $messages['ignore_minors'] = '忽略小修改（实验功能）';
-$messages['force_wikitags'] = '强制搜索wiki文本';
+$messages['force_wikitags'] = '强制搜索wikitext';
 $messages['from_url'] = '来自url';
 $messages['paste_url'] = '请粘贴utl到MediaWiki页面';
 $messages['no_valid_url'] = '这不是有效的MediaWiki url';
