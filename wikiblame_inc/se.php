@@ -11,3 +11,4 @@
  */
 
 $messages['lang'] = 'Giella';
+$messages['article'] = 'Siidu';
