@@ -36,6 +36,7 @@ $messages['date_format'] = 'MM DD, YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['start'] = 'စးထီၣ်';
 $messages['reset'] = 'စးထီၣ်ခီၣ်ထံး';
+$messages['manual'] = 'မါနၠူၤ';
 $messages['contact'] = 'တၢ်ဆဲးကျိး';
 $messages['please_wait'] = 'ဝံသးစူၤ အိၣ်ခိး...';
 $messages['here'] = 'လၢအံၤ';
