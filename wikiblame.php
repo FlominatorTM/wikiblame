@@ -115,6 +115,15 @@ function pasteFieldsFromUrl()
     var language;
     var tld;
     var project;
+
+    // possible cases or URL form:
+    // subdomain/language + host + TLD
+    // -> http(s)://de.wikipedia.org/whatever
+    // host + .org (2 parts)
+    // -> http(s)://somewiki.org/whatever
+    // host + custom TLD (2 parts)
+    // -> http(s)://otherwiki.com/whatever
+    // if there are only 2 parts, it's definitely the subdomain that is missing
     if(hostParts.length==3)
     {
         language = hostParts[0];
@@ -133,11 +142,14 @@ function pasteFieldsFromUrl()
     var titleEquals = 'title=';
     if(mediaWikiUrl.search(titleEquals)>0)
     {
+        // find article name from a URL like https://example.com/w/index.php?title=Main_Page
         var urlParts = mediaWikiUrl.split('?');
        
         if(urlParts.length==2)
         {
             var paramParts = urlParts[1].split('&');
+            // gets article name from first instance of 'title='
+            // @TODO: should probably be last instance to comply with HTTP standard
             for (var i=0; i<paramParts.length; i++)
             {
                 if(paramParts[i].startsWith(titleEquals))
@@ -151,6 +163,7 @@ function pasteFieldsFromUrl()
     }
     else if(a.pathname.startsWith(slashWiki))
     {
+        // find article name from a URL like https://example.com/wiki/Main_Page
         article = decodeURIComponent(a.pathname.substr(slashWiki.length)).replace(/_/gm, ' ');
         titleFound = true;
     }
