@@ -113,16 +113,19 @@ function pasteFieldsFromUrl()
     var hostParts = (a.hostname).split('.');
     var article;
     var language;
+    var tld;
     var project;
     if(hostParts.length==3)
     {
         language = hostParts[0];
         project = hostParts[1];
+        tld = hostParts[2];
     }
     if(hostParts.length==2)
     {
         language = 'blank';
         project = hostParts[0];
+        tld = hostParts[1];
     }
 
     var titleFound = false;
@@ -161,6 +164,7 @@ function pasteFieldsFromUrl()
         document.forms['mainform'].elements['lang'].value=language;
         document.forms['mainform'].elements['project'].value=project;
         document.forms['mainform'].elements['article'].value=article;
+        document.forms['mainform'].elements['tld'].value=tld;
     }
 }
 
@@ -204,6 +208,16 @@ function submitAndWait()
 				</tr>				
 				<tr>
 					<td align="<?php  echo $alignment ?>">
+                        <label for="tld">
+                            <?php  echo $messages['tld']?>
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" name="tld" id="tld" value="<?php echo $tld; ?>">  (<?php echo $messages['tld_example']; ?>)
+                    </td>
+                </tr>					
+                <tr>
+                    <td align="<?php  echo $alignment ?>">
 						<label for="article">
 							<?php  echo $messages['article']; ?>
 						</label>
