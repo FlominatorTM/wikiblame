@@ -17,8 +17,10 @@
  * @author Shirayuki
  * @author Whym
  * @author にょきにょき
+ * @author カッパ鳥
  */
 
+$text_dir = '左書き';
 $messages['January'] = '1月';
 $messages['February'] = '2月';
 $messages['March'] = '3月';
@@ -33,7 +35,9 @@ $messages['November'] = '11月';
 $messages['December'] = '12月';
 $messages['ui_lang'] = '表示言語';
 $messages['lang'] = '言語';
+$messages['lang_example'] = 'ja, commons, www, …';
 $messages['project'] = 'プロジェクト';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
 $messages['article'] = 'ページ';
 $messages['needle'] = '検索語';
 $messages['skipversions'] = '常にX版をスキップ';
@@ -59,8 +63,9 @@ $messages['no_valid_url'] = '無効な MediaWiki URL です。';
 $messages['start'] = '開始';
 $messages['reset'] = 'リセット';
 $messages['manual'] = 'マニュアル';
-$messages['manual_link'] = 'https://ja.wikipedia.org/wiki/Wikipedia:%E3%83%84%E3%83%BC%E3%83%AB/WikiBlame';
+$messages['manual_link'] = 'https://ja.wikipedia.org/wiki/Wikipedia:ツール/WikiBlame';
 $messages['contact'] = '連絡先';
+$messages['contact_link'] = 'https://ja.wikipedia.org/wiki/Wikipedia:ツール/WikiBlame';
 $messages['get_less_versions'] = 'あなたの検索クエリは__NUMREVISIONS__件の版を一度に検査する可能性があります。サーバーを保護するため、一度の呼び出しで検査できる版数は__ALLOWEDREVISIONS__件以下に制限されています。設定を変更するか、検索方法を二分探索にしてください!';
 $messages['wrong_skips'] = '設定の不備: 初めの__VERSIONSTOSKIP__版をとばしてしまうと、検査すべき__VERSIONSTOSEARCH__版のどれも処理されません。';
 $messages['search_in_progress_text'] = '_ARTICLELINK_の版履歴は、<b>_NEEDLE_</b>をプレーンテキストとして検索中です';
