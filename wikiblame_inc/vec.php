@@ -12,7 +12,7 @@
  * @author GatoSelvadego
  */
 
-$messages['January'] = 'Xenaro';
+$messages['January'] = 'Zenaro';
 $messages['February'] = 'Febraro';
 $messages['March'] = 'Marso';
 $messages['April'] = 'Apriłe';
