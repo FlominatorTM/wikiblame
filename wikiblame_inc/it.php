@@ -16,6 +16,7 @@
  * @author Gianfranco
  * @author Lou Crazy
  * @author Macofe
+ * @author Mannivu
  * @author Melos <nnico AT jumpy.it>
  * @author Od1n
  * @author Ontsed
