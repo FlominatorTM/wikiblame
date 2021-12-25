@@ -24,6 +24,12 @@ if($project=="")
 	$project="wikipedia";
 }
 
+$tld = isset ($_REQUEST['tld']) ? $_REQUEST['tld'] : "";
+if($tld=="")
+{
+	$tld="org";
+}
+
 $limit = isset ($_REQUEST['limit']) ? $_REQUEST['limit'] : "";
 
 if($limit=="")
