@@ -10,6 +10,7 @@
  * @author Bináris
  * @author Dj
  * @author Glanthor Reviol
+ * @author Luckylukee81
  * @author Od1n
  * @author Tacsipacsi
  * @author Tgr
@@ -31,6 +32,8 @@ $messages['December'] = 'december';
 $messages['ui_lang'] = 'Megjelenítési nyelv';
 $messages['lang'] = 'Nyelv';
 $messages['project'] = 'Projekt';
+$messages['tld'] = 'Domain';
+$messages['tld_example'] = 'Wikimedia:Üzenetek\x5b\'tld example\'\x5d/hu';
 $messages['article'] = 'Szócikk';
 $messages['needle'] = 'Keresendő szöveg';
 $messages['skipversions'] = 'Csak minden x. változatot vizsgálja';

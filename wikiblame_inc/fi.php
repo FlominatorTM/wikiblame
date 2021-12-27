@@ -10,6 +10,7 @@
  * @author Centerlink
  * @author Crt
  * @author Flominator
+ * @author MITO
  * @author Nedergard
  * @author Nike
  * @author Od1n
@@ -35,6 +36,7 @@ $messages['ui_lang'] = 'Näyttökieli';
 $messages['lang'] = 'Kieli';
 $messages['project'] = 'Hanke';
 $messages['project_example'] = 'wikipedia, wikiaineisto, wikimedia, wikidata, ...';
+$messages['tld'] = 'Verkkotunnus';
 $messages['article'] = 'Sivu';
 $messages['needle'] = 'Hae tekstiä';
 $messages['skipversions'] = 'Ohita aina x versiota';

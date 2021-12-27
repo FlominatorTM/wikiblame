@@ -27,6 +27,7 @@ $messages['December'] = 'dicèmmiru';
 $messages['ui_lang'] = 'Lingua di visualizzazzioni';
 $messages['lang'] = 'Lingua';
 $messages['project'] = 'Pruggettu';
+$messages['tld_example'] = 'org, com, net, ...';
 $messages['article'] = 'Pàggina';
 $messages['needle'] = 'Arricerca';
 $messages['skipversions'] = 'Escludi sempri x virsioni';

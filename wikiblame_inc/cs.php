@@ -12,6 +12,7 @@
  * @author Dvorapa
  * @author Flominator
  * @author Jkjk
+ * @author Kendo13
  * @author Kuvaly
  * @author Matěj Suchánek
  * @author Mormegil
@@ -38,6 +39,7 @@ $messages['December'] = 'Prosinec';
 $messages['ui_lang'] = 'Jazyk rozhraní';
 $messages['lang'] = 'Jazyk';
 $messages['project'] = 'Projekt';
+$messages['tld'] = 'Doména';
 $messages['article'] = 'Stránka';
 $messages['needle'] = 'Hledat';
 $messages['skipversions'] = 'Vždy přeskočit x verzí';
