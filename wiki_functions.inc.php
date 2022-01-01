@@ -12,19 +12,19 @@ $articleenc = name_in_url($article);
 
 $needle = isset ($_REQUEST['needle']) ? $_REQUEST['needle'] : ""; 
 
-$lang = isset ($_REQUEST['lang']) ? $_REQUEST['lang'] : "";
+$lang = isset ($_REQUEST['lang']) ? htmlspecialchars($_REQUEST['lang']) : "";
 if($lang=="")
 {
 	$lang=$user_lang; 
 }
 
-$project = isset ($_REQUEST['project']) ? $_REQUEST['project'] : "";
+$project = isset ($_REQUEST['project']) ? htmlspecialchars($_REQUEST['project']) : "";
 if($project=="")
 {
 	$project="wikipedia";
 }
 
-$tld = isset ($_REQUEST['tld']) ? $_REQUEST['tld'] : "";
+$tld = isset ($_REQUEST['tld']) ? htmlspecialchars($_REQUEST['tld']) : "";
 if($tld=="")
 {
 	$tld="org";
