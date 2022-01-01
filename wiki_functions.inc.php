@@ -24,6 +24,12 @@ if($project=="")
 	$project="wikipedia";
 }
 
+$tld = isset ($_REQUEST['tld']) ? $_REQUEST['tld'] : "";
+if($tld=="")
+{
+	$tld="org";
+}
+
 $limit = isset ($_REQUEST['limit']) ? $_REQUEST['limit'] : "";
 
 if($limit=="")
@@ -310,10 +316,19 @@ function analyse_array($arr)
 function chop_content($art_text)
 {
 	//echo "chopping text";
-	$start_token = 'class="mw-content-ltr">';
-	$end_token = '<div id="mw-navigation">';
+	//$start_token = 'class="mw-content-ltr">';
+	$start_token = '<div class="mw-parser-output">';
+	//$end_token = '<div id="mw-navigation">';
+	$end_token = "<div id='mw-data-after-content'>";
+	
 	$content_begins = strpos($art_text, $start_token) + strlen($start_token);
 	$content_ends = strpos($art_text, $end_token);
+	if($content_ends == "")
+	{
+		$end_token = '<div class="printfooter">';
+		$content_ends = strpos($art_text, $end_token);
+	}
+	// echo "content_begins: $content_begins ; content_ends: $content_ends";
 	$content = substr($art_text, $content_begins, $content_ends-$content_begins);
 	//echo "<h1>start content</h1>$content<h1>end content</h1>";
 	return str_replace('[bearbeiten]', '', $content);
@@ -324,11 +339,11 @@ function set_up_media_wiki_input_fields($summary, $button, $article="")
 	global $server;
 	$editTime = "";
 	
-	//switch to UTC http://stackoverflow.com/a/38665239/4609258
+	//switch to UTC https://stackoverflow.com/questions/6275614
 	$TZ=date_default_timezone_get();
 	date_default_timezone_set('UTC');
 		
-	$UtcNow = time() - date('Z'); //http://php.net/manual/de/function.time.php#117251
+	$UtcNow = time() - date('Z'); //https://secure.php.net/manual/de/function.time.php#117251
 	if($article!="" && $server != "")
 	{
 		$editTime = get_page_time_stamp($server, $article);
@@ -502,7 +517,7 @@ function print_debug($str)
 function prevent_automatic_escaping_of_input_strings()
 {
     // required to prevent automatic escaping of input strings
-    // thanks to http://www.php.net/manual/de/security.magicquotes.disabling.php	
+    // thanks to https://secure.php.net/manual/de/security.magicquotes.disabling.php
     if (get_magic_quotes_gpc()) 
     {
         function stripslashes_deep($value)
