@@ -8,6 +8,7 @@
  * @file
  *
  * @author Bennylin
+ * @author Daud I.F. Argana
  * @author Farras
  * @author Flominator
  * @author IvanLanin
@@ -31,6 +32,8 @@ $messages['December'] = 'Desember';
 $messages['ui_lang'] = 'Bahasa tampilan';
 $messages['lang'] = 'Bahasa';
 $messages['project'] = 'Proyek';
+$messages['tld'] = 'Domain';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Halaman';
 $messages['needle'] = 'Pencarian untuk';
 $messages['skipversions'] = 'Selalu loncati x versi';

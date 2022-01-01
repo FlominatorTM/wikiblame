@@ -9,6 +9,7 @@
  *
  * @author Calak
  * @author Serwan
+ * @author ئارام بکر
  */
 
 $messages['January'] = 'کانوونی دووەم';
@@ -26,6 +27,7 @@ $messages['December'] = 'کانوونی یەکەم';
 $messages['ui_lang'] = 'پیشاندانی زمان';
 $messages['lang'] = 'زمان';
 $messages['project'] = 'پرۆژە';
+$messages['tld'] = 'پاوان';
 $messages['article'] = 'پەڕە';
 $messages['needle'] = 'گەڕان بۆ';
 $messages['start_here'] = 'لێرەوە بگەرێ';

@@ -9,6 +9,7 @@
  *
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Nieszczarda2
  * @author Red Winged Duck
  * @author Wizardist
  */
@@ -28,6 +29,8 @@ $messages['December'] = 'сьнежня';
 $messages['ui_lang'] = 'Паказаць мову';
 $messages['lang'] = 'Мова';
 $messages['project'] = 'Праект';
+$messages['tld'] = 'Дамэн';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Старонка';
 $messages['needle'] = 'Шукаць';
 $messages['skipversions'] = 'Заўсёды прапускаць X вэрсіяў';

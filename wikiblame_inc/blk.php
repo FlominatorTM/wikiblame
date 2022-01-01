@@ -7,8 +7,10 @@
  * @ingroup Language
  * @file
  *
+ * @author Khun Kt
  * @author 咽頭べさ
  */
 
 $messages['January'] = 'စန်နဝါရီ';
 $messages['April'] = 'အေပီ';
+$messages['tld'] = 'ဒိုမေင်း';
