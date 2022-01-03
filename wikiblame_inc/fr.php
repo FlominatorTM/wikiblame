@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ajeje Brazorf
  * @author Coyau
  * @author Cquoi
  * @author Crochet.david
@@ -41,6 +42,8 @@ $messages['December'] = 'décembre';
 $messages['ui_lang'] = 'Langue d’affichage';
 $messages['lang'] = 'Langue';
 $messages['project'] = 'Projet';
+$messages['tld'] = 'Domaine';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Page';
 $messages['needle'] = 'Rechercher :';
 $messages['skipversions'] = 'Toujours sauter \'\'n\'\' versions';

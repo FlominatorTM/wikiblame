@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author ElBe
  * @author Flominator
  * @author Kghbln
  * @author Metalhead64
@@ -36,7 +37,7 @@ $messages['lang_example'] = 'en, commons, www, …';
 $messages['project'] = 'Projekt';
 $messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
 $messages['tld'] = 'Domain';
-$messages['tld_example'] = 'org, com, net, wiki, …';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Artikel';
 $messages['needle'] = 'Suchbegriff';
 $messages['skipversions'] = 'Immer x Versionen überspringen';

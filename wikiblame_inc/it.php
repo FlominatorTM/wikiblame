@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Ajeje Brazorf
  * @author Beta16
  * @author Civvì
  * @author Codicorumus
@@ -40,6 +41,8 @@ $messages['December'] = 'Dicembre';
 $messages['ui_lang'] = 'Lingua di visualizzazione';
 $messages['lang'] = 'Lingua';
 $messages['project'] = 'Progetto';
+$messages['tld'] = 'Dominio';
+$messages['tld_example'] = 'org, com, net, ...';
 $messages['article'] = 'Pagina';
 $messages['needle'] = 'Cerca';
 $messages['skipversions'] = 'Escludi sempre x versioni';
