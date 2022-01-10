@@ -9,6 +9,7 @@
  *
  * @author Bencmq
  * @author Dimension
+ * @author GuoPC
  * @author Hydra
  * @author Liuxinyu970226
  * @author Od1n
@@ -35,6 +36,8 @@ $messages['December'] = '12月';
 $messages['ui_lang'] = '显示语言';
 $messages['lang'] = '语言';
 $messages['project'] = '项目';
+$messages['tld'] = '域';
+$messages['tld_example'] = 'org、com、net…';
 $messages['article'] = '页面';
 $messages['needle'] = '搜索';
 $messages['skipversions'] = '总是跳过x个版本';

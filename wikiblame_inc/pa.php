@@ -8,6 +8,7 @@
  * @file
  *
  * @author Babanwalia
+ * @author Guglani
  * @author Satdeep gill
  * @author Surinder.wadhawan
  */
@@ -27,6 +28,8 @@ $messages['December'] = 'ਦਸੰਬਰ';
 $messages['ui_lang'] = 'ਪ੍ਰਦਰਸ਼ਨੀ ਭਾਸ਼ਾ';
 $messages['lang'] = 'ਭਾਸ਼ਾ';
 $messages['project'] = 'ਪ੍ਰੋਜੈਕਟ';
+$messages['tld'] = 'ਡੋਮੇਨ:';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'ਸਫ਼ਾ';
 $messages['needle'] = 'ਇਹਨੂੰ ਖੋਜੋ';
 $messages['skipversions'] = 'ਹਮੇਸ਼ਾਂ x ਵਰਜਨਾਂ ਛੱਡੋ';
@@ -34,6 +37,7 @@ $messages['ignorefirst'] = 'ਪਹਿਲੀਆਂ x ਵਰਜਨਾਂ ਅਣਡ
 $messages['limit'] = 'ਚੈੱਕ ਕਰਨ ਲਈ ਵਰਜਨਾਂ';
 $messages['start_date'] = 'ਸ਼ੁਰੂ ਹੋਣ ਦੀ ਮਿਤੀ';
 $messages['date_format'] = 'ਦਦ ਮਮ, ਸਸਸਸ';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'ਕ੍ਰਮ';
 $messages['newest_first'] = 'ਨਵੇਂ ਸਭ ਤੋਂ ਪਹਿਲਾਂ';
 $messages['oldest_first'] = 'ਪੁਰਾਣੇ ਸਭ ਤੋਂ ਪਹਿਲਾਂ';
@@ -44,6 +48,9 @@ $messages['linear'] = 'ਲੀਨੀਅਰ';
 $messages['interpolated'] = 'ਦੋ-ਅੰਗੀ (ਵਧੇਰੇ ਰੂਪਾਂ ਨਾਲ਼ ਤੇਜ਼)';
 $messages['ignore_minors'] = 'ਛੋਟੀਆਂ ਤਬਦੀਲੀਆਂ ਅਣਡਿੱਠੀਆਂ ਕਰੋ (ਪਾਰਖੂ)';
 $messages['force_wikitags'] = 'ਵੀਕੀਟੈਕਸਟ ਲਈ ਜ਼ਬਰਦਸਤੀ ਖੋਜ';
+$messages['from_url'] = 'url ਤੋਂ';
+$messages['paste_url'] = 'ਕਿਰਪਾ ਕਰਕੇ URL ਨੂੰ MediaWiki ਸਫ਼ੇ ਤੇ ਚਿਪਕਾਂ ਦਿਓ।';
+$messages['no_valid_url'] = 'ਇਹ ਵੈਧ MediaWiki URL ਨਹੀਂ ਹੈ।';
 $messages['start'] = 'ਸ਼ੁਰੂ ਕਰੋ';
 $messages['reset'] = 'ਮੁੜ ਸੈੱਟ ਕਰੋ';
 $messages['manual'] = 'ਹੱਥੀਂ';
@@ -53,6 +60,9 @@ $messages['wrong_skips'] = 'ਗ਼ਲਤ ਸੈਟਿੰਗਾਂ: ਜੇਕਰ 
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> ਵਾਸਤੇ _ARTICLELINK_ ਦੇ ਰੂਪ ਦਾ ਅਤੀਤ ਆਮ ਲਿਖਤ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਰਿਹਾ ਹੈ';
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> ਵਾਸਤੇ _ARTICLELINK_ ਦੇ ਰੂਪ ਦਾ ਅਤੀਤ ਵਿਕੀ ਲਿਖਤ ਵਜੋਂ ਲੱਭਿਆ ਜਾ ਰਿਹਾ ਹੈ';
 $messages['no_differences'] = 'ਖੋਜੀਆਂ ਗਈਆਂ ਰਿਵੀਜਨਾਂ ਵਿਚ ਕੋਈ ਫ਼ਰਕ ਨਹੀਂ ਲੱਭਾ।';
+$messages['inverse_restart'] = 'ਕੋਈ ਸੰਮੇਲਨ ਜਾਂ ਹਟਾਉਣਾ ਨਹੀਂ ਮਿਲਿਆ,ਕੀ ਖੋਜ ਸ਼ਬਦ ਬਾਦ ਵਿੱਚ ਦਾਖਲ ਕੀਤਾ ਗਿਆ ਸੀ।';
+$messages['inverse_stuck'] = 'ਇਨ੍ਹਾਂ _NUMBEROFVERSIONS_ ਸੋਧਾਂ ਵਿੱਚ ਕੋਈ ਸੰਮਿਲਨ ਜਾਂ ਹਟਾਉਣਾ ਨਹੀਂ ਮਿਲਿਆ।ਹੋ ਸਕਦਾ ਹੈ ਖੋਜ ਸ਼ਬਦ ਪਹਿਲਾਂ ਹੀ ਹਟਾ ਲਿਆ ਗਿਆ ਹੋਵੇ।';
+$messages['inverse_earliest'] = 'ਪਹਿਲੀਆਂ ਸੋਧਾਂ ਵਿੱਚੋਂ ਲੱਭੋ।';
 $messages['first_version'] = 'ਤਬਦੀਲੀ ਪਹਿਲੀ ਜਾਂ ਆਖ਼ਰੀ ਸੁਧਾਈ ਵਿੱਚ ਵਾਪਰੀ ਹੋਵੇਗੀ?';
 $messages['first_version_present'] = '__NEEDLE__ ਮਿਤੀ __REVISIONLINK__ ਦੀ ਪਹਿਲੀ ਸੁਧਾਈ ਵਿੱਚ ਪਹਿਲੋਂ ਹੀ ਮੌਜੂਦ ਸੀ।';
 $messages['earlier_versions_available'] = 'ਸ਼ਾਇਦ ਇਸ ਤੋਂ ਪਹਿਲੀਆਂ ਰਿਵੀਜਨਾਂ ਮੌਜੂਦ ਹਨ।';
