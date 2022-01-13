@@ -8,21 +8,22 @@
  * @file
  *
  * @author Akapochtli
+ * @author Languaeditor
  * @author Taresi
  */
 
-$messages['January'] = 'Īccēmētztli';
-$messages['February'] = 'Īcōmemētztli';
+$messages['January'] = 'Eneroh';
+$messages['February'] = 'Febreroh';
 $messages['March'] = 'Īquēyimētztli';
-$messages['April'] = 'Īcnāhuimētztli';
-$messages['May'] = 'Īcmācuīllimētztli';
-$messages['June'] = 'Īcchicuacemmētztli';
-$messages['July'] = 'Īcchicōmemētztli';
-$messages['August'] = 'Īcchicuēyimētztli';
-$messages['September'] = 'Īcchiucnāhuimētztli';
-$messages['October'] = 'Īcmahtlactlimētztli';
-$messages['November'] = 'Īcmahtlactlioncēmētztli';
-$messages['December'] = 'Īcmahtlactliomōmemētztli';
+$messages['April'] = 'April';
+$messages['May'] = 'Mayoh';
+$messages['June'] = 'Honioh';
+$messages['July'] = 'Holioh';
+$messages['August'] = 'Ahostoh';
+$messages['September'] = 'Septiempreh';
+$messages['October'] = 'Oktopreh';
+$messages['November'] = 'Noviempreh';
+$messages['December'] = 'Tisiempreh';
 $messages['ui_lang'] = 'Īxtlahtōlli';
 $messages['lang'] = 'Tlahtōlli';
 $messages['project'] = 'Tlatequipanōlli';

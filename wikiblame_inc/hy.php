@@ -13,18 +13,18 @@
  * @author Xelgen
  */
 
-$messages['January'] = 'Հունվարի';
-$messages['February'] = 'Փետրվարի';
-$messages['March'] = 'Մարտի';
-$messages['April'] = 'Ապրիլի';
-$messages['May'] = 'Մայիսի';
-$messages['June'] = 'Հունիսի';
-$messages['July'] = 'Հուլիսի';
-$messages['August'] = 'Օգոստոսի';
-$messages['September'] = 'Սեպտեմբերի';
-$messages['October'] = 'Հոկտեմբերի';
-$messages['November'] = 'Նոյեմբերի';
-$messages['December'] = 'Դեկտեմբերի';
+$messages['January'] = 'հունվարի';
+$messages['February'] = 'փետրվարի';
+$messages['March'] = 'մարտի';
+$messages['April'] = 'ապրիլի';
+$messages['May'] = 'մայիսի';
+$messages['June'] = 'հունիսի';
+$messages['July'] = 'հուլիսի';
+$messages['August'] = 'օգոստոսի';
+$messages['September'] = 'սեպտեմբերի';
+$messages['October'] = 'հոկտեմբերի';
+$messages['November'] = 'նոյեմբերի';
+$messages['December'] = 'դեկտեմբերի';
 $messages['ui_lang'] = 'Լեզու';
 $messages['lang'] = 'Լեզու';
 $messages['project'] = 'Նախագիծ';
@@ -49,3 +49,5 @@ $messages['reset'] = 'Վերակայել';
 $messages['contact'] = 'Կոնտակտային տվյալներ';
 $messages['please_wait'] = 'Խնդրում ենք սպասել...';
 $messages['here'] = 'այստեղ';
+$messages['help_translating'] = 'Օգնեք թարգմանել translatewiki.net կայքում';
+$messages['start_here'] = 'Սկսել ոոնում այստեղից';
