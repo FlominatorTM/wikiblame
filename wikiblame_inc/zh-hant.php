@@ -19,6 +19,7 @@
  * @author Od1n
  * @author Reke
  * @author Shangkuanlc
+ * @author Tranve
  * @author Wrightbus
  * @author Xiplus
  */
@@ -58,7 +59,7 @@ $messages['binary_in_wp'] = 'https://zh.wikipedia.org/wiki/二分搜尋演算法
 $messages['linear'] = '線性';
 $messages['interpolated'] = '二分法（在版本較多時更快）';
 $messages['ignore_minors'] = '略過小修改（試驗性功能）';
-$messages['force_wikitags'] = '強制搜尋 wiki 語法';
+$messages['force_wikitags'] = '強制搜尋 wikitext';
 $messages['from_url'] = '來自 URL';
 $messages['paste_url'] = '請貼上至 MediaWiki 頁面的 URL';
 $messages['no_valid_url'] = '這不是有效的 MediaWiki URL';
@@ -69,7 +70,7 @@ $messages['contact'] = '聯絡';
 $messages['get_less_versions'] = '您的搜尋可能會在一次內回報 __NUMREVISIONS__ 個修訂版本，為了保護伺服器，您每次能取得的搜尋回報為 __ALLOWEDREVISIONS__ 個以內，請變更設定或把搜尋模式轉為二分法模式！';
 $messages['wrong_skips'] = '設定錯誤：如果跳過首 __VERSIONSTOSKIP__ 個版本，要搜尋的 __VERSIONSTOSEARCH__ 個版本將不會被處理。';
 $messages['search_in_progress_text'] = '_ARTICLELINK_ 的版本記錄正在以純文字 <b>_NEEDLE_</b> 進行搜尋';
-$messages['search_in_progress_wikitags'] = '_ARTICLELINK_ 的版本記錄正在以wiki文字 <b>_NEEDLE_</b> 進行搜尋';
+$messages['search_in_progress_wikitags'] = '_ARTICLELINK_ 的版本記錄正在以wikitext <b>_NEEDLE_</b> 進行搜尋';
 $messages['no_differences'] = '在尋找到的修訂版本中並未發現任何差異。';
 $messages['inverse_restart'] = '查無插入或去除內容，搜尋項目是否是在之後插入？';
 $messages['inverse_stuck'] = '在這些_NUMBEROFVERSIONS_修訂版本查無插入或去除內容。也許是稍早前搜尋項目就被移除？';
