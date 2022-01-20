@@ -8,6 +8,7 @@
  * @file
  *
  * @author BaRaN6161 TURK
+ * @author Can
  * @author Emperyan
  * @author Erdemaslancan
  * @author Flominator
@@ -42,6 +43,8 @@ $messages['December'] = 'Aralık';
 $messages['ui_lang'] = 'Görüntüleme dili';
 $messages['lang'] = 'Dil';
 $messages['project'] = 'Proje';
+$messages['tld'] = 'Alan adı';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Sayfa';
 $messages['needle'] = 'Şunu ara:';
 $messages['skipversions'] = 'Her zaman x sürümünü atla';
