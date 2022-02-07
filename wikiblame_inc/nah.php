@@ -27,6 +27,6 @@ $messages['December'] = 'Tisiempreh';
 $messages['ui_lang'] = 'Īxtlahtōlli';
 $messages['lang'] = 'Tlahtōlli';
 $messages['project'] = 'Tlatequipanōlli';
-$messages['article'] = 'Tlahcuilolamatl';
+$messages['article'] = 'Tlahkwilolamatl';
 $messages['needle'] = 'Tictemoz';
 $messages['manual'] = 'Ohāmoxtli';

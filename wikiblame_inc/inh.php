@@ -12,7 +12,7 @@
  */
 
 $messages['January'] = 'АгӀой';
-$messages['February'] = 'Саькур';
+$messages['February'] = 'Саькура';
 $messages['March'] = 'Муттхьал';
 $messages['April'] = 'Тушол';
 $messages['May'] = 'Села';
