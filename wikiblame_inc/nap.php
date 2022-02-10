@@ -9,6 +9,7 @@
  *
  * @author C.R.
  * @author Chelin
+ * @author Ruthven
  */
 
 $messages['January'] = 'Jennaro';
@@ -77,6 +78,6 @@ $messages['insertion_found'] = 'Nzertamiento truvato nfra \'a LEFT_VERSION e che
 $messages['deletion_found'] = 'Scancellamiento truvato nfra LEFT_VERSION e RIGHT_VERSION';
 $messages['here'] = 'ccà';
 $messages['help_translating'] = 'Ajùta a tradurre ncopp\'â translatewiki.net';
-$messages['start_here'] = 'Circa \'e ccà';
+$messages['start_here'] = 'Ascia partenno \'a ccà';
 $messages['too_much_versions'] = 'Site arrevato a \'o lemmeto massimo \'e __VERSIONLIMIT__ richieste. Pe\' piacere ripruvate n\'ata vota aropp\'a __WAITMINUTES__ o passate \'a ricerca binaria. Ve cercammo scusa pe\' stu probblema.';
 $messages['not_found_at_all'] = '\'O termine ca vaje ascianno nun è stato proprio truvato. Cuntrolla \'e mpustaziune e riprova n\'ata vota.';
