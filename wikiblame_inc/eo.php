@@ -12,6 +12,7 @@
  * @author Mihxil
  * @author Mirin
  * @author Objectivesea
+ * @author Robin van der Vliet
  * @author Yekrats
  */
 
@@ -30,6 +31,8 @@ $messages['December'] = 'decembro';
 $messages['ui_lang'] = 'Montrolingvo';
 $messages['lang'] = 'Lingvo';
 $messages['project'] = 'Projekto';
+$messages['tld'] = 'Domajno';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Paĝo';
 $messages['needle'] = 'Serĉi pri';
 $messages['skipversions'] = 'Ĉiam transsalti x versiojn';

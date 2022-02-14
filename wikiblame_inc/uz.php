@@ -9,6 +9,7 @@
  *
  * @author 6ahodir
  * @author CoderSI
+ * @author Malikxan
  * @author Sociologist
  * @author Таржимон
  */
@@ -28,6 +29,8 @@ $messages['December'] = 'Dekabr';
 $messages['ui_lang'] = 'Displey tili';
 $messages['lang'] = 'Til';
 $messages['project'] = 'Loyiha';
+$messages['tld'] = 'Domen';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Sahifa';
 $messages['needle'] = 'Qidiruv uchun matn';
 $messages['skipversions'] = 'Doimo x versiyalarni oʻtkazib yuborish';
@@ -35,6 +38,7 @@ $messages['ignorefirst'] = 'Birinchi x versiyalarni hisobga olmaslik';
 $messages['limit'] = 'Tekshirish uchun versiyalar soni';
 $messages['start_date'] = 'Boshlanish sanasi';
 $messages['date_format'] = 'DD.MM.YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Tartib';
 $messages['newest_first'] = 'boshida yangilari';
 $messages['oldest_first'] = 'boshida eskilari';
@@ -45,6 +49,8 @@ $messages['linear'] = 'chiziqli';
 $messages['interpolated'] = 'ikkilik (agar versiyalar koʻp bo‘lsa tezroq)';
 $messages['ignore_minors'] = 'kichik tahrirlarni hisobga olmaslik (tajribaviy)';
 $messages['force_wikitags'] = 'Vikimatnga qidiruv o‘tkazish';
+$messages['from_url'] = 'URLdan';
+$messages['paste_url'] = 'Iltimos, URLni MediaWiki sahifasiga qoʻshib qoʻying';
 $messages['start'] = 'Ishga tushirish';
 $messages['reset'] = 'Tozalash';
 $messages['manual'] = 'Qo‘llanma';
