@@ -7,7 +7,9 @@
  * @ingroup Language
  * @file
  *
+ * @author Seipinne
  * @author Yupik
  */
 
 $messages['lang'] = 'Kielâ';
+$messages['article'] = 'Sijđo';
