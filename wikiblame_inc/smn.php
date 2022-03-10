@@ -11,6 +11,18 @@
  * @author Yupik
  */
 
+$messages['January'] = 'uđđâivemáánu';
+$messages['February'] = 'kuovâmáánu';
+$messages['March'] = 'njuhčâmáánu';
+$messages['April'] = 'cuáŋuimáánu';
+$messages['May'] = 'vyesimáánu';
+$messages['June'] = 'kesimáánu';
+$messages['July'] = 'syeinimáánu';
+$messages['August'] = 'porgemáánu';
+$messages['September'] = 'čohčâmáánu';
+$messages['October'] = 'roovvâdmáánu';
+$messages['November'] = 'skammâmáánu';
+$messages['December'] = 'juovlâmáánu';
 $messages['lang'] = 'Kielâ';
 $messages['project'] = 'Proojeekt';
 $messages['article'] = 'Sijđo';
