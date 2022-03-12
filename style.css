@@ -1,0 +1,75 @@
+body {
+	background: #f9f9f9;
+	font-family: Arial, sans-serif;
+	font-size: 84%;
+}
+body.exp {
+	background: #ffebad;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+}
+
+table {
+	font-size: 84%;
+	border-spacing: 5px;
+	margin: auto;
+}
+
+body[dir="ltr"] .textalign-end,
+body[dir="ltr"] td:first-child {
+	text-align: right;
+}
+body[dir="rtl"] .textalign-end,
+body[dir="rtl"] td:first-child {
+	text-align: left;
+}
+body[dir="ltr"] td[colspan],
+body[dir="rtl"] td[colspan] {
+	text-align: center;
+}
+
+#submitrow td {
+	margin-top: 2em;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+.inputerror {
+	margin-top: 1em;
+}
+
+.found {
+	color: green;
+}
+.notfound {
+	color: red;
+}
+.skipped {
+	color: blue;
+}
+
+@media (max-width: 719px) {
+	table, tr, td {
+		display: block;
+	}
+	.checkboxrow > td {
+		display: inline;
+	}
+	body[dir="ltr"] tr,
+	body[dir="ltr"] td:first-child {
+		text-align: left;
+	}
+	body[dir="rtl"] tr,
+	body[dir="rtl"] td:first-child {
+		text-align: right;
+	}
+	td:first-child {
+		font-weight: bold;
+	}
+}

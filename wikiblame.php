@@ -20,6 +20,9 @@ header('X-Accel-Buffering: no');
 		<link rel="icon" href="WikiBlame.png" type="image/png">
 		<link rel="shortcut icon" href="WikiBlame.png" type="image/png">
 		<title>WikiBlame</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
 	</head><?php 
 include("shared_inc/language.inc.php");
 include("shared_inc/wiki_functions.inc.php");
@@ -31,176 +34,36 @@ $user_lang = read_language();
 get_language('en', $inc_dir); //not translated messages will be printed in English
 get_language($user_lang, $inc_dir);
 
-$alignment = 'right';
-if($text_dir=='rtl')
-{
-	$alignment = 'left';
-}
-
 fill_variables($user_lang);
 $the_months = get_months($messages);
-?>
-<body onload="document.mainform.<?php 
-//set cursor into needle or article field
-if($article!="")
-{
-	echo "needle";
-}
-else //no article selected
-{
-	echo "article";
-}
 
 $allowedRevisionsPerCall = 50;
-
-$jsTextLessVersions = str_replace( "__ALLOWEDREVISIONS__", $allowedRevisionsPerCall, $messages['get_less_versions']);
-
-?>.focus();checkScanAmount();" style="background: <?php 
-if(stristr($_SERVER["PHP_SELF"], 'wikiblame.exp.php'))
-{
-    echo "#FFEBAD";
-}
-else 
-{
-    echo "#F9F9F9";
-}?>; font-family: arial; font-size: 84%;  direction: <?php  echo $text_dir ?>; unicode-bidi: embed">
-
-<script type="text/javascript">
-function setFormDate(year, mon, day)
-{
-	document.forms['mainform'].elements['offjahr'].value = year;
-	document.forms['mainform'].elements['offmon'].value = mon;
-	document.forms['mainform'].elements['offtag'].value = day;
+if ($user != '') {
+	$allowedRevisionsPerCall = -1;
 }
 
-//disable submit button when user wants to query too much revisions by linear search
-function checkScanAmount()
-{
- 	var allowedVersionsPerCall = <?php  echo $allowedRevisionsPerCall ?>;
-	var expectedVersionsToQuery = 0;
-	var versionsToQuery = document.forms['mainform'].elements['limit'].value;
-	var versionsToSkipDuring = document.forms['mainform'].elements['skipversions'].value;
-	var versionsToSkipBeginning = document.forms['mainform'].elements['ignorefirst'].value;
-	
-	expectedVersionsToQuery = versionsToQuery - versionsToSkipBeginning;
-	if(versionsToSkipDuring>0)
-	{
-		expectedVersionsToQuery = expectedVersionsToQuery / versionsToSkipDuring;
-	}
-	
-	if((expectedVersionsToQuery > allowedVersionsPerCall &&
-  	   document.forms['mainform'].elements['linear'].checked
-	   )  <?php  if ($user!="") echo "&& false" ?>)
-	{
-		var alertText = "<?php  echo $jsTextLessVersions ?>";
+$js_messages = [
+	'get_less_versions' => $messages['get_less_versions'],
+	'paste_url' => $messages['paste_url'],
+	'no_valid_url' => $messages['no_valid_url'],
+	'please_wait' => $messages['please_wait'],
+];
 
-		alert(alertText.replace(/__NUMREVISIONS__/g, ""+expectedVersionsToQuery));
-		document.forms['mainform'].elements['start'].disabled=true;
-	}
-	else
-	{
-		document.forms['mainform'].elements['start'].disabled=false;
-	}
-}
-
-function pasteFieldsFromUrl()
-{
-    var mediaWikiUrl = window.prompt('<?php echo $messages['paste_url'] ?>', '');
-    if(mediaWikiUrl==null) return;
-    var a = document.createElement('a');
-    a.href=mediaWikiUrl;
-
-    var hostParts = (a.hostname).split('.');
-    var article;
-    var language;
-    var tld;
-    var project;
-
-    // possible cases or URL form:
-    // subdomain/language + host + TLD
-    // -> http(s)://de.wikipedia.org/whatever
-    // host + .org (2 parts)
-    // -> http(s)://somewiki.org/whatever
-    // host + custom TLD (2 parts)
-    // -> http(s)://otherwiki.com/whatever
-    // if there are only 2 parts, it's definitely the subdomain that is missing
-    if(hostParts.length==3)
-    {
-        language = hostParts[0];
-        project = hostParts[1];
-        tld = hostParts[2];
-    }
-    if(hostParts.length==2)
-    {
-        language = 'blank';
-        project = hostParts[0];
-        tld = hostParts[1];
-    }
-
-    var titleFound = false;
-    var slashWiki = '/wiki/';
-    var titleEquals = 'title=';
-    if(mediaWikiUrl.search(titleEquals)>0)
-    {
-        // find article name from a URL like https://example.com/w/index.php?title=Main_Page
-        var urlParts = mediaWikiUrl.split('?');
-       
-        if(urlParts.length==2)
-        {
-            var paramParts = urlParts[1].split('&');
-            // gets article name from first instance of 'title='
-            // @TODO: should probably be last instance to comply with HTTP standard
-            for (var i=0; i<paramParts.length; i++)
-            {
-                if(paramParts[i].startsWith(titleEquals))
-                {
-                    article = decodeURIComponent(paramParts[i].substr(titleEquals.length)).replace(/_/gm, ' ');
-                    titleFound = true;
-                    break;
-                }
-            }
-        }
-    }
-    else if(a.pathname.startsWith(slashWiki))
-    {
-        // find article name from a URL like https://example.com/wiki/Main_Page
-        article = decodeURIComponent(a.pathname.substr(slashWiki.length)).replace(/_/gm, ' ');
-        titleFound = true;
-    }
-
-    if(!titleFound)
-    {
-        alert("<?php echo $messages['no_valid_url'] ?>");
-    }
-    else
-    {
-        document.forms['mainform'].elements['lang'].value=language;
-        document.forms['mainform'].elements['project'].value=project;
-        document.forms['mainform'].elements['article'].value=article;
-        document.forms['mainform'].elements['tld'].value=tld;
-    }
-}
-
-function submitAndWait()
-{
-	var startButton = document.getElementById("start");
-	startButton.disabled=true;
-	startButton.value='<?php  echo $messages['please_wait'] ?>';
-	return true;
-}
-</script>
-<div align="center">
-		<form method="get" name="mainform" onsubmit="submitAndWait();">
-		<div align="<?php  echo $alignment ?>">
-		<?php 
-			echo $messages['ui_lang'].'<br>';
-			language_selection($user_lang, $inc_dir);?>
+$is_exp = stristr($_SERVER["PHP_SELF"], 'wikiblame.exp.php') !== false;
+?>
+<body dir="<?= $text_dir ?>" <?= $is_exp ? 'class="exp"' : '' ?> data-allowedVersionsPerCall="<?= $allowedRevisionsPerCall ?>">
+	<script type="text/javascript">var i18n = <?= json_encode( $js_messages, JSON_UNESCAPED_UNICODE ) ?>;</script>
+	<form method="get" name="mainform">
+		<div class="textalign-end">
+			<?= $messages['ui_lang'] . "\n" ?>
+			<br>
+			<?php language_selection($user_lang, $inc_dir); ?>
 		</div>
 
-		<h1 style="font-weight: bold;">WikiBlame</h1><!-- Design by Elian -->
-			<table style="font-family: arial; font-size: 84%;" cellspacing="5">
+		<h1>WikiBlame</h1><!-- Design by Elian -->
+		<table>
 				<tr>
-					<td align="<?php  echo $alignment ?>">
+					<td>
 						<label for="lang">
 							<?php  echo $messages['lang']?>
 						</label>
@@ -210,7 +73,7 @@ function submitAndWait()
 					</td>
 				</tr>
 				<tr>
-					<td align="<?php  echo $alignment ?>">
+					<td>
 						<label for="project">
 							<?php  echo $messages['project']?>
 						</label>
@@ -220,7 +83,7 @@ function submitAndWait()
 					</td>
 				</tr>				
 				<tr>
-					<td align="<?php  echo $alignment ?>">
+					<td>
                         <label for="tld">
                             <?php  echo $messages['tld']?>
                         </label>
@@ -230,79 +93,79 @@ function submitAndWait()
                     </td>
                 </tr>					
                 <tr>
-                    <td align="<?php  echo $alignment ?>">
+                    <td>
 						<label for="article">
 							<?php  echo $messages['article']; ?>
 						</label>
 					</td>
 					<td>
-						<input type="text" name="article" id="article" value="<?php echo htmlspecialchars($article); ?>">
-                        <input type="button" onclick="javascript:pasteFieldsFromUrl()" value="<?php echo $messages['from_url']?>">
+						<input type="text" name="article" id="article" value="<?php echo htmlspecialchars($article); ?>" <?php if (!$article) echo 'autofocus'; ?>>
+						<input type="button" id="from_url" value="<?php echo $messages['from_url']; ?>">
 					</td>
 				</tr>
 				<tr>
-					<td align="<?php  echo $alignment ?>">
+					<td>
 						<label for="needle">
 							<?php  echo $messages['needle'] ?>
 						</label>
 					</td>						
 					<td>
-						<input type="text" name="needle" id="needle" value="<?php echo  htmlspecialchars($needle); ?>"> 
+						<input type="text" name="needle" id="needle" value="<?php echo  htmlspecialchars($needle); ?>" <?php if ($article) echo 'autofocus'; ?>>
 					</td>
 				</tr>
 				<tr>
-					<td align="<?php  echo $alignment ?>">
+					<td>
 						<label for="skipversions"> 
 							<?php  echo $messages['skipversions'] ?>
 						</label>
 					</td>
 					<td>
-						<input type="text" name="skipversions" id="skipversions" onchange="javascript:checkScanAmount()" value="<?php echo  $skipversions; ?>">
+						<input type="number" name="skipversions" id="skipversions" value="<?php echo  $skipversions; ?>">
 					</td>
 				</tr>				
 				<tr>
-					<td align="<?php  echo $alignment ?>">
+					<td>
 						<label for="ignorefirst">
 							<?php  echo $messages['ignorefirst'] ?>
 						</label>
 					</td>
 					<td>
-						<input type="text" name="ignorefirst" id="ignorefirst" onchange="javascript:checkScanAmount()" value="<?php echo $ignorefirst; ?>">
+						<input type="number" name="ignorefirst" id="ignorefirst" value="<?php echo $ignorefirst; ?>">
 					</td>
 				</tr>	
 				<tr>
-					<td align="<?php  echo $alignment ?>">
+					<td>
 						<label for="limit">
 							<?php  echo $messages['limit'] ?>
 						</label>
 					</td>
 					<td>
-						<input type="text" name="limit" id="limit" onchange="javascript:checkScanAmount()" value="<?php echo $limit; ?>">
+						<input type="number" name="limit" id="limit" value="<?php echo $limit; ?>">
 					</td>
 				</tr>	
 				<tr>
-					<td align="<?php  echo $alignment ?>">
+					<td>
 						<?php  echo $messages['start_date'] ?>
 					</td>
 					<td>
 						<?php datedrop_with_months( "", "off", false, 2001, date("Y"), $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months, $messages['date_format']); ?>
-						<input type="button" value="<?php  echo $messages['reset'] ?>" onclick="javascript:var now=new Date();setFormDate(now.getFullYear(),now.getMonth()+1, now.getDate());">
+						<input type="button" id="resetdate" value="<?php echo $messages['reset']; ?>">
 					</td>
 				<tr>
-					<td align="<?php  echo $alignment ?>"><?php  echo $messages['search_method'] ?></td>
+					<td><?php  echo $messages['search_method'] ?></td>
 					<td>
-						<input type="radio" name="searchmethod" id="linear" value="lin"  onchange="javascript:checkScanAmount()"  <?php  if ($use_binary_search!=true) echo checked; ?> >
+						<input type="radio" name="searchmethod" id="linear" value="lin" <?php  if ($use_binary_search!=true) echo checked; ?> >
 						<label for="linear">
 							<?php  echo $messages['linear'] ?>
 						</label>
-						<input type="radio" name="searchmethod" id="int" value="int" onchange="javascript:checkScanAmount()"   <?php  if ($use_binary_search==true) echo checked; ?> >
+						<input type="radio" name="searchmethod" id="int" value="int" <?php  if ($use_binary_search==true) echo checked; ?> >
 						<label for="int">
 						<a href="<?php  echo $messages['binary_in_wp']?>"><?php  echo $messages['binary'] ?></a>
 						</label>
 					</td>
 				</tr>	
 				<tr>
-					<td align="<?php  echo $alignment ?>"><?php  echo $messages['order'] ?></td>
+					<td><?php  echo $messages['order'] ?></td>
 					<td>
 						<input type="radio" name="order" id="desc" value="desc" <?php  if ($asc!=true) echo checked; ?> >
 						<label for="desc">
@@ -314,8 +177,8 @@ function submitAndWait()
 						</label>
 					</td>
 				</tr>				
-				<tr>
-					<td align="<?php  echo $alignment ?>">
+				<tr class="checkboxrow">
+					<td>
 					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <?php  if ($binary_search_inverse) echo checked; ?> >
 					</td>
 					<td>
@@ -324,8 +187,8 @@ function submitAndWait()
 						</label>
 					</td>
 				</tr>		
-				<tr>
-					<td align="<?php  echo $alignment ?>">
+				<tr class="checkboxrow">
+					<td>
 						
 						<input type="checkbox" name="ignore_minors" id="ignore_minors" <?php  if ($ignore_minors==true) echo checked; ?> >
 					</td>
@@ -335,8 +198,8 @@ function submitAndWait()
 						</label>
 					</td>
 				</tr>
-				<tr>
-					<td align="<?php  echo $alignment ?>">
+				<tr class="checkboxrow">
+					<td>
 						
 						<input type="checkbox" name="force_wikitags" id="force_wikitags" <?php  if ($force_wikitags=="on") echo checked; ?> >
 					</td>
@@ -346,8 +209,8 @@ function submitAndWait()
 						</label>
 					</td>
 				</tr>
-				<tr>
-					<td colspan="2" align="center"><br><br>
+				<tr id="submitrow">
+					<td colspan="2">
 						<input name="start" id="start" type="submit" value="<?php  echo $messages['start'] ?>" >
 						<input name="user" id="user" type="hidden" value="<?php  echo $user ?>" >
 					</td>
@@ -355,11 +218,12 @@ function submitAndWait()
 			</table>
 		</form>
 <hr>
+<footer>
 <a href='<?php  echo $messages['manual_link'] ?>'><?php  echo $messages['manual'] ?></a> - 
 <a href='<?php  echo $messages['contact_link'] ?>'><?php  echo $messages['contact'] ?></a> - 
 <a href="https://translatewiki.net/wiki/Translating:WikiBlame"><?php  echo $messages['help_translating'] ?></a> -
 <a href="https://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
-</div>
+</footer>
 <?php
 
 if($needle!="")
@@ -383,11 +247,12 @@ if($needle!="")
 	}
 
 	$msg = str_replace('_NEEDLE_', htmlspecialchars($needle),$msg);
+	echo "<div class=\"results\">\n";
 	echo "$msg<br>\n";
 	
 	$exec_time = do_search();
 	echo '<br>'.$exec_time;
-	echo '<br><br><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small>';
+	echo '<br><br><small>'. get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) .'</small></div>';
 }
 
 function fill_variables($user_lang)
@@ -719,25 +584,25 @@ function checkversions ($versions, $skipversions, $ignorefirst)
 			{
 				if(needle_in_version($needle, $versions, $i))
 				{
-					echo " <font color=\"green\">OOO</font>\n";
+					echo " <span class=\"found\">OOO</span>\n";
 					$needle_ever_found = true;
 				}
 				else
 				{
-					echo " <font color=\"red\">XXX</font>\n";
+					echo " <span class=\"notfound\">XXX</span>\n";
 				}
 				start_over_here($versions[$i]['offset'], $skipversions);
 				$version_counter=$skipversions;
 			}
 			else
 			{
-				echo " <font color=\"blue\">???</font>\n";
+				echo " <span class=\"skipped\">???</span>\n";
 				$version_counter--;
 			}
 		}
 		else
 		{
-			echo " <font color=\"blue\">???</font>\n";
+			echo " <span class=\"skipped\">???</span>\n";
 			$ignorefirst--;
 		}
 		
@@ -1099,7 +964,7 @@ function binary_search($middle, $from)
 		if($in_right AND $in_left)
 		{
 			$needle_ever_found = true;
-			echo "<font color=\"green\">OO</font>\n";
+			echo "<span class=\"found\">OO</span>\n";
 			//start_over_here($versions[$middle]['offset'], 0, 0);
 			echo "<br>";
 			if($binary_search_inverse)
@@ -1133,7 +998,7 @@ function binary_search($middle, $from)
 		{
 			if(!$in_right AND !$in_left)
 			{
-				echo "<font color=\"red\">XX</font>\n";
+				echo "<span class=\"notfound\">XX</span>\n";
 				//start_over_here($versions[$middle]['offset']);
 				echo "<br>";
 				if($binary_search_inverse)
@@ -1154,8 +1019,8 @@ function binary_search($middle, $from)
 				if(!$in_left AND $in_right) //XO
 				{
 					$needle_ever_found = true;
-					echo "<font color=\"red\">X</font>\n";
-					echo "<font color=\"green\">0</font><br>\n";
+					echo "<span class=\"notfound\">X</span>";
+					echo "<span class=\"found\">O</span><br>\n";
 					$insertion_found = str_replace('LEFT_VERSION', $left_version, $messages['insertion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $insertion_found).': ';;
                     if($binary_search_inverse)
@@ -1177,8 +1042,8 @@ function binary_search($middle, $from)
 				else
 				{
 					$needle_ever_found = true;
-					echo "<font color=\"green\">O</font>\n";
-					echo "<font color=\"red\">X</font><br>\n";
+					echo "<span class=\"found\">O</span>";
+					echo "<span class=\"notfound\">X</span><br>\n";
 					$deletion_found = str_replace('LEFT_VERSION', $left_version, $messages['deletion_found']);
 					echo str_replace('RIGHT_VERSION', $right_version, $deletion_found).': ';
                     if(!$binary_search_inverse)
@@ -1260,24 +1125,14 @@ function check_options()
 	if($skipversions>=$limit)
 	{
 		$msg = str_replace('__VERSIONSTOSKIP__', $skipversions, $msg);
-		echo "<br>";
-		echo "<script>\n";
-		echo "document.getElementById('skipversions').focus();\n";
-		echo "document.getElementById('skipversions').select();\n";
-		echo "</script>";
-		echo $msg;
+		echo '<div class="inputerror" data-fieldid="skipversions">' . $msg . '</div>';
 		die();
 	}
 	
 	if($ignorefirst>=$limit)
 	{
 		$msg = str_replace('__VERSIONSTOSKIP__', $ignorefirst, $msg);
-		echo "<br>";
-		echo "<script>\n";
-		echo "document.getElementById('ignorefirst').focus();\n";
-		echo "document.getElementById('ignorefirst').select();\n";
-		echo "</script>";
-		echo $msg;
+		echo '<div class="inputerror" data-fieldid="ignorefirst">' . $msg . '</div>';
 		die();
 	}
 }
@@ -1390,7 +1245,7 @@ function Get_UTC_Hours($localHours, $server)
 	return $UtcHours;
 }
 ?>
- <p align="<?php  echo $alignment ?>"> 
+<p class="textalign-end">
     <!--<a href="http://www.ps-webhosting.de/?ref=k3591" target="_blank"><img alt="Webhosting von ps-webhosting.de" border="0" src="http://www.ps-webhosting.de/banner/ps_button2.gif"></a>-->
 	<a href="http://www.ramselehof.de"><img border="0"
         src="ramselehof_powered_feddich.jpg"
@@ -1398,6 +1253,6 @@ function Get_UTC_Hours($localHours, $server)
     <a href="https://validator.w3.org/check?uri=referer"><img border="0"
         src="https://www.w3.org/Icons/valid-html401-blue"
         alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
-  </p>
+</p>
 	</body>
 </html>
