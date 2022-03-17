@@ -7,7 +7,9 @@
  * @ingroup Language
  * @file
  *
+ * @author Gtbot2007
  * @author Robin van der Vliet
  */
 
 $messages['lang'] = 'toki';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';

@@ -8,6 +8,7 @@
  * @file
  *
  * @author Ansumang
+ * @author AnupamM
  * @author Gopalindians
  * @author Htt
  * @author Prong$31
@@ -32,6 +33,7 @@ $messages['December'] = 'दिसम्बर';
 $messages['ui_lang'] = 'प्रदर्शन भाषा';
 $messages['lang'] = 'भाषा';
 $messages['project'] = 'परियोजना';
+$messages['tld'] = 'डोमेन';
 $messages['article'] = 'पृष्ठ';
 $messages['needle'] = 'खोजें';
 $messages['skipversions'] = 'हमेशा x संस्करण छोड़े';
