@@ -10,6 +10,7 @@
  * @author Aboulouei1
  * @author Ciphers
  * @author DRIHEM
+ * @author FiberAhmed
  * @author Hhaboh162002
  * @author Houcinee1
  * @author Meno25
@@ -42,7 +43,7 @@ $messages['lang_example'] = 'en, commons, www, …';
 $messages['project'] = 'المشروع';
 $messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
 $messages['tld'] = 'النطاق';
-$messages['tld_example'] = 'org, com, net, …';
+$messages['tld_example'] = 'org، com، net، ...';
 $messages['article'] = 'الصفحة';
 $messages['needle'] = 'ابحث عن';
 $messages['skipversions'] = 'تخطَّ دائما النسخ س';
