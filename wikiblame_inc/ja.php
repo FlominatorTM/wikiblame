@@ -16,6 +16,7 @@
  * @author Otokoume
  * @author Shirayuki
  * @author Whym
+ * @author Yamagata Yusuke
  * @author にょきにょき
  * @author カッパ鳥
  */
@@ -38,6 +39,8 @@ $messages['lang'] = '言語';
 $messages['lang_example'] = 'ja, commons, www, …';
 $messages['project'] = 'プロジェクト';
 $messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
+$messages['tld'] = 'ドメイン';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'ページ';
 $messages['needle'] = '検索語';
 $messages['skipversions'] = '常にX版をスキップ';
