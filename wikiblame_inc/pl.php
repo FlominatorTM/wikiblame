@@ -15,6 +15,7 @@
  * @author Matma Rex
  * @author Od1n
  * @author Sp5uhe
+ * @author Strebski
  * @author WTM
  * @author WarX
  * @author Woytecr
@@ -35,6 +36,8 @@ $messages['December'] = 'grudnia';
 $messages['ui_lang'] = 'Język prezentacji';
 $messages['lang'] = 'Język';
 $messages['project'] = 'Projekt';
+$messages['tld'] = 'Domena';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Strona';
 $messages['needle'] = 'Tekst do wyszukania';
 $messages['skipversions'] = 'Zawsze pomijaj x wersji';
