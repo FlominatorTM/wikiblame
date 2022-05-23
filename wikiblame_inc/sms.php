@@ -14,3 +14,4 @@ $messages['lang'] = 'Ǩiõll';
 $messages['project'] = 'Projeʹktt';
 $messages['project_example'] = 'wikipedia, wikiaunstõõzz, wikimedia, wikidata, …';
 $messages['article'] = 'Seidd';
+$messages['needle'] = 'Ooʒʒ';
