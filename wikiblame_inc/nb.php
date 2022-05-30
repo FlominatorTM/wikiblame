@@ -15,6 +15,7 @@
  * @author SuperPotato
  * @author Tarjeimo
  * @author Wouterkoch
+ * @author Yupik
  */
 
 $messages['January'] = 'Januar';
@@ -32,6 +33,8 @@ $messages['December'] = 'Desember';
 $messages['ui_lang'] = 'Visningsspråk';
 $messages['lang'] = 'Språk';
 $messages['project'] = 'Prosjekt';
+$messages['tld'] = 'Domene';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Side';
 $messages['needle'] = 'Søk etter';
 $messages['skipversions'] = 'Alltid hopp over x versjoner';

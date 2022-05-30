@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Aram
  * @author Calak
  * @author Serwan
  * @author ئارام بکر
