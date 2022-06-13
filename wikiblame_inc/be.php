@@ -11,6 +11,7 @@
  * @author Artsiom91
  * @author Maksim L.
  * @author Mechanizatar
+ * @author No Sleep till Krupki
  * @author SamGold
  */
 
@@ -54,7 +55,7 @@ $messages['get_less_versions'] = 'Ваш пошук можа запытаць __
 $messages['wrong_skips'] = 'Няправільныя налады: калі першыя __VERSIONSTOSKIP__ версіі прапускаюцца, то ніводная з __VERSIONSTOSEARCH__ версіяй для пошуку не будзе апрацавана.';
 $messages['search_in_progress_text'] = 'Версія гісторыі _ARTICLELINK_ шукаецца <b>_NEEDLE_</b> як звычайны тэкст';
 $messages['search_in_progress_wikitags'] = 'Версія гісторыі _ARTICLELINK_ шукаецца <b>_NEEDLE_</b> як Вікі-тэкст';
-$messages['no_differences'] = 'У шукаемых версіях адрозненняў ня знойдзена.';
+$messages['no_differences'] = 'У шукаемых версіях адрозненняў не знойдзена.';
 $messages['inverse_restart'] = 'Устаўкі ці выдалення не знойдзена. Ці не было пошукавае слова ўстаўлена пазней?';
 $messages['first_version'] = 'Змена павінна адбыцца ў першай ці апошняй версіі?';
 $messages['first_version_present'] = '__NEEDLE__ ужо ёсць ў старай рэдакцыі з __REVISIONLINK__.';
