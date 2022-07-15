@@ -12,16 +12,17 @@ $articleenc = name_in_url($article);
 
 $needle = isset ($_REQUEST['needle']) ? $_REQUEST['needle'] : ""; 
 
-$lang = isset ($_REQUEST['lang']) ? htmlspecialchars($_REQUEST['lang']) : "";
-if($lang=="")
-{
-	$lang=$user_lang; 
-}
-
 $project = isset ($_REQUEST['project']) ? htmlspecialchars($_REQUEST['project']) : "";
 if($project=="")
 {
 	$project="wikipedia";
+}
+
+$lang = isset ($_REQUEST['lang']) ? htmlspecialchars($_REQUEST['lang']) : "";
+$multilingual_wikimedia_projects = ['wikipedia', 'wiktionary', 'wikiquote', 'wikibooks', 'wikisource', 'wikinews', 'wikiversity', 'wikivoyage'];
+if($lang=="" && in_array($project, $multilingual_wikimedia_projects))
+{
+	$lang=$user_lang; 
 }
 
 $tld = isset ($_REQUEST['tld']) ? htmlspecialchars($_REQUEST['tld']) : "";
