@@ -13,6 +13,7 @@
  * @author Athena in Wonderland
  * @author Capmo
  * @author Dianakc
+ * @author Duke of Wikipädia
  * @author Eduardo Addad de Oliveira
  * @author Eduardoaddad
  * @author Giro720
@@ -45,6 +46,8 @@ $messages['lang'] = 'Idioma';
 $messages['lang_example'] = 'pt, commons, www, …';
 $messages['project'] = 'Projeto';
 $messages['project_example'] = 'wikipédia, wikisource, wikimedia, wikidata, …';
+$messages['tld'] = 'Domínio';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Página';
 $messages['needle'] = 'Procurar por';
 $messages['skipversions'] = 'Sempre saltar x versões';

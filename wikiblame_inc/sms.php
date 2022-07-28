@@ -33,5 +33,6 @@ $messages['needle'] = 'Ooʒʒ';
 $messages['from_url'] = 'URL-addrõõzzâst';
 $messages['reset'] = 'Täʹbbe';
 $messages['contact'] = 'Õhttvuõđteâđ';
+$messages['inverse_earliest'] = 'Ooʒʒ ääiʹjab versioin';
 $messages['please_wait'] = 'Vueʹrddsââʹst...';
 $messages['here'] = 'tääiʹben';
