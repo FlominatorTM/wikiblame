@@ -30,6 +30,7 @@ $messages['tld'] = 'Domeeʹn';
 $messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Seidd';
 $messages['needle'] = 'Ooʒʒ';
+$messages['start_date'] = 'Äʹlǧǧempeiʹvv';
 $messages['from_url'] = 'URL-addrõõzzâst';
 $messages['reset'] = 'Täʹbbe';
 $messages['contact'] = 'Õhttvuõđteâđ';
