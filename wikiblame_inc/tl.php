@@ -8,6 +8,7 @@
  * @file
  *
  * @author AnakngAraw
+ * @author GinawaSaHapon
  * @author KahitAnongPangalan
  */
 
@@ -23,30 +24,36 @@ $messages['September'] = 'Setyembre';
 $messages['October'] = 'Oktubre';
 $messages['November'] = 'Nobyembre';
 $messages['December'] = 'Disyembre';
-$messages['ui_lang'] = 'Ipakita ang wika';
+$messages['ui_lang'] = 'Wikang ipapakita';
 $messages['lang'] = 'Wika';
 $messages['project'] = 'Proyekto';
+$messages['tld'] = 'Domain';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Pahina';
 $messages['needle'] = 'Hanapin ang';
-$messages['skipversions'] = 'Laging laktawan ang mga bersyong x';
-$messages['ignorefirst'] = 'Huwag pansinin ang naunang mga bersyon x';
-$messages['limit'] = 'Mga bersyong susuriin';
+$messages['skipversions'] = 'Laktawan palagi ang mga bersyong x';
+$messages['ignorefirst'] = 'Balewalain ang mga unang bersyon x';
+$messages['limit'] = 'Mga bersyong titingnan';
 $messages['start_date'] = 'Petsa ng simula';
-$messages['date_format'] = 'BB AA, TTTT';
-$messages['order'] = 'Mga kaatasan';
-$messages['newest_first'] = 'mas bago muna';
+$messages['date_format'] = 'MM DD, YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
+$messages['order'] = 'Ayos';
+$messages['newest_first'] = 'pinakabago muna';
 $messages['oldest_first'] = 'pinakaluma muna';
-$messages['binary_search_inverse'] = 'Maghanap ng pagkakatanggal ng teksto (binaryo lang)';
-$messages['search_method'] = 'Paraan ng paghanap';
-$messages['binary'] = 'nakahalo sa dalawa';
-$messages['linear'] = 'nauukol sa guhit';
-$messages['interpolated'] = 'tambalan (mas mabilis na may mas maraming mga bersyon)';
-$messages['ignore_minors'] = 'huwag pansinin ang malilit na mga pagbabago (sinusubok)';
-$messages['force_wikitags'] = 'sapilitang paghahanap ng wikiteksto';
-$messages['start'] = 'Simulan';
-$messages['reset'] = 'Muling itakda';
-$messages['manual'] = 'Kinakamay';
-$messages['contact'] = 'Makipag-ugnayan';
+$messages['binary_search_inverse'] = 'Maghanap ng mga tinanggal na teksto (binary lang)';
+$messages['search_method'] = 'Paraan ng paghahanap';
+$messages['binary'] = 'binary';
+$messages['linear'] = 'linear';
+$messages['interpolated'] = 'binary (mas mabilis na may mas maraming bersyon)';
+$messages['ignore_minors'] = 'Balewalain ang mga maliit na pagbabago (eksperimental)';
+$messages['force_wikitags'] = 'Sapilitang maghanap sa wikitext';
+$messages['from_url'] = 'mula URL';
+$messages['paste_url'] = 'Pakilagay ang URL papunta sa pahina ng MediaWiki';
+$messages['no_valid_url'] = 'Hindi ito valid na URL ng MediaWiki';
+$messages['start'] = 'Magsimula';
+$messages['reset'] = 'I-reset';
+$messages['manual'] = 'Mano-mano';
+$messages['contact'] = 'Ugnayan';
 $messages['get_less_versions'] = 'Ang iyong paghahanap ay maaaring magtanong ng mga rebisyong _NUMREVISIONS ng isang ulit.  Upang maprutektahan ang tagapaghain, pinapapayagan ka lamang na magtanong para sa _ALLOWEDREVISIONS_ sa bawat pagtawag.  Mangyaring baguhin ang mga katakdaan o palitan ang paraan ng paghahanap upang maging tambalan!';
 $messages['wrong_skips'] = 'Maling mga pagtatakda: Kung ang unang mga bersyong __VERSIONSTOSKIP__ ay nilaktan, walang maisasagawang hahanaping mga bersyon ng __VERSIONSTOSEARCH__.';
 $messages['search_in_progress_text'] = 'Ang kasaysayan ng bersyon ng _ARTICLELINK_ ay hinahanapan ng <b>_NEEDLE_</b> bilang teksto lamang';
