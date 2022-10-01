@@ -317,16 +317,19 @@ function analyse_array($arr)
 function chop_content($art_text)
 {
 	//echo "chopping text";
+	// will preserve all previous tokens to aid porting Wikiblame for other wiki sites which use older versions of mediawiki
 	//$start_token = 'class="mw-content-ltr">';
 	$start_token = '<div class="mw-parser-output">';
 	//$end_token = '<div id="mw-navigation">';
-	$end_token = "<div id='mw-data-after-content'>";
-	
+	//$end_token = "<div id='mw-data-after-content'>";
+	//$end_token = '<div class="printfooter">';
+	$end_token = '<div class="printfooter"';
+
 	$content_begins = strpos($art_text, $start_token) + strlen($start_token);
 	$content_ends = strpos($art_text, $end_token);
 	if($content_ends == "")
 	{
-		$end_token = '<div class="printfooter">';
+		$end_token = "<div id='mw-data-after-content'>";
 		$content_ends = strpos($art_text, $end_token);
 	}
 	// echo "content_begins: $content_begins ; content_ends: $content_ends";
