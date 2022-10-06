@@ -9,6 +9,7 @@
  *
  * @author C.R.
  * @author Chelin
+ * @author Finizio
  * @author Ruthven
  */
 
@@ -27,6 +28,8 @@ $messages['December'] = 'Dicembre';
 $messages['ui_lang'] = 'Lengua \'e visualizzazione';
 $messages['lang'] = 'Lengua';
 $messages['project'] = 'Pruggietto';
+$messages['tld'] = 'Dominio';
+$messages['tld_example'] = 'org, com, net, ...';
 $messages['article'] = 'Paggena';
 $messages['needle'] = 'Circa \'a stringa';
 $messages['skipversions'] = 'Esclude sempe x versione';
