@@ -17,6 +17,7 @@
  * @author Purodha
  * @author Shirayuki
  * @author Siebrand
+ * @author Waldyrious
  * @author 아라
  */
 
@@ -56,7 +57,9 @@ $messages['lang_example'] = '{{Optional}}';
 $messages['project'] = 'Text before input box. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Project}}';
-$messages['project_example'] = '{{Optional}}';
+$messages['project_example'] = '{{Optional}}
+
+The items listed in this message aren\'t the project names, but rather the domain part of their URLs, so they shouldn\'t be translated. Only translate the punctuation or other similar details.';
 $messages['article'] = 'Text before input box. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 
 {{Identical|Page}}';
