@@ -14,6 +14,7 @@
  * @author Od1n
  * @author SuperPotato
  * @author Tarjeimo
+ * @author Telaneo
  * @author Wouterkoch
  * @author Yupik
  */
@@ -75,7 +76,7 @@ $messages['latest_version_present'] = '__NEEDLE__ var allerede tilstede i den yn
 $messages['earlier_versions_available'] = 'Det finnes sannsynligvis eldre revisjoner.';
 $messages['execution_time'] = 'Kjøretid: _EXECUTIONTIME_ sekunder';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versjoner funnet';
-$messages['please_wait'] = 'Vennligst vent …';
+$messages['please_wait'] = 'Vennligst vent…';
 $messages['binary_test'] = 'Sammenlinger forskjellene i _FIRSTDATEVERSION_ mellom _FIRSTNUMBER_ og _SECONDNUMBER_ som kommer fra _SOURCENUMBER_:';
 $messages['dead_end'] = 'Endte i en blindvei (sannsynligvis forårsaket av tilbakestillinger eller redigeringskriger)';
 $messages['once_more'] = 'En gang til, med følelse:';
