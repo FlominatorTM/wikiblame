@@ -37,6 +37,7 @@ $messages['lang'] = 'Језик';
 $messages['lang_example'] = 'sr, en, commons…';
 $messages['project'] = 'Пројекат';
 $messages['project_example'] = 'Википедија, Викизворник, Викимедија…';
+$messages['tld'] = 'Домен';
 $messages['article'] = 'Страница';
 $messages['needle'] = 'Тражи';
 $messages['skipversions'] = 'Увек прескочи x издања:';
