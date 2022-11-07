@@ -8,6 +8,7 @@
  * @file
  *
  * @author F Samaritani
+ * @author Samaritanif
  */
 
 $messages['January'] = 'Gennàrgiu';
@@ -24,6 +25,7 @@ $messages['November'] = 'Donniassantu';
 $messages['December'] = 'Mesi de idas';
 $messages['lang'] = 'Lìngua';
 $messages['project'] = 'Cadela';
+$messages['tld_example'] = 'org, com, net, ...';
 $messages['article'] = 'Pàgina';
 $messages['date_format'] = 'DD MM, YYYY';
 $messages['start'] = 'Inghitza';
