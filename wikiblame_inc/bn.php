@@ -38,6 +38,7 @@ $messages['lang'] = 'ভাষা';
 $messages['lang_example'] = 'bn, commons, www, …';
 $messages['project'] = 'প্রকল্প';
 $messages['project_example'] = 'উইকিপিডিয়া, উইকিসংকলন, উইকিমিডিয়া, …';
+$messages['tld'] = 'ডোমেইন';
 $messages['article'] = 'পাতা';
 $messages['needle'] = 'অনুসন্ধান করো';
 $messages['skipversions'] = 'সর্বদা x সংস্করণ এড়িয়ে যান';
