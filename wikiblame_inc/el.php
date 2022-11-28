@@ -13,6 +13,7 @@
  * @author Evropi
  * @author Geraki
  * @author Glavkos
+ * @author Jimkats
  * @author KATRINE1992
  * @author NikosLikomitros
  * @author Nikosgranturismogt
@@ -35,6 +36,8 @@ $messages['December'] = 'Δεκέμβριος';
 $messages['ui_lang'] = 'Εμφάνιση γλώσσας';
 $messages['lang'] = 'Γλώσσα';
 $messages['project'] = 'Εγχείρημα';
+$messages['tld'] = 'Τομέας';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Σελίδα';
 $messages['needle'] = 'Αναζήτηση για';
 $messages['skipversions'] = 'Παραλείψατε πάντα τις  εκδόσεις x';
