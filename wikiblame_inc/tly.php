@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Patriot Kor
  * @author Patriot Kur
  * @author Гусейн
  */
