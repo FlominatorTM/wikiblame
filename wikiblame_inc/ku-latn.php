@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Balyozxane
  * @author Bikarhêner
  * @author George Animal
  * @author Kiwi128
@@ -18,7 +19,7 @@ $messages['February'] = 'Sibat';
 $messages['March'] = 'Adar';
 $messages['April'] = 'Nîsan';
 $messages['May'] = 'Gulan';
-$messages['June'] = ' Pûşper';
+$messages['June'] = 'hezîran';
 $messages['July'] = 'Tîrmeh';
 $messages['August'] = 'Tebax';
 $messages['September'] = 'Îlon';
