@@ -23,6 +23,7 @@
  * @author Tranve
  * @author Wrightbus
  * @author Xiplus
+ * @author 捍粵者
  */
 
 $messages['January'] = '1月';
@@ -70,7 +71,7 @@ $messages['manual'] = '手冊';
 $messages['contact'] = '聯絡';
 $messages['get_less_versions'] = '您的搜尋可能會在一次內回報 __NUMREVISIONS__ 個修訂版本，為了保護伺服器，您每次能取得的搜尋回報為 __ALLOWEDREVISIONS__ 個以內，請變更設定或把搜尋模式轉為二分法模式！';
 $messages['wrong_skips'] = '設定錯誤：如果跳過首 __VERSIONSTOSKIP__ 個版本，要搜尋的 __VERSIONSTOSEARCH__ 個版本將不會被處理。';
-$messages['search_in_progress_text'] = '_ARTICLELINK_ 的版本記錄正在以純文字 <b>_NEEDLE_</b> 進行搜尋';
+$messages['search_in_progress_text'] = '_ARTICLELINK_的版本紀錄正以純文字<b>_NEEDLE_</b>搜尋';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ 的版本記錄正在以wikitext <b>_NEEDLE_</b> 進行搜尋';
 $messages['no_differences'] = '在尋找到的修訂版本中並未發現任何差異。';
 $messages['inverse_restart'] = '查無插入或去除內容，搜尋項目是否是在之後插入？';
@@ -86,8 +87,8 @@ $messages['please_wait'] = '請稍候...';
 $messages['binary_test'] = '在 _SOURCENUMBER_ 個版本中，正在比較在第 _FIRSTNUMBER_ 個和第 _SECONDNUMBER_ 個版本之間 _FIRSTDATEVERSION_ 的差異：';
 $messages['dead_end'] = '找到一些死胡同（可能由回退或編輯戰所造成）';
 $messages['once_more'] = '再一次，有感而發：';
-$messages['delete_from_here'] = '因為去除步驟必須要安排在後續進行，正在刪除 _NUMBEROFVERSIONS_ 較前面的修訂版本';
-$messages['delete_until_here'] = '因為插入步驟必須要安排在前面進行，正在刪除 _NUMBEROFVERSIONS_ 較後面的修訂版本';
+$messages['delete_from_here'] = '去除必須在之後，正在刪除之前_NUMBEROFVERSIONS_版修訂版';
+$messages['delete_until_here'] = '插入必須在之前，正在刪除之後_NUMBEROFVERSIONS_版修訂版';
 $messages['binary_enough'] = '重試次數已經達到一定程度，條目歷史已經相當混亂，請嘗試變更一些設定。';
 $messages['insertion_found'] = '在 LEFT_VERSION 與 RIGHT_VERSION 之間發現文字插入記錄';
 $messages['deletion_found'] = '在 LEFT_VERSION 與 RIGHT_VERSION 之間發現文字刪除記錄';
