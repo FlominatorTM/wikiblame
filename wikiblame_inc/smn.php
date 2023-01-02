@@ -26,3 +26,4 @@ $messages['December'] = 'juovlâmáánu';
 $messages['lang'] = 'Kielâ';
 $messages['project'] = 'Proojeekt';
 $messages['article'] = 'Sijđo';
+$messages['contact'] = 'Vääldi ohtâvuođâ';

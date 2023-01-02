@@ -12,3 +12,4 @@
 
 $messages['lang'] = 'Giella';
 $messages['article'] = 'Siidu';
+$messages['contact'] = 'Váldde oktavuođa';
