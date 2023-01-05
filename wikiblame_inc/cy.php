@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Afalau
  * @author Lloffiwr
  * @author Pwyll
  */
@@ -26,6 +27,8 @@ $messages['December'] = 'Rhagfyr';
 $messages['ui_lang'] = 'Iaith y rhyngwyneb';
 $messages['lang'] = 'Iaith';
 $messages['project'] = 'Prosiect';
+$messages['tld'] = 'Parth';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Tudalen';
 $messages['needle'] = 'Chwilio am';
 $messages['skipversions'] = 'Neidio dros bob yn x diwygiad wrth chwilio';
@@ -43,8 +46,8 @@ $messages['linear'] = 'llinol';
 $messages['interpolated'] = 'deuol (yn gyflymach a chyda rhagor o fersiynau)';
 $messages['ignore_minors'] = 'anwybyddu mân newidiadau (arbrofol)';
 $messages['force_wikitags'] = 'gorfodi chwilio am destun wici';
-$messages['start'] = 'Dechreuer';
-$messages['reset'] = 'Ailosoder';
+$messages['start'] = 'Dechrau';
+$messages['reset'] = 'Ailosod';
 $messages['manual'] = 'Llawlyfr';
 $messages['contact'] = 'Cysylltu';
 $messages['get_less_versions'] = 'Gall fod y bydd eich chwiliad yn chwilio __NUMREVISIONS__ o ddiwygiadau ar unwaith. Er mwyn arbed y gweinydd, dim ond __ALLOWEDREVISIONS__ y gallwch chwilio drwyddynt bob yn chwiliad. Byddwch gystal â newid y gosodiadau neu newid y modd chwilio i fod yn ddeuaidd!';
@@ -64,7 +67,8 @@ $messages['once_more'] = 'Unwaith eto, gyda theimlad:';
 $messages['binary_enough'] = 'Ceisiwyd nifer o weithiau, mae hanes yr erthygl yn o ddyrys, ceisiwch newid rhai o\'r gosodiadau.';
 $messages['insertion_found'] = 'Cafodd y testun ei fewnosod rhwng LEFT_VERSION a RIGHT_VERSION';
 $messages['deletion_found'] = 'Cafodd y testun ei ddileu rhwng LEFT_VERSION a RIGHT_VERSION';
+$messages['here'] = 'yma';
 $messages['help_translating'] = 'Dewch draw i translatewiki.net i gyfieithu';
-$messages['start_here'] = 'Chwilier eto gan ddechrau yma';
+$messages['start_here'] = 'Chwiliwch eto gan ddechrau yma';
 $messages['too_much_versions'] = 'Rydych wedi cyrraedd pen y nifer o fersiynau cewch eu holi ar unwaith, sef __VERSIONLIMIT__ fersiwn. Ceisiwch eto ymhen __WAITMINUTES__ munud neu newidiwch i chwilio\'n ddeuol. Mae\'n ddrwg gennym am yr anghyfleustra.';
 $messages['not_found_at_all'] = 'Ni chafwyd hyd i\'ch term chwilio o gwbl. Gwiriwch y gosodiadau, yna rhowch gynnig arall arni.';
