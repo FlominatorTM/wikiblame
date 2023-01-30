@@ -11,6 +11,7 @@
  * @author BadDog
  * @author Charmed94
  * @author FriedrickMILBarbarossa
+ * @author Kizule
  * @author Milicevic01
  * @author Obsuser
  * @author Od1n
@@ -34,10 +35,11 @@ $messages['November'] = 'новембар';
 $messages['December'] = 'децембар';
 $messages['ui_lang'] = 'Језик приказа';
 $messages['lang'] = 'Језик';
-$messages['lang_example'] = 'sr, en, commons…';
+$messages['lang_example'] = 'en, commons, www, …';
 $messages['project'] = 'Пројекат';
-$messages['project_example'] = 'Википедија, Викизворник, Викимедија…';
+$messages['project_example'] = 'википедија, викизворник, викимедија, википодаци, …';
 $messages['tld'] = 'Домен';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Страница';
 $messages['needle'] = 'Тражи';
 $messages['skipversions'] = 'Увек прескочи x издања:';
