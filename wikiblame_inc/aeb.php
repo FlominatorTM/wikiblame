@@ -1,5 +1,5 @@
 <?php
-/** Tunisian Arabic (تونسي/Tûnsî)
+/** Tunisian Arabic (تونسي / Tûnsî)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net

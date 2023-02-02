@@ -12,6 +12,7 @@
  * @author McDutchie
  * @author Mguix
  * @author Paucabot
+ * @author Robertgarrigos
  * @author SMP
  * @author Solde
  * @author Ssola
@@ -33,6 +34,8 @@ $messages['December'] = 'desembre';
 $messages['ui_lang'] = 'Idioma de la interfície';
 $messages['lang'] = 'Idioma';
 $messages['project'] = 'Projecte';
+$messages['tld'] = 'Domini';
+$messages['tld_example'] = 'org, com, net…';
 $messages['article'] = 'Pàgina';
 $messages['needle'] = 'Cerca';
 $messages['skipversions'] = 'Salta sempre x versions';
