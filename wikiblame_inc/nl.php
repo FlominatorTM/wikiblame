@@ -9,6 +9,7 @@
  *
  * @author HanV
  * @author Lemondoge
+ * @author McDutchie
  * @author SPQRobin
  * @author Siebrand
  */
@@ -29,6 +30,8 @@ $messages['ui_lang'] = 'Taal weergeven';
 $messages['lang'] = 'Taal';
 $messages['lang_example'] = 'nl, commons, www, …';
 $messages['project'] = 'Project';
+$messages['tld'] = 'Domein';
+$messages['tld_example'] = 'nl, be, org, com, …';
 $messages['article'] = 'Pagina';
 $messages['needle'] = 'Zoeken naar';
 $messages['skipversions'] = 'Altijd x versies overslaan';
