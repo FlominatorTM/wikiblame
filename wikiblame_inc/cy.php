@@ -8,6 +8,7 @@
  * @file
  *
  * @author Afalau
+ * @author JonesT143
  * @author Lloffiwr
  * @author Pwyll
  */
@@ -36,6 +37,7 @@ $messages['ignorefirst'] = 'Anwybyddu\'r x diwygiad cyntaf';
 $messages['limit'] = 'Nifer y diwygiadau i\'w gwirio';
 $messages['start_date'] = 'Dyddiad cychwyn';
 $messages['date_format'] = 'DD MM YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Trefn';
 $messages['newest_first'] = 'y diweddaraf yn gyntaf';
 $messages['oldest_first'] = 'yr hynaf yn gyntaf';
@@ -57,7 +59,7 @@ $messages['search_in_progress_wikitags'] = 'Fel testun wici y chwilir am <b>_NEE
 $messages['no_differences'] = 'Ni chafwyd hyd i unrhyw wahaniathau yn y diwygiadau y chwiliwyd drwyddynt.';
 $messages['first_version'] = 'Rhaid bod y newid wedi digwydd yn y diwygiad cyntaf neu\'r olaf?';
 $messages['first_version_present'] = 'Roedd __NEEDLE__ eisoes yn bresennol yn y diwygiad cyntaf y daethpwyd o hyd iddo yn dyddio o __REVISIONLINK__.';
-$messages['earlier_versions_available'] = 'Mae\'n fwy na thebyg bod diwygiadau cynt ar gael.';
+$messages['earlier_versions_available'] = 'Mae\'n debyg bod diwygiadau hŷn ar gael.';
 $messages['execution_time'] = 'Hyd y chwilio: _EXECUTIONTIME_ eiliad';
 $messages['versions_found'] = 'Cafwyd hyd i _NUMBEROFVERSIONS_ o ddiwygiadau';
 $messages['please_wait'] = 'Arhoswch ...';
