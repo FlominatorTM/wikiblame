@@ -16,6 +16,7 @@
  * @author KATRINE1992
  * @author Ktranz
  * @author Macofe
+ * @author MarcoAurelio
  * @author McDutchie
  * @author Od1n
  * @author Pertile
@@ -40,6 +41,7 @@ $messages['December'] = 'Diciembre';
 $messages['ui_lang'] = 'Idioma de visualización';
 $messages['lang'] = 'Idioma';
 $messages['project'] = 'Proyecto';
+$messages['tld'] = 'Dominio';
 $messages['article'] = 'Artículo';
 $messages['needle'] = 'Búsqueda';
 $messages['skipversions'] = 'Saltar siempre x versiones';

@@ -1,5 +1,5 @@
 <?php
-/** toki pona (toki pona)
+/** Toki Pona (toki pona)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net
