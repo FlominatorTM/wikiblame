@@ -26,12 +26,12 @@ function checkScanAmount()
 	var versionsToSkipDuring = document.forms['mainform'].elements['skipversions'].value;
 	var versionsToSkipBeginning = document.forms['mainform'].elements['ignorefirst'].value;
 	var expectedVersionsToQuery = versionsToQuery - versionsToSkipBeginning;
-	if (versionsToSkipDuring>0)
+	if(versionsToSkipDuring > 0)
 	{
 		expectedVersionsToQuery = expectedVersionsToQuery / versionsToSkipDuring;
 	}
 
-	if (
+	if(
 		allowedVersionsPerCall > -1 && expectedVersionsToQuery > allowedVersionsPerCall &&
 		document.forms['mainform'].elements['linear'].checked
 	)
@@ -56,7 +56,7 @@ function pasteFieldsFromUrl(e)
 {
 	e.preventDefault();
 	var mediaWikiUrl = window.prompt(i18n.paste_url, '');
-	if(mediaWikiUrl==null) return;
+	if(mediaWikiUrl == null) return;
 	var a = document.createElement('a');
 	a.href=mediaWikiUrl;
 
@@ -74,13 +74,13 @@ function pasteFieldsFromUrl(e)
 	// host + custom TLD (2 parts)
 	// -> http(s)://otherwiki.com/whatever
 	// if there are only 2 parts, it's definitely the subdomain that is missing
-	if(hostParts.length==3)
+	if(hostParts.length == 3)
 	{
 		language = hostParts[0];
 		project = hostParts[1];
 		tld = hostParts[2];
 	}
-	if(hostParts.length==2)
+	if(hostParts.length == 2)
 	{
 		language = 'blank';
 		project = hostParts[0];
@@ -90,17 +90,17 @@ function pasteFieldsFromUrl(e)
 	var titleFound = false;
 	var slashWiki = '/wiki/';
 	var titleEquals = 'title=';
-	if(mediaWikiUrl.search(titleEquals)>0)
+	if(mediaWikiUrl.search(titleEquals) > 0)
 	{
 		// find article name from a URL like https://example.com/w/index.php?title=Main_Page
 		var urlParts = mediaWikiUrl.split('?');
 
-		if(urlParts.length==2)
+		if(urlParts.length == 2)
 		{
 			var paramParts = urlParts[1].split('&');
 			// gets article name from first instance of 'title='
 			// @TODO: should probably be last instance to comply with HTTP standard
-			for (var i=0; i<paramParts.length; i++)
+			for(var i = 0; i < paramParts.length; i++)
 			{
 				if(paramParts[i].startsWith(titleEquals))
 				{
@@ -142,7 +142,8 @@ function submitAndWait()
 function focusErrorFromHTML()
 {
 	var errorDiv = document.querySelector('.inputerror');
-	if (errorDiv) {
+	if(errorDiv)
+	{
 		var errorInput = document.getElementById(errorDiv.getAttribute('data-fieldid'));
 		errorInput.focus();
 		errorInput.select();
@@ -155,7 +156,8 @@ function setUpListeners()
 	document.getElementById('from_url').addEventListener('click', pasteFieldsFromUrl);
 	document.getElementById('resetdate').addEventListener('click', setFormDateToToday);
 	var scanAmountIds = ['skipversions', 'ignorefirst', 'limit', 'linear', 'int'];
-	for (var i = 0; i < scanAmountIds.length; ++i) {
+	for(var i = 0; i < scanAmountIds.length; ++i)
+	{
 		document.getElementById(scanAmountIds[i]).addEventListener('change', checkScanAmount);
 	}
 	focusErrorFromHTML();
