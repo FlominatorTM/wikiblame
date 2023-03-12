@@ -106,6 +106,7 @@ $messages['manual_link'] = '{{optional}} Contains the link to the Wikiblame manu
 $messages['contact'] = 'Link label to contact pages for Wikiblame. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 {{Identical|Contact}}';
 $messages['contact_link'] = '{{optional}}Contains the link to a location for local language support. Should only contain a link if local language support for the tool is available.';
+$messages['source_code'] = 'Label for the link to the source code repository on GitHub.';
 $messages['wrong_skips'] = 'Do not translate <code>__VERSIONSTOSKIP__</code>, and <code>__VERSIONSTOSEARCH__</code>
 
 Hint: you could quote the text of the labels for the fields <code>__VERSIONSTOSKIP__</code> ({{msg-wikiblame|Messages\x5b\'ignorefirst\'\x5d}}) and <code>__VERSIONSTOSEARCH__</code> ({{msg-wikiblame|Messages\x5b\'limit\'\x5d}}). See [http://wikipedia.ramselehof.de/wikiblame.php here]';

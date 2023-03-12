@@ -221,6 +221,7 @@ $is_exp = stristr($_SERVER["PHP_SELF"], 'wikiblame.exp.php') !== false;
 <footer>
 <a href='<?php  echo $messages['manual_link'] ?>'><?php  echo $messages['manual'] ?></a> - 
 <a href='<?php  echo $messages['contact_link'] ?>'><?php  echo $messages['contact'] ?></a> - 
+<a href="https://github.com/FlominatorTM/wikiblame"><?php  echo $messages['source_code'] ?></a> -
 <a href="https://translatewiki.net/wiki/Translating:WikiBlame"><?php  echo $messages['help_translating'] ?></a> -
 <a href="https://de.wikipedia.org/wiki/Benutzer:Flominator">by Flominator</a>
 </footer>

@@ -67,6 +67,7 @@ $messages['manual'] = 'Manual';
 $messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
 $messages['contact'] = 'Contact';
 $messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['source_code'] = 'Source code on GitHub';
 $messages['get_less_versions'] = "Your search might query __NUMREVISIONS__ revisions at one time. In order to protect the server, you are only allowed to query for __ALLOWEDREVISIONS__ per call. Please change the settings or switch the search method to binary!";
 
 //Output elements
