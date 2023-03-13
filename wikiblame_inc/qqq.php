@@ -17,6 +17,7 @@
  * @author Purodha
  * @author Shirayuki
  * @author Siebrand
+ * @author Verdy p
  * @author Waldyrious
  * @author 아라
  */
@@ -102,7 +103,9 @@ $messages['reset'] = 'Button text next to date input boxes. Resets to today\'s d
 {{Identical|Reset}}';
 $messages['manual'] = 'Label for link to a user manual. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 {{Identical|Manual}}';
-$messages['manual_link'] = '{{optional}} Contains the link to the Wikiblame manual. Should only contain a link if the manual has been localised.';
+$messages['manual_link'] = '{{optional}} Contains the link to the Wikiblame manual. Should only contain a link if the manual has been localised.
+
+The German version of the page was published in the German Wikipedia by the creator and maintainer of the tool in a subpage of his user page at https://de.wikipedia.org/wiki/Benutzer:Flominator/WikiBlame, in addition to the English version on a subpage of his user page on English Wikipedia. Other users have translated that page, but it may be translated on any suitable wiki, not just Wikipedia, such as MetaWiki, and not necessarily in a user page (for example the Portuguese version is in a subpage of a project page on Portuguese Wikipedia for Wikimedia tools). These pages should be linked in Wikidata (see [[wikipedia:d:Q15042058]]).';
 $messages['contact'] = 'Link label to contact pages for Wikiblame. See [http://wikipedia.ramselehof.de/wikiblame.php here].
 {{Identical|Contact}}';
 $messages['contact_link'] = '{{optional}}Contains the link to a location for local language support. Should only contain a link if local language support for the tool is available.';

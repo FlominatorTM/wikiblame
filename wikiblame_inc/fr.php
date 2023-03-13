@@ -27,6 +27,7 @@
  * @author Wyz
  */
 
+$text_dir = 'ltr';
 $messages['January'] = 'janvier';
 $messages['February'] = 'février';
 $messages['March'] = 'mars';
@@ -41,7 +42,9 @@ $messages['November'] = 'novembre';
 $messages['December'] = 'décembre';
 $messages['ui_lang'] = 'Langue d’affichage';
 $messages['lang'] = 'Langue';
+$messages['lang_example'] = 'fr, commons, www, etc.';
 $messages['project'] = 'Projet';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, etc.';
 $messages['tld'] = 'Domaine';
 $messages['tld_example'] = 'org, com, net, etc.';
 $messages['article'] = 'Page';
@@ -69,7 +72,10 @@ $messages['no_valid_url'] = 'Ceci n’est pas une URL MediaWiki valide';
 $messages['start'] = 'Démarrer';
 $messages['reset'] = 'Réinitialiser';
 $messages['manual'] = 'Manuel d’utilisation';
+$messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
 $messages['contact'] = 'Contact';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['source_code'] = 'Code source sur GitHub';
 $messages['get_less_versions'] = 'Votre recherche peut requérir __NUMREVISIONS__ versions à la fois. Afin de protéger le serveur, vous n’êtes autorisé à requérir que __ALLOWEDREVISIONS__ par appel. Veuillez modifier les paramètres ou basculer à la méthode de recherche dichotomique !';
 $messages['wrong_skips'] = '<b>Paramètres incorrects :</b> si les <b>__VERSIONSTOSKIP__ premières</b> versions sont sautées, alors aucune des <b>__VERSIONSTOSEARCH__</b> versions à vérifier ne sera traitée.';
 $messages['search_in_progress_text'] = '« <b>_NEEDLE_</b> » est recherché comme texte brut dans l’historique des versions de _ARTICLELINK_';

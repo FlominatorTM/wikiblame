@@ -68,6 +68,7 @@ $messages['reset'] = 'Restablecer';
 $messages['manual'] = 'Manual';
 $messages['manual_link'] = 'https://es.wikipedia.org/wiki/Usuario:XalD/WikiBlame';
 $messages['contact'] = 'Contacto';
+$messages['source_code'] = 'Código fuente en GitHub';
 $messages['get_less_versions'] = 'Tu búsqueda podría consultar __NUMREVISIONS__ revisiones a la vez. Con el fin de proteger el servidor, solamente estás permitido consultar por __ALLOWEDREVISIONS__ por llamada. Por favor cambia la configuración o el método de búsqueda a binario.';
 $messages['wrong_skips'] = 'Configuraciones erróneas: Si las primeras __VERSIONSTOSKIP__ versiones se omiten, entonces ninguna de las __VERSIONSTOSEARCH__ versiones que buscar se procesarán.';
 $messages['search_in_progress_text'] = 'Se está buscando <b>_NEEDLE_</b> como texto sencillo en el historial de versiones de _ARTICLELINK_';

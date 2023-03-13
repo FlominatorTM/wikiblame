@@ -57,6 +57,7 @@ $messages['start'] = 'Uitvoeren';
 $messages['reset'] = 'Opnieuw instellen';
 $messages['manual'] = 'Handleiding';
 $messages['contact'] = 'Contact';
+$messages['source_code'] = 'Broncode op GitHub';
 $messages['get_less_versions'] = 'U kunt __NUMREVISIONS__ versies per keer doorzoeken. Om de server te beschermen kunt u __ALLOWEDREVISIONS__ per verzoek doorzoeken. Wijzig de instellingen of zoek binair.';
 $messages['wrong_skips'] = 'Onjuiste instellingen: Als de eerste __VERSIONSTOSKIP__ versies worden overgeslagen, dan wordt geen enkele van de __VERSIONSTOSEARCH__ te doorzoeken versies verwerkt.';
 $messages['search_in_progress_text'] = 'De versiegeschiedenis van _ARTICLELINK_ wordt doorzocht op <b>_NEEDLE_</b> als tekst zonder opmaak';

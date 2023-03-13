@@ -68,6 +68,7 @@ $messages['manual'] = 'Приручник';
 $messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame?uselang=sr';
 $messages['contact'] = 'Контакт';
 $messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame?uselang=sr';
+$messages['source_code'] = 'Изворни код на GitHub-у';
 $messages['get_less_versions'] = 'Претрага може исписати __NUMREVISIONS__ измена одједном. Ради безбедности сервера, дозвољено вам је да тражите __ALLOWEDREVISIONS__ по позиву. Промените поставке или начин претраге на бинарни.';
 $messages['wrong_skips'] = 'Погрешна подешавања: ако је првих __VERSIONSTOSKIP__ издања прескочено, онда ниједно од __VERSIONSTOSEARCH__ издања која се траже неће бити обрађено.';
 $messages['search_in_progress_text'] = 'Историја издања чланка _ARTICLELINK_ се тражи за <b>_NEEDLE_</b> као обичан текст';

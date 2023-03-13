@@ -70,6 +70,7 @@ $messages['reset'] = 'Reimposta';
 $messages['manual'] = 'Manuale';
 $messages['manual_link'] = 'https://it.wikipedia.org/wiki/Utente:Darth_Kule/WikiBlame';
 $messages['contact'] = 'Contatto';
+$messages['source_code'] = 'Codice sorgente su GitHub';
 $messages['get_less_versions'] = 'La ricerca potrebbe controllare __NUMREVISIONS__ revisioni alla volta. Al fine di proteggere il server, però, si possono controllare soltanto __ALLOWEDREVISIONS__ revisioni per volta. Per favore modifica le impostazioni, oppure passa al metodo di ricerca binario!';
 $messages['wrong_skips'] = 'Impostazioni sbagliate: se le prime __VERSIONSTOSKIP__
 versioni vengono saltate, allora nessuna delle __VERSIONSTOSEARCH__ versioni

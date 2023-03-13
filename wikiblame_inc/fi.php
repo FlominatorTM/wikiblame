@@ -63,6 +63,7 @@ $messages['start'] = 'Aloita';
 $messages['reset'] = 'Tänään';
 $messages['manual'] = 'Ohje';
 $messages['contact'] = 'Ota yhteyttä';
+$messages['source_code'] = 'Lähdekoodi GitHubissa';
 $messages['search_in_progress_text'] = 'Haetaan artikkelin _ARTICLELINK_ versiohistoriaa hakusanalle <b>_NEEDLE_</b> tavallisena tekstinä';
 $messages['no_differences'] = 'Etsityistä versioista ei löytynyt eroavaisuuksia.';
 $messages['inverse_earliest'] = 'Etsi aiemmista versioista';

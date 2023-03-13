@@ -53,6 +53,7 @@ $messages['start'] = 'Comenciar';
 $messages['reset'] = 'Reinitialisar';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Contacto';
+$messages['source_code'] = 'Codice fonte sur GitHub';
 $messages['get_less_versions'] = 'Le recerca poterea consultar __NUMREVISIONS__ versiones per vice. A fin de proteger le servitor, tu pote solmente consultar pro __ALLOWEDREVISIONS__ per appello. Per favor modifica le configurationes o cambia le methodo de recerca a binari!';
 $messages['wrong_skips'] = 'Configurationes incorrecte: Si le prime __VERSIONSTOSKIP__ versiones es omittite, alora nulle del __VERSIONSTOSEARCH__ versiones a cercar essera processate.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b>, como texto simple, es cercate in le historia de versiones de _ARTICLELINK_';

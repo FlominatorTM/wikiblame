@@ -70,6 +70,7 @@ $messages['reset'] = 'Data de hoje';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Contacto';
 $messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['source_code'] = 'Código-fonte no GitHub';
 $messages['get_less_versions'] = 'A sua pesquisa pode consultar __NUMREVISIONS__ versões ao mesmo tempo. Para proteger o servidor, só pode consultar __ALLOWEDREVISIONS__ por chamada. Altere esta configuração ou mude o método de pesquisa para binária, por favor.';
 $messages['wrong_skips'] = 'Erro nas configurações: se as primeiras __VERSIONSTOSKIP__ versões são ignoradas, então nenhuma das __VERSIONSTOSEARCH__ versões a verificar serão processadas.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> está a ser procurado como texto não formatado no histórico de edições de _ARTICLELINK_';

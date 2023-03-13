@@ -60,6 +60,7 @@ $messages['reset'] = 'Mai dátumra';
 $messages['manual'] = 'Használati útmutató';
 $messages['manual_link'] = 'https://hu.wikipedia.org/wiki/Wikipédia:WikiBlame';
 $messages['contact'] = 'Kapcsolat';
+$messages['source_code'] = 'Forráskód a GitHubon';
 $messages['get_less_versions'] = 'A keresésed egyszerre __NUMREVISIONS__ változatot próbált lekérdezni. A szerver védelme érdekében legfeljebb __ALLOWEDREVISIONS__ változatot kérdezhetsz le hívásonként. Kérlek változtasd meg a beállításokat, vagy válts bináris keresésre!';
 $messages['wrong_skips'] = 'Hibás beállítás: ha az első __VERSIONSTOSKIP__ változatot kell átugornom, akkor a vizsgálandó __VERSIONSTOSEARCH__ változat egyikét sem tudom feldolgozni.';
 $messages['search_in_progress_text'] = 'Keresés a(z) _ARTICLELINK_ laptörténetében a(z) <b>_NEEDLE_</b> keresőkifejezésre (mint sima szöveg)';
