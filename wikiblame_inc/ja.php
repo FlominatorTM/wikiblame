@@ -18,6 +18,7 @@
  * @author Whym
  * @author Yamagata Yusuke
  * @author にょきにょき
+ * @author もなー(偽物)
  * @author カッパ鳥
  */
 
@@ -69,6 +70,7 @@ $messages['manual'] = 'マニュアル';
 $messages['manual_link'] = 'https://ja.wikipedia.org/wiki/Wikipedia:ツール/WikiBlame';
 $messages['contact'] = '連絡先';
 $messages['contact_link'] = 'https://ja.wikipedia.org/wiki/Wikipedia:ツール/WikiBlame';
+$messages['source_code'] = 'GitHub のソースコード';
 $messages['get_less_versions'] = 'あなたの検索クエリは__NUMREVISIONS__件の版を一度に検査する可能性があります。サーバーを保護するため、一度の呼び出しで検査できる版数は__ALLOWEDREVISIONS__件以下に制限されています。設定を変更するか、検索方法を二分探索にしてください!';
 $messages['wrong_skips'] = '設定の不備: 初めの__VERSIONSTOSKIP__版をとばしてしまうと、検査すべき__VERSIONSTOSEARCH__版のどれも処理されません。';
 $messages['search_in_progress_text'] = '_ARTICLELINK_の版履歴は、<b>_NEEDLE_</b>をプレーンテキストとして検索中です';

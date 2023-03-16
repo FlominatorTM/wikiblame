@@ -62,6 +62,7 @@ $messages['start'] = 'התחלה';
 $messages['reset'] = 'איפוס';
 $messages['manual'] = 'הסברים';
 $messages['contact'] = 'יצירת קשר';
+$messages['source_code'] = 'קוד מקור בגיטהאב';
 $messages['get_less_versions'] = 'החיפוש הזה עשוי להריץ שאילתה על __NUMREVISIONS__ גרסאות בבת אחת. כדי להגן על השרת, ניתן להריץ שאילתה רק על __ALLOWEDREVISIONS__ גרסאות בכל קריאה. נא לשנות את ההגדרות או להחליף את שיטת החיפוש לבינארית.';
 $messages['wrong_skips'] = 'הגדרות לא נכונות: אם נדלג על __VERSIONSTOSKIP__ הגרסאות הראשונות, אף אחת מ־__VERSIONSTOSEARCH__ הגרסאות שיש לבצע בהן את החיפוש לא תיבדק.';
 $messages['search_in_progress_text'] = 'חיפוש של _NEEDLE_ בגרסאות של _ARTICLELINK_ כטקסט פשוט';

@@ -23,6 +23,7 @@
  * @author MuratTheTurkish
  * @author Pedroca cerebral
  * @author Raylton P. Sousa
+ * @author Re demz
  * @author TheEduGobi
  * @author TheGabrielZaum
  * @author Tuliouel
@@ -76,6 +77,7 @@ $messages['manual'] = 'Manual';
 $messages['manual_link'] = 'https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Ferramentas/WikiBlame';
 $messages['contact'] = 'Contato';
 $messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['source_code'] = 'Código-fonte no GitHub';
 $messages['get_less_versions'] = 'A sua pesquisa pode consultar __NUMREVISIONS__ edições ao mesmo tempo. Para proteger o servidor, só pode consultar __ALLOWEDREVISIONS__ por chamada. Por favor, altere a configuração ou mude o método de pesquisa para binária.';
 $messages['wrong_skips'] = 'Configurações erradas: Se as primeiras __VERSIONSTOSKIP__ edições são ignoradas, então nenhuma das __VERSIONSTOSEARCH__ edições a verificar serão processadas.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> está a ser procurado como texto não formatado no histórico de edições de _ARTICLELINK_';

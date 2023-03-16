@@ -69,6 +69,7 @@ $messages['start'] = '開始';
 $messages['reset'] = '重設';
 $messages['manual'] = '手冊';
 $messages['contact'] = '聯絡';
+$messages['source_code'] = '在 GitHub 上的原始碼';
 $messages['get_less_versions'] = '您的搜尋可能會在一次內回報 __NUMREVISIONS__ 個修訂版本，為了保護伺服器，您每次能取得的搜尋回報為 __ALLOWEDREVISIONS__ 個以內，請變更設定或把搜尋模式轉為二分法模式！';
 $messages['wrong_skips'] = '設定錯誤：如果跳過首 __VERSIONSTOSKIP__ 個版本，要搜尋的 __VERSIONSTOSEARCH__ 個版本將不會被處理。';
 $messages['search_in_progress_text'] = '_ARTICLELINK_的版本紀錄正以純文字<b>_NEEDLE_</b>搜尋';

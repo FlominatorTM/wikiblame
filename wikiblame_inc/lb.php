@@ -10,6 +10,7 @@
  * @author Les Meloures
  * @author Robby
  * @author Soued031
+ * @author Volvox
  */
 
 $messages['January'] = 'Januar';
@@ -54,6 +55,7 @@ $messages['start'] = 'Ufank';
 $messages['reset'] = 'Zrécksetzen';
 $messages['manual'] = 'Handbuch';
 $messages['contact'] = 'Kontakt';
+$messages['source_code'] = 'Quelltext op GitHub';
 $messages['get_less_versions'] = 'Är Sich kéint bis zu __NUMREVISIONS__ Versiounen mateneen offroen. Wéinst der Performance vum Server si pro Ufro maximal __ALLOWEDREVISIONS__ Versiounen zougelooss. änner wgl. d\'Astellungen oder wiesselt op d\'binair Method fir ze sichen!';
 $messages['wrong_skips'] = 'Falsch Astellung: Wann déi éischt __VERSIONSTOSKIP__ Versiounen iwwersprong ginn, da gëtt keng vun de(n) __VERSIONSTOSEARCH__ Versiounen, déi sollen duersicht ginn, behandelt.';
 $messages['search_in_progress_text'] = 'An alle Versioune vun _ARTICLELINK_ gëtt nom Text <b>_NEEDLE_</b> gesicht';
