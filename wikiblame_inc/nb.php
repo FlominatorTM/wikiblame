@@ -62,6 +62,7 @@ $messages['start'] = 'Start';
 $messages['reset'] = 'Nullstill';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Kontakt';
+$messages['source_code'] = 'Kildekode på GitHub';
 $messages['get_less_versions'] = 'Søket ditt kan spørre etter __NUMREVISIONS__ revisjoner på en gang. For å beskytte tjeneren får du bare spørre etter __ALLOWEDREVISIONS__ per kall. Endre innstillingene eller bytt søkemetoden til binær.';
 $messages['wrong_skips'] = 'Feil innstillinger: Dersom de første __VERSIONTOSKIP__ versjonene hoppes over, så vil ingen av de __VERSIONSTOSEARCH__ versjonene som skal søkes etter bli gjennomført.';
 $messages['search_in_progress_text'] = 'Versjonshistorikken til _ARTICLELINK_ blir søkt gjennom etter <b>_NEEDLE_</b> som ren tekst';
