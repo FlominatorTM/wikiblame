@@ -9,6 +9,7 @@
  *
  * @author ElBe
  * @author Flominator
+ * @author Justman10000
  * @author Kghbln
  * @author Metalhead64
  * @author Od1n
@@ -66,6 +67,7 @@ $messages['manual'] = 'Handbuch';
 $messages['manual_link'] = 'https://de.wikipedia.org/wiki/Benutzer:Flominator/WikiBlame';
 $messages['contact'] = 'Kontakt';
 $messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['source_code'] = 'Quellcode auf GitHub';
 $messages['get_less_versions'] = 'Die angegebene Suche könnte zur gleichzeitigen Abfrage von __NUMREVISIONS__ Versionen führen. Zum Schutz der Serverleistung, sind je Abfrage maximal __ALLOWEDREVISIONS__ Versionen zulässig. Bitte daher die Abfrageeinstellungen ändern oder auf die Suchmethode „binär“ umstellen.';
 $messages['wrong_skips'] = 'Falsche Einstellung: Sofern die ersten __VERSIONSTOSKIP__ Versionen übersprungen werden sollen, wird keine der gewählten __VERSIONSTOSEARCH__ Versionen durchsucht.';
 $messages['search_in_progress_text'] = 'Die Versionsgeschichte des Artikels _ARTICLELINK_ wird nach <b>_NEEDLE_</b> als einfachem Text durchsucht';
