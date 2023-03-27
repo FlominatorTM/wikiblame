@@ -53,6 +53,7 @@ $messages['start'] = 'Cumintza';
 $messages['reset'] = 'Torra a impostare';
 $messages['manual'] = 'Ghia';
 $messages['contact'] = 'Contattu';
+$messages['source_code'] = 'Còdighe de orìgine in GitHub';
 $messages['get_less_versions'] = 'Sa chirca podet compidare __NUMREVISIONS__ revisiònes a sa borta. Pro ampare su servidore, però, si podene compidare petzi __ALLOWEDREVISIONS__ revisiònes a sa borta. Pro piaghere acòntza sas preferèntzias, o cola a su mètodu de chirca binariu!';
 $messages['wrong_skips'] = 'Peferèntzias isballiàdas: si sas primas __VERSIONSTOSKIP__ versiònes benint brincadas, tando niuna de sas __VERSIONSTOSEARCH__ versiònes de chircare ada a essere compidada.';
 $messages['search_in_progress_text'] = 'S\'istòria de _ARTICLELINK_ est beninde analizada pro chircare <b>_NEEDLE_</b> comente testu sèmplitze';

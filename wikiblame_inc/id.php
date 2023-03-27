@@ -15,6 +15,7 @@
  * @author Iwan Novirion
  * @author Od1n
  * @author Rachmat04
+ * @author Veracious
  */
 
 $messages['January'] = 'Januari';
@@ -64,6 +65,7 @@ Mulai';
 $messages['reset'] = 'Atur ulang';
 $messages['manual'] = 'Panduan penggunaan';
 $messages['contact'] = 'Kontak';
+$messages['source_code'] = 'Kode sumber di GitHub';
 $messages['get_less_versions'] = 'Pencarian Anda dapat meminta __NUMREVISIONS__ revisi pada satu waktu. Untuk melindungi server, Anda hanya dibolehkan untuk meminta __ALLOWEDREVISIONS__ per panggilan. Silakan ubah pengaturan atau beralih metode pencarian menjadi biner!';
 $messages['wrong_skips'] = 'Kesalahan pengaturan: Jika __VERSIONSTOSKIP__ versi diloncati, maka tidak ada dari __VERSIONSTOSEARCH__ versi yang dicari yang akan diproses.';
 $messages['search_in_progress_text'] = 'Versi terdahulu _ARTICLELINK_ sedang dicari untuk <b>_NEEDLE_</b> sebagai teks biasa';
