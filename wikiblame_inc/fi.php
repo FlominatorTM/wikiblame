@@ -37,6 +37,7 @@ $messages['lang'] = 'Kieli';
 $messages['project'] = 'Hanke';
 $messages['project_example'] = 'wikipedia, wikiaineisto, wikimedia, wikidata, ...';
 $messages['tld'] = 'Verkkotunnus';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Sivu';
 $messages['needle'] = 'Hae tekstiä';
 $messages['skipversions'] = 'Ohita aina x versiota';
