@@ -9,7 +9,7 @@ git remote add -f shared_inc https://github.com/FlominatorTM/wikipedia_shared_in
 (f only does a fetch immeditely afterwards)
 
 2. add subtree:
-git subtree add --prefix shared_inc shared_inc master 
+git subtree add --prefix shared_inc shared_inc master
 
 3. fetch changes after some time:
 git fetch shared_inc
