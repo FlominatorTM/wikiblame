@@ -1,6 +1,6 @@
 <?php
 /** Lithuanian (lietuvių)
- *
+ * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net
  *
@@ -11,6 +11,7 @@
  * @author Eitvys200
  * @author Mantak111
  * @author Manvydasz
+ * @author Nokeoo
  * @author Zygimantus
  */
 
