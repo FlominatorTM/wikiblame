@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Adriendelucca
  * @author Fohanno
  * @author Fulup
  * @author Gwenn-Ael
@@ -28,6 +29,7 @@ $messages['December'] = 'Kerzu';
 $messages['ui_lang'] = 'Yezhoù diskwel';
 $messages['lang'] = 'Yezh';
 $messages['project'] = 'Raktres';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Pajenn';
 $messages['needle'] = 'Klask';
 $messages['skipversions'] = 'Atav lammat dreist x stumm';
@@ -53,6 +55,7 @@ $messages['start'] = 'Deroù';
 $messages['reset'] = 'Adderaouekaat';
 $messages['manual'] = 'Dornlevr';
 $messages['contact'] = 'Darempred';
+$messages['source_code'] = 'Kod mammenn war c\'hGitHub';
 $messages['get_less_versions'] = 'Gallout a rafe hoc\'h enklask mont da gerc\'hat __NUMREVISIONS__ adweladenn en ur wech. Evit gwareziñ ar servijer ne vezit lezet da gerc\'hat nemet __ALLOWEDREVISIONS__ adweladenn dre c\'halv. Cheñchit an arventennoù, mar plij, pe dibabit an doare klask binarel !';
 $messages['wrong_skips'] = 'Arventennoù fall : ma vez lamet ar stummoù kentañ da vezañ lamet __VERSIONSTOSKIP__, neuze ne vo ket pledet gant stumm ebet eus ar stummmoù __VERSIONSTOSEARCH__ da glask.';
 $messages['search_in_progress_text'] = 'Stumm istor  _ARTICLELINK_ a zo klasket evit <b>_NEEDLE_</b> evel testenn leun';
