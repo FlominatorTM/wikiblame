@@ -12,16 +12,16 @@
  */
 
 $messages['January'] = 'наджгоанцхой';
-$messages['February'] = 'Саькура';
-$messages['March'] = 'Муттхьал';
+$messages['February'] = 'саькура';
+$messages['March'] = 'тушола';
 $messages['April'] = 'бекарга';
-$messages['May'] = 'Села';
-$messages['June'] = 'Этинга';
-$messages['July'] = 'Баьцамеа';
-$messages['August'] = 'Мяцхали';
-$messages['September'] = 'Михий';
-$messages['October'] = 'Ардара';
-$messages['November'] = 'Лайчилла';
+$messages['May'] = 'маьтсела';
+$messages['June'] = 'аьтинга';
+$messages['July'] = 'кӀимарса';
+$messages['August'] = 'маьцхали';
+$messages['September'] = 'тов';
+$messages['October'] = 'ардара';
+$messages['November'] = 'лайчилла';
 $messages['December'] = 'оагӀой';
 $messages['ui_lang'] = 'Интерфейса мотт';
 $messages['lang'] = 'Мотт';
