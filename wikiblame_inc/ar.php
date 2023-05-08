@@ -8,6 +8,7 @@
  * @file
  *
  * @author Aboulouei1
+ * @author Alshamiri1
  * @author Ciphers
  * @author DRIHEM
  * @author FiberAhmed
@@ -73,6 +74,7 @@ $messages['manual'] = 'دليل الاستعمال';
 $messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
 $messages['contact'] = 'اتصل';
 $messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
+$messages['source_code'] = 'كود المصدر على جيثب';
 $messages['get_less_versions'] = 'يمكن لبحثك أن يضم __NUMREVISIONS__ تعديلات في وقت واحد. يُسمح لك بالبحث عن __ALLOWEDREVISIONS__ لكل طلب؛ وذلك لحماية الخادم. رجاءً قم بتعديل الإعدادات أو حول طريقة البحث إلى ثنائي!';
 $messages['wrong_skips'] = 'إعدادات غير صحيحة: لو أن أول نسخ __VERSIONSTOSKIP__ تم تجاوزها، إذا فلا شيء من نسخ __VERSIONSTOSEARCH__ للبحث ستتم معالجته.';
 $messages['search_in_progress_text'] = 'تاريخ مراجعات _ARTICLELINK_ يجري البحث عنه <b>_NEEDLE_</b/> كنص عادي';
