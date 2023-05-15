@@ -12,6 +12,7 @@
  * @author Diskdance
  * @author GuoPC
  * @author Hydra
+ * @author Kishinsagi
  * @author Liuxinyu970226
  * @author Od1n
  * @author PhiLiP
@@ -66,6 +67,7 @@ $messages['reset'] = '重置';
 $messages['manual'] = '手册';
 $messages['manual_link'] = 'https://zh.wikipedia.org/wiki/User:Gqqnb/WikiBlame文档';
 $messages['contact'] = '联系';
+$messages['source_code'] = 'GitHub上的源代码';
 $messages['get_less_versions'] = '您的搜索可能一次查询 __NUMREVISIONS__ 个修订版本。为了保护服务器，您的每次调用只被允许查询 __ALLOWEDREVISIONS__ 个修订。请更改设置或切换查询模式到二分法搜索！';
 $messages['wrong_skips'] = '错误的设置：如果跳过__VERSIONSTOSKIP__个版本，那么要搜索的__VERSIONSTOSEARCH__个版本将不会被处理。';
 $messages['search_in_progress_text'] = '_ARTICLELINK_的版本记录正在以<b>_NEEDLE_</b>作为纯文本进行搜索';
