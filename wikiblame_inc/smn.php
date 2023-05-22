@@ -27,3 +27,4 @@ $messages['lang'] = 'Kielâ';
 $messages['project'] = 'Proojeekt';
 $messages['article'] = 'Sijđo';
 $messages['contact'] = 'Vääldi ohtâvuođâ';
+$messages['source_code'] = 'Käldeekoodi GitHubist';
