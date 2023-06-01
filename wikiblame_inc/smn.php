@@ -26,5 +26,6 @@ $messages['December'] = 'juovlâmáánu';
 $messages['lang'] = 'Kielâ';
 $messages['project'] = 'Proojeekt';
 $messages['article'] = 'Sijđo';
+$messages['order'] = 'Oornig';
 $messages['contact'] = 'Vääldi ohtâvuođâ';
 $messages['source_code'] = 'Käldeekoodi GitHubist';

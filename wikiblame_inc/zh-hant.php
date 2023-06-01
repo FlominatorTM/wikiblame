@@ -21,6 +21,7 @@
  * @author Reke
  * @author Shangkuanlc
  * @author Tranve
+ * @author Winston Sung
  * @author Wrightbus
  * @author Xiplus
  * @author 捍粵者
@@ -40,7 +41,7 @@ $messages['November'] = '11月';
 $messages['December'] = '12月';
 $messages['ui_lang'] = '顯示語言';
 $messages['lang'] = '語言';
-$messages['project'] = '計畫';
+$messages['project'] = '專案';
 $messages['tld'] = '網域';
 $messages['tld_example'] = 'org、com、net…';
 $messages['article'] = '頁面';
