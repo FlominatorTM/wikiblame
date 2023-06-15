@@ -10,6 +10,7 @@
  * @author Andibing
  * @author Cblair91
  * @author Chase me ladies, I'm the Cavalry
+ * @author Mako001
  */
 
 $messages['January'] = 'January';
@@ -47,11 +48,12 @@ $messages['ignore_minors'] = 'Ignore minor changes (experimental)';
 $messages['force_wikitags'] = 'Force searching for wikitext';
 $messages['from_url'] = 'from URL';
 $messages['paste_url'] = 'Please paste URL to MediaWiki page';
-$messages['no_valid_url'] = 'This is no valid MediaWiki URL';
+$messages['no_valid_url'] = 'This is not a valid MediaWiki URL';
 $messages['start'] = 'Start';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Manual';
 $messages['contact'] = 'Contact';
+$messages['source_code'] = 'Source code on GitHub';
 $messages['get_less_versions'] = 'Your search might query __NUMREVISIONS__ revisions at one time. In order to protect the server, you are only allowed to query for __ALLOWEDREVISIONS__ per call. Please change the settings or switch the search method to binary!';
 $messages['wrong_skips'] = 'Wrong settings: If the first __VERSIONSTOSKIP__ versions are skipped, then none of the __VERSIONSTOSEARCH__ versions to be searched will be processed.';
 $messages['search_in_progress_text'] = 'The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> as plain text';
