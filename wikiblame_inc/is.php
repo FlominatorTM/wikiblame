@@ -53,6 +53,7 @@ $messages['start'] = 'Byrja';
 $messages['reset'] = 'Endursetja';
 $messages['manual'] = 'Leiðbeiningar';
 $messages['contact'] = 'Hafa samband';
+$messages['source_code'] = 'Frumkóði á GitHub';
 $messages['get_less_versions'] = 'Leitin gæti farið yfir __NUMREVISIONS__ útgáfur í einu. Til þess að vernda vefþjóninn, þá er eingöngu heimilt að leita að __ALLOWEDREVISIONS__ í einu. Vinsamlegast breyttu stillingunum eða breyttu yfir í tvíundaleit!';
 $messages['wrong_skips'] = 'Vitlaus leitarskilyrði: Ef fyrstu útgáfunum __VERSIONSTOSKIP__ er sleppt, þá eru engar útgáfur __VERSIONSTOSEARCH__ eftir til að leita í.';
 $messages['search_in_progress_text'] = 'Leita í breytingarskrá _ARTICLELINK_ eftir <b>_NEEDLE_</b> sem einföldum texta';
