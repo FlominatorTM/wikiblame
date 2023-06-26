@@ -10,6 +10,7 @@
  * @author Blackisnewyellow
  * @author Ilnur efende
  * @author Ерней
+ * @author З. ӘЙЛЕ
  * @author Ильнар
  */
 
@@ -55,15 +56,17 @@ $messages['start'] = 'Башлау';
 $messages['reset'] = 'Кире кую';
 $messages['manual'] = 'Кулланма';
 $messages['contact'] = 'Элемтә';
+$messages['source_code'] = 'GitHubтагы чыганак код';
 $messages['get_less_versions'] = 'Сезнең сорау берьюлы __NUMREVISIONS__ юрамага кадәр күрсәтергә мөмкин. Серверны саклау максатыннан сез __ALLOWEDREVISIONS__ юрамадан артык сорый алмыйсыз. Көйләнмәләрне үзгәртегез яки икеле эзләү режимына күчегезче!';
 $messages['wrong_skips'] = 'Хаталы көйләүләр. Әгәрдә беренче __VERSIONSTOSKIP__ юрамлар төшереп калдырылса,  __VERSIONSTOSEARCH__ юраманың берсе эзләүдә күрсәтелмәячәк.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b>  -  _ARTICLELINK_  юрамаларының тарихы арасында гади текст кебек эзләнә';
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> - _ARTICLELINK_  юрамаларының тарихы арасында вики текст буларак эзләнә';
 $messages['no_differences'] = 'Табылган юрамалар арасында аермалар юк.';
 $messages['inverse_restart'] = 'Өстәүләр яисә куюлар табылмады. Бәлкем, алар соңрак куелгандыр?';
+$messages['inverse_stuck'] = 'Бу _NUMBEROFVERSIONS_ версияләр эчендә кертүләр һәм бетерүләр табылмады. Бәлки, эзләгән өзек иртәрәк бетерелгәндер?';
 $messages['inverse_earliest'] = 'Искерәк юрамаларда эзләргә';
 $messages['first_version'] = 'Үзгәреш беренче яки соңгы юрамада булырга тиеш идеме?';
-$messages['first_version_present'] = '__NEEDLE__ элеккеге юрамаларда да бар иде, __REVISIONLINK__ юрамасыннан башлап.';
+$messages['first_version_present'] = '__REVISIONLINK__ юрамасыннан башлап, __NEEDLE__ элеккеге юрамаларда да бар иде.';
 $messages['earlier_versions_available'] = 'Бәлки искерәк юрамалар да бардыр.';
 $messages['execution_time'] = 'Башкару вакыты: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Битнең  _NUMBEROFVERSIONS_ юрамасы табылды';
@@ -71,7 +74,9 @@ $messages['please_wait'] = 'Көтегез әле…';
 $messages['binary_test'] = '_SOURCENUMBER_ юрамасыннан күчеш барышында _FIRSTDATEVERSION_ аермалыклары белән _FIRSTNUMBER_ һәм _SECONDNUMBER_ юрамаларын тикшерү:';
 $messages['dead_end'] = 'Тупик (кире кайтару, яки үзгәртүләр сугышы нәтиҗәсендә барлыкка килгәндер)';
 $messages['once_more'] = 'Тагын бер кат, хис белән:';
-$messages['binary_enough'] = 'Кайбер үзгәртүләр барышында хаталар китте. Бәлки, көйләнмәләрне үзгәртү булыр.';
+$messages['delete_from_here'] = ' _NUMBEROFVERSIONS_ элегерәк редакцияләрне бетерү, чөнки _NUMBER OF VERSIONS_ бетерү соңрак башкарылырга тиеш иде.';
+$messages['delete_until_here'] = '_NUMBEROFVERSIONS_ соңгы версия бетерелгән, чөнки бетерү иртәрәк башкарылырга тиеш иде.';
+$messages['binary_enough'] = 'Кабатлау өчен җитәрлек тырышлыклар куелды, мәкаләләр тарихы шактый буталчык, зинһар, кайбер көйләүләрне үзгәртергә тырышыгыз.';
 $messages['insertion_found'] = 'Өстәмләр LEFT_VERSION һәм RIGHT_VERSION арасында табылды';
 $messages['deletion_found'] = 'Бетерүләр LEFT_VERSION һәм RIGHT_VERSION арасында табылды';
 $messages['here'] = 'монда';
