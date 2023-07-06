@@ -9,6 +9,7 @@
  *
  * @author Ankit
  * @author Ashok modhvadia
+ * @author CptViraj
  * @author Dsvyas
  */
 
@@ -27,6 +28,7 @@ $messages['December'] = 'ડિસેમ્બર';
 $messages['ui_lang'] = 'ભાષા દર્શાવો';
 $messages['lang'] = 'ભાષા';
 $messages['project'] = 'પરિયોજના';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'પાનું';
 $messages['needle'] = 'ના માટે શોધો';
 $messages['skipversions'] = 'હંમેશા x આવૃત્તિઓ અવગણો';
@@ -34,6 +36,7 @@ $messages['ignorefirst'] = 'પ્રથમ x આવૃત્તિઓ અવગ
 $messages['limit'] = 'ચકાસવાની આવૃત્તિઓ';
 $messages['start_date'] = 'આરંભ તારીખ';
 $messages['date_format'] = 'MM DD, YYYY';
+$messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'ક્રમ';
 $messages['newest_first'] = 'નવું પહેલાં';
 $messages['oldest_first'] = 'જૂનું પહેલાં';
@@ -44,7 +47,9 @@ $messages['linear'] = 'રેખીય';
 $messages['interpolated'] = 'બાઇનરી (ઘણી આવૃત્તિઓ માટે ઝડપી છે)';
 $messages['ignore_minors'] = 'નાના ફેરફારો અવગણો (પરીક્ષણીય)';
 $messages['force_wikitags'] = 'wikitext માટે શોધવા માટે દબાણ કરો';
+$messages['from_url'] = 'URL માંથી';
 $messages['start'] = 'આરંભ';
 $messages['reset'] = 'ફરી ગોઠવો';
 $messages['manual'] = 'જાતે';
 $messages['contact'] = 'સંપર્ક';
+$messages['please_wait'] = 'રાહ જોવા વિનંતી...';
