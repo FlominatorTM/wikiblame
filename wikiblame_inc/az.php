@@ -10,6 +10,7 @@
  * @author AZISS
  * @author Archaeodontosaurus
  * @author Cekli829
+ * @author NMW03
  * @author Sortilegus
  */
 
@@ -28,6 +29,8 @@ $messages['December'] = 'Dekabr';
 $messages['ui_lang'] = 'Displey dili';
 $messages['lang'] = 'Dil';
 $messages['project'] = 'Layihə';
+$messages['tld'] = 'Domen';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Səhifə';
 $messages['needle'] = 'Axtarış üçün';
 $messages['skipversions'] = 'Həmişə X versiyaları buraxmaq';
@@ -53,6 +56,7 @@ $messages['start'] = 'Başla';
 $messages['reset'] = 'Qur';
 $messages['manual'] = 'Əl ilə';
 $messages['contact'] = 'Əlaqə';
+$messages['source_code'] = 'GitHub-da mənbə kodu';
 $messages['get_less_versions'] = 'Sizin sorğunuz bir dəfə üçün __NUMREVISIONS__ sayda versiya verə bilər. Serverin müdafiəsi üçün, birdəfəyə  __ALLOWEDREVISIONS__ dəfədən çox sorğu eləməyə izin verilmir. Zəhmət olmasa, kökləmələri dəyişdirin və ya axtarışınızı ikili sistem rejimində aparın!';
 $messages['wrong_skips'] = 'Səhv nizamlamalar. Əgər ilk __VERSIONSTOSKIP__ versiyalar buraxılacaqsa, onda, axtarış üçün heç bir __VERSIONSTOSEARCH__ versiya  emal edilməyəcəkdir.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> _ARTICLELINK_ üçün versiya tarixcəsində adi mətn kimi axtarılır';
