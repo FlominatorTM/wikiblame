@@ -55,6 +55,7 @@ $messages['start'] = 'Inizzia';
 $messages['reset'] = 'Reimposta';
 $messages['manual'] = 'Guida';
 $messages['contact'] = 'Cuntatto';
+$messages['source_code'] = 'Codice sorgente n\'coppa a GitHub';
 $messages['get_less_versions'] = '\'A ricerca putesse cuntrullà __NUMREVISIONS__ rivisione \'a vota. Pe\' pruteggere \'o server, site permesso \'addimannà sulamente __ALLOWEDREVISIONS__ rivisione \'a vota. Pe\' piacere cagnate \'e mpustaziune, o pure passate a \'o sistema \'e ricerca binario!';
 $messages['wrong_skips'] = 'Mpustaziune sbagliate: si \'e primme __VERSIONSTOSKIP__
 versiune so\' zumpate, allora nisciuna d\' \'e __VERSIONSTOSEARCH__ versiune \'a truvà sarrà prucessata.';

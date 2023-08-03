@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Bosogo
  * @author Growingup
  * @author Janatkg
  * @author Maksat
@@ -27,6 +28,7 @@ $messages['December'] = 'Декабрь (Бештин айы)';
 $messages['ui_lang'] = 'Көрсөтүү тили';
 $messages['lang'] = 'Тил';
 $messages['project'] = 'Долбоор';
+$messages['tld'] = 'Домен';
 $messages['article'] = 'Барак';
 $messages['needle'] = 'Издөө сабы';
 $messages['skipversions'] = 'Ар дайым x версиясын өткөрүп жиберүү';
