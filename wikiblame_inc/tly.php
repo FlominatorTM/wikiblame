@@ -54,6 +54,7 @@ $messages['start'] = 'Бино кардеј';
 $messages['reset'] = 'Ләғв кардеј';
 $messages['manual'] = 'Дәрсәвон';
 $messages['contact'] = 'Мәлумот бо әлоғә гәтеј';
+$messages['source_code'] = 'GitHub-də iminə kod';
 $messages['get_less_versions'] = 'Шымә хәбәсә бәзне дој__NUMREVISIONS__ рәвојәтон бә и бәжән. Сервери мыдофијә горәнә, хәбәсә гәтејәдә бәпе __ALLOWEDREVISIONS__ рәвојәтонәдә ве ныбо. Заһмәт ныбо, кукон дәгиш быкәјон ја бә нәве дыкәрәјининә режим дәвардән!';
 $messages['wrong_skips'] = 'Сәһвә кукон һестин. Гирәм иминә __VERSIONSTOSKIP__ рәвојәтон вадоә бәбен һич гылә бы __VERSIONSTOSEARCH__ нәве рәвојәтонәдә ко ныбәка.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> отырнијә бејдә рәвојәтон тарыхәдә _ARTICLELINK_ бәнә сојә мәтни';
