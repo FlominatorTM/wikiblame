@@ -11,22 +11,23 @@
  * @author Haqmar
  * @author MR973
  * @author Sagan
+ * @author З. ӘЙЛЕ
  * @author Ләйсән
  * @author Рустам Нурыев
  */
 
-$messages['January'] = 'Ғинуар';
-$messages['February'] = 'Февраль';
-$messages['March'] = 'Март';
-$messages['April'] = 'Апрель';
-$messages['May'] = 'Май';
-$messages['June'] = 'Июнь';
-$messages['July'] = 'Июль';
-$messages['August'] = 'Август';
-$messages['September'] = 'Сентябрь';
-$messages['October'] = 'Октябрь';
-$messages['November'] = 'Ноябрь';
-$messages['December'] = 'Декабрь';
+$messages['January'] = 'ғинуар';
+$messages['February'] = 'февраль';
+$messages['March'] = 'март';
+$messages['April'] = 'апрель';
+$messages['May'] = 'май';
+$messages['June'] = 'июнь';
+$messages['July'] = 'июль';
+$messages['August'] = 'август';
+$messages['September'] = 'сентябрь';
+$messages['October'] = 'октябрь';
+$messages['November'] = 'ноябрь';
+$messages['December'] = 'декабрь';
 $messages['ui_lang'] = 'Телде күрһәтеү';
 $messages['lang'] = 'Тел:';
 $messages['project'] = 'Проект:';
