@@ -8,6 +8,7 @@
  * @file
  *
  * @author Baloch Afghanistan
+ * @author Moshtank
  * @author Sultanselim baloch
  */
 
@@ -26,7 +27,7 @@ $messages['December'] = 'دسمبر';
 $messages['ui_lang'] = 'زبانء سۏج';
 $messages['lang'] = 'زبان';
 $messages['project'] = 'پروژه';
-$messages['article'] = 'دیم یا تاک';
+$messages['article'] = 'تاک';
 $messages['needle'] = 'شۏھاز پہ';
 $messages['skipversions'] = 'همواره از نسخه‌های x صرف نظر کن';
 $messages['ignorefirst'] = 'چشم‌پوشی از نخستین نسخه‌های x';
@@ -57,7 +58,7 @@ $messages['first_version_present'] = '__NEEDLE__ همچنان در نسخهٔ ا
 $messages['earlier_versions_available'] = 'احتمالاً نسخه‌های قدیمی‌تری وجود دارند.';
 $messages['execution_time'] = 'زمان اجرا: _EXECUTIONTIME_ ثانیه';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ نسخه یافت شد';
-$messages['please_wait'] = 'صبر بہ کن اݔت';
+$messages['please_wait'] = 'کمے بہ دار...';
 $messages['binary_test'] = 'مقایسهٔ تفاوت‌های بین _FIRSTNUMBER_ و _SECONDNUMBER_در  _FIRSTDATEVERSION_ در حالی که از _SOURCENUMBER_ می‌آید:';
 $messages['dead_end'] = 'چند بن‌بست گرفته شد (احتمالاً ناشی از واگردانی‌ها یا جنگ‌های ویرایشی)';
 $messages['once_more'] = 'دگہ برے، گۏ حس:';

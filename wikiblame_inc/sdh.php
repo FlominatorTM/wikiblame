@@ -8,13 +8,14 @@
  * @file
  *
  * @author Kurdbuddha
+ * @author TerranBoy
  */
 
-$messages['January'] = 'ژانویە';
+$messages['January'] = 'ژانڤیە';
 $messages['February'] = 'فڤریە';
 $messages['March'] = 'مارس';
 $messages['April'] = 'ئاڤریل';
-$messages['May'] = 'مەی';
+$messages['May'] = 'مێ';
 $messages['June'] = 'ژووەن';
 $messages['July'] = 'ژووئیە';
 $messages['August'] = 'ئووت';
