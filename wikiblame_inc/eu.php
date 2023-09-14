@@ -9,6 +9,7 @@
  *
  * @author An13sa
  * @author EukeneFL
+ * @author Juele
  * @author Kobazulo
  * @author Mikel Ibaiba
  * @author Sator
@@ -30,6 +31,8 @@ $messages['December'] = 'abendua';
 $messages['ui_lang'] = 'Bistaratze hizkuntza';
 $messages['lang'] = 'Hizkuntza';
 $messages['project'] = 'Proiektua';
+$messages['tld'] = 'Domeinua';
+$messages['tld_example'] = 'org, com, net,...';
 $messages['article'] = 'Orrialdea';
 $messages['needle'] = 'Bilatu';
 $messages['skipversions'] = 'Beti x bertsio saltatu';
@@ -55,6 +58,7 @@ $messages['start'] = 'Hasiera';
 $messages['reset'] = 'Hasieratu';
 $messages['manual'] = 'Gidaliburua';
 $messages['contact'] = 'Kontaktatu';
+$messages['source_code'] = 'Iturburu kodea GitHub-en';
 $messages['get_less_versions'] = 'Zure bilaketak __NUMREVISIONS__ aldi bakarreko berrikuspenak ekar ditzake. Zerbitzaria babesteko, soilik kontsultatu ahalko duzu__ALLOWEDREVISIONS__ dei bakoitzeko. Mesedez alda itzazu ezarpenak edo alda ezazu bilaketa metodo bitarrara!';
 $messages['wrong_skips'] = 'Ezarpen okerrak: Lehenengo bertsioak__ VERSIONSTOSKIP__ saltokatuta badaude, orduan bilatu beharreko bertsioetatik bat ere ez __VERSIONSTOSEARCH__ da prozesatuko.';
 $messages['search_in_progress_text'] = 'The version history of _ARTICLELINK_ is being searched for <b>_NEEDLE_</b> testu zuri gisa';
