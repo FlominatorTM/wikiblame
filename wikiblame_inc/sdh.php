@@ -27,3 +27,4 @@ $messages['lang'] = 'زوان';
 $messages['project'] = 'پرۆژە';
 $messages['article'] = 'پەڕە';
 $messages['start'] = 'دەسپێکردن';
+$messages['here'] = 'ئێرە';

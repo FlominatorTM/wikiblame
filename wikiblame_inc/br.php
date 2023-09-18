@@ -29,6 +29,7 @@ $messages['December'] = 'Kerzu';
 $messages['ui_lang'] = 'Yezhoù diskwel';
 $messages['lang'] = 'Yezh';
 $messages['project'] = 'Raktres';
+$messages['tld'] = 'Domani';
 $messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Pajenn';
 $messages['needle'] = 'Klask';
