@@ -10,6 +10,7 @@
  * @author 578985s
  * @author A2093064
  * @author Bowleerin
+ * @author Cookai1205
  * @author Diskdance
  * @author Frankou
  * @author Kly
@@ -43,7 +44,7 @@ $messages['ui_lang'] = '顯示語言';
 $messages['lang'] = '語言';
 $messages['project'] = '專案';
 $messages['tld'] = '網域';
-$messages['tld_example'] = 'org、com、net…';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = '頁面';
 $messages['needle'] = '搜尋';
 $messages['skipversions'] = '永遠跳過的版本數量';
@@ -55,7 +56,7 @@ $messages['revision_date_format'] = '%Y年%B%d日 %H:%M';
 $messages['order'] = '排列次序';
 $messages['newest_first'] = '從最近開始';
 $messages['oldest_first'] = '從最早開始';
-$messages['binary_search_inverse'] = '尋找去除相關文字的編輯 （僅適用於二分法）';
+$messages['binary_search_inverse'] = '尋找去除相關文字的編輯（僅適用於二分法）';
 $messages['search_method'] = '搜尋方式';
 $messages['binary'] = '二分法';
 $messages['binary_in_wp'] = 'https://zh.wikipedia.org/wiki/二分搜尋演算法';
@@ -85,7 +86,7 @@ $messages['latest_version_present'] = '__NEEDLE__ 已經存在於追溯到 __REV
 $messages['earlier_versions_available'] = '可能有較舊的修訂版本。';
 $messages['execution_time'] = '執行時間：_EXECUTIONTIME_ 秒';
 $messages['versions_found'] = '找到 _NUMBEROFVERSIONS_ 個版本';
-$messages['please_wait'] = '請稍候...';
+$messages['please_wait'] = '請稍候…';
 $messages['binary_test'] = '在 _SOURCENUMBER_ 個版本中，正在比較在第 _FIRSTNUMBER_ 個和第 _SECONDNUMBER_ 個版本之間 _FIRSTDATEVERSION_ 的差異：';
 $messages['dead_end'] = '找到一些死胡同（可能由回退或編輯戰所造成）';
 $messages['once_more'] = '再一次，有感而發：';
