@@ -9,6 +9,7 @@
  *
  * @author Aotake
  * @author Flominator
+ * @author Foomin10
  * @author Fryed-peach
  * @author Gulpin
  * @author Od1n
@@ -44,8 +45,8 @@ $messages['tld'] = 'ドメイン';
 $messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'ページ';
 $messages['needle'] = '検索語';
-$messages['skipversions'] = '常にX版をスキップ';
-$messages['ignorefirst'] = '先頭のX版を無視';
+$messages['skipversions'] = '常にスキップする版数';
+$messages['ignorefirst'] = '無視する先頭の版数';
 $messages['limit'] = '検査する版数';
 $messages['start_date'] = '開始日';
 $messages['date_format'] = 'YYYY年MM月DD日';
@@ -58,7 +59,7 @@ $messages['search_method'] = '探索方法';
 $messages['binary'] = '二分探索';
 $messages['binary_in_wp'] = 'https://ja.wikipedia.org/wiki/二分探索';
 $messages['linear'] = '線型';
-$messages['interpolated'] = '二分探索 (版が多い場合はより速い)';
+$messages['interpolated'] = '二分探索 (版が多い場合は速い)';
 $messages['ignore_minors'] = '細部の編集を無視 (実験的)';
 $messages['force_wikitags'] = 'ウィキテキストとして検索を強制';
 $messages['from_url'] = 'URLから';
