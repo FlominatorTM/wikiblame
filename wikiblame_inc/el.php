@@ -15,6 +15,7 @@
  * @author Glavkos
  * @author Jimkats
  * @author KATRINE1992
+ * @author McDutchie
  * @author NikosLikomitros
  * @author Nikosgranturismogt
  * @author Omnipaedista
@@ -70,7 +71,7 @@ $messages['search_in_progress_text'] = 'Στο ιστορικό εκδόσεων
 $messages['search_in_progress_wikitags'] = 'Στο ιστορικό εκδόσεων του _ARTICLELINK_ γίνεται αναζήτηση για <b>_NEEDLE_</b> ως κείμενο wiki';
 $messages['no_differences'] = 'Δεν βρέθηκαν  διαφορές στην αναζητηθείσες αναθεωρήσεις.';
 $messages['inverse_restart'] = 'Δεν βρέθηκε εισαγωγή ή αφαίρεση, ήταν ο όρος αναζήτησης που εισήχθη αργότερα;';
-$messages['inverse_stuck'] = 'Δεν βρέθηκε εισαγωγή ή διαγραφή σε αυτές τις NUMBEROFREVISIONS_revisions. Μήπως διαγράφηκε ο όρο =ς αναζήτησης νωρίτερα;';
+$messages['inverse_stuck'] = 'Δεν βρέθηκε εισαγωγή ή διαγραφή σε αυτές τις _NUMBEROFVERSIONS_ revisions. Μήπως διαγράφηκε ο όρο =ς αναζήτησης νωρίτερα;';
 $messages['inverse_earliest'] = 'Αναζητήστε σε προηγούμενες επαναλήψεις';
 $messages['first_version'] = 'Η αλλαγή πρέπει να έχει συμβεί στην πρώτη ή στην τελευταία αναθεώρηση;';
 $messages['first_version_present'] = '__NEEDLE__ υπήρχε ήδη κατά την παλαιότερη αναθεώρηση που βρέθηκε και αναζητήθηκε από __REVISIONLINK__.';

@@ -11,6 +11,7 @@
  * @author Beta16
  * @author Civvì
  * @author Codicorumus
+ * @author Daimona Eaytoy
  * @author Darth Kule
  * @author Flominator
  * @author Fringio
@@ -92,7 +93,7 @@ $messages['binary_test'] = 'Confronto delle differenze nella revisione del _FIRS
 $messages['dead_end'] = 'Trovato un punto morto (probabilmente causato da rollback o edit war)';
 $messages['once_more'] = 'Ancora una volta, con sentimento:';
 $messages['delete_from_here'] = 'Cancellando _NUMBEROFVERSIONS_ versioni precedenti, poiché la rimozione deve essere stata eseguita in seguito';
-$messages['delete_until_here'] = 'Cancellando _NUMBEROFVERSIONS_ versioni successive, poiché l\'inserimento deve essere stata eseguita in precedenza';
+$messages['delete_until_here'] = 'Cancellando _NUMBEROFVERSIONS_ versioni successive, poiché l\'inserimento deve essere stato eseguito in precedenza';
 $messages['binary_enough'] = 'Eseguiti sufficienti tentativi, la cronologia della voce è purtroppo abbastanza in disordine, prova a cambiare qualche impostazione.';
 $messages['insertion_found'] = 'Inserimento della parola trovato fra la revisione del LEFT_VERSION e quella del RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancellazione trovata fra LEFT_VERSION e RIGHT_VERSION';
