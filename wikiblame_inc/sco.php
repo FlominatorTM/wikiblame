@@ -9,6 +9,7 @@
  *
  * @author AmaryllisGardener
  * @author Avicennasis
+ * @author CiphriusKane
  * @author John Reid
  * @author MJL
  */
@@ -38,7 +39,7 @@ $messages['date_format'] = 'DD MM, YYYY';
 $messages['order'] = 'Order';
 $messages['newest_first'] = 'latest foremaist';
 $messages['oldest_first'] = 'auldest foremaist';
-$messages['binary_search_inverse'] = 'Luik fer removal o tex (binary yinly)';
+$messages['binary_search_inverse'] = 'Luik fur remuival o tex (binary anely)';
 $messages['search_method'] = 'Rake method';
 $messages['binary'] = 'binary';
 $messages['linear'] = 'linear';
