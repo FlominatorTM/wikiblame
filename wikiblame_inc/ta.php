@@ -8,6 +8,7 @@
  * @file
  *
  * @author ElangoRamanujam
+ * @author Fahimrazick
  * @author Sank
  * @author Shanmugamp7
  * @author Siddhan
@@ -82,6 +83,6 @@ $messages['insertion_found'] = 'LEFT_VERSION மற்றும் RIGHT_VERSION
 $messages['deletion_found'] = 'LEFT_VERSION மற்றும் RIGHT_VERSION இடையே நீக்கம் கண்டறியப்பட்டது';
 $messages['here'] = 'இங்கே';
 $messages['help_translating'] = 'translatewiki.net இல் மொழிபெயர்க்க உதவவும்.';
-$messages['start_here'] = 'இங்கிருந்து தேடுக';
+$messages['start_here'] = 'இங்கிருந்து தேடு';
 $messages['too_much_versions'] = 'உங்கள் வினவல் வரம்பான __VERSIONLIMIT__ பதிப்புகளை அடைந்துவிட்டீர்கள். __WAITMINUTES__ நிமிடங்களில் மீண்டும் முயற்சிக்கவும் அல்லது பைனரி தேடலுக்கு மாறவும். சிரமத்திற்கு மன்னிக்கவும்.';
 $messages['not_found_at_all'] = 'உங்கள் தேடல் சொல்லை  கண்டறிய முடியவில்லை.  அமைப்புகளை சரி பார்த்துவிட்டு மறுபடியும் முயற்சிக்கவும்.';
