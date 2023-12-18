@@ -15,6 +15,7 @@
  * @author Hhaboh162002
  * @author Houcinee1
  * @author Meno25
+ * @author Mido
  * @author Moud hosny
  * @author MuratTheTurkish
  * @author Mutarjem horr
@@ -52,7 +53,7 @@ $messages['skipversions'] = 'تخطَّ دائما النسخ س';
 $messages['ignorefirst'] = 'أهمل النسخة س الأولى';
 $messages['limit'] = 'نسخ للمراجعة';
 $messages['start_date'] = 'تاريخ البداية';
-$messages['date_format'] = 'يي شش سسسس';
+$messages['date_format'] = 'DD MM, YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'الترتيب';
 $messages['newest_first'] = 'الآخر أولا';
@@ -82,7 +83,7 @@ $messages['search_in_progress_wikitags'] = 'تاريخ مراجعات _ARTICLELI
 $messages['no_differences'] = 'لا توجد اختلافات في البحث في المراجعات.';
 $messages['inverse_restart'] = 'لا وجود لإدراج أو إزالة، هل تم إدخال مصطلح البحث في وقت لاحق؟';
 $messages['inverse_stuck'] = 'لم يتم العثور على إدراج أو إزالة في هذه ال_NUMBEROFVERSIONS_ مراجعات، هل ربما تمت إزالة عبارة البحث في وقت سابق؟';
-$messages['inverse_earliest'] = 'البحث في المراجات السابقة';
+$messages['inverse_earliest'] = 'البحث في المراجعات السابقة';
 $messages['first_version'] = 'يجب أن يكون قد حدث تغيير في المراجعة الأولى أو الأخيرة؟';
 $messages['first_version_present'] = '__NEEDLE__ موجود بالفعل في أقدم مراجعة بحثت عنها منذ __REVISIONLINK__ .';
 $messages['latest_version_present'] = '__NEEDLE__ كانت موجودة بالفعل في أصغر مراجعة حثت عنها والتي يرجع تاريخها إلى __REVISIONLINK__.';
