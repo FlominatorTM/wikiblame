@@ -8,6 +8,7 @@
  * @file
  *
  * @author Blahma
+ * @author Iketsi
  * @author Lucas
  * @author Mihxil
  * @author Mirin
@@ -58,6 +59,7 @@ $messages['start'] = 'Komenci';
 $messages['reset'] = 'Hodiaŭ';
 $messages['manual'] = 'Manlibro';
 $messages['contact'] = 'Kontaktigi';
+$messages['source_code'] = 'Fontkodo ĉe GitHub';
 $messages['get_less_versions'] = 'Via serĉpeto povus enhavi maksimume __NUMREVISIONS__  da revizioj. Cele al protekto de la servilo, vi rajtas nur peti po __ALLOWEDREVISIONS__  da revizioj. Bonvolu reagordi, aŭ ŝanĝi la serĉmetodon al binara interpolado.';
 $messages['wrong_skips'] = 'Malĝustaj agordoj: Se la unuaj __VERSIONSTOSKIP__ versioj transsaltatas, tiam neniuj el la __VERSIONSTOSEARCH__  versioj serĉotaj estos traktataj.';
 $messages['search_in_progress_text'] = 'La versihistorio de _ARTICLELINK_  estas serĉata pri <b>_NEEDLE_</b> kiel plata teksto';
