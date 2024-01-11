@@ -53,6 +53,7 @@ $messages['start'] = 'Accumenza';
 $messages['reset'] = 'Azzera';
 $messages['manual'] = 'Manuali';
 $messages['contact'] = 'Cuntattu';
+$messages['source_code'] = 'Còdici surgenti supra GitHub';
 $messages['get_less_versions'] = 'L\'arricerca putissi cuntrullari __NUMREVISIONS__ rivisioni nta na vota. Ô fini di prutèggiri lu server, pirò, si ponnu cuntrullari surtantu __ALLOWEDREVISIONS__ rivisioni pi vota. Pi favuri cancia li mpustazzioni, oppuru passa ô mètudu d\'arricerca binariu!';
 $messages['wrong_skips'] = 'Mpustazzioni sbagghiati: si li primi __VERSIONSTOSKIP__
 virsioni vennu sautati, allura nudda dê __VERSIONSTOSEARCH__ virsioni
