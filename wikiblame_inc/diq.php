@@ -9,6 +9,7 @@
  *
  * @author Asmen
  * @author Erdemaslancan
+ * @author GolyatGeri
  * @author Gorizon
  * @author Gırd
  * @author Kumkumuk
@@ -33,6 +34,8 @@ $messages['December'] = 'Kanun';
 $messages['ui_lang'] = 'Zıwani bımocne';
 $messages['lang'] = 'Zıwan';
 $messages['project'] = 'Proce';
+$messages['tld'] = 'Domain';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Pele';
 $messages['needle'] = 'Cı geyre';
 $messages['skipversions'] = 'Tım u tım versiyona x serçekere';
@@ -58,6 +61,7 @@ $messages['start'] = 'Suru bık';
 $messages['reset'] = 'Raçarne';
 $messages['manual'] = 'Manuel';
 $messages['contact'] = 'İrtıbat';
+$messages['source_code'] = 'Çıme kodo GitHub dero';
 $messages['get_less_versions'] = 'şıma nu fın de __NUMREVISIONS__ revizyon şeni bıvini. herg vinayışi re  __ALLOWEDREVISIONS__ revizyoni re kısa de ben o.Re ca kem ne şıma weçenegani do bıvırni.';
 $messages['wrong_skips'] = 'Xırab eyar krrdış:Eğer ne __VERSIONSTOSKIP__ versiyoni sr çebiyo se, heç new  __VERSIONSTOSEARCH__ versiyon da thebay ri nibo';
 $messages['search_in_progress_text'] = 'Qandi _ARTICLELINK_ verin versiyoni cı  <b>_NEEDLE_</b> düz metin vineyino';
