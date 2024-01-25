@@ -1,5 +1,5 @@
 <?php
-/** Cantonese (Traditional) (粵語（繁體）)
+/** Cantonese (Traditional Han script) (粵語（繁體）)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net
