@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Bashkorttan
  * @author Comp1089
  * @author Haqmar
  * @author MR973
@@ -31,6 +32,8 @@ $messages['December'] = 'декабрь';
 $messages['ui_lang'] = 'Телде күрһәтеү';
 $messages['lang'] = 'Тел:';
 $messages['project'] = 'Проект:';
+$messages['tld'] = 'Домен';
+$messages['tld_example'] = 'org, com, net,  …';
 $messages['article'] = 'Бит';
 $messages['needle'] = 'Табырға:';
 $messages['skipversions'] = 'Һәр ваҡыт x версияларын үткәреп ебәрергә';
@@ -56,6 +59,7 @@ $messages['start'] = 'Башлау';
 $messages['reset'] = 'Reset';
 $messages['manual'] = 'Ҡулланма';
 $messages['contact'] = 'Бәйләнеш';
+$messages['source_code'] = 'GitHub сайтында сығанаҡ код';
 $messages['get_less_versions'] = 'Һеҙ талап иткән һорауға бер юлы __NUMREVISIONS__ версия булыуы мөмкин. Серверҙы һаҡлау маҡсатында, бер мөрәжәғәттә  __ALLOWEDREVISIONS__ версиянан артыҡ булмаған һорау рөхсәт ителә. Зинһар өсөн, көйләүҙәрҙе үҙгәртегеҙ йәки икеле иҫәп режимына күсегеҙ!';
 $messages['wrong_skips'] = 'Көйләүҙә хаталар. Әгәр беренсе __VERSIONSTOSKIP__ версиялар үткәрелһә, __VERSIONSTOSEARCH__ версияларының береһелә эҙләүҙә ҡатнашмаясаҡ.';
 $messages['search_in_progress_text'] = '_ARTICLELINK_ бите тарихында <b>_NEEDLE_</b> ғәҙәти текс кеүек эҙләнә.';
