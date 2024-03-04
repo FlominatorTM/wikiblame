@@ -21,6 +21,7 @@
  * @author Od1n
  * @author Pertile
  * @author Peter17
+ * @author Samthony
  * @author VegaDark
  * @author XalD
  * @author XalD <hiperion93 AT gmail.com>
@@ -42,6 +43,7 @@ $messages['ui_lang'] = 'Idioma de visualización';
 $messages['lang'] = 'Idioma';
 $messages['project'] = 'Proyecto';
 $messages['tld'] = 'Dominio';
+$messages['tld_example'] = 'org, com, net, ...';
 $messages['article'] = 'Artículo';
 $messages['needle'] = 'Búsqueda';
 $messages['skipversions'] = 'Saltar siempre x versiones';
@@ -87,7 +89,7 @@ $messages['please_wait'] = 'Espera un momento…';
 $messages['binary_test'] = 'Comparando diferencias en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ y _SECONDNUMBER_ cuando vengan de _SOURCENUMBER_:';
 $messages['dead_end'] = 'Atrapados algunos sin salida (probablemente causados por reversiones o guerras de edición)';
 $messages['once_more'] = 'Una vez más, con sentimiento:';
-$messages['delete_from_here'] = 'Eliminar_NUMBEROFVERSIONS_ earlier revisions, como ellas se han performado mas temprano';
+$messages['delete_from_here'] = 'Eliminando las primeras _NUMBEROFVERSIONS_ revisiones, ya que el borrado debe haberse realizado más adelante';
 $messages['delete_until_here'] = 'Eliminando _NUMBEROFVERSIONS_ revisiones posteriores, ya que la inserción debió haber sido realizada antes';
 $messages['binary_enough'] = 'Se realizaron suficientes reintentos. El historial del artículo está en mal estado. Trata de cambiar algunas configuraciones.';
 $messages['insertion_found'] = 'Inserción encontrada entre LEFT_VERSION y RIGHT_VERSION';
