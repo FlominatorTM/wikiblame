@@ -56,8 +56,7 @@ $messages['ignore_minors'] = 'Abaikan perubahan minor (eksperimental)';
 $messages['force_wikitags'] = '
 Paksa pencarian teks wiki';
 $messages['from_url'] = 'dari URL';
-$messages['paste_url'] = '
-Tulis URL ke halaman MediaWiki';
+$messages['paste_url'] = 'Salin URL ke halaman MediaWiki';
 $messages['no_valid_url'] = '
 Ini merupakan URL MediaWiki yang tidak benar';
 $messages['start'] = '
