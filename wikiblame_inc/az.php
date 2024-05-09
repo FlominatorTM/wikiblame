@@ -78,5 +78,5 @@ $messages['deletion_found'] = 'LEFT_VERSION və RIGHT_VERSION arasında silinmə
 $messages['here'] = 'burada';
 $messages['help_translating'] = 'Translatewiki.net-də tərcüməyə kömək etmək';
 $messages['start_here'] = 'Axtarış üçün burdan başlayın';
-$messages['too_much_versions'] = 'Versiyaların sayına görə sizə ayrılmış __VERSIONLIMIT__ sorğu limitini keçmisiniz. Zəhmət olmasa, __WAITMINUTES__ dəqiqədən sonra yenidən yoxlayın və ya ikili sistem üzrə axtarış rejiminə keçin. Narahatçılığa görə bağışlayın.';
+$messages['too_much_versions'] = 'Versiyaların sayına görə sizə ayrılmış __VERSIONLIMIT__ sorğu limitini keçmisiniz. Zəhmət olmasa, __WAITMINUTES__ dəqiqədən sonra yenidən yoxlayın və ya ikili sistem üzrə axtarış rejiminə keçin. Narahatlığa görə bağışlayın.';
 $messages['not_found_at_all'] = 'Bu sorğu üzrə heç nə tapılmadı. Kökləmələri yoxlayın və yenidən cəhd göstərin.';
