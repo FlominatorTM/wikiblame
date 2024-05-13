@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author AeyTaiNuea
  * @author 咽頭べさ
  */
 
@@ -23,7 +24,7 @@ $messages['October'] = 'ᥟᥩᥐᥱᥗᥨᥝᥱᥙᥣᥱ';
 $messages['November'] = 'ᥢᥨᥝᥱᥝᥦᥛᥱᥙᥣᥱ';
 $messages['December'] = 'ᥖᥤᥱᥔᥦᥛᥱᥙᥣᥱ';
 $messages['ui_lang'] = 'ᥢᥦᥴᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ';
-$messages['lang'] = 'ᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ';
+$messages['lang'] = 'ᥚᥣᥱ ᥔᥣᥱ ᥑᥣᥛᥰ';
 $messages['project'] = 'ᥢᥣᥲᥐᥣᥢᥴ';
 $messages['tld'] = 'ᥖᥨᥝᥱᥛᥥᥒᥰ';
 $messages['article'] = 'ᥢᥣᥲᥘᥤᥐᥲ';

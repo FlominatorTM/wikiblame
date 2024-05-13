@@ -56,11 +56,11 @@ $messages['contact'] = 'Cuntattu';
 $messages['source_code'] = 'Còdici surgenti supra GitHub';
 $messages['get_less_versions'] = 'L\'arricerca putissi cuntrullari __NUMREVISIONS__ rivisioni nta na vota. Ô fini di prutèggiri lu server, pirò, si ponnu cuntrullari surtantu __ALLOWEDREVISIONS__ rivisioni pi vota. Pi favuri cancia li mpustazzioni, oppuru passa ô mètudu d\'arricerca binariu!';
 $messages['wrong_skips'] = 'Mpustazzioni sbagghiati: si li primi __VERSIONSTOSKIP__
-virsioni vennu sautati, allura nudda dê __VERSIONSTOSEARCH__ virsioni
-d\'arricircari è prucissata.';
+virsioni vennu sautati, allura nuḍḍa dê __VERSIONSTOSEARCH__ virsioni
+d’arricircari è prucissata.';
 $messages['search_in_progress_text'] = 'La crunuluggìa di _ARTICLELINK_ veni ora analizzata a l\'arricerca di <b>_NEEDLE_</b> comu testu sìmplici';
 $messages['search_in_progress_wikitags'] = 'La crunuluggìa di _ARTICLELINK_ veni ora analizzata a l\'arricerca di <b>_NEEDLE_</b> comu testu wiki';
-$messages['no_differences'] = 'Nudda diffirenza ntê rivisioni attruvati.';
+$messages['no_differences'] = 'Nuḍḍa diffirenza ntê rivisioni attruvati.';
 $messages['first_version'] = 'Lu canciamentu è avvinutu ntâ prima o nta l\'ùrtima rivisioni?';
 $messages['first_version_present'] = '__NEEDLE__ era già prisenti ntâ prima rivisioni dô __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Ci sugnu prubbabbilmenti rivisioni cchiù vecchî.';
@@ -71,7 +71,7 @@ $messages['binary_test'] = 'Cunfruntu dê diffirenzi ntâ rivisioni dô _FIRSTDA
 $messages['dead_end'] = 'Attruvatu nu puntu mortu (prubbabbilmenti causatu di rollback o edit war)';
 $messages['once_more'] = 'Ancora na vota, cu sintimentu:';
 $messages['binary_enough'] = 'Esiguiti abbastanti tintativi, la crunuluggìa dâ vuci è purtroppu abbastanti n disòrdini, prova a canciari quarchi mpustazzioni.';
-$messages['insertion_found'] = 'Nzirimentu dâ palora attruvatu ntrâ rivisioni dô LEFT_VERSION e chidda dô RIGHT_VERSION';
+$messages['insertion_found'] = 'Nzirimentu dâ palora attruvatu ntrâ rivisioni dô LEFT_VERSION e chiḍḍa dô RIGHT_VERSION';
 $messages['deletion_found'] = 'Cancillazzioni attruvata ntra LEFT_VERSION e RIGHT_VERSION';
 $messages['here'] = 'ccà';
 $messages['help_translating'] = 'Aiuta a tradùciri nta translatewiki.net';
