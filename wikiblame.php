@@ -569,24 +569,19 @@ header('X-Accel-Buffering: no');
 	function get_revision($id)
 	{
 		set_time_limit(60);
-		global $needle, $server, $articleenc, $tags_present;
-		$url = "https://" . $server . "/w/index.php?uselang=en&title=" . $articleenc . "&oldid=" . $id;
-
+		global $server, $articleenc, $tags_present;
 		if ($tags_present) {
+			$url = "https://" . $server . "/w/index.php?uselang=en&title=" . $articleenc . "&oldid=" . $id;
 			$versionpage = curl_request($url . "&action=raw");
 		} else {
-			//remove the html tags (not included above because of <ref> and others)
-			$versionpage = curl_request($url);
-			//remove header and footer
-			$versionpage = strip_tags(chop_content($versionpage));
+			$url = "https://" . $server . "/w/api.php?action=parse&disableeditsection=&formatversion=2&prop=text&oldid=" . $id . "&format=json";
+			$json = json_decode(curl_request($url));
+			$versionpage = $json->parse->text; // ["parse"]["text"];
 		}
 
-		/*
-		//php replacement for command line
-		$url = str_replace("&", "\&", $url);
-		if(shell_exec("/usr/bin/wget --quiet -O - $url| /bin/grep \"$needle\"")!="")
-	*/
-
+		if ($versionpage == "") {
+			die("something went wrong while retrieving $url");
+		}
 		return $versionpage;
 	}
 
