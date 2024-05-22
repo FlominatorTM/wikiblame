@@ -576,12 +576,9 @@ header('X-Accel-Buffering: no');
 		} else {
 			$url = "https://" . $server . "/w/api.php?action=parse&disableeditsection=&formatversion=2&prop=text&oldid=" . $id . "&format=json";
 			$json = json_decode(curl_request($url));
-			$versionpage = $json->parse->text; // ["parse"]["text"];
+			$versionpage = strip_tags($json->parse->text);
 		}
 
-		if ($versionpage == "") {
-			die("something went wrong while retrieving $url");
-		}
 		return $versionpage;
 	}
 
