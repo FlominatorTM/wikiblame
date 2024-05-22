@@ -575,6 +575,10 @@ header('X-Accel-Buffering: no');
 			$versionpage = curl_request($url . "&action=raw");
 		} else {
 			$url = "https://" . $server . "/w/api.php?action=parse&disableeditsection=&formatversion=2&prop=text&oldid=" . $id . "&format=json";
+			if (stristr($server, "fandom")) {
+				$url = str_replace("/w/", "/", $url);
+			}
+
 			$json = json_decode(curl_request($url));
 			$versionpage = strip_tags($json->parse->text);
 		}
