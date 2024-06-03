@@ -9,6 +9,7 @@
  *
  * @author Ansumang
  * @author AnupamM
+ * @author Cabal
  * @author Gopalindians
  * @author Htt
  * @author Prong$31
@@ -34,6 +35,7 @@ $messages['ui_lang'] = 'प्रदर्शन भाषा';
 $messages['lang'] = 'भाषा';
 $messages['project'] = 'परियोजना';
 $messages['tld'] = 'डोमेन';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'पृष्ठ';
 $messages['needle'] = 'खोजें';
 $messages['skipversions'] = 'हमेशा x संस्करण छोड़े';
@@ -59,6 +61,7 @@ $messages['start'] = 'शुरू करें';
 $messages['reset'] = 'रीसेट करें';
 $messages['manual'] = 'मदद';
 $messages['contact'] = 'संपर्क करें';
+$messages['source_code'] = 'गिटहब पर स्रोत कोड';
 $messages['get_less_versions'] = 'आप एक बार में __NUMREVISIONS__ अवतरण खोज सकते हैं। सर्वर को सुरक्षित रखने के लिए आपको एक बार में  __ALLOWEDREVISIONS__ अवतरण खोजने की ही अनुमति है। कृपया सेटिंग बदलें या खोज के तरीके को बाइनरी करें।';
 $messages['wrong_skips'] = 'गलत सेटिंग: यदि पहले __VERSIONSTOSKIP__ संस्करण छोड़े जाते हैं तो खोज हेतु निर्दिष्ट __VERSIONSTOSEARCH__ संस्करणों में से किसी में भी नहीं खोजा जाएगा।';
 $messages['search_in_progress_text'] = '_ARTICLELINK_ के संस्करण इतिहास में <b>_NEEDLE_</b> को सादा पाठ मानते हुए खोजा जा रहा है।';
