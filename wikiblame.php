@@ -571,8 +571,9 @@ header('X-Accel-Buffering: no');
 		set_time_limit(60);
 		global $server, $articleenc, $tags_present;
 		if ($tags_present) {
-			$url = "https://" . $server . "/w/index.php?uselang=en&title=" . $articleenc . "&oldid=" . $id;
-			$versionpage = curl_request($url . "&action=raw");
+			$url = "https://$server/w/api.php?format=json&formatversion=2&action=query&prop=revisions&revids=$id&rvprop=content&rvslots=main";
+			$json = json_decode(curl_request($url), true);
+			$versionpage = $json['query']['pages'][0]['revisions'][0]['slots']['main']['content'];
 		} else {
 			$url = "https://" . $server . "/w/api.php?action=parse&disableeditsection=&formatversion=2&prop=text&oldid=" . $id . "&format=json";
 			if (stristr($server, "fandom")) {
