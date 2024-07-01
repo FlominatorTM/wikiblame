@@ -12,6 +12,7 @@
  * @author Flominator
  * @author Gucci Mane Burrr
  * @author Ice bulldog
+ * @author Ignatgg
  * @author KEL
  * @author Microcell
  * @author Movses
@@ -67,6 +68,7 @@ $messages['start'] = 'Почати';
 $messages['reset'] = 'Скинути';
 $messages['manual'] = 'Інструкція';
 $messages['contact'] = 'Зв\'язок';
+$messages['source_code'] = 'Вихідний код на GitHub';
 $messages['get_less_versions'] = 'При пошуку може буди видано __NUMREVISIONS__ версій за раз. У цілях захисту серверу, за один виклик допускається не більше __ALLOWEDREVISIONS__ версій. Будь ласка, змініть налаштування або використовуйте двійковий режим пошуку!';
 $messages['wrong_skips'] = 'Неправельні налаштування: якщо перші __VERSIONSTOSKIP__ версії будуть пропускаються, тоді жодна з __VERSIONSTOSEARCH__ версій для пошуку не буде оброблена.';
 $messages['search_in_progress_text'] = 'Ведеться пошук <b>_NEEDLE_</b> в історії версій _ARTICLELINK_ як звичайного тексту';
