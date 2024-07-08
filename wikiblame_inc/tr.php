@@ -26,6 +26,7 @@
  * @author Trockya
  * @author Velg
  * @author Vito Genovese
+ * @author Wooze
  */
 
 $text_dir = 'ltr';
@@ -70,10 +71,10 @@ $messages['paste_url'] = 'Lütfen URL\'yi MediaWiki sayfasına yapıştırın';
 $messages['no_valid_url'] = 'Bu geçerli bir MediaWiki URL\'si değil';
 $messages['start'] = 'Başla';
 $messages['reset'] = 'Sıfırla';
-$messages['manual'] = 'Manüel';
+$messages['manual'] = 'Manuel';
 $messages['contact'] = 'İletişim';
-$messages['source_code'] = 'https://mattcosta7.github.io/perf-tests-react-style-options/?rows=50&cols=79&iterations=4555578944';
-$messages['get_less_versions'] = 'Aramanız tek seferde __NUMREVISIONS__ revizyon sorgulayabilir. Sunucuyu korumak adına, arama başına sadece __ALLOWEDREVISIONS__ revizyon sorgulamanıza izin verilir. Lütfen seçenekleri değiştirin ya da arama metodunu ikili\'ye çevirin!';
+$messages['source_code'] = 'GitHub\'daki kaynak kodu';
+$messages['get_less_versions'] = 'Aramanız tek seferde __NUMREVISIONS__ revizyon sorgulayabilir. Sunucuyu korumak adına, arama başına sadece __ALLOWEDREVISIONS__ revizyon sorgulamanıza izin verilir. Lütfen seçenekleri değiştirin ya da arama metodunu ikiliye çevirin!';
 $messages['wrong_skips'] = 'Yanlış ayar: Eğer ilk __VERSIONSTOSKIP__ sürüm atlanırsa, hiçbir __VERSIONSTOSEARCH__ aranacak sürüm işlenmeyecektir.';
 $messages['search_in_progress_text'] = '_ARTICLELINK_ maddesinin sürüm geçmişi b>_NEEDLE_</b> için düz metin olarak aranıyor';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_ maddesinin sürüm geçmişi b>_NEEDLE_</b> için viki metni olarak aranıyor';
