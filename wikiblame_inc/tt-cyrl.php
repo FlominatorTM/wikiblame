@@ -11,6 +11,7 @@
  * @author Ilnur efende
  * @author Ерней
  * @author З. ӘЙЛЕ
+ * @author Ильгиз
  * @author Ильнар
  */
 
@@ -67,6 +68,7 @@ $messages['inverse_stuck'] = 'Бу _NUMBEROFVERSIONS_ версияләр эче�
 $messages['inverse_earliest'] = 'Искерәк юрамаларда эзләргә';
 $messages['first_version'] = 'Үзгәреш беренче яки соңгы юрамада булырга тиеш идеме?';
 $messages['first_version_present'] = '__REVISIONLINK__ юрамасыннан башлап, __NEEDLE__ элеккеге юрамаларда да бар иде.';
+$messages['latest_version_present'] = '__NEEDLE__ инде __REVISIONLINK__ юрамасыннан башлап иң яңа юрамада бар инде.';
 $messages['earlier_versions_available'] = 'Бәлки искерәк юрамалар да бардыр.';
 $messages['execution_time'] = 'Башкару вакыты: _EXECUTIONTIME_ секунд';
 $messages['versions_found'] = 'Битнең  _NUMBEROFVERSIONS_ юрамасы табылды';
