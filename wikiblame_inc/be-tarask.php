@@ -11,6 +11,7 @@
  * @author Jim-by
  * @author Nieszczarda2
  * @author Red Winged Duck
+ * @author Renessaince
  * @author Wizardist
  */
 
@@ -56,6 +57,7 @@ $messages['start'] = 'Старт';
 $messages['reset'] = 'Скінуць';
 $messages['manual'] = 'Інструкцыя';
 $messages['contact'] = 'Кантактная інфармацыя';
+$messages['source_code'] = 'Крынічнік на GitHub';
 $messages['get_less_versions'] = 'Ваш пошук можа запытаць __NUMREVISIONS__ вэрсіяў на запыт. Для абароны сэрвэру дазволеныя ў толькі __ALLOWEDREVISIONS__ вэрсіяў на запыт. Калі ласка, выпраўце парамэтры ці пераключыцеся ў двайковы мэтад пошуку!';
 $messages['wrong_skips'] = 'Няслушныя ўстаноўкі: Калі першыя __VERSIONSTOSKIP__ вэрсіі будуць прапушчаны, то ніякая з __VERSIONSTOSEARCH__ вэрсіяў для пошуку ня будзе апрацавана.';
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> шукаецца ў гісторыя вэрсіяў _ARTICLELINK_ як звычайны тэкст';
