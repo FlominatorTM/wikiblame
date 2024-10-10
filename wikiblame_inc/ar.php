@@ -16,6 +16,7 @@
  * @author Houcinee1
  * @author Meno25
  * @author Mido
+ * @author Mohammed Qays
  * @author Moud hosny
  * @author MuratTheTurkish
  * @author Mutarjem horr
@@ -44,7 +45,7 @@ $messages['ui_lang'] = 'لغة العرض';
 $messages['lang'] = 'اللغة';
 $messages['lang_example'] = 'en, commons, www, …';
 $messages['project'] = 'المشروع';
-$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
+$messages['project_example'] = 'ويكيبيديا، ويكي مصدر، ويكيميديا، ويكي بيانات، …';
 $messages['tld'] = 'النطاق';
 $messages['tld_example'] = 'org، com، net، ...';
 $messages['article'] = 'الصفحة';
