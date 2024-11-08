@@ -459,6 +459,7 @@ header('X-Accel-Buffering: no');
 			$pos_of_closed_a = strpos($revision_html_blocks[$block_i], "</a>");
 
 			$length_between_both = $pos_of_closed_a - $start_pos_of_a;
+			$is_minor = stristr($revision_html_blocks[$block_i], '<abbr class="minoredit');
 
 			//extract the link from the current part like this one:
 			$one_version = substr($revision_html_blocks[$block_i], $start_pos_of_a, $length_between_both);
@@ -471,8 +472,7 @@ header('X-Accel-Buffering: no');
 				$deleted_revisions++;
 			} else {
 				if ($ignore_minors) {
-					//checks if the revision was marked as minor edit
-					if (!stristr($one_version, "<span class=\"minor\">")) {
+					if (!$is_minor) {
 						add_one_version($one_version, $versions);
 					} else {
 						//echo "ignored a minor change";
