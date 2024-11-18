@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Jjfgiratina
  */
 
 $messages['January'] = 'hasiholtina hachàalímmòona';
@@ -21,3 +22,4 @@ $messages['September'] = 'hasiholtina istachákkàali';
 $messages['October'] = 'hasiholtina ispókkòoli';
 $messages['November'] = 'hasiholtina istapókkòolawahcháffàaka';
 $messages['December'] = 'hasiholtina istapókkòolawahtóklo';
+$messages['lang'] = 'naaɬiilka';
