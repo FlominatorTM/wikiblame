@@ -20,6 +20,7 @@
  * @author Od1n
  * @author Patriccck
  * @author Patrik L.
+ * @author Segoulas
  * @author Utar
  * @author Walter Klosse
  */
@@ -40,6 +41,7 @@ $messages['ui_lang'] = 'Jazyk rozhraní';
 $messages['lang'] = 'Jazyk';
 $messages['project'] = 'Projekt';
 $messages['tld'] = 'Doména';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Stránka';
 $messages['needle'] = 'Hledat';
 $messages['skipversions'] = 'Vždy přeskočit x verzí';
@@ -85,6 +87,8 @@ $messages['please_wait'] = 'Čekejte prosím ...';
 $messages['binary_test'] = 'Porovnání rozdílů v _FIRSTDATEVERSION_ mezi _FIRSTNUMBER_ a _SECONDNUMBER_, které pocházejí z _SOURCENUMBER_:';
 $messages['dead_end'] = 'Dosažena slepá ulička (pravděpodobně kvůli obnovení staré verze nebo editační válce)';
 $messages['once_more'] = 'Ještě jednou, s pocitem:';
+$messages['delete_from_here'] = 'Mazání _NUMBEROFVERSIONS_ dřívějších revizí, protože odstranění muselo být provedeno později';
+$messages['delete_until_here'] = 'Mazání _NUMBEROFVERSIONS_ pozdějších revizí, protože vložení muselo být provedeno dříve';
 $messages['binary_enough'] = 'Proveden dostatek opakování, historie článku je docela chaotická, zkuste změnit některá nastavení.';
 $messages['insertion_found'] = 'Vložení nalezeno mezi LEFT_VERSION a RIGHT_VERSION';
 $messages['deletion_found'] = 'Odstranění nalezeno mezi LEFT_VERSION a RIGHT_VERSION';
