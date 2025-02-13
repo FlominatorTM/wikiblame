@@ -25,6 +25,7 @@
  * @author VegaDark
  * @author XalD
  * @author XalD <hiperion93 AT gmail.com>
+ * @author ZebaX2010
  */
 
 $messages['January'] = 'Enero';
@@ -35,7 +36,7 @@ $messages['May'] = 'Mayo';
 $messages['June'] = 'Junio';
 $messages['July'] = 'Julio';
 $messages['August'] = 'Agosto';
-$messages['September'] = 'Setiembre';
+$messages['September'] = 'Septiembre';
 $messages['October'] = 'Octubre';
 $messages['November'] = 'Noviembre';
 $messages['December'] = 'Diciembre';
@@ -44,13 +45,13 @@ $messages['lang'] = 'Idioma';
 $messages['project'] = 'Proyecto';
 $messages['tld'] = 'Dominio';
 $messages['tld_example'] = 'org, com, net, ...';
-$messages['article'] = 'Artículo';
+$messages['article'] = 'Página';
 $messages['needle'] = 'Búsqueda';
 $messages['skipversions'] = 'Saltar siempre x versiones';
 $messages['ignorefirst'] = 'Ignorar las primeras x versiones';
 $messages['limit'] = 'Versiones para revisar';
 $messages['start_date'] = 'Fecha de inicio';
-$messages['date_format'] = 'MM DD, YYYY';
+$messages['date_format'] = 'DD "de" MM "de" YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Orden';
 $messages['newest_first'] = 'la última primero';
@@ -62,9 +63,9 @@ $messages['linear'] = 'lineal';
 $messages['interpolated'] = 'binario (más rápido con más versiones)';
 $messages['ignore_minors'] = 'Ignorar ediciones menores (experimental)';
 $messages['force_wikitags'] = 'Forzar la búsqueda de wikitexto';
-$messages['from_url'] = 'a partir de un URL';
-$messages['paste_url'] = 'Pega el URL de una página de MediaWiki';
-$messages['no_valid_url'] = 'Este no es un URL de MediaWiki válido';
+$messages['from_url'] = 'a partir de una URL';
+$messages['paste_url'] = 'Pega la URL de una página de MediaWiki';
+$messages['no_valid_url'] = 'Esta no es una URL de MediaWiki válida';
 $messages['start'] = 'Iniciar';
 $messages['reset'] = 'Restablecer';
 $messages['manual'] = 'Manual';
@@ -76,17 +77,17 @@ $messages['wrong_skips'] = 'Configuraciones erróneas: Si las primeras __VERSION
 $messages['search_in_progress_text'] = 'Se está buscando <b>_NEEDLE_</b> como texto sencillo en el historial de versiones de _ARTICLELINK_';
 $messages['search_in_progress_wikitags'] = 'Se está buscando <b>_NEEDLE_</b> como texto wiki en el historial de versiones de _ARTICLELINK_';
 $messages['no_differences'] = 'No se encontraron diferencias en las revisiones buscadas.';
-$messages['inverse_restart'] = 'No se encontró ninguna inserción o extracción. ¿Se insertó el término de búsqueda después?';
-$messages['inverse_stuck'] = 'No se encontró ninguna inserción ni eliminación en estas _NUMBEROFVERSIONS_ revisiones. Es posible que el término de búsqueda se haya quitado con anterioridad.';
+$messages['inverse_restart'] = 'No se encontró ninguna inserción o borrado. ¿el término de búsqueda fue insertado después?';
+$messages['inverse_stuck'] = 'No se encontró ninguna inserción ni borrado en estas _NUMBEROFVERSIONS_ revisiones. Es posible que el término de búsqueda haya sido borrado con anterioridad.';
 $messages['inverse_earliest'] = 'Buscar en las revisiones anteriores';
 $messages['first_version'] = '¿El cambio debió haber ocurrido en la primera o en la última revisión?';
 $messages['first_version_present'] = '__NEEDLE__ ya estaba presente en la revisión más antigua buscada el __REVISIONLINK__.';
-$messages['latest_version_present'] = '__NEEDLE__ ya estaba presente en la revisión más antigua buscada el __REVISIONLINK__.';
+$messages['latest_version_present'] = '__NEEDLE__ ya estaba presente en la revisión más nueva buscada el __REVISIONLINK__.';
 $messages['earlier_versions_available'] = 'Probablemente existan revisiones anteriores.';
 $messages['execution_time'] = 'Tiempo de ejecución: _EXECUTIONTIME_ segundos';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiones encontradas';
-$messages['please_wait'] = 'Espera un momento…';
-$messages['binary_test'] = 'Comparando diferencias en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ y _SECONDNUMBER_ cuando vengan de _SOURCENUMBER_:';
+$messages['please_wait'] = 'Espera un momento …';
+$messages['binary_test'] = 'Comparando diferencias en _FIRSTDATEVERSION_ entre _FIRSTNUMBER_ y _SECONDNUMBER_ cuando provengan de _SOURCENUMBER_:';
 $messages['dead_end'] = 'Atrapados algunos sin salida (probablemente causados por reversiones o guerras de edición)';
 $messages['once_more'] = 'Una vez más, con sentimiento:';
 $messages['delete_from_here'] = 'Eliminando las primeras _NUMBEROFVERSIONS_ revisiones, ya que el borrado debe haberse realizado más adelante';
