@@ -8,6 +8,7 @@
  * @file
  *
  * @author Ajeje Brazorf
+ * @author GianAntonucci
  * @author Markos90
  * @author Sarvaturi
  */
@@ -30,7 +31,7 @@ $messages['project'] = 'Pruggettu';
 $messages['tld'] = 'Domìniu';
 $messages['tld_example'] = 'org, com, net, ...';
 $messages['article'] = 'Pàggina';
-$messages['needle'] = 'Arricerca';
+$messages['needle'] = 'Cerca';
 $messages['skipversions'] = 'Escludi sempri x virsioni';
 $messages['ignorefirst'] = 'Gnora li primi x virsioni';
 $messages['limit'] = 'Virsioni a cuntrullari';
