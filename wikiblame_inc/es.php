@@ -12,6 +12,7 @@
  * @author Athena in Wonderland
  * @author Crazymadlover
  * @author DJ Nietzsche
+ * @author Dgstranz
  * @author Fitoschido
  * @author KATRINE1992
  * @author Ktranz
@@ -28,18 +29,18 @@
  * @author ZebaX2010
  */
 
-$messages['January'] = 'Enero';
-$messages['February'] = 'Febrero';
-$messages['March'] = 'Marzo';
-$messages['April'] = 'Abril';
-$messages['May'] = 'Mayo';
-$messages['June'] = 'Junio';
-$messages['July'] = 'Julio';
-$messages['August'] = 'Agosto';
-$messages['September'] = 'Septiembre';
-$messages['October'] = 'Octubre';
-$messages['November'] = 'Noviembre';
-$messages['December'] = 'Diciembre';
+$messages['January'] = 'enero';
+$messages['February'] = 'febrero';
+$messages['March'] = 'marzo';
+$messages['April'] = 'abril';
+$messages['May'] = 'mayo';
+$messages['June'] = 'junio';
+$messages['July'] = 'julio';
+$messages['August'] = 'agosto';
+$messages['September'] = 'septiembre';
+$messages['October'] = 'octubre';
+$messages['November'] = 'noviembre';
+$messages['December'] = 'diciembre';
 $messages['ui_lang'] = 'Idioma de visualización';
 $messages['lang'] = 'Idioma';
 $messages['project'] = 'Proyecto';
@@ -51,7 +52,7 @@ $messages['skipversions'] = 'Saltar siempre x versiones';
 $messages['ignorefirst'] = 'Ignorar las primeras x versiones';
 $messages['limit'] = 'Versiones para revisar';
 $messages['start_date'] = 'Fecha de inicio';
-$messages['date_format'] = 'DD "de" MM "de" YYYY';
+$messages['date_format'] = 'DD de MM de YYYY';
 $messages['revision_date_format'] = '%H:%M, %d %B %Y';
 $messages['order'] = 'Orden';
 $messages['newest_first'] = 'la última primero';
