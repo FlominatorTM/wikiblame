@@ -752,7 +752,7 @@ header('X-Accel-Buffering: no');
 		//echo "binary_search(".$middle.",".$from.")";
 		flush();
 		if ($middle < 0) {
-			if ($from != 2 && $from != 1) {
+			if ($from != 1 && $from != 2 && $from != 3) {
 				log_search("first_version");
 				//echo('<br>'.$messages['first_version']);
 				return;
