@@ -14,6 +14,7 @@
  * @author Capmo
  * @author Dianakc
  * @author Duke of Wikipädia
+ * @author EGobi
  * @author Eduardo Addad de Oliveira
  * @author Eduardoaddad
  * @author Giro720
