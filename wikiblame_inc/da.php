@@ -10,6 +10,7 @@
  * @author Erisos
  * @author Joedalton
  * @author Peter Alberti
+ * @author Saederup92
  */
 
 $messages['January'] = 'Januar';
@@ -27,6 +28,8 @@ $messages['December'] = 'December';
 $messages['ui_lang'] = 'Brugerfladesprog';
 $messages['lang'] = 'Sprog';
 $messages['project'] = 'Projekt';
+$messages['tld'] = 'Domæne';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Side';
 $messages['needle'] = 'Søg efter';
 $messages['skipversions'] = 'Spring altid x versioner over';
@@ -52,6 +55,7 @@ $messages['start'] = 'Start';
 $messages['reset'] = 'Nulstil';
 $messages['manual'] = 'Vejledning';
 $messages['contact'] = 'Kontakt';
+$messages['source_code'] = 'Kildekode på Github';
 $messages['get_less_versions'] = 'Din søgning kan spørge efter __NUMREVISIONS__ version ad gangen. For at beskytte serveren, må du kun spørge efter __ALLOWEDREVISIONS__ per kald. Vær venlig at ændre indstillingerne eller skifte søgemetoden til binær!';
 $messages['wrong_skips'] = 'Forkerte indstillinger: Hvis de første __VERSIONSTOSKIP__ versioner bliver sprunget over, så vil ingen af de __VERSIONSTOSEARCH__ versioner, der skal gennemsøges, blive behandlet.';
 $messages['search_in_progress_text'] = 'Versionshistorikken af _ARTICLELINK_ bliver gennemsøgt for <b>_NEEDLE_</b> som uformateret tekst';

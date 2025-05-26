@@ -25,6 +25,7 @@
  * @author Rippitippi
  * @author Selven
  * @author Toa
+ * @author Wheelygay
  */
 
 $messages['January'] = 'Gennaio';
@@ -90,7 +91,7 @@ $messages['execution_time'] = 'Tempo di esecuzione: _EXECUTIONTIME_ secondi';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ revisioni trovate';
 $messages['please_wait'] = 'Attendere prego …';
 $messages['binary_test'] = 'Confronto delle differenze nella revisione del _FIRSTDATEVERSION_ fra la revisione _FIRSTNUMBER_ e la _SECONDNUMBER_ mentre proviene dalla revisione _SOURCENUMBER_:';
-$messages['dead_end'] = 'Trovato un punto morto (probabilmente causato da rollback o edit war)';
+$messages['dead_end'] = 'Trovato un punto morto (probabilmente causato da rollback o guerre di modifiche)';
 $messages['once_more'] = 'Ancora una volta, con sentimento:';
 $messages['delete_from_here'] = 'Cancellando _NUMBEROFVERSIONS_ versioni precedenti, poiché la rimozione deve essere stata eseguita in seguito';
 $messages['delete_until_here'] = 'Cancellando _NUMBEROFVERSIONS_ versioni successive, poiché l\'inserimento deve essere stato eseguito in precedenza';
