@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Sakura286
  * @author Sasan700
  * @author Робин
  * @author Умар
@@ -27,7 +28,7 @@ $messages['December'] = 'декабрехь';
 $messages['ui_lang'] = 'Интерфейсан мотт';
 $messages['lang'] = 'Мотт';
 $messages['project'] = 'Проект';
-$messages['project_example'] = 'Википеди, Викидуьххьарайоза, Викимедиа…';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata…';
 $messages['tld'] = 'Домен';
 $messages['tld_example'] = 'org, com, net,  …';
 $messages['article'] = 'АгӀо';

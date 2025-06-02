@@ -9,6 +9,7 @@
  *
  * @author Kolonahe
  * @author Od1n
+ * @author Sakura286
  */
 
 $text_dir = 'ltr';
@@ -26,9 +27,9 @@ $messages['November'] = 'Nowemapa';
 $messages['December'] = 'Kēkēmapa';
 $messages['ui_lang'] = 'Hōʻike ʻŌlelo';
 $messages['lang'] = 'ʻŌlelo';
-$messages['lang_example'] = 'en, commons, www, …';
+$messages['lang_example'] = 'haw, en, commons, www, …';
 $messages['project'] = 'Papahana';
-$messages['project_example'] = 'wikipikia, wikisōsa, wikimekia, ...';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, ...';
 $messages['article'] = 'ʻAoʻao';
 $messages['needle'] = 'Huli no';
 $messages['skipversions'] = 'Lele i nā mana x i nā manawa a pau';

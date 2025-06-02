@@ -8,6 +8,7 @@
  * @file
  *
  * @author AlnashPiyash2
+ * @author Sakura286
  * @author Shklyaev
  * @author Света Поторочина
  */
@@ -28,8 +29,7 @@ $messages['ui_lang'] = 'Возьматон кыл';
 $messages['lang'] = 'Кыл';
 $messages['project'] = 'Проект';
 $messages['tld'] = 'Домен';
-$messages['tld_example'] = 'org, com
-, net, …';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Бам';
 $messages['needle'] = 'утчан чур';
 $messages['start_date'] = 'Кутсконлэн датаез';

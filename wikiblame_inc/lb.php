@@ -9,6 +9,7 @@
  *
  * @author Les Meloures
  * @author Robby
+ * @author Sakura286
  * @author Soued031
  * @author Volvox
  */
@@ -29,7 +30,7 @@ $messages['ui_lang'] = 'Sprooch fir unzewweisen';
 $messages['lang'] = 'Sprooch';
 $messages['project'] = 'Projet';
 $messages['tld'] = 'Domain';
-$messages['tld_example'] = 'org, com, net, wiki, …';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Säit';
 $messages['needle'] = 'Sich no';
 $messages['skipversions'] = 'Ëmmer x Versiounen iwwersprangen';

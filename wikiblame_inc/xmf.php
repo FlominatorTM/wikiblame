@@ -9,6 +9,7 @@
  *
  * @author David1010
  * @author Narazeni
+ * @author Sakura286
  * @author Silovan
  */
 
@@ -27,7 +28,7 @@ $messages['December'] = 'ქირსეთუთა';
 $messages['ui_lang'] = 'ნაძირეფი ნინა';
 $messages['lang'] = 'ნინა';
 $messages['project'] = 'თხილუა';
-$messages['project_example'] = 'ვიკიპედია, ვიკითეკა, ვიკიმედია, ვიკიმუნაჩემეფი…';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata…';
 $messages['tld'] = 'დომენი';
 $messages['tld_example'] = 'org, com, net,  …';
 $messages['article'] = 'ხასჷლა';

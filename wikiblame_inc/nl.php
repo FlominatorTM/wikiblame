@@ -11,6 +11,7 @@
  * @author Lemondoge
  * @author McDutchie
  * @author SPQRobin
+ * @author Sakura286
  * @author Siebrand
  * @author Vistaus
  */
@@ -32,7 +33,7 @@ $messages['lang'] = 'Taal';
 $messages['lang_example'] = 'nl, commons, www, …';
 $messages['project'] = 'Project';
 $messages['tld'] = 'Domeinnaam';
-$messages['tld_example'] = 'nl, be, org, com, …';
+$messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Pagina';
 $messages['needle'] = 'Zoeken naar';
 $messages['skipversions'] = 'Altijd een x-aantal versies overslaan';

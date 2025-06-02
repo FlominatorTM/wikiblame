@@ -11,6 +11,7 @@
  * @author Indus Asia
  * @author JogiAsad
  * @author Mehtab ahmed
+ * @author Sakura286
  */
 
 $messages['January'] = 'جنوري';
@@ -29,7 +30,7 @@ $messages['ui_lang'] = 'ڊسپلي جي ٻولي';
 $messages['lang'] = 'ٻولي';
 $messages['project'] = 'رٿا';
 $messages['tld'] = 'ڊومين';
-$messages['tld_example'] = 'اوآرجِي، ڪام، نيٽ، …';
+$messages['tld_example'] = '‏‪org‬، ‏‪com‬، ‏‪net‬، …';
 $messages['article'] = 'صفحو';
 $messages['needle'] = 'ڳوليو';
 $messages['skipversions'] = 'x ورجاءَ سدائين تَرڪ ڪريو';

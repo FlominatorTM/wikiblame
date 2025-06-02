@@ -21,6 +21,7 @@
  * @author Olvin
  * @author Piramidion
  * @author Prima klasy4na
+ * @author Sakura286
  * @author Тест
  */
 
@@ -39,7 +40,7 @@ $messages['December'] = 'грудня';
 $messages['ui_lang'] = 'Мова відображення';
 $messages['lang'] = 'Мова';
 $messages['project'] = 'Проєкт';
-$messages['project_example'] = 'Вікіпедія, Вікіджерела, Вікімедіа, Вікідані, …';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
 $messages['tld'] = 'Домен';
 $messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Сторінка';

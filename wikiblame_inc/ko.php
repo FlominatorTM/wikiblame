@@ -15,6 +15,7 @@
  * @author MuratTheTurkish
  * @author Od1n
  * @author Revi
+ * @author Sakura286
  * @author Ykhwong
  * @author 그냥기여자
  * @author 아라
@@ -36,7 +37,7 @@ $messages['ui_lang'] = '표시 언어';
 $messages['lang'] = '언어';
 $messages['lang_example'] = 'ko, commons, www, …';
 $messages['project'] = '프로젝트';
-$messages['project_example'] = '위키백과, 위키문헌, 위키미디어, 위키데이터, …';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
 $messages['tld'] = '도메인';
 $messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = '문서';

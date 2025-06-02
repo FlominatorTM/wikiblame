@@ -15,6 +15,7 @@
  * @author Huji
  * @author Meysamzare23
  * @author Reza1615
+ * @author Sakura286
  * @author Wayiran
  */
 
@@ -34,7 +35,7 @@ $messages['ui_lang'] = 'نمایش زبان';
 $messages['lang'] = 'زبان';
 $messages['project'] = 'پروژه';
 $messages['tld'] = 'دامنه';
-$messages['tld_example'] = 'org, com, net, …';
+$messages['tld_example'] = '‏‪org‬, ‏‪com‬, ‏‪net‬, …';
 $messages['article'] = 'صفحه';
 $messages['needle'] = 'جستجو برای';
 $messages['skipversions'] = 'همواره از نسخه‌های x صرف نظر کن';

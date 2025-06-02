@@ -21,6 +21,7 @@
  * @author MuratTheTurkish
  * @author Od1n
  * @author Okras
+ * @author Sakura286
  * @author Smigles
  * @author Wirbel78
  * @author Александр Сигачёв
@@ -41,7 +42,7 @@ $messages['December'] = 'декабря';
 $messages['ui_lang'] = 'Язык отображения';
 $messages['lang'] = 'Язык';
 $messages['project'] = 'Проект';
-$messages['project_example'] = 'Википедия, Викитека, Викимедиа, Викиданные…';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata…';
 $messages['tld'] = 'Домен';
 $messages['tld_example'] = 'org, com, net,  …';
 $messages['article'] = 'Страница';

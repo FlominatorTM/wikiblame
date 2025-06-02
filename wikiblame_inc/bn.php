@@ -15,6 +15,7 @@
  * @author Masumrezarock100
  * @author RIPENDIL
  * @author Rasal Lia
+ * @author Sakura286
  * @author Sayma Jahan
  * @author Wikisagnik
  * @author আজিজ
@@ -37,7 +38,7 @@ $messages['ui_lang'] = 'ভাষা প্রদর্শন';
 $messages['lang'] = 'ভাষা';
 $messages['lang_example'] = 'bn, commons, www, …';
 $messages['project'] = 'প্রকল্প';
-$messages['project_example'] = 'উইকিপিডিয়া, উইকিসংকলন, উইকিমিডিয়া, …';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
 $messages['tld'] = 'ডোমেইন';
 $messages['article'] = 'পাতা';
 $messages['needle'] = 'অনুসন্ধান করো';

@@ -18,6 +18,7 @@
  * @author Od1n
  * @author Prevodim
  * @author Rancher
+ * @author Sakura286
  * @author Михајло Анђелковић
  */
 
@@ -38,7 +39,7 @@ $messages['ui_lang'] = 'Језик приказа';
 $messages['lang'] = 'Језик';
 $messages['lang_example'] = 'en, commons, www, …';
 $messages['project'] = 'Пројекат';
-$messages['project_example'] = 'википедија, викизворник, викимедија, википодаци, …';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
 $messages['tld'] = 'Домен';
 $messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Страница';

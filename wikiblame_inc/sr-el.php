@@ -11,6 +11,7 @@
  * @author FriedrickMILBarbarossa
  * @author Od1n
  * @author Rancher
+ * @author Sakura286
  */
 
 $text_dir = 'ltr';
@@ -30,7 +31,7 @@ $messages['ui_lang'] = 'Jezik prikaza:';
 $messages['lang'] = 'Jezik:';
 $messages['lang_example'] = 'sr, en, commons, www, …';
 $messages['project'] = 'Projekat:';
-$messages['project_example'] = 'Vikipedija, Vikizvornik, Vikimedija…';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata…';
 $messages['article'] = 'Stranica:';
 $messages['needle'] = 'Traži:';
 $messages['skipversions'] = 'Preskači iks izdanja:';

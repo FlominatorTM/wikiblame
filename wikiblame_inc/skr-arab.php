@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Sakura286
  * @author Saraiki
  */
 
@@ -26,7 +27,7 @@ $messages['ui_lang'] = 'ظاہری زبان';
 $messages['lang'] = 'زبان';
 $messages['project'] = 'منصوبہ';
 $messages['tld'] = 'ڈومین';
-$messages['tld_example'] = 'org, com, net, …';
+$messages['tld_example'] = '‏‪org‬, ‏‪com‬, ‏‪net‬, …';
 $messages['article'] = 'ورقہ';
 $messages['needle'] = 'کیتے ڳول';
 $messages['skipversions'] = 'ہمیشہ x ورژن کوں چھوڑ ݙیوو';

@@ -22,6 +22,7 @@
  * @author Mutarjem horr
  * @author Od1n
  * @author OsamaK
+ * @author Sakura286
  * @author أَحمد
  * @author ترجمان05
  * @author ديفيد
@@ -43,11 +44,11 @@ $messages['November'] = 'نوفمبر/تشرين الثاني';
 $messages['December'] = 'ديسمبر/كانون الأول';
 $messages['ui_lang'] = 'لغة العرض';
 $messages['lang'] = 'اللغة';
-$messages['lang_example'] = 'en, commons, www, …';
+$messages['lang_example'] = '‏‪ar‬، ‏‪en‬، ‏‪commons‬، ‏‪www‬، …';
 $messages['project'] = 'المشروع';
-$messages['project_example'] = 'ويكيبيديا، ويكي مصدر، ويكيميديا، ويكي بيانات، …';
+$messages['project_example'] = '‏‪wikipedia‬، ‏‪wikisource‬، ‏‪wikimedia‬، ‏‪wikidata‬، …';
 $messages['tld'] = 'النطاق';
-$messages['tld_example'] = 'org، com، net، ...';
+$messages['tld_example'] = '‏‪org‬، ‏‪com‬، ‏‪net‬، …';
 $messages['article'] = 'الصفحة';
 $messages['needle'] = 'ابحث عن';
 $messages['skipversions'] = 'تخطَّ دائما النسخ س';

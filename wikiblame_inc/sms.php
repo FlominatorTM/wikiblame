@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Sakura286
  * @author Yupik
  */
 
@@ -25,7 +26,7 @@ $messages['December'] = 'rosttovmannu';
 $messages['ui_lang'] = '̵Ǩiõll';
 $messages['lang'] = 'Ǩiõll';
 $messages['project'] = 'Projeʹktt';
-$messages['project_example'] = 'wikipedia, wikiaunstõõzz, wikimedia, wikidata, …';
+$messages['project_example'] = 'wikipedia, wikisource, wikimedia, wikidata, …';
 $messages['tld'] = 'Domeeʹn';
 $messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'Seidd';
