@@ -16,6 +16,7 @@
  * @author Od1n
  * @author Revi
  * @author Sakura286
+ * @author YeBoy371
  * @author Ykhwong
  * @author 그냥기여자
  * @author 아라
@@ -65,7 +66,9 @@ $messages['no_valid_url'] = '유효한 미디어위키 url이 없습니다';
 $messages['start'] = '시작';
 $messages['reset'] = '초기화';
 $messages['manual'] = '사용법';
+$messages['manual_link'] = 'https://en.wikipedia.org/wiki/User:Flominator/WikiBlame';
 $messages['contact'] = '연락하기';
+$messages['contact_link'] = 'https://de.wikipedia.org/wiki/Benutzer Diskussion:Flominator/WikiBlame';
 $messages['source_code'] = 'GitHub 소스 코드';
 $messages['get_less_versions'] = '검색 한 번에 __NUMREVISIONS__ 판을 검색할 수 있습니다. 서버를 보호하기 위해서는 호출할 때마다 __ALLOWEDREVISIONS__에 대해 검색만 허용합니다. 설정을 바꾸거나 이진으로 검색 방식을 바꾸십시오!';
 $messages['wrong_skips'] = '설정이 잘못됨: 처음 __VERSIONTOSKIP__개 판을 넘어가도록 하면 __VERSIONTOSEARCH__개의 판 중 검색될 판이 없습니다.';
