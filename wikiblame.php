@@ -267,7 +267,11 @@ header('X-Accel-Buffering: no');
 
 		$lang = correct_language_mistakes($_REQUEST['lang']);
 		if ($lang == "") {
-			$lang = $user_lang;
+			if ($user_lang == "zh-hans" || $user_lang == "zh-hant") {
+				$lang = "zh";
+			} else {
+				$lang = $user_lang;
+			}
 		}
 
 		$project = $_REQUEST['project'];
