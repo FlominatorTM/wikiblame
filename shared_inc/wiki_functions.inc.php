@@ -134,7 +134,7 @@ function datedrop_with_months($name, $varanf = "", $intab = true, $jahranf = "",
 	}
 
 	if ($seltag == "") {
-		$seltag = date("dSSS");
+		$seltag = date("d");
 	}
 
 	if ($selmon == "") {
