@@ -8,6 +8,7 @@
  * @file
  *
  * @author Aue Nai
+ * @author 咽頭べさ
  */
 
 $messages['January'] = 'ဇာန်နဝါရဳ';
@@ -16,7 +17,7 @@ $messages['March'] = 'မာတ်';
 $messages['April'] = 'ဨပြဳ';
 $messages['May'] = 'မေ';
 $messages['June'] = 'ဂျောန်';
-$messages['July'] = 'ဂျူလာင်';
+$messages['July'] = 'ဂျူလာၚ်';
 $messages['August'] = 'အဝ်ဂေတ်';
 $messages['September'] = 'သေပ်တေမ်ပါ';
 $messages['October'] = 'အံက်တဝ်ပါ';
