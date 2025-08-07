@@ -58,6 +58,7 @@ $messages['start'] = 'தொடங்கு';
 $messages['reset'] = 'மீட்டமை';
 $messages['manual'] = 'கையேடு';
 $messages['contact'] = 'தொடர்புகொள்க';
+$messages['source_code'] = 'GitHub இல் மூலக் குறியீடு';
 $messages['get_less_versions'] = 'உங்கள் தேடல் ஒரே நேரத்தில் __NUMREVISIONS__ திருத்தங்களை வினவலாம். சேவையகத்தைப் பாதுகாப்பதற்காக, ஒரு அழைப்புக்கு __ALLOWEDREVISIONS__க்கு மட்டுமே நீங்கள் வினவ அனுமதிக்கப்படுகிறீர்கள். அமைப்புகளை மாற்றவும் அல்லது தேடல் முறையை பைனரிக்கு மாற்றவும் !';
 $messages['wrong_skips'] = 'தவறான அமைப்புகள்: முதல் __VERSIONSTOSKIP__ பதிப்புகள் தவிர்க்கப்பட்டால், தேட வேண்டிய __VERSIONSTOSEARCH__ பதிப்புகள் எதுவும் செயலாக்கப்படாது.';
 $messages['search_in_progress_text'] = '_ARTICLELINK_ இன் பதிப்பு வரலாறு <b>_NEEDLE_</b> க்கு எளிய உரையாகத் தேடப்படுகிறது';
