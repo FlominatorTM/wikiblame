@@ -64,6 +64,7 @@ $messages['start'] = 'Spustiť';
 $messages['reset'] = 'Resetovať';
 $messages['manual'] = 'Manuálne';
 $messages['contact'] = 'Kontakt';
+$messages['source_code'] = 'Zdrojový kód na GitHube';
 $messages['get_less_versions'] = 'Maximálny počet verzií naraz pre vaše vyhľadávanie: __NUMREVISIONS__. Pre ochranu servera je máte povolený maximálny počet revízií: __ALLOWEDREVISIONS__ . Prosím, zmeňte nastavenie alebo prepnite spôsob vyhľadávania na binárny!';
 $messages['wrong_skips'] = 'Chybné nastavenia: Ak bude prvých __VERSIONSTOSKIP__ preskočených, žiadne z verzií __VERSIONSTOSEARCH__ nebudú spracované.';
 $messages['search_in_progress_text'] = 'História verzií _ARTICLELINK_ sa prehľadáva na <b>_NEEDLE_</b> ako obyčajný text';
