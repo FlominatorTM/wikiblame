@@ -12,6 +12,7 @@
  * @author Nieszczarda2
  * @author Red Winged Duck
  * @author Renessaince
+ * @author Ucukor
  * @author Wizardist
  */
 
@@ -74,7 +75,7 @@ $messages['execution_time'] = 'Час выкананьня: _EXECUTIONTIME_ сэ
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ вэрсіяў знойдзена';
 $messages['please_wait'] = 'Калі ласка, пачакайце…';
 $messages['binary_test'] = 'Параўнаньне адрозьненьняў у _FIRSTDATEVERSION_ паміж _FIRSTNUMBER_ і _SECONDNUMBER_ пад час пераходу з _SOURCENUMBER_:';
-$messages['dead_end'] = 'Перашкаджае тупік (верагодна выкліканы адкатам ці вайной рэдагаваньняў)';
+$messages['dead_end'] = 'Перашкаджае тупік (хутчэй за ўсё выкліканы адкатам ці вайной рэдагаваньняў)';
 $messages['once_more'] = 'Яшчэ раз, з пачуцьцем:';
 $messages['delete_from_here'] = 'Выдаленьне _NUMBEROFVERSIONS_ ранейшых вэрсіяў, бо выдаленьне мусіла адбыцца раней';
 $messages['delete_until_here'] = 'Выдаленьне _NUMBEROFVERSIONS_ апошніх вэрсіяў, бо ўстаўка мусіла быць выкананая раней';

@@ -13,6 +13,7 @@
  * @author Mechanizatar
  * @author No Sleep till Krupki
  * @author SamGold
+ * @author Ucukor
  */
 
 $messages['January'] = 'Студзень';
@@ -64,7 +65,7 @@ $messages['execution_time'] = 'Час выканання: _EXECUTIONTIME_ сек
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ версій знойдзена';
 $messages['please_wait'] = 'Калі ласка, пачакайце…';
 $messages['binary_test'] = 'Параўноўваем адрозненні ў _FIRSTDATEVERSION_ паміж _FIRSTNUMBER_ і _SECONDNUMBER_ пакуль прыходзіць з _SOURCENUMBER_:';
-$messages['dead_end'] = 'Перашкаджае тупік (верагодна, выкліканы адкатамі ці вайной правак)';
+$messages['dead_end'] = 'Перашкаджае тупік (хутчэй за ўсё выкліканы адкатамі ці вайной правак)';
 $messages['once_more'] = 'Яшчэ раз, з пачуццём:';
 $messages['binary_enough'] = 'Выканана дастаткова спробаў, гісторыя артыкула зусім заблыталася. Калі ласка, паспрабуйце змяніць некаторыя параметры.';
 $messages['insertion_found'] = 'Ёсць устаўка паміж LEFT_VERSION і RIGHT_VERSION';
