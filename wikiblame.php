@@ -158,11 +158,11 @@ header('X-Accel-Buffering: no');
 			<tr>
 				<td><?php echo $messages['search_method'] ?></td>
 				<td>
-					<input type="radio" name="searchmethod" id="linear" value="lin" <?php if ($use_binary_search != true) echo checked; ?>>
+					<input type="radio" name="searchmethod" id="linear" value="lin" <?php if ($use_binary_search != true) echo "checked"; ?>>
 					<label for="linear">
 						<?php echo $messages['linear'] ?>
 					</label>
-					<input type="radio" name="searchmethod" id="int" value="int" <?php if ($use_binary_search == true) echo checked; ?>>
+					<input type="radio" name="searchmethod" id="int" value="int" <?php if ($use_binary_search == true) echo "checked"; ?>>
 					<label for="int">
 						<a href="<?php echo $messages['binary_in_wp'] ?>"><?php echo $messages['binary'] ?></a>
 					</label>
@@ -171,11 +171,11 @@ header('X-Accel-Buffering: no');
 			<tr>
 				<td><?php echo $messages['order'] ?></td>
 				<td>
-					<input type="radio" name="order" id="desc" value="desc" <?php if ($asc != true) echo checked; ?>>
+					<input type="radio" name="order" id="desc" value="desc" <?php if ($asc != true) echo "checked"; ?>>
 					<label for="desc">
 						<?php echo $messages['newest_first'] ?>
 					</label>
-					<input type="radio" name="order" id="asc" value="asc" <?php if ($asc == true) echo checked; ?>>
+					<input type="radio" name="order" id="asc" value="asc" <?php if ($asc == true) echo "checked"; ?>>
 					<label for="asc">
 						<?php echo $messages['oldest_first'] ?>
 					</label>
@@ -183,7 +183,7 @@ header('X-Accel-Buffering: no');
 			</tr>
 			<tr class="checkboxrow">
 				<td>
-					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <?php if ($binary_search_inverse) echo checked; ?>>
+					<input type="checkbox" name="binary_search_inverse" id="binary_search_inverse" <?php if ($binary_search_inverse) echo "checked"; ?>>
 				</td>
 				<td>
 					<label for="binary_search_inverse">
@@ -194,7 +194,7 @@ header('X-Accel-Buffering: no');
 			<tr class="checkboxrow">
 				<td>
 
-					<input type="checkbox" name="ignore_minors" id="ignore_minors" <?php if ($ignore_minors == true) echo checked; ?>>
+					<input type="checkbox" name="ignore_minors" id="ignore_minors" <?php if ($ignore_minors == true) echo "checked"; ?>>
 				</td>
 				<td>
 					<label for="ignore_minors">
@@ -205,7 +205,7 @@ header('X-Accel-Buffering: no');
 			<tr class="checkboxrow">
 				<td>
 
-					<input type="checkbox" name="force_wikitags" id="force_wikitags" <?php if ($force_wikitags == "on") echo checked; ?>>
+					<input type="checkbox" name="force_wikitags" id="force_wikitags" <?php if ($force_wikitags == "on") echo "checked"; ?>>
 				</td>
 				<td>
 					<label for="force_wikitags">
