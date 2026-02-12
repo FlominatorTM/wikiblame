@@ -510,7 +510,7 @@ header('X-Accel-Buffering: no');
 
 		$hour = substr($offset_parts[0], 0, 2);
 		$minute = substr($offset_parts[0], 3, 2);
-		$offset = $year . $month . $day . $hour . $minute;
+		$offset = $year . $month . $day . $hour . $minute . "00";
 
 		$timestamp = mktime($hour, $minute, 0, $month, $day, $year);
 		$month_localized = $the_months[$month - 1];
