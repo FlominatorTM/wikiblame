@@ -470,7 +470,7 @@ header('X-Accel-Buffering: no');
 
 			//result: <a href="/w/index.php?title=Hinterzarten&amp;oldid=64569839" title="Hinterzarten">11:27, 16. Sep. 2009
 
-			$is_deleted_revision = stristr($one_version, 'mw-userlink'); //there is no revision link
+			$is_deleted_revision = !stristr($one_version, 'oldid='); //there is no revision link
 
 			if ($is_deleted_revision) {
 				$deleted_revisions++;
