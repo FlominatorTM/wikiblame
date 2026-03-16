@@ -7,7 +7,9 @@
  * @ingroup Language
  * @file
  *
+ * @author GrogeXaKaba
  * @author Waldyrious
  */
 
+$messages['January'] = 'janer';
 $messages['May'] = 'Maiu';
