@@ -77,7 +77,8 @@ function curl_request($url, $post_data = null)
 			CURLOPT_FAILONERROR => true,
 			//https://raw.githubusercontent.com/bagder/ca-bundle/master/ca-bundle.crt
 			CURLOPT_CAINFO => __DIR__ . '/ca-bundle.crt',
-			CURLOPT_USERAGENT => $_SERVER['SCRIPT_URI'] . 'by Flominator',
+			CURLOPT_USERAGENT => 'Wikiblame/1.0 (flominator@gmx.net)',
+			// CURLOPT_HEADER => true
 		));
 	}
 	curl_setopt($ch, CURLOPT_URL, $url);
@@ -89,8 +90,21 @@ function curl_request($url, $post_data = null)
 		// Reset method in case the handle performed a POST request before
 		curl_setopt($ch, CURLOPT_HTTPGET, true);
 	}
+	$curl_res = curl_exec($ch);
+	// $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+	// curl_close($ch);
+	// print_debug("requesting " . $url . " resulted in return code $httpcode");
 
-	return curl_exec($ch);
+	// if (!$curl_res || $httpcode < 200 || $httpcode >= 300) {
+
+	// 	die("requesting " . $url . " failed with return code $httpcode");
+	// }
+	// print_debug("requesting $url resulted in length " . strlen($curl_res));
+	// if (strlen($curl_res) == 0) {
+	// 	die("requesting " . $url . " returned empty result");
+	// }
+
+	return $curl_res;
 }
 
 function create_images($was_found)
