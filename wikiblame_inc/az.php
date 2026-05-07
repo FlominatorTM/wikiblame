@@ -13,6 +13,7 @@
  * @author NMW03
  * @author Nemoralis
  * @author Sortilegus
+ * @author Əkrəm
  */
 
 $messages['January'] = 'Yanvar';
@@ -64,7 +65,7 @@ $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> _ARTICLELINK_ üçün ve
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> _ARTICLELINK_ üçün versiya tarixcəsində vikimətn kimi axtarılır';
 $messages['no_differences'] = 'Tapılmış versiyalarda fərq yoxdur.';
 $messages['first_version'] = 'Dəyişiklik hansında olmalıdır, birinci və ya son versiyada?';
-$messages['first_version_present'] = '__NEEDLE__ artıq birinci reviziyada mövcud idi, __REVISIONLINK__ -dan başlayaraq tapılmışdı.';
+$messages['first_version_present'] = '__NEEDLE__ artıq __REVISIONLINK__ tarixindən başlayaraq axtarılmış ən köhnə versiyada mövcud idi.';
 $messages['earlier_versions_available'] = 'Ehtimal ki, daha erkən versiyalar var.';
 $messages['execution_time'] = 'İcra vaxtı: _EXECUTIONTIME_ saniyə';
 $messages['versions_found'] = '_NUMBEROFVERSIONS_ versiya tapılıb';
