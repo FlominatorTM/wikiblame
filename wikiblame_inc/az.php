@@ -64,6 +64,7 @@ $messages['wrong_skips'] = 'Səhv nizamlamalar. Əgər ilk __VERSIONSTOSKIP__ ve
 $messages['search_in_progress_text'] = '<b>_NEEDLE_</b> _ARTICLELINK_ üçün versiya tarixcəsində adi mətn kimi axtarılır';
 $messages['search_in_progress_wikitags'] = '<b>_NEEDLE_</b> _ARTICLELINK_ üçün versiya tarixcəsində vikimətn kimi axtarılır';
 $messages['no_differences'] = 'Tapılmış versiyalarda fərq yoxdur.';
+$messages['inverse_earliest'] = 'Daha əvvəlki versiyalarda axtar';
 $messages['first_version'] = 'Dəyişiklik hansında olmalıdır, birinci və ya son versiyada?';
 $messages['first_version_present'] = '__NEEDLE__ artıq __REVISIONLINK__ tarixindən başlayaraq axtarılmış ən köhnə versiyada mövcud idi.';
 $messages['earlier_versions_available'] = 'Ehtimal ki, daha erkən versiyalar var.';
