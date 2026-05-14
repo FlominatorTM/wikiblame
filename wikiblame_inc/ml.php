@@ -9,6 +9,7 @@
  *
  * @author Akhilan
  * @author Praveenp
+ * @author Shem.iz
  */
 
 $messages['January'] = 'ജനുവരി';
@@ -26,6 +27,7 @@ $messages['December'] = 'ഡിസംബർ';
 $messages['ui_lang'] = 'സമ്പർക്കമുഖ ഭാഷ';
 $messages['lang'] = 'ഭാഷ';
 $messages['project'] = 'പദ്ധതി';
+$messages['tld'] = 'ഡൊമൈൻ';
 $messages['article'] = 'താൾ';
 $messages['needle'] = 'തിരയേണ്ടത്';
 $messages['skipversions'] = 'x പതിപ്പുകൾ എപ്പോഴും മറികടക്കുക';
@@ -43,6 +45,7 @@ $messages['linear'] = 'രേഖീയം';
 $messages['interpolated'] = 'ബൈനറി (കൂടുതൽ പതിപ്പുകളിലും എളുപ്പം)';
 $messages['ignore_minors'] = 'ചെറുതിരുത്തലുകൾ അവഗണിക്കുക (പരീക്ഷണാടിസ്ഥാനം)';
 $messages['force_wikitags'] = 'വിക്കിടെക്സ്റ്റിനായി നിർബന്ധിച്ചു അന്വേഷിക്കുക';
+$messages['from_url'] = 'യു.ആർ.എല്ലിൽ നിന്ന്';
 $messages['start'] = 'തുടങ്ങുക';
 $messages['reset'] = 'പുനഃക്രമീകരിക്കുക';
 $messages['manual'] = 'മാനുഷികം';
