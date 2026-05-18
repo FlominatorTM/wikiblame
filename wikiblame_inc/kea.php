@@ -1,5 +1,5 @@
 <?php
-/** Kabuverdianu (kabuverdianu)
+/** Cape Verdean Creole (kabuverdianu)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net
