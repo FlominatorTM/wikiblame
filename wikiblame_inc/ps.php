@@ -8,6 +8,7 @@
  * @file
  *
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ * @author Sakura286
  * @author شاه زمان پټان
  */
 
@@ -28,7 +29,7 @@ $messages['ui_lang'] = 'د ښکارېدنې ژبه';
 $messages['lang'] = 'ژبه';
 $messages['lang_example'] = 'ps, commons, www, …';
 $messages['project'] = 'پروژه';
-$messages['project_example'] = 'ويکي‌پېډيا، ويکي‌سرچينه، ويکي‌رسنۍ، ويکي‌اومتوک، ...';
+$messages['project_example'] = '‏‪wikipedia‬، ‏‪wikisource‬، ‏‪wikimedia‬، ‏‪wikidata‬، …';
 $messages['tld'] = 'واک‌سيمه';
 $messages['tld_example'] = 'org, com, net, …';
 $messages['article'] = 'مخ';
