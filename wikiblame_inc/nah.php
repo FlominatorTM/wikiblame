@@ -12,21 +12,21 @@
  * @author Taresi
  */
 
-$messages['January'] = 'Eneroh';
-$messages['February'] = 'Febreroh';
-$messages['March'] = 'Īquēyimētztli';
-$messages['April'] = 'April';
-$messages['May'] = 'Mayoh';
-$messages['June'] = 'Honioh';
-$messages['July'] = 'Holioh';
-$messages['August'] = 'Ahostoh';
-$messages['September'] = 'Septiempreh';
-$messages['October'] = 'Oktopreh';
-$messages['November'] = 'Noviempreh';
-$messages['December'] = 'Tisiempreh';
-$messages['ui_lang'] = 'Īxtlahtōlli';
-$messages['lang'] = 'Tlahtōlli';
-$messages['project'] = 'Tlatequipanōlli';
+$messages['January'] = 'Enero';
+$messages['February'] = 'Febrero';
+$messages['March'] = 'Marzo';
+$messages['April'] = 'Abril';
+$messages['May'] = 'Mayo';
+$messages['June'] = 'Junio';
+$messages['July'] = 'Julio';
+$messages['August'] = 'Agosto';
+$messages['September'] = 'Septiembre';
+$messages['October'] = 'Octubre';
+$messages['November'] = 'Noviembre';
+$messages['December'] = 'Diciembre';
+$messages['ui_lang'] = 'Ittalo inin tlahtolli';
+$messages['lang'] = 'Tlahtolli';
+$messages['project'] = 'Tlatequipanolli';
 $messages['article'] = 'Tlahkwilolamatl';
 $messages['needle'] = 'Tictemoz';
-$messages['manual'] = 'Ohāmoxtli';
+$messages['manual'] = 'Temachtilizamoxtli';
