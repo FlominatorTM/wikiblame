@@ -14,6 +14,7 @@
  * @author Leinad
  * @author Matma Rex
  * @author Od1n
+ * @author PanWor
  * @author Sp5uhe
  * @author Strebski
  * @author WTM
@@ -56,7 +57,7 @@ $messages['binary_in_wp'] = 'https://pl.wikipedia.org/wiki/Wyszukiwanie_binarne'
 $messages['linear'] = 'liniowa';
 $messages['interpolated'] = 'binarna (szybsza dla większej liczby wersji)';
 $messages['ignore_minors'] = 'ignoruj drobne zmiany (eksperymentalne)';
-$messages['force_wikitags'] = 'Wymuś wyszukiwanie w wikitekście';
+$messages['force_wikitags'] = 'Wymuś wyszukiwanie w wikikodzie';
 $messages['from_url'] = 'pobierz z URL';
 $messages['paste_url'] = 'Wklej URL strony MediaWiki';
 $messages['no_valid_url'] = 'To nie jest poprawny URL MediaWiki';
