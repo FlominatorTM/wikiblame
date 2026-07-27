@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Comfyquiettree
  * @author Cvanca
  * @author Dontlietome7
  * @author Dvorapa
