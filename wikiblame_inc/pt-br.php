@@ -27,6 +27,7 @@
  * @author Re demz
  * @author TheEduGobi
  * @author TheGabrielZaum
+ * @author Trooper57
  * @author Tuliouel
  */
 
@@ -67,11 +68,11 @@ $messages['binary'] = 'binária';
 $messages['binary_in_wp'] = 'https://pt.wikipedia.org/wiki/Pesquisa_binária';
 $messages['linear'] = 'linear';
 $messages['interpolated'] = 'binária (mais rápida para pesquisar muitas edições)';
-$messages['ignore_minors'] = 'ignorar edições menores (experimental)';
-$messages['force_wikitags'] = 'forçar a procura de texto wiki';
-$messages['from_url'] = 'a partir do url';
-$messages['paste_url'] = 'Por favor, insira o url de uma página MediaWiki';
-$messages['no_valid_url'] = 'Este url do MediaWiki não é válido';
+$messages['ignore_minors'] = 'Ignorar edições menores (experimental)';
+$messages['force_wikitags'] = 'Forçar a procura de wikitexto';
+$messages['from_url'] = 'a partir do URL';
+$messages['paste_url'] = 'Por favor, insira o URL de uma página MediaWiki';
+$messages['no_valid_url'] = 'Este URL do MediaWiki não é válido';
 $messages['start'] = 'Iniciar procura';
 $messages['reset'] = 'Redefinir';
 $messages['manual'] = 'Manual';
