@@ -21,6 +21,7 @@
  * @author VulpesVulpes825
  * @author Yfdyh000
  * @author 阿pp
+ * @author 魔琴
  */
 
 $messages['January'] = '1月';
@@ -59,9 +60,9 @@ $messages['linear'] = '线性';
 $messages['interpolated'] = '二分法（在版本更多时更快）';
 $messages['ignore_minors'] = '忽略小修改（实验功能）';
 $messages['force_wikitags'] = '强制搜索wikitext';
-$messages['from_url'] = '来自url';
-$messages['paste_url'] = '请粘贴utl到MediaWiki页面';
-$messages['no_valid_url'] = '这不是有效的MediaWiki url';
+$messages['from_url'] = '来自URL';
+$messages['paste_url'] = '请粘贴前往MediaWiki页面的URL';
+$messages['no_valid_url'] = '这不是有效的MediaWiki的URL';
 $messages['start'] = '开始';
 $messages['reset'] = '重置';
 $messages['manual'] = '手册';
@@ -72,17 +73,17 @@ $messages['get_less_versions'] = '您的搜索可能一次查询 __NUMREVISIONS_
 $messages['wrong_skips'] = '错误的设置：如果跳过__VERSIONSTOSKIP__个版本，那么要搜索的__VERSIONSTOSEARCH__个版本将不会被处理。';
 $messages['search_in_progress_text'] = '_ARTICLELINK_的版本记录正在以<b>_NEEDLE_</b>作为纯文本进行搜索';
 $messages['search_in_progress_wikitags'] = '_ARTICLELINK_的版本记录正在以<b>_NEEDLE_</b>作为wikitext进行搜索';
-$messages['no_differences'] = '搜索修订中没有发现差异。';
-$messages['inverse_restart'] = '找不到插入或移除的内容，搜索关键词是否已在之后插入？';
-$messages['inverse_stuck'] = '在这些_NUMBEROFVERSIONS_个修订版本中找不到插入或移除物。搜索词或许早就被移除？';
-$messages['inverse_earliest'] = '在早期修订版本中搜索';
+$messages['no_differences'] = '在检索到的版本中未发现差异。';
+$messages['inverse_restart'] = '找不到插入或移除的内容，搜索关键词是否在之后插入？';
+$messages['inverse_stuck'] = '在这些_NUMBEROFVERSIONS_个修订版本中找不到插入或移除的内容。搜索词或许早就被移除？';
+$messages['inverse_earliest'] = '在更早的修订版本中搜索';
 $messages['first_version'] = '更改是在第一个或最新的版本中发生的吧？';
 $messages['first_version_present'] = '__NEEDLE__已存在于最旧修订版本，搜索可追溯到__REVISIONLINK__。';
 $messages['latest_version_present'] = '__NEEDLE__已存在于最新修订版本，搜索可追溯到__REVISIONLINK__。';
 $messages['earlier_versions_available'] = '可能存在更旧的修订版本。';
 $messages['execution_time'] = '执行时间：_EXECUTIONTIME_秒';
 $messages['versions_found'] = '发现 _NUMBEROFVERSIONS_ 个版本';
-$messages['please_wait'] = '请稍等 …';
+$messages['please_wait'] = '请稍候……';
 $messages['binary_test'] = '由 _SOURCENUMBER_ 开始，正在比较在 _FIRSTNUMBER_ 和 _SECONDNUMBER_ 之间的差异 _FIRSTDATEVERSION_ ：';
 $messages['dead_end'] = '发现一些循环（可能由回退或编辑战引起）';
 $messages['once_more'] = '再来一次：';
