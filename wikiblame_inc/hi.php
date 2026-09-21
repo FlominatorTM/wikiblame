@@ -7,6 +7,7 @@
  * @ingroup Language
  * @file
  *
+ * @author AMAN KUMAR
  * @author Ansumang
  * @author AnupamM
  * @author Cabal
@@ -72,6 +73,7 @@ $messages['inverse_stuck'] = 'इन _NUMBEROFVERSIONS_ संशोधनों
 $messages['inverse_earliest'] = 'पहले के संशोधन में खोजें';
 $messages['first_version'] = 'बदलाव पहले या अंतिम संशोधन में हुआ होगा?';
 $messages['first_version_present'] = '__NEEDLE__ __REVISIONLINK__ से खोजे गए सबसे पुराने संशोधन में पहले से मौजूद था।';
+$messages['latest_version_present'] = 'खोजे गए सबसे नवीनतम अवतरण (दिनांक: __REVISIONLINK__) में __NEEDLE__ पहले से ही मौजूद था।';
 $messages['earlier_versions_available'] = 'संभव है कि यहाँ पुराने संशोधन भी हैं।';
 $messages['execution_time'] = 'खोजने में लगा समय: _EXECUTIONTIME_ सॅकेंड';
 $messages['versions_found'] = 'कुल _NUMBEROFVERSIONS_ संस्करण मिले';
