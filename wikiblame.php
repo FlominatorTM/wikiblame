@@ -428,7 +428,7 @@ header('X-Accel-Buffering: no');
 		global $articleenc, $asc, $messages, $ignore_minors, $deleted_revisions;
 		$searchterm = "name=\"diff\" "; //assumes that the history begins at the first occurrence of name="diff" /> <!--removed />-->
 
-		$versionen = array(); //array to store the links in
+		$versions = array(); //array to store the links in
 		$deleted_revisions = 0;
 		$revision_html_blocks = explode($searchterm, $history);
 
