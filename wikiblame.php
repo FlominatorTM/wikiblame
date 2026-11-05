@@ -250,9 +250,14 @@ header('X-Accel-Buffering: no');
 		echo "<div class=\"results\">\n";
 		echo "$msg<br>\n";
 
-		$exec_time = do_search();
-		echo '<br>' . $exec_time;
-		echo '<br><br><small>' . get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) . '</small></div>';
+		try {
+			$exec_time = do_search();
+			echo '<br>' . $exec_time;
+			echo '<br><br><small>' . get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) . '</small>';
+		} catch (RuntimeException $e) {
+			echo '<div class="inputerror" data-fieldid="article">' . htmlspecialchars($e->getMessage()) . '</div>';
+		}
+		echo '</div>';
 	}
 
 	function fill_variables($user_lang)
@@ -414,9 +419,12 @@ header('X-Accel-Buffering: no');
 
 	function get_all_versions($articleenc, $offset)
 	{
-		global $limit, $server, $user_lang;
+		global $limit, $server, $user_lang, $messages;
 		$historyurl = "https://" . $server . "/wiki/" . $articleenc . "?action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
-		$history = curl_request($historyurl);
+		$history = curl_request($historyurl, null, $httpcode);
+		if ($httpcode == 404) {
+			throw new RuntimeException($messages['page_not_found']);
+		}
 		//echo "<hr><pre>$history</pre><hr>";
 		return listversions($history);
 	}
