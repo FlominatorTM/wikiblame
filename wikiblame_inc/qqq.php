@@ -129,3 +129,6 @@ $messages['deletion_found'] = 'Do not translate <code>LEFT_VERSION</code>, and <
 $messages['here'] = '{{Identical|Here}}';
 $messages['help_translating'] = 'Link to Wikiblame project page at translatewiki.net. See [http://wikipedia.ramselehof.de/wikiblame.php here].';
 $messages['start_here'] = 'Text on link to a new search starting with the date of the revision next to the link';
+
+$messages['discovery_failed'] = 'Error shown when the from URL button cannot retrieve the wiki configuration from the supplied page.';
+$messages['history_unavailable'] = 'Error shown when a wiki API cannot provide revision history for a search.';

@@ -27,6 +27,8 @@ header('X-Accel-Buffering: no');
 </head><?php
 		include("shared_inc/language.inc.php");
 		include("shared_inc/wiki_functions.inc.php");
+		require_once("shared_inc/wiki_site.inc.php");
+		$wiki_paths = wiki_paths_from_request($_REQUEST);
 		prevent_automatic_escaping_of_input_strings();
 		$inc_dir = "wikiblame_inc";
 
@@ -47,6 +49,7 @@ header('X-Accel-Buffering: no');
 			'get_less_versions' => $messages['get_less_versions'],
 			'paste_url' => $messages['paste_url'],
 			'no_valid_url' => $messages['no_valid_url'],
+			'discovery_failed' => $messages['discovery_failed'],
 			'please_wait' => $messages['please_wait'],
 		];
 
@@ -217,6 +220,7 @@ header('X-Accel-Buffering: no');
 				<td colspan="2">
 					<input name="start" id="start" type="submit" value="<?php echo $messages['start'] ?>">
 					<input name="user" id="user" type="hidden" value="<?php echo $user ?>">
+					<input name="wiki_paths" id="wiki_paths" type="hidden" value="<?= !empty($_REQUEST['wiki_paths']) ? htmlspecialchars(json_encode($wiki_paths), ENT_QUOTES) : '' ?>">
 				</td>
 			</tr>
 		</table>
@@ -241,18 +245,25 @@ header('X-Accel-Buffering: no');
 
 		//@TODO: create a method from this
 		if ($tags_present) {
-			$msg = str_replace('_ARTICLELINK_', "<a href=\"https://" . $server . "/wiki/" . $article . "\">$article</a>", $messages['search_in_progress_wikitags']);
+			$msg = str_replace('_ARTICLELINK_', '<a href="' . htmlspecialchars(wiki_page_url($server, $article), ENT_QUOTES) . '">' . htmlspecialchars($article) . '</a>', $messages['search_in_progress_wikitags']);
 		} else {
-			$msg = str_replace('_ARTICLELINK_', "<a href=\"https://" . $server . "/wiki/" . $article . "\">$article</a>", $messages['search_in_progress_text']);
+			$msg = str_replace('_ARTICLELINK_', '<a href="' . htmlspecialchars(wiki_page_url($server, $article), ENT_QUOTES) . '">' . htmlspecialchars($article) . '</a>', $messages['search_in_progress_text']);
 		}
 
 		$msg = str_replace('_NEEDLE_', htmlspecialchars($needle), $msg);
 		echo "<div class=\"results\">\n";
 		echo "$msg<br>\n";
 
-		$exec_time = do_search();
-		echo '<br>' . $exec_time;
-		echo '<br><br><small>' . get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) . '</small></div>';
+		$search_beginning = time();
+		try {
+			$exec_time = do_search();
+			echo '<br>' . $exec_time;
+			echo '<br><br><small>' . get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) . '</small>';
+		} catch (RuntimeException $e) {
+			echo '<div class="inputerror" data-fieldid="article">' . $messages['history_unavailable'] . '</div>';
+			echo '<br>' . str_replace('_EXECUTIONTIME_', time() - $search_beginning, $messages['execution_time']);
+		}
+		echo '</div>';
 	}
 
 	function fill_variables($user_lang)
@@ -414,8 +425,20 @@ header('X-Accel-Buffering: no');
 
 	function get_all_versions($articleenc, $offset)
 	{
-		global $limit, $server, $user_lang;
-		$historyurl = "https://" . $server . "/wiki/" . $articleenc . "?action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
+		global $limit, $server, $user_lang, $asc, $ignore_minors, $deleted_revisions, $the_months, $messages;
+		if (!empty($_REQUEST['wiki_paths'])) {
+			$history = wiki_revision_history(wiki_endpoint($server, 'api'), urldecode($articleenc), $offset, $limit, $ignore_minors);
+			$deleted_revisions = $history['deleted'];
+			$versions = array_map(function ($revision) use ($the_months, $messages) {
+				return wiki_revision_record($revision, $the_months, $messages['revision_date_format']);
+			}, $history['revisions']);
+			if ($asc) {
+				$versions = array_reverse($versions);
+			}
+			echo str_replace('_NUMBEROFVERSIONS_', count($versions), $messages['versions_found']) . '<br>';
+			return $versions;
+		}
+		$historyurl = wiki_endpoint($server, 'script') . "?title=" . $articleenc . "&action=history&limit=$limit&offset=$offset&uselang=en";	//$user_lang"
 		$history = curl_request($historyurl);
 		//echo "<hr><pre>$history</pre><hr>";
 		return listversions($history);
@@ -575,12 +598,12 @@ header('X-Accel-Buffering: no');
 		set_time_limit(60);
 		global $server, $articleenc, $tags_present;
 		if ($tags_present) {
-			$url = "https://$server/w/api.php?format=json&formatversion=2&action=query&prop=revisions&revids=$id&rvprop=content&rvslots=main";
+			$url = wiki_endpoint($server, 'api') . "?format=json&formatversion=2&action=query&prop=revisions&revids=$id&rvprop=content&rvslots=main";
 			$json = json_decode(curl_request($url), true);
 			$versionpage = $json['query']['pages'][0]['revisions'][0]['slots']['main']['content'];
 		} else {
-			$url = "https://" . $server . "/w/api.php?action=parse&disableeditsection=&formatversion=2&prop=text&oldid=" . $id . "&format=json";
-			if (stristr($server, "fandom")) {
+			$url = wiki_endpoint($server, 'api') . "?action=parse&disableeditsection=&formatversion=2&prop=text&oldid=" . $id . "&format=json";
+			if (stristr($server, "fandom") && empty($_REQUEST['wiki_paths'])) {
 				$url = str_replace("/w/", "/", $url);
 			}
 
@@ -975,7 +998,7 @@ header('X-Accel-Buffering: no');
 	{
 		global $server, $articleenc;
 
-		$link = 'https://' . $server . '/w/index.php?title=' . $articleenc . '&diff=prev&oldid=' . $version['id'];
+		$link = wiki_endpoint($server, 'script') . '?title=' . $articleenc . '&diff=prev&oldid=' . $version['id'];
 
 		return '<a href="' . $link . '">' . $version['local_date'] . '</a>';
 	}
@@ -983,7 +1006,7 @@ header('X-Accel-Buffering: no');
 	function get_old_link($version)
 	{
 		global $server, $articleenc;
-		$link = 'https://' . $server . '/w/index.php?title=' . $articleenc . '&oldid=' . $version['id'];
+		$link = wiki_endpoint($server, 'script') . '?title=' . $articleenc . '&oldid=' . $version['id'];
 		return '<a href="' . $link . '">' . $version['local_date'] . '</a>';
 	}
 
@@ -1016,10 +1039,13 @@ header('X-Accel-Buffering: no');
 
 	function get_url($year, $month, $day, $hours = 23, $minutes = 55, $include_ignorefirst = true)
 	{
-		global $project, $article, $needle, $lang, $limit, $ignorefirst, $order, $force_wikitags, $user_lang, $binary_search_inverse, $user;
+		global $project, $article, $needle, $lang, $limit, $ignorefirst, $order, $force_wikitags, $user_lang, $binary_search_inverse, $user, $wiki_paths, $tld;
 		$proto = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') ? 'https://' : 'http://';
 		$url = $proto . $_SERVER["SERVER_NAME"] . $_SERVER["PHP_SELF"] . "?project=$project&amp;article=" . urlencode($article) . "&amp;needle=" . urlencode($needle) . "&amp;" . "lang=$lang&amp;limit=$limit" . "&amp;offjahr=$year&amp;offmon=$month&amp;offtag=$day&amp;offhour=$hours&amp;offmin=$minutes&amp;searchmethod=" . $_REQUEST['searchmethod'] . "&amp;order=" . $_REQUEST['order'] . "&amp;force_wikitags=$force_wikitags&amp;user_lang=$user_lang";
 
+		if (!empty($_REQUEST['wiki_paths'])) {
+			$url .= "&amp;tld=" . urlencode($tld) . "&amp;wiki_paths=" . urlencode(json_encode($wiki_paths));
+		}
 		if ($include_ignorefirst) {
 			$url .= "&amp;ignorefirst=" . $_REQUEST['ignorefirst'];
 		}
@@ -1089,7 +1115,7 @@ header('X-Accel-Buffering: no');
 
 	function Get_UTC_Hours($localHours, $server)
 	{
-		$url = "https://" . $server . "/w/api.php?action=query&meta=siteinfo&format=php";
+		$url = wiki_endpoint($server, 'api') . "?action=query&meta=siteinfo&format=php";
 		ini_set('user_agent', 'WikiBlame_by_Flominator');
 		$SiteInfo = unserialize(curl_request($url));
 		$offsetToUtc = $SiteInfo['query']['general']['timeoffset'];

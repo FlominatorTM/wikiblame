@@ -100,3 +100,6 @@ $messages['help_translating'] = 'Help translating at translatewiki.net';
 $messages['start_here'] = 'Search from here';
 $messages['too_much_versions'] = 'You have reached your query limit of __VERSIONLIMIT__ versions. Please try again in __WAITMINUTES__ minutes or switch to binary search. Sorry for the inconvenience.';
 $messages['not_found_at_all'] = 'Your search term was not found at all. Check the settings and try again.';
+
+$messages['discovery_failed'] = 'Could not discover this wiki’s settings. Check the URL and try again.';
+$messages['history_unavailable'] = 'The wiki’s revision history could not be retrieved. Please try again later.';
