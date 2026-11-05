@@ -50,7 +50,7 @@ header('X-Accel-Buffering: no');
 			'please_wait' => $messages['please_wait'],
 		];
 
-		$is_exp = stristr($_SERVER["PHP_SELF"], 'wikiblame.exp.php') !== false;
+		$is_exp = stristr($_SERVER["PHP_SELF"] ?? "", 'wikiblame.exp.php') !== false;
 		?>
 
 <body dir="<?= $text_dir ?>" <?= $is_exp ? 'class="exp"' : '' ?> data-allowedVersionsPerCall="<?= $allowedRevisionsPerCall ?>">
@@ -152,7 +152,7 @@ header('X-Accel-Buffering: no');
 					<?php echo $messages['start_date'] ?>
 				</td>
 				<td>
-					<?php datedrop_with_months("", "off", false, 2001, date("Y"), $_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag'], $the_months, $messages['date_format']); ?>
+					<?php datedrop_with_months("", "off", false, 2001, date("Y"), $_REQUEST['offjahr'] ?? '', $_REQUEST['offmon'] ?? '', $_REQUEST['offtag'] ?? '', $the_months, $messages['date_format']); ?>
 					<input type="button" id="resetdate" value="<?php echo $messages['reset']; ?>">
 				</td>
 			<tr>
@@ -235,7 +235,7 @@ header('X-Accel-Buffering: no');
 		//$needle = needle_regex($needle); necessary if you work with html, which is currently not the case
 		check_options(); // stops script, when wrong options are used
 		check_revision_date_format($messages);
-		if (!$use_binary_search && $_REQUEST['user'] == "") {
+		if (!$use_binary_search && ($_REQUEST['user'] ?? '') == "") {
 			check_calls_from_this_ip($limit, $ignorefirst, $skipversions);
 		}
 
@@ -252,7 +252,7 @@ header('X-Accel-Buffering: no');
 
 		$exec_time = do_search();
 		echo '<br>' . $exec_time;
-		echo '<br><br><small>' . get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) . '</small></div>';
+		echo '<br><br><small>' . get_url($_REQUEST['offjahr'] ?? '', $_REQUEST['offmon'] ?? '', $_REQUEST['offtag'] ?? '') . '</small></div>';
 	}
 
 	function fill_variables($user_lang)
@@ -260,12 +260,12 @@ header('X-Accel-Buffering: no');
 		global $article, $articleenc, $needle, $lang, $project, $server,
 			$use_binary_search, $limit, $ignorefirst, $skipversions, $ignore_minors, $offset, $binary_search_inverse, $asc,
 			$user, $force_wikitags, $tags_present; //todo: probably $tags_present doesn't need to be exposed
-		$article = str_replace('_', ' ', $_REQUEST['article']);
+		$article = str_replace('_', ' ', $_REQUEST['article'] ?? '');
 		$articleenc = name_in_url($article);
 
-		$needle = trim($_REQUEST['needle']);
+		$needle = trim($_REQUEST['needle'] ?? '');
 
-		$lang = correct_language_mistakes($_REQUEST['lang']);
+		$lang = correct_language_mistakes($_REQUEST['lang'] ?? '');
 		if ($lang == "") {
 			if ($user_lang == "zh-hans" || $user_lang == "zh-hant") {
 				$lang = "zh";
@@ -274,12 +274,12 @@ header('X-Accel-Buffering: no');
 			}
 		}
 
-		$project = $_REQUEST['project'];
+		$project = $_REQUEST['project'] ?? '';
 		if ($project == "") {
 			$project = "wikipedia";
 		}
 
-		$tld = $_REQUEST['tld'];
+		$tld = $_REQUEST['tld'] ?? '';
 		if ($tld == "") {
 			$tld = "org";
 		}
@@ -290,11 +290,11 @@ header('X-Accel-Buffering: no');
 		}
 
 		$use_binary_search = true;
-		if ($_REQUEST['searchmethod'] == "lin") {
+		if (($_REQUEST['searchmethod'] ?? '') == "lin") {
 			$use_binary_search = false;
 		}
 
-		$limit = $_REQUEST['limit'];
+		$limit = $_REQUEST['limit'] ?? '';
 
 		if ($limit == "") {
 			if ($use_binary_search) {
@@ -304,17 +304,17 @@ header('X-Accel-Buffering: no');
 			}
 		}
 
-		$ignorefirst = $_REQUEST['ignorefirst'];
+		$ignorefirst = $_REQUEST['ignorefirst'] ?? '';
 		if ($ignorefirst == "") {
 			$ignorefirst = 0;
 		}
 
-		$skipversions = $_REQUEST['skipversions'];
+		$skipversions = $_REQUEST['skipversions'] ?? '';
 		if ($skipversions == "") {
 			$skipversions = 0;
 		}
 
-		$ignore_minors = $_REQUEST['ignore_minors'];
+		$ignore_minors = $_REQUEST['ignore_minors'] ?? '';
 		if ($ignore_minors == "on") {
 			$ignore_minors = true;
 		} else {
@@ -322,18 +322,18 @@ header('X-Accel-Buffering: no');
 		}
 
 		//Offset = YYYYMMDDmmhhss
-		$offset = $_REQUEST['offjahr'];
-		$offset .= str_pad($_REQUEST['offmon'], 2, '0', STR_PAD_LEFT);
-		$offset .= str_pad($_REQUEST['offtag'], 2, '0', STR_PAD_LEFT);
+		$offset = $_REQUEST['offjahr'] ?? '';
+		$offset .= str_pad($_REQUEST['offmon'] ?? '', 2, '0', STR_PAD_LEFT);
+		$offset .= str_pad($_REQUEST['offtag'] ?? '', 2, '0', STR_PAD_LEFT);
 
-		$offhour = str_pad($_REQUEST['offhour'], 2, '0', STR_PAD_LEFT);
+		$offhour = str_pad($_REQUEST['offhour'] ?? '', 2, '0', STR_PAD_LEFT);
 		if ($offhour == "00") {
 			$offhour = 23;
 		} else {
 			$offhour = str_pad(Get_UTC_Hours($offhour, $server), 2, '0', STR_PAD_LEFT);
 		}
 
-		$offmin = str_pad($_REQUEST['offmin'], 2, '0', STR_PAD_LEFT);
+		$offmin = str_pad($_REQUEST['offmin'] ?? '', 2, '0', STR_PAD_LEFT);
 
 		if ($offmin == "00") {
 			$offmin = 55;
@@ -344,22 +344,22 @@ header('X-Accel-Buffering: no');
 			$offset = strftime("%Y%m%d%H%M%S");
 		}
 
-		if ($_REQUEST['binary_search_inverse'] == "on") {
+		if (($_REQUEST['binary_search_inverse'] ?? '') == "on") {
 			$binary_search_inverse = true;
 		} else {
 			$binary_search_inverse = false;
 		}
 
 		$asc = false;
-		if ($_REQUEST['order'] == "asc") {
+		if (($_REQUEST['order'] ?? '') == "asc") {
 			if (!$use_binary_search) {
 				$asc = true;
 			}
 		}
 
-		$user = $_REQUEST['user'];
+		$user = $_REQUEST['user'] ?? '';
 
-		$force_wikitags = $_REQUEST['force_wikitags'];
+		$force_wikitags = $_REQUEST['force_wikitags'] ?? '';
 		if ($force_wikitags == "on") {
 			$tags_present = true;
 		} else {

@@ -1,5 +1,5 @@
 <?php
-if (stristr($_SERVER['HTTP_USER_AGENT'], "AspiegelBot")) {
+if (stristr($_SERVER['HTTP_USER_AGENT'] ?? '', "AspiegelBot")) {
 	die("AspiegelBot is not allowed");
 }
 require_once("shared_inc/language.inc.php");
@@ -159,6 +159,8 @@ function datedrop_with_months($name, $varanf = "", $intab = true, $jahranf = "",
 		$seljahr = date("Y");
 	}
 
+	$headers = "";
+	$trailers = "";
 	if ($intab == true) {
 		$headers = "<tr>\n";
 		$headers .= "<td>\n";
@@ -257,7 +259,7 @@ function array_drop($name, $werte, $size = "", $startwert = "", $onchange = "", 
 	}
 
 	$result .= ">\n";
-	if ($startwer != "") {
+	if ($startwert != "") {
 		$result .= $vorne . " <option value=\"\">$startwert</option>\n";
 	}
 	for ($i = 0; $i < count($werte); $i++) {
