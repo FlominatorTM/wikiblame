@@ -56,7 +56,7 @@ function name_in_url($name)
 function get_history($server, $articleenc, $limit = 50, $offset = "")
 {
 	if ($offset == "") {
-		$offset = strftime("%Y%m%d%H%M%S");
+		$offset = date("YmdHis");
 	}
 
 	$historyurl = "https://" . $server . "/w/index.php?title=" . $articleenc . "&action=history&limit=$limit&offset=$offset";
@@ -137,7 +137,7 @@ function create_images($was_found)
 	imagedestroy($bild);
 }
 
-function datedrop_with_months($name, $varanf = "", $intab = true, $jahranf = "", $jahrbis = "", $seljahr = "", $selmon = "", $seltag = "", $the_months, $date_format)
+function datedrop_with_months($name, $varanf, $intab, $jahranf, $jahrbis, $seljahr, $selmon, $seltag, $the_months, $date_format)
 {
 	if ($jahranf == "") {
 		$jahranf = date("Y");
@@ -326,7 +326,7 @@ function set_up_media_wiki_input_fields($summary, $button, $article = "")
 	echo '<input type="hidden" name="wpSummary" value="' . $summary . '"/>';
 	echo '<input type="hidden" name="wpWatchthis" value="1"/>';
 	echo '<input type="hidden" name="wpDiff" value="' . $summary . '"/>';
-	echo '<input type="hidden" name="wpStarttime" value="' . strftime("%Y%m%d%H%M%S", $UtcNow) . '" />';
+	echo '<input type="hidden" name="wpStarttime" value="' . date("YmdHis", $UtcNow) . '" />';
 	echo '<input type="hidden" name="wpEdittime" value="' . $editTime . '" />';
 
 	//and switch back to what it was before
@@ -343,7 +343,7 @@ function get_page_time_stamp($server, $article)
 	if ($xml) {
 		$timeStamp = $xml->query->pages->page[0]->revisions[0]->rev['timestamp'];
 		$time = strtotime($timeStamp);
-		$timeStampReturn = strftime("%Y%m%d%H%M%S", $time); //careful strftime will use local timezone
+		$timeStampReturn = date("YmdHis", $time); //date() uses the local timezone
 	}
 
 	return $timeStampReturn;
