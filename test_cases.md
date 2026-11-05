@@ -33,3 +33,13 @@
 ## Linear search
 
 - [with hidden revisions](http://wikipedia.ramselehof.de/wikiblame.php?project=wikipedia&article=AEG-Kleinow-Gestell&needle=18.047&lang=de&limit=50&offjahr=2015&offmon=11&offtag=2&offhour=23&offmin=55&searchmethod=lin&order=desc&force_wikitags=off&user_lang=de&ignorefirst=0&binary_search_inverse=false)
+
+## Wiki URL discovery
+
+Use **from URL** with each of these URLs and check that the Page field contains
+only the page title:
+
+- https://community.fandom.com/wiki/Community_Central → `Community Central`
+- https://www.explainxkcd.com/wiki/index.php/Main_Page → `Main Page`
+- https://en.wikipedia.org/wiki/Main_Page → `Main Page`
+- https://en.wikipedia.org/w/index.php?title=Foo → `Foo`

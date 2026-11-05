@@ -52,82 +52,36 @@ function checkScanAmount()
  * Handle the “from URL” button.
  * @param {Event} e The click event.
  */
-function pasteFieldsFromUrl(e)
+async function pasteFieldsFromUrl(e)
 {
 	e.preventDefault();
 	var mediaWikiUrl = window.prompt(i18n.paste_url, '');
 	if(mediaWikiUrl == null) return;
-	var a = document.createElement('a');
-	a.href=mediaWikiUrl;
-
-	var hostParts = (a.hostname).split('.');
-	var article;
-	var language;
-	var tld;
-	var project;
-
-	// possible cases or URL form:
-	// subdomain/language + host + TLD
-	// -> http(s)://de.wikipedia.org/whatever
-	// host + .org (2 parts)
-	// -> http(s)://somewiki.org/whatever
-	// host + custom TLD (2 parts)
-	// -> http(s)://otherwiki.com/whatever
-	// if there are only 2 parts, it's definitely the subdomain that is missing
-	if(hostParts.length == 3)
+	var button = document.getElementById('from_url');
+	var label = button.value;
+	button.disabled = true;
+	button.value = i18n.please_wait;
+	try
 	{
-		language = hostParts[0];
-		project = hostParts[1];
-		tld = hostParts[2];
+		var response = await fetch('discover.php?url=' + encodeURIComponent(mediaWikiUrl));
+		if(!response.ok) throw new Error('Discovery failed');
+		var site = await response.json();
+		var hostParts = site.host.split('.');
+		var fields = document.forms['mainform'].elements;
+		fields.lang.value = hostParts.length == 3 ? hostParts.shift() : 'blank';
+		fields.tld.value = hostParts.pop();
+		fields.project.value = hostParts.join('.');
+		fields.article.value = site.title;
+		fields.wiki_paths.value = JSON.stringify(site.paths);
 	}
-	if(hostParts.length == 2)
+	catch(error)
 	{
-		language = 'blank';
-		project = hostParts[0];
-		tld = hostParts[1];
+		alert(i18n.discovery_failed);
 	}
-
-	var titleFound = false;
-	var slashWiki = '/wiki/';
-	var titleEquals = 'title=';
-	if(mediaWikiUrl.search(titleEquals) > 0)
+	finally
 	{
-		// find article name from a URL like https://example.com/w/index.php?title=Main_Page
-		var urlParts = mediaWikiUrl.split('?');
-
-		if(urlParts.length == 2)
-		{
-			var paramParts = urlParts[1].split('&');
-			// gets article name from first instance of 'title='
-			// @TODO: should probably be last instance to comply with HTTP standard
-			for(var i = 0; i < paramParts.length; i++)
-			{
-				if(paramParts[i].startsWith(titleEquals))
-				{
-					article = decodeURIComponent(paramParts[i].substr(titleEquals.length)).replace(/_/gm, ' ');
-					titleFound = true;
-					break;
-				}
-			}
-		}
-	}
-	else if(a.pathname.startsWith(slashWiki))
-	{
-		// find article name from a URL like https://example.com/wiki/Main_Page
-		article = decodeURIComponent(a.pathname.substr(slashWiki.length)).replace(/_/gm, ' ');
-		titleFound = true;
-	}
-
-	if(!titleFound)
-	{
-		alert(i18n.no_valid_url);
-	}
-	else
-	{
-		document.forms['mainform'].elements['lang'].value=language;
-		document.forms['mainform'].elements['project'].value=project;
-		document.forms['mainform'].elements['article'].value=article;
-		document.forms['mainform'].elements['tld'].value=tld;
+		button.disabled = false;
+		button.value = label;
 	}
 }
 
@@ -155,6 +109,11 @@ function setUpListeners()
 	document.forms['mainform'].addEventListener('submit', submitAndWait);
 	document.getElementById('from_url').addEventListener('click', pasteFieldsFromUrl);
 	document.getElementById('resetdate').addEventListener('click', setFormDateToToday);
+	['lang', 'project', 'tld'].forEach(function(id) {
+		document.getElementById(id).addEventListener('input', function() {
+			document.getElementById('wiki_paths').value = '';
+		});
+	});
 	var scanAmountIds = ['skipversions', 'ignorefirst', 'limit', 'linear', 'int'];
 	for(var i = 0; i < scanAmountIds.length; ++i)
 	{
