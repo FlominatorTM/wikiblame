@@ -250,12 +250,14 @@ header('X-Accel-Buffering: no');
 		echo "<div class=\"results\">\n";
 		echo "$msg<br>\n";
 
+		$search_beginning = time();
 		try {
 			$exec_time = do_search();
 			echo '<br>' . $exec_time;
 			echo '<br><br><small>' . get_url($_REQUEST['offjahr'], $_REQUEST['offmon'], $_REQUEST['offtag']) . '</small>';
 		} catch (RuntimeException $e) {
 			echo '<div class="inputerror" data-fieldid="article">' . htmlspecialchars($e->getMessage()) . '</div>';
+			echo '<br>' . str_replace('_EXECUTIONTIME_', time() - $search_beginning, $messages['execution_time']);
 		}
 		echo '</div>';
 	}
