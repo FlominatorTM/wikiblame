@@ -144,11 +144,11 @@ function correct_language_mistakes($lang)
 		case 'ΕΛΛΗΝΙΚΑ':	return 'el';
 		case 'ελληνικη':	return 'el';
 		case 'ΕΛΛΗΝΙΚΗ':	return 'el';
-		case 'françai';		return 'fr';
-		case 'francais';	return 'fr';
-		case 'français';	return 'fr';
-		case 'française';	return 'fr';
-		case 'french';		return 'fr';
+		case 'françai':		return 'fr';
+		case 'francais':	return 'fr';
+		case 'français':	return 'fr';
+		case 'française':	return 'fr';
+		case 'french':		return 'fr';
 		case 'german': 		return 'de';
 		case 'hindi': 		return 'hi';
 		case 'inggris': 	return 'id';

@@ -341,7 +341,7 @@ header('X-Accel-Buffering: no');
 		$offset .= $offhour . $offmin . '00';
 
 		if (strlen($offset) < 12) {
-			$offset = strftime("%Y%m%d%H%M%S");
+			$offset = date("YmdHis");
 		}
 
 		if ($_REQUEST['binary_search_inverse'] == "on") {
@@ -514,8 +514,15 @@ header('X-Accel-Buffering: no');
 
 		$timestamp = mktime($hour, $minute, 0, $month, $day, $year);
 		$month_localized = $the_months[$month - 1];
-		$pattern = str_replace('%B', $month_localized, $messages['revision_date_format']);
-		$date_localized = strftime($pattern, $timestamp);
+		$date_localized = strtr($messages['revision_date_format'], [
+			'%B' => $month_localized,
+			'%d' => date('d', $timestamp),
+			'%e' => str_pad(date('j', $timestamp), 2, ' ', STR_PAD_LEFT),
+			'%Y' => date('Y', $timestamp),
+			'%H' => date('H', $timestamp),
+			'%k' => str_pad(date('G', $timestamp), 2, ' ', STR_PAD_LEFT),
+			'%M' => date('i', $timestamp),
+		]);
 
 		$id = idfromurl($one_version);
 		$versions[] = array(
@@ -656,7 +663,7 @@ header('X-Accel-Buffering: no');
 	function log_search($time = "started")
 	{
 		global $article, $needle, $lang, $project, $asc, $use_binary_search, $server, $limit, $skipversions, $get_version_time, $versions, $offset, $user, $user_lang;
-		$logfile = "log/wikiblame_" . strftime("%Y-%m-%d") . ".csv";
+		$logfile = "log/wikiblame_" . date("Y-m-d") . ".csv";
 
 		if (!file_exists($logfile)) {
 			$header = "Day;";
@@ -681,8 +688,8 @@ header('X-Accel-Buffering: no');
 
 		if ($file = fopen($logfile, "a")) {
 			fputs($file, $header);
-			fputs($file, strftime("%Y-%m-%d") . ";");
-			fputs($file, strftime("%H:%M") . ";");
+			fputs($file, date("Y-m-d") . ";");
+			fputs($file, date("H:i") . ";");
 			fputs($file, "\"" . $_SERVER['REMOTE_ADDR'] . "\";");
 			fputs($file, $user_lang . ";");
 			fputs($file, "\"" . $needle . "\";");
