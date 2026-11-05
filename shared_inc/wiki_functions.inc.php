@@ -63,7 +63,7 @@ function get_history($server, $articleenc, $limit = 50, $offset = "")
 	return curl_request($historyurl);
 }
 
-function curl_request($url, $post_data = null)
+function curl_request($url, $post_data = null, &$httpcode = null)
 {
 	static $ch;
 
@@ -91,7 +91,7 @@ function curl_request($url, $post_data = null)
 		curl_setopt($ch, CURLOPT_HTTPGET, true);
 	}
 	$curl_res = curl_exec($ch);
-	// $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+	$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 	// curl_close($ch);
 	// print_debug("requesting " . $url . " resulted in return code $httpcode");
 
